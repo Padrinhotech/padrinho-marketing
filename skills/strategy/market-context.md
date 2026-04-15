@@ -1,133 +1,154 @@
 # Market Context — Padrinho
 
-> **Protocolo de atualização:** Mensal — início de cada mês.
-> O agente executa as queries de pesquisa, atualiza os dados,
-> registra a data e aguarda aprovação antes de commitar.
+> **Protocolo de atualização:** Este arquivo deve ser atualizado mensalmente.
+> O agente roda as queries definidas em `tactic/trend-radar.md`, coleta
+> dados novos, atualiza as seções marcadas com 📊, e aguarda aprovação
+> antes de commitar.
 >
 > **Última atualização:** Abril 2026
 > **Próxima atualização:** Maio 2026
 
 ---
 
-## Queries de Atualização Mensal
+## 📊 Dados de Consumo — Brasil
 
-Rodar via `web_search` no início de cada mês:
+| Indicador | Valor | Ano | Fonte |
+|---|---|---|---|
+| Consumo per capita | 7,7 litros/ano | 2024 | CISA Panorama 2024 |
+| Média mundial | 6,2 litros/ano | 2024 | OMS |
+| Pico histórico BR | 8,6 litros/ano | — | CISA |
+| Consumo excessivo (população geral) | 15% | 2025 | CISA Panorama 2025 |
+| Não bebem (declarado) | 64% | 2025 | CISA / Ipsos |
+| Não bebiam em 2023 | 55% | 2023 | CISA |
+| ~60% do consumo | "litrão" do FDS | — | CISA |
+| Internações atribuíveis ao álcool | 418.467 | 2024 | Datasus |
+| Óbitos atribuíveis ao álcool | 73.019 | 2023 | Datasus |
 
-```
-1. "alcoolismo Brasil [mês/ano]"
-2. "consumo álcool Brasil dados [ano]"
-3. "sober curious Brasil [ano]"
-4. "Sunflower app [mês/ano]" — monitorar concorrente principal
-5. "hangxiety Brasil [ano]"
-6. "saúde mental álcool tendência Brasil [ano]"
-```
-
-Verificar também:
-- Novos relatórios do CISA (cisa.org.br)
-- Panorama anual Álcool e Saúde dos Brasileiros
-- Relatório Covitel (hábitos de consumo)
-
----
-
-## Brasil — Dados de Consumo (Abril 2026)
-
-### Panorama Geral
-- Consumo per capita 2024: **7,7 litros/ano** (vs 6,2 mundial)
-- Pico histórico: 8,6 litros (tendência de queda)
-- ~60% do consumo é o "litrão" do fim de semana
-- 418.467 internações relacionadas ao álcool em 2024 (+24,2% vs 2010)
-- 73.019 mortes atribuíveis ao álcool em 2023 (+10,2% vs 2010)
-
-### Tendência de Abstinência (dados frescos — Panorama 2025, CISA)
-- 2023: 55% dos brasileiros declararam não beber
-- 2025: **64%** declararam não beber (+9pp em 2 anos)
-- 18–24 anos: taxa de abstinência passou de 46% para 64% no mesmo período
-- 25–34 anos: de 47% para 61%
-- Consumo abusivo caiu de 17% para 15%
-
-> **Insight estratégico:** A onda "sober curious" chegou ao Brasil.
-> O Brasil segue tendência americana com 2-3 anos de defasagem —
-> e essa curva está acelerando agora. Janela de oportunidade aberta.
-
-### Consumo por Perfil
-- Consumo excessivo persiste entre quem continua bebendo
-- Crescimento entre mulheres: 12,7% → 15,2% (2020→2024)
-- Crescimento entre homens: 25,0% → 27,3% (2020→2024)
-- Classe média é a mais afetada — não apenas população vulnerável
-- "Litrão de fim de semana" representa 60% do consumo total
-
-### Geografia Prioritária
-| Estado | Relevância |
-|---|---|
-| Rio Grande do Sul | Principal — 34% bebe semanalmente |
-| Mato Grosso do Sul | Alta concentração |
-| São Paulo | Maior mercado absoluto |
-| Santa Catarina | Alta relevância |
-| Rio de Janeiro | 4º lugar, 26,3% |
+### Tendências recentes
+- Consumo de cerveja nos fins de semana recuou **25,4%** em 2025 vs 2024
+- Consumo individual (solitário) cresceu de 13,6% para **22,4%** das ocasiões
+- 62% dos brasileiros consideraram reduzir consumo no último ano
+- Gen Z: abstenção saltou de 46% para **64%** entre 2023–2025
 
 ---
 
-## Concorrentes (Abril 2026)
+## Mercado Endereçável
 
-### Sunflower — Ameaça Principal
+### Escala de dependência
+```
+Não Alcoólico → Social & Moderado (10%) → [EXCESSIVO 70%] → Dependente (20%) → Forte
+```
+
+**Foco: segmento Excessivo — 70% do mercado**
+
+Características:
+- Funcional, tem vida social ativa, não se identifica com o estereótipo
+- O álcool como anfitrião social, não como problema reconhecido
+- "Bebo só no fim de semana" — mas a cultura do FDS é intensa
+- Resistência a buscar ajuda por não se ver no espelho clínico
+
+---
+
+## 📊 Geografia Prioritária
+
+| Estado | Dado | Relevância |
+|---|---|---|
+| Rio Grande do Sul | 34% bebe semanalmente | Principal |
+| Mato Grosso do Sul | Alta concentração | Alta |
+| São Paulo | Maior mercado absoluto | Volume |
+| Santa Catarina | Alta relevância | Alta |
+| Rio de Janeiro | 26,3% — 4º lugar | Relevante |
+| Brasília (DF) | 25,7% consumo abusivo adultos | Monitorar |
+
+---
+
+## Perfil Demográfico do Público-Alvo
+
+- Idade: 25–54 anos
+- Renda: acima de R$ 2.000/mês
+- Classe: B, C, D
+- Hábitos: consome conteúdo online, busca soluções digitais
+- Cultura: happy hour, sertanejo, samba, pagode
+- Canal: Instagram, YouTube, Facebook, Google
+
+---
+
+## 📊 Concorrentes Diretos
+
+### Sunflower (YC W25) — Ameaça Principal
 - **Tração:** 200 → 100.000 MAUs em 6 meses. Em português.
-- **Posicionamento:** "Duolingo para vícios" — CBT + gamificação + AI Sponsor (Sam)
+- **Posicionamento:** "Duolingo para vícios" — gamificação + CBT + IA (Sam)
 - **Modelo:** HIPAA-compliant, subscription
 - **Fraqueza:** Funcional, não relacional. Americana, sem fluência cultural BR.
-- **Monitorar:** crescimento de MAUs, entrada de investimento, lançamento de features
 - **Nossa contra-narrativa:** "Bill te conhece. Sam te treina."
+- **Monitorar:** expansão BR, novos features, preço
 
-### Reframe
+### Reframe — Líder Global
 - **Tração:** 3,2M downloads. 91% reportam redução em 3 meses.
-- **Posicionamento:** "Science, not stigma." — 160 dias, neurocientífico
-- **Fraqueza:** Frio, protocolar, americano. Reviews reclamam de impessoalidade.
+- **Posicionamento:** "Science, not stigma." Programa 160 dias.
+- **Modelo:** ~$100–200/ano. Centenas de especialistas médicos.
+- **Fraqueza:** Frio, protocolar, americano. Reviews: custo + impessoal.
 - **Nossa contra-narrativa:** "Ciência com alma."
 
 ### I Am Sober
-- **Tração:** ~$200k/mês, 150k downloads
-- **Posicionamento:** Contador + pledges + fórum comunitário
-- **Fraqueza:** Sem IA, sem personalização, comunidade com toxicidade
-- **Nossa contra-narrativa:** "Acompanhamento real vs. fórum genérico."
+- **Tração:** ~$200k/mês, 150k downloads. Free + $9,99/mês.
+- **Posicionamento:** Contador + pledges + comunidade
+- **Fraqueza:** Sem IA real, sem personalização, comunidade tóxica.
+- **Nossa contra-narrativa:** "Acompanhamento real vs. fórum."
 
 ---
 
-## Contexto Cultural — O Momento Sober Curious
+## 📊 Contexto Cultural (atualizar mensalmente)
 
-O movimento "sober curious" começou nos EUA e chegou ao Brasil agora.
-Não é abstinência como sacrifício — é sobriedade como estilo de vida aspiracional.
+### Movimento Sober Curious no Brasil
+- EUA: consumo na mínima histórica de 90 anos (Gallup)
+- Brasil segue tendência americana com 2–3 anos de defasagem
+- **Status atual:** onda chegando — sobriedade se tornando aspiracional
+- Gen Z e Millennials: abertos à conversa sobre saúde mental + substâncias
 
-**Sinais no Brasil (2025–2026):**
-- Geração Z lidera a redução de consumo
-- Bebidas zero álcool crescem 37,5% nos últimos anos
-- "Sober shaming" vira tema de conversa (pressão social para beber)
-- Saúde mental + substâncias: pauta aberta em podcasts e redes
-- Marcas de cerveja investindo em versões zero álcool
+### IA e Bem-Estar
+- Explosão de apps de IA para saúde mental (Woebot, Wysa, etc.)
+- Momentos culturais de IA como gancho de conteúdo
+- Oportunidade: Bill como a IA que entende a recuperação
 
-**Para o conteúdo:** usar esses sinais culturais como ganchos de atualidade.
-O Padrinho está no centro de uma onda que está chegando.
-
----
-
-## Momentos Culturais para Ativar
-
-| Período | Gancho | Persona prioritária |
-|---|---|---|
-| Janeiro | Dry January — sobriedade como tendência | Rosa |
-| Fevereiro | Pós-Carnaval — reflexão, "overdid it" | Rosa, Ana |
-| Março | Dia da Mulher (8/3) — álcool e mulheres | Rosa, Ana |
-| Maio | Dia das Mães | Ana |
-| Ano todo | Eventos esportivos (Copa, olimpíadas) | Rosa, Pedro |
-| Dezembro | Reflexão de fim de ano, novas decisões | Todas |
-| Contínuo | Momentos virais de IA | Pedro, Rosa |
-| Contínuo | Lançamentos de concorrentes | Desmascaramento |
+### Bebidas Sem Álcool
+- Vendas globais: +37,5% entre 2018–2022
+- Brasil: marcas tradicionais lançando linhas zero álcool
+- Oportunidade: sobriedade não como privação, mas como escolha
 
 ---
 
-## NSMs e Metas de Negócio
+## 📊 Metas de Negócio Padrinho (contexto para o agente)
 
-- Faturamento alvo: R$ 550k/ano (~R$ 45k/mês)
-- 10% dos membros como pagantes
-- Meta de membros: 35.000
-- Meta de Gestores de Recuperação: 1.000
-- Meta de apadrinhados: 10% dos membros
-- Tempo médio para completar o programa: ~15 dias
+| Métrica | Meta |
+|---|---|
+| Faturamento anual | R$ 550k |
+| Faturamento mensal | ~R$ 45k |
+| Total de membros | 35.000 |
+| Gestores de Recuperação | 1.000 |
+| % pagantes | 10% |
+| % apadrinhados | 10% |
+| Tempo médio no programa | ~15 dias até completar |
+| Membros ativos diários | 6.000+ |
+| Retenção D10→D90 | Alta (dado de produto confirmado) |
+
+---
+
+## Protocolo de Atualização Mensal
+
+O agente deve, no início de cada mês:
+
+1. Rodar as queries definidas em `tactic/trend-radar.md`
+2. Verificar: novos dados CISA/Datasus publicados?
+3. Verificar: movimentos dos concorrentes (Sunflower especialmente)?
+4. Verificar: novos estudos sobre recuperação digital?
+5. Atualizar as seções marcadas com 📊
+6. Registrar data de atualização no cabeçalho
+7. Apresentar resumo das mudanças para aprovação antes de commitar
+
+**Fontes prioritárias:**
+- cisa.org.br (Panorama CISA)
+- datasus.saude.gov.br
+- Publicações do Ministério da Saúde
+- Reportagens Folha / Estadão / Agência Brasil sobre álcool
+- App stores (ratings e reviews dos concorrentes)

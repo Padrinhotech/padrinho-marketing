@@ -2,108 +2,110 @@
 
 ## Quem é o ICP do Padrinho
 
-Adulto brasileiro, 25–54 anos, com vida social ativa e hábito regular de
-consumo de álcool. Reconhece — ou começa a reconhecer — que sua relação
-com o álcool causa problemas. Deseja mudar, mas ainda não encontrou algo
-que funcione e que não exija que ele se torne outra pessoa.
+Adulto brasileiro, 25–54 anos, com vida social ativa e hábito regular
+de consumo de álcool, que começa a perceber os problemas causados pela
+bebida — mas ainda não se identifica com o estereótipo do "alcoólatra".
 
-**A chave:** ele não se identifica como "alcoólatra". A palavra não o descreve.
-E por isso nunca buscou ajuda — porque a ajuda que existe não parece ser
-para alguém como ele.
+**Não é o dependente em crise.** É a pessoa funcional, que trabalha,
+tem família, mantém compromissos — e que tem uma relação com o álcool
+que nunca conseguiu nomear, porque a história que lhe contaram sobre
+alcoolismo não a descreve.
 
 ---
 
-## Perfil Demográfico
+## Escala de Dependência — Onde o ICP se Encontra
 
-| Atributo | Valor |
+```
+Não Alcoólico → Social & Moderado → [EXCESSIVO 70%] → Dependente → Forte
+```
+
+O foco estratégico é o **segmento Excessivo** — 70% do mercado endereçável.
+
+**Características:**
+- Bebe, tem problemas pontuais com o excesso, mas não consegue negar o consumo
+- O álcool é fonte de relaxamento, alegria e pilar da existência social
+- "Bebo só no fim de semana" — mas a cultura do fim de semana é intensa
+- Imerso em ambientes onde o álcool é o anfitrião social
+- Não se enxerga como alguém que "precisa de ajuda"
+
+**Proposta de valor central:**
+Com o Padrinho, esse perfil não avança para o próximo nível.
+
+---
+
+## Dados Demográficos
+
+| Dimensão | Perfil |
 |---|---|
 | Idade | 25 a 54 anos |
 | Gênero | Homens e mulheres |
 | Renda | Acima de R$ 2.000/mês |
 | Classe | B, C, D |
 | Formação | Ensino fundamental completo ou mais |
-| Localização prioritária | RS, MS, SP, SC, RJ |
+| Hábitos digitais | Consome conteúdo online, busca soluções digitais |
+| Cultura | Happy hour, sertanejo universitário, samba, pagode |
+
+## Geográfico (prioridade)
+
+| Estado | Relevância |
+|---|---|
+| Rio Grande do Sul | Principal — 34% bebe semanalmente |
+| Mato Grosso do Sul | Alta concentração |
+| São Paulo | Maior volume absoluto |
+| Santa Catarina | Alta relevância |
+| Rio de Janeiro | 26,3% — 4º lugar |
 
 ---
 
-## Posição na Escala de Dependência
+## O que o ICP busca (necessidade declarada vs. real)
 
-```
-Não Alcoólico → Social/Moderado → [EXCESSIVO 70%] → Dependente → Forte
-```
+**Declarada:** "Quero reduzir as consequências do consumo."
 
-O ICP primário é o **perfil Excessivo** — 70% do mercado endereçável.
+**Real:** Quer um novo modo de se relacionar com a bebida — um outro
+estilo de vida — sem ter que abrir mão da identidade que construiu.
 
-Características:
-- Bebe com regularidade, tem problemas pontuais com o excesso
-- Álcool é fonte de relaxamento, alegria e conexão social
-- "Bebo só no final de semana" — mas a cultura do fim de semana é intensa
-- Funcional: mantém emprego, relações, responsabilidades
-- **Proposta de valor central:** com o Padrinho, esse perfil não avança
-  para o próximo nível da escala
+**Onde busca soluções:**
+Grupos de autoajuda, terapia online, aplicativos, cursos, mentorias.
+Mas até agora não encontrou algo efetivo que apoiasse a mudança de
+estilo de vida de forma sustentada.
 
----
-
-## Comportamento Digital
-
-- Consome conteúdo no Instagram, Facebook e YouTube
-- Busca soluções online: grupos de autoajuda, terapia, aplicativos
-- Já tentou outras abordagens — mas não encontrou algo efetivo
-- Usa apps de saúde e bem-estar
-- Sensível a conteúdo sobre saúde mental e estilo de vida
+**Barreira principal:**
+Resistência em se identificar como alguém que "tem um problema" —
+porque o único espelho disponível é o estereótipo, e ele não se encaixa.
 
 ---
 
-## Motivações para Buscar Ajuda
+## As 4 Personas do ICP
 
-1. Percepção de impacto nas relações (família, amigos, parceiro)
-2. Impacto no trabalho ou na produtividade
-3. Saúde física — ressaca frequente, peso, sono
-4. Evento gatilho — algo aconteceu e não dá mais para ignorar
-5. Desejo de ser exemplo (especialmente para filhos)
-
----
-
-## Barreiras para Buscar Ajuda
-
-1. **Não se vê no estereótipo** — "Alcoólatra é quem não funciona. Eu funciono."
-2. **Vergonha social** — admitir o problema parece admitir fraqueza
-3. **Medo de perder a vida social** — o álcool está em tudo
-4. **Desconfiança de soluções existentes** — AA, clínicas, tratamentos parecem "para casos graves"
-5. **Resistência à abstinência total** como único caminho
-
----
-
-## O Que o ICP Realmente Quer
-
-Não quer parar de beber necessariamente — quer parar de sofrer as
-consequências de beber. Quer retomar o controle. Quer que o álcool
-volte a ser uma escolha, não uma compulsão.
-
-Padrinho traduz isso como: **um outro estilo de vida** — não uma vida
-sem álcool forçada, mas uma relação diferente com ele.
-
----
-
-## As 4 Personas
-
-Cada persona representa uma expressão específica do ICP.
-Cada uma tem seu arquivo próprio em `skills/audiences/`.
+Cada persona tem seu arquivo dedicado com perfil completo e
+estratégia de conteúdo específica:
 
 | Persona | Arquivo | Status |
 |---|---|---|
-| Rosa, A Equilibrista | `rosa-equilibrista.md` | ✅ Persona primária — atacar primeiro |
-| Ana, A Mãe Protetora | `ana-mae-protetora.md` | ✅ Persona secundária |
-| Pedro, O Autônomo Solitário | `pedro-autonomo-solitario.md` | ✅ Persona terciária |
-| Caio, O Filho Ressentido | `caio-filho-ressentido.md` | ⏸ Desprioritizado por ora |
+| Rosa, A Equilibrista | `audiences/rosa-equilibrista.md` | ✅ Primária — atacar primeiro |
+| Ana, A Mãe Protetora | `audiences/ana-mae-protetora.md` | ✅ Secundária |
+| Pedro, O Autônomo Solitário | `audiences/pedro-autonomo-solitario.md` | ✅ Terciária |
+| Caio, O Filho Ressentido | `audiences/caio-filho-ressentido.md` | ⏸ Desprioritizado |
+
+**Critério de priorização:**
+Rosa foi escolhida como persona primária por concentrar o maior volume
+de mercado (Excessivo), maior aderência ao Instagram como canal, e
+a tensão mais visual e narrável para conteúdo orgânico.
 
 ---
 
-## Dados de Interesse dos Usuários Atuais
+## Jornada do ICP (macro)
 
-> **PENDENTE** — O founder irá compartilhar os dados de interesse dos
-> usuários atuais em breve. Quando disponíveis, atualizar este arquivo
-> e verificar se alguma persona precisa ser recalibrada.
->
-> Estes dados podem direcionar tipo de conteúdo, frequência por tema
-> e até propor novas personas não mapeadas.
+```
+INCONSCIÊNCIA          RECONHECIMENTO         CONSIDERAÇÃO           DECISÃO
+"Isso não é            "Isso sou eu."          "Existe um             "Vou tentar."
+comigo."                                        caminho."
+     │                       │                      │                      │
+     ▼                       ▼                      ▼                      ▼
+Desmascaramento          Reconhecimento         Acolhimento          Prova Social
+  (conteúdo)               (conteúdo)            (conteúdo)           + CTA suave
+```
+
+O conteúdo orgânico do Instagram opera principalmente nas duas
+primeiras etapas — movendo o ICP de inconsciente para reconhecido.
+O produto fecha nas últimas duas.

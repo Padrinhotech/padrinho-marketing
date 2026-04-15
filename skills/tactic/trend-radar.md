@@ -1,125 +1,136 @@
 # Trend Radar — Padrinho
 
-## Papel
-Este documento define o protocolo de monitoramento de tendências culturais
-e de mercado que devem informar o conteúdo semanal.
-
-O agente consulta este arquivo antes de cada ciclo de Strategy para
-verificar tendências ativas e oportunidades de gancho cultural.
+## Propósito
+O conteúdo do Padrinho precisa falar com o mundo em que o público vive,
+não apenas com o tema da recuperação em abstrato. Este arquivo define
+o protocolo de monitoramento de tendências culturais e de mercado que
+alimenta a criação de conteúdo.
 
 ---
 
-## Protocolo de Monitoramento
+## Protocolo de Atualização
 
 ### Frequência
-- **Semanal:** verificar notícias e tendências de comportamento antes de cada brief
-- **Mensal:** atualização profunda junto com `market-context.md`
-- **Pontual:** quando evento cultural relevante surgir (viral, notícia de impacto)
+- **Semanal:** monitoramento de tendências culturais (o agente busca antes de criar)
+- **Mensal:** atualização de dados de mercado (ver `market-context.md`)
+- **Trimestral:** revisão de concorrentes e movimentos do setor
 
-### Queries Semanais (rodar antes de cada brief de conteúdo)
+### Queries semanais obrigatórias (rodar via web_search antes de cada sessão)
 ```
-"alcoolismo notícias Brasil [semana/mês]"
-"sober curious tendência [mês/ano]"
-"hangxiety viral [mês]"
-"[evento cultural da semana] álcool"
-"saúde mental Brasil [semana]"
+"sober curious Brasil [mês/ano]"
+"alcoolismo tendência Brasil [ano]"
+"sobriedade lifestyle [mês/ano]"
+"hangxiety viral [mês/ano]"
+"dry january / dry july Brasil"
+"[concorrente principal] novidade lançamento"
+"bebida sem álcool Brasil [ano]"
+```
+
+### Queries de contexto cultural (rodar para posts de Reconhecimento)
+```
+"viral instagram brasil [semana]"
+"meme semana brasil"
+"trend tiktok brasil [semana]"
+"discussão twitter/x saúde mental brasil"
 ```
 
 ---
 
-## Framework de Avaliação de Tendência
+## Calendário Cultural Anual
 
-Antes de usar uma tendência no conteúdo, avaliar:
+Momentos de maior relevância temática para o Padrinho:
 
-| Critério | Pergunta | Mínimo |
-|---|---|---|
-| **Relevância** | Tem relação genuína com a jornada de recuperação? | Obrigatório |
-| **Autenticidade** | O Padrinho tem algo real a dizer sobre isso? | Obrigatório |
-| **Timing** | Está no pico ou já passou? | Pico ou subindo |
-| **Persona** | Qual persona vai se reconhecer? | Ao menos uma |
-| **Tom** | Dá para falar sem pregar ou diagnosticar? | Obrigatório |
-
-**Regra:** Uma tendência só entra no conteúdo se o Padrinho tem algo
-*próprio* a dizer sobre ela — não apenas reagir ao que está em alta.
-
----
-
-## Tendências Ativas (Abril 2026)
-
-### 🟢 Sober Curious (alta — onda crescente)
-- Movimento de sobriedade aspiracional chegando ao Brasil
-- Geração Z liderando redução de consumo
-- Bebidas zero álcool em alta nas prateleiras
-- "Sober shaming" como tema emergente
-- **Como usar:** validar que o público do Padrinho está dentro da cultura,
-  não fora dela. Sobriedade virou cool — e o Padrinho foi pioneiro.
-
-### 🟢 IA no Cotidiano (alta — contínua)
-- IA generativa presente em todos os aspectos da vida
-- Ghibli viral, Co-pilot, ChatGPT no dia a dia
-- Público familiarizado com agentes de IA
-- **Como usar:** Bill não é novidade estranha — é o que o mundo já usa,
-  mas com alma e propósito de recuperação.
-
-### 🟡 Hangxiety (média — educacional)
-- Termo entrando no vocabulário popular
-- Ainda pouco conhecido no Brasil
-- Oportunidade educacional para o Padrinho
-- **Como usar:** Pilar Empoderamento — explicar o que é, validar o que
-  o público já sente mas não sabe nomear.
-
-### 🟡 Saúde Mental Masculina (média — crescente)
-- Homens começando a falar sobre saúde mental
-- Ainda muito tabu, mas quebrando
-- Relevante especialmente para Pedro
-- **Como usar:** abrir espaço para Pedro sem fazer dele o "cara com problema"
-
-### 🔴 Dry January (sazonal — Janeiro)
-- Pico em Janeiro, decai em Fevereiro
-- Entrada natural para o Padrinho no início do ano
-- **Quando usar:** conteúdo em Dezembro (antecipação) e Janeiro (onda)
+| Período | Momento | Relevância | Persona | Pilar |
+|---|---|---|---|---|
+| Jan | Dry January | Alta — sobriedade como trend | Rosa, Pedro | Empoderamento |
+| Fev | Carnaval | Alta — pós-festa, reflexão | Rosa | Reconhecimento |
+| Mar | Dia da Mulher (8/3) | Média — álcool e mulheres | Rosa, Ana | Desmascaramento |
+| Mai | Dia das Mães | Alta — Ana, maternidade | Ana | Acolhimento |
+| Jun | Festas Juninas | Média — consumo normalizado | Rosa | Reconhecimento |
+| Jul | Dry July | Média — cresce no BR | Rosa, Pedro | Empoderamento |
+| Set | Setembro Amarelo | Alta — saúde mental | Todas | Acolhimento |
+| Out | Outubro Rosa | Média — saúde preventiva | Ana, Rosa | Empoderamento |
+| Nov | Novembro Azul | Média — saúde masculina | Pedro | Empoderamento |
+| Dez | Fim de ano | Alta — reflexão e recomeço | Todas | Reconhecimento + Acolhimento |
 
 ---
 
-## Tendências para Monitorar
+## Tendências Estruturais para Monitorar
 
-| Tendência | Por que monitorar | Signal de entrada |
-|---|---|---|
-| **Sunflower** crescimento | Principal concorrente em PT-BR | Novo funding, feature lançada |
-| **Legislação** álcool BR | Mudanças regulatórias afetam contexto | Notícia de lei ou campanha governamental |
-| **Celebridades** e sobriedade | Amplificadores culturais | Celebridade BR fala sobre sobriedade |
-| **Dados CISA** novos | Fonte primária de dados do mercado | Publicação de novo relatório |
-| **Formato viral** Instagram | Adaptar formato ao que está engajando | Novo formato de carrossel/reel em alta |
+### Sober Curious Movement
+- Nos EUA: consumo atingiu mínima histórica de 90 anos
+- No Brasil: 64% declararam não beber em 2025 (era 55% em 2023)
+- Gen Z e Millennials: sobriedade como estilo de vida aspiracional
+- **Oportunidade:** O Padrinho como marca do movimento sober no Brasil
 
----
+### IA e Saúde Mental
+- Explosão de apps de IA para bem-estar (Woebot, Wysa, etc.)
+- Momentos virais de IA (ex: filtro Ghibli) como gancho de conteúdo
+- **Oportunidade:** Bill como a IA que entende a jornada de recuperação
 
-## Log de Tendências Usadas
+### Bebidas Sem Álcool
+- Crescimento de 37,5% nas vendas globais (2018–2022)
+- Marcas tradicionais lançando versões zero álcool
+- **Oportunidade:** Sinalizar que "sobriedade" não é privação
 
-| Data | Tendência | Post | Resultado |
-|---|---|---|---|
-| Abr 2026 | IA Ghibli viral | Semana 10 — "Não é magia Ghibli, é tecnologia com alma" | *(registrar quando disponível)* |
-
----
-
-## Tendências que o Padrinho NÃO deve usar
-
-Por mais que estejam em alta, algumas tendências não são território do Padrinho:
-
-- **Memes de bebedeira / ressaca com humor** — trivializa o problema
-- **"Beber com moderação"** como solução — vai contra a proposta de valor
-- **Trends de saúde extrema** (detox, jejum, etc.) — não é o público
-- **Polêmicas políticas** — nunca tomar partido
-- **Crítica a AA ou tratamentos tradicionais** — respeito ao que existe
+### Saúde Mental Mainstream
+- Terapia e autocuidado normalizados entre 25–35 anos
+- Abertura para falar sobre saúde mental publicamente
+- **Oportunidade:** Posicionar o Padrinho neste contexto, não no contexto clínico
 
 ---
 
-## Integração com o Pipeline
+## Concorrentes — Monitoramento Contínuo
 
-O agente deve incluir no brief estratégico (Camada 1):
+### Sunflower (YC W25) — monitorar mensalmente
+- Queries: `"Sunflower app brasil"`, `"sunflower vícios novidade"`
+- O que observar: expansão no BR, novos features, comunicação
+- Nossa contra-narrativa: "Bill te conhece. Sam te treina."
 
-```markdown
-## Tendências Ativas desta Semana
-- [tendência 1]: [como usar]
-- [tendência 2]: [como usar]
-- Oportunidade de gancho cultural: [sim/não + justificativa]
-```
+### Reframe — monitorar trimestralmente
+- Queries: `"Reframe app brasil"`, `"reframe álcool"`
+- Nossa contra-narrativa: "Ciência com alma."
+
+### I Am Sober — monitorar trimestralmente
+- Nossa contra-narrativa: "Acompanhamento real vs. fórum."
+
+### Novos entrantes — monitorar mensalmente
+- Query: `"app recuperação alcoolismo brasil lançamento [ano]"`
+
+---
+
+## Como Usar as Tendências no Conteúdo
+
+### Regra principal
+A tendência é o gancho, não o conteúdo. O conteúdo é sempre sobre
+a jornada emocional do público. A tendência cria a ponte de entrada.
+
+**Exemplo correto:**
+Viral do filtro Ghibli → "Não é magia do universo Ghibli, é tecnologia
+com alma" → Bill como companheiro de recuperação com IA
+
+**Exemplo incorreto:**
+Viral do filtro Ghibli → post sobre o filtro Ghibli (sem conexão real)
+
+### Hierarquia de uso
+1. Tendência cultural viral → gancho de reconhecimento (Rosa)
+2. Dado de mercado novo → pilar de empoderamento (Pedro)
+3. Momento do calendário → pilar de acolhimento (Ana)
+4. Movimento de concorrente → reforço de posicionamento (todas)
+
+---
+
+## Dados de Interesse dos Usuários Atuais
+
+> ⏳ PENDENTE — Dados a serem compartilhados pelo time Padrinho.
+>
+> Quando recebidos, adicionar aqui:
+> - Temas mais engajados pelos usuários ativos
+> - Features mais utilizadas (Bill, Trilha, Comunidade, etc.)
+> - Momentos de maior engajamento (dias, horários)
+> - Feedback qualitativo recorrente
+>
+> Estes dados devem direcionar os temas de conteúdo e os pilares
+> priorizados a cada semana.
+
+**Lembrete ao agente:** Cobrar esses dados do usuário quando disponíveis.

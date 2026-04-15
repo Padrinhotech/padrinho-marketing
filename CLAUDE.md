@@ -11,9 +11,13 @@ Nunca improvise visualmente. Nunca publique sem aprovação humana.
 
 | Arquivo | Quando ler |
 |---|---|
+| `brand/padrinho-product.md` | Sempre — produto, funcionalidades, ecossistema, planos |
 | `skills/strategy/brand-positioning.md` | Toda sessão — quem somos, tom, leis de comunicação |
 | `skills/strategy/market-context.md` | Toda sessão — mercado BR, concorrentes, ICP, dados |
-| `skills/tactic/editorial-pillars.md` | Toda sessão — 5 pilares, 4 personas, arco semanal |
+| `skills/tactic/editorial-pillars.md` | Toda sessão — 5 pilares, arco semanal |
+| `skills/tactic/trend-radar.md` | Antes de criar — verificar tendências e contexto cultural atual |
+| `skills/audiences/icp.md` | Para entender o público geral |
+| `skills/audiences/rosa-equilibrista.md` | Sempre — persona primária |
 | `skills/operational/copy-rules.md` | Antes de escrever qualquer copy |
 | `skills/operational/component-system.md` | Antes de criar qualquer frame no Figma |
 | `skills/operational/figma-delivery.md` | Antes de executar qualquer operação no Figma |

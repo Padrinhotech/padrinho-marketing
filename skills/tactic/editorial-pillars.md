@@ -157,13 +157,13 @@ O arco da semana segue esta estrutura:
 
 | Template | Nome | Quando usar |
 |---|---|---|
-| A | Character Full Bleed | Posts emocionais fortes, narrativas, campanha de lançamento |
-| B | Scene Illustration | Posts aspiracionais, mensagens de esperança |
-| C | Network / Diagram | Apresentar Bill, explicar como funciona o app |
-| D | Editorial Typography Light | Listas educacionais, dados, pilares de empoderamento |
-| E | Editorial Typography Dark | Conteúdo de produto, features do app, autoridade |
-| F | Real Photo | Posts de reconhecimento/dores, situações cotidianas reais |
-| G | Data Visualization | Posts com dados estatísticos, comparações |
+| cover/dark-bold-left | Dark Bold Left | Posts emocionais fortes, Desmascaramento, Reconhecimento |
+| cover/minimal-light | Minimal Light | Posts de Acolhimento, Prova Social, aspiracionais |
+| data/circle-grid | Circle Grid | Apresentar Bill, dados visuais |
+| block/list-light | List Light | Listas educacionais, dados, Empoderamento |
+| block/list-dark | List Dark | Produto, Bill, autoridade, Acolhimento |
+| cover/photo-fullbleed | Photo Full Bleed | Reconhecimento, situações cotidianas, Desmascaramento |
+| data/wave-number | Wave + Number | Dados estatísticos, comparações, Empoderamento |
 
 ### Regra de Seleção de Template
 - Pilar Desmascaramento → F ou A

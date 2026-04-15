@@ -1,125 +1,147 @@
 # Rosa — A Equilibrista
 
-**Status: PERSONA PRIMÁRIA — foco principal de conteúdo e comunicação**
+**Status: PERSONA PRIMÁRIA — foco principal de conteúdo**
+
+---
+
+## Perfil
+
+| | |
+|---|---|
+| **Nome** | Rosa |
+| **Arquétipo** | A Equilibrista |
+| **Idade** | ~27 anos |
+| **Profissão** | Designer UX/Gráfico |
+| **Cidade** | Porto Alegre, RS |
+| **Renda** | R$ 3.000–6.000/mês |
+| **Segmento** | Excessivo (foco primário) |
+| **Canal primário** | Instagram, YouTube, Facebook |
 
 ---
 
 ## Quem é Rosa
 
-| Atributo | Valor |
-|---|---|
-| Idade | ~27 anos |
-| Profissão | Designer UX/gráfico |
-| Cidade | Porto Alegre, RS |
-| Renda | R$ 3k–6k/mês |
-| Posição na escala | Excessivo |
-| Canal primário | Instagram |
+Rosa tem uma vida que funciona. Trabalha bem, tem amigos, sai nos
+finais de semana. O álcool faz parte da paisagem social dela — está
+nas festas, nos happy hours, nas mesas de bar com as amigas.
 
-Rosa é funcional, criativa, social. Tem uma vida que ela gosta — trabalho que
-ama, amigos próximos, momentos bons. E tem uma relação com o álcool que ela
-nunca conseguiu nomear completamente.
+Ela não se vê como alguém com "um problema". Mas aos poucos começa
+a perceber: o domingo de ressaca que compromete a segunda-feira,
+o projeto que não entregou bem, a conversa que foi mais agressiva
+do que devia, a sensação de que perdeu o controle de uma noite
+que devia ter sido simples.
 
-Ela não bebe todo dia. Mas quando bebe, não sabe parar bem. A sexta começa
-perfeita e o sábado começa com uma pergunta que ela não faz em voz alta.
+Ela ainda tem resistência em buscar ajuda "de verdade" — porque
+buscar ajuda implicaria admitir algo que ela não está pronta para
+admitir. Mas está começando a prestar atenção.
 
-Ela ainda tem resistência em buscar ajuda tradicional — porque "ajuda" parece
-coisa para quem perdeu o controle de verdade. E ela não perdeu. Ou pelo menos
-é o que ela diz para si mesma.
-
----
-
-## A Tensão Central de Rosa
-
-> "Quero me divertir, mas quero acordar bem. Quero estar presente nas relações,
-> mas o álcool é o que me ajuda a relaxar. Quero mudar alguma coisa, mas não
-> quero virar outra pessoa."
-
-Ela está no meio: já percebe o padrão, ainda não se permitiu nomear.
-O Padrinho existe exatamente para esse intervalo.
+**O que ela quer:** Retomar o controle da própria vida sem abrir
+mão das coisas que gosta. Não quer parar de existir socialmente.
+Quer se sentir presente, lúcida e em paz — especialmente nas manhãs
+de sábado.
 
 ---
 
-## Como Rosa Pensa Sobre o Problema
+## Tensões Narrativas (material para conteúdo)
 
-- **Não se vê como "alcoólatra"** — a palavra não cabe na vida que ela tem
-- Racionaliza: "bebo só no fim de semana", "todo mundo bebe assim"
-- Reconhece os efeitos — ressaca moral, cansaço, posts que arrependeu
-- Já pesquisou no Google às 2h da manhã depois de uma noite ruim
-- Tem curiosidade sobre "sober curious" mas acha que não é para ela ainda
-
----
-
-## Onde Rosa Está Digitalmente
-
-- **Instagram** — consumo principal, segue conteúdo de lifestyle, design, saúde
-- **Spotify** — playlists por humor, muito uso no dia a dia
-- **iFood** — usa frequentemente, hábito de pedir quando bebe
-- **YouTube** — tutoriais, vlogs, conteúdo longo ocasionalmente
-- **TikTok** — consome mas não é o canal principal para ela
+- Sexta perfeita → sábado com aquela pergunta que ela não faz em voz alta
+- "Sou boa profissional" × "aquela reunião na segunda foi um desastre"
+- "Estou no controle" × o copo que foi além do que ela planejou
+- Vida social como valor × o preço que ela está pagando
+- Resistência a se identificar como "problema" × algo que incomoda
+- Quer mudar × não quer mudar tudo
 
 ---
 
-## O Que Faz Rosa Parar o Scroll
+## O Que a Faz Parar de Scrollar
 
-- Conteúdo que a reconhece sem a julgar
-- Situações do cotidiano que ela vive mas nunca viu nomeadas
-- Humor empático — ri de algo que dói um pouquinho
-- Estética limpa, tipografia bonita — ela é designer, percebe qualidade visual
-- Perguntas que ela faz para si mesma em voz baixa
+Conteúdo que faz ela pensar **"isso sou eu"** — sem que ela sinta
+que está sendo julgada ou diagnosticada.
 
----
+**Formatos que funcionam:**
+- Espelho de situação cotidiana específica ("sexta com os amigos")
+- Pergunta que ela já se fez mas não disse em voz alta
+- Dado que mostra que ela não é a única — e que não é o estereótipo
+- Tone: íntimo, como uma amiga que entende, não um médico que avalia
 
-## Proposta de Valor para Rosa
-
-> "Retome o controle da sua vida, sem abrir mão do que você gosta."
+**O que a faz sair do post com vontade de compartilhar:**
+- Reconhecimento ("mandei pra minha amiga, ela vai se identificar")
+- Informação que muda como ela pensa sobre algo que já sabia
 
 ---
 
 ## Estratégia de Conteúdo para Rosa
 
-### Tom
-Íntimo, sem julgamento, quase sussurrado. Como uma amiga que finalmente
-diz o que todo mundo estava pensando. Nunca pregando, nunca diagnosticando.
+### Pilar prioritário: Reconhecimento ("That's Me")
+Posts que espelham situações específicas do cotidiano dela.
+Não genéricos. Não moralizantes. Precisos.
 
-### Pilares prioritários para Rosa
+**Temas que ressoam:**
+- Fim de semana e a relação com o álcool (sexta/sábado)
+- A ressaca moral — não física, mas emocional
+- "Bebo só nas festas" e o que isso significa na prática
+- A diferença entre relaxar e escapar
+- Ser funcional e ainda ter uma relação complicada com a bebida
+- O que a hangxiety revela
 
-| Pilar | Por quê funciona para ela | Exemplo de tema |
-|---|---|---|
-| **Reconhecimento** | Ela precisa se ver antes de qualquer coisa | "Na vida de quem curte uma sexta com os amigos e acorda no sábado se perguntando por quê fez isso de novo." |
-| **Desmascaramento** | Quebra a barreira do estereótipo que a impede de pedir ajuda | "Você pode ser designer, ter uma vida boa, ser amada — e ainda ter uma relação complicada com o álcool." |
-| **Acolhimento** | Quando ela já se reconheceu, precisa ver que há caminho | "Não precisa escolher entre tecnologia e acolhimento. Pode ter os dois." |
-| **Empoderamento** | Dá informação para ela se mover | "Por que 'só no fim de semana' ainda conta." |
+### Pilar secundário: Desmascaramento
+Quebrar o mito de que "problema com álcool" tem uma única cara.
+Mostrar que a cara é a dela — e que isso não é fraqueza.
 
-### Formatos que funcionam para Rosa
-- **Post único** — foto real ou editorial light com headline espelho
-- **Carrossel** — arco narrativo, como uma conversa que evolui slide a slide
-- **Stories** — cotidiano, situações reconhecíveis, sem produção excessiva
+**Temas que ressoam:**
+- "O alcoolismo não parece como os filmes mostram"
+- "Você pode ser designer, mãe, amiga, boa profissional — e ainda assim"
+- Dados sobre o perfil do bebedor excessivo (classe média, funcional)
 
-### Frequência de aparição no conteúdo
-Rosa deve estar presente em pelo menos 2 dos 3 posts semanais,
-direta ou indiretamente. Ela é o centro de gravidade do feed.
+### Pilar terciário: Acolhimento
+Quando ela já reconheceu, mostrar que há caminho sem drama.
+Bill como presença discreta, não como ferramenta clínica.
 
-### O que nunca fazer com Rosa
-- Falar de "tratamento", "clínica", "internação" no contexto dela
-- Usar linguagem de AA ou 12 passos
-- Mostrar uma vida radicalmente diferente como o destino
-- CTA direto para download antes de ter construído confiança
-- Tom de alerta ou urgência médica
-
-### Arco de jornada no conteúdo
-```
-Reconhecimento → Desmascaramento → Acolhimento → Empoderamento → Prova Social
-(ela se vê)      (entende que pode)  (vê o caminho)  (se move)      (vê resultados)
-```
-Rosa não pula etapas. O conteúdo precisa respeitá-la onde ela está.
+**Temas que ressoam:**
+- "Sem julgamento. Sem pressão. No seu tempo."
+- "Você não precisa parar de existir — só de se perder"
+- O Bill como alguém que está lá, não como app que monitora
 
 ---
 
-## Referências de Posts que Falam com Rosa
+## Tom para Rosa
 
-| Frame ID | Por que funciona |
-|---|---|
-| `3177:56` | Foto real, vulnerabilidade, headline que nomeia o que ela sente |
-| `3177:3881` | Pergunta espelho — "Será que exagerei?" é exatamente o que Rosa pensa |
-| `3205:2954` | Cotidiano reconhecível — iFood, Spotify, Instagram |
-| `3205:1249` | Acolhimento sem venda — "Pode ter os dois" |
+- **Íntimo, não clínico** — como uma conversa, não um diagnóstico
+- **Preciso, não genérico** — situações específicas, não abstrato
+- **Validador antes de convidar** — primeiro "eu entendo", depois "há um caminho"
+- **Nunca moralizante** — ela já sabe que algo está errado
+- **Humor quando serve à verdade** — ela aprecia leveza, desde que não trivialize
+
+---
+
+## Exemplos de Hook que Funcionam para Rosa
+
+✓ "Na vida de quem curte uma sexta com os amigos, se diverte, ri muito — e acorda no sábado se perguntando por que fez isso de novo."
+
+✓ "Posso ser uma boa designer, boa amiga, boa filha — e ainda ter uma relação complicada com o álcool?"
+
+✓ "Não é ressaca. É aquela coisa que fica no fundo. Você conhece."
+
+✓ "Você não bebe todo dia. Mas quando bebe..."
+
+✗ "O alcoolismo destrói famílias." (muito longe dela)
+✗ "Você precisa de ajuda." (a fecha)
+✗ "Pare de beber." (ela não está pronta para isso)
+
+---
+
+## Tagline de Valor
+
+*"Retome o controle da sua vida, sem abrir mão do que você gosta."*
+
+---
+
+## Métricas de Engajamento Esperadas
+
+- Like & Save (reconhecimento silencioso)
+- Compartilhamento privado (manda para uma amiga)
+- Comentário do tipo "isso sou eu demais"
+- DM perguntando sobre o app
+
+O engajamento de Rosa é mais privado do que público — ela não vai
+comentar abertamente, mas vai salvar e compartilhar 1:1.
