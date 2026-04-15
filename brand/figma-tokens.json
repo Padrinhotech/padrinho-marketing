@@ -3,7 +3,8 @@
     "description": "Padrinho brand design tokens — extraídos do Figma Library",
     "library_file_id": "YtsMDsUi5SIF29NCOFs53x",
     "references_file_id": "sBItPeNLyvT5EMyKLqQbRv",
-    "staging_file_id": "SEE staging-file-id.txt",
+    "staging_file_id": "sBItPeNLyvT5EMyKLqQbRv",
+    "staging_note": "Same file as references. Write ONLY to pages starting with '_'. Never touch 🌀 Semana XX pages.",
     "last_synced": "2026-04-14",
     "synced_by": "Claude / Figma MCP"
   },

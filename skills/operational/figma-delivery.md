@@ -9,14 +9,25 @@ Você é a última etapa antes do humano ver o post no Figma.
 ---
 
 ## Regra Absoluta de Segurança
-**Você escreve EXCLUSIVAMENTE no arquivo Staging, página `_QUEUE`.**
+**Você escreve EXCLUSIVAMENTE nas páginas de staging dentro do arquivo `sBItPeNLyvT5EMyKLqQbRv`.**
 
-IDs dos arquivos:
-- ✅ Staging (ESCRITA PERMITIDA): ver `brand/staging-file-id.txt`
-- ❌ Styleguide `YtsMDsUi5SIF29NCOFs53x` — NUNCA ESCREVER
-- ❌ Referências `sBItPeNLyvT5EMyKLqQbRv` — NUNCA ESCREVER
+### Arquivo único — duas zonas
+O arquivo de referências e o staging são o mesmo arquivo (`sBItPeNLyvT5EMyKLqQbRv`).
+A separação é feita por **página**, não por arquivo.
 
-**Se o staging file ID não estiver disponível, PARAR e perguntar ao humano.**
+| Página | Permissão | Regra |
+|---|---|---|
+| `🌀 Semana XX` (qualquer) | 🔒 **NUNCA ESCREVER** | Posts aprovados — sagrados |
+| `_QUEUE` | ✅ Escrita permitida | Destino de todos os drafts |
+| `_APPROVED` | ✅ Humano move para cá | Posts aprovados aguardando export |
+| `_ARCHIVE` | ✅ Humano move para cá | Posts antigos revisados |
+| `_BRIEFS` | ✅ Escrita permitida | Contexto de sessão em texto |
+| `Thumbnail` | 🔒 **NUNCA ESCREVER** | Capa do arquivo |
+
+**Antes de qualquer operação de escrita, verificar o nome da página de destino.**
+**Se o nome não começar com `_`, PARAR imediatamente.**
+
+- ❌ Styleguide `YtsMDsUi5SIF29NCOFs53x` — arquivo separado, NUNCA ESCREVER
 
 ---
 

@@ -1,7 +1,5 @@
-# Staging File ID
-# Substitua pela ID do arquivo Figma Staging quando criado.
-# Exemplo: ABC123XYZ456
-# Para criar: abra o Figma, crie um novo arquivo chamado "Padrinho — Staging",
-# e extraia a ID da URL: figma.com/file/[FILE_ID]/...
+sBItPeNLyvT5EMyKLqQbRv
 
-PENDING
+# Este é o mesmo arquivo dos posts de referência.
+# O sistema escreve APENAS nas páginas de staging (_QUEUE, _APPROVED, _ARCHIVE, _BRIEFS).
+# As páginas das Semanas (🌀 Semana XX) são read-only — nunca modificar.

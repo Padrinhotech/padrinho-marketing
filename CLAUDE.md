@@ -20,9 +20,15 @@ As diretrizes de marca e estratégia nos skills são a fonte de verdade editoria
 - `brand/figma-tokens.json` — tokens de cor, tipografia, logos
 
 ## IDs dos Arquivos Figma
-- **Styleguide** (leitura): `YtsMDsUi5SIF29NCOFs53x`
-- **Referências** (leitura): `sBItPeNLyvT5EMyKLqQbRv`
-- **Staging** (escrita): a definir — ver `brand/staging-file-id.txt`
+
+| Arquivo | ID | Acesso |
+|---|---|---|
+| **Styleguide** | `YtsMDsUi5SIF29NCOFs53x` | 🔒 Leitura — tokens, logos, tipografia |
+| **Referências + Staging** | `sBItPeNLyvT5EMyKLqQbRv` | 🔒 Leitura nas `🌀 Semana XX` / ✅ Escrita nas `_*` |
+
+**Regra crítica:** No arquivo `sBItPeNLyvT5EMyKLqQbRv`, só escrever em páginas
+cujo nome começa com `_` (_QUEUE, _APPROVED, _ARCHIVE, _BRIEFS).
+Jamais tocar nas páginas `🌀 Semana XX` ou `Thumbnail`.
 
 ## Fluxo de Trabalho
 
