@@ -113,7 +113,14 @@ O arco da semana segue esta estrutura:
 
 ---
 
-## As 4 Personas — Quem Estamos Falando
+## As Personas — Quem Estamos Falando
+
+> Cada persona tem seu arquivo próprio em `skills/audiences/`.
+> Este arquivo lista apenas o resumo. Para estratégia de conteúdo por persona,
+> consultar o arquivo individual.
+>
+> **Persona primária:** Rosa (foco principal de todo o conteúdo)
+> **Caio:** desprioritizado por ora — ver `caio-filho-ressentido.md`
 
 ### Rosa, A Equilibrista (Excessivo — foco primário)
 - **Idade/perfil:** ~27 anos, designer UX/gráfico, Porto Alegre, R$3k–6k
