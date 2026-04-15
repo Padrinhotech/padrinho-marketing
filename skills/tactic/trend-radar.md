@@ -122,15 +122,24 @@ Viral do filtro Ghibli → post sobre o filtro Ghibli (sem conexão real)
 
 ## Dados de Interesse dos Usuários Atuais
 
-> ⏳ PENDENTE — Dados a serem compartilhados pelo time Padrinho.
->
-> Quando recebidos, adicionar aqui:
-> - Temas mais engajados pelos usuários ativos
-> - Features mais utilizadas (Bill, Trilha, Comunidade, etc.)
-> - Momentos de maior engajamento (dias, horários)
-> - Feedback qualitativo recorrente
->
-> Estes dados devem direcionar os temas de conteúdo e os pilares
-> priorizados a cada semana.
+> **Fonte:** Dashboard Padrinho Elo — Abril 2026
+> Arquivo completo: `skills/audiences/user-insights.md`
 
-**Lembrete ao agente:** Cobrar esses dados do usuário quando disponíveis.
+**Top interesses declarados:**
+1. Prevenção de Recaída (64) — tema #1
+2. Gatilhos (64) — tema #1 (empate)
+3. Ansiedade (61)
+4. Abstinência (60)
+5. Álcool (58)
+6. Rotina de Sobriedade (52)
+7. Sobriedade Longa (50)
+
+**Implicações para conteúdo:**
+- Recaída e gatilhos são os temas com maior demanda comprovada
+- Maioria feminina (54F / 43M) — Rosa como primária validada
+- 29 usuários já estão sóbrios — precisam de conteúdo de manutenção
+- Full abstinence é o objetivo dominante (25) — tom mais decisivo
+- Ansiedade como ponte álcool + saúde mental — sub-explorada
+
+**Solicitar atualização:** mensalmente junto com market-context.md
+

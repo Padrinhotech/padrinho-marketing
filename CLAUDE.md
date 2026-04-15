@@ -18,6 +18,7 @@ Nunca improvise visualmente. Nunca publique sem aprovação humana.
 | `skills/tactic/trend-radar.md` | Antes de criar — verificar tendências e contexto cultural atual |
 | `skills/audiences/icp.md` | Para entender o público geral |
 | `skills/audiences/rosa-equilibrista.md` | Sempre — persona primária |
+| `skills/audiences/user-insights.md` | Sempre — dados reais dos usuários para direcionar temas |
 | `skills/operational/copy-rules.md` | Antes de escrever qualquer copy |
 | `skills/operational/component-system.md` | Antes de criar qualquer frame no Figma |
 | `skills/operational/figma-delivery.md` | Antes de executar qualquer operação no Figma |
