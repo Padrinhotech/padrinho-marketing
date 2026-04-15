@@ -1,0 +1,7 @@
+# Staging File ID
+# Substitua pela ID do arquivo Figma Staging quando criado.
+# Exemplo: ABC123XYZ456
+# Para criar: abra o Figma, crie um novo arquivo chamado "Padrinho — Staging",
+# e extraia a ID da URL: figma.com/file/[FILE_ID]/...
+
+PENDING
