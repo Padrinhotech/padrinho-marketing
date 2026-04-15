@@ -1,64 +1,131 @@
 # Padrinho Marketing
 
-Sistema de automação de conteúdo para o Instagram do Padrinho.app — 
-com human-in-the-loop em cada etapa.
+Sistema de automação de conteúdo para o Instagram do Padrinho.app.
+Human-in-the-loop em cada etapa. Nada é publicado sem aprovação.
 
-## Visão
-Você dá um prompt. O sistema gera um post editável no Figma.
-Nada é publicado sem a sua aprovação explícita.
+---
 
-## Arquitetura
+## Como funciona
 
 ```
-[Prompt] → [Strategy Agent] → ✅ você aprova
-         → [Tactic Agent]   → ✅ você aprova  
-         → [Operational Agent]
-              → Copy          → ✅ você aprova
-              → Visual Brief  → ✅ você aprova
-              → Imagen 3      → ✅ você escolhe
-              → Figma Frame   → post aparece em _QUEUE
+Prompt → Strategy → Tactic → Copy → Componente → Figma _QUEUE → Você aprova
 ```
+
+O agente nunca constrói posts do zero. Ele copia um **componente aprovado**
+da página `_COMPONENTS` no Figma e adapta o conteúdo dentro das regras.
+Se nenhum componente existente serve, propõe um novo e aguarda aprovação.
+
+---
 
 ## Estrutura do Repositório
 
 ```
 padrinho-marketing/
 │
-├── CLAUDE.md                          # Instruções master do agente
+├── CLAUDE.md                              ← Instruções master do agente
 │
 ├── skills/
 │   ├── strategy/
-│   │   ├── brand-positioning.md       # Quem somos, tom, posicionamento
-│   │   └── market-context.md          # Mercado, concorrentes, dados Brasil
+│   │   ├── brand-positioning.md           ← Quem somos, tom, posicionamento, concorrentes
+│   │   └── market-context.md              ← Mercado BR, dados, ICP, personas
+│   │
 │   ├── tactic/
-│   │   └── editorial-pillars.md       # Pilares, personas, formatos, arco semanal
+│   │   └── editorial-pillars.md           ← 5 pilares, 4 personas, formatos, arco semanal
+│   │
 │   └── operational/
-│       ├── copy-rules.md              # Regras de copy e legenda
-│       ├── visual-agent.md            # Como briefar o Imagen 3
-│       └── figma-delivery.md          # Como entregar o frame no Figma
+│       ├── copy-rules.md                  ← Regras de copy, legenda, hashtags, CTAs
+│       ├── component-system.md            ← Design system de posts: componentes, layers, regras
+│       ├── figma-delivery.md              ← Como executar no Figma (copiar, adaptar, entregar)
+│       └── visual-agent.md                ← Quando/como usar Imagen 3 para fotos/ilustrações
 │
 ├── brand/
-│   ├── figma-tokens.json              # Tokens de cor, tipografia, logos
-│   ├── styleguide-file-id.txt         # ID do arquivo Figma Styleguide (read-only)
-│   ├── references-file-id.txt         # ID do arquivo de posts de referência (read-only)
-│   └── staging-file-id.txt            # ID do arquivo Staging (escrita do sistema)
+│   ├── figma-tokens.json                  ← Tokens completos: cores, tipografia, logos, formatos
+│   ├── styleguide-file-id.txt             ← YtsMDsUi5SIF29NCOFs53x (read-only)
+│   ├── references-file-id.txt             ← sBItPeNLyvT5EMyKLqQbRv (read-only nas Semanas)
+│   └── staging-file-id.txt                ← sBItPeNLyvT5EMyKLqQbRv (escrita nas páginas _*)
 │
 ├── references/
-│   └── index.md                       # Índice dos posts de referência com Frame IDs
+│   └── index.md                           ← Frame IDs dos posts de referência + mapeamento de componentes
 │
 └── outputs/
-    └── sessions/                      # Outputs gerados por sessão (gitignored)
+    └── sessions/                          ← Outputs por sessão (gitignored)
+        └── YYYY-MM-DD/
+            ├── strategy-brief.md
+            ├── content-plan.md
+            ├── copy.md
+            └── component-choice.md
 ```
 
-## Três Arquivos Figma
+---
 
-| Arquivo | ID | Permissão | Uso |
-|---|---|---|---|
-| **Styleguide** | `YtsMDsUi5SIF29NCOFs53x` | 🔒 Leitura | Tokens de cor, tipografia, logos |
-| **Referências** | `sBItPeNLyvT5EMyKLqQbRv` | 🔒 Leitura | Posts aprovados Semanas 08-10 |
-| **Staging** | ver `staging-file-id.txt` | ✏️ Escrita | Drafts em `_QUEUE` para revisão |
+## Arquivos Figma
 
-## Como Usar
+| Arquivo | ID | Uso |
+|---|---|---|
+| **Styleguide** | `YtsMDsUi5SIF29NCOFs53x` | Tokens de cor, tipografia, logos — leitura |
+| **Referências + Staging** | `sBItPeNLyvT5EMyKLqQbRv` | Referências (Semanas), Componentes, Staging |
+
+### Páginas em sBItPeNLyvT5EMyKLqQbRv
+
+| Página | Uso | Quem escreve |
+|---|---|---|
+| `🌀 Semana 08–10` | Posts aprovados — referência visual canônica | Nunca (read-only) |
+| `_COMPONENTS` | Design system de posts — templates pixel-perfect | Designer |
+| `_QUEUE` | Drafts gerados pelo agente para revisão | Agente |
+| `_APPROVED` | Posts aprovados para export | Humano move |
+| `_ARCHIVE` | Histórico de versões revisadas | Humano move |
+| `_BRIEFS` | Contexto de sessão em texto | Agente |
+
+---
+
+## Componentes Disponíveis
+
+### COVERS
+| Nome | Fundo | Melhor para |
+|---|---|---|
+| `cover/minimal-light` | Cream `#F9F8F3` | Acolhimento, Prova Social |
+| `cover/dark-bold-left` | Navy `#002E49` | Desmascaramento, Reconhecimento |
+| `cover/blumine-circle` | Horizon `#669AB7` | Reconhecimento (pergunta espelho) |
+| `cover/photo-fullbleed` | Foto real | Desmascaramento, Reconhecimento |
+
+### BLOCKS (corpo do carrossel)
+| Nome | Fundo | Melhor para |
+|---|---|---|
+| `block/list-dark` | Navy `#002E49` | Listas com produto/Bill, benefícios |
+| `block/list-light` | Cream `#F9F8F3` | Listas educacionais, cotidiano |
+| `block/statement-dark` | Navy `#002E49` | Um dado forte + contraste |
+| `block/minimal-statement-light` | Cream `#F9F8F3` | Reframing, analogias, explicações |
+
+### DATA
+| Nome | Fundo | Melhor para |
+|---|---|---|
+| `data/wave-number` | Cream → Horizon | Comparativos de consumo |
+| `data/circle-grid` | Cream `#F9F8F3` | Percentuais visuais |
+| `data/progress-bar` | Navy `#002E49` | Múltiplos percentuais |
+| `data/before-after` | Cream `#F9F8F3` | Evolução temporal |
+
+---
+
+## As 4 Personas
+
+| Persona | Perfil | Pilar |
+|---|---|---|
+| Rosa, A Equilibrista | 27a, designer, Porto Alegre | Reconhecimento |
+| Ana, A Mãe Protetora | 40a, SP | Acolhimento |
+| Pedro, O Autônomo Solitário | 31a, freelancer, Floripa | Empoderamento |
+| Caio, O Filho Ressentido | 21a, estudante, SP | Desmascaramento |
+
+---
+
+## Regra de Ouro
+
+> "Do not promote on the content ever — do it on the ads only."
+>
+> O conteúdo orgânico inspira e constrói relacionamento. Nunca vende.
+
+---
+
+## Setup (Claude Code)
 
 ### Pré-requisitos
 ```bash
@@ -66,8 +133,8 @@ npm install -g @anthropic-ai/claude-code
 ```
 
 ### Configurar Figma MCP
-Adicionar ao `~/.claude/settings.json`:
 ```json
+// ~/.claude/settings.json
 {
   "mcpServers": {
     "figma": {
@@ -78,30 +145,11 @@ Adicionar ao `~/.claude/settings.json`:
 }
 ```
 
-### Criar o Staging File
-1. Abra o Figma
-2. Crie um novo arquivo: "Padrinho — Staging"
-3. Crie 4 páginas: `_QUEUE`, `_APPROVED`, `_ARCHIVE`, `_BRIEFS`
-4. Copie o File ID da URL e cole em `brand/staging-file-id.txt`
-
-### Rodar o pipeline completo
+### Rodar
 ```bash
-claude "Post sobre o fim de semana e a relação com o álcool. Tom de reconhecimento."
+# Pipeline completo
+claude "Post sobre [tema], persona [nome]"
+
+# Modo rápido (brief já aprovado)
+claude "Post sobre [tema]. Template: cover/minimal-light. Brief Semana 11."
 ```
-
-### Rodar apenas a camada Operacional (estratégia já definida)
-```bash
-claude --skip-strategy "Post sobre hangxiety, usar brief da Semana 11"
-```
-
-## Personas
-| Persona | Perfil | Pilar preferido |
-|---|---|---|
-| Rosa, A Equilibrista | 27 anos, designer, Porto Alegre | Reconhecimento |
-| Ana, A Mãe Protetora | 40 anos, São Paulo | Acolhimento |
-| Pedro, O Autônomo Solitário | 31 anos, freelancer, Florianópolis | Empoderamento |
-| Caio, O Filho Ressentido | 21 anos, estudante, São Paulo | Desmascaramento |
-
-## Regra de Ouro
-> "Do not promote on the content ever — do it on the ads only."
-> O conteúdo orgânico inspira e constrói relacionamento. Nunca vende.

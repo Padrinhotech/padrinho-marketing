@@ -1,224 +1,118 @@
-# Figma Delivery Agent — Padrinho
+# Figma Delivery — Padrinho
 
-## Seu Papel
-Você recebe a imagem aprovada e o copy aprovado e constrói um frame
-editável no arquivo Staging do Figma, página `_QUEUE`.
-
+## Papel
 Você é a última etapa antes do humano ver o post no Figma.
+Você **não constrói posts do zero**. Você copia componentes de `_COMPONENTS`
+e adapta o conteúdo aprovado dentro das regras definidas.
+
+Para regras completas de adaptação de conteúdo, leia `component-system.md`.
 
 ---
 
-## Regra Absoluta de Segurança
-**Você escreve EXCLUSIVAMENTE nas páginas de staging dentro do arquivo `sBItPeNLyvT5EMyKLqQbRv`.**
+## Arquivo de Trabalho
 
-### Arquivo único — duas zonas
-O arquivo de referências e o staging são o mesmo arquivo (`sBItPeNLyvT5EMyKLqQbRv`).
-A separação é feita por **página**, não por arquivo.
+**Arquivo único:** `sBItPeNLyvT5EMyKLqQbRv`
 
-| Página | Permissão | Regra |
-|---|---|---|
-| `🌀 Semana XX` (qualquer) | 🔒 **NUNCA ESCREVER** | Posts aprovados — sagrados |
-| `_QUEUE` | ✅ Escrita permitida | Destino de todos os drafts |
-| `_APPROVED` | ✅ Humano move para cá | Posts aprovados aguardando export |
-| `_ARCHIVE` | ✅ Humano move para cá | Posts antigos revisados |
-| `_BRIEFS` | ✅ Escrita permitida | Contexto de sessão em texto |
-| `Thumbnail` | 🔒 **NUNCA ESCREVER** | Capa do arquivo |
+| Página | Permissão |
+|---|---|
+| `_COMPONENTS` | 🔒 Leitura + cópia de frames apenas |
+| `_QUEUE` | ✅ Escrita — destino de todos os drafts |
+| `_APPROVED` | Humano move para cá após aprovar |
+| `_ARCHIVE` | Humano move para cá |
+| `_BRIEFS` | ✅ Escrita — contexto de sessão |
+| `🌀 Semana XX` | 🔒 **NUNCA ESCREVER** |
+| `Thumbnail` | 🔒 **NUNCA ESCREVER** |
 
-**Antes de qualquer operação de escrita, verificar o nome da página de destino.**
-**Se o nome não começar com `_`, PARAR imediatamente.**
-
-- ❌ Styleguide `YtsMDsUi5SIF29NCOFs53x` — arquivo separado, NUNCA ESCREVER
+**Regra de segurança:** Antes de qualquer escrita, confirmar que a página
+de destino começa com `_`. Se não começar, PARAR.
 
 ---
 
-## Estrutura do Arquivo Staging
+## Fluxo de Execução
 
 ```
-Staging File
-│
-├── 📄 _QUEUE          ← você escreve aqui
-│   └── Post / YYYY-MM-DD / v1
-│
-├── 📄 _APPROVED       ← humano move para cá após aprovar
-│
-├── 📄 _ARCHIVE        ← posts antigos revisados
-│
-└── 📄 _BRIEFS         ← frames de texto com contexto da sessão
-```
-
----
-
-## Estrutura de Layers do Frame
-
-Todo frame deve ter exatamente esta estrutura de layers, nesta ordem (de baixo para cima):
-
-```
-Frame: Post / [YYYY-MM-DD] / v[N]
-│
-├── 🔒 _annotation (hidden: true)    ← nunca exporta
-│   ├── Caption completa
-│   ├── Hashtags
-│   ├── Brief estratégico resumido
-│   └── Prompt Imagen 3 utilizado
-│
-├── ✏️ handle                         ← @padrinho.app
-├── ✏️ subtext                        ← Instrument Sans
-├── ✏️ headline                       ← Instrument Serif
-├── 🎨 highlight-inline               ← retângulo #669AB7 @ 45% opacidade
-├── 🎨 color-overlay                  ← overlay de cor da marca (se necessário)
-├── 🖼 bg-image                       ← imagem do Imagen 3 ou foto
-└── 🎨 bg-color                       ← cor base de fundo (#002E49 ou #F9F8F3)
+1. Navegar para _COMPONENTS
+2. Localizar o frame do componente pelo nome (ex: "cover/minimal-light")
+3. Copiar o frame para _QUEUE
+4. Renomear:
+   - Post único:   "Post / YYYY-MM-DD / vN — {componente}"
+   - Carrossel:    "Slide 01 / {componente}", "Slide 02 / {componente}", ...
+   - Novo template: "RASCUNHO / {componente} / vN"
+5. Editar apenas os layers permitidos (ver component-system.md)
+6. Preencher _annotation com caption + hashtags + meta
+7. Tirar screenshot e validar visualmente
+8. Reportar ao humano com screenshot + link
 ```
 
 ---
 
-## Especificações Técnicas do Frame
+## Especificações Fixas (nunca alterar)
 
-```javascript
-frame: {
-  width: 1080,
-  height: 1440,
-  cornerRadius: 44,
-  name: `Post / ${date} / v${version}`
-}
 ```
-
-### Margens e Posicionamento
-```javascript
-margins: {
-  horizontal: 83,       // left e right
-  text_safe_top: 68,    // para templates com imagem full bleed
-  text_safe_bottom: 119 // acima do handle
-}
-
-handle: {
-  text: "@padrinho.app",
-  x: "center",
-  y: 1321,
-  font: "Instrument Sans",
-  fontSize: 12,
-  letterSpacing: 4,      // espaçado
-  opacity: 0.6,          // quase invisível
-  color: "#FFFFFF" // ou "#002E49" dependendo do background
-}
-```
-
-### Text Styles (usar estilos do Figma, não valores hardcoded)
-```javascript
-headline: {
-  fontFamily: "Instrument Serif",
-  fontSize: 32,
-  lineHeight: "150%",
-  // mistura Regular + Italic para ênfase emocional
-}
-
-subtext: {
-  fontFamily: "Instrument Sans",
-  fontSize: 14,
-  lineHeight: "140%",
-  fontWeight: 400
-}
-
-list_item_bold: {
-  fontFamily: "Instrument Sans",
-  fontSize: 14,
-  fontWeight: 700
-}
-```
-
-### Highlight Inline
-```javascript
-highlight_rectangle: {
-  fill: "#669AB7",
-  opacity: 0.45,
-  cornerRadius: 6,
-  // posicionar atrás da frase mais carregada emocionalmente
-  // padding: 8px top/bottom, 12px left/right da frase
-}
-```
-
-### Logo / Símbolo Padrinho
-```javascript
-// Node ID do símbolo no Styleguide: 1337:1703
-// Usar como instância de componente, não copiar como vetor
-symbol_padrinho: {
-  nodeId: "1337:1703",
-  // Para Template D/E: centralizado, acima do headline, ~64×64px
-  // Para Template F (foto): centralizado, entre foto e texto, ~40×40px
-}
+Dimensões:    1080 × 1440 px  (portrait 4:5)
+cornerRadius: 44 px
+Margem H:     83 px (left e right)
+Content W:    914 px  (= 1080 - 83*2)
+Handle Y:     H - 119 px  (= y ≈ 1321)
 ```
 
 ---
 
-## Plugin API — Código de Referência
+## Layer _annotation (obrigatório em todo frame)
 
-```javascript
-// Criar frame na página _QUEUE
-async function createPostFrame(data) {
-  const { copy, imagePath, template, date, version } = data;
-  
-  // 1. Navegar para o arquivo Staging
-  const stagingFileId = await readFile('brand/staging-file-id.txt');
-  
-  // 2. Encontrar ou criar página _QUEUE
-  const queuePage = figma.root.children.find(p => p.name === '_QUEUE');
-  
-  // 3. Criar frame principal
-  const frame = figma.createFrame();
-  frame.name = `Post / ${date} / v${version}`;
-  frame.resize(1080, 1440);
-  frame.cornerRadius = 44;
-  
-  // 4. Background
-  const bgRect = figma.createRectangle();
-  bgRect.name = 'bg-color';
-  bgRect.resize(1080, 1440);
-  bgRect.fills = [{ type: 'SOLID', color: hexToRgb('#002E49') }];
-  
-  // 5. Imagem (upload como image fill)
-  const imageHash = figma.createImage(imagePath);
-  const imgRect = figma.createRectangle();
-  imgRect.name = 'bg-image';
-  imgRect.fills = [{ type: 'IMAGE', imageHash: imageHash.hash, scaleMode: 'FILL' }];
-  
-  // 6. Headline com itálico em palavras-chave
-  const headlineText = figma.createText();
-  headlineText.name = 'headline';
-  // Aplicar Instrument Serif Regular como base
-  // Aplicar Italic em palavras marcadas com [i]palavra[/i] no copy
-  
-  // 7. Layer de anotação (hidden)
-  const annotation = figma.createFrame();
-  annotation.name = '_annotation';
-  annotation.visible = false;
-  // Adicionar caption, hashtags, brief, prompt
-  
-  // 8. Posicionar na página _QUEUE
-  queuePage.appendChild(frame);
-}
+Todo frame entregue em `_QUEUE` deve ter uma layer `_annotation` hidden
+contendo toda a informação necessária para publicação:
+
+```
+_annotation (visible: false)
+├── CAPTION
+│   [texto completo da legenda — máx 2.200 chars]
+│
+├── HASHTAGS (1º comentário)
+│   [máx 30 hashtags]
+│
+├── META
+│   Persona: [nome]
+│   Pilar: [pilar]
+│   Componente: [nome do componente usado]
+│   Data: YYYY-MM-DD
+│   Semana de referência: Semana XX
+│
+└── FEEDBACK (se v2+)
+    [feedback verbatim do humano que gerou esta versão]
 ```
 
 ---
 
-## Nomenclatura de Frames
+## Nomenclatura Completa
 
 ```
-Post / 2026-04-14 / v1      ← primeiro draft
-Post / 2026-04-14 / v2      ← após rejeição com feedback
-Post / 2026-04-14 / v2 ✓   ← após aprovação humana
+Post único:
+  Post / 2026-04-14 / v1 — cover/minimal-light
+  Post / 2026-04-14 / v2 — cover/minimal-light     ← após rejeição
+  Post / 2026-04-14 / v2 ✓ — cover/minimal-light   ← aprovado
+
+Carrossel:
+  Slide 01 / cover/dark-bold-left
+  Slide 02 / block/list-dark
+  Slide 03 / block/statement-dark
+  ...
+  Slide 09 / block/minimal-statement-light
+
+Novo template (proposto pelo agente):
+  RASCUNHO / cover/quote-dark / v1
 ```
 
 ---
 
 ## Checklist de Entrega
 
-- [ ] Frame está na página `_QUEUE` do arquivo Staging correto?
-- [ ] Dimensões: 1080×1440px com cornerRadius 44?
-- [ ] Nomenclatura: `Post / YYYY-MM-DD / vN`?
-- [ ] Headline usa Instrument Serif com pelo menos uma palavra em itálico?
-- [ ] Existe exatamente 1 highlight-inline (retângulo #669AB7)?
-- [ ] Handle @padrinho.app está em y=1321, centralizado?
-- [ ] Layer `_annotation` está hidden e contém caption + hashtags + prompt?
-- [ ] Todos os layers têm nomes descritivos (não "Rectangle 24")?
-- [ ] O frame NÃO está no arquivo Styleguide nem no de Referências?
-- [ ] Notificação enviada ao humano de que o post está em `_QUEUE`?
+- [ ] Componente copiado de `_COMPONENTS` (nunca construído do zero)?
+- [ ] Frame está em `_QUEUE` do arquivo `sBItPeNLyvT5EMyKLqQbRv`?
+- [ ] Nome do frame segue a nomenclatura correta?
+- [ ] Apenas layers permitidos foram editados (ver component-system.md)?
+- [ ] `hl` (highlight) ajustado para cobrir o texto correto?
+- [ ] `counter` atualizado com número do slide?
+- [ ] `_annotation` preenchida com caption + hashtags + meta?
+- [ ] Screenshot tirado e validado visualmente?
+- [ ] Resultado reportado ao humano com screenshot?

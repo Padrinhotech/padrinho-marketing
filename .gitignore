@@ -1,0 +1,10 @@
+# Session outputs (generated per run, not versioned)
+outputs/sessions/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/

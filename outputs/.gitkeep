@@ -1,9 +1,11 @@
 # outputs/
-# Este diretório armazena os outputs das sessões de geração.
+#
 # Estrutura por sessão:
 # outputs/sessions/YYYY-MM-DD/
-#   ├── strategy-brief.md
-#   ├── content-plan.md
-#   ├── copy.md
-#   ├── visual-brief.md
-#   └── image-candidate.png
+#   ├── strategy-brief.md      ← brief estratégico aprovado
+#   ├── content-plan.md        ← plano tático aprovado
+#   ├── copy.md                ← copy aprovado (headline, legenda, hashtags)
+#   └── component-choice.md    ← componente escolhido + justificativa
+#
+# Este diretório é ignorado pelo .gitignore (exceto o .gitkeep).
+# Os outputs ficam apenas localmente durante a sessão.
