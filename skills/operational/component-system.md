@@ -1,244 +1,190 @@
 # Component System — Padrinho Social Posts
 
 ## Conceito
-Este sistema funciona como um design system para posts de Instagram.
-Em vez de construir cada post do zero com tokens, o agente usa **componentes
-pré-aprovados** criados pelo designer, adaptando apenas o conteúdo.
-
-A separação de responsabilidades é clara:
-- **Designer** → define e mantém os componentes no Figma (`_COMPONENTS`)
-- **Agente** → escolhe, copia e adapta. Nunca altera estrutura visual sem aprovação.
+Design system para posts de Instagram. O designer cria e mantém os
+componentes no Figma. O agente escolhe, copia e adapta o conteúdo.
+Nunca constrói do zero. Nunca altera estrutura visual.
 
 ---
 
-## Localização dos Componentes
+## Arquivos Figma
 
-Arquivo Figma: `sBItPeNLyvT5EMyKLqQbRv`
-Página: `_COMPONENTS`
+| Arquivo | ID | Permissão |
+|---|---|---|
+| Styleguide | `YtsMDsUi5SIF29NCOFs53x` | Leitura — tokens, logos |
+| Referências + Staging | `sBItPeNLyvT5EMyKLqQbRv` | Leitura nas Semanas / Escrita nas `_*` |
 
-Cada componente é um frame 1080×1440px nomeado com a convenção:
-```
-{categoria}/{nome-do-template}
-```
-
-Exemplos:
-```
-cover/minimal-light
-cover/dark-bold-left
-cover/blumine-circle
-cover/photo-fullbleed
-block/list-dark
-block/list-light
-block/statement-dark
-block/minimal-statement-light
-data/wave-number
-data/circle-grid
-data/progress-bar
-data/before-after
-```
+Página dos componentes: `_COMPONENTS` (id `3345:20`) — leitura + cópia apenas.
 
 ---
 
-## Catálogo de Componentes
+## Catálogo Completo de Componentes
 
-### COVERS — Página inicial / Capa de carrossel
+### COVERS — Abertura / Capa de carrossel
 
-| ID | Nome | Fundo | Estrutura | Melhor para |
+| Nome | Frame ID | Fundo | Estrutura | Melhor para |
 |---|---|---|---|---|
-| `cover/minimal-light` | Minimal Light | Spring Wood `#F9F8F3` | Logo mark radial → headline centrado (Regular + *Italic*) → CTA dupla | Pilares: Acolhimento, Prova Social |
-| `cover/dark-bold-left` | Dark Bold Left | Blue Whale `#002E49` | Logo mark → headline grande esquerda (*Italic* predominante) → highlight full-line → seta decorativa → CTA dupla | Pilares: Desmascaramento, Reconhecimento |
-| `cover/blumine-circle` | Blumine Circle | Horizon `#669AB7` | Grande círculo stroke no topo → subhead centrado bold → headline gigante quote → highlight → CTA dupla | Pilares: Reconhecimento (pergunta espelho) |
-| `cover/photo-fullbleed` | Photo Full Bleed | Foto real (substituir) | bg-photo + gradient overlay → subhead + wave → headline handwriting-style → highlight duplo | Pilares: Desmascaramento, Reconhecimento |
+| `cover-a / minimal-light` | `3356:6120` | Cream `#F9F8F3` | Logo mark radial + serif headline esquerda (regular + *italic*) + body + handle | Acolhimento, Prova Social, posts editoriais |
+| `cover-b / dark-bold-left` | `3356:6288` | Navy `#002E49` | Logo mark radial + serif headline esquerda + body + handle | Desmascaramento, Reconhecimento |
+| `cover-c / photo-fullbleed` | `3356:6334` | Foto (blumine overlay) | Foto full bleed + headline centrado + highlight + CTA box dupla + raios decorativos | Reconhecimento emocional forte |
+| `cover-d / photo-fullbleed` | `3356:6076` | Foto real | Foto full bleed + mix handwriting/serif + seta curva + wave + CTA box | Desmascaramento, hooks virais |
 
-### BLOCKS — Slides de conteúdo / corpo do carrossel
+---
 
-| ID | Nome | Fundo | Estrutura | Melhor para |
+### BLOCKS — Slides de conteúdo / corpo de carrossel
+
+#### Tipográficos (sem foto)
+
+| Nome | Frame ID | Fundo | Estrutura | Melhor para |
 |---|---|---|---|---|
-| `block/list-dark` | List Dark | Blue Whale `#002E49` | Logo mark → headline serif → highlight → 4 bullets (bold keyword + regular detail) | Listas com produto/Bill, ações, benefícios |
-| `block/list-light` | List Light | Spring Wood `#F9F8F3` | Headline misto (Regular + *Italic* inline) → 4 bullets → CTA dupla | Listas educacionais, cotidiano, dados qualitativos |
-| `block/statement-dark` | Statement Dark | Blue Whale `#002E49` | Logo mark → número/stat grande → divider → highlight + *Italic* → wave | Um dado forte + contraste Regular/Italic |
-| `block/minimal-statement-light` | Minimal Statement Light | Spring Wood `#F9F8F3` | Logo mark → headline (Regular + *Italic* com highlight) → body 3 linhas → CTA dupla | Explicações, reframing, analogias |
+| `block-a / list-dark` | `3356:6346` | Navy `#002E49` | Serif headline + *italic* + highlight + 4 bullets (bold + regular) + CTA box dupla | Listas com produto/Bill, benefícios |
+| `block-b / list-light` | `3356:6373` | Cream `#F9F8F3` | Serif headline + *italic* + highlight + 4 bullets + CTA box dupla | Listas educacionais, cotidiano |
+| `block-c / statement-dark` | `3356:6399` | Navy `#002E49` | Logo mark radial + serif headline centrado + *italic* + highlight + CTA box dupla + wave | Statement de produto, acolhimento |
+| `block-d / statement-light` | `3356:6411` | Cream `#F9F8F3` | Logo mark radial + serif headline centrado + *italic* + highlight + CTA box dupla + wave | Statement editorial, reframing |
+| `block-e / list-dark-b` | `3356:6466` | Navy `#002E49` | Serif headline + *italic* + 3 bullets bold/regular + CTA box | Listas menores dark |
+| `block-f / list-light-b` | `3356:6444` | Cream `#F9F8F3` | Serif headline + *italic* + 3 bullets + CTA box | Listas menores light |
+| `block-g / topic-list-light` | `3356:6491` | Cream `#F9F8F3` | Subhead wave + serif headline grande + highlight + caixa topic-list (3 bullets dentro) | Dados com explicação + lista interna |
+
+#### Com foto
+
+| Nome | Frame ID | Fundo | Estrutura | Melhor para |
+|---|---|---|---|---|
+| `block-h / quote-content` | `3356:6555` | Foto dark + raios | Foto + subhead pequeno + serif headline grande + highlight + CTA box | Reconhecimento emocional, hangxiety |
+| `block-i / quote-list` | `3356:6530` | Foto warm | Foto + serif headline + *italic* + 4 bullets sobre foto | Listas sobre imagem, gatilhos |
+| `block-j / final-quote-a` | `3356:6518` | Foto dark + raios | Foto + serif headline centrado + *italic* + highlight + subtext + CTA texto | Fechamento de carrossel, reframing |
+| `block-k / quote-full-a` | `3356:6570` | Foto vivid | Foto + subhead + serif headline grande + *italic* + highlight + logo mark | Desmascaramento, narrativa forte |
+| `block-l / quote-full-b` | `3356:6588` | Foto escura | Foto + serif headline centrado + *italic* + highlight + logo mark | Reconhecimento ("Na vida de quem...") |
+| `block-m / quote-stacked` | `3356:5189` | Navy + stacked layers | Foto em camadas offset + serif headline + highlight | Desmascaramento artístico |
+| `block-m / quote-simple` | `3356:5272` | Navy | Serif headline simples grande + highlight | Statement mínimo dark |
+| `block-n / final-quote-b` | `3356:8512` | Foto + raios | Foto + serif headline + *italic* + highlight + CTA box + decorativos | Fechamento de carrossel |
+| `block-k / quote-full-c` | `3356:8530` | Foto | Foto + headline + CTA tag | Variante de fechamento |
+
+---
 
 ### DATA — Visualização de dados
 
-| ID | Nome | Fundo | Estrutura | Melhor para |
+| Nome | Frame ID | Fundo | Estrutura | Melhor para |
 |---|---|---|---|---|
-| `data/wave-number` | Wave + Number | Spring Wood → Horizon (camadas) | Texto contexto top → 4 camadas wave em gradiente azul → dado grande + highlight + subtext | Comparativos de consumo, antes/depois |
-| `data/circle-grid` | Circle Grid | Spring Wood `#F9F8F3` | Grid N×3 de círculos preenchidos/vazios → caption lateral | Percentuais visuais (ex: 60% de algo) |
-| `data/progress-bar` | Progress Bar | Blue Whale `#002E49` | Headline + stat grande → 1-2 barras horizontais preenchidas → fonte | Múltiplos percentuais comparativos |
-| `data/before-after` | Before/After | Spring Wood `#F9F8F3` | Título → 2 blocos lado a lado (valor antigo → seta → valor novo) por grupo | Evolução temporal de dados |
+| `data-a / wave-number` | `3356:8220` | Cream → Horizon (ondas) | Subtext top + 4 camadas de onda SVG + serif headline grande + *italic* + highlight | Comparativos de consumo |
+| `data-b / circle-grid-a` | `3356:8231` | Cream `#F9F8F3` | Grid de logo marks preenchidos/vazios + serif headline + highlight | Percentuais visuais (ex: 60% de algo) |
+| `data-c / circle-grid-b` | `3356:8455` | Cream `#F9F8F3` | Variante do grid de círculos | Percentuais com mais itens |
+| `data-c / huge-numbers` | `3356:6653` | Navy `#002E49` + dot grid | Grid de pontos como fundo + serif headline gigante + highlight + subtext | Números de impacto (ex: +1.200 pessoas) |
+| `data-d / quote-numbers` | `3356:6611` | Cream | Grid de logo marks + serif headline + *italic* + highlight + subtext | Milestones da comunidade |
+| `data-e / quote-parts` | `3356:8429` | Navy com linhas horizontais | Escala visual numérica (0–4) + serif headline centrado + highlight duplo | Frações/proporções |
+| `data-f / quote-fill-percentage` | `3356:8265` | Cream + preenchimento Horizon | Grid com linhas de percentual + número gigante + bold text | Percentuais tipo "55% já..." |
+| `data-g / quote-100` | `3356:8313` | Navy com grid de rounded-rect | Grid de itens preenchidos/vazios + serif headline + highlight | "X em cada 100 pessoas" |
 
 ---
 
-## Convenção de Nomenclatura de Layers
+## Elementos Decorativos (presentes nos componentes)
 
-Todo componente deve ter layers com esses nomes exatos para o agente localizar:
+Extraídos diretamente dos componentes reais. O agente não cria esses elementos —
+copia do componente e adapta posição quando necessário.
+
+| Elemento | Onde aparece | Descrição visual |
+|---|---|---|
+| **Logo Mark Radial** | cover-a, cover-b, block-c, block-d, block-l, data-d | Ícone Padrinho em spokes radiais. Usado como âncora visual entre topo e headline |
+| **Highlight Inline** | Todos | Retângulo `#669AB7` ~42% opacidade cobrindo linha do *italic* emocional |
+| **CTA Box Dupla** | cover-a, cover-b, block-a/b/c/d/e/f | Dois retângulos deslocados (+5,+5) criando sombra. Borda `#669AB7` |
+| **Wave / Tilde** | cover-a, cover-b, block-c/d/g, data-a | Til estilizado (~) em `#669AB7` sob palavra-chave de CTA ou bold |
+| **Raios Decorativos** | cover-c, block-h, block-j, block-n | Dois raios azuis `#669AB7` no canto superior esquerdo e direito |
+| **Seta Curva** | cover-d | Seta handwriting em branco apontando para CTA |
+| **Stacked Layers** | block-m/quote-stacked | Camadas de retângulos offset em tons de azul escuro + foto |
+| **Ondas SVG** | data-a | 4 camadas de forma orgânica em tons horizon, empilhadas |
+| **Dot Grid** | data-c/huge-numbers | Grid de pontos pequenos como textura de fundo |
+| **Linhas Horizontais** | data-e, data-f | Linhas dashed horizontais como referência de escala |
+| **Grid Rounded-Rect** | data-g | Grid de retângulos arredondados preenchidos/vazios para % |
+| **Caixa Topic-List** | block-g | Caixa com borda + 3 bullets dentro, separados do headline |
+
+---
+
+## Nomenclatura de Layers
+
+Todo componente deve ter layers com estes nomes para o agente localizar:
 
 ```
-frame (1080×1440)
+frame (1080×1440, cornerRadius 44)
 │
-├── bg-color              ← cor de fundo base (nunca editar)
-├── bg-photo              ← (apenas cover/photo) — SUBSTITUIR pela foto real
-├── gradient-overlay      ← (apenas photo/dark com imagem) — nunca editar
+├── bg-color / bg-photo ← substituir foto aqui
+├── gradient-overlay   ← nunca editar
+├── logo-mark          ← nunca editar
+├── counter            ← editar: "N  /  N"
 │
-├── logo-mark             ← símbolo radial Padrinho (nunca editar)
-├── bg-circle             ← (apenas cover/blumine) — nunca editar
+├── headline           ← editar: Instrument Serif Regular
+├── headline-italic    ← editar: Instrument Serif Italic
+├── hl                 ← ajustar largura ao texto italic
 │
-├── counter               ← "N  /  N" — EDITAR número do slide
+├── subhead            ← editar quando presente
+├── body               ← editar quando presente
 │
-├── headline              ← Instrument Serif, linha principal
-├── headline-italic       ← Instrument Serif Italic, linha de ênfase
-├── hl                    ← highlight-inline rect — AJUSTAR largura ao texto
+├── bullet-1/bold      ← editar texto
+├── bullet-1/regular   ← editar texto
+├── bullet-2/bold ... bullet-4/regular
 │
-├── subhead               ← (quando existe) texto menor acima do headline
+├── cta-shadow         ← mover junto com cta-box
+├── cta-box            ← mover junto com cta-shadow
+├── cta-text           ← editar texto
 │
-├── body                  ← (quando existe) parágrafo de corpo
+├── wave               ← ajustar posição horizontal
 │
-├── bullet-1/diamond      ← ◆ símbolo (não editar)
-├── bullet-1/bold         ← keyword em bold — EDITAR texto
-├── bullet-1/regular      ← detalhe em regular — EDITAR texto
-├── bullet-2/...          ← idem
-├── bullet-3/...          ← idem
-├── bullet-4/...          ← idem
+├── _annotation        ← hidden — preencher com caption + hashtags + meta
 │
-├── cta-shadow            ← retângulo sombra da CTA (deslocar junto com cta-box)
-├── cta-box               ← retângulo principal da CTA
-├── cta-text              ← texto dentro da CTA — EDITAR
-│
-├── wave                  ← underline decorativo (ajustar posição sob palavra-chave)
-│
-├── divider               ← linha horizontal (não editar)
-│
-├── _annotation           ← HIDDEN — caption, hashtags, meta (nunca exporta)
-│   ├── caption
-│   ├── hashtags
-│   └── brief-meta
-│
-└── handle                ← "@padrinho.app" (nunca editar)
+└── handle             ← nunca editar
 ```
 
 ---
 
-## Regras de Adaptação de Conteúdo
+## Limites de Conteúdo por Template
 
-### O que o agente PODE editar
-- `headline` — texto, mas nunca o tamanho de fonte (ajustar número de linhas se necessário)
-- `headline-italic` — texto (a palavra ou frase de ênfase emocional)
-- `hl` — largura do retângulo (para cobrir o texto do headline-italic)
-- `counter` — número do slide atual
-- `subhead` — texto
-- `body` — texto (máximo 3 linhas no template; se precisar de mais, considerar outro template)
-- `bullet-N/bold` e `bullet-N/regular` — texto dos bullets
-- `cta-text` — texto da CTA
-- `wave` — posição horizontal (para ficar sob a palavra certa)
-- `bg-photo` — substituir pelo fill da foto real
-- `_annotation` — preencher com caption, hashtags e meta completos
+| Categoria | Headline | Body/Subhead | Bullets | CTA |
+|---|---|---|---|---|
+| Covers (a/b) | 3 linhas | 2 linhas | — | 1 linha |
+| Covers (c/d) | 2 linhas | 1 linha | — | 1 linha |
+| Blocks list | 2 linhas | — | 3–4 items | 1–2 linhas |
+| Blocks statement | 2–3 linhas | 2 linhas | — | 1 linha |
+| Blocks quote (foto) | 2–3 linhas | 1 linha | 0–4 items | 1 linha |
+| Data | 1–2 linhas | 1–2 linhas | — | — |
 
-### O que o agente NUNCA deve alterar
-- Tamanhos de fonte
-- Cores (usar apenas os hex dos tokens)
-- Posição Y de qualquer elemento (exceto ajustes mínimos de 1-2px por quebra de linha)
-- O frame inteiro (dimensões, cornerRadius, clipsContent)
-- `handle` — sempre `@padrinho.app`, sempre igual
-- `logo-mark` — posição, tamanho, opacidade
-- `gradient-overlay` — qualquer propriedade
-- `bg-color` — cor de fundo do frame
+Se o conteúdo não couber: condensar o copy, não forçar no template.
 
-### Regra para `hl` (highlight inline)
-O highlight deve cobrir a linha de texto com:
-- `x`: 8px antes do início do texto
-- `y`: 4px acima do texto
-- `width`: largura do texto + 16px
-- `height`: sempre 76px (ou o definido no componente)
-- Nunca cobrir mais de uma linha
+---
 
-### Limite de conteúdo por template
+## O que o Agente PODE editar
+`headline` `headline-italic` `hl` (largura) `counter` `subhead` `body`
+`bullet-N/bold` `bullet-N/regular` `cta-text` `wave` (posição) `bg-photo` (fill) `_annotation`
 
-| Template | Headline máx. | Body máx. | Bullets |
-|---|---|---|---|
-| `cover/minimal-light` | 2 linhas curtas | — | — |
-| `cover/dark-bold-left` | 3 linhas | — | — |
-| `cover/blumine-circle` | 2 linhas | — | — |
-| `cover/photo-fullbleed` | 3 linhas | — | — |
-| `block/list-dark` | 1 linha + italic | — | 4 items |
-| `block/list-light` | 3 linhas misto | — | 4 items |
-| `block/statement-dark` | stat + 2 linhas | — | — |
-| `block/minimal-statement-light` | 2 linhas | 3 linhas | — |
-| `data/wave-number` | 2 linhas contexto | 2 linhas dado | — |
-| `data/circle-grid` | — | 3 linhas caption | — |
-| `data/progress-bar` | 2 linhas | 2 linhas por barra | 2 barras |
-| `data/before-after` | 1 linha título | — | 2 grupos |
+## O que o Agente NUNCA altera
+Fontes · Tamanhos · Cores · Posições Y · Frame dimensions · `handle` · `logo-mark` · `gradient-overlay` · `bg-color`
 
 ---
 
 ## Modo 1 — Componente existente
 
-```
-1. Identificar qual componente melhor serve a narrativa do slide
-2. Copiar o frame do componente para _QUEUE (via Figma MCP)
-3. Renomear: "Post / YYYY-MM-DD / vN — {nome-componente}"
-4. Editar apenas os layers permitidos acima
-5. Preencher _annotation com caption + hashtags + brief
-6. Screenshot para validação antes de entregar ao humano
-```
+1. Identificar o template mais adequado ao conteúdo
+2. Copiar o frame de `_COMPONENTS` para `_QUEUE`
+3. Renomear: `Post / YYYY-MM-DD / vN — {nome-componente}`
+4. Editar apenas layers permitidos
+5. Ajustar `hl` para cobrir o texto italic correto
+6. Preencher `_annotation` com caption + hashtags + meta
+7. Screenshot + validação visual
+8. Reportar ao humano
+
+## Modo 2 — Nenhum componente serve
+
+1. Identificar o gap e descrever o template proposto
+2. Justificar com referência visual (semanas 08–10 ou componentes similares)
+3. **AGUARDAR APROVAÇÃO** antes de qualquer construção
+4. Construir rascunho em `_QUEUE` com prefixo `RASCUNHO /`
+5. Após aprovação visual: designer move para `_COMPONENTS`
 
 ---
 
-## Modo 2 — Nenhum componente existente serve
+## Checklist de Entrega
 
-Quando o conteúdo exige uma estrutura visual que não existe no catálogo,
-o agente **não constrói silenciosamente**. Em vez disso:
-
-### Processo de proposta de novo template
-
-```
-1. Identificar por que nenhum template existente serve
-   (ex: "preciso de um template com citação grande centralizada e
-   imagem de fundo parcial — não existe no catálogo")
-
-2. Descrever o template proposto:
-   - Nome sugerido: {categoria}/{nome}
-   - Fundo: cor ou foto
-   - Estrutura de layers e hierarquia
-   - Referência visual mais próxima (post das semanas 08-10)
-   - Por que é necessário para esta narrativa
-
-3. Apresentar a proposta ao designer com:
-   "Nenhum template atual cobre este slide. Proponho um novo:
-    [descrição]. Posso construir um rascunho para você validar?"
-
-4. AGUARDAR APROVAÇÃO antes de construir qualquer coisa
-
-5. Se aprovado: construir o rascunho em _QUEUE com nome
-   "RASCUNHO / {nome-template} / vN"
-
-6. Após aprovação visual do designer:
-   a. Mover versão final para _COMPONENTS
-   b. Documentar no component-system.md (atualizar o GitHub)
-```
-
-### Critérios para propor um novo template
-Um novo template só é necessário quando:
-- O conteúdo é estruturalmente diferente (não apenas "mais texto" ou "menos itens")
-- Pelo menos 3 posts futuros poderiam usar o mesmo template
-- Existe uma referência visual nos posts das Semanas 08-10 que justifica
-
-Não é necessário novo template quando:
-- O template existente serve mas tem "texto a mais" → condensar o copy
-- Quer uma variação de cor → usar o template com cores alternadas (dark/light)
-- Quer trocar a posição de um elemento → não é permitido sem aprovação do designer
-
----
-
-## Checklist de Entrega (toda vez)
-
-- [ ] Componente escolhido é o mais adequado para o conteúdo?
-- [ ] Se novo template: proposta aprovada pelo designer?
-- [ ] Frame copiado do componente (não criado do zero)?
+- [ ] Frame copiado de `_COMPONENTS` (nunca construído do zero)?
 - [ ] Apenas layers permitidos foram editados?
-- [ ] `hl` está cobrindo a linha correta com largura ajustada?
-- [ ] `counter` atualizado com número correto do slide?
-- [ ] `_annotation` preenchida com caption + hashtags + meta?
-- [ ] Screenshot tirado e validado visualmente?
-- [ ] Frame está na página `_QUEUE`?
-- [ ] Nome do frame: `Post / YYYY-MM-DD / vN — {componente}`?
+- [ ] `hl` cobre o texto italic correto com largura ajustada?
+- [ ] `counter` atualizado?
+- [ ] `_annotation` preenchida (caption + hashtags + meta)?
+- [ ] Screenshot tirado e validado?
+- [ ] Frame em `_QUEUE` com nomenclatura correta?
