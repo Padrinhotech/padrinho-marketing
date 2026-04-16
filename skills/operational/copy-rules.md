@@ -125,16 +125,18 @@ Sempre uma **verdade**, nunca uma venda.
 
 ## Padrões de Destaque Visual
 
-### Destaque Inline (retângulo azul semitransparente)
-- 1 frase por post — sempre a frase mais carregada emocionalmente
-- Cor: #669AB7 @ 45% opacidade
-- Border radius: ~8px
-- Nunca em mais de uma frase no mesmo post
+### Highlight — bloco azul (layer `hl`)
+- Usado **exclusivamente em headlines e títulos**
+- Cobre a linha ou frase de maior peso emocional do headline
+- Cor: #C0D1DB (Jungle Mist) ou #669AB7 (Horizon) dependendo do componente
+- Nunca usar em body text, CTA ou bullets
+- 1 highlight por post — sempre no título, nunca no corpo
 
-### Underline Wave (~)
-- Vetor teal #669AB7
-- Sempre embaixo da última palavra do CTA ou da palavra-chave mais importante
-- Nunca embaixo de mais de uma palavra por post
+### Wave underline (layer `wave`)
+- Usado em **textos menores**: body text, CTA box, subhead
+- Nunca no headline (para headline usa-se o `hl`)
+- Posicionar sob a palavra-chave mais importante do texto menor
+- Nunca cobrir mais de uma palavra por slide
 
 ### Handle @padrinho.app
 - Sempre presente — é a assinatura, não um CTA
