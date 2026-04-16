@@ -2,7 +2,8 @@
 
 ## Papel
 Você é acionado sempre que um slide usa um template com foto (`bg-photo`).
-Sua função é selecionar a foto certa via Unsplash API e injetá-la no frame.
+Sua função é selecionar a foto certa do banco `_ASSETS` e copiar o fill
+para o layer de imagem do slide.
 
 **Leia sempre antes:** `skills/operational/photo-guidelines.md`
 
@@ -12,234 +13,152 @@ Sua função é selecionar a foto certa via Unsplash API e injetá-la no frame.
 
 | Template | Ação |
 |---|---|
-| `cover-c / photo-fullbleed` | Buscar via Unsplash |
-| `cover-d / photo-fullbleed` | Buscar via Unsplash |
-| `block-h / quote-content` | Buscar via Unsplash |
-| `block-i / quote-list` | Buscar via Unsplash |
-| `block-j / final-quote-a` | Buscar via Unsplash |
-| `block-k / quote-full-a/b/c` | Buscar via Unsplash |
-| `block-l / quote-full-b` | Buscar via Unsplash |
-| `block-n / final-quote-b` | Buscar via Unsplash |
+| `cover-c / photo-fullbleed` | Buscar em _ASSETS |
+| `cover-d / photo-fullbleed` | Buscar em _ASSETS |
+| `block-h / quote-content` | Buscar em _ASSETS |
+| `block-i / quote-list` | Buscar em _ASSETS |
+| `block-j / final-quote-a` | Buscar em _ASSETS |
+| `block-k / quote-full-a/b/c` | Buscar em _ASSETS |
+| `block-l / quote-full-b` | Buscar em _ASSETS |
+| `block-n / final-quote-b` | Buscar em _ASSETS |
 | Todos os outros | Nenhuma ação |
 
 ---
 
-## Configuração da API
+## Banco de Fotos — _ASSETS
 
-```
-Base URL:    https://api.unsplash.com
-Auth:        Authorization: Client-ID {UNSPLASH_ACCESS_KEY}
-Version:     Accept-Version: v1
-Key file:    brand/unsplash-key.txt  (gitignored — nunca commitar)
-Rate limit:  50 req/hora (demo) → 5000 req/hora (produção aprovada)
-```
+**Arquivo:** `sBItPeNLyvT5EMyKLqQbRv`
+**Página:** `_ASSETS`
+
+Fotos organizadas por pilar em 5 seções.
+Você popula arrastando fotos do Unsplash (ou qualquer fonte) diretamente
+para os slots. Uma vez dentro, ficam disponíveis para todos os posts.
+
+### Catálogo de slots
+
+#### RECONHECIMENTO (8 slots)
+| Slot | Descrição | Fundo |
+|---|---|---|
+| `rec-01 / rosto-oculto-cabelo` | Rosto coberto pelo cabelo | Claro |
+| `rec-02 / rosto-oculto-maos` | Rosto coberto pelas mãos | Claro |
+| `rec-03 / olhar-distante` | Olhar introspectivo, distante | Claro |
+| `rec-04 / mulher-sozinha` | Mulher sozinha, cotidiano | Claro |
+| `rec-05 / mulher-janela` | Mulher olhando pela janela | Escuro |
+| `rec-06 / mulher-cama-manha` | Manhã, reflexão, cama/sofá | Escuro |
+| `rec-07 / interior-noite` | Ambiente interior noturno | Escuro |
+| `rec-08 / desfoque-emocional` | Motion blur, desfoque expressivo | Escuro |
+
+#### DESMASCARAMENTO (6 slots)
+| Slot | Descrição | Fundo |
+|---|---|---|
+| `des-01 / mulher-funcional-tensa` | Mulher funcional, expressão tensa | Claro |
+| `des-02 / desfoque-movimento` | Desfoque, confusão, espiral | Escuro |
+| `des-03 / mulher-bem-arrumada` | Aparência OK, algo fora de lugar | Claro |
+| `des-04 / motion-blur-emocional` | Blur forte, emoção intensa | Escuro |
+| `des-05 / contraste-luz-sombra` | Luz dramática, sombras | Escuro |
+| `des-06 / perfil-pensativo` | Perfil, pensativo, neutro | Claro |
+
+#### ACOLHIMENTO (6 slots)
+| Slot | Descrição | Fundo |
+|---|---|---|
+| `aco-01 / duas-amigas-rindo` | Duas amigas, alegria real | Claro |
+| `aco-02 / abraco-amigo` | Abraço, acolhimento | Claro |
+| `aco-03 / maos-conexao` | Mãos — símbolo de cuidado | Claro |
+| `aco-04 / conversa-proxima` | Conversa íntima, próxima | Claro |
+| `aco-05 / amigas-carro` | Amigas no carro, autêntico | Claro |
+| `aco-06 / luz-dourada-grupo` | Grupo, golden hour, calor | Claro |
+
+#### EMPODERAMENTO (6 slots)
+| Slot | Descrição | Fundo |
+|---|---|---|
+| `emp-01 / mulher-caminhando` | Mulher em movimento, exterior | Claro |
+| `emp-02 / homem-correndo` | Homem correndo, ação | Claro |
+| `emp-03 / mulher-horizonte` | Horizonte, liberdade | Claro |
+| `emp-04 / postura-expansiva` | Postura aberta, confiante | Claro |
+| `emp-05 / exterior-ceu-aberto` | Céu visível, exterior | Claro |
+| `emp-06 / atleta-pista` | Atleta, pista, conquista | Claro |
+
+#### PROVA SOCIAL (4 slots)
+| Slot | Descrição | Fundo |
+|---|---|---|
+| `soc-01 / grupo-real-alegria` | Grupo pequeno, alegria real | Claro |
+| `soc-02 / amigos-cotidiano` | Amigos em momento cotidiano | Claro |
+| `soc-03 / momento-autentico` | Momento capturado, espontâneo | Claro |
+| `soc-04 / pessoas-rindo-real` | Riso autêntico, não posado | Claro |
 
 ---
 
-## Endpoint Principal — Search Photos
+## Processo de Seleção e Injeção
 
 ```
-GET https://api.unsplash.com/search/photos
+1. Identificar o pilar do slide (ver photo-guidelines.md)
+2. Identificar se o template precisa de fundo dark ou claro
+   → dark: block-h, block-j, block-n, cover-c, cover-d (com overlay)
+   → claro: block-i, block-k, block-l
+3. Escolher o slot mais adequado da seção correspondente
+4. Copiar o fill (image fill) do slot para o layer bg-photo do slide:
+   - Localizar o slot em _ASSETS pelo nome
+   - Ler o fills[0] (IMAGE fill)
+   - Aplicar no layer bg-photo do frame em _QUEUE
+5. Registrar na _annotation:
+   FOTO: {nome do slot} / _ASSETS
+   DATA: YYYY-MM-DD
 ```
 
-### Parâmetros
-
-| Parâmetro | Tipo | Obrigatório | Valores |
-|---|---|---|---|
-| `query` | string | Sim | termos de busca em inglês |
-| `orientation` | string | Sim | `portrait`, `landscape`, `squarish` — usar sempre `portrait` |
-| `per_page` | int | Não | default 10, máx 30 — usar `5` |
-| `page` | int | Não | default 1 |
-| `content_filter` | string | Não | `low` (default) ou `high` — usar `high` |
-| `order_by` | string | Não | `relevant` (default) ou `latest` |
-| `color` | string | Não | `black_and_white`, `black`, `white`, `yellow`, `orange`, `red`, `purple`, `magenta`, `green`, `teal`, `blue` |
-
-**Parâmetros que usaremos em toda busca:**
-```
-orientation=portrait
-per_page=5
-content_filter=high
-order_by=relevant
-```
-
-### Exemplo de request
+### Código de referência (Figma Plugin API)
 
 ```javascript
-const key = "seu_access_key_aqui";
-const query = "contemplative woman natural light authentic";
+// 1. Encontrar o slot em _ASSETS
+const assetsPage = figma.root.children.find(p => p.name === "_ASSETS");
+const slot = assetsPage.children.find(n => n.name === "rec-01 / rosto-oculto-cabelo");
 
-const response = await fetch(
-  `https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&orientation=portrait&per_page=5&content_filter=high`,
-  {
-    headers: {
-      "Authorization": `Client-ID ${key}`,
-      "Accept-Version": "v1"
-    }
-  }
-);
-
-const data = await response.json();
-// data.total       → total de resultados
-// data.total_pages → páginas disponíveis
-// data.results     → array de fotos
-```
-
----
-
-## Estrutura do Objeto Photo (response)
-
-```json
-{
-  "id": "eOLpJytrbsQ",
-  "width": 4000,
-  "height": 3000,
-  "color": "#A7A2A1",
-  "blur_hash": "LFC$yHwc8^$yIAS$%M%00KxukD*0",
-  "description": "...",
-  "alt_description": "...",
-  "urls": {
-    "raw":     "https://images.unsplash.com/photo-xxx",
-    "full":    "https://images.unsplash.com/photo-xxx?q=80&fm=jpg",
-    "regular": "https://images.unsplash.com/photo-xxx?q=75&fm=jpg&w=1080&fit=max",
-    "small":   "https://images.unsplash.com/photo-xxx?q=75&fm=jpg&w=400&fit=max",
-    "thumb":   "https://images.unsplash.com/photo-xxx?q=75&fm=jpg&w=200&fit=max"
-  },
-  "links": {
-    "self":              "https://api.unsplash.com/photos/eOLpJytrbsQ",
-    "html":              "https://unsplash.com/photos/eOLpJytrbsQ",
-    "download":          "https://unsplash.com/photos/eOLpJytrbsQ/download",
-    "download_location": "https://api.unsplash.com/photos/eOLpJytrbsQ/download"
-  },
-  "user": {
-    "id": "...",
-    "name": "Jeff Sheldon",
-    "username": "ugmonk",
-    "links": {
-      "html": "https://unsplash.com/@ugmonk"
-    }
-  }
+// 2. Pegar o fill de imagem
+const imageFill = slot.fills.find(f => f.type === "IMAGE");
+if (!imageFill) {
+  console.warn("Slot ainda sem foto — popular em _ASSETS");
+  return;
 }
-```
 
-### Campos que usamos
-
-| Campo | Uso |
-|---|---|
-| `urls.regular` | URL da imagem para injeção no Figma (1080px) |
-| `urls.full` | Fallback de maior qualidade |
-| `links.download_location` | Chamar quando usar a foto (obrigatório pela API) |
-| `links.html` | URL para atribuição na `_annotation` |
-| `user.name` | Nome do fotógrafo para atribuição |
-| `user.links.html` | Perfil do fotógrafo para atribuição |
-| `width` / `height` | Verificar se é portrait (height > width) |
-
----
-
-## Regra obrigatória — Trigger de Download
-
-Toda vez que uma foto é efetivamente usada num post (injetada no Figma),
-**deve-se chamar o endpoint de download** para registrar o uso:
-
-```javascript
-// Chamar após confirmar que a foto será usada no post
-await fetch(photo.links.download_location, {
-  headers: { "Authorization": `Client-ID ${key}` }
-});
-```
-
-Isso é exigência da API Unsplash Guidelines — rastreia o uso e
-credita o fotógrafo com a visualização.
-
----
-
-## Regra obrigatória — Hotlinking
-
-Sempre usar os hotlinked image URLs retornados pela API sob `photo.urls`.
-Nunca fazer download do arquivo e re-hospedar. Usar `urls.regular` diretamente.
-
----
-
-## Processo Completo de Injeção no Figma
-
-```javascript
-// 1. Montar query a partir de photo-guidelines.md
-const query = "contemplative woman natural light authentic portrait";
-
-// 2. Buscar na API
-const searchRes = await fetch(
-  `https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&orientation=portrait&per_page=5&content_filter=high`,
-  { headers: { "Authorization": `Client-ID ${KEY}`, "Accept-Version": "v1" } }
-);
-const { results } = await searchRes.json();
-
-// 3. Selecionar a foto mais adequada (primeiro resultado relevante)
-const photo = results[0];
-// Verificar: sem bebidas visíveis, orientação portrait, zona de texto livre
-
-// 4. Trigger de download (obrigatório)
-await fetch(photo.links.download_location, {
-  headers: { "Authorization": `Client-ID ${KEY}` }
-});
-
-// 5. Fazer fetch dos bytes para injetar no Figma
-const imgRes = await fetch(photo.urls.regular);
-const buffer = await imgRes.arrayBuffer();
-const bytes = new Uint8Array(buffer);
-
-// 6. Criar imagem no Figma e injetar no layer bg-photo
-const image = figma.createImage(bytes);
-const bgLayer = findLayer(frame, "bg-photo"); // nome real do layer
-bgLayer.fills = [{
-  type: "IMAGE",
-  imageHash: image.hash,
-  scaleMode: "FILL"
-}];
-
-// 7. Registrar atribuição na _annotation
-const attribution = `
-FOTO: ${photo.user.name} via Unsplash
-PERFIL: ${photo.user.links.html}?utm_source=padrinho_app&utm_medium=referral
-URL: ${photo.links.html}?utm_source=padrinho_app&utm_medium=referral
-QUERY: "${query}"
-`;
-// Escrever no layer _annotation do frame
+// 3. Aplicar no layer bg-photo do slide
+const bgLayer = findLayer(slideFrame, "ivana-cajina-9fl5AUulJsk-unsplash 1");
+bgLayer.fills = [imageFill];
 ```
 
 ---
 
-## Atribuição — Formato Obrigatório
+## Quando o slot está vazio
 
-Ao exibir uma foto do Unsplash, o aplicativo deve atribuir o Unsplash, o fotógrafo e conter um link de volta ao perfil deles com parâmetros UTM.
-
-Sempre registrar na `_annotation` com este formato:
-```
-FOTO: {photo.user.name} via Unsplash
-PERFIL: {photo.user.links.html}?utm_source=padrinho_app&utm_medium=referral
-URL: {photo.links.html}?utm_source=padrinho_app&utm_medium=referral
-QUERY: "{query_usada}"
-```
-
----
-
-## Quando não há resultado adequado
-
-```
-1. Tentar query simplificada (2-3 palavras)
-2. Se ainda sem resultado: preencher bg-photo com cor #0D1620
-3. Registrar na _annotation:
+Se o slot escolhido ainda não tem foto:
+1. Verificar se outro slot da mesma seção está populado
+2. Se nenhum da seção estiver: registrar na `_annotation`:
+   ```
    FOTO: PENDENTE
-   QUERY tentada: "{query}"
-   Sugestão: buscar manualmente em unsplash.com
-```
+   SLOT: {nome do slot}
+   SEÇÃO: {pilar}
+   ```
+3. Entregar o slide com o placeholder cinza do slot
+
+---
+
+## Como popular os slots
+
+1. Abrir a página `_ASSETS` no Figma
+2. Encontrar o slot da categoria desejada
+3. Arrastar a foto diretamente para o frame do slot
+4. Ajustar o fill para `FILL` (cobrir o frame inteiro)
+
+Fontes recomendadas para as fotos:
+- Unsplash.com (buscar com as queries de `photo-guidelines.md`)
+- Fotos próprias do Padrinho
+- Fotos fornecidas pelo time
 
 ---
 
 ## Checklist de entrega
 
-- [ ] Query construída seguindo photo-guidelines.md?
-- [ ] Parâmetros: `orientation=portrait`, `content_filter=high`?
-- [ ] Foto selecionada tem zona de texto livre para o template?
-- [ ] Trigger de download chamado (`photo.links.download_location`)?
-- [ ] Bytes injetados no layer correto (`bg-photo`)?
-- [ ] Atribuição registrada na `_annotation` com UTM params?
+- [ ] Pilar do slide identificado?
+- [ ] Slot compatível com o fundo do template (dark/claro)?
+- [ ] Slot tem foto? (não é placeholder cinza)
+- [ ] Fill copiado corretamente para o layer bg-photo?
+- [ ] Atribuição registrada na `_annotation`?
 - [ ] Screenshot tirado para validação visual?
