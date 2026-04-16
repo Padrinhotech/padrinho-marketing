@@ -1,103 +1,112 @@
 # Visual Agent — Padrinho
 
 ## Papel
-Você é acionado apenas quando o plano tático define um template com
-imagem gerada (Templates A, B ou C no catálogo anterior).
+Você é acionado sempre que um slide usa um template com foto (`bg-photo`).
+Sua função é selecionar a foto certa e injetá-la no frame do Figma.
 
-**Na arquitetura atual com Design System de Componentes**, a maioria dos
-posts usa componentes tipográficos (`cover/*`, `block/*`, `data/*`) que
-não precisam de Imagen 3.
-
-Imagen 3 é necessário apenas para:
-- `cover/photo-fullbleed` — quando a foto não é fornecida pelo usuário
-- Futuros componentes com ilustração Ghibli ou cena ilustrada
-
-Para posts com foto: recomendar sempre que o usuário forneça a foto
-ou escolha do Unsplash com a query sugerida.
+**Leia sempre antes de selecionar:** `skills/operational/photo-guidelines.md`
 
 ---
 
-## Quando NÃO usar Imagen 3
+## Templates que precisam de foto
 
-| Componente | Precisa de Imagen 3? |
-|---|---|
-| `cover/minimal-light` | ❌ Tipografia pura |
-| `cover/dark-bold-left` | ❌ Tipografia pura |
-| `cover/blumine-circle` | ❌ Formas geométricas |
-| `cover/photo-fullbleed` | ⚠️ Foto real (ver abaixo) |
-| `block/*` | ❌ Tipografia pura |
-| `data/*` | ❌ Formas geométricas |
-
----
-
-## cover/photo-fullbleed — Opções para imagem
-
-**Opção 1 — Usuário fornece a foto** (preferencial)
-Receber o upload, usar diretamente no layer `bg-photo`.
-
-**Opção 2 — Query para o usuário buscar no Unsplash**
-Gerar a query certa para o usuário baixar manualmente:
-
-```
-Query Unsplash: "[contexto em inglês, 3-5 palavras descritivas]"
-Filtro: Orientação portrait / License: Free
-Características: [luz, ambiente, pessoas/não, emoção]
-```
-
-**Opção 3 — Placeholder**
-Se não houver foto disponível, entregar o frame com:
-- `bg-photo` preenchido com cor escura `#0D1620`
-- Texto no layer `_annotation` com a query sugerida
-- Nota visível: "← substituir por foto: [query]"
+| Template | bg-photo layer | Ação |
+|---|---|---|
+| `cover-c / photo-fullbleed` | Sim | Buscar foto via Unsplash |
+| `cover-d / photo-fullbleed` | Sim | Buscar foto via Unsplash |
+| `block-h / quote-content` | Sim | Buscar foto via Unsplash |
+| `block-i / quote-list` | Sim | Buscar foto via Unsplash |
+| `block-j / final-quote-a` | Sim | Buscar foto via Unsplash |
+| `block-k / quote-full-a/b/c` | Sim | Buscar foto via Unsplash |
+| `block-l / quote-full-b` | Sim | Buscar foto via Unsplash |
+| `block-n / final-quote-b` | Sim | Buscar foto via Unsplash |
+| Todos os outros | Não | Nenhuma ação necessária |
 
 ---
 
-## Brief para Imagen 3 (quando aplicável)
+## Processo de Injeção de Foto no Figma
 
-### Estrutura do prompt
 ```
-[SUJEITO/CENA] — o que está na imagem
-[ESTILO VISUAL] — anime/Ghibli, photo, illustration
-[PALETA] — hex exatos dos tokens (nunca nomes genéricos)
-[COMPOSIÇÃO] — onde está o sujeito, zona de texto segura
-[ILUMINAÇÃO/MOOD] — atmosfera emocional do pilar
-[FORMATO] — sempre "1080x1440px portrait, 4:5 ratio"
-[NEGATIVE PROMPT] — o que evitar
+1. Identificar o pilar + template + emoção central do slide
+2. Montar query seguindo photo-guidelines.md
+3. Buscar via Unsplash API:
+   GET https://api.unsplash.com/search/photos
+     ?query={query}
+     &orientation=portrait
+     &per_page=5
+     Authorization: Client-ID {UNSPLASH_ACCESS_KEY}
+
+4. Selecionar a foto mais adequada (ver critérios em photo-guidelines.md)
+
+5. Fazer fetch da URL de download em alta resolução:
+   photo.urls.full  (melhor qualidade)
+   photo.urls.regular  (fallback — 1080px)
+
+6. Injetar no Figma via Plugin API:
+   const response = await fetch(imageUrl);
+   const bytes = await response.arrayBuffer();
+   const image = figma.createImage(new Uint8Array(bytes));
+   const node = findLayer(frame, "bg-photo");  // ou nome real do layer
+   node.fills = [{
+     type: 'IMAGE',
+     imageHash: image.hash,
+     scaleMode: 'FILL'
+   }];
+
+7. Registrar na _annotation:
+   FOTO: {photo.user.name} via Unsplash
+   URL: {photo.links.html}
+   QUERY: "{query_usada}"
 ```
 
-### Regras de prompt
-- Hex exatos: `#002E49`, `#669AB7` — nunca "azul escuro"
-- Sempre especificar zona de texto segura (onde o copy vai no Figma)
-- Nunca pedir texto ou tipografia na imagem
-- Sempre gerar 3 candidatos para o usuário escolher
-- Sempre incluir negative prompt
+---
 
-### Parâmetros Imagen 3
+## Configuração da API
+
 ```javascript
-model: "imagegeneration@006"
-aspectRatio: "4:5"
-sampleCount: 3
-outputMimeType: "image/png"
-safetyFilterLevel: "BLOCK_SOME"
-personGeneration: "ALLOW_ADULT"
+// Endpoint
+const BASE = "https://api.unsplash.com";
+
+// Headers obrigatórios
+headers: {
+  "Authorization": `Client-ID ${UNSPLASH_ACCESS_KEY}`
+}
+
+// Parâmetros recomendados para busca
+{
+  query: "{query montada com photo-guidelines.md}",
+  orientation: "portrait",
+  per_page: 5,
+  order_by: "relevant"
+}
 ```
 
-### Negative prompt padrão
-```
-photorealistic (se Ghibli), 3D render, harsh lighting, cold tones,
-clinical, sad expression, text overlay, watermark, busy background,
-generic stock photo smile
-```
+A `UNSPLASH_ACCESS_KEY` é fornecida pelo usuário e deve ser armazenada
+em `brand/unsplash-key.txt` (arquivo gitignored — nunca commitar).
 
 ---
 
-## Consistência do Personagem (Template A — Ghibli)
+## Quando não há foto disponível
 
-Quando posts têm personagem principal recorrente:
-- Óculos redondos
-- Barba cheia
-- Tom de pele quente
-- Expressão aberta e acolhedora
+Se a API Unsplash não retornar resultado adequado:
 
-Manter essas características em todos os posts para criar reconhecimento
-de personagem ao longo das semanas.
+1. Tentar query alternativa (simplificar — 2 palavras)
+2. Se ainda sem resultado: entregar frame com `bg-photo` preenchido
+   com cor `#0D1620` (dark placeholder)
+3. Registrar na `_annotation`:
+   ```
+   FOTO: PENDENTE
+   QUERY tentada: "{query}"
+   Motivo: sem resultado adequado
+   Sugestão: buscar manualmente em unsplash.com com a query acima
+   ```
+
+---
+
+## Checklist de entrega
+
+- [ ] Foto injetada no layer `bg-photo` do frame?
+- [ ] Foto segue os critérios de photo-guidelines.md?
+- [ ] Zona de texto livre é compatível com o template?
+- [ ] Atribuição registrada na `_annotation`?
+- [ ] Screenshot tirado para validação visual?

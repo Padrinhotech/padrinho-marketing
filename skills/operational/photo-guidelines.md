@@ -1,266 +1,244 @@
-# Photo Guidelines — Padrinho Social Posts
+# Photo Guidelines — Padrinho Instagram
 
-## Propósito
-Este documento define os critérios de seleção e curadoria fotográfica
-para os posts do Instagram do Padrinho. As diretrizes foram extraídas
-diretamente da análise dos posts de referência aprovados (Semanas 08–10).
+## Papel deste Skill
+Você usa este skill sempre que precisar selecionar, avaliar ou briefar
+uma foto para um template com imagem. Ele define os critérios visuais
+da fotografia Padrinho, extraídos dos posts de referência aprovados
+(Semanas 08–10), e o processo de busca via Unsplash API.
 
-O agente usa estas diretrizes para construir queries Unsplash e selecionar
-automaticamente a foto mais adequada para cada template com imagem.
-
----
-
-## O que fazem as fotos do Padrinho
-
-Não ilustram o tema — **criam o contexto emocional** antes do texto.
-A foto é a primeira camada de identificação: o leitor se reconhece
-(ou reconhece alguém que conhece) antes de ler uma única palavra.
-
-**Regra central:** A foto deve provocar reconhecimento silencioso,
-não desconforto ou julgamento. O leitor deve pensar "isso sou eu",
-nunca "que pena essa pessoa".
+Leia antes de usar qualquer template com `bg-photo`:
+`cover-c`, `cover-d`, `block-h`, `block-i`, `block-j`, `block-k`, `block-l`, `block-n`
 
 ---
 
-## Diretrizes Visuais
+## O que a foto faz num post Padrinho
 
-### 1. Pessoas — regras de ouro
-
-**Autenticidade acima de tudo**
-- Expressões reais, não poses para câmera
-- Sem sorriso forçado ou positividade performática
-- Momentos capturados, não encenados
-- Imperfeições são bem-vindas — cabelo bagunçado, olhar distante
-
-**Diversidade representativa**
-- Gênero: maioria feminina (alinhado com a base de usuários: 56% F)
-- Faixa etária: 25–45 anos preferencialmente
-- Raça/etnia: diversidade real, não tokenismo
-- Corpos: não idealizados, cotidianos
-
-**Posicionamento do rosto**
-- Rosto total visível: OK quando a expressão é o conteúdo
-- Rosto parcialmente oculto: muito eficaz — cria identificação universal
-  (ex: mão cobrindo o rosto, cabelo na frente, ângulo de costas/perfil)
-- Rosto desfocado/motion blur: funciona para temas de confusão, espiral
-- Rosto fora do frame (só corpo/mãos): para posts com texto central grande
-
-**Por que o rosto parcial funciona tão bem:**
-Quando o rosto está oculto, o leitor projeta a própria experiência.
-A foto fala "isso poderia ser qualquer pessoa — inclusive você."
+Não ilustra o tema — **cria o contexto emocional antes do texto**.
+A foto é lida antes da primeira palavra. Ela precisa provocar
+reconhecimento silencioso: "isso sou eu" — nunca "que pena essa pessoa".
 
 ---
 
-### 2. Iluminação
+## Critérios Visuais
 
-**Preferências por pilar:**
+### Pessoas
 
-| Pilar | Iluminação preferida | Evitar |
+| Critério | Correto | Evitar |
 |---|---|---|
-| Reconhecimento | Natural difusa, quente, interior | Flash, estúdio artificial |
-| Desmascaramento | Contrastada, sombras, dramática | Luz uniforme plana |
-| Acolhimento | Suave, dourada (golden hour), íntima | Fria, azulada |
-| Empoderamento | Luz natural forte, exterior, vívida | Ambientes fechados escuros |
-| Prova Social | Quente, alegre, exterior | Posada, corporativa |
+| Expressão | Real, capturada, imperfeita | Posada, sorriso forçado |
+| Rosto | Parcial, oculto, desfocado | Full-face olhando para câmera |
+| Corpo | Natural, cotidiano | Idealizado, fitness, corporativo |
+| Gênero | Maioria feminina (56% da base) | Só masculino |
+| Idade | 25–45 anos | Adolescentes ou muito idosos |
+| Raça | Diversidade real | Tokenismo ou ausência |
 
-**Regras gerais:**
-- Luz natural sempre preferível à artificial
-- Luz quente (âmbar, dourada): transmite segurança e acolhimento
-- Luz fria (azul, branco): só em contextos de templates dark navy onde
-  o overlay da marca já adiciona calor
-- Backlight (contraluz): funciona para silhuetas em posts de reflexão
+**Por que rosto parcial funciona:**
+Quando o rosto está oculto ou desfocado, o leitor projeta a própria
+experiência. A foto diz "isso poderia ser qualquer pessoa — inclusive você."
+É a técnica mais recorrente nos posts aprovados.
 
----
+### Iluminação
 
-### 3. Composição
-
-**Zona de texto segura**
-Todo template com foto tem texto sobreposto. A foto deve ter uma
-área com pouca informação visual onde o texto possa respirar.
-
-| Template | Zona de texto | Composição ideal |
+| Pilar | Luz ideal | Nunca |
 |---|---|---|
-| `cover-c / photo-fullbleed` | Centro-inferior | Sujeito no topo, área vazia embaixo |
-| `cover-d / photo-fullbleed` | Centro (todo o frame) | Sujeito levemente deslocado |
-| `block-h / quote-content` | Inferior (40% do frame) | Rosto/ação na metade superior |
-| `block-i / quote-list` | Inferior (50% do frame) | Pessoa no topo, fundo simples embaixo |
-| `block-j / final-quote-a` | Centro-inferior | Grande área de fundo visível |
-| `block-k / quote-full-a/b` | Centro | Composição com espaço no centro |
-| `block-l / quote-full-b` | Centro-inferior | Sujeito nos lados, centro livre |
-| `block-n / final-quote-b` | Inferior | Ação no topo |
+| Reconhecimento | Natural difusa, quente, interior | Flash, estúdio |
+| Desmascaramento | Contrastada, sombras, dramática | Plana e uniforme |
+| Acolhimento | Suave, dourada, íntima | Fria, azulada |
+| Empoderamento | Natural forte, exterior | Fechado e escuro |
+| Prova Social | Quente, alegre, exterior | Corporativa, posada |
 
-**Orientação:** sempre portrait ou quadrada — nunca landscape.
-**Resolução mínima:** 1080×1440px (4:5)
+### Composição — Zona de Texto Segura
+
+Cada template exige uma área com baixa informação visual para o texto respirar:
+
+| Template | Zona de texto | Composição ideal da foto |
+|---|---|---|
+| `cover-c` | Centro-inferior | Sujeito no topo, área vazia embaixo |
+| `cover-d` | Centro (frame inteiro) | Sujeito levemente deslocado |
+| `block-h` | Inferior 40% | Rosto/ação na metade superior |
+| `block-i` | Inferior 50% | Pessoa no topo, fundo simples abaixo |
+| `block-j` | Centro-inferior | Grande área de fundo visível |
+| `block-k` | Centro | Espaço no centro para texto |
+| `block-l` | Centro-inferior | Sujeito nas laterais, centro livre |
+| `block-n` | Inferior | Ação no topo |
+
+**Orientação:** sempre portrait ou quadrada. **Nunca** landscape.
 
 ---
 
-### 4. Tom emocional por pilar
+## Tom por Pilar
 
-**Reconhecimento ("Isso sou eu")**
-Momentos íntimos e privados. A pessoa está sozinha com seus pensamentos.
+### Reconhecimento
+Momentos íntimos e privados. A pessoa sozinha com seus pensamentos.
 - Olhar distante, introspectivo
-- Ambientes domésticos: sofá, cama, cozinha
-- Manhã cedo ou noite: horários de reflexão
-- Expressão entre cansaço e lucidez
-- *Referências:* `3356:6555` (mulher apoiada no braço), `3177:3858` (mãe e filho)
+- Ambientes domésticos (sofá, cama, cozinha, banheiro)
+- Horários de reflexão: manhã cedo, noite
+- Entre cansaço e lucidez — não desespero
+- *Refs:* `3356:6555`, `3177:3858`
 
-**Desmascaramento ("Não é o que parece")**
-Tensão entre a aparência externa e o que está por dentro.
-- Pessoa bem-arrumada mas com expressão tensa
-- Contexto social (festa, trabalho) com algo fora de lugar
-- Movimento ou desfoco como metáfora de confusão
-- *Referências:* `3177:56` (cabelo cobrindo o rosto), `3356:6534` (woman blurred)
+### Desmascaramento
+Tensão entre aparência externa e o que está por dentro.
+- Pessoa funcional mas com algo fora de lugar
+- Movimento, desfoco, motion blur como metáfora de confusão
+- Contexto social onde o álcool estaria presente (sem mostrar bebida)
+- *Refs:* `3177:56`, `3356:6334`
 
-**Acolhimento ("Você não está sozinha")**
+### Acolhimento
 Conexão, presença, calor humano.
-- Duas pessoas juntas (abraço, conversa próxima)
-- Mãos — como símbolo de cuidado e conexão
-- Expressão de alívio ou leveza, não euforia
-- Luz quente, tons âmbar
-- *Referências:* `3356:6588` (amigas no carro)
+- Duas pessoas juntas — abraço, conversa próxima
+- Mãos: símbolo de cuidado
+- Expressão de alívio ou leveza — não euforia
+- Tons âmbar, luz quente
+- *Refs:* `3356:6588`
 
-**Empoderamento ("Você pode")**
+### Empoderamento
 Movimento, conquista, presença no mundo.
-- Pessoa em ação (caminhando, correndo, em movimento)
-- Exterior, céu visível, horizonte
+- Pessoa em ação (caminhando, correndo)
+- Exterior, céu visível
 - Postura ereta ou expansiva
-- Expressão confiante mas não arrogante
-- *Referências:* `3356:6570` (homem na pista)
+- Confiante, não arrogante
+- *Refs:* `3356:6570`
 
-**Prova Social ("Outros já estão nessa jornada")**
+### Prova Social
 Realidade compartilhada, não performance.
 - Grupos pequenos em momentos reais
 - Alegria autêntica, não posada
 - Ambientes cotidianos
-- *Referências:* `3356:6588` (amigas), `3177:3870` (amigos no carro)
+- *Refs:* `3356:6588`, `3177:3870`
 
 ---
 
-### 5. O que NUNCA usar
+## O que NUNCA usar
 
-**Conteúdo proibido:**
-- Fotos de garrafas, copos, bebidas alcoólicas (mesmo para ilustrar o problema)
+**Conteúdo:**
+- Garrafas, copos ou bebidas alcoólicas — mesmo para ilustrar o problema
 - Pessoas visivelmente embriagadas
 - Ambientes de bar ou balada como cenário principal
-- Imagens que glamourizem o consumo
-- Expressões de total desespero ou choro extremo (muito pesado para o tom)
-- Fotos de banco de imagens genéricas com sorriso corporativo
-- Roupas ou ambientes que sinalizem classe social específica (evitar exclusão)
+- Expressões de desespero extremo ou choro intenso
+- Foto de banco de imagens com sorriso corporativo
 - Pessoas em posição de vítima passiva
-- Qualquer coisa que pareça campanha anti-drogas dos anos 90
+- Qualquer estética de "campanha anti-drogas"
 
-**Estilo visual proibido:**
-- Filtros vintage excessivos (Instagram 2013)
-- Saturação muito alta ou cores irreais
-- HDR exagerado
-- Edição de beleza excessiva (pele lisa demais, olhos brilhantes artificialmente)
-- Composição simétrica demais (parece publicidade, não vida real)
+**Estilo visual:**
+- Filtros vintage excessivos
+- Saturação irreal ou HDR exagerado
+- Edição de beleza excessiva (pele artificial)
+- Composição simétrica demais (parece anúncio)
 - Fundo branco de estúdio
 
 ---
 
-## Queries Unsplash por Template
+## Processo de Seleção via Unsplash
 
-O agente monta a query combinando elementos desta tabela:
+### Passo a passo
 
-### Vocabulário de busca por emoção
+```
+1. Identificar: pilar do slide + template + emoção central
+2. Montar a query (ver tabela abaixo)
+3. Buscar: GET /search/photos?query=...&orientation=portrait
+4. Filtrar: resolução ≥ 1080px, sem bebidas visíveis, sem estúdio
+5. Selecionar: resultado mais relevante que tenha zona de texto livre
+6. Registrar na _annotation: fotógrafo + URL + query usada
+```
 
-| Emoção | Termos EN (Unsplash) |
+### Vocabulário de busca por emoção (termos EN para Unsplash)
+
+| Emoção | Termos de busca |
 |---|---|
 | Introspecção / reflexão | `contemplative woman`, `pensive`, `looking away`, `lost in thought` |
-| Cansaço emocional | `exhausted woman`, `tired`, `overwhelmed`, `head in hands` |
-| Reconhecimento / espelho | `woman face hidden`, `hair covering face`, `partial face`, `anonymous` |
+| Cansaço emocional | `exhausted woman`, `tired`, `overwhelmed` |
+| Reconhecimento / rosto oculto | `woman face hidden`, `hair covering face`, `partial face` |
 | Tensão / ansiedade | `anxious`, `worried`, `stressed woman`, `hands on head` |
-| Acolhimento / calor | `warm hug`, `friends laughing`, `women together`, `golden hour portrait` |
+| Acolhimento / calor | `warm hug`, `friends laughing`, `women together`, `golden hour` |
 | Empoderamento | `confident woman`, `running`, `outdoors active`, `determined` |
-| Conexão | `two friends`, `women together`, `genuine laugh`, `candid moment` |
-| Solidão | `woman alone`, `solitude`, `single person room`, `window light` |
+| Conexão | `two friends`, `genuine laugh`, `candid moment` |
+| Solidão | `woman alone`, `solitude`, `window light` |
 
-### Modificadores de estética (sempre adicionar pelo menos 1)
+### Modificadores de estética (adicionar sempre 1–2)
 
 | Modificador | Quando usar |
 |---|---|
-| `candid` | Posts de reconhecimento e desmascaramento |
+| `candid` | Reconhecimento e desmascaramento |
 | `authentic` | Todos os posts |
-| `natural light` | Posts de acolhimento e empoderamento |
+| `natural light` | Acolhimento e empoderamento |
 | `dark moody` | Templates com overlay navy |
-| `warm tones` | Posts de acolhimento |
-| `blurred background` | Quando o sujeito deve se destacar |
-| `motion blur` | Posts de confusão ou espiral emocional |
+| `warm tones` | Acolhimento |
+| `blurred background` | Quando sujeito deve se destacar |
+| `motion blur` | Confusão ou espiral emocional |
 | `portrait` | Sempre para templates fullbleed |
 
-### Queries completas por template
+### Queries por template
 
 ```
-cover-c / photo-fullbleed (overlay azul):
-  "{emoção do slide} woman {modificador} portrait dark tones"
-  Ex: "exhausted woman candid portrait dark moody"
+cover-c (overlay azul escuro):
+"{emoção} woman {modificador} portrait dark tones"
+Ex: "exhausted woman candid portrait dark moody"
 
-cover-d / photo-fullbleed (foto direta):
-  "{emoção} woman authentic natural light {contexto}"
-  Ex: "pensive woman natural light morning indoor"
+cover-d (foto direta, texto handwriting):
+"{emoção} woman authentic natural light {contexto}"
+Ex: "pensive woman natural light morning indoor"
 
-block-h / quote-content (foto dark, raios):
-  "woman {estado emocional} dark moody portrait authentic"
-  Ex: "anxious woman dark moody portrait candid"
+block-h (foto dark + raios):
+"woman {estado} dark moody portrait authentic"
+Ex: "anxious woman dark moody portrait candid"
 
-block-i / quote-list (foto warm):
-  "woman {emoção} warm tones candid {contexto}"
-  Ex: "contemplative woman warm tones candid indoor"
+block-i (foto warm, lista sobreposta):
+"woman {emoção} warm tones candid {contexto}"
+Ex: "contemplative woman warm tones candid indoor"
 
-block-j / final-quote-a (foto dark, homem ou mulher):
-  "person {estado} dark moody {ação}"
-  Ex: "man stressed hands head dark moody"
+block-j (foto dark, homem ou mulher):
+"person {estado} dark moody {ação}"
+Ex: "man stressed hands head dark moody authentic"
 
-block-k / quote-full-a (foto vivid):
-  "{persona} {ação positiva} natural light outdoors"
-  Ex: "woman confident outdoors natural light candid"
+block-k (foto vivid, empoderamento):
+"{persona} {ação positiva} natural light outdoors"
+Ex: "woman confident outdoors natural light candid"
 
-block-l / quote-full-b (foto escura):
-  "women {conexão} {emoção} warm candid"
-  Ex: "women friends laughing candid warm authentic"
+block-l (foto escura, conexão):
+"women {conexão} candid warm authentic"
+Ex: "women friends laughing candid warm authentic"
 
-block-n / final-quote-b:
-  "{tema do slide} person portrait authentic {tom}"
+block-n (foto + raios, fechamento):
+"{tema do slide} person portrait authentic"
+Ex: "woman recovery hope portrait authentic"
 ```
 
 ---
 
-## Processo de Seleção Automática
+## Atribuição Unsplash (obrigatória)
 
-Quando o agente seleciona uma foto via Unsplash API:
+O Unsplash exige crédito ao fotógrafo. Sempre registrar na `_annotation`:
 
-1. **Montar a query** a partir do pilar + template + tema do slide
-2. **Buscar** via `/search/photos?query=...&orientation=portrait`
-3. **Filtrar** pelos critérios:
-   - Orientação: portrait ou squarish
-   - Resolução: mínimo 1080px de largura
-   - Licença: Unsplash (sempre gratuita)
-4. **Selecionar** o resultado #1 por relevância — mas verificar:
-   - Não contém bebida/garrafa visível
-   - Não é estúdio/fundo branco
-   - Tem zona de texto livre compatível com o template
-5. **Registrar** na `_annotation` do frame: URL original + fotógrafo + query usada
-
-### Atribuição obrigatória
-O Unsplash exige crédito. Sempre registrar na `_annotation`:
 ```
 FOTO: {photographer_name} via Unsplash
 URL: {photo_url}
-QUERY: {query_used}
+QUERY: "{query_usada}"
 ```
 
 ---
 
 ## Referências Visuais Canônicas
 
-Posts aprovados que exemplificam melhor as diretrizes fotográficas:
+Posts aprovados que exemplificam as diretrizes — consultar antes de escolher:
 
-| Frame | Por que é referência |
+| Frame ID | Por que é referência |
 |---|---|
-| `3356:6555` | Melhor exemplo de rosto parcial + luz coerente com template |
-| `3356:6588` | Melhor exemplo de alegria autêntica — nenhum sorriso forçado |
-| `3356:6570` | Melhor exemplo de empoderamento real sem euforia artificial |
-| `3356:6518` | Melhor exemplo de sofrimento sem ser pesado demais |
-| `3177:56` | Melhor exemplo de rosto oculto criando identificação universal |
-| `3356:6530` | Melhor exemplo de desfoco emocional + zona de texto funcional |
+| `3356:6555` | Rosto parcial + iluminação dark coerente com template |
+| `3356:6588` | Alegria autêntica — zero sorriso forçado |
+| `3356:6570` | Empoderamento sem euforia artificial |
+| `3356:6518` | Sofrimento sem ser pesado demais |
+| `3177:56` | Rosto oculto criando identificação universal |
+| `3356:6530` | Desfoco emocional + zona de texto livre funcional |
+
+---
+
+## Checklist antes de usar uma foto
+
+- [ ] A foto tem uma zona livre compatível com o template?
+- [ ] A expressão é autêntica — não posada ou corporativa?
+- [ ] Nenhuma bebida ou garrafa visível?
+- [ ] A iluminação é coerente com o pilar do slide?
+- [ ] Orientação portrait ou square?
+- [ ] Resolução mínima de 1080px de largura?
+- [ ] A emoção da foto é compatível com o copy do slide?
+- [ ] A atribuição foi registrada na `_annotation`?
