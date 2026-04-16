@@ -1,0 +1,5 @@
+# Figma Personal Access Token
+# Gerar em: figma.com → Account Settings → Personal Access Tokens
+# Permissões necessárias: files:read, files:write
+#
+TOKEN=cole_seu_token_aqui
