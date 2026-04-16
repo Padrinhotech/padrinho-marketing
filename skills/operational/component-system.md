@@ -154,7 +154,19 @@ Se o conteúdo não couber: condensar o copy, não forçar no template.
 `bullet-N/bold` `bullet-N/regular` `cta-text` `wave` (posição) `bg-photo` (fill) `_annotation`
 
 ## O que o Agente NUNCA altera
-Fontes · Tamanhos · Cores · Posições Y · Frame dimensions · `handle` · `logo-mark` · `gradient-overlay` · `bg-color`
+Fontes · Tamanhos · Cores · Frame dimensions · `handle` · `logo-mark` · `gradient-overlay` · `bg-color`
+
+## Posição Y — permitida com critério
+
+O agente **pode ajustar a posição Y** de elementos quando o conteúdo adaptado
+quebra em mais linhas do que o original e provoca sobreposição ou corte.
+
+**Regras:**
+- Mover o elemento afetado e todos os abaixo dele juntos (nunca isolado)
+- Manter a distância relativa entre elementos do mesmo bloco
+- Nunca mover: `handle`, `logo-mark`, `counter`, elementos decorativos fixos
+- Ajuste máximo: ±120px — acima disso, condensar o copy ou reconsiderar o template
+- Hard limit: nenhum conteúdo pode ultrapassar `y = H - 140` (zona do handle)
 
 ---
 
