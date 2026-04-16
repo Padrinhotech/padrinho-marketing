@@ -158,6 +158,81 @@ Fontes · Tamanhos · Cores · Posições Y · Frame dimensions · `handle` · `
 
 ---
 
+
+---
+
+## Estrutura Obrigatória de Carrossel
+
+Todo carrossel deve seguir esta estrutura mínima:
+
+```
+Slide 1   → COVER          (cover/*)         — sempre tipográfico
+Slide 2   → CONTENT        (block/*)         — tipográfico
+Slide 3   → IMAGE CONTENT  (block com foto)  — obrigatório ≥ 1x
+Slide 4   → CONTENT        (block/*)         — tipográfico ou data
+Slide 5   → CONTENT        (block/* ou data) — tipográfico ou data
+Slide 6   → IMAGE CONTENT  (block com foto)  — recomendado
+Slide N   → END            (block/statement) — fechamento com CTA
+```
+
+### Regras
+
+**Imagem é obrigatória:**
+Todo carrossel deve ter **pelo menos 1 slide com foto** (template `block-h`,
+`block-i`, `block-j`, `block-k`, `block-l`, `block-n` ou `cover-c/d`).
+
+**Distribuição recomendada:**
+- Carrossel de 6–8 slides → 1–2 slides com foto
+- Carrossel de 9–12 slides → 2–3 slides com foto
+- Foto nunca no slide 1 (cover é sempre tipográfico)
+- Foto nunca no último slide (fechamento é sempre tipográfico/statement)
+
+**Posição das fotos:**
+- Foto no slide 3 → cria ritmo visual logo na entrada
+- Foto no penúltimo slide → âncora emocional antes do fechamento
+- Evitar duas fotos consecutivas
+
+**Templates com foto disponíveis:**
+
+| Template | Mood foto | Quando usar |
+|---|---|---|
+| `block-h / quote-content` | Dark, introspectivo | Reconhecimento emocional forte |
+| `block-i / quote-list` | Warm, com lista sobreposta | Gatilhos, listas sobre imagem |
+| `block-j / final-quote-a` | Dark, fechamento | Penúltimo slide, reframing |
+| `block-k / quote-full-a` | Vivid, impactante | Desmascaramento |
+| `block-l / quote-full-b` | Escuro, conexão | Reconhecimento ("Na vida de quem...") |
+| `block-n / final-quote-b` | Dark com raios | Fechamento alternativo |
+| `cover-c / photo-fullbleed` | Blumine overlay | Cover com foto |
+| `cover-d / photo-fullbleed` | Foto direta | Cover com foto |
+
+### Exemplo de arco para 8 slides
+
+```
+S1  cover-a / minimal-light       → Hook tipográfico
+S2  block-d / statement-light     → Conceito / contexto
+S3  block-h / quote-content       → 🖼 Foto — impacto emocional
+S4  block-f / list-light-b        → Lista / dados
+S5  block-g / topic-list-light    → Aprofundamento
+S6  block-e / list-dark-b         → Contraste dark
+S7  block-j / final-quote-a       → 🖼 Foto — âncora antes do fim
+S8  block-d / statement-light     → Fechamento + CTA
+```
+
+### Exemplo de arco para 10 slides
+
+```
+S1  cover-b / dark-bold-left      → Hook
+S2  block-d / statement-light     → Contexto
+S3  block-h / quote-content       → 🖼 Foto
+S4  block-a / list-dark           → Lista
+S5  data-f / fill-percentage      → Dado
+S6  block-f / list-light-b        → Lista light
+S7  block-j / final-quote-a       → 🖼 Foto
+S8  block-b / list-light          → Ação
+S9  block-c / statement-dark      → Reframing
+S10 block-d / statement-light     → Fechamento
+```
+
 ## Modo 1 — Componente existente
 
 1. Identificar o template mais adequado ao conteúdo
@@ -188,3 +263,6 @@ Fontes · Tamanhos · Cores · Posições Y · Frame dimensions · `handle` · `
 - [ ] `_annotation` preenchida (caption + hashtags + meta)?
 - [ ] Screenshot tirado e validado?
 - [ ] Frame em `_QUEUE` com nomenclatura correta?
+- [ ] Carrossel tem pelo menos 1 slide com foto (block-h/i/j/k/l/n ou cover-c/d)?
+- [ ] Foto não está no slide 1 nem no último slide?
+- [ ] Duas fotos não estão em slides consecutivos?
