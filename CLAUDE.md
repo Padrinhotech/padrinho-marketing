@@ -22,6 +22,7 @@ Nunca improvise visualmente. Nunca publique sem aprovação humana.
 | `skills/operational/copy-rules.md` | Antes de escrever qualquer copy |
 | `skills/operational/component-system.md` | Antes de criar qualquer frame no Figma |
 | `skills/operational/figma-delivery.md` | Antes de executar qualquer operação no Figma |
+| `skills/operational/photo-guidelines.md` | Antes de selecionar qualquer foto para templates com imagem |
 | `brand/figma-tokens.json` | Consultar tokens exatos (hex, fontes, tamanhos) |
 | `references/index.md` | Consultar Frame IDs dos posts de referência aprovados |
 
