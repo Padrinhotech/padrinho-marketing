@@ -232,13 +232,13 @@ S8  block-d / statement-light     → Fechamento + CTA
 ### Exemplo de arco para 10 slides
 
 ```
-S1  cover-b / dark-bold-left      → Hook
+S1  cover-c / photo-fullbleed     → 🖼 Foto — Cover com impacto
 S2  block-d / statement-light     → Contexto
-S3  block-h / quote-content       → 🖼 Foto
+S3  block-h / quote-content       → 🖼 Foto — Reconhecimento emocional
 S4  block-a / list-dark           → Lista
 S5  data-f / fill-percentage      → Dado
 S6  block-f / list-light-b        → Lista light
-S7  block-j / final-quote-a       → 🖼 Foto
+S7  block-j / final-quote-a       → 🖼 Foto — Âncora antes do fim
 S8  block-b / list-light          → Ação
 S9  block-c / statement-dark      → Reframing
 S10 block-d / statement-light     → Fechamento
