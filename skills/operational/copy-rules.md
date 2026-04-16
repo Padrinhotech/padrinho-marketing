@@ -157,3 +157,34 @@ Sempre uma **verdade**, nunca uma venda.
 - [ ] A legenda tem menos de 2.200 caracteres?
 - [ ] Os hashtags foram separados para o primeiro comentário?
 - [ ] O fechamento é uma verdade, não uma venda?
+
+---
+
+## Quebras de linha nos slides (regra crítica)
+
+**Nunca inserir `\n` manual para quebrar frases contínuas.**
+O Figma quebra automaticamente pela largura do frame — forçar quebras
+cria resultados visuais estranhos e imprevisíveis.
+
+### Quando NÃO usar `\n`
+- Frases contínuas, mesmo que longas
+- Continuações após vírgula ou travessão
+- Body text e CTA box
+
+```
+❌ "E percebeu que era mais difícil do que parecia.\nIsso diz muito sobre como o cérebro funciona."
+✅ "E percebeu que era mais difícil do que parecia. Isso diz muito sobre como o cérebro funciona."
+
+❌ "Dopamina é dopamina — seja numa dose de álcool,\nnum scroll infinito ou numa compra por impulso.\nO circuito é o mesmo."
+✅ "Dopamina é dopamina — seja numa dose de álcool, num scroll infinito ou numa compra por impulso. O circuito é o mesmo."
+```
+
+### Quando usar `\n`
+- Separar headline de headline-italic (são layers diferentes)
+- Separar itens de lista que são visualmente distintos
+- Separar parágrafos com intenção editorial clara (pausa real)
+
+```
+✅ "Quando acontecer —\ne pode acontecer:"   ← dois momentos distintos intencionais
+✅ bullet-1: "Não se puna."\nbullet-2: "Fale com alguém."   ← itens separados
+```

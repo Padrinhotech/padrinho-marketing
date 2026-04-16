@@ -116,3 +116,17 @@ Novo template (proposto pelo agente):
 - [ ] `_annotation` preenchida com caption + hashtags + meta?
 - [ ] Screenshot tirado e validado visualmente?
 - [ ] Resultado reportado ao humano com screenshot?
+
+---
+
+## Regra de texto — sem quebras manuais
+
+Ao adaptar o conteúdo dos layers, **nunca usar `\n` para quebrar frases contínuas**.
+O Figma respeita a largura do frame e quebra automaticamente.
+
+Quebras manuais só em:
+- Separação intencional de headline + italic (layers distintos)
+- Itens de lista com separação visual real
+- Parágrafos com pausa editorial deliberada
+
+Ver exemplos completos em `copy-rules.md`.
