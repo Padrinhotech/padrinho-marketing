@@ -196,13 +196,12 @@ Todo carrossel deve ter **pelo menos 1 slide com foto** (template `block-h`,
 **Distribuição recomendada:**
 - Carrossel de 6–8 slides → 1–2 slides com foto
 - Carrossel de 9–12 slides → 2–3 slides com foto
-- Foto nunca no slide 1 (cover é sempre tipográfico)
-- Foto nunca no último slide (fechamento é sempre tipográfico/statement)
 
 **Posição das fotos:**
 - Foto no slide 3 → cria ritmo visual logo na entrada
 - Foto no penúltimo slide → âncora emocional antes do fechamento
 - Evitar duas fotos consecutivas
+- Cover com foto (`cover-c`, `cover-d`) e fechamento com foto são válidos quando a narrativa pede
 
 **Templates com foto disponíveis:**
 
