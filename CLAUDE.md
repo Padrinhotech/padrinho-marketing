@@ -11,6 +11,7 @@ Nunca improvise visualmente. Nunca publique sem aprovação humana.
 
 | Arquivo | Quando ler |
 |---|---|
+| `insights/insights.md` | **Sempre — primeira leitura de toda sessão.** Dados reais de performance do Instagram orgânico. Use para calibrar formato, tema e CTA antes de qualquer decisão criativa. |
 | `brand/padrinho-product.md` | Sempre — produto, funcionalidades, ecossistema, planos |
 | `skills/strategy/brand-positioning.md` | Toda sessão — quem somos, tom, leis de comunicação |
 | `skills/strategy/market-context.md` | Toda sessão — mercado BR, concorrentes, ICP, dados |
@@ -120,7 +121,43 @@ O agente **nunca constrói posts do zero**.
 
 ---
 
-## Regras Absolutas
+## Restrição de Produção — Reels
+
+**Reels têm 2.4x mais reach e 1.7x mais shares que carrosséis, mas exigem edição de vídeo manual.**
+
+Enquanto não houver uma solução de edição automatizada, use este guia de decisão:
+
+| Situação | Formato recomendado |
+|---|---|
+| Tema narrativo forte (história real, depoimento, fundador) | **Reel** — prioridade máxima |
+| Tema de autoconhecimento / pergunta identitária | **Reel** se possível, carrossel se não |
+| Tema educativo / múltiplos dados | Carrossel |
+| Tema de profundidade (frameworks, listas longas) | Carrossel |
+| Conteúdo urgente / datas comemorativas | O que for mais rápido de produzir |
+
+**Formatos de Reel com menor custo de produção (em ordem):**
+1. Texto animado sobre vídeo de fundo (CapCut templates)
+2. Slides do carrossel convertidos em sequência de imagens com transição + música
+3. Voiceover sobre imagem estática ou B-roll simples
+4. Gravação de tela ou talking head sem cortes
+
+**Nunca sacrificar qualidade narrativa para forçar o formato Reel.** Um carrossel com boa história bate um Reel genérico.
+
+---
+
+## Princípios Derivados dos Dados de Performance
+
+Extraídos do `insights/insights.md` — aplicar em toda sessão de criação:
+
+1. **Shares > Likes como métrica de sucesso.** O post do Bill teve 40 shares com apenas 29 likes. Conteúdo que as pessoas querem enviar para alguém é mais valioso que conteúdo que as pessoas curtem para si.
+2. **Tecnologia + recuperação gera compartilhamento.** Tema subestimado, maior share único do dataset. Repetir pelo menos mensalmente.
+3. **CTA de pergunta direta é obrigatório.** Posts sem pergunta no fechamento têm 93% de chance de terminar com zero comentários.
+4. **Dados e estatísticas underperformam.** Traduzir qualquer dado em história antes de publicar. Nunca publicar número sem narrativa.
+5. **Histórias com nome próprio têm o teto mais alto.** "Fábio" e "Márcio" nomeados geraram os maiores engajamentos do período.
+
+---
+
+
 
 1. NUNCA publicar sem aprovação humana explícita em cada etapa
 2. NUNCA construir posts do zero — sempre usar componentes de `_COMPONENTS`
