@@ -1,13 +1,21 @@
 {
   "crons": [
     {
-      "path": "/api/orchestrate",
+      "path": "/api/agents/insights",
+      "schedule": "0 1 * * *"
+    },
+    {
+      "path": "/api/agents/strategy",
       "schedule": "0 13 * * *"
     }
   ],
   "functions": {
-    "api/orchestrate.js": { "maxDuration": 60 },
-    "api/approve.js": { "maxDuration": 60 },
-    "api/publish.js": { "maxDuration": 30 }
+    "api/agents/insights.js": { "maxDuration": 600 },
+    "api/agents/strategy.js": { "maxDuration": 300 },
+    "api/agents/tactic.js": { "maxDuration": 300 },
+    "api/agents/operational.js": { "maxDuration": 300 },
+    "api/agents/figma.js": { "maxDuration": 600 },
+    "api/webhooks/telegram.js": { "maxDuration": 60 },
+    "api/publish.js": { "maxDuration": 300 }
   }
 }
