@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "description": "Padrinho brand design tokens — extraídos do Figma Library",
+    "library_file_id": "YtsMDsUi5SIF29NCOFs53x",
+    "references_file_id": "sBItPeNLyvT5EMyKLqQbRv",
+    "staging_file_id": "sBItPeNLyvT5EMyKLqQbRv",
+    "staging_note": "Same file as references. Write ONLY to pages starting with _. Never touch Semana XX or _COMPONENTS pages.",
+    "last_synced": "2026-04-15"
+  },
+  "colors": {
+    "blue": {
+      "blue-whale": "#002E49",
+      "royal-blue": "#004165",
+      "blumine": "#015480",
+      "horizon": "#669AB7",
+      "jungle-mist": "#C0D1DB",
+      "mystic": "#E6EBF0",
+      "alabaster": "#F6F7F9"
+    },
+    "beige": {
+      "merlin": "#3D3C38",
+      "chicago": "#56554D",
+      "concord": "#7E7D75",
+      "dawn": "#A19F97",
+      "cotton-seed": "#C4C2BA",
+      "westar": "#DAD8CF",
+      "cararra": "#F0EEE4",
+      "spring-wood": "#F9F8F3"
+    },
+    "neutral": {
+      "bunker": "#151515",
+      "baltic-sea": "#222222",
+      "white": "#FFFFFF"
+    },
+    "semantic": {
+      "jade": "#0FA971",
+      "amber": "#FEC600",
+      "tenn": "#DE5609"
+    }
+  },
+  "colors_usage": {
+    "dark_background": "#002E49",
+    "light_background": "#F9F8F3",
+    "accent_bullets": "#669AB7",
+    "highlight_inline_fill": "#669AB7",
+    "highlight_inline_opacity": 0.45,
+    "wave_underline": "#669AB7"
+  },
+  "typography": {
+    "social_posts": {
+      "display": { "family": "Instrument Serif", "variants": ["Regular", "Italic"] },
+      "body": { "family": "Instrument Sans", "variants": ["Regular", "Medium", "Bold"] }
+    },
+    "app_ui": {
+      "display": { "family": "Sentient" },
+      "body": { "family": "Inter" }
+    }
+  },
+  "post_format": {
+    "width": 1080,
+    "height": 1440,
+    "ratio": "4:5",
+    "corner_radius": 44,
+    "margin_horizontal": 83,
+    "handle": {
+      "text": "@padrinho.app",
+      "y": 1321,
+      "alignment": "center",
+      "letter_spacing": 4,
+      "opacity": 0.6
+    }
+  },
+  "figma_pages": {
+    "file_id": "sBItPeNLyvT5EMyKLqQbRv",
+    "pages": {
+      "_COMPONENTS": { "permission": "READ_COPY_ONLY" },
+      "_QUEUE": { "permission": "WRITE" },
+      "_APPROVED": { "permission": "HUMAN_MOVES" },
+      "_ARCHIVE": { "permission": "HUMAN_MOVES" },
+      "_BRIEFS": { "permission": "WRITE" },
+      "semana_xx": { "permission": "READ_ONLY", "note": "NUNCA escrever" }
+    }
+  }
+}
