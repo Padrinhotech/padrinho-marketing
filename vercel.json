@@ -1,0 +1,13 @@
+{
+  "crons": [
+    {
+      "path": "/api/orchestrate",
+      "schedule": "0 13 * * *"
+    }
+  ],
+  "functions": {
+    "api/orchestrate.js": { "maxDuration": 60 },
+    "api/approve.js": { "maxDuration": 60 },
+    "api/publish.js": { "maxDuration": 30 }
+  }
+}
