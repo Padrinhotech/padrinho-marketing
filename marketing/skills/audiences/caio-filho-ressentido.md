@@ -2,7 +2,8 @@
 
 **Status: DESPRIORITIZADO — documentado para referência futura**
 
-> Revisar priorização em Q3 2026.
+> Esta persona foi identificada como relevante mas está fora do
+> foco de conteúdo no momento. Revisar priorização em Q3 2026.
 
 ---
 
@@ -28,8 +29,22 @@ o álcool faz com uma pessoa e com uma família. Ele quer romper
 o ciclo — e quer informação para entender e eventualmente ajudar
 outros que passaram pelo mesmo.
 
+Ele não é o usuário primário do app — pode até não usar. Mas é um
+amplificador de mensagem: compartilha, comenta, engaja com conteúdo
+sobre o tema.
+
 **Por que desprioritizado:**
-Segmento Social & Moderado tem menor propensão a conversão direta.
+O segmento Social & Moderado tem menor propensão a conversão direta
+em usuário pagante. O conteúdo para Caio serve mais para alcance e
+awareness do que para ativação.
+
+---
+
+## Quando Reativar
+
+- Quando o Padrinho lançar funcionalidade voltada para família/codependentes
+- Quando houver dados de que usuários Caio convertem para indicar o app
+- Quando a estratégia de crescimento incluir awareness em audiências jovens
 
 ---
 

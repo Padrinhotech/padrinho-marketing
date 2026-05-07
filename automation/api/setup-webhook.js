@@ -1,4 +1,4 @@
-// automation/api/setup-webhook.js
+// api/setup-webhook.js
 // Roda UMA VEZ para registrar o webhook do Telegram
 // Acesse: https://SEU_DOMINIO.vercel.app/api/setup-webhook?secret=SEU_CRON_SECRET
 

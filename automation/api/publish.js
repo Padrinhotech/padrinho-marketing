@@ -1,4 +1,4 @@
-// automation/api/publish.js
+// api/publish.js
 // Publica o carrossel no Instagram via Graph API
 
 const IG_API = "https://graph.instagram.com/v19.0";

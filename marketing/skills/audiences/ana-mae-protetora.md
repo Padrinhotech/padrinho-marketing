@@ -30,7 +30,9 @@ fundo, sente o impacto: a irritabilidade com os filhos depois de
 beber, a culpa que vem junto, a percepção de que não está sendo
 o exemplo que quer ser.
 
-A motivação dela não é ela mesma — é os filhos.
+A motivação dela não é ela mesma — é os filhos. Se você falar sobre
+o impacto no dela, ela pode se fechar. Se você falar sobre o que os
+filhos veem e sentem, ela para tudo para ouvir.
 
 **O que ela quer:** Ser a mãe que os filhos merecem. Cuidar de si
 para poder cuidar melhor de quem ela ama.
@@ -43,30 +45,39 @@ para poder cuidar melhor de quem ela ama.
 - Filhos como razão de viver × filhos como espelhos do que ela não quer ser
 - Exaustão real × culpa pelo modo como alivia
 - "Já fiz tanto por todo mundo" × "Preciso cuidar de mim também"
+- Ambiente familiar com álcool presente × querer romper o ciclo
 
 ---
 
 ## Estratégia de Conteúdo para Ana
 
 ### Pilar prioritário: Acolhimento
-Ana já sente a culpa — não precisa de mais pressão.
+Ana já sente a culpa — não precisa de mais pressão. Precisa de
+validação e de um caminho que não exija que ela "se torne outra pessoa".
 
 **Temas que ressoam:**
 - "Cuidar de você não é egoísmo — é o melhor presente que você dá aos seus filhos"
 - A exaustão materna e o álcool como válvula
+- O que as crianças percebem (sem culpa excessiva, com cuidado)
 - "Você pode ser uma ótima mãe e ainda precisar de apoio"
 
+### Pilar secundário: Reconhecimento
+Situações do cotidiano dela: o dia difícil, a noite com uma taça,
+a manhã com aquela sensação.
+
 ### Canal estratégico
-Ana consome mais no **Facebook e YouTube**. No Instagram deve ser mais emocional e visual.
+Ana consome mais no **Facebook e YouTube** do que no Instagram.
+Conteúdo para ela no Instagram deve ser mais emocional e visual —
+ela compartilha o que toca o coração, não o que parece inteligente.
 
 ---
 
 ## Tom para Ana
 
-- **Caloroso, materno, acolhedor**
+- **Caloroso, materno, acolhedor** — ela se identifica com isso
 - **Voltado para os filhos** — é a alavanca emocional mais forte
-- **Sem culpa adicional**
-- **Simples e direto**
+- **Sem culpa adicional** — ela já tem suficiente
+- **Simples e direto** — não tem paciência para texto longo no Instagram
 
 ---
 

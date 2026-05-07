@@ -1,4 +1,4 @@
-// automation/api/orchestrate.js
+// api/orchestrate.js
 // Roda todo dia às 10h BRT (13h UTC)
 // Claude gera copy → Figma exporta slides → Telegram envia para aprovação
 

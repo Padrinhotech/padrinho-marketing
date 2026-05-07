@@ -1,5 +1,0 @@
-sBItPeNLyvT5EMyKLqQbRv
-
-# Este é o mesmo arquivo dos posts de referência.
-# O sistema escreve APENAS nas páginas de staging (_QUEUE, _APPROVED, _ARCHIVE, _BRIEFS).
-# As páginas das Semanas (🌀 Semana XX) são read-only — nunca modificar.

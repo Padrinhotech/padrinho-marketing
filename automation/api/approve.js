@@ -1,4 +1,4 @@
-// automation/api/approve.js
+// api/approve.js
 // Webhook do Telegram — recebe sua aprovação (✅ ✏️ ❌) e age
 
 export default async function handler(req, res) {

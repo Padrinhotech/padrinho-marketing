@@ -88,31 +88,45 @@ Não genéricos. Não moralizantes. Precisos.
 Quebrar o mito de que "problema com álcool" tem uma única cara.
 Mostrar que a cara é a dela — e que isso não é fraqueza.
 
+**Temas que ressoam:**
+- "O alcoolismo não parece como os filmes mostram"
+- "Você pode ser designer, mãe, amiga, boa profissional — e ainda assim"
+- Dados sobre o perfil do bebedor excessivo (classe média, funcional)
+
 ### Pilar terciário: Acolhimento
 Quando ela já reconheceu, mostrar que há caminho sem drama.
 Bill como presença discreta, não como ferramenta clínica.
+
+**Temas que ressoam:**
+- "Sem julgamento. Sem pressão. No seu tempo."
+- "Você não precisa parar de existir — só de se perder"
+- O Bill como alguém que está lá, não como app que monitora
 
 ---
 
 ## Tom para Rosa
 
-- **Íntimo, não clínico**
-- **Preciso, não genérico**
-- **Validador antes de convidar**
-- **Nunca moralizante**
-- **Humor quando serve à verdade**
+- **Íntimo, não clínico** — como uma conversa, não um diagnóstico
+- **Preciso, não genérico** — situações específicas, não abstrato
+- **Validador antes de convidar** — primeiro "eu entendo", depois "há um caminho"
+- **Nunca moralizante** — ela já sabe que algo está errado
+- **Humor quando serve à verdade** — ela aprecia leveza, desde que não trivialize
 
 ---
 
 ## Exemplos de Hook que Funcionam para Rosa
 
 ✓ "Na vida de quem curte uma sexta com os amigos, se diverte, ri muito — e acorda no sábado se perguntando por que fez isso de novo."
+
 ✓ "Posso ser uma boa designer, boa amiga, boa filha — e ainda ter uma relação complicada com o álcool?"
+
 ✓ "Não é ressaca. É aquela coisa que fica no fundo. Você conhece."
+
 ✓ "Você não bebe todo dia. Mas quando bebe..."
-✗ "O alcoolismo destrói famílias."
-✗ "Você precisa de ajuda."
-✗ "Pare de beber."
+
+✗ "O alcoolismo destrói famílias." (muito longe dela)
+✗ "Você precisa de ajuda." (a fecha)
+✗ "Pare de beber." (ela não está pronta para isso)
 
 ---
 
@@ -128,3 +142,6 @@ Bill como presença discreta, não como ferramenta clínica.
 - Compartilhamento privado (manda para uma amiga)
 - Comentário do tipo "isso sou eu demais"
 - DM perguntando sobre o app
+
+O engajamento de Rosa é mais privado do que público — ela não vai
+comentar abertamente, mas vai salvar e compartilhar 1:1.

@@ -31,6 +31,9 @@ ferramentas, pesquisa antes de decidir. Quando decide buscar ajuda,
 quer algo prático, discreto e que não exija sair do ambiente que
 ele conhece.
 
+Ele não quer grupos de apoio tradicionais. Não quer exposição.
+Quer uma solução que respeite sua privacidade e seu ritmo.
+
 **O que ele quer:** Apoio discreto, prático e na palma da mão —
 sem precisar se expor ou sair da sua zona de conforto.
 
@@ -42,28 +45,38 @@ sem precisar se expor ou sair da sua zona de conforto.
 - "Não preciso de ninguém" × solidão real
 - Autonomia como valor × a bebida como única constante de fim de dia
 - Identidade LGBTQIA+ × ambientes de recuperação que não o acolhem
+- Alta inteligência digital × resistência a admitir o problema
 
 ---
 
 ## Estratégia de Conteúdo para Pedro
 
 ### Pilar prioritário: Empoderamento
-Pedro responde bem a dados, fatos e informação.
+Pedro responde bem a dados, fatos e informação. Ele quer entender
+o que está acontecendo com ele — não ser julgado por isso.
 
 **Temas que ressoam:**
-- O que acontece no cérebro durante a dependência
-- Por que trabalhar em casa aumenta o risco
-- IA como ferramenta de suporte
+- O que acontece no cérebro durante a dependência (desmistificando)
+- Por que trabalhar em casa aumenta o risco (dados, contexto)
+- IA como ferramenta de suporte — Pedro entende e valoriza isso
 - Isolamento e álcool: a correlação que ninguém fala
+
+### Pilar secundário: Reconhecimento
+Situações específicas do trabalho remoto e da vida solitária.
+
+### Canal estratégico
+Pedro é mais ativo no **Telegram e YouTube**. No Instagram consome
+conteúdo, mas de forma mais passiva. Conteúdo para ele deve ser
+informativo e respeitoso — ele detecta facilmente condescendência.
 
 ---
 
 ## Tom para Pedro
 
-- **Inteligente e informado**
-- **Respeitoso da autonomia**
-- **Discreto**
-- **Tech-forward**
+- **Inteligente e informado** — ele não aceita simplificação excessiva
+- **Respeitoso da autonomia** — nunca "você precisa de ajuda"
+- **Discreto** — não pede exposição pública, só oferece possibilidade
+- **Tech-forward** — Bill como IA é um argumento, não um obstáculo
 
 ---
 
