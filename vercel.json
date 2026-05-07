@@ -5,12 +5,17 @@
       "schedule": "0 1 * * *"
     },
     {
+      "path": "/api/agents/market",
+      "schedule": "0 2 * * *"
+    },
+    {
       "path": "/api/agents/strategy",
       "schedule": "0 13 * * *"
     }
   ],
   "functions": {
     "api/agents/insights.js": { "maxDuration": 600 },
+    "api/agents/market.js": { "maxDuration": 120 },
     "api/agents/strategy.js": { "maxDuration": 300 },
     "api/agents/tactic.js": { "maxDuration": 300 },
     "api/agents/operational.js": { "maxDuration": 300 },

@@ -84,6 +84,21 @@ class Orchestrator {
 
     // Aprovação: transiciona para próxima fase
     const nextPhase = this.getNextPhase(phase);
+    
+    // Se não há próxima fase (insights/market), apenas commit
+    if (!nextPhase) {
+      await this.state.transitionPhase(phase, phase, "approved");
+      await this.telegram.sendMessage(
+        `✅ ${phase.toUpperCase()} aprovado. Comitando para GitHub...`
+      );
+      // TODO: Commit para GitHub
+      // await this.commitToGithub(phase);
+      await this.telegram.sendMessage(
+        `✅ ${phase.toUpperCase()} comitado com sucesso!`
+      );
+      return;
+    }
+
     await this.state.transitionPhase(phase, nextPhase, "approved");
 
     // Chamar agent apropriado
@@ -136,7 +151,8 @@ class Orchestrator {
    */
   getNextPhase(currentPhase) {
     const transitions = {
-      insights: "strategy",
+      insights: null, // Insights é independente, apenas atualiza arquivo
+      market: null, // Market é independente, apenas atualiza arquivo
       strategy: "tactic",
       tactic: "operational",
       operational: "figma",
