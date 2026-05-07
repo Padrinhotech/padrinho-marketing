@@ -69,7 +69,7 @@ async function handleCallbackQuery(callbackQuery) {
 
   const orchestrator = new Orchestrator();
 
-  // Responder ao popup (aquele "loading" que aparece)
+  // Responder ao popup com feedback imediato
   await telegram.answerCallbackQuery(callbackQueryId, "⏳ Processando...");
 
   try {
@@ -77,7 +77,7 @@ async function handleCallbackQuery(callbackQuery) {
       const phase = action.replace("approve_", "");
       console.log(`[Telegram] Approving phase: ${phase}`);
 
-      // Editar a mensagem para remover buttons
+      // Editar a mensagem original para indicar aprovação
       if (callbackQuery.message?.message_id) {
         await telegram.editMessage(
           callbackQuery.message.message_id,
@@ -85,8 +85,13 @@ async function handleCallbackQuery(callbackQuery) {
         );
       }
 
-      // Chamar orchestrator para transicionar
+      // Chamar orchestrator para transicionar e disparar próximo agente
       await orchestrator.handleApproval(phase, true);
+
+      // Confirmação de transição
+      await telegram.sendSilentMessage(
+        `✅ Fase \`${phase}\` aprovada. Iniciando \`${orchestrator.getNextPhase(phase)}\`...`
+      );
     } else if (action.startsWith("reject_")) {
       const phase = action.replace("reject_", "");
       console.log(`[Telegram] Rejecting phase: ${phase}`);
@@ -94,11 +99,14 @@ async function handleCallbackQuery(callbackQuery) {
       if (callbackQuery.message?.message_id) {
         await telegram.editMessage(
           callbackQuery.message.message_id,
-          `${callbackQuery.message.text}\n\n❌ *Rejeitado - Refazer*`
+          `${callbackQuery.message.text}\n\n❌ *Rejeitado - Aguardando refazer*`
         );
       }
 
       await orchestrator.handleApproval(phase, false);
+      await telegram.sendSilentMessage(
+        `❌ Fase \`${phase}\` rejeitada. Refaça e reenvie para aprovação.`
+      );
     } else if (action === "publish") {
       console.log("[Telegram] Publishing content");
 
@@ -110,7 +118,8 @@ async function handleCallbackQuery(callbackQuery) {
       }
 
       // TODO: Chamar /api/publish.js
-      // await require("../publish.js")({ query: { secret: process.env.CRON_SECRET } }, res);
+      // Para agora, apenas marcar como publicado
+      await orchestrator.state.updateState({ phase: "published", status: "approved" });
       await telegram.sendMessage("✅ Conteúdo publicado no Instagram!");
     } else if (action === "cancel") {
       console.log("[Telegram] Cancelling flow");
@@ -125,6 +134,11 @@ async function handleCallbackQuery(callbackQuery) {
       await orchestrator.cancelFlow("Cancelado pelo usuário");
     } else {
       console.warn(`[Telegram] Unknown action: ${action}`);
+      await telegram.answerCallbackQuery(
+        callbackQueryId,
+        "❌ Ação desconhecida",
+        true
+      );
     }
 
     return { ok: true };

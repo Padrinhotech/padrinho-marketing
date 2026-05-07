@@ -197,21 +197,14 @@ ${data.instagram_organic.top_posts
 }
 
 // ============================================================================
-// SERVERLESS HANDLER
+// EXPORTS
 // ============================================================================
 
-/**
- * Para rodar via Vercel Cron (cron-safe syntax)
- * 
- * vercel.json:
- * {
- *   "crons": [
- *     { "path": "/api/agents/insights", "schedule": "0 22 * * *" }
- *   ]
- * }
- */
+// Exportar a classe
+module.exports = InsightsAgent;
 
-module.exports = async (req, res) => {
+// Exportar handler serverless
+module.exports.handler = async (req, res) => {
   // Validar CRON_SECRET
   const secret = req.query.secret || req.headers["authorization"]?.split(" ")[1];
   if (secret !== process.env.CRON_SECRET) {

@@ -77,7 +77,7 @@ class Orchestrator {
       // Rejeição: fica na mesma fase, permite refazer
       await this.state.transitionPhase(phase, phase, "rejected");
       await this.telegram.sendMessage(
-        `⚠️ ${phase.toUpperCase()} foi rejeitado. Refazendo...`
+        `⚠️ ${phase.toUpperCase()} foi rejeitado. Refaça e tente novamente.`
       );
       return;
     }
@@ -87,25 +87,47 @@ class Orchestrator {
     await this.state.transitionPhase(phase, nextPhase, "approved");
 
     // Chamar agent apropriado
-    switch (nextPhase) {
-      case "tactic":
-        // TODO: await require("./agents/tactic.js").run(...)
-        console.log("[Orchestrator] Dispatching TACTIC agent");
-        break;
-      case "operational":
-        // TODO: await require("./agents/operational.js").run(...)
-        console.log("[Orchestrator] Dispatching OPERATIONAL agent");
-        break;
-      case "figma":
-        // TODO: await require("./agents/figma.js").run(...)
-        console.log("[Orchestrator] Dispatching FIGMA agent");
-        break;
-      case "published":
-        // TODO: await require("./publish.js").run(...)
-        console.log("[Orchestrator] Dispatching PUBLISH");
-        break;
-      default:
-        throw new Error(`Unknown next phase: ${nextPhase}`);
+    try {
+      switch (nextPhase) {
+        case "tactic": {
+          console.log("[Orchestrator] Dispatching TACTIC agent");
+          const TacticAgent = require("../agents/tactic.js");
+          const tacticInstance = new TacticAgent();
+          await tacticInstance.run();
+          break;
+        }
+
+        case "operational": {
+          console.log("[Orchestrator] Dispatching OPERATIONAL agent");
+          const OperationalAgent = require("../agents/operational.js");
+          const operationalInstance = new OperationalAgent();
+          await operationalInstance.run();
+          break;
+        }
+
+        case "figma": {
+          console.log("[Orchestrator] Dispatching FIGMA agent");
+          // TODO: Implementar FigmaAgent
+          await this.telegram.sendMessage("⏳ Preparando Figma...");
+          break;
+        }
+
+        case "published": {
+          console.log("[Orchestrator] Dispatching PUBLISH");
+          // TODO: publish logic
+          await this.telegram.sendMessage("✅ Conteúdo pronto para publicação!");
+          break;
+        }
+
+        default:
+          throw new Error(`Unknown next phase: ${nextPhase}`);
+      }
+    } catch (error) {
+      console.error("[Orchestrator] Error dispatching agent:", error);
+      await this.telegram.sendMessage(
+        `❌ Erro ao disparar agente: ${error.message}`
+      );
+      throw error;
     }
   }
 
