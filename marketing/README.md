@@ -2,7 +2,7 @@
 
 Esta pasta contém toda a lógica de marketing do Padrinho.app:
 estratégia de conteúdo, personas, pilares editoriais, brand guidelines,
-referências visuais e outputs gerados.
+referências visuais e posts gerados.
 
 ## Estrutura
 
@@ -15,5 +15,5 @@ marketing/
 ├── brand/             ← identidade visual, voz e tom
 ├── references/        ← referências de posts e campanhas
 ├── insights/          ← análises e aprendizados
-└── outputs/           ← conteúdo gerado (sessões do agente)
+└── posts/           ← conteúdo gerado (sessões do agente)
 ```

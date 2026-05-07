@@ -1,5 +1,5 @@
-# Session outputs (generated per run, not versioned)
-outputs/sessions/
+# Session posts (generated per run, not versioned)
+posts/sessions/
 
 # OS
 .DS_Store

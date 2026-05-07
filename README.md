@@ -11,7 +11,7 @@ Repositório central de marketing e automação de conteúdo do Padrinho.app.
 ├── package.json           ← dependências Node
 ├── .env.example           ← template de variáveis de ambiente
 │
-├── marketing/             ← estratégia, personas, brand, outputs
+├── marketing/             ← estratégia, personas, brand, posts
 │   ├── skills/
 │   │   ├── audiences/     ← personas (Rosa, etc)
 │   │   ├── tactic/        ← pilares editoriais
@@ -19,7 +19,7 @@ Repositório central de marketing e automação de conteúdo do Padrinho.app.
 │   ├── brand/
 │   ├── references/
 │   ├── insights/
-│   └── outputs/
+│   └── posts/
 │
 └── automation/            ← sistema técnico de publicação
     ├── api/

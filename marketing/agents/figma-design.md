@@ -44,7 +44,7 @@ await unsplash.search({
 
 ### 2. Exportar Preview
 - Exportar cada frame como PNG (1080x1080 para Instagram)
-- Salvar em: `/marketing/outputs/[date]/post_[id].png`
+- Salvar em: `/marketing/posts/[date]/post_[id].png`
 - Gerar sprite/grid visual para Telegram
 
 ### 3. Enviar ao Telegram
@@ -129,7 +129,7 @@ Component: Figma → //_QUEUE/Post1_Pequenas_Vitórias_2026-05-07
 - Figma REST API token
 - unsplash-mcp instalado
 - Write: Telegram
-- Write: GitHub (outputs/)
+- Write: GitHub (posts/)
 - Supabase: update phase = 'figma'
 
 ## Horário
@@ -163,6 +163,6 @@ Se ❌: Volta para Operational, aguarda novo copy
 
 ## Notas
 - Sempre creditar Unsplash (rodapé ou comentário)
-- Arquivo de fotos usadas: `marketing/outputs/[date]/credits.md`
+- Arquivo de fotos usadas: `marketing/posts/[date]/credits.md`
 - Se foto se repete entre posts, usar mesma (economiza)
 - Backup visual: salvar PNGs no GitHub (audit trail)

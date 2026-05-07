@@ -74,7 +74,7 @@ class FigmaAgent {
           frame_id: `3363:${3000 + post.post_id}`, // Mock ID
           frame_name: `Post ${post.post_id} - ${operationalCopy.date}`,
           status: "queued",
-          export_url: `https://github.com/raw/padrinho-marketing/outputs/post_${post.post_id}.png`,
+          export_url: `https://github.com/raw/padrinho-marketing/posts/post_${post.post_id}.png`,
           _skills_used: {
             component_system: true,
             figma_delivery: true,
