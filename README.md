@@ -15,9 +15,8 @@ Repositório central de marketing e automação de conteúdo do Padrinho.app.
 │   ├── skills/
 │   │   ├── audiences/     ← personas (Rosa, etc)
 │   │   ├── tactic/        ← pilares editoriais
-│   │   └── operational/   ← copy-rules, componentes Figma
+│   │   └── operational/   ← copy-rules, componentes Figma, índice de componentes
 │   ├── brand/
-│   ├── references/
 │   ├── insights/
 │   └── posts/
 │

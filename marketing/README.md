@@ -11,9 +11,8 @@ marketing/
 ├── skills/
 │   ├── audiences/     ← personas (Rosa, etc)
 │   ├── tactic/        ← pilares editoriais, calendário
-│   └── operational/   ← copy-rules, component-system
+│   └── operational/   ← copy-rules, component-system, índice de componentes Figma
 ├── brand/             ← identidade visual, voz e tom
-├── references/        ← referências de posts e campanhas
 ├── insights/          ← análises e aprendizados
-└── posts/           ← conteúdo gerado (sessões do agente)
+└── posts/             ← conteúdo gerado (sessões do agente)
 ```
