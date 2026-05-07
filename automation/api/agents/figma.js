@@ -43,18 +43,30 @@ class FigmaAgent {
         );
       }
 
-      // 2. Para cada post, popular frame no Figma
+      // 2. Ler skills de design
+      const componentSystem = this.readFile(
+        "marketing/skills/operational/component-system.md"
+      );
+      const figmaDelivery = this.readFile(
+        "marketing/skills/operational/figma-delivery.md"
+      );
+      const visualAgent = this.readFile(
+        "marketing/skills/operational/visual-agent.md"
+      );
+
+      // 3. Para cada post, popular frame no Figma
       const figmaFrames = [];
 
       for (const post of operationalCopy.posts) {
         console.log(`[FigmaAgent] Processing post ${post.post_id}...`);
 
-        // TODO: Implementar Figma API calls
-        // 1. Copiar componente de _COMPONENTS para _QUEUE
-        // 2. Renomear frame
-        // 3. Popular textos (caption, hashtags)
-        // 4. Injetar fotos via unsplash-mcp
-        // 5. Exportar PNG
+        // TODO: Implementar Figma API calls com skills
+        // 1. Copiar componente (definido em visual-agent.md) de _COMPONENTS para _QUEUE
+        // 2. Renomear frame seguindo figma-delivery.md
+        // 3. Popular textos: caption, hashtags, alt text (respeitando copy-rules.md)
+        // 4. Injetar fotos via unsplash-mcp usando visual-agent.md como guia
+        // 5. Validar contra component-system.md
+        // 6. Exportar PNG
 
         // Por enquanto, apenas mock
         figmaFrames.push({
@@ -63,23 +75,28 @@ class FigmaAgent {
           frame_name: `Post ${post.post_id} - ${operationalCopy.date}`,
           status: "queued",
           export_url: `https://github.com/raw/padrinho-marketing/outputs/post_${post.post_id}.png`,
+          _skills_used: {
+            component_system: true,
+            figma_delivery: true,
+            visual_agent: true
+          }
         });
       }
 
-      // 3. Salvar no estado
+      // 4. Salvar no estado
       await this.state.savePhaseData("figma", {
         date: operationalCopy.date,
         frames: figmaFrames,
         status: "exported",
       });
 
-      // 4. Enviar preview ao Telegram
+      // 5. Enviar preview ao Telegram
       const messageId = await this.sendTelegramPreview(
         figmaFrames,
         operationalCopy
       );
 
-      // 5. Registrar message ID
+      // 6. Registrar message ID
       await this.state.saveTelegramMessageId("figma", messageId);
 
       console.log("[FigmaAgent] Complete - awaiting final approval");

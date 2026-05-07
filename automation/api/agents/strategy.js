@@ -47,19 +47,25 @@ class StrategyAgent {
         );
       }
 
-      // 2. Ler skills de marketing
+      // 2. Ler skills de estratégia
       const brandPositioning = this.readFile(
         "marketing/skills/strategy/brand-positioning.md"
       );
       const marketContext = this.readFile(
         "marketing/skills/strategy/market-context.md"
       );
+      const icp = this.readFile("marketing/skills/audiences/icp.md");
+      const userInsights = this.readFile(
+        "marketing/skills/audiences/user-insights.md"
+      );
 
       // 3. Preparar prompt para Claude
       const userPrompt = this.preparePrompt(
         insightsData,
         brandPositioning,
-        marketContext
+        marketContext,
+        icp,
+        userInsights
       );
 
       // 4. Chamar Claude para gerar briefing
@@ -109,21 +115,37 @@ class StrategyAgent {
   /**
    * Preparar prompt para Claude
    */
-  preparePrompt(insightsData, brandPositioning, marketContext) {
+  preparePrompt(insightsData, brandPositioning, marketContext, icp, userInsights) {
     return `
 # Dados para Análise Estratégica
 
-## Insights do Mês
+## Insights do Mês (Performance Real)
 
 ${JSON.stringify(insightsData, null, 2)}
 
-## Brand Positioning
+---
+
+## Brand Positioning & Tone Rules
 
 ${brandPositioning}
+
+---
 
 ## Market Context
 
 ${marketContext}
+
+---
+
+## ICP & Target Audience Definition
+
+${icp}
+
+---
+
+## User Insights & Behavior Patterns
+
+${userInsights}
 
 ---
 

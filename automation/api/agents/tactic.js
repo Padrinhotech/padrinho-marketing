@@ -45,19 +45,35 @@ class TacticAgent {
         throw new Error("No strategy brief found. Run Strategy Agent first.");
       }
 
-      // 2. Ler skills de tática
+      // 2. Ler skills táticas + personas
       const editorialPillars = this.readFile(
         "marketing/skills/tactic/editorial-pillars.md"
       );
       const trendRadar = this.readFile(
         "marketing/skills/tactic/trend-radar.md"
       );
+      const rosaPersona = this.readFile(
+        "marketing/skills/audiences/rosa-equilibrista.md"
+      );
+      const anaMaePersona = this.readFile(
+        "marketing/skills/audiences/ana-mae-protetora.md"
+      );
+      const pedroPersona = this.readFile(
+        "marketing/skills/audiences/pedro-autonomo-solitario.md"
+      );
+      const brandPositioning = this.readFile(
+        "marketing/skills/strategy/brand-positioning.md"
+      );
 
       // 3. Preparar prompt para Claude
       const userPrompt = this.preparePrompt(
         strategicBrief,
         editorialPillars,
-        trendRadar
+        trendRadar,
+        rosaPersona,
+        anaMaePersona,
+        pedroPersona,
+        brandPositioning
       );
 
       // 4. Chamar Claude para gerar plano de conteúdo
@@ -107,7 +123,7 @@ class TacticAgent {
   /**
    * Preparar prompt para Claude
    */
-  preparePrompt(strategicBrief, editorialPillars, trendRadar) {
+  preparePrompt(strategicBrief, editorialPillars, trendRadar, rosa, anaMae, pedro, positioning) {
     return `
 # Strategic Brief para Desdobramento Tático
 
@@ -124,6 +140,29 @@ ${editorialPillars}
 # Trend Radar (Tendências do Mês)
 
 ${trendRadar}
+
+---
+
+# Brand Positioning (sempre respeitar tom e regras)
+
+${positioning}
+
+---
+
+# Target Personas (qual é o foco para essa semana?)
+
+## Rosa - A Equilibrista (PRIMARY TARGET)
+${rosa}
+
+---
+
+## Ana Mae - A Mãe Protetora (SECONDARY)
+${anaMae}
+
+---
+
+## Pedro - O Autônomo Solitário (TERTIARY)
+${pedro}
 
 ---
 

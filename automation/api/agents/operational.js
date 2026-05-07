@@ -45,7 +45,7 @@ class OperationalAgent {
         throw new Error("No content plan found. Run Tactic Agent first.");
       }
 
-      // 2. Ler skills operacionais
+      // 2. Ler skills operacionais + personas + design
       const copyRules = this.readFile(
         "marketing/skills/operational/copy-rules.md"
       );
@@ -55,13 +55,33 @@ class OperationalAgent {
       const componentSystem = this.readFile(
         "marketing/skills/operational/component-system.md"
       );
+      const figmaDelivery = this.readFile(
+        "marketing/skills/operational/figma-delivery.md"
+      );
+      const visualAgent = this.readFile(
+        "marketing/skills/operational/visual-agent.md"
+      );
+      const rosaPersona = this.readFile(
+        "marketing/skills/audiences/rosa-equilibrista.md"
+      );
+      const anaMaePersona = this.readFile(
+        "marketing/skills/audiences/ana-mae-protetora.md"
+      );
+      const brandPositioning = this.readFile(
+        "marketing/skills/strategy/brand-positioning.md"
+      );
 
       // 3. Preparar prompt para Claude
       const userPrompt = this.preparePrompt(
         contentPlan,
         copyRules,
         photoGuidelines,
-        componentSystem
+        componentSystem,
+        figmaDelivery,
+        visualAgent,
+        rosaPersona,
+        anaMaePersona,
+        brandPositioning
       );
 
       // 4. Chamar Claude para gerar copy
@@ -111,7 +131,7 @@ class OperationalAgent {
   /**
    * Preparar prompt para Claude
    */
-  preparePrompt(contentPlan, copyRules, photoGuidelines, componentSystem) {
+  preparePrompt(contentPlan, copyRules, photoGuidelines, componentSystem, figmaDelivery, visualAgent, rosa, anaMae, positioning) {
     return `
 # Content Plan para Execução Operacional
 
@@ -134,6 +154,36 @@ ${photoGuidelines}
 # Component System (Componentes Figma Disponíveis)
 
 ${componentSystem}
+
+---
+
+# Figma Delivery Standards
+
+${figmaDelivery}
+
+---
+
+# Visual Agent Guidelines
+
+${visualAgent}
+
+---
+
+# Brand Positioning (sempre respeitar tom)
+
+${positioning}
+
+---
+
+# Target Personas (escrita para quem?)
+
+## Rosa - A Equilibrista (PRIMARY)
+${rosa}
+
+---
+
+## Ana Mae - A Mãe Protetora (SECONDARY)
+${anaMae}
 
 ---
 
