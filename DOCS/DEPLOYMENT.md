@@ -1,9 +1,12 @@
 ---
-title: Deployment Guide
-version: 1.0
-type: Automation
-status: active
-last_updated: 2026-05-07
+title: "Deployment Guide"
+version: "1.0"
+type: "Reference"
+status: "Final"
+owner: "Padrinho Marketing Automation"
+parent_doc: "../README.md"
+last_updated: "2026-05-07"
+tags: [deployment, vercel, cron, serverless]
 ---
 
 # 🚀 Padrinho Marketing Automation — Deployment Guide

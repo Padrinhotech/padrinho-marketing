@@ -1,3 +1,12 @@
+---
+title: "Issue Analysis & Fixes"
+type: "Reference"
+status: "Final"
+owner: "Padrinho Marketing Automation"
+parent_doc: "../README.md"
+tags: [analysis, troubleshooting, webhook, deployment]
+---
+
 # Full Analysis: Why 22h/23h Messages Not Received
 
 **Date Analyzed**: May 8, 2026  

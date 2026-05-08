@@ -1,3 +1,12 @@
+---
+title: "Agents Architecture"
+type: "Reference"
+status: "Final"
+owner: "Padrinho Marketing Automation"
+parent_doc: "../README.md"
+tags: [agents, architecture, orchestration, workflow]
+---
+
 # Agents Architecture — Padrinho Marketing Automation
 
 Orquestração multi-agente para geração e publicação de conteúdo com aprovação humana em cada fase.

@@ -1,11 +1,12 @@
 ---
 title: "Padrinho Documentation Standardization"
-version: "1.0"
+version: "1.1"
 status: "Final"
 type: "Skill"
 owner: "Padrinho Marketing Automation"
 parent_doc: "./README.md"
-tags: [skill, documentation, standards, quality, agents, processes]
+last_updated: "2026-05-08"
+tags: [skill, documentation, standards, quality, agents, processes, organization]
 ---
 
 # Skill: Documentation Standardization — Padrinho Marketing Automation
@@ -107,8 +108,34 @@ All executable scripts and configuration files must use lowercase prefixes separ
 │   │       └── hooks-telegram.js   ← Telegram webhook handler
 │   └── AUT_Automation.md
 │
-└── POSTS/                          ← Generated content (managed by Figma Agent)
+├── DOCS/                           ← Reference & Deployment Documentation
+│   ├── AGENTS.md                   ← Agent system overview
+│   ├── DEPLOYMENT.md               ← Deployment guide
+│   ├── DEPLOYMENT_STATUS.md        ← Current deployment status
+│   ├── ANALYSIS_ISSUES_AND_FIXES.md ← Issue analysis & solutions
+│   └── CLAUDE.md                   ← Claude/AI integration notes
+│
+├── POSTS/                          ← Generated content (managed by Figma Agent)
+│
+└── ROOT (Essential Only)
+    ├── package.json                ← NPM dependencies (required by Node.js)
+    ├── package-lock.json           ← NPM lock file (required by Node.js)
+    ├── vercel.json                 ← Vercel serverless configuration (required by Vercel)
+    ├── .env.example                ← Environment variables template
+    ├── .env.local                  ← Local environment variables
+    ├── .gitignore                  ← Git ignore rules
+    └── README.md                   ← Project overview
 ```
+
+**Root Folder Philosophy:**
+Only files **required by npm, Vercel, or Git** stay in the root folder:
+- `package.json` & `package-lock.json` — Node.js requirements
+- `vercel.json` — Vercel serverless/cron configuration
+- `.env.example`, `.env.local` — Environment variables
+- `.gitignore` — Git configuration
+- `README.md` — Project entry point
+
+All documentation, guides, and analysis are organized in semantic folders (`KNOW/`, `SKILL/`, `AGENT/`, `AUT/`, `DOCS/`).
 
 ---
 

@@ -1,3 +1,12 @@
+---
+title: "Claude Integration & MCP Setup"
+type: "Reference"
+status: "Final"
+owner: "Padrinho Marketing Automation"
+parent_doc: "../README.md"
+tags: [claude, mcp, integration, setup]
+---
+
 # CLAUDE.md — Padrinho Marketing Automation
 
 ## Project Overview

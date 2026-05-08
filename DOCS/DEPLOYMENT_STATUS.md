@@ -1,3 +1,12 @@
+---
+title: "Deployment Status & Remediation"
+type: "Reference"
+status: "Final"
+owner: "Padrinho Marketing Automation"
+parent_doc: "../README.md"
+tags: [deployment, troubleshooting, status]
+---
+
 # Deployment Status — May 8, 2026
 
 ## Current Situation
