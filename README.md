@@ -7,7 +7,7 @@ Repositório central de marketing e automação de conteúdo do Padrinho.app.
 ```
 /
 ├── CLAUDE.md              ← instruções para o agente (Claude Code)
-├── vercel.json            ← configuração do servidor (cron 10h BRT)
+├── vercel.json            ← configuração do servidor (cron 8h BRT)
 ├── package.json           ← dependências Node
 ├── .env.example           ← template de variáveis de ambiente
 │
@@ -30,7 +30,7 @@ Repositório central de marketing e automação de conteúdo do Padrinho.app.
 
 ## Como funciona
 
-Todo dia às 10h BRT o sistema roda automaticamente:
+Todo dia às 8h BRT o sistema roda automaticamente:
 1. Claude gera copy baseado nos skills de marketing
 2. Figma exporta os slides visuais
 3. Você recebe o draft no Telegram (@padrinho_marketing_bot)

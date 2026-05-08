@@ -45,7 +45,7 @@ class Orchestrator {
   }
 
   /**
-   * Disparar Strategy Agent (10h BRT)
+   * Disparar Strategy Agent (8h BRT)
    */
   async startStrategyPhase() {
     console.log("[Orchestrator] Starting STRATEGY phase...");
@@ -239,7 +239,7 @@ module.exports = Orchestrator;
  * // Iniciar Insights (22h)
  * await orchestrator.startInsightsPhase();
  * 
- * // Iniciar Strategy (10h)
+ * // Iniciar Strategy (8h)
  * await orchestrator.startStrategyPhase();
  * 
  * // Lidar com aprovação (webhook)

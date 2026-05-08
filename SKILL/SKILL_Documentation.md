@@ -348,7 +348,7 @@ tags: [agent, strategy, orchestration, scheduling]
 Generate strategic brief from insights + market context + brand positioning.
 
 ## Schedule
-Cron: 0 13 * * * (13h UTC = 10h BRT)
+Cron: 0 11 * * * (11h UTC = 8h BRT)
 
 ## Input Requirements
 - KNOW/BrandPositioning.md

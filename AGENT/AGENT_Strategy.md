@@ -11,7 +11,7 @@ tags: [agent, automation, orchestration]
 # Strategy Agent Instructions
 
 ## Propósito
-Gerar briefing estratégico baseado em insights + positioning da marca. Dispara automaticamente às 10h BRT, envia ao Telegram, e aguarda aprovação humana.
+Gerar briefing estratégico baseado em insights + positioning da marca. Dispara automaticamente às 8h BRT, envia ao Telegram, e aguarda aprovação humana.
 
 ## Entrada
 - `KNOW/KNOW_Insights.md` (dados de performance)
@@ -127,7 +127,7 @@ Exemplo:
 - Supabase: estado (update phase = 'strategy')
 
 ## Horário
-- **Cron**: 10h BRT (13h UTC)
+- **Cron**: 8h BRT (11h UTC)
 - **Timeout**: 5 minutos
 - **Retry**: 1x se falhar
 

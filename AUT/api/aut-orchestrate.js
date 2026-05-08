@@ -1,5 +1,5 @@
 // api/orchestrate.js
-// Roda todo dia às 10h BRT (13h UTC)
+// Roda todo dia às 8h BRT (11h UTC)
 // Claude gera copy → Figma exporta slides → Telegram envia para aprovação
 
 import Anthropic from "@anthropic-ai/sdk";

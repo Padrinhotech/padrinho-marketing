@@ -110,7 +110,7 @@ After deployment succeeds:
    - `0 1 * * *` → `/api/agents/agent-insights` (22h BRT)
    - `0 2 * * *` → `/api/agents/agent-market` (23h BRT)
    - `30 2 * * *` → `/api/agents/agent-user-insights` (23h30 BRT)
-   - `0 13 * * *` → `/api/agents/agent-strategy` (10h BRT)
+   - `0 11 * * *` → `/api/agents/agent-strategy` (8h BRT)
 
 ---
 
@@ -257,7 +257,7 @@ After deployment, monitor:
 2. All crons show in Vercel Crons tab  
 3. First agent runs at scheduled time
 4. KNOW_Insights.md gets updated
-5. Telegram receives approval message at 10h BRT
+5. Telegram receives approval message at 8h BRT
 6. Approval buttons work (✅/❌)
 7. Content flows through all phases
 8. Instagram post publishes

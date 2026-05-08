@@ -232,7 +232,7 @@ total: ${data.audience_insights.total_users.toLocaleString("pt-BR")}
 monthly active: ${data.audience_insights.monthly_active.toLocaleString("pt-BR")}
 top interest: ${data.audience_insights.top_interests[0]}
 
-📈 Strategy Agent runs tomorrow at 10h BRT
+📈 Strategy Agent runs tomorrow at 8h BRT
 `;
 
     try {

@@ -1,7 +1,7 @@
 /**
  * Strategy Agent
  * 
- * Executa automaticamente às 10h BRT (13h UTC)
+ * Executa automaticamente às 8h BRT (11h UTC)
  * Lê insights + brand positioning
  * Gera strategic brief com 3-5 objetivos
  * Envia ao Telegram com botões de aprovação

@@ -5,7 +5,7 @@ Sistema de geração e publicação automática de conteúdo para o Instagram do
 ## Fluxo completo
 
 ```
-Vercel Cron (todo dia 10h BRT = 13h UTC)
+Vercel Cron (todo dia 8h BRT = 11h UTC)
   → /api/orchestrate
     → Claude API gera copy (pilar do dia + persona Rosa + copy-rules)
     → Figma REST API exporta slides dos componentes

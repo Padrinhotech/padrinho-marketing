@@ -10,7 +10,7 @@ Orquestração multi-agente para geração e publicação de conteúdo com aprov
      └─ Atualiza ./insights/insights.md
         (Instagram organic, Meta Ads, Google Ads)
 
-10h BRT (13h UTC)
+8h BRT (11h UTC)
   → /api/agents/strategy
      ├─ Lê: insights.md + brand positioning
      ├─ Gera: Strategic brief
@@ -52,7 +52,7 @@ OPERATIONAL (após tactic ✅)
 AUT/api/
 ├── agents/
 │   ├── insights.js        ← cron 22h BRT (MCP: Insightfulpipe, Pipeboard)
-│   ├── strategy.js        ← cron 10h BRT (Claude agent)
+│   ├── strategy.js        ← cron 8h BRT (Claude agent)
 │   ├── tactic.js          ← triggered by webhook
 │   ├── operational.js     ← triggered by webhook
 │   ├── figma.js           ← triggered by webhook
@@ -98,10 +98,10 @@ AUT/api/
   - Pipeboard Meta: últimos 30d de campanhas + ad sets + ads
   - Pipeboard Google: últimos 30d de campanhas + keywords
 - **Human Gate**: Nenhuma (automático)
-- **Próximo**: Strategy Agent (10h)
+- **Próximo**: Strategy Agent (8h)
 
 ### **2. STRATEGY AGENT**
-- **Trigger**: Cron 10h BRT (ou webhook manual)
+- **Trigger**: Cron 8h BRT (ou webhook manual)
 - **Entrada**: 
   - `./insights/insights.md` (data-driven)
   - `./skills/strategy/brand-positioning.md`
@@ -258,7 +258,7 @@ CRON_SECRET=
 | Agente | Hora | Tipo |
 |---|---|---|
 | Insights | 22h BRT | Cron automático |
-| Strategy | 10h BRT | Cron automático |
+| Strategy | 8h BRT | Cron automático |
 | Tactic | Após aprovação | Webhook |
 | Operational | Após aprovação | Webhook |
 | Figma | Após aprovação | Webhook |

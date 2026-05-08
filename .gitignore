@@ -12,3 +12,5 @@ Thumbs.db
 # API keys — never commit
 brand/unsplash-key.txt
 brand/figma-token.txt
+.vercel
+.env*.local
