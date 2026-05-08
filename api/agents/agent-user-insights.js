@@ -13,9 +13,9 @@
 const fs = require("fs");
 const path = require("path");
 const https = require("https");
-const StateManager = require("../../lib/state.js");
-const TelegramClient = require("../../lib/telegram-client.js");
-const { generateApprovalButtons } = require("../../lib/telegram-client.js");
+const StateManager = require("../SKILL/lib/state.js");
+const TelegramClient = require("../SKILL/lib/telegram-client.js");
+const { generateApprovalButtons } = require("../SKILL/lib/telegram-client.js");
 
 class UserInsightsAgent {
   constructor() {

@@ -14,8 +14,8 @@
  * TODO: Implementação completa
  */
 
-const StateManager = require("../../lib/state.js");
-const TelegramClient = require("../../lib/telegram-client.js");
+const StateManager = require("../SKILL/lib/state.js");
+const TelegramClient = require("../SKILL/lib/telegram-client.js");
 
 class FigmaAgent {
   constructor() {
