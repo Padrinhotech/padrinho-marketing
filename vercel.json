@@ -22,6 +22,9 @@
     "api/agents/agent-market.js": { "maxDuration": 120 },
     "api/agents/agent-user-insights.js": { "maxDuration": 90 },
     "api/agents/agent-strategy.js": { "maxDuration": 300 },
+    "api/agents/agent-tactic.js": { "maxDuration": 300 },
+    "api/agents/agent-operational.js": { "maxDuration": 300 },
+    "api/agents/agent-figma.js": { "maxDuration": 300 },
     "api/webhooks/hooks-telegram.js": { "maxDuration": 60 },
     "api/aut-orchestrate.js": { "maxDuration": 60 }
   }
