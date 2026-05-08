@@ -50,7 +50,7 @@ marketing/
 │   └── KNOW_CaioFilho.md
 │
 ├── SKILL/                          ← Operational Skills & Guidelines
-│   ├── SKILL_Documentation.md      ← This file (master standard)
+│   ├── skill-documentation.md      ← This file (master standard)
 │   ├── SKILL_CopyRules.md
 │   ├── SKILL_ComponentSystem.md
 │   ├── SKILL_ComponentIndex.md
@@ -392,6 +392,6 @@ Before finalizing **any** document, validate:
 **Last Updated:** 2026-05-07  
 **Maintained by:** Padrinho Marketing Automation  
 **References:**  
-- [AIX Researcher Documentation Skill](https://github.com/your-org/aix-researcher/foundations/skills/SKILL_Documentation.md)
+- [AIX Researcher Documentation Skill](https://github.com/your-org/aix-researcher/foundations/skills/skill-documentation.md)
 - [marketing/README.md](marketing/README.md)
 - [AGENTS.md](AGENTS.md)

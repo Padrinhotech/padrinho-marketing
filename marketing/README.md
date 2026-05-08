@@ -18,7 +18,7 @@ marketing/
 │   └── KNOW_[PersonaName].md       ← 4 personas
 │
 ├── SKILL/             ← Skills: copy rules, component system, photo guidelines, etc
-│   ├── SKILL_Documentation.md      ← Master documentation standard
+│   ├── skill-documentation.md      ← Master documentation standard
 │   ├── SKILL_CopyRules.md
 │   ├── SKILL_ComponentSystem.md
 │   ├── SKILL_ComponentIndex.md
