@@ -1,4 +1,16 @@
-# Figma Delivery — Padrinho
+---
+title: "Figma Delivery Standards — Padrinho"
+version: "1.0"
+status: "Final"
+type: "Skill"
+owner: "Padrinho Marketing Automation"
+parent_doc: "marketing/SKILL/"
+tags: [figma, delivery, standards, naming, exports]
+---
+
+# Figma Delivery Standards — Padrinho
+
+Directrizes para entrega e exportação de posts do Figma. Leia este arquivo se está preparando frames para publicação ou entendendo padrões de nomeclatura. Usado pelo Figma Agent para validar e preparar conteúdo final.
 
 ## Papel
 Você é a última etapa antes do humano ver o post no Figma.
@@ -130,3 +142,21 @@ Quebras manuais só em:
 - Parágrafos com pausa editorial deliberada
 
 Ver exemplos completos em `copy-rules.md`.
+
+---
+
+**Last Updated:** 2026-05-07  
+**Maintained by:** Figma Agent  
+**References:**  
+- [../SKILL/SKILL_operational/component-system.md](component-system.md)
+- [../SKILL/SKILL_operational/copy-rules.md](copy-rules.md)
+- [../AUT/AUT_figma-design.md](../AUT/figma-design.md)
+
+---
+
+**Last Updated:** 2026-05-07  
+**Maintained by:** Figma Agent  
+**References:**  
+- [../SKILL/SKILL_operational/component-system.md](component-system.md)
+- [../SKILL/SKILL_operational/copy-rules.md](copy-rules.md)
+- [../AUT/AUT_figma-design.md](../AUT/figma-design.md)

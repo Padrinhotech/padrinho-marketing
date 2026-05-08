@@ -1,4 +1,16 @@
+---
+title: "Market Context — Padrinho"
+version: "1.0"
+status: "Final"
+type: "Skill"
+owner: "Padrinho Marketing Automation"
+parent_doc: "marketing/KNOW/"
+tags: [market, competitive-analysis, trends, consumption-data, geography]
+---
+
 # Market Context — Padrinho
+
+Dados de mercado, análise competitiva, tendências de consumo e distribuição geográfica. Leia este arquivo para entender o contexto de mercado e oportunidades. Atualizado pelo Market Agent mensalmente; used pelo Strategy Agent para gerar briefings informados por dados.
 
 > **Protocolo de atualização:** Este arquivo deve ser atualizado mensalmente.
 > O agente roda as queries definidas em `tactic/trend-radar.md`, coleta
@@ -152,3 +164,12 @@ O agente deve, no início de cada mês:
 - Publicações do Ministério da Saúde
 - Reportagens Folha / Estadão / Agência Brasil sobre álcool
 - App stores (ratings e reviews dos concorrentes)
+
+---
+
+**Last Updated:** 2026-05-07  
+**Maintained by:** Market Agent  
+**References:**  
+- [../AUT/AUT_market.md](../AUT/market.md)
+- [../AUT/AUT_strategy.md](../AUT/strategy.md)
+- [../KNOW/KNOW_brand-positioning.md](brand-positioning.md)

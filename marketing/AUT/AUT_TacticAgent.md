@@ -5,9 +5,9 @@ Desdobrar a estratégia em plano de conteúdo concreto (5-10 posts). Dispara ap�
 
 ## Entrada
 - `strategy_brief.json` (do Strategy Agent anterior)
-- `marketing/skills/tactic/editorial-pillars.md` (eixos temáticos)
-- `marketing/skills/tactic/trend-radar.md` (tendências + dados)
-- `marketing/skills/audiences/[persona].md` (perfil detalhado)
+- `../KNOW/KNOW_tactic/editorial-pillars.md` (eixos temáticos)
+- `../KNOW/KNOW_tactic/trend-radar.md` (tendências + dados)
+- `../KNOW/KNOW_audiences/[persona].md` (perfil detalhado)
 
 ## Processo
 

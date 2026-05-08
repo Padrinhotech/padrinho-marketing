@@ -1,4 +1,16 @@
-# References & Components Index — Padrinho
+---
+title: "Component Index — Padrinho Figma"
+version: "1.0"
+status: "Final"
+type: "Skill"
+owner: "Padrinho Marketing Automation"
+parent_doc: "marketing/SKILL/"
+tags: [components, figma, reference, design-system, templates]
+---
+
+# Component Index — Padrinho Figma
+
+Catálogo de componentes Figma disponíveis para o Figma Agent selecionar e usar na criação de posts. Leia este arquivo se está escolhendo templates ou entendendo qual componente usar para cada tipo de conteúdo. Usado pelo Figma Agent para referenciar Frame IDs e seleção estratégica.
 
 ## Arquivo Principal
 **File ID:** `sBItPeNLyvT5EMyKLqQbRv`
@@ -137,3 +149,12 @@ FECHAMENTO de carrossel (CTA suave)
 - CTA com linguagem de venda no orgânico
 - Mais de uma cor de destaque por post
 - Formato quadrado (1080×1080) — sempre 1080×1440
+
+---
+
+**Last Updated:** 2026-05-07  
+**Maintained by:** Figma Agent  
+**References:**  
+- [../SKILL/SKILL_operational/component-system.md](component-system.md)
+- [../SKILL/SKILL_operational/figma-delivery.md](figma-delivery.md)
+- [../AUT/AUT_figma-design.md](../AUT/figma-design.md)

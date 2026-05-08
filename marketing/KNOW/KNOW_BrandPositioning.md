@@ -1,4 +1,16 @@
+---
+title: "Brand Positioning — Padrinho"
+version: "1.0"
+status: "Final"
+type: "Skill"
+owner: "Padrinho Marketing Automation"
+parent_doc: "marketing/KNOW/"
+tags: [brand, positioning, messaging, tone, differentiation, values]
+---
+
 # Brand Positioning — Padrinho
+
+Declaração de visão, posicionamento, taglines e differ enciação da marca Padrinho. Leia este arquivo para entender a essência da marca antes de criar conteúdo estratégico. Usado pelos agentes de Strategy, Tactic e Operational para manter alinhamento com identidade da marca.
 
 ## Visão
 Ser a principal solução emergente para lidar com o alcoolismo no Brasil.
@@ -92,3 +104,12 @@ O Padrinho é a marca mãe. Os produtos são:
 - **Família** — produto complementar
 
 Nas redes sociais, o foco é a marca **Padrinho** + o produto **Bill**.
+
+---
+
+**Last Updated:** 2026-05-07  
+**Maintained by:** Strategy Agent  
+**References:**  
+- [../AUT/AUT_strategy.md](../AUT/strategy.md)
+- [../KNOW/KNOW_market-context.md](market-context.md)
+- [../AUT/AUT_tactic.md](../AUT/tactic.md)

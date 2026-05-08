@@ -1,4 +1,16 @@
+---
+title: "Copy Rules — Padrinho Instagram"
+version: "1.0"
+status: "Final"
+type: "Skill"
+owner: "Padrinho Marketing Automation"
+parent_doc: "marketing/SKILL/"
+tags: [copy, writing, captions, cta, typography, tone]
+---
+
 # Copy Rules — Padrinho Instagram
+
+Directrizes para redação de captions, copy e estruturas visuais de texto em conteúdo gerado pelo Operational Agent. Leia este arquivo se está criando ou refinando copy para Instagram. Usado pelo Operational Agent para validar e estruturar saídas antes de enviar para aprovação Telegram.
 
 ## Estrutura Visual de Post
 
@@ -190,3 +202,12 @@ cria resultados visuais estranhos e imprevisíveis.
 ✅ "Quando acontecer —\ne pode acontecer:"   ← dois momentos distintos intencionais
 ✅ bullet-1: "Não se puna."\nbullet-2: "Fale com alguém."   ← itens separados
 ```
+
+---
+
+**Last Updated:** 2026-05-07  
+**Maintained by:** Operational Agent  
+**References:**  
+- [../SKILL/SKILL_audiences/user-insights.md](../SKILL/SKILL_audiences/user-insights.md)
+- [../SKILL/SKILL_brand-positioning.md](../SKILL/SKILL_brand-positioning.md)
+- [../AUT/AUT_operational.md](../AUT/AUT_operational.md)

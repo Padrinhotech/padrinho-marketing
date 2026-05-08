@@ -5,9 +5,9 @@ Gerar copy (captions, hashtags) e visual brief (fotos, cores, layout) para cada 
 
 ## Entrada
 - `tactic_plan.json` (do Tactic Agent)
-- `marketing/skills/operational/copy-rules.md` (tom, tamanho, keywords)
-- `marketing/skills/operational/photo-guidelines.md` (estilo, demografia, mood)
-- `marketing/skills/operational/component-system.md` (componentes Figma disponíveis)
+- `../KNOW/KNOW_operational/copy-rules.md` (tom, tamanho, keywords)
+- `../KNOW/KNOW_operational/photo-guidelines.md` (estilo, demografia, mood)
+- `../KNOW/KNOW_operational/component-system.md` (componentes Figma disponíveis)
 
 ## Processo
 

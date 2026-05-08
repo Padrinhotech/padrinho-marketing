@@ -5,9 +5,9 @@ Gerar briefing estratégico baseado em insights + positioning da marca. Dispara 
 
 ## Entrada
 - `marketing/insights/insights.md` (dados de performance)
-- `marketing/skills/strategy/brand-positioning.md` (essência da marca)
-- `marketing/skills/strategy/market-context.md` (contexto do mercado)
-- `marketing/skills/audiences/user-insights.md` (dados do Elo)
+- `../KNOW/KNOW_strategy/brand-positioning.md` (essência da marca)
+- `../KNOW/KNOW_strategy/market-context.md` (contexto do mercado)
+- `../KNOW/KNOW_audiences/user-insights.md` (dados do Elo)
 
 ## Processo
 
@@ -112,7 +112,7 @@ Exemplo:
 
 ## Requisitos
 - Claude Agent (com system prompt)
-- Read: GitHub `marketing/insights/` + `marketing/skills/`
+- Read: GitHub `marketing/insights/` + `../KNOW/KNOW_`
 - Write: Telegram (enviar briefing + buttons)
 - Supabase: estado (update phase = 'strategy')
 

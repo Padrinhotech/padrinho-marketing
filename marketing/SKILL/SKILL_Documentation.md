@@ -18,53 +18,58 @@ This is an **operational skill** applied to all skill creation, agent instructio
 
 ## 1. File Naming Conventions
 
-To ensure organization and clarity for both humans and AI agents, all files in `/marketing/skills/` and `/marketing/agents/` must follow these naming patterns:
+All documentation files must use prefixes to clearly indicate their type and purpose. This enables both human navigation and agent routing.
 
-| Prefix | Category | Example | Location |
+| Prefix | Category | Purpose | Example |
 | :--- | :--- | :--- | :--- |
-| **SKILL_** | Operational skills and guidelines | `SKILL_Documentation.md` | `marketing/skills/` |
-| **AGENT_** | Agent instructions and definitions | `AGENT_Strategy.md` | `marketing/agents/` |
-| *(none)* | Specific skill topics (primary convention) | `copy-rules.md`, `component-system.md` | `marketing/skills/{category}/` |
+| **KNOW_** | Knowledge & Context | Information agents need to understand (brand, market, audiences, personas, insights) | `KNOW_BrandPositioning.md`, `KNOW_MarketContext.md` |
+| **SKILL_** | Operational Skills | Step-by-step guidelines for how to execute tasks (copy rules, component selection, photo sourcing) | `SKILL_CopyRules.md`, `SKILL_ComponentSystem.md` |
+| **AUT_** | Automations & Agents | Instructions for how agents operate (agent execution steps, approval gates, data inputs/outputs) | `AUT_StrategyAgent.md`, `AUT_OperationalAgent.md` |
+
+### Key Distinction: Knowledge vs. Skill
+- **KNOW_** files are *read-only context* that agents ingest to understand business rules, market conditions, or brand identity
+- **SKILL_** files are *executable guidelines* with step-by-step instructions, checklists, and validation criteria
+- **AUT_** files define *agent behavior* and orchestration logic
 
 ### Folder Organization
 
 ```
-marketing/skills/
-├── SKILL_Documentation.md          ← This file (master standard)
-├── strategy/
-│   ├── brand-positioning.md
-│   └── market-context.md           ← Updated by Market Agent
-├── tactic/
-│   ├── editorial-pillars.md
-│   └── trend-radar.md
-├── operational/                    ← Visual & execution skills
-│   ├── component-index.md          ← Component selection guide
-│   ├── component-system.md         ← Available Figma components
-│   ├── copy-rules.md               ← Copy writing standards
-│   ├── figma-delivery.md           ← Figma delivery standards
-│   ├── photo-guidelines.md         ← Photo sourcing & style
-│   ├── visual-agent.md             ← Design guidelines
-│   ├── inject-photos.js            ← Photo injection script
-│   └── inject-photos-node.js       ← Local photo injection
-├── audiences/                      ← User personas & insights
-│   ├── icp.md                      ← Ideal customer profile
-│   ├── user-insights.md            ← Updated by User Insights Agent
-│   ├── rosa-equilibrista.md
-│   ├── ana-mae-protetora.md
-│   ├── pedro-autonomo-solitario.md
-│   └── caio-filho-ressentido.md
-└── ads/                            ← Campaign & audience skills
-    ├── audience-pipeline.md
-    └── campaign-setup-checklist.md
-
-marketing/agents/
-├── insights.md                     ← Insights Agent instructions
-├── market.md                       ← Market Agent instructions
-├── user-insights.md                ← User Insights Agent instructions
-├── strategy.md                     ← Strategy Agent instructions
-├── tactic.md                       ← Tactic Agent instructions
-├── operational.md                  ← Operational Agent instructions
-└── figma-design.md                 ← Figma Agent instructions
+marketing/
+├── KNOW/                           ← Knowledge & Context files
+│   ├── KNOW_BrandPositioning.md
+│   ├── KNOW_MarketContext.md       ← Updated by Market Agent
+│   ├── KNOW_EditorialPillars.md
+│   ├── KNOW_TrendRadar.md
+│   ├── KNOW_ICP.md
+│   ├── KNOW_UserInsights.md        ← Updated by User Insights Agent
+│   ├── KNOW_RosaEquilibrista.md
+│   ├── KNOW_AnaMaeProtetora.md
+│   ├── KNOW_PedroAutonomo.md
+│   └── KNOW_CaioFilho.md
+│
+├── SKILL/                          ← Operational Skills & Guidelines
+│   ├── SKILL_Documentation.md      ← This file (master standard)
+│   ├── SKILL_CopyRules.md
+│   ├── SKILL_ComponentSystem.md
+│   ├── SKILL_ComponentIndex.md
+│   ├── SKILL_FigmaDelivery.md
+│   ├── SKILL_PhotoGuidelines.md
+│   ├── SKILL_VisualAgent.md
+│   ├── SKILL_AudiencePipeline.md
+│   ├── SKILL_CampaignSetup.md
+│   ├── inject-photos.js
+│   └── inject-photos-node.js
+│
+├── AUT/                            ← Automations & Agent Instructions
+│   ├── AUT_InsightsAgent.md
+│   ├── AUT_MarketAgent.md
+│   ├── AUT_UserInsightsAgent.md
+│   ├── AUT_StrategyAgent.md
+│   ├── AUT_TacticAgent.md
+│   ├── AUT_OperationalAgent.md
+│   └── AUT_FigmaAgent.md
+│
+└── posts/                          ← Generated content (managed by Figma Agent)
 ```
 
 ---
@@ -92,7 +97,7 @@ tags: [tag1, tag2, tag3]
 - `version`: Increment on significant changes (1.0 → 1.1 → 2.0)
 - `status`: Draft (in progress), Reviewed (peer check), Final (production)
 - `owner`: Always "Padrinho Marketing Automation" or specific agent name
-- `parent_doc`: Link to context (e.g., `marketing/skills/operational/`)
+- `parent_doc`: Link to context (e.g., `../SKILL/SKILL_operational/`)
 - `tags`: 3-5 relevant tags for search/organization
 
 ### B. Title & Purpose Statement
@@ -175,103 +180,170 @@ At the very end of the document:
 
 ## 4. Documentation by Content Type
 
-### A. Skill Documents (`marketing/skills/*/`)
-Operational guidelines for specific tasks or knowledge areas.
+### A. KNOW_ Documents (Knowledge & Context)
+Read-only files containing information agents ingest to understand business context.
+
+**Purpose:** Brand identity, market conditions, audience profiles, editorial strategy
+**Location:** `/marketing/KNOW/`
 
 **Mandatory Sections:**
-1. Frontmatter + Purpose Statement
+1. Frontmatter + Purpose Statement (describe what agent reads this and why)
 2. Overview / Context
-3. Core Rules or Concepts
-4. Examples
-5. Edge Cases or Exceptions (if applicable)
+3. Core Concepts or Definitions
+4. Data (if applicable) — tables, metrics, personas
+5. Selection Guidelines (if applicable)
 6. Footer with references
 
 **Example Structure:**
 ```markdown
 ---
-title: "Copy Rules"
+title: "Brand Positioning — Padrinho"
 version: "1.0"
 status: "Final"
-type: "Skill"
+type: "Knowledge"
 owner: "Padrinho Marketing Automation"
-parent_doc: "marketing/skills/operational/"
-tags: [copy, writing, captions, cta]
+parent_doc: "marketing/KNOW/"
+tags: [brand, positioning, messaging, values]
 ---
 
-# Copy Rules — Padrinho Social Content
+# Brand Positioning — Padrinho
 
-Directrizes para redação de captions, hashtags e copy em conteúdo gerado pelo Operational Agent...
+O Strategy Agent lê este arquivo para entender posicionamento da marca...
 
-## Estrutura Base de Caption
+## Vision
 
-## Exemplos por Pilar Editorial
-
-## Regras de Hashtag
+## Core Values
 
 ---
 
 **Last Updated:** 2026-05-07  
-**Maintained by:** Operational Agent  
+**Read by:** Strategy, Tactic, Operational Agents  
 **References:**  
-- marketing/skills/audiences/
-- marketing/agents/operational.md
+- marketing/KNOW/MarketContext.md
 ```
 
-### B. Agent Instructions (`marketing/agents/`)
-Step-by-step guidance for what an agent must do.
+### B. SKILL_ Documents (Operational Skills)
+Step-by-step, executable guidelines with checklists and validation criteria.
+
+**Purpose:** How to execute specific tasks (write copy, select components, source photos)
+**Location:** `/marketing/SKILL/`
 
 **Mandatory Sections:**
-1. Frontmatter + Purpose Statement
-2. What This Agent Does
-3. Input Requirements (what files/data it reads)
-4. Output Specification (what it produces, exact format)
-5. Step-by-Step Process
-6. Approval Gate (if applicable)
-7. Error Handling / Edge Cases
+1. Frontmatter + Purpose Statement (describe what agent uses this for)
+2. Overview / Context
+3. Core Rules or Concepts
+4. Step-by-Step Process or Checklist
+5. Examples (at least one per major rule)
+6. Edge Cases or Exceptions
+7. Validation Checklist
 8. Footer with references
 
 **Example Structure:**
 ```markdown
 ---
-title: "Strategy Agent Instructions"
+title: "Copy Rules — Padrinho"
 version: "1.0"
 status: "Final"
-type: "Agent"
+type: "Skill"
 owner: "Padrinho Marketing Automation"
-parent_doc: "marketing/agents/"
-tags: [agent, strategy, insights, planning]
+parent_doc: "marketing/SKILL/"
+tags: [copy, writing, captions, cta, guidelines]
 ---
 
-# Strategy Agent — Instructions
+# Copy Rules — Padrinho
 
-O Strategy Agent lê insights diários e habilidades de marca para gerar um brief estratégico...
+O Operational Agent usa este arquivo para estruturar e validar captions...
 
-## Input Requirements
+## Estrutura Base de Caption
 
-## Output Specification
+### 1. Gancho (primeiros 125 chars)
+- [ ] Hook emocional?
+- [ ] Relevante ao pilar?
 
-## Processo Passo a Passo
+## Exemplos por Pilar Editorial
 
-## Human Approval Gate
+## Regras de Hashtag
+
+## Validation Checklist
 
 ---
 
 **Last Updated:** 2026-05-07  
-**Maintained by:** Strategy Agent  
+**Used by:** Operational Agent  
 **References:**  
-- marketing/skills/strategy/brand-positioning.md
-- AGENTS.md (architecture)
+- marketing/KNOW/EditorialPillars.md
+- marketing/KNOW/BrandPositioning.md
 ```
 
-### C. Reference Indexes
-Catalogs or lookup tables (e.g., `component-index.md`).
+### C. AUT_ Documents (Automations & Agents)
+Agent execution instructions defining inputs, outputs, and orchestration.
+
+**Purpose:** How agents run (step-by-step process, data flow, approval gates)
+**Location:** `/marketing/AUT/`
 
 **Mandatory Sections:**
 1. Frontmatter + Purpose Statement
-2. Table of Contents or Quick Reference
-3. Detailed Listings (organized tables or lists)
-4. Selection Guidelines (if applicable)
-5. Footer with version and last update
+2. Agent Purpose & Responsibilities
+3. Trigger / Schedule (when it runs)
+4. Input Requirements (files, data, triggers)
+5. Step-by-Step Process
+6. Output Specification (exact JSON structure)
+7. Approval Gates (if applicable)
+8. Error Handling
+9. Footer with references
+
+**Example Structure:**
+```markdown
+---
+title: "Strategy Agent — Automation"
+version: "1.0"
+status: "Final"
+type: "Automation"
+owner: "Padrinho Marketing Automation"
+parent_doc: "marketing/AUT/"
+tags: [agent, strategy, orchestration, scheduling]
+---
+
+# Strategy Agent — Automation
+
+## Purpose
+Generate strategic brief from insights + market context + brand positioning.
+
+## Schedule
+Cron: 0 13 * * * (13h UTC = 10h BRT)
+
+## Input Requirements
+- marketing/KNOW/BrandPositioning.md
+- marketing/KNOW/MarketContext.md
+- marketing/KNOW/EditorialPillars.md
+
+## Output Specification
+
+```json
+{
+  "date": "2026-05-07",
+  "objectives": [...],
+  "telegram_message_id": 12345
+}
+```
+
+## Step-by-Step Process
+
+1. Read KNOW_ files
+2. Validate previous phase
+3. Call Claude with system prompt
+4. Validate output
+5. Save to state
+6. Send Telegram preview
+
+---
+
+**Last Updated:** 2026-05-07  
+**Maintained by:** Orchestrator  
+**References:**  
+- AGENTS.md (architecture)
+- marketing/KNOW/BrandPositioning.md
+```
 
 ---
 

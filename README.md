@@ -12,13 +12,12 @@ Repositório central de marketing e automação de conteúdo do Padrinho.app.
 ├── .env.example           ← template de variáveis de ambiente
 │
 ├── marketing/             ← estratégia, personas, brand, posts
-│   ├── skills/
-│   │   ├── audiences/     ← personas (Rosa, etc)
-│   │   ├── tactic/        ← pilares editoriais
-│   │   └── operational/   ← copy-rules, componentes Figma, índice de componentes
-│   ├── brand/
-│   ├── insights/
-│   └── posts/
+│   ├── KNOW/              ← knowledge files (brand positioning, market context, personas)
+│   ├── SKILL/             ← operational skills (copy rules, component index, guidelines)
+│   ├── AUT/               ← automation/agent instructions (all 7 agents)
+│   ├── brand/             ← design tokens, product spec
+│   ├── insights/          ← marketing insights (updated daily)
+│   └── posts/             ← generated social content
 │
 └── automation/            ← sistema técnico de publicação
     ├── api/

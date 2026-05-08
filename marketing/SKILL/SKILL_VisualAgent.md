@@ -1,4 +1,16 @@
-# Visual Agent — Padrinho
+---
+title: "Visual Agent Workflow — Padrinho"
+version: "1.0"
+status: "Final"
+type: "Skill"
+owner: "Padrinho Marketing Automation"
+parent_doc: "marketing/SKILL/"
+tags: [visual, photos, unsplash, figma, workflow]
+---
+
+# Visual Agent Workflow — Padrinho
+
+Workflow de seleção e aplicação de fotos em templates Figma com imagem. Leia este arquivo junto com photo-guidelines.md quando processando conteúdo visual. Guia operacional para aplicação de assets visuais.
 
 ## Papel
 Você é acionado sempre que um slide usa um template com foto (`bg-photo`).
@@ -162,3 +174,12 @@ Fontes recomendadas para as fotos:
 - [ ] Fill copiado corretamente para o layer bg-photo?
 - [ ] Atribuição registrada na `_annotation`?
 - [ ] Screenshot tirado para validação visual?
+
+---
+
+**Last Updated:** 2026-05-07  
+**Maintained by:** Figma Agent  
+**References:**  
+- [../SKILL/SKILL_operational/photo-guidelines.md](photo-guidelines.md)
+- [../AUT/AUT_figma-design.md](../AUT/figma-design.md)
+- [../AUT/AUT_operational.md](../AUT/operational.md)

@@ -1,4 +1,16 @@
+---
+title: "Editorial Pillars & Content Strategy — Padrinho"
+version: "1.0"
+status: "Final"
+type: "Skill"
+owner: "Padrinho Marketing Automation"
+parent_doc: "marketing/KNOW/"
+tags: [editorial, pillars, content-strategy, themes, tones, engagement]
+---
+
 # Editorial Pillars & Content Strategy — Padrinho Instagram
+
+Os 5 pilares editoriais que definem todo conteúdo da marca. Leia este arquivo para entender os temas, tons e tipos de engajamento esperados. Usado pelos agentes de Tactic e Operational para alinhar conteúdo com estratégia editorial.
 
 ## Objetivo do Conteúdo
 Mover pessoas de **estilo de vida dependente** → **estilo de vida independente**.
@@ -184,3 +196,12 @@ O arco da semana segue esta estrutura:
 - Your brand needs to inspire action and community loyalty
 - Lifestyle brand > product brand nas redes sociais
 - Autêntico e original > produção perfeita mas fria
+
+---
+
+**Last Updated:** 2026-05-07  
+**Maintained by:** Tactic Agent  
+**References:**  
+- [../KNOW/KNOW_trend-radar.md](trend-radar.md)
+- [../AUT/AUT_tactic.md](../AUT/tactic.md)
+- [../AUT/AUT_operational.md](../AUT/operational.md)

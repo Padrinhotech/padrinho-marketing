@@ -1,4 +1,16 @@
+---
+title: "Trend Radar — Padrinho"
+version: "1.0"
+status: "Final"
+type: "Skill"
+owner: "Padrinho Marketing Automation"
+parent_doc: "marketing/KNOW/"
+tags: [trends, market-research, cultural-moments, monitoring, news]
+---
+
 # Trend Radar — Padrinho
+
+Protocolo de monitoramento de tendências culturais, movimentos de mercado e momentos culturais relevantes. Leia este arquivo para entender como manter o conteúdo conectado ao mundo real. Usado pelo Tactic Agent para validar seleção de temas.
 
 ## Propósito
 O conteúdo do Padrinho precisa falar com o mundo em que o público vive,
@@ -142,4 +154,13 @@ Viral do filtro Ghibli → post sobre o filtro Ghibli (sem conexão real)
 - Ansiedade como ponte álcool + saúde mental — sub-explorada
 
 **Solicitar atualização:** mensalmente junto com market-context.md
+
+---
+
+**Last Updated:** 2026-05-07  
+**Maintained by:** Tactic Agent  
+**References:**  
+- [../KNOW/KNOW_editorial-pillars.md](editorial-pillars.md)
+- [../KNOW/KNOW_market-context.md](../strategy/market-context.md)
+- [../AUT/AUT_tactic.md](../AUT/tactic.md)
 

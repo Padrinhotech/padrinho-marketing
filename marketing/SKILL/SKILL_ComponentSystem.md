@@ -1,4 +1,16 @@
+---
+title: "Component System — Padrinho Social Posts"
+version: "1.0"
+status: "Final"
+type: "Skill"
+owner: "Padrinho Marketing Automation"
+parent_doc: "marketing/SKILL/"
+tags: [components, figma, design-system, guidelines, visual-standards]
+---
+
 # Component System — Padrinho Social Posts
+
+Guidelines de uso do design system Figma para criação de posts. Leia este arquivo se está entendendo como os componentes funcionam ou como adaptá-los. Usado pelo Figma Agent e Operational Agent para manter consistência visual.
 
 ## Conceito
 Design system para posts de Instagram. O designer cria e mantém os
@@ -277,3 +289,12 @@ S10 block-d / statement-light     → Fechamento
 - [ ] Carrossel tem pelo menos 1 slide com foto (block-h/i/j/k/l/n ou cover-c/d)?
 - [ ] Foto não está no slide 1 nem no último slide?
 - [ ] Duas fotos não estão em slides consecutivos?
+
+---
+
+**Last Updated:** 2026-05-07  
+**Maintained by:** Design System  
+**References:**  
+- [../SKILL/SKILL_operational/component-index.md](component-index.md)
+- [../SKILL/SKILL_operational/figma-delivery.md](figma-delivery.md)
+- [../AUT/AUT_operational.md](../AUT/operational.md)

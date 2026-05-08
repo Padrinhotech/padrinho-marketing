@@ -1,10 +1,10 @@
 # User Insights Agent — Padrinho
 
-**Responsável por:** Coletar dados de usuários do Supabase (read-only), analisar padrões comportamentais, e atualizar `marketing/skills/audiences/user-insights.md` automaticamente.
+**Responsável por:** Coletar dados de usuários do Supabase (read-only), analisar padrões comportamentais, e atualizar `../KNOW/KNOW_audiences/user-insights.md` automaticamente.
 
 **Quando roda:** Diariamente às 23h30 BRT (00h30 UTC+1) — após Market Agent
 **Entrada:** Supabase queries (read-only) em profiles, behavior, journey
-**Saída:** Arquivo atualizado `marketing/skills/audiences/user-insights.md` + commit no GitHub
+**Saída:** Arquivo atualizado `../KNOW/KNOW_audiences/user-insights.md` + commit no GitHub
 
 ---
 
@@ -384,7 +384,7 @@ Tabela e análise sobre:
 - **Runtime:** 90s (queries Supabase, síntese)
 - **Saída:** 
   1. JSON armazenado em estado
-  2. `marketing/skills/audiences/user-insights.md` atualizado
+  2. `../KNOW/KNOW_audiences/user-insights.md` atualizado
   3. GitHub commit automático
   4. Telegram message de preview (aguardando aprovação)
 
