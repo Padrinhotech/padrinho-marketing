@@ -172,4 +172,4 @@ O agente deve, no início de cada mês:
 **References:**  
 - [../AUT/AUT_market.md](../AUT/market.md)
 - [../AUT/AUT_strategy.md](../AUT/strategy.md)
-- [../KNOW/KNOW_brand-positioning.md](brand-positioning.md)
+- [../KNOW/KNOW_KNOW_BrandPositioning.md](KNOW_BrandPositioning.md)

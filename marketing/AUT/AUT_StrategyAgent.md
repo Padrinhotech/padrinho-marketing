@@ -5,8 +5,8 @@ Gerar briefing estratégico baseado em insights + positioning da marca. Dispara 
 
 ## Entrada
 - `marketing/insights/insights.md` (dados de performance)
-- `../KNOW/KNOW_strategy/brand-positioning.md` (essência da marca)
-- `../KNOW/KNOW_strategy/market-context.md` (contexto do mercado)
+- `../KNOW/KNOW_strategy/KNOW_BrandPositioning.md` (essência da marca)
+- `../KNOW/KNOW_strategy/KNOW_MarketContext.md` (contexto do mercado)
 - `../KNOW/KNOW_audiences/user-insights.md` (dados do Elo)
 
 ## Processo
@@ -91,8 +91,8 @@ Exemplo:
 
 1. **Leia TUDO**:
    - insights.md (dados recentes)
-   - brand-positioning.md (quem somos)
-   - market-context.md (como está o mercado)
+   - KNOW_BrandPositioning.md (quem somos)
+   - KNOW_MarketContext.md (como está o mercado)
    - user-insights.md (quem é nossa audiência)
 
 2. **Estrutura de Raciocínio**:

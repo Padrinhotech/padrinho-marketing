@@ -5,9 +5,9 @@ Gerar copy (captions, hashtags) e visual brief (fotos, cores, layout) para cada 
 
 ## Entrada
 - `tactic_plan.json` (do Tactic Agent)
-- `../KNOW/KNOW_operational/copy-rules.md` (tom, tamanho, keywords)
+- `../KNOW/KNOW_operational/SKILL_CopyRules.md` (tom, tamanho, keywords)
 - `../KNOW/KNOW_operational/photo-guidelines.md` (estilo, demografia, mood)
-- `../KNOW/KNOW_operational/component-system.md` (componentes Figma disponíveis)
+- `../KNOW/KNOW_operational/SKILL_ComponentSystem.md` (componentes Figma disponíveis)
 
 ## Processo
 
@@ -148,7 +148,7 @@ Component: 10-slide-carousel-template
 ## Instruções de Prompting
 
 1. **Copy Rules Priority**:
-   - Leia copy-rules.md INTEIRAMENTE
+   - Leia SKILL_CopyRules.md INTEIRAMENTE
    - Aplicar tom, keywords, tamanho
    - Zero jargão médico
    - Máximo empático
@@ -161,7 +161,7 @@ Component: 10-slide-carousel-template
    - Exemplo bom: "black woman 25-35 stressed but determined look, authentic emotion, dark moody lighting"
 
 3. **Component Mapping**:
-   - Ler component-system.md
+   - Ler SKILL_ComponentSystem.md
    - Mapear cada post a um component Figma existente
    - Se não existe, flag para designer (não invente)
 

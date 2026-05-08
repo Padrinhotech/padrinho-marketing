@@ -295,6 +295,6 @@ S10 block-d / statement-light     → Fechamento
 **Last Updated:** 2026-05-07  
 **Maintained by:** Design System  
 **References:**  
-- [../SKILL/SKILL_operational/component-index.md](component-index.md)
+- [../SKILL/SKILL_operational/SKILL_ComponentIndex.md](SKILL_ComponentIndex.md)
 - [../SKILL/SKILL_operational/figma-delivery.md](figma-delivery.md)
 - [../AUT/AUT_operational.md](../AUT/operational.md)

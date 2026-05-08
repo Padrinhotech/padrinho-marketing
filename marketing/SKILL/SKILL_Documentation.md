@@ -147,7 +147,7 @@ At the very end of the document:
 ### Language
 - **Primary Language:** Portuguese (Brazilian variant — pt-BR)
 - **Use English only for:** Technical terms, API references, code, proper names that are English-only
-- **Example:** "O copy deve seguir as regras de CTA (call-to-action) definidas em copy-rules.md"
+- **Example:** "O copy deve seguir as regras de CTA (call-to-action) definidas em SKILL_CopyRules.md"
 
 ### Tone of Voice
 - **Professional**: Avoid slang or overly casual language

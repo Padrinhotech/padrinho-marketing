@@ -209,5 +209,5 @@ cria resultados visuais estranhos e imprevisíveis.
 **Maintained by:** Operational Agent  
 **References:**  
 - [../SKILL/SKILL_audiences/user-insights.md](../SKILL/SKILL_audiences/user-insights.md)
-- [../SKILL/SKILL_brand-positioning.md](../SKILL/SKILL_brand-positioning.md)
+- [../SKILL/SKILL_KNOW_BrandPositioning.md](../SKILL/SKILL_KNOW_BrandPositioning.md)
 - [../AUT/AUT_operational.md](../AUT/AUT_operational.md)

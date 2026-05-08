@@ -17,7 +17,7 @@ Você é a última etapa antes do humano ver o post no Figma.
 Você **não constrói posts do zero**. Você copia componentes de `_COMPONENTS`
 e adapta o conteúdo aprovado dentro das regras definidas.
 
-Para regras completas de adaptação de conteúdo, leia `component-system.md`.
+Para regras completas de adaptação de conteúdo, leia `SKILL_ComponentSystem.md`.
 
 ---
 
@@ -50,7 +50,7 @@ de destino começa com `_`. Se não começar, PARAR.
    - Post único:   "Post / YYYY-MM-DD / vN — {componente}"
    - Carrossel:    "Slide 01 / {componente}", "Slide 02 / {componente}", ...
    - Novo template: "RASCUNHO / {componente} / vN"
-5. Editar apenas os layers permitidos (ver component-system.md)
+5. Editar apenas os layers permitidos (ver SKILL_ComponentSystem.md)
 6. Preencher _annotation com caption + hashtags + meta
 7. Tirar screenshot e validar visualmente
 8. Reportar ao humano com screenshot + link
@@ -122,7 +122,7 @@ Novo template (proposto pelo agente):
 - [ ] Componente copiado de `_COMPONENTS` (nunca construído do zero)?
 - [ ] Frame está em `_QUEUE` do arquivo `sBItPeNLyvT5EMyKLqQbRv`?
 - [ ] Nome do frame segue a nomenclatura correta?
-- [ ] Apenas layers permitidos foram editados (ver component-system.md)?
+- [ ] Apenas layers permitidos foram editados (ver SKILL_ComponentSystem.md)?
 - [ ] `hl` (highlight) ajustado para cobrir o texto correto?
 - [ ] `counter` atualizado com número do slide?
 - [ ] `_annotation` preenchida com caption + hashtags + meta?
@@ -141,15 +141,15 @@ Quebras manuais só em:
 - Itens de lista com separação visual real
 - Parágrafos com pausa editorial deliberada
 
-Ver exemplos completos em `copy-rules.md`.
+Ver exemplos completos em `SKILL_CopyRules.md`.
 
 ---
 
 **Last Updated:** 2026-05-07  
 **Maintained by:** Figma Agent  
 **References:**  
-- [../SKILL/SKILL_operational/component-system.md](component-system.md)
-- [../SKILL/SKILL_operational/copy-rules.md](copy-rules.md)
+- [../SKILL/SKILL_operational/SKILL_ComponentSystem.md](SKILL_ComponentSystem.md)
+- [../SKILL/SKILL_operational/SKILL_CopyRules.md](SKILL_CopyRules.md)
 - [../AUT/AUT_figma-design.md](../AUT/figma-design.md)
 
 ---
@@ -157,6 +157,6 @@ Ver exemplos completos em `copy-rules.md`.
 **Last Updated:** 2026-05-07  
 **Maintained by:** Figma Agent  
 **References:**  
-- [../SKILL/SKILL_operational/component-system.md](component-system.md)
-- [../SKILL/SKILL_operational/copy-rules.md](copy-rules.md)
+- [../SKILL/SKILL_operational/SKILL_ComponentSystem.md](SKILL_ComponentSystem.md)
+- [../SKILL/SKILL_operational/SKILL_CopyRules.md](SKILL_CopyRules.md)
 - [../AUT/AUT_figma-design.md](../AUT/figma-design.md)

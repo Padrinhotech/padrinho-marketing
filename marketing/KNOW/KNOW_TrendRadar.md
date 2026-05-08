@@ -24,7 +24,7 @@ alimenta a criação de conteúdo.
 
 ### Frequência
 - **Semanal:** monitoramento de tendências culturais (o agente busca antes de criar)
-- **Mensal:** atualização de dados de mercado (ver `market-context.md`)
+- **Mensal:** atualização de dados de mercado (ver `KNOW_MarketContext.md`)
 - **Trimestral:** revisão de concorrentes e movimentos do setor
 
 ### Queries semanais obrigatórias (rodar via web_search antes de cada sessão)
@@ -153,7 +153,7 @@ Viral do filtro Ghibli → post sobre o filtro Ghibli (sem conexão real)
 - Full abstinence é o objetivo dominante (25) — tom mais decisivo
 - Ansiedade como ponte álcool + saúde mental — sub-explorada
 
-**Solicitar atualização:** mensalmente junto com market-context.md
+**Solicitar atualização:** mensalmente junto com KNOW_MarketContext.md
 
 ---
 
@@ -161,6 +161,6 @@ Viral do filtro Ghibli → post sobre o filtro Ghibli (sem conexão real)
 **Maintained by:** Tactic Agent  
 **References:**  
 - [../KNOW/KNOW_editorial-pillars.md](editorial-pillars.md)
-- [../KNOW/KNOW_market-context.md](../strategy/market-context.md)
+- [../KNOW/KNOW_KNOW_MarketContext.md](../strategy/KNOW_MarketContext.md)
 - [../AUT/AUT_tactic.md](../AUT/tactic.md)
 

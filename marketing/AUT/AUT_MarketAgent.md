@@ -1,10 +1,10 @@
 # Market Agent — Padrinho
 
-**Responsável por:** Coletar dados de mercado, tendências, comportamento de consumo, paisagem competitiva e atualizar `../KNOW/KNOW_strategy/market-context.md` automaticamente.
+**Responsável por:** Coletar dados de mercado, tendências, comportamento de consumo, paisagem competitiva e atualizar `../KNOW/KNOW_strategy/KNOW_MarketContext.md` automaticamente.
 
 **Quando roda:** Diariamente às 23h BRT (00h UTC+1) — após Insights Agent
 **Entrada:** MCPs de trend data + APIs externas
-**Saída:** Arquivo atualizado `../KNOW/KNOW_strategy/market-context.md` + commit no GitHub
+**Saída:** Arquivo atualizado `../KNOW/KNOW_strategy/KNOW_MarketContext.md` + commit no GitHub
 
 ---
 
@@ -59,7 +59,7 @@
 
 ---
 
-## Estrutura de Saída (market-context.md)
+## Estrutura de Saída (KNOW_MarketContext.md)
 
 Atualizar APENAS as seções marcadas com **📊**:
 
@@ -212,6 +212,6 @@ Para cada um (Sunflower, Reframe, I Am Sober):
 - **Runtime:** 120s (coleta de dados, síntese)
 - **Saída:** 
   1. JSON armazenado em estado
-  2. `../KNOW/KNOW_strategy/market-context.md` atualizado
+  2. `../KNOW/KNOW_strategy/KNOW_MarketContext.md` atualizado
   3. GitHub commit automático
   4. Telegram message de preview (aguardando aprovação)
