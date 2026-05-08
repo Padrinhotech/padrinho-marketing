@@ -8,8 +8,8 @@
  * Saída: KNOW/KNOW_Insights.md (commit ao GitHub)
  */
 
-const StateManager = require("../lib/state.js");
-const TelegramClient = require("../lib/telegram-client.js");
+const StateManager = require("../../lib/state.js");
+const TelegramClient = require("../../lib/telegram-client.js");
 
 class InsightsAgent {
   constructor() {

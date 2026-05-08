@@ -12,15 +12,15 @@
 
 const fs = require("fs");
 const path = require("path");
-const StateManager = require("../lib/state.js");
-const TelegramClient = require("../lib/telegram-client.js");
-const ClaudeClient = require("../lib/claude-client.js");
+const StateManager = require("../../lib/state.js");
+const TelegramClient = require("../../lib/telegram-client.js");
+const ClaudeClient = require("../../lib/claude-client.js");
 const {
   TACTIC_SYSTEM_PROMPT,
-} = require("../lib/claude-client.js");
+} = require("../../lib/claude-client.js");
 const {
   generateApprovalButtons,
-} = require("../lib/telegram-client.js");
+} = require("../../lib/telegram-client.js");
 
 class TacticAgent {
   constructor() {

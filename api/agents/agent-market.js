@@ -11,9 +11,9 @@
 
 const fs = require("fs");
 const path = require("path");
-const StateManager = require("../lib/state.js");
-const TelegramClient = require("../lib/telegram-client.js");
-const { generateApprovalButtons } = require("../lib/telegram-client.js");
+const StateManager = require("../../lib/state.js");
+const TelegramClient = require("../../lib/telegram-client.js");
+const { generateApprovalButtons } = require("../../lib/telegram-client.js");
 
 class MarketAgent {
   constructor() {
