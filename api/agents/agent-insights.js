@@ -10,6 +10,9 @@
 
 const StateManager = require("../SKILL/skill-state");
 const TelegramClient = require("../SKILL/skill-telegram-client");
+const InsightfulpipeClient = require("../SKILL/skill-insightfulpipe");
+const PipeboardClient = require("../SKILL/skill-pipeboard");
+const SupabaseClient = require("../SKILL/skill-supabase");
 
 class InsightsAgent {
   constructor() {
@@ -66,63 +69,135 @@ class InsightsAgent {
 
   /**
    * Coletar dados de múltiplas fontes
-   * 
-   * TODO: Implementar chamadas reais aos MCPs
-   * Por enquanto, retorna estrutura placeholder
+   * Integra com APIs reais:
+   * - Insightfulpipe: Instagram organic
+   * - Pipeboard: Meta Ads e Google Ads
+   * - Supabase: audience_insights
    */
   async collectInsights() {
-    console.log("[InsightsAgent] Collecting data...");
+    console.log("[InsightsAgent] Collecting data from real sources...");
 
-    // TODO: Chamar MCPs reais
-    // - Insightfulpipe: Instagram organic
-    // - Pipeboard: Meta Ads
-    // - Pipeboard: Google Ads
-    // - Supabase: user_insights
-
-    const mockData = {
+    const data = {
       date: new Date().toISOString().split("T")[0],
-      instagram_organic: {
-        followers_current: 12450,
-        followers_gain_month: 340,
-        avg_daily_reach: 850,
-        avg_daily_impressions: 2100,
-        engagement_rate: "3.2%",
-        top_posts: [
-          {
-            id: "post_1",
-            title: "Pequeñas vitórias",
-            likes: 245,
-            comments: 18,
-            shares: 12,
-          },
-        ],
-      },
-      meta_ads: {
-        campaigns_active: 3,
-        ytd_spend: 5240,
-        leads_generated: 342,
-        cac: 15.32,
-        best_creative: {
-          id: "creative_1",
-          roas: 2.4,
-          cpl: 12.5,
-        },
-      },
-      google_ads: {
-        impressions: 45200,
-        clicks: 1840,
-        ctr: 4.1,
-        conversions: 120,
-        top_keywords: ["recuperação", "alcoolismo", "ajuda"],
-      },
-      audience_insights: {
-        total_users: 2140,
-        monthly_active: 680,
-        top_interests: ["saúde mental", "comunidade", "auto-ajuda"],
-      },
     };
 
-    return mockData;
+    // 1. Insightfulpipe - Instagram Organic
+    if (process.env.INSIGHTFULPIPE_API_KEY && process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID) {
+      const insightfulpipe = new InsightfulpipeClient(
+        process.env.INSIGHTFULPIPE_API_KEY,
+        process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID
+      );
+      data.instagram_organic = await insightfulpipe.getInstagramOrganic();
+    } else {
+      console.warn(
+        "[InsightsAgent] INSIGHTFULPIPE_API_KEY or INSTAGRAM_BUSINESS_ACCOUNT_ID not configured"
+      );
+      data.instagram_organic = this._getMockInstagramData();
+    }
+
+    // 2. Pipeboard - Meta Ads
+    if (
+      process.env.PIPEBOARD_API_KEY &&
+      process.env.META_ADS_ACCOUNT_ID
+    ) {
+      const pipeboard = new PipeboardClient(process.env.PIPEBOARD_API_KEY);
+      data.meta_ads = await pipeboard.getMetaAds(
+        process.env.META_ADS_ACCOUNT_ID
+      );
+    } else {
+      console.warn(
+        "[InsightsAgent] PIPEBOARD_API_KEY or META_ADS_ACCOUNT_ID not configured"
+      );
+      data.meta_ads = this._getMockMetaAdsData();
+    }
+
+    // 3. Pipeboard - Google Ads
+    if (
+      process.env.PIPEBOARD_API_KEY &&
+      process.env.GOOGLE_ADS_ACCOUNT_ID
+    ) {
+      const pipeboard = new PipeboardClient(process.env.PIPEBOARD_API_KEY);
+      data.google_ads = await pipeboard.getGoogleAds(
+        process.env.GOOGLE_ADS_ACCOUNT_ID
+      );
+    } else {
+      console.warn(
+        "[InsightsAgent] PIPEBOARD_API_KEY or GOOGLE_ADS_ACCOUNT_ID not configured"
+      );
+      data.google_ads = this._getMockGoogleAdsData();
+    }
+
+    // 4. Supabase - Audience Insights
+    if (process.env.SUPABASE_URL && process.env.SUPABASE_API_KEY) {
+      const supabase = new SupabaseClient(
+        process.env.SUPABASE_URL,
+        process.env.SUPABASE_API_KEY
+      );
+      data.audience_insights = await supabase.getAudienceInsights();
+    } else {
+      console.warn(
+        "[InsightsAgent] SUPABASE_URL or SUPABASE_API_KEY not configured"
+      );
+      data.audience_insights = this._getMockAudienceData();
+    }
+
+    return data;
+  }
+
+  /**
+   * Mock data fallbacks when APIs not configured
+   */
+  _getMockInstagramData() {
+    return {
+      followers_current: 12450,
+      followers_gain_month: 340,
+      avg_daily_reach: 850,
+      avg_daily_impressions: 2100,
+      engagement_rate: "3.2%",
+      top_posts: [
+        {
+          id: "post_1",
+          title: "Pequeñas vitórias",
+          likes: 245,
+          comments: 18,
+          shares: 12,
+        },
+      ],
+    };
+  }
+
+  _getMockMetaAdsData() {
+    return {
+      campaigns_active: 3,
+      ytd_spend: 5240,
+      leads_generated: 342,
+      cac: "15.32",
+      best_creative: {
+        id: "creative_1",
+        roas: "2.40",
+        cpl: "12.50",
+      },
+    };
+  }
+
+  _getMockGoogleAdsData() {
+    return {
+      impressions: 45200,
+      clicks: 1840,
+      ctr: "4.07",
+      conversions: 120,
+      conversion_rate: "6.52",
+      top_keywords: ["recuperação", "alcoolismo", "ajuda"],
+    };
+  }
+
+  _getMockAudienceData() {
+    return {
+      total_users: 2140,
+      monthly_active: 680,
+      top_interests: ["saúde mental", "comunidade", "auto-ajuda"],
+      engagement_score: "31.8",
+    };
   }
 
   /**
