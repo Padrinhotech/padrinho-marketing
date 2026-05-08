@@ -159,7 +159,7 @@ At the very end of the document:
 
 ### Writing Rules
 - **No Placeholders**: Never deliver `[Fill in here]` or `Text here`. If information is missing, mark as **[Pending]** and notify the user
-- **Be Specific**: Instead of "Use good colors," write "Use colors from figma-tokens.json palette, prioritizing Navy (#1A2540) and Cream (#F5F3F0)"
+- **Be Specific**: Instead of "Use good colors," write "Use colors from skill-figma-tokens.json palette, prioritizing Navy (#1A2540) and Cream (#F5F3F0)"
 - **Include Examples**: Every rule should have at least one example
 - **Cross-Reference**: Link to related skills, agents, or documents using markdown links
 

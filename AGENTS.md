@@ -144,7 +144,7 @@ marketing/
 - **Trigger**: Webhook (aprovação operational)
 - **Entrada**:
   - Copy + visual brief
-  - `marketing/SKILL/figma-tokens.json` (design system)
+  - `marketing/SKILL/skill-figma-tokens.json` (design system)
   - Figma file ID: `sBItPeNLyvT5EMyKLqQbRv`
 - **Processo**:
   1. Popula componentes em frame _QUEUE
