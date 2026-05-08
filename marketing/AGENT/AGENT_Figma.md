@@ -16,7 +16,7 @@ Materializar o conteúdo aprovado em frames Figma reais, injetar fotos, exportar
 ## Entrada
 - `operational_copy.json` (do Operational Agent)
 - Figma file: `sBItPeNLyvT5EMyKLqQbRv` (03. Padrinho • Social)
-- `marketing/brand/figma-tokens.json` (design tokens)
+- `marketing/SKILL/figma-tokens.json` (design tokens)
 - unsplash-mcp (para injetar fotos)
 
 ## Processo
