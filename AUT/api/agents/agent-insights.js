@@ -249,14 +249,15 @@ top interest: ${data.audience_insights.top_interests[0]}
 // EXPORTS
 // ============================================================================
 
-// Exportar a classe
-module.exports = InsightsAgent;
-
-// Exportar handler serverless
-module.exports.handler = async (req, res) => {
+// Vercel serverless handler (default export)
+module.exports = async (req, res) => {
+  console.log(`[InsightsAgent] Handler called at ${new Date().toISOString()}`);
+  console.log(`[InsightsAgent] CRON_SECRET configured: ${!!process.env.CRON_SECRET}`);
+  
   // Validar CRON_SECRET
   const secret = req.query.secret || req.headers["authorization"]?.split(" ")[1];
   if (secret !== process.env.CRON_SECRET) {
+    console.error(`[InsightsAgent] Invalid secret provided`);
     return res.status(401).json({ error: "Unauthorized" });
   }
 

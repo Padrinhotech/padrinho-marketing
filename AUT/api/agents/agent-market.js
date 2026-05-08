@@ -398,28 +398,31 @@ Comitar atualização?
 // EXPORTS
 // ============================================================================
 
-// Exportar a classe
-module.exports = MarketAgent;
-
-// Exportar handler serverless
-module.exports.handler = async (req, res) => {
+// Vercel serverless handler (default export for /api/agents/agent-market)
+module.exports = async (req, res) => {
+  console.log(`[MarketAgent] Handler called at ${new Date().toISOString()}`);
+  console.log(`[MarketAgent] CRON_SECRET configured: ${!!process.env.CRON_SECRET}`);
+  
   // Validar CRON_SECRET
   const secret = req.query.secret || req.headers["authorization"]?.split(" ")[1];
   if (secret !== process.env.CRON_SECRET) {
+    console.error(`[MarketAgent] Invalid secret provided`);
     return res.status(401).json({ error: "Unauthorized" });
   }
 
   const agent = new MarketAgent();
 
   try {
+    console.log(`[MarketAgent] Starting agent.run()`);
     const data = await agent.run();
+    console.log(`[MarketAgent] Completed successfully`);
     res.json({
       ok: true,
       message: "Market data collected and market-context.md updated",
       data,
     });
   } catch (error) {
-    console.error(error);
+    console.error(`[MarketAgent] Error:`, error);
     res.status(500).json({
       ok: false,
       error: error.message,
