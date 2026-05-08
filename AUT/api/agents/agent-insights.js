@@ -41,7 +41,10 @@ class InsightsAgent {
       // 4. Salvar no estado
       await this.state.savePhaseData("insights", insights);
 
-      // 5. Notificar sucesso
+      // 5. Enviar resumo detalhado no Telegram
+      await this.sendInsightsSummary(insights);
+
+      // 6. Notificar sucesso
       await this.telegram.sendSilentMessage(
         "✅ Insights atualizados para " +
           new Date().toLocaleDateString("pt-BR", {
@@ -193,6 +196,52 @@ ${data.instagram_organic.top_posts
     console.log("[InsightsAgent] Markdown gerado (TODO: commit)");
 
     return markdown;
+  }
+
+  /**
+   * Enviar resumo dos insights no Telegram
+   */
+  async sendInsightsSummary(data) {
+    console.log("[InsightsAgent] Sending Telegram summary...");
+
+    const date = new Date();
+    const dateStr = date.toLocaleDateString("pt-BR");
+
+    // Formatar resumo detalhado
+    const summary = `
+📊 *INSIGHTS — ${dateStr}*
+
+🔴 *INSTAGRAM ORGANIC*
+followers: ${data.instagram_organic.followers_current.toLocaleString("pt-BR")} (+${data.instagram_organic.followers_gain_month} mês)
+reach: ~${data.instagram_organic.avg_daily_reach.toLocaleString("pt-BR")}/dia
+engagement: ${data.instagram_organic.engagement_rate}
+
+💰 *META ADS*
+spend (YTD): R$ ${data.meta_ads.ytd_spend.toLocaleString("pt-BR")}
+leads: ${data.meta_ads.leads_generated} (CAC: R$ ${data.meta_ads.cac.toFixed(2)})
+best creative ROAS: ${data.meta_ads.best_creative.roas}x
+
+🔎 *GOOGLE ADS*
+impressions: ${data.google_ads.impressions.toLocaleString("pt-BR")}
+clicks: ${data.google_ads.clicks.toLocaleString("pt-BR")} (CTR: ${data.google_ads.ctr}%)
+conversions: ${data.google_ads.conversions}
+top keyword: "${data.google_ads.top_keywords[0]}"
+
+👥 *AUDIENCE (Elo)*
+total: ${data.audience_insights.total_users.toLocaleString("pt-BR")}
+monthly active: ${data.audience_insights.monthly_active.toLocaleString("pt-BR")}
+top interest: ${data.audience_insights.top_interests[0]}
+
+📈 Strategy Agent runs tomorrow at 10h BRT
+`;
+
+    try {
+      await this.telegram.sendMessage(summary);
+      console.log("[InsightsAgent] Summary sent to Telegram");
+    } catch (error) {
+      console.error("[InsightsAgent] Failed to send summary:", error);
+      // Don't throw - agent should complete even if message fails
+    }
   }
 }
 
