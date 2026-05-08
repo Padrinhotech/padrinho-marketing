@@ -7,7 +7,7 @@ Orquestração multi-agente para geração e publicação de conteúdo com aprov
 ```
 22h BRT (01h UTC+1)
   → /api/agents/insights
-     └─ Atualiza marketing/insights/insights.md
+     └─ Atualiza ./insights/insights.md
         (Instagram organic, Meta Ads, Google Ads)
 
 10h BRT (13h UTC)
@@ -49,7 +49,7 @@ OPERATIONAL (após tactic ✅)
 ## 📁 Estrutura de Pastas
 
 ```
-automation/api/
+AUT/api/
 ├── agents/
 │   ├── insights.js        ← cron 22h BRT (MCP: Insightfulpipe, Pipeboard)
 │   ├── strategy.js        ← cron 10h BRT (Claude agent)
@@ -73,7 +73,7 @@ automation/api/
 ├── publish.js             ← entry point Instagram (mantido)
 └── setup-webhook.js       ← setup único
 
-marketing/
+./
 ├── agents/
 │   ├── insights.md        ← instruções do Insights Agent
 │   ├── strategy.md        ← instruções do Strategy Agent
@@ -92,7 +92,7 @@ marketing/
 ### **1. INSIGHTS AGENT**
 - **Cron**: 22h BRT (cron job ou Vercel scheduled)
 - **Entrada**: Nenhuma (pulls externas)
-- **Saída**: `marketing/insights/insights.md` (commit GitHub)
+- **Saída**: `./insights/insights.md` (commit GitHub)
 - **MCPs**:
   - Insightfulpipe: Instagram organic (lifetime + delta mensal)
   - Pipeboard Meta: últimos 30d de campanhas + ad sets + ads
@@ -103,13 +103,13 @@ marketing/
 ### **2. STRATEGY AGENT**
 - **Trigger**: Cron 10h BRT (ou webhook manual)
 - **Entrada**: 
-  - `marketing/insights/insights.md` (data-driven)
-  - `marketing/skills/strategy/brand-positioning.md`
-  - `marketing/skills/strategy/market-context.md`
+  - `./insights/insights.md` (data-driven)
+  - `./skills/strategy/brand-positioning.md`
+  - `./skills/strategy/market-context.md`
 - **Saída**: 
   - Strategic brief (texto + JSON)
   - Post ao Telegram com buttons: ✅ / ❌
-- **Instruções**: `marketing/agents/strategy.md`
+- **Instruções**: `./agents/strategy.md`
 - **Human Gate**: ✅ Aprovação Telegram necessária
 - **Próximo**: Tactic Agent (se ✅)
 
@@ -117,12 +117,12 @@ marketing/
 - **Trigger**: Webhook (aprovação strategy)
 - **Entrada**:
   - Strategic brief (anterior)
-  - `marketing/skills/tactic/editorial-pillars.md`
-  - `marketing/skills/tactic/trend-radar.md`
+  - `./skills/tactic/editorial-pillars.md`
+  - `./skills/tactic/trend-radar.md`
 - **Saída**:
   - Content plan (5-10 posts)
   - Post ao Telegram com buttons: ✅ / ❌
-- **Instruções**: `marketing/agents/tactic.md`
+- **Instruções**: `./agents/tactic.md`
 - **Human Gate**: ✅ Aprovação Telegram necessária
 - **Próximo**: Operational Agent (se ✅)
 
@@ -130,13 +130,13 @@ marketing/
 - **Trigger**: Webhook (aprovação tactic)
 - **Entrada**:
   - Content plan (anterior)
-  - `marketing/skills/operational/copy-rules.md`
-  - `marketing/skills/operational/photo-guidelines.md`
+  - `./skills/operational/copy-rules.md`
+  - `./skills/operational/photo-guidelines.md`
 - **Saída**:
   - Copy (captions + hashtags)
   - Visual brief (tamanho, cores, fotos)
   - Post ao Telegram com buttons: ✅ / ❌
-- **Instruções**: `marketing/agents/operational.md`
+- **Instruções**: `./agents/operational.md`
 - **Human Gate**: ✅ Aprovação Telegram necessária
 - **Próximo**: Figma Agent (se ✅)
 
@@ -144,7 +144,7 @@ marketing/
 - **Trigger**: Webhook (aprovação operational)
 - **Entrada**:
   - Copy + visual brief
-  - `marketing/SKILL/skill-figma-tokens.json` (design system)
+  - `SKILL/skill-figma-tokens.json` (design system)
   - Figma file ID: `sBItPeNLyvT5EMyKLqQbRv`
 - **Processo**:
   1. Popula componentes em frame _QUEUE
@@ -155,7 +155,7 @@ marketing/
   - Frames em _QUEUE prontos
   - Screenshot para preview
   - Post ao Telegram com button: ✅ PUBLICAR / ❌ CANCELAR
-- **Instruções**: `marketing/agents/figma-design.md`
+- **Instruções**: `./agents/figma-design.md`
 - **Human Gate**: ✅ Aprovação final (visual + copy)
 - **Próximo**: /api/publish (Instagram)
 
@@ -234,7 +234,7 @@ SUPABASE_URL=
 SUPABASE_KEY=
 
 # Ou arquivo local (dev)
-STATE_FILE_PATH=./marketing/state/current-state.json
+STATE_FILE_PATH=./KNOW/current-state.json
 
 # MCPs (para insights)
 INSIGHTFULPIPE_TOKEN=
@@ -270,10 +270,10 @@ CRON_SECRET=
 
 - [ ] Criar `lib/state.js` (Supabase ou JSON)
 - [ ] Criar `lib/telegram-client.js`
-- [ ] Criar `automation/api/agents/insights.js`
-- [ ] Criar `automation/api/agents/strategy.js`
-- [ ] Criar `marketing/agents/*.md` (instruções)
-- [ ] Criar `automation/api/agents/orchestrator.js`
+- [ ] Criar `AUT/api/agents/insights.js`
+- [ ] Criar `AUT/api/agents/strategy.js`
+- [ ] Criar `./agents/*.md` (instruções)
+- [ ] Criar `AUT/api/agents/orchestrator.js`
 - [ ] Refatorar `approve.js` → webhook unificado
 - [ ] Testar aprovação Telegram com buttons
 - [ ] Criar Tactic + Operational agents

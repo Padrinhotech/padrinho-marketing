@@ -11,15 +11,15 @@ Repositório central de marketing e automação de conteúdo do Padrinho.app.
 ├── package.json           ← dependências Node
 ├── .env.example           ← template de variáveis de ambiente
 │
-├── marketing/             ← estratégia, personas, brand, posts
+├── ./             ← estratégia, personas, brand, posts
 │   ├── KNOW/              ← knowledge files (brand positioning, market context, personas)
 │   ├── SKILL/             ← operational skills (copy rules, component index, guidelines)
-│   ├── AUT/               ← automation/agent instructions (all 7 agents)
+│   ├── AUT/               ← AUT/agent instructions (all 7 agents)
 │   ├── brand/             ← design tokens, product spec
 │   ├── insights/          ← marketing insights (updated daily)
 │   └── posts/             ← generated social content
 │
-└── automation/            ← sistema técnico de publicação
+└── AUT/            ← sistema técnico de publicação
     ├── api/
     │   ├── orchestrate.js ← gera conteúdo diariamente
     │   ├── approve.js     ← recebe aprovação do Telegram
@@ -40,4 +40,4 @@ Sem desktop. Sem input manual. 100% mobile.
 
 ## Setup
 
-Veja `automation/AUTOMATION.md` para instruções completas.
+Veja `AUT/AUTOMATION.md` para instruções completas.
