@@ -8,8 +8,8 @@
  * Saída: KNOW/KNOW_Insights.md (commit ao GitHub)
  */
 
-const StateManager = require("../SKILL/SKILL_state");
-const TelegramClient = require("../SKILL/SKILL_telegram-client");
+const StateManager = require("../SKILL/skill-state");
+const TelegramClient = require("../SKILL/skill-telegram-client");
 
 class InsightsAgent {
   constructor() {

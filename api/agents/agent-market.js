@@ -11,9 +11,9 @@
 
 const fs = require("fs");
 const path = require("path");
-const StateManager = require("../SKILL/SKILL_state");
-const TelegramClient = require("../SKILL/SKILL_telegram-client");
-const { generateApprovalButtons } = require("../SKILL/SKILL_telegram-client");
+const StateManager = require("../SKILL/skill-state");
+const TelegramClient = require("../SKILL/skill-telegram-client");
+const { generateApprovalButtons } = require("../SKILL/skill-telegram-client");
 
 class MarketAgent {
   constructor() {

@@ -8,8 +8,8 @@
  * - "cancel|2026-05-07" → Cancelar fluxo
  */
 
-const Orchestrator = require("../SKILL/SKILL_orchestrator");
-const TelegramClient = require("../SKILL/SKILL_telegram-client");
+const Orchestrator = require("../SKILL/skill-orchestrator");
+const TelegramClient = require("../SKILL/skill-telegram-client");
 
 /**
  * Serverless handler para Vercel
