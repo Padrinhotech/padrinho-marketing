@@ -389,7 +389,7 @@ Tabela e análise sobre:
 
 ## Implementação
 
-- **Node.js:** `AUT/api/agents/user-insights.js`
+- **Node.js:** `AUT/api/agents/agent-user-insights.js`
 - **Cron:** Vercel — `30 2 * * *` (23h30 BRT = 02h30 UTC+1)
 - **Runtime:** 90s (queries Supabase, síntese)
 - **Saída:** 

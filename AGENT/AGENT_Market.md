@@ -217,7 +217,7 @@ Para cada um (Sunflower, Reframe, I Am Sober):
 
 ## Implementação
 
-- **Node.js:** `AUT/api/agents/market.js`
+- **Node.js:** `AUT/api/agents/agent-market.js`
 - **Cron:** Vercel — `0 23 * * *` (23h BRT = 00h UTC+1)
 - **Runtime:** 120s (coleta de dados, síntese)
 - **Saída:** 

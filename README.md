@@ -21,10 +21,10 @@ Repositório central de marketing e automação de conteúdo do Padrinho.app.
 │
 └── AUT/            ← sistema técnico de publicação
     ├── api/
-    │   ├── orchestrate.js ← gera conteúdo diariamente
-    │   ├── approve.js     ← recebe aprovação do Telegram
-    │   ├── publish.js     ← publica no Instagram
-    │   └── setup-webhook.js
+    │   ├── auto-orchestrate.js ← gera conteúdo diariamente
+    │   ├── auto-approve.js     ← recebe aprovação do Telegram
+    │   ├── auto-publish.js     ← publica no Instagram
+    │   └── auto-setup-webhook.js
     └── AUTOMATION.md
 ```
 

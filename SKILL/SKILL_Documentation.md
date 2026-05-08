@@ -25,13 +25,23 @@ All documentation files must use prefixes to clearly indicate their type and pur
 | **KNOW_** | Knowledge & Context | Information agents need to understand (brand, market, audiences, personas, insights) | `KNOW_BrandPositioning.md`, `KNOW_MarketContext.md` |
 | **SKILL_** | Operational Skills | Step-by-step guidelines for how to execute tasks (copy rules, component selection, photo sourcing) | `SKILL_CopyRules.md`, `SKILL_ComponentSystem.md` |
 | **AGENT_** | Agent Instructions | Instructions for how agents operate (agent execution steps, approval gates, data inputs/outputs) | `AGENT_Strategy.md`, `AGENT_Operational.md` |
-| **skill-** | Script Assets | Executable scripts and utilities (photo injection, utilities) | `skill-inject-photos.js`, `skill-inject-photos-node.js` |
 
-### Key Distinction: Knowledge vs. Skill vs. Agent
-- **KNOW_** files are *read-only context* that agents ingest to understand business rules, market conditions, or brand identity
-- **SKILL_** files are *executable guidelines* with step-by-step instructions, checklists, and validation criteria
-- **AGENT_** files define *agent behavior* and orchestration logic
-- **skill-** prefixed scripts are utilities used within skill execution
+### 1.2 Script Naming Conventions
+
+All executable scripts must use lowercase prefixes separated by hyphens to clearly indicate their purpose and context:
+
+| Prefix | Context | Purpose | Example | Location |
+| :--- | :--- | :--- | :--- | :--- |
+| **skill-** | Skill Utilities | Scripts used by skills to execute tasks | `skill-inject-photos.js`, `skill-figma-tokens.json` | `SKILL/` |
+| **auto-** | Automation Entry Points | Main Vercel function entry points for automation orchestration | `auto-auto-orchestrate.js`, `auto-auto-approve.js` | `AUT/api/` |
+| **agent-** | Agent Implementations | Individual agent execution code | `agent-strategy.js`, `agent-figma.js` | `AUT/api/agents/` |
+| **hooks-** | Webhook Handlers | Webhook endpoint implementations | `hooks-telegram.js` | `AUT/api/webhooks/` |
+
+### Key Distinction: Documentation vs. Scripts
+- **KNOW_**, **SKILL_**, **AGENT_** files are documentation files (Markdown)
+- **skill-**, **auto-**, **agent-**, **hooks-** prefixed files are executable scripts (JavaScript/JSON)
+- Scripts follow kebab-case lowercase naming; documentation follows PascalCase with underscores
+- This distinction enables agent routing: agents read KNOW_/SKILL_/AGENT_ files, code imports auto-/agent-/skill-/hooks- files
 
 ### Folder Organization
 
@@ -50,7 +60,7 @@ All documentation files must use prefixes to clearly indicate their type and pur
 │   └── KNOW_CaioFilho.md
 │
 ├── SKILL/                          ← Operational Skills & Guidelines
-│   ├── skill-documentation.md      ← This file (master standard)
+│   ├── SKILL_Documentation.md      ← This file (master standard)
 │   ├── SKILL_CopyRules.md
 │   ├── SKILL_ComponentSystem.md
 │   ├── SKILL_ComponentIndex.md
@@ -59,10 +69,11 @@ All documentation files must use prefixes to clearly indicate their type and pur
 │   ├── SKILL_VisualAgent.md
 │   ├── SKILL_AudiencePipeline.md
 │   ├── SKILL_CampaignSetup.md
-│   ├── skill-inject-photos.js
-│   └── skill-inject-photos-node.js
+│   ├── skill-figma-tokens.json     ← Design tokens (skill utility)
+│   ├── skill-inject-photos.js      ← Photo injection (skill utility)
+│   └── skill-inject-photos-node.js ← Photo injection Node (skill utility)
 │
-├── AUT/                            ← Automations & Agent Instructions
+├── AGENT/                          ← Agent Instructions (7 agents)
 │   ├── AGENT_Insights.md
 │   ├── AGENT_Market.md
 │   ├── AGENT_UserInsights.md
@@ -71,7 +82,30 @@ All documentation files must use prefixes to clearly indicate their type and pur
 │   ├── AGENT_Operational.md
 │   └── AGENT_Figma.md
 │
-└── posts/                          ← Generated content (managed by Figma Agent)
+├── AUT/                            ← Automation Code & Implementation
+│   ├── api/
+│   │   ├── auto-auto-orchestrate.js     ← Main automation entry point
+│   │   ├── auto-auto-approve.js         ← Approval handler
+│   │   ├── auto-auto-publish.js         ← Instagram publisher
+│   │   ├── auto-auto-setup-webhook.js   ← Webhook registration
+│   │   ├── agents/
+│   │   │   ├── agent-insights.js
+│   │   │   ├── agent-market.js
+│   │   │   ├── agent-user-insights.js
+│   │   │   ├── agent-strategy.js
+│   │   │   ├── agent-tactic.js
+│   │   │   ├── agent-operational.js
+│   │   │   └── agent-figma.js
+│   │   ├── lib/
+│   │   │   ├── state.js            ← State management
+│   │   │   ├── telegram-client.js  ← Telegram API wrapper
+│   │   │   ├── claude-client.js    ← Claude API wrapper
+│   │   │   └── orchestrator.js     ← Orchestration logic
+│   │   └── webhooks/
+│   │       └── hooks-telegram.js   ← Telegram webhook handler
+│   └── AUTOMATION.md
+│
+└── POSTS/                          ← Generated content (managed by Figma Agent)
 ```
 
 ---
@@ -392,6 +426,6 @@ Before finalizing **any** document, validate:
 **Last Updated:** 2026-05-07  
 **Maintained by:** Padrinho Marketing Automation  
 **References:**  
-- [AIX Researcher Documentation Skill](https://github.com/your-org/aix-researcher/foundations/skills/skill-documentation.md)
+- [AIX Researcher Documentation Skill](https://github.com/your-org/aix-researcher/foundations/skills/SKILL_Documentation.md)
 - [./README.md](./README.md)
 - [AGENTS.md](AGENTS.md)

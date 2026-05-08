@@ -68,10 +68,10 @@ AUT/api/
 │   ├── figma-client.js    ← wrapper REST API
 │   └── claude-client.js   ← client com instruções dos agentes
 │
-├── orchestrate.js         ← entry point principal (mantido)
-├── approve.js             ← entry point Telegram (refatorado)
-├── publish.js             ← entry point Instagram (mantido)
-└── setup-webhook.js       ← setup único
+├── auto-orchestrate.js         ← entry point principal (mantido)
+├── auto-approve.js             ← entry point Telegram (refatorado)
+├── auto-publish.js             ← entry point Instagram (mantido)
+└── auto-setup-webhook.js       ← setup único
 
 ./
 ├── agents/
@@ -222,7 +222,7 @@ POST /api/webhooks/telegram
 4. **Strategy Agent** — testar aprovação Telegram
 5. **Tactic + Operational** — incrementalmente
 6. **Figma Agent** — último (mais complexo)
-7. **Webhook Unificado** (`webhooks/telegram.js`)
+7. **Webhook Unificado** (`webhooks/hooks-telegram.js`)
 
 ---
 
@@ -270,11 +270,11 @@ CRON_SECRET=
 
 - [ ] Criar `lib/state.js` (Supabase ou JSON)
 - [ ] Criar `lib/telegram-client.js`
-- [ ] Criar `AUT/api/agents/insights.js`
-- [ ] Criar `AUT/api/agents/strategy.js`
+- [ ] Criar `AUT/api/agents/agent-insights.js`
+- [ ] Criar `AUT/api/agents/agent-strategy.js`
 - [ ] Criar `./agents/*.md` (instruções)
 - [ ] Criar `AUT/api/agents/orchestrator.js`
-- [ ] Refatorar `approve.js` → webhook unificado
+- [ ] Refatorar `auto-approve.js` → webhook unificado
 - [ ] Testar aprovação Telegram com buttons
 - [ ] Criar Tactic + Operational agents
 - [ ] Criar Figma agent (unsplash-mcp integration)

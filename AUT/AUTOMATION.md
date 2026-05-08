@@ -20,10 +20,10 @@ Vercel Cron (todo dia 10h BRT = 13h UTC)
 ```
 AUT/
 ├── api/
-│   ├── orchestrate.js     ← cron principal
-│   ├── approve.js         ← webhook Telegram
-│   ├── publish.js         ← publica no Instagram
-│   └── setup-webhook.js   ← setup único (já executado)
+│   ├── auto-orchestrate.js     ← cron principal
+│   ├── auto-approve.js         ← webhook Telegram
+│   ├── auto-publish.js         ← publica no Instagram
+│   └── auto-setup-webhook.js   ← setup único (já executado)
 └── AUTOMATION.md
 ```
 
