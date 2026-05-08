@@ -12,15 +12,15 @@
 
 const fs = require("fs");
 const path = require("path");
-const StateManager = require("../SKILL/lib/state.js");
-const TelegramClient = require("../SKILL/lib/telegram-client.js");
-const ClaudeClient = require("../SKILL/lib/claude-client.js");
+const StateManager = require("../SKILL/SKILL_state");
+const TelegramClient = require("../SKILL/SKILL_telegram-client");
+const ClaudeClient = require("../SKILL/SKILL_claude-client");
 const {
   STRATEGY_SYSTEM_PROMPT,
-} = require("../SKILL/lib/claude-client.js");
+} = require("../SKILL/SKILL_claude-client");
 const {
   generateApprovalButtons,
-} = require("../SKILL/lib/telegram-client.js");
+} = require("../SKILL/SKILL_telegram-client");
 
 class StrategyAgent {
   constructor() {
