@@ -159,7 +159,7 @@ Se ❌: Volta para Operational, aguarda novo copy
 ## Integração com Publish Flow
 
 ```javascript
-// auto-publish.js recebe:
+// aut-publish.js recebe:
 {
   "post_id": 1,
   "caption": "...",

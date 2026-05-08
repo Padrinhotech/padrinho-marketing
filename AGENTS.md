@@ -68,10 +68,10 @@ AUT/api/
 │   ├── figma-client.js    ← wrapper REST API
 │   └── claude-client.js   ← client com instruções dos agentes
 │
-├── auto-orchestrate.js         ← entry point principal (mantido)
-├── auto-approve.js             ← entry point Telegram (refatorado)
-├── auto-publish.js             ← entry point Instagram (mantido)
-└── auto-setup-webhook.js       ← setup único
+├── aut-orchestrate.js         ← entry point principal (mantido)
+├── aut-approve.js             ← entry point Telegram (refatorado)
+├── aut-publish.js             ← entry point Instagram (mantido)
+└── aut-setup-webhook.js       ← setup único
 
 ./
 ├── agents/
@@ -274,7 +274,7 @@ CRON_SECRET=
 - [ ] Criar `AUT/api/agents/agent-strategy.js`
 - [ ] Criar `./agents/*.md` (instruções)
 - [ ] Criar `AUT/api/agents/orchestrator.js`
-- [ ] Refatorar `auto-approve.js` → webhook unificado
+- [ ] Refatorar `aut-approve.js` → webhook unificado
 - [ ] Testar aprovação Telegram com buttons
 - [ ] Criar Tactic + Operational agents
 - [ ] Criar Figma agent (unsplash-mcp integration)

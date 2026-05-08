@@ -26,6 +26,6 @@
     "api/agents/operational.js": { "maxDuration": 300 },
     "api/agents/figma.js": { "maxDuration": 600 },
     "api/webhooks/telegram.js": { "maxDuration": 60 },
-    "api/auto-publish.js": { "maxDuration": 300 }
+    "api/aut-publish.js": { "maxDuration": 300 }
   }
 }
