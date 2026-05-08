@@ -1,3 +1,11 @@
+---
+title: Audience Pipeline
+version: 1.0
+type: Skill
+status: active
+last_updated: 2026-05-07
+---
+
 # Audience Pipeline — Supabase → Meta Ads
 
 ## Overview

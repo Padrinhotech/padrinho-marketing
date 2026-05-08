@@ -1,3 +1,11 @@
+---
+title: Caio Filho
+version: 1.0
+type: Persona
+status: active
+last_updated: 2026-05-07
+---
+
 # Caio — O Filho Ressentido
 
 **Status: DESPRIORITIZADO — documentado para referência futura**

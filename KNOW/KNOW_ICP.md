@@ -1,3 +1,11 @@
+---
+title: I C P
+version: 1.0
+type: Knowledge
+status: active
+last_updated: 2026-05-07
+---
+
 # ICP — Ideal Customer Profile
 
 ## Quem é o ICP do Padrinho

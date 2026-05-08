@@ -1,3 +1,11 @@
+---
+title: User Insights
+version: 1.0
+type: Knowledge
+status: active
+last_updated: 2026-05-07
+---
+
 # User Insights — Dados Reais dos Usuários
 
 > **Fonte:** Dashboard Padrinho Elo

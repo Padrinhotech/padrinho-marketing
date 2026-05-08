@@ -1,3 +1,11 @@
+---
+title: Pedro Autonomo
+version: 1.0
+type: Persona
+status: active
+last_updated: 2026-05-07
+---
+
 # Pedro — O Autônomo Solitário
 
 **Status: PERSONA TERCIÁRIA**

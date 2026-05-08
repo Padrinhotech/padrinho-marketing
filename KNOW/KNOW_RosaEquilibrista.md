@@ -1,3 +1,11 @@
+---
+title: Rosa Equilibrista
+version: 1.0
+type: Persona
+status: active
+last_updated: 2026-05-07
+---
+
 # Rosa — A Equilibrista
 
 **Status: PERSONA PRIMÁRIA — foco principal de conteúdo**

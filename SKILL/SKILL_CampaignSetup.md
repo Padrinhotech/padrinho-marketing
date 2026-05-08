@@ -1,3 +1,11 @@
+---
+title: Campaign Setup
+version: 1.0
+type: Skill
+status: active
+last_updated: 2026-05-07
+---
+
 # Campaign Setup Checklist — App Promotion
 
 ## Pre-Flight (check before every campaign)

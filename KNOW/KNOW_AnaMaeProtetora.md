@@ -1,3 +1,11 @@
+---
+title: Ana Mae Protetora
+version: 1.0
+type: Persona
+status: active
+last_updated: 2026-05-07
+---
+
 # Ana — A Mãe Protetora
 
 **Status: PERSONA SECUNDÁRIA**
