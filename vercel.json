@@ -2,7 +2,7 @@
   "crons": [
     {
       "path": "/api/agents/agent-insights",
-      "schedule": "0 1 * * *"
+      "schedule": "30 18 * * *"
     },
     {
       "path": "/api/agents/agent-market",
