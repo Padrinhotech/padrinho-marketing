@@ -1,3 +1,13 @@
+---
+title: "Operational Agent — Padrinho Automation"
+version: "1.0"
+status: "Final"
+type: "Agent"
+owner: "Padrinho Marketing Automation"
+parent_doc: "marketing/AGENT/"
+tags: [agent, automation, orchestration]
+---
+
 # Operational Agent Instructions
 
 ## Propósito

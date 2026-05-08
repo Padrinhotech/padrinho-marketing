@@ -2,10 +2,10 @@
  * Insights Agent
  * 
  * Executa automaticamente às 22h BRT
- * Coleta dados de múltiplas fontes e atualiza marketing/insights/insights.md
+ * Coleta dados de múltiplas fontes e atualiza marketing/KNOW/KNOW_Insights.md
  * 
  * Entrada: Nenhuma (pulls externas)
- * Saída: marketing/insights/insights.md (commit ao GitHub)
+ * Saída: marketing/KNOW/KNOW_Insights.md (commit ao GitHub)
  */
 
 const StateManager = require("../lib/state.js");

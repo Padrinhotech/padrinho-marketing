@@ -157,4 +157,4 @@ FECHAMENTO de carrossel (CTA suave)
 **References:**  
 - [../SKILL/SKILL_operational/SKILL_ComponentSystem.md](SKILL_ComponentSystem.md)
 - [../SKILL/SKILL_operational/figma-delivery.md](figma-delivery.md)
-- [../AUT/AUT_figma-design.md](../AUT/figma-design.md)
+- [../AGENT/AUT_figma-design.md](../AGENT/figma-design.md)

@@ -24,12 +24,14 @@ All documentation files must use prefixes to clearly indicate their type and pur
 | :--- | :--- | :--- | :--- |
 | **KNOW_** | Knowledge & Context | Information agents need to understand (brand, market, audiences, personas, insights) | `KNOW_BrandPositioning.md`, `KNOW_MarketContext.md` |
 | **SKILL_** | Operational Skills | Step-by-step guidelines for how to execute tasks (copy rules, component selection, photo sourcing) | `SKILL_CopyRules.md`, `SKILL_ComponentSystem.md` |
-| **AUT_** | Automations & Agents | Instructions for how agents operate (agent execution steps, approval gates, data inputs/outputs) | `AUT_StrategyAgent.md`, `AUT_OperationalAgent.md` |
+| **AGENT_** | Agent Instructions | Instructions for how agents operate (agent execution steps, approval gates, data inputs/outputs) | `AGENT_Strategy.md`, `AGENT_Operational.md` |
+| **skill-** | Script Assets | Executable scripts and utilities (photo injection, utilities) | `skill-inject-photos.js`, `skill-inject-photos-node.js` |
 
-### Key Distinction: Knowledge vs. Skill
+### Key Distinction: Knowledge vs. Skill vs. Agent
 - **KNOW_** files are *read-only context* that agents ingest to understand business rules, market conditions, or brand identity
 - **SKILL_** files are *executable guidelines* with step-by-step instructions, checklists, and validation criteria
-- **AUT_** files define *agent behavior* and orchestration logic
+- **AGENT_** files define *agent behavior* and orchestration logic
+- **skill-** prefixed scripts are utilities used within skill execution
 
 ### Folder Organization
 
@@ -57,17 +59,17 @@ marketing/
 │   ├── SKILL_VisualAgent.md
 │   ├── SKILL_AudiencePipeline.md
 │   ├── SKILL_CampaignSetup.md
-│   ├── inject-photos.js
-│   └── inject-photos-node.js
+│   ├── skill-inject-photos.js
+│   └── skill-inject-photos-node.js
 │
 ├── AUT/                            ← Automations & Agent Instructions
-│   ├── AUT_InsightsAgent.md
-│   ├── AUT_MarketAgent.md
-│   ├── AUT_UserInsightsAgent.md
-│   ├── AUT_StrategyAgent.md
-│   ├── AUT_TacticAgent.md
-│   ├── AUT_OperationalAgent.md
-│   └── AUT_FigmaAgent.md
+│   ├── AGENT_Insights.md
+│   ├── AGENT_Market.md
+│   ├── AGENT_UserInsights.md
+│   ├── AGENT_Strategy.md
+│   ├── AGENT_Tactic.md
+│   ├── AGENT_Operational.md
+│   └── AGENT_Figma.md
 │
 └── posts/                          ← Generated content (managed by Figma Agent)
 ```
@@ -275,11 +277,11 @@ O Operational Agent usa este arquivo para estruturar e validar captions...
 - marketing/KNOW/BrandPositioning.md
 ```
 
-### C. AUT_ Documents (Automations & Agents)
+### C. AGENT_ Documents (Agent Instructions)
 Agent execution instructions defining inputs, outputs, and orchestration.
 
 **Purpose:** How agents run (step-by-step process, data flow, approval gates)
-**Location:** `/marketing/AUT/`
+**Location:** `/marketing/AGENT/`
 
 **Mandatory Sections:**
 1. Frontmatter + Purpose Statement
@@ -300,7 +302,7 @@ version: "1.0"
 status: "Final"
 type: "Automation"
 owner: "Padrinho Marketing Automation"
-parent_doc: "marketing/AUT/"
+parent_doc: "marketing/AGENT/"
 tags: [agent, strategy, orchestration, scheduling]
 ---
 

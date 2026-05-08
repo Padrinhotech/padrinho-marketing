@@ -6,7 +6,7 @@
  * Gera strategic brief com 3-5 objetivos
  * Envia ao Telegram com botões de aprovação
  * 
- * Entrada: marketing/insights/insights.md
+ * Entrada: marketing/KNOW/KNOW_Insights.md
  * Saída: strategic_brief.json (no estado)
  */
 

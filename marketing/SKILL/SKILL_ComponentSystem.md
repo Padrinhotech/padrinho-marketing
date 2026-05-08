@@ -297,4 +297,4 @@ S10 block-d / statement-light     → Fechamento
 **References:**  
 - [../SKILL/SKILL_operational/SKILL_ComponentIndex.md](SKILL_ComponentIndex.md)
 - [../SKILL/SKILL_operational/figma-delivery.md](figma-delivery.md)
-- [../AUT/AUT_operational.md](../AUT/operational.md)
+- [../AGENT/AUT_operational.md](../AGENT/operational.md)

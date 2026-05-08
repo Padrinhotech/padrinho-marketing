@@ -181,5 +181,5 @@ Fontes recomendadas para as fotos:
 **Maintained by:** Figma Agent  
 **References:**  
 - [../SKILL/SKILL_operational/photo-guidelines.md](photo-guidelines.md)
-- [../AUT/AUT_figma-design.md](../AUT/figma-design.md)
-- [../AUT/AUT_operational.md](../AUT/operational.md)
+- [../AGENT/AUT_figma-design.md](../AGENT/figma-design.md)
+- [../AGENT/AUT_operational.md](../AGENT/operational.md)

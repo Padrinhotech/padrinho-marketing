@@ -261,5 +261,5 @@ Posts aprovados que exemplificam as diretrizes — consultar antes de escolher:
 **Maintained by:** Figma Agent  
 **References:**  
 - [../SKILL/SKILL_operational/visual-agent.md](visual-agent.md)
-- [../AUT/AUT_figma-design.md](../AUT/figma-design.md)
-- [../AUT/AUT_operational.md](../AUT/operational.md)
+- [../AGENT/AUT_figma-design.md](../AGENT/figma-design.md)
+- [../AGENT/AUT_operational.md](../AGENT/operational.md)

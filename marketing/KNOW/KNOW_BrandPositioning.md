@@ -110,6 +110,6 @@ Nas redes sociais, o foco é a marca **Padrinho** + o produto **Bill**.
 **Last Updated:** 2026-05-07  
 **Maintained by:** Strategy Agent  
 **References:**  
-- [../AUT/AUT_strategy.md](../AUT/strategy.md)
+- [../AGENT/AUT_strategy.md](../AGENT/strategy.md)
 - [../KNOW/KNOW_KNOW_MarketContext.md](KNOW_MarketContext.md)
-- [../AUT/AUT_tactic.md](../AUT/tactic.md)
+- [../AGENT/AUT_tactic.md](../AGENT/tactic.md)

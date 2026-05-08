@@ -1,3 +1,13 @@
+---
+title: "UserInsights Agent — Padrinho Automation"
+version: "1.0"
+status: "Final"
+type: "Agent"
+owner: "Padrinho Marketing Automation"
+parent_doc: "marketing/AGENT/"
+tags: [agent, automation, orchestration]
+---
+
 # User Insights Agent — Padrinho
 
 **Responsável por:** Coletar dados de usuários do Supabase (read-only), analisar padrões comportamentais, e atualizar `../KNOW/KNOW_audiences/user-insights.md` automaticamente.

@@ -170,6 +170,6 @@ O agente deve, no início de cada mês:
 **Last Updated:** 2026-05-07  
 **Maintained by:** Market Agent  
 **References:**  
-- [../AUT/AUT_market.md](../AUT/market.md)
-- [../AUT/AUT_strategy.md](../AUT/strategy.md)
+- [../AGENT/AUT_market.md](../AGENT/market.md)
+- [../AGENT/AUT_strategy.md](../AGENT/strategy.md)
 - [../KNOW/KNOW_KNOW_BrandPositioning.md](KNOW_BrandPositioning.md)

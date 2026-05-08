@@ -1,3 +1,13 @@
+---
+title: "Market Agent — Padrinho Automation"
+version: "1.0"
+status: "Final"
+type: "Agent"
+owner: "Padrinho Marketing Automation"
+parent_doc: "marketing/AGENT/"
+tags: [agent, automation, orchestration]
+---
+
 # Market Agent — Padrinho
 
 **Responsável por:** Coletar dados de mercado, tendências, comportamento de consumo, paisagem competitiva e atualizar `../KNOW/KNOW_strategy/KNOW_MarketContext.md` automaticamente.

@@ -162,5 +162,5 @@ Viral do filtro Ghibli → post sobre o filtro Ghibli (sem conexão real)
 **References:**  
 - [../KNOW/KNOW_editorial-pillars.md](editorial-pillars.md)
 - [../KNOW/KNOW_KNOW_MarketContext.md](../strategy/KNOW_MarketContext.md)
-- [../AUT/AUT_tactic.md](../AUT/tactic.md)
+- [../AGENT/AUT_tactic.md](../AGENT/tactic.md)
 

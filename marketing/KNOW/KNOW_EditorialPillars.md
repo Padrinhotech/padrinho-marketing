@@ -203,5 +203,5 @@ O arco da semana segue esta estrutura:
 **Maintained by:** Tactic Agent  
 **References:**  
 - [../KNOW/KNOW_trend-radar.md](trend-radar.md)
-- [../AUT/AUT_tactic.md](../AUT/tactic.md)
-- [../AUT/AUT_operational.md](../AUT/operational.md)
+- [../AGENT/AUT_tactic.md](../AGENT/tactic.md)
+- [../AGENT/AUT_operational.md](../AGENT/operational.md)

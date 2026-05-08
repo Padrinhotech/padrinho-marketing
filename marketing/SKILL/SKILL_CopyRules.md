@@ -210,4 +210,4 @@ cria resultados visuais estranhos e imprevisíveis.
 **References:**  
 - [../SKILL/SKILL_audiences/user-insights.md](../SKILL/SKILL_audiences/user-insights.md)
 - [../SKILL/SKILL_KNOW_BrandPositioning.md](../SKILL/SKILL_KNOW_BrandPositioning.md)
-- [../AUT/AUT_operational.md](../AUT/AUT_operational.md)
+- [../AGENT/AUT_operational.md](../AGENT/AUT_operational.md)

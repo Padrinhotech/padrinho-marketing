@@ -1,3 +1,13 @@
+---
+title: "Tactic Agent — Padrinho Automation"
+version: "1.0"
+status: "Final"
+type: "Agent"
+owner: "Padrinho Marketing Automation"
+parent_doc: "marketing/AGENT/"
+tags: [agent, automation, orchestration]
+---
+
 # Tactic Agent Instructions
 
 ## Propósito

@@ -27,16 +27,16 @@ marketing/
 │   ├── SKILL_VisualAgent.md
 │   ├── SKILL_AudiencePipeline.md
 │   ├── SKILL_CampaignSetup.md
-│   └── inject-photos.js / .node.js
+│   └── skill-inject-photos.js / .node.js
 │
 ├── AUT/               ← Automations: all 7 agent instructions
-│   ├── AUT_InsightsAgent.md
-│   ├── AUT_MarketAgent.md
-│   ├── AUT_UserInsightsAgent.md
-│   ├── AUT_StrategyAgent.md
-│   ├── AUT_TacticAgent.md
-│   ├── AUT_OperationalAgent.md
-│   └── AUT_FigmaAgent.md
+│   ├── AGENT_Insights.md
+│   ├── AGENT_Market.md
+│   ├── AGENT_UserInsights.md
+│   ├── AGENT_Strategy.md
+│   ├── AGENT_Tactic.md
+│   ├── AGENT_Operational.md
+│   └── AGENT_Figma.md
 │
 ├── brand/             ← Brand assets: design tokens, product spec
 ├── insights/          ← Daily insights output

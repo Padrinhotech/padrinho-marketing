@@ -1,10 +1,20 @@
+---
+title: "Strategy Agent — Padrinho Automation"
+version: "1.0"
+status: "Final"
+type: "Agent"
+owner: "Padrinho Marketing Automation"
+parent_doc: "marketing/AGENT/"
+tags: [agent, automation, orchestration]
+---
+
 # Strategy Agent Instructions
 
 ## Propósito
 Gerar briefing estratégico baseado em insights + positioning da marca. Dispara automaticamente às 10h BRT, envia ao Telegram, e aguarda aprovação humana.
 
 ## Entrada
-- `marketing/insights/insights.md` (dados de performance)
+- `marketing/KNOW/KNOW_Insights.md` (dados de performance)
 - `../KNOW/KNOW_strategy/KNOW_BrandPositioning.md` (essência da marca)
 - `../KNOW/KNOW_strategy/KNOW_MarketContext.md` (contexto do mercado)
 - `../KNOW/KNOW_audiences/user-insights.md` (dados do Elo)

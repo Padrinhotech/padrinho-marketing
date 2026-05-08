@@ -1,7 +1,17 @@
+---
+title: "Insights Agent — Padrinho Automation"
+version: "1.0"
+status: "Final"
+type: "Agent"
+owner: "Padrinho Marketing Automation"
+parent_doc: "marketing/AGENT/"
+tags: [agent, automation, orchestration]
+---
+
 # Insights Agent Instructions
 
 ## Propósito
-Gerar insights mensais sobre performance de marketing e dados do negócio. Executa automaticamente às 22h BRT e atualiza `marketing/insights/insights.md` no GitHub.
+Gerar insights mensais sobre performance de marketing e dados do negócio. Executa automaticamente às 22h BRT e atualiza `marketing/KNOW/KNOW_Insights.md` no GitHub.
 
 ## Entrada
 Nenhuma (tudo é pull de APIs externas)
@@ -58,7 +68,7 @@ Combinar tudo em formato:
 ```
 
 ## Saída
-- Arquivo: `marketing/insights/insights.md`
+- Arquivo: `marketing/KNOW/KNOW_Insights.md`
 - Commit automático ao GitHub
 - Post ao Telegram: "✅ Insights atualizados para Maio 2026"
 
