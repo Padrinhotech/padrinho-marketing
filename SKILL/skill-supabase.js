@@ -16,8 +16,11 @@ class SupabaseClient {
   async getAudienceInsights() {
     try {
       console.log("[Supabase] Fetching audience insights...");
+      console.log("[Supabase] Project URL:", this.projectUrl?.substring(0, 50) + "...");
+      console.log("[Supabase] API Key set:", !!this.apiKey);
 
       // Get user count
+      console.log("[Supabase] Querying user count...");
       const usersResponse = await this._query(
         "SELECT COUNT(*) as total FROM users WHERE deleted_at IS NULL"
       );
@@ -121,7 +124,7 @@ class SupabaseClient {
       const response = await fetch(`${this.projectUrl}/rest/v1/rpc/exec_query`, {
         method: "POST",
         headers: {
-          Authorization: `Bearer ${this.apiKey}`,
+          apikey: this.apiKey,
           "Content-Type": "application/json",
           Prefer: "return=representation",
         },
@@ -132,12 +135,16 @@ class SupabaseClient {
       });
 
       if (!response.ok) {
+        const errorBody = await response.text();
+        console.log("[Supabase] Query failed:", response.status, errorBody.substring(0, 200));
         throw new Error(
-          `Supabase query error: ${response.status} ${response.statusText}`
+          `Supabase query error: ${response.status} ${response.statusText} - ${errorBody}`
         );
       }
 
-      return await response.json();
+      const data = await response.json();
+      console.log("[Supabase] ✅ Query successful, rows:", Array.isArray(data) ? data.length : 1);
+      return data;
     } catch (error) {
       console.error("[Supabase] Query execution error:", error.message);
       throw error;
@@ -158,16 +165,20 @@ class SupabaseClient {
 
       const response = await fetch(url, {
         headers: {
-          Authorization: `Bearer ${this.apiKey}`,
+          apikey: this.apiKey,
           "Content-Type": "application/json",
         },
       });
 
       if (!response.ok) {
-        throw new Error(`Table query error: ${response.status}`);
+        const errorBody = await response.text();
+        console.log("[Supabase] Table query failed:", response.status, errorBody.substring(0, 200));
+        throw new Error(`Table query error: ${response.status} - ${errorBody}`);
       }
 
-      return await response.json();
+      const data = await response.json();
+      console.log("[Supabase] ✅ Table query successful, rows:", Array.isArray(data) ? data.length : 1);
+      return data;
     } catch (error) {
       console.error("[Supabase] Table query error:", error.message);
       return [];
