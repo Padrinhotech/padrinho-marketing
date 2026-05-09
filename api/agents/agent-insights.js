@@ -89,8 +89,9 @@ class InsightsAgent {
       date: new Date().toISOString().split("T")[0],
     };
 
-    // 1. Insightfulpipe - Instagram Organic
+    // 1. Meta Instagram API - Instagram Organic
     if (process.env.INSIGHTFULPIPE_API_KEY && process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID) {
+      console.log("[InsightsAgent] Initializing Meta Instagram API client...");
       const insightfulpipe = new InsightfulpipeClient(
         process.env.INSIGHTFULPIPE_API_KEY,
         process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID
