@@ -25,6 +25,7 @@ class InsightfulpipeClient {
       console.log("  Access Token set:", !!this.accessToken);
 
       // Request multiple metrics from Meta API
+      // Meta API expects: GET /{business_account_id}/insights with metric parameter
       const metrics = [
         "follower_count",
         "profile_views",
@@ -33,15 +34,18 @@ class InsightfulpipeClient {
         "engagement_rate",
       ];
 
-      const response = await fetch(
-        `${metricsUrl}?metric=${metrics.join(",")}&period=day&access_token=${this.accessToken}`,
-        {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      // Build query string - don't include period=day as Meta API doesn't accept it for all metrics
+      const queryParams = new URLSearchParams({
+        metric: metrics.join(","),
+        access_token: this.accessToken,
+      });
+
+      const response = await fetch(`${metricsUrl}?${queryParams.toString()}`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
       if (!response.ok) {
         throw new Error(
@@ -99,8 +103,13 @@ class InsightfulpipeClient {
     try {
       // Meta's insights API returns aggregated data
       // For detailed historical analysis, you may need Instagram Insights API with TIME_SERIES breakdowns
+      const queryParams = new URLSearchParams({
+        metric: "impressions,reach,profile_views",
+        access_token: this.accessToken,
+      });
+
       const response = await fetch(
-        `${this.baseUrl}/${this.businessAccountId}/insights?metric=impressions,reach,profile_views&period=day&access_token=${this.accessToken}`,
+        `${this.baseUrl}/${this.businessAccountId}/insights?${queryParams.toString()}`,
         {
           method: "GET",
           headers: {
