@@ -176,8 +176,11 @@ class StateManager {
    * Mais confiável do que git commands em Vercel
    */
   async commitToGitHub(message) {
+    console.log("[StateManager] commitToGitHub called:", message);
+    
     // On local development, use git directly
     if (!process.env.VERCEL) {
+      console.log("[StateManager] Local mode - using git");
       try {
         execSync(`git add DATA/agent-state.json`, { cwd: process.cwd() });
         execSync(`git commit -m "${message}"`, {
@@ -193,15 +196,18 @@ class StateManager {
     }
 
     // On Vercel, use GitHub API (more reliable)
+    console.log("[StateManager] Vercel mode - using GitHub API");
     const token = process.env.GITHUB_TOKEN;
     if (!token) {
-      console.log("[StateManager] ℹ️  GITHUB_TOKEN not set, data saved locally only");
+      console.warn("[StateManager] ⚠️  GITHUB_TOKEN not set - data will be lost!");
       return;
     }
 
+    console.log("[StateManager] GitHub token found, reading file...");
     try {
       // Read file content
       const fileContent = fs.readFileSync(this.stateFile, "utf-8");
+      console.log("[StateManager] File read successfully, size:", fileContent.length);
       const base64Content = Buffer.from(fileContent).toString("base64");
 
       // Prepare GitHub API request
@@ -210,6 +216,7 @@ class StateManager {
       const filePath = "DATA/agent-state.json";
 
       // Get current file SHA (needed for updates)
+      console.log("[StateManager] Getting current file SHA from GitHub...");
       const getResponse = await fetch(
         `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`,
         {
@@ -226,9 +233,13 @@ class StateManager {
       if (getResponse.ok) {
         const data = await getResponse.json();
         sha = data.sha;
+        console.log("[StateManager] File SHA found:", sha?.substring(0, 8));
+      } else {
+        console.warn("[StateManager] File not found on GitHub (first time?)", getResponse.status);
       }
 
       // Update file via GitHub API
+      console.log("[StateManager] Updating file on GitHub...");
       const updateBody = {
         message: message,
         content: base64Content,
@@ -256,13 +267,15 @@ class StateManager {
       if (updateResponse.ok) {
         console.log("[StateManager] ✅ Committed to GitHub via API:", message);
       } else {
+        const errText = await updateResponse.text();
         console.warn(
           "[StateManager] GitHub API update failed:",
-          updateResponse.status
+          updateResponse.status,
+          errText.substring(0, 200)
         );
       }
     } catch (error) {
-      console.warn("[StateManager] Error during commit:", error.message);
+      console.warn("[StateManager] Error during commit:", error.message, error.stack);
     }
   }
 }
