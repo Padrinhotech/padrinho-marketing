@@ -267,12 +267,19 @@ class StateManager {
       if (updateResponse.ok) {
         console.log("[StateManager] ✅ Committed to GitHub via API:", message);
       } else {
-        const errText = await updateResponse.text();
+        let errDetails = "";
+        try {
+          const errData = await updateResponse.json();
+          errDetails = JSON.stringify(errData, null, 2);
+        } catch {
+          errDetails = await updateResponse.text();
+        }
         console.warn(
-          "[StateManager] GitHub API update failed:",
+          "[StateManager] ❌ GitHub API update failed:",
           updateResponse.status,
-          errText.substring(0, 200)
+          updateResponse.statusText
         );
+        console.warn("[StateManager] Error details:", errDetails);
       }
     } catch (error) {
       console.warn("[StateManager] Error during commit:", error.message, error.stack);
