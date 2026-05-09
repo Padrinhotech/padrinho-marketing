@@ -14,8 +14,17 @@ import { execSync } from "child_process";
 
 class StateManager {
   constructor() {
-    // State stored in DATA/agent-state.json in the repo
-    this.stateFile = path.join(process.cwd(), "DATA", "agent-state.json");
+    // On Vercel, /var/task is read-only. Use /tmp for local writes.
+    // GitHub path is always DATA/agent-state.json
+    const isVercel = !!process.env.VERCEL;
+    this.stateFile = isVercel
+      ? "/tmp/agent-state.json"
+      : path.join(process.cwd(), "DATA", "agent-state.json");
+    this.githubPath = "DATA/agent-state.json"; // Always GitHub path
+    
+    console.log("[StateManager] Using state file:", this.stateFile);
+    console.log("[StateManager] GitHub path:", this.githubPath);
+    
     this.ensureStateFile();
   }
 
