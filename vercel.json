@@ -29,6 +29,7 @@
     "api/aut-orchestrate.js": { "maxDuration": 60 },
     "api/test-trigger.js": { "maxDuration": 300 },
     "api/test-diagnostic.js": { "maxDuration": 60 },
+    "api/test-telegram-send.js": { "maxDuration": 60 },
     "api/health.js": { "maxDuration": 10 }
   }
 }
