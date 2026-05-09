@@ -41,18 +41,24 @@ class UserInsightsAgent {
       // 2. Gerar novo user-insights.md
       const userInsightsMd = this.generateUserInsightsMarkdown(userInsightsData);
 
-      // 3. Salvar arquivo
-      const insightsPath = path.join(
-        process.cwd(),
-        "./skills/audiences/user-insights.md"
-      );
-      // Ensure directory exists (for Vercel ephemeral filesystem)
-      const insightsDir = path.dirname(insightsPath);
-      if (!fs.existsSync(insightsDir)) {
-        fs.mkdirSync(insightsDir, { recursive: true });
+      // 3. Salvar arquivo (skip on Vercel ephemeral filesystem)
+      try {
+        const insightsPath = path.join(
+          process.cwd(),
+          "./skills/audiences/user-insights.md"
+        );
+        const insightsDir = path.dirname(insightsPath);
+        if (!fs.existsSync(insightsDir)) {
+          fs.mkdirSync(insightsDir, { recursive: true });
+        }
+        fs.writeFileSync(insightsPath, userInsightsMd, "utf-8");
+        console.log("[UserInsightsAgent] user-insights.md updated");
+      } catch (fileError) {
+        console.warn(
+          "[UserInsightsAgent] Could not write file (Vercel ephemeral)",
+          fileError.message
+        );
       }
-      fs.writeFileSync(insightsPath, userInsightsMd, "utf-8");
-      console.log("[UserInsightsAgent] user-insights.md updated");
 
       // 4. Salvar no estado
       await this.state.savePhaseData("user-insights", userInsightsData);

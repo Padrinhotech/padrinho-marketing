@@ -37,18 +37,24 @@ class MarketAgent {
       // 2. Gerar novo market-context.md
       const marketContextMd = this.generateMarketContextMarkdown(marketData);
 
-      // 3. Salvar arquivo
-      const contextPath = path.join(
-        process.cwd(),
-        "./skills/strategy/market-context.md"
-      );
-      // Ensure directory exists (for Vercel ephemeral filesystem)
-      const contextDir = path.dirname(contextPath);
-      if (!fs.existsSync(contextDir)) {
-        fs.mkdirSync(contextDir, { recursive: true });
+      // 3. Salvar arquivo (skip on Vercel ephemeral filesystem)
+      try {
+        const contextPath = path.join(
+          process.cwd(),
+          "./skills/strategy/market-context.md"
+        );
+        const contextDir = path.dirname(contextPath);
+        if (!fs.existsSync(contextDir)) {
+          fs.mkdirSync(contextDir, { recursive: true });
+        }
+        fs.writeFileSync(contextPath, marketContextMd, "utf-8");
+        console.log("[MarketAgent] market-context.md updated");
+      } catch (fileError) {
+        console.warn(
+          "[MarketAgent] Could not write file (Vercel ephemeral)",
+          fileError.message
+        );
       }
-      fs.writeFileSync(contextPath, marketContextMd, "utf-8");
-      console.log("[MarketAgent] market-context.md updated");
 
       // 4. Salvar no estado
       await this.state.savePhaseData("market", marketData);
