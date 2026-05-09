@@ -48,8 +48,11 @@ class InsightfulpipeClient {
       });
 
       if (!response.ok) {
+        const errorBody = await response.text();
+        console.log("[Instagram] Response status:", response.status);
+        console.log("[Instagram] Response body:", errorBody);
         throw new Error(
-          `Meta API error: ${response.status} ${response.statusText}`
+          `Meta API error: ${response.status} ${response.statusText} - ${errorBody}`
         );
       }
 
