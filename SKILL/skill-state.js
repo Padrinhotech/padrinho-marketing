@@ -74,18 +74,21 @@ class StateManager {
         JSON.stringify(updated, null, 2),
         "utf-8"
       );
-      console.log("[StateManager] State updated:", updated.phase, updated.status);
+      console.log("[StateManager] ✅ File written locally");
 
       // Auto-commit to GitHub
-      await this.commitToGitHub(
+      console.log("[StateManager] Attempting GitHub API commit...");
+      const commitResult = await this.commitToGitHub(
         `chore: update agent state - ${updated.phase} (${updated.status})`
       );
+      console.log("[StateManager] GitHub commit completed");
 
       return updated;
     } catch (error) {
-      console.error("[StateManager] Error updating state:", error.message);
-      // Don't throw - allow execution to continue even if commit fails
-      return updates;
+      console.error("[StateManager] ❌ Error in updateState:", error.message);
+      console.error("[StateManager] Stack:", error.stack);
+      // Throw to let caller handle
+      throw error;
     }
   }
 
@@ -283,7 +286,9 @@ class StateManager {
         console.warn("[StateManager] Error details:", errDetails);
       }
     } catch (error) {
-      console.warn("[StateManager] Error during commit:", error.message, error.stack);
+      console.error("[StateManager] ❌ Fatal error during GitHub API commit:", error.message);
+      console.error("[StateManager] Stack trace:", error.stack);
+      throw error;
     }
   }
 }
