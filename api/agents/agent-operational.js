@@ -308,11 +308,8 @@ Deseja prosseguir com este conteúdo para Figma?
 // EXPORTS
 // ============================================================================
 
-// Exportar a classe para que possa ser instanciada pelo Orchestrator
-export default OperationalAgent;
-
-// Exportar handler serverless como propriedade
-export const handler = async (req, res) => {
+// Vercel serverless handler (default export)
+export default async (req, res) => {
   // Validar CRON_SECRET
   const secret = req.query.secret || req.headers["authorization"]?.split(" ")[1];
   if (secret !== process.env.CRON_SECRET) {
@@ -336,5 +333,6 @@ export const handler = async (req, res) => {
     });
   }
 };
-// Export classes for test-trigger
+
+// Export the class for external use (e.g., test-trigger)
 export { OperationalAgent };

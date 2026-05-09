@@ -157,11 +157,8 @@ Deseja prosseguir com a publicação?
 // EXPORTS
 // ============================================================================
 
-// Exportar a classe
-export default FigmaAgent;
-
-// Exportar handler serverless
-export const handler = async (req, res) => {
+// Vercel serverless handler (default export)
+export default async (req, res) => {
   // Validar CRON_SECRET
   const secret = req.query.secret || req.headers["authorization"]?.split(" ")[1];
   if (secret !== process.env.CRON_SECRET) {
@@ -186,6 +183,9 @@ export const handler = async (req, res) => {
   }
 };
 
+// Export the class for external use (e.g., test-trigger)
+export { FigmaAgent };
+
 /**
  * TODO:
  * 1. Usar Figma REST API para:
@@ -200,5 +200,3 @@ export const handler = async (req, res) => {
  *
  * 4. Upload PNGs para GitHub (ou CDN)
  */
-// Export classes for test-trigger
-export { FigmaAgent };
