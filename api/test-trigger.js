@@ -30,6 +30,8 @@ const AGENT_MAP = {
 
 module.exports = async function handler(req, res) {
   try {
+    console.log(`[TestTrigger] Request received - Method: ${req.method}, Agent: ${req.query.agent}`);
+
     // Only allow POST requests
     if (req.method !== "POST") {
       return res.status(405).json({
@@ -63,8 +65,14 @@ module.exports = async function handler(req, res) {
 
     // Instantiate and run the agent
     const AgentClass = AGENT_MAP[agentName];
+    console.log(`[TestTrigger] Agent class: ${AgentClass.name}`);
+    
     const agentInstance = new AgentClass();
+    console.log(`[TestTrigger] Agent instantiated, starting run...`);
+    
     const result = await agentInstance.run();
+
+    console.log(`[TestTrigger] Agent completed successfully`);
 
     return res.status(200).json({
       success: true,
@@ -74,10 +82,12 @@ module.exports = async function handler(req, res) {
     });
   } catch (error) {
     console.error("[TestTrigger] Error:", error);
+    console.error("[TestTrigger] Error stack:", error.stack);
 
     return res.status(500).json({
       success: false,
       error: error.message,
+      errorStack: error.stack,
       timestamp: new Date().toISOString(),
     });
   }
