@@ -1,0 +1,14 @@
+{
+  "id": 1,
+  "date": "2026-05-09",
+  "phase": "insights",
+  "status": "pending",
+  "insights_data": null,
+  "strategy_brief": null,
+  "tactic_plan": null,
+  "operational_copy": null,
+  "figma_frames": null,
+  "telegram_message_ids": {},
+  "created_at": "2026-05-09T02:00:00.000Z",
+  "updated_at": "2026-05-09T02:00:00.000Z"
+}

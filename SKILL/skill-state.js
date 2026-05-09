@@ -1,55 +1,22 @@
 /**
  * State Manager — Rastreia fase atual do fluxo de agentes
  * 
- * Suporta dois backends:
- * 1. Supabase (produção/Vercel) — tabela `agent_state`
- * 2. JSON local (desenvolvimento) — arquivo `/KNOW/current-state.json`
+ * Backend: GitHub (DATA/agent-state.json)
+ * - Lê/escreve arquivo JSON no repositório
+ * - Auto-commit após atualizar estado
+ * - Funciona em local development e Vercel
+ * - Dados persistem entre execuções de cron
  */
 
 import fs from "fs";
 import path from "path";
-
-// ============================================================================
-// ESTADO LOCAL (JSON)
-// ============================================================================
+import { execSync } from "child_process";
 
 class StateManager {
-  constructor(backend = null) {
-    // Auto-detect backend: use Supabase on Vercel, local elsewhere
-    if (backend === null) {
-      this.backend = process.env.VERCEL ? "supabase" : "local";
-    } else {
-      this.backend = backend;
-    }
-
-    this.stateFile = path.join(
-      process.cwd(),
-      "marketing",
-      "state",
-      "current-state.json"
-    );
-
-    // Initialize Supabase client if needed
-    if (this.backend === "supabase") {
-      const projectUrl = process.env.SUPABASE_URL;
-      const apiKey = process.env.SUPABASE_KEY;
-      if (!projectUrl || !apiKey) {
-        console.warn(
-          "[StateManager] Supabase credentials missing, using in-memory storage (Vercel serverless)"
-        );
-        this.backend = "memory";
-      } else {
-        this.supabaseUrl = projectUrl;
-        this.supabaseKey = apiKey;
-      }
-    }
-
-    // Initialize backends
-    if (this.backend === "local") {
-      this.ensureStateFile();
-    } else if (this.backend === "memory") {
-      this._memoryState = null;
-    }
+  constructor() {
+    // State stored in DATA/agent-state.json in the repo
+    this.stateFile = path.join(process.cwd(), "DATA", "agent-state.json");
+    this.ensureStateFile();
   }
 
   ensureStateFile() {
@@ -77,166 +44,48 @@ class StateManager {
   }
 
   /**
-   * Obter estado atual
+   * Obter estado atual (lê de DATA/agent-state.json)
    */
   async getState() {
-    if (this.backend === "local") {
+    try {
       const content = fs.readFileSync(this.stateFile, "utf-8");
       return JSON.parse(content);
-    }
-
-    if (this.backend === "memory") {
-      if (!this._memoryState) {
-        this._memoryState = {
-          date: new Date().toISOString().split("T")[0],
-          phase: "insights",
-          status: "pending",
-          insights_data: null,
-          strategy_brief: null,
-          tactic_plan: null,
-          operational_copy: null,
-          figma_frames: null,
-          telegram_message_ids: {},
-          created_at: new Date().toISOString(),
-          updated_at: new Date().toISOString(),
-        };
-      }
-      return this._memoryState;
-    }
-
-    if (this.backend === "supabase") {
-      try {
-        const response = await fetch(
-          `${this.supabaseUrl}/rest/v1/agent_state?limit=1&order=id.desc`,
-          {
-            method: "GET",
-            headers: {
-              Authorization: `Bearer ${this.supabaseKey}`,
-              "Content-Type": "application/json",
-              apikey: this.supabaseKey,
-            },
-          }
-        );
-
-        if (!response.ok) {
-          throw new Error(`Supabase error: ${response.status}`);
-        }
-
-        const data = await response.json();
-        if (data.length > 0) {
-          return data[0];
-        }
-
-        // Create initial state if none exists
-        return await this._createInitialState();
-      } catch (error) {
-        console.error("[StateManager] Supabase getState error:", error.message);
-        throw error;
-      }
+    } catch (error) {
+      console.error("[StateManager] Error reading state file:", error.message);
+      throw error;
     }
   }
 
   /**
-   * Atualizar estado (parcial)
+   * Atualizar estado (parcial) e fazer commit no GitHub
    */
   async updateState(updates) {
-    if (this.backend === "local") {
-      const current = this.getState();
-      const updated = {
-        ...current,
-        ...updates,
-        updated_at: new Date().toISOString(),
-      };
-      fs.writeFileSync(this.stateFile, JSON.stringify(updated, null, 2));
-      return updated;
-    }
-
-    if (this.backend === "memory") {
+    try {
       const current = await this.getState();
       const updated = {
         ...current,
         ...updates,
         updated_at: new Date().toISOString(),
       };
-      this._memoryState = updated;
-      return updated;
-    }
 
-    if (this.backend === "supabase") {
-      try {
-        const state = await this.getState();
-        const updated = {
-          ...state,
-          ...updates,
-          updated_at: new Date().toISOString(),
-        };
+      // Write to file
+      fs.writeFileSync(
+        this.stateFile,
+        JSON.stringify(updated, null, 2),
+        "utf-8"
+      );
+      console.log("[StateManager] State updated:", updated.phase, updated.status);
 
-        const response = await fetch(
-          `${this.supabaseUrl}/rest/v1/agent_state?id=eq.${state.id}`,
-          {
-            method: "PATCH",
-            headers: {
-              Authorization: `Bearer ${this.supabaseKey}`,
-              "Content-Type": "application/json",
-              apikey: this.supabaseKey,
-            },
-            body: JSON.stringify(updated),
-          }
-        );
-
-        if (!response.ok) {
-          throw new Error(`Supabase error: ${response.status}`);
-        }
-
-        return updated;
-      } catch (error) {
-        console.error("[StateManager] Supabase updateState error:", error.message);
-        throw error;
-      }
-    }
-  }
-
-  /**
-   * Criar estado inicial no Supabase
-   */
-  async _createInitialState() {
-    const initial = {
-      date: new Date().toISOString().split("T")[0],
-      phase: "insights",
-      status: "pending",
-      insights_data: null,
-      strategy_brief: null,
-      tactic_plan: null,
-      operational_copy: null,
-      figma_frames: null,
-      telegram_message_ids: {},
-      created_at: new Date().toISOString(),
-      updated_at: new Date().toISOString(),
-    };
-
-    try {
-      const response = await fetch(
-        `${this.supabaseUrl}/rest/v1/agent_state`,
-        {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${this.supabaseKey}`,
-            "Content-Type": "application/json",
-            apikey: this.supabaseKey,
-          },
-          body: JSON.stringify(initial),
-        }
+      // Auto-commit to GitHub
+      await this.commitToGitHub(
+        `chore: update agent state - ${updated.phase} (${updated.status})`
       );
 
-      if (!response.ok) {
-        throw new Error(`Supabase error: ${response.status}`);
-      }
-
-      const result = await response.json();
-      return result[0] || initial;
+      return updated;
     } catch (error) {
-      console.error("[StateManager] Failed to create initial state:", error.message);
-      throw error;
+      console.error("[StateManager] Error updating state:", error.message);
+      // Don't throw - allow execution to continue even if commit fails
+      return updates;
     }
   }
 
@@ -320,6 +169,82 @@ class StateManager {
   async getTelegramMessageId(phase) {
     const state = await this.getState();
     return state.telegram_message_ids?.[phase];
+  }
+
+  /**
+   * Fazer commit no GitHub com as mudanças de estado
+   * Garante que dados persistem entre execuções de cron no Vercel
+   */
+  async commitToGitHub(message) {
+    try {
+      // On local development, simple git commit
+      if (!process.env.VERCEL) {
+        try {
+          execSync(`git add DATA/agent-state.json`, { cwd: process.cwd() });
+          execSync(`git commit -m "${message}"`, {
+            cwd: process.cwd(),
+            stdio: "pipe",
+          });
+          execSync(`git push origin main`, { cwd: process.cwd(), stdio: "pipe" });
+          console.log("[StateManager] ✅ Committed to GitHub:", message);
+        } catch (e) {
+          console.warn("[StateManager] Local git commit failed:", e.message);
+        }
+        return;
+      }
+
+      // On Vercel, configure git with token and commit
+      const token = process.env.GITHUB_TOKEN;
+      if (!token) {
+        console.warn(
+          "[StateManager] GITHUB_TOKEN not set - cannot push to GitHub"
+        );
+        console.log(
+          "[StateManager] ℹ️  Add GITHUB_TOKEN to Vercel env vars for persistence"
+        );
+        return;
+      }
+
+      try {
+        // Configure git with token
+        const homeDir = process.env.HOME || process.env.USERPROFILE;
+        const credentialsFile = `${homeDir}/.git-credentials`;
+        const remoteUrl = execSync("git config --get remote.origin.url", {
+          cwd: process.cwd(),
+          encoding: "utf-8",
+        }).trim();
+
+        // Write credentials
+        execSync(
+          `echo "https://oauth2:${token}@github.com" > ${credentialsFile}`,
+          { cwd: process.cwd(), stdio: "pipe" }
+        );
+
+        // Configure git
+        execSync(`git config --global credential.helper store`, {
+          cwd: process.cwd(),
+          stdio: "pipe",
+        });
+        execSync(
+          `git config user.email "bot@padrinho.marketing" && git config user.name "Padrinho Bot"`,
+          { cwd: process.cwd(), stdio: "pipe" }
+        );
+
+        // Commit and push
+        execSync(`git add DATA/agent-state.json`, { cwd: process.cwd() });
+        execSync(`git commit -m "${message}" --allow-empty`, {
+          cwd: process.cwd(),
+          stdio: "pipe",
+        });
+        execSync(`git push origin main`, { cwd: process.cwd(), stdio: "pipe" });
+        console.log("[StateManager] ✅ Committed to GitHub:", message);
+      } catch (error) {
+        console.warn("[StateManager] GitHub commit failed:", error.message);
+        console.log("[StateManager] ℹ️  Data saved to DATA/agent-state.json");
+      }
+    } catch (error) {
+      console.warn("[StateManager] Unexpected error in commitToGitHub:", error.message);
+    }
   }
 }
 
