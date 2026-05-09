@@ -128,15 +128,15 @@ class InsightsAgent {
     }
 
     // 4. Supabase - Audience Insights
-    if (process.env.SUPABASE_URL && process.env.SUPABASE_API_KEY) {
-      const supabase = new SupabaseClient(
-        process.env.SUPABASE_URL,
-        process.env.SUPABASE_API_KEY
-      );
+    const supabaseUrl = process.env.SUPABASE_URL;
+    const supabaseKey = process.env.SUPABASE_API_KEY || process.env.SUPABASE_ANON_KEY;
+    
+    if (supabaseUrl && supabaseKey) {
+      const supabase = new SupabaseClient(supabaseUrl, supabaseKey);
       data.audience_insights = await supabase.getAudienceInsights();
     } else {
       console.warn(
-        "[InsightsAgent] SUPABASE_URL or SUPABASE_API_KEY not configured"
+        "[InsightsAgent] SUPABASE_URL or SUPABASE_API_KEY/SUPABASE_ANON_KEY not configured"
       );
       data.audience_insights = this._getMockAudienceData();
     }
