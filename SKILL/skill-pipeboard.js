@@ -16,18 +16,18 @@ class PipeboardClient {
    */
   async getMetaAds(accountId) {
     try {
-      console.log("[Pipeboard] Fetching Meta Ads data for account:", accountId);
+      const url = `${this.baseUrl}/facebook/accounts/${accountId}/campaigns`;
+      console.log("[Pipeboard] Meta Ads Request:");
+      console.log("  URL:", url);
+      console.log("  API Key set:", !!this.apiKey);
 
-      const response = await fetch(
-        `${this.baseUrl}/facebook/accounts/${accountId}/campaigns`,
-        {
-          method: "GET",
-          headers: {
-            Authorization: `Bearer ${this.apiKey}`,
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      const response = await fetch(url, {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${this.apiKey}`,
+          "Content-Type": "application/json",
+        },
+      });
 
       if (!response.ok) {
         throw new Error(
@@ -62,14 +62,15 @@ class PipeboardClient {
         })),
       };
     } catch (error) {
-      console.error("[Pipeboard] Meta Ads error:", error.message);
+      console.error("[Pipeboard] ❌ Meta Ads fetch error:", error.message);
+      console.error("[Pipeboard] Error type:", error.constructor.name);
       return {
         campaigns_active: 0,
         ytd_spend: 0,
         leads_generated: 0,
         cac: 0,
         best_creative: { id: "error", roas: 0, cpl: 0 },
-        error: error.message,
+        error: `fetch failed: ${error.message}`,
       };
     }
   }

@@ -16,22 +16,20 @@ class InsightfulpipeClient {
    */
   async getInstagramOrganic() {
     try {
-      console.log(
-        "[Insightfulpipe] Fetching Instagram organic data for account:",
-        this.businessAccountId
-      );
+      const url = `${this.baseUrl}/instagram/account/${this.businessAccountId}/metrics`;
+      console.log("[Insightfulpipe] Request details:");
+      console.log("  URL:", url);
+      console.log("  API Key set:", !!this.apiKey);
+      console.log("  Base URL:", this.baseUrl);
 
       // Fetch from Insightfulpipe API
-      const response = await fetch(
-        `${this.baseUrl}/instagram/account/${this.businessAccountId}/metrics`,
-        {
-          method: "GET",
-          headers: {
-            Authorization: `Bearer ${this.apiKey}`,
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      const response = await fetch(url, {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${this.apiKey}`,
+          "Content-Type": "application/json",
+        },
+      });
 
       if (!response.ok) {
         throw new Error(
@@ -57,7 +55,9 @@ class InsightfulpipeClient {
         })),
       };
     } catch (error) {
-      console.error("[Insightfulpipe] Error:", error.message);
+      console.error("[Insightfulpipe] ❌ Fetch error:", error.message);
+      console.error("[Insightfulpipe] Error type:", error.constructor.name);
+      console.error("[Insightfulpipe] Error details:", JSON.stringify(error, null, 2));
       // Return fallback structure on error
       return {
         followers_current: 0,
@@ -66,7 +66,7 @@ class InsightfulpipeClient {
         avg_daily_impressions: 0,
         engagement_rate: "0%",
         top_posts: [],
-        error: error.message,
+        error: `fetch failed: ${error.message}`,
       };
     }
   }
