@@ -22,9 +22,9 @@ export default async (req, res) => {
     });
   }
 
-  // Test 1: Health check - fetch from information_schema
+  // Test 1: Try to query 'profiles' table (actual user data)
   try {
-    const url = `${supabaseUrl}/rest/v1/information_schema.tables?select=table_name&limit=10`;
+    const url = `${supabaseUrl}/rest/v1/profiles?select=id,full_name,gender&limit=5`;
     const response = await fetch(url, {
       method: "GET",
       headers: {
@@ -33,34 +33,34 @@ export default async (req, res) => {
       },
     });
 
-    if (!response.ok) {
-      const errorText = await response.text();
+    if (response.ok) {
+      const data = await response.json();
       results.tests.push({
-        test: "Schema discovery",
-        status: response.status,
-        statusText: response.statusText,
-        error: errorText.substring(0, 200),
-      });
-    } else {
-      const tables = await response.json();
-      results.tests.push({
-        test: "Schema discovery",
+        test: "Query 'profiles' table",
         status: 200,
         ok: true,
-        tables_found: tables.length,
-        tables: tables.map((t) => t.table_name),
+        rows_found: data.length,
+        sample: data.length > 0 ? data[0] : null,
+      });
+    } else {
+      const errorText = await response.text();
+      results.tests.push({
+        test: "Query 'profiles' table",
+        status: response.status,
+        ok: false,
+        error: errorText.substring(0, 200),
       });
     }
   } catch (error) {
     results.tests.push({
-      test: "Schema discovery",
+      test: "Query 'profiles' table",
       error: error.message,
     });
   }
 
-  // Test 2: Try to query 'users' table
+  // Test 2: Try to query 'user_engagement_states' table
   try {
-    const url = `${supabaseUrl}/rest/v1/users?select=*&limit=1`;
+    const url = `${supabaseUrl}/rest/v1/user_engagement_states?select=user_id,engagement_score,engagement_level&limit=5`;
     const response = await fetch(url, {
       method: "GET",
       headers: {
@@ -69,22 +69,34 @@ export default async (req, res) => {
       },
     });
 
-    results.tests.push({
-      test: "Query 'users' table",
-      status: response.status,
-      ok: response.ok,
-      error: !response.ok ? await response.text() : null,
-    });
+    if (response.ok) {
+      const data = await response.json();
+      results.tests.push({
+        test: "Query 'user_engagement_states' table",
+        status: 200,
+        ok: true,
+        rows_found: data.length,
+        sample: data.length > 0 ? data[0] : null,
+      });
+    } else {
+      const errorText = await response.text();
+      results.tests.push({
+        test: "Query 'user_engagement_states' table",
+        status: response.status,
+        ok: false,
+        error: errorText.substring(0, 200),
+      });
+    }
   } catch (error) {
     results.tests.push({
-      test: "Query 'users' table",
+      test: "Query 'user_engagement_states' table",
       error: error.message,
     });
   }
 
-  // Test 3: Try to query 'user_sessions' table
+  // Test 3: Try to query 'user_onboarding' table
   try {
-    const url = `${supabaseUrl}/rest/v1/user_sessions?select=*&limit=1`;
+    const url = `${supabaseUrl}/rest/v1/user_onboarding?select=user_id,sobriety_set,first_message&limit=5`;
     const response = await fetch(url, {
       method: "GET",
       headers: {
@@ -93,22 +105,34 @@ export default async (req, res) => {
       },
     });
 
-    results.tests.push({
-      test: "Query 'user_sessions' table",
-      status: response.status,
-      ok: response.ok,
-      error: !response.ok ? await response.text() : null,
-    });
+    if (response.ok) {
+      const data = await response.json();
+      results.tests.push({
+        test: "Query 'user_onboarding' table",
+        status: 200,
+        ok: true,
+        rows_found: data.length,
+        sample: data.length > 0 ? data[0] : null,
+      });
+    } else {
+      const errorText = await response.text();
+      results.tests.push({
+        test: "Query 'user_onboarding' table",
+        status: response.status,
+        ok: false,
+        error: errorText.substring(0, 200),
+      });
+    }
   } catch (error) {
     results.tests.push({
-      test: "Query 'user_sessions' table",
+      test: "Query 'user_onboarding' table",
       error: error.message,
     });
   }
 
-  // Test 4: Try to query 'user_profiles' table
+  // Test 4: Try to query 'community_posts' table (social engagement)
   try {
-    const url = `${supabaseUrl}/rest/v1/user_profiles?select=*&limit=1`;
+    const url = `${supabaseUrl}/rest/v1/community_posts?select=id,user_id,support_count&limit=5`;
     const response = await fetch(url, {
       method: "GET",
       headers: {
@@ -117,15 +141,27 @@ export default async (req, res) => {
       },
     });
 
-    results.tests.push({
-      test: "Query 'user_profiles' table",
-      status: response.status,
-      ok: response.ok,
-      error: !response.ok ? await response.text() : null,
-    });
+    if (response.ok) {
+      const data = await response.json();
+      results.tests.push({
+        test: "Query 'community_posts' table",
+        status: 200,
+        ok: true,
+        rows_found: data.length,
+        sample: data.length > 0 ? data[0] : null,
+      });
+    } else {
+      const errorText = await response.text();
+      results.tests.push({
+        test: "Query 'community_posts' table",
+        status: response.status,
+        ok: false,
+        error: errorText.substring(0, 200),
+      });
+    }
   } catch (error) {
     results.tests.push({
-      test: "Query 'user_profiles' table",
+      test: "Query 'community_posts' table",
       error: error.message,
     });
   }
