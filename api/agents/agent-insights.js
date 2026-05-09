@@ -243,7 +243,7 @@ ${data.instagram_organic.top_posts
 - **Impressions**: ${data.google_ads.impressions.toLocaleString("pt-BR")}
 - **Clicks**: ${data.google_ads.clicks.toLocaleString("pt-BR")} (${data.google_ads.ctr}% CTR)
 - **Conversions**: ${data.google_ads.conversions}
-- **Top Keywords**: ${data.google_ads.top_keywords.map((k) => \`*\${k}\`).join(", ")}
+- **Top Keywords**: ${data.google_ads.top_keywords.map((k) => "*" + k).join(", ")}
 
 ## Audience Insights (Elo)
 
