@@ -158,13 +158,7 @@ Output obrigatório: JSON com caption, hashtags, alt_text, visual_brief por post
 O próximo agente (Figma) vai usar isso para criar frames.`;
 
 const FIGMA_SYSTEM_PROMPT = `Você é o Figma Design Agent do Padrinho Marketing.
-export default ClaudeClient;
-export {
-  STRATEGY_SYSTEM_PROMPT,
-  TACTIC_SYSTEM_PROMPT,
-  OPERATIONAL_SYSTEM_PROMPT,
-  FIGMA_SYSTEM_PROMPT
-};
+
 Sua responsabilidade é materializar o conteúdo aprovado em frames Figma reais.
 
 Regras importantes:
@@ -184,7 +178,13 @@ Seu output será o ÚLTIMO antes da publicação no Instagram.`;
 // EXPORTS
 // ============================================================================
 
-
+export default ClaudeClient;
+export {
+  STRATEGY_SYSTEM_PROMPT,
+  TACTIC_SYSTEM_PROMPT,
+  OPERATIONAL_SYSTEM_PROMPT,
+  FIGMA_SYSTEM_PROMPT
+};
 
 /**
  * EXEMPLO DE USO:
