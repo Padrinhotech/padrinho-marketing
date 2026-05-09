@@ -135,10 +135,11 @@ class StateManager {
    * Salvar dados de fase específica
    */
   async savePhaseData(phase, data) {
+    console.log("[StateManager] savePhaseData called:", phase);
     const key = `${phase}_data`;
-    return this.updateState({
-      [key]: data,
-    });
+    const updateObj = { [key]: data };
+    console.log("[StateManager] Updating with key:", key);
+    return this.updateState(updateObj);
   }
 
   /**

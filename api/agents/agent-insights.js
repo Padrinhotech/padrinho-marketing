@@ -42,7 +42,10 @@ class InsightsAgent {
       await this.saveInsightsFile(insights);
 
       // 4. Salvar no estado
+      console.log("[InsightsAgent] Saving insights to state...");
+      console.log("[InsightsAgent] Data to save:", JSON.stringify(insights).substring(0, 200));
       await this.state.savePhaseData("insights", insights);
+      console.log("[InsightsAgent] Saved to state successfully");
 
       // 5. Enviar resumo detalhado no Telegram
       await this.sendInsightsSummary(insights);
