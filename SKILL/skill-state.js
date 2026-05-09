@@ -172,78 +172,97 @@ class StateManager {
   }
 
   /**
-   * Fazer commit no GitHub com as mudanças de estado
-   * Garante que dados persistem entre execuções de cron no Vercel
+   * Atualizar arquivo no GitHub via API
+   * Mais confiável do que git commands em Vercel
    */
   async commitToGitHub(message) {
-    try {
-      // On local development, simple git commit
-      if (!process.env.VERCEL) {
-        try {
-          execSync(`git add DATA/agent-state.json`, { cwd: process.cwd() });
-          execSync(`git commit -m "${message}"`, {
-            cwd: process.cwd(),
-            stdio: "pipe",
-          });
-          execSync(`git push origin main`, { cwd: process.cwd(), stdio: "pipe" });
-          console.log("[StateManager] ✅ Committed to GitHub:", message);
-        } catch (e) {
-          console.warn("[StateManager] Local git commit failed:", e.message);
-        }
-        return;
-      }
-
-      // On Vercel, configure git with token and commit
-      const token = process.env.GITHUB_TOKEN;
-      if (!token) {
-        console.warn(
-          "[StateManager] GITHUB_TOKEN not set - cannot push to GitHub"
-        );
-        console.log(
-          "[StateManager] ℹ️  Add GITHUB_TOKEN to Vercel env vars for persistence"
-        );
-        return;
-      }
-
+    // On local development, use git directly
+    if (!process.env.VERCEL) {
       try {
-        // Configure git with token
-        const homeDir = process.env.HOME || process.env.USERPROFILE;
-        const credentialsFile = `${homeDir}/.git-credentials`;
-        const remoteUrl = execSync("git config --get remote.origin.url", {
-          cwd: process.cwd(),
-          encoding: "utf-8",
-        }).trim();
-
-        // Write credentials
-        execSync(
-          `echo "https://oauth2:${token}@github.com" > ${credentialsFile}`,
-          { cwd: process.cwd(), stdio: "pipe" }
-        );
-
-        // Configure git
-        execSync(`git config --global credential.helper store`, {
-          cwd: process.cwd(),
-          stdio: "pipe",
-        });
-        execSync(
-          `git config user.email "bot@padrinho.marketing" && git config user.name "Padrinho Bot"`,
-          { cwd: process.cwd(), stdio: "pipe" }
-        );
-
-        // Commit and push
         execSync(`git add DATA/agent-state.json`, { cwd: process.cwd() });
-        execSync(`git commit -m "${message}" --allow-empty`, {
+        execSync(`git commit -m "${message}"`, {
           cwd: process.cwd(),
           stdio: "pipe",
         });
         execSync(`git push origin main`, { cwd: process.cwd(), stdio: "pipe" });
         console.log("[StateManager] ✅ Committed to GitHub:", message);
-      } catch (error) {
-        console.warn("[StateManager] GitHub commit failed:", error.message);
-        console.log("[StateManager] ℹ️  Data saved to DATA/agent-state.json");
+      } catch (e) {
+        console.warn("[StateManager] Local git commit failed:", e.message);
+      }
+      return;
+    }
+
+    // On Vercel, use GitHub API (more reliable)
+    const token = process.env.GITHUB_TOKEN;
+    if (!token) {
+      console.log("[StateManager] ℹ️  GITHUB_TOKEN not set, data saved locally only");
+      return;
+    }
+
+    try {
+      // Read file content
+      const fileContent = fs.readFileSync(this.stateFile, "utf-8");
+      const base64Content = Buffer.from(fileContent).toString("base64");
+
+      // Prepare GitHub API request
+      const owner = "Padrinhotech";
+      const repo = "padrinho-marketing";
+      const filePath = "DATA/agent-state.json";
+
+      // Get current file SHA (needed for updates)
+      const getResponse = await fetch(
+        `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`,
+        {
+          method: "GET",
+          headers: {
+            Authorization: `token ${token}`,
+            "User-Agent": "Padrinho-Bot",
+            Accept: "application/vnd.github.v3+json",
+          },
+        }
+      );
+
+      let sha = null;
+      if (getResponse.ok) {
+        const data = await getResponse.json();
+        sha = data.sha;
+      }
+
+      // Update file via GitHub API
+      const updateBody = {
+        message: message,
+        content: base64Content,
+        branch: "main",
+      };
+
+      if (sha) {
+        updateBody.sha = sha;
+      }
+
+      const updateResponse = await fetch(
+        `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`,
+        {
+          method: "PUT",
+          headers: {
+            Authorization: `token ${token}`,
+            "Content-Type": "application/json",
+            "User-Agent": "Padrinho-Bot",
+            Accept: "application/vnd.github.v3+json",
+          },
+          body: JSON.stringify(updateBody),
+        }
+      );
+
+      if (updateResponse.ok) {
+        console.log("[StateManager] ✅ Committed to GitHub via API:", message);
+      } else {
+        console.warn(
+          "[StateManager] GitHub API update failed:",
+          updateResponse.status
+        );
       }
     } catch (error) {
-      console.warn("[StateManager] Unexpected error in commitToGitHub:", error.message);
+      console.warn("[StateManager] Error during commit:", error.message);
     }
   }
 }
