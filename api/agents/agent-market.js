@@ -42,6 +42,11 @@ class MarketAgent {
         process.cwd(),
         "./skills/strategy/market-context.md"
       );
+      // Ensure directory exists (for Vercel ephemeral filesystem)
+      const contextDir = path.dirname(contextPath);
+      if (!fs.existsSync(contextDir)) {
+        fs.mkdirSync(contextDir, { recursive: true });
+      }
       fs.writeFileSync(contextPath, marketContextMd, "utf-8");
       console.log("[MarketAgent] market-context.md updated");
 

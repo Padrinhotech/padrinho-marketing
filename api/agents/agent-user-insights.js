@@ -46,6 +46,11 @@ class UserInsightsAgent {
         process.cwd(),
         "./skills/audiences/user-insights.md"
       );
+      // Ensure directory exists (for Vercel ephemeral filesystem)
+      const insightsDir = path.dirname(insightsPath);
+      if (!fs.existsSync(insightsDir)) {
+        fs.mkdirSync(insightsDir, { recursive: true });
+      }
       fs.writeFileSync(insightsPath, userInsightsMd, "utf-8");
       console.log("[UserInsightsAgent] user-insights.md updated");
 
