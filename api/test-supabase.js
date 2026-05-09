@@ -28,7 +28,7 @@ export default async (req, res) => {
     const response = await fetch(url, {
       method: "GET",
       headers: {
-        Authorization: `Bearer ${supabaseKey}`,
+        apikey: supabaseKey,
         "Content-Type": "application/json",
       },
     });
@@ -64,7 +64,7 @@ export default async (req, res) => {
     const response = await fetch(url, {
       method: "GET",
       headers: {
-        Authorization: `Bearer ${supabaseKey}`,
+        apikey: supabaseKey,
         "Content-Type": "application/json",
       },
     });
@@ -88,7 +88,7 @@ export default async (req, res) => {
     const response = await fetch(url, {
       method: "GET",
       headers: {
-        Authorization: `Bearer ${supabaseKey}`,
+        apikey: supabaseKey,
         "Content-Type": "application/json",
       },
     });
@@ -112,7 +112,7 @@ export default async (req, res) => {
     const response = await fetch(url, {
       method: "GET",
       headers: {
-        Authorization: `Bearer ${supabaseKey}`,
+        apikey: supabaseKey,
         "Content-Type": "application/json",
       },
     });
