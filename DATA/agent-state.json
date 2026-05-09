@@ -9,9 +9,10 @@
       "followers_gain_month": 0,
       "avg_daily_reach": 0,
       "avg_daily_impressions": 0,
+      "profile_views": 0,
       "engagement_rate": "0%",
       "top_posts": [],
-      "error": "fetch failed: fetch failed"
+      "error": "Meta API error: Meta API error: 400 Bad Request"
     },
     "meta_ads": {
       "campaigns_active": 0,
@@ -48,6 +49,6 @@
   "operational_copy": null,
   "figma_frames": null,
   "telegram_message_ids": {},
-  "created_at": "2026-05-09T15:02:26.032Z",
-  "updated_at": "2026-05-09T15:02:46.646Z"
+  "created_at": "2026-05-09T15:08:02.181Z",
+  "updated_at": "2026-05-09T15:08:22.903Z"
 }
