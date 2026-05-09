@@ -13,9 +13,9 @@
 import fs from "fs";
 import path from "path";
 import https from "https";
-import StateManager from "../SKILL/skill-state.js";
-import TelegramClient from "../SKILL/skill-telegram-client.js";
-import { generateApprovalButtons } from "../SKILL/skill-telegram-client.js";
+import StateManager from "../../SKILL/skill-state.js";
+import TelegramClient from "../../SKILL/skill-telegram-client.js";
+import { generateApprovalButtons } from "../../SKILL/skill-telegram-client.js";
 
 class UserInsightsAgent {
   constructor() {

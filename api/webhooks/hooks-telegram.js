@@ -8,8 +8,8 @@
  * - "cancel|2026-05-07" → Cancelar fluxo
  */
 
-import Orchestrator from "../SKILL/skill-orchestrator.js";
-import TelegramClient from "../SKILL/skill-telegram-client.js";
+import Orchestrator from "../../SKILL/skill-orchestrator.js";
+import TelegramClient from "../../SKILL/skill-telegram-client.js";
 
 /**
  * Serverless handler para Vercel

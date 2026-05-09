@@ -11,9 +11,9 @@
 
 import fs from "fs";
 import path from "path";
-import StateManager from "../SKILL/skill-state.js";
-import TelegramClient from "../SKILL/skill-telegram-client.js";
-import { generateApprovalButtons } from "../SKILL/skill-telegram-client.js";
+import StateManager from "../../SKILL/skill-state.js";
+import TelegramClient from "../../SKILL/skill-telegram-client.js";
+import { generateApprovalButtons } from "../../SKILL/skill-telegram-client.js";
 
 class MarketAgent {
   constructor() {

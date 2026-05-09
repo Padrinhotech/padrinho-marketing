@@ -14,8 +14,8 @@
  * TODO: Implementação completa
  */
 
-import StateManager from "../SKILL/skill-state.js";
-import TelegramClient from "../SKILL/skill-telegram-client.js";
+import StateManager from "../../SKILL/skill-state.js";
+import TelegramClient from "../../SKILL/skill-telegram-client.js";
 
 class FigmaAgent {
   constructor() {

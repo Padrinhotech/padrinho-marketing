@@ -8,11 +8,11 @@
  * Saída: KNOW/KNOW_Insights.md (commit ao GitHub)
  */
 
-import StateManager from "../SKILL/skill-state.js";
-import TelegramClient from "../SKILL/skill-telegram-client.js";
-import InsightfulpipeClient from "../SKILL/skill-insightfulpipe.js";
-import PipeboardClient from "../SKILL/skill-pipeboard.js";
-import SupabaseClient from "../SKILL/skill-supabase.js";
+import StateManager from "../../SKILL/skill-state.js";
+import TelegramClient from "../../SKILL/skill-telegram-client.js";
+import InsightfulpipeClient from "../../SKILL/skill-insightfulpipe.js";
+import PipeboardClient from "../../SKILL/skill-pipeboard.js";
+import SupabaseClient from "../../SKILL/skill-supabase.js";
 
 class InsightsAgent {
   constructor() {

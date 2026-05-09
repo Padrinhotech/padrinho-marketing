@@ -12,10 +12,10 @@
 
 import fs from "fs";
 import path from "path";
-import StateManager from "../SKILL/skill-state.js";
-import TelegramClient from "../SKILL/skill-telegram-client.js";
-import ClaudeClient, { TACTIC_SYSTEM_PROMPT } from "../SKILL/skill-claude-client.js";
-import { generateApprovalButtons } from "../SKILL/skill-telegram-client.js";
+import StateManager from "../../SKILL/skill-state.js";
+import TelegramClient from "../../SKILL/skill-telegram-client.js";
+import ClaudeClient, { TACTIC_SYSTEM_PROMPT } from "../../SKILL/skill-claude-client.js";
+import { generateApprovalButtons } from "../../SKILL/skill-telegram-client.js";
 
 class TacticAgent {
   constructor() {
