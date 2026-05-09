@@ -10,22 +10,22 @@
  * etc.
  */
 
-const InsightsAgent = require("./agents/agent-insights");
-const MarketAgent = require("./agents/agent-market");
-const UserInsightsAgent = require("./agents/agent-user-insights");
-const StrategyAgent = require("./agents/agent-strategy");
-const TacticAgent = require("./agents/agent-tactic");
-const OperationalAgent = require("./agents/agent-operational");
-const FigmaAgent = require("./agents/agent-figma");
+const insightsModule = require("./agents/agent-insights");
+const marketModule = require("./agents/agent-market");
+const userInsightsModule = require("./agents/agent-user-insights");
+const strategyModule = require("./agents/agent-strategy");
+const tacticModule = require("./agents/agent-tactic");
+const operationalModule = require("./agents/agent-operational");
+const figmaModule = require("./agents/agent-figma");
 
 const AGENT_MAP = {
-  insights: InsightsAgent,
-  market: MarketAgent,
-  "user-insights": UserInsightsAgent,
-  strategy: StrategyAgent,
-  tactic: TacticAgent,
-  operational: OperationalAgent,
-  figma: FigmaAgent,
+  insights: insightsModule.InsightsAgent,
+  market: marketModule.MarketAgent,
+  "user-insights": userInsightsModule.UserInsightsAgent,
+  strategy: strategyModule.StrategyAgent,
+  tactic: tacticModule.TacticAgent,
+  operational: operationalModule.OperationalAgent,
+  figma: figmaModule.FigmaAgent,
 };
 
 module.exports = async function handler(req, res) {

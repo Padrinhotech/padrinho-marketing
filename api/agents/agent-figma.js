@@ -200,3 +200,5 @@ module.exports.handler = async (req, res) => {
  *
  * 4. Upload PNGs para GitHub (ou CDN)
  */
+// Export classes for test-trigger
+module.exports.FigmaAgent = FigmaAgent;

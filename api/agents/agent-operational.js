@@ -341,3 +341,5 @@ module.exports.handler = async (req, res) => {
     });
   }
 };
+// Export classes for test-trigger
+module.exports.OperationalAgent = OperationalAgent;

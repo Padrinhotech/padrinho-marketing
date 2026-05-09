@@ -353,3 +353,6 @@ module.exports = async (req, res) => {
     });
   }
 };
+
+// Export the class for external use (e.g., test-trigger)
+module.exports.InsightsAgent = InsightsAgent;
