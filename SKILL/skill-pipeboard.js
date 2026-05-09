@@ -191,4 +191,4 @@ class PipeboardClient {
   }
 }
 
-module.exports = PipeboardClient;
+export default PipeboardClient;

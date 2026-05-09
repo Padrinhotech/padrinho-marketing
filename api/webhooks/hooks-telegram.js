@@ -8,13 +8,13 @@
  * - "cancel|2026-05-07" → Cancelar fluxo
  */
 
-const Orchestrator = require("../SKILL/skill-orchestrator");
-const TelegramClient = require("../SKILL/skill-telegram-client");
+import Orchestrator from "../SKILL/skill-orchestrator.js";
+import TelegramClient from "../SKILL/skill-telegram-client.js";
 
 /**
  * Serverless handler para Vercel
  */
-module.exports = async (req, res) => {
+export default async (req, res) => {
   // Apenas POST é aceito
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });

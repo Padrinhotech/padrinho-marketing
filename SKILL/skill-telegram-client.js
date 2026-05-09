@@ -8,7 +8,7 @@
  * - Enviar fotos
  */
 
-const https = require("https");
+import https from "https";
 
 class TelegramClient {
   constructor(botToken, chatId) {
@@ -248,9 +248,8 @@ function generatePublishButtons(date) {
 // EXPORTS
 // ============================================================================
 
-module.exports = TelegramClient;
-module.exports.generateApprovalButtons = generateApprovalButtons;
-module.exports.generatePublishButtons = generatePublishButtons;
+export default TelegramClient;
+export { generateApprovalButtons, generatePublishButtons };
 
 /**
  * EXEMPLO DE USO:

@@ -14,8 +14,8 @@
  * TODO: Implementação completa
  */
 
-const StateManager = require("../SKILL/skill-state");
-const TelegramClient = require("../SKILL/skill-telegram-client");
+import StateManager from "../SKILL/skill-state.js";
+import TelegramClient from "../SKILL/skill-telegram-client.js";
 
 class FigmaAgent {
   constructor() {
@@ -158,10 +158,10 @@ Deseja prosseguir com a publicação?
 // ============================================================================
 
 // Exportar a classe
-module.exports = FigmaAgent;
+export default FigmaAgent;
 
 // Exportar handler serverless
-module.exports.handler = async (req, res) => {
+export const handler = async (req, res) => {
   // Validar CRON_SECRET
   const secret = req.query.secret || req.headers["authorization"]?.split(" ")[1];
   if (secret !== process.env.CRON_SECRET) {
@@ -201,4 +201,4 @@ module.exports.handler = async (req, res) => {
  * 4. Upload PNGs para GitHub (ou CDN)
  */
 // Export classes for test-trigger
-module.exports.FigmaAgent = FigmaAgent;
+export { FigmaAgent };

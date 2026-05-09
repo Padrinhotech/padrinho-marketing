@@ -8,11 +8,11 @@
  * Saída: KNOW/KNOW_Insights.md (commit ao GitHub)
  */
 
-const StateManager = require("../SKILL/skill-state");
-const TelegramClient = require("../SKILL/skill-telegram-client");
-const InsightfulpipeClient = require("../SKILL/skill-insightfulpipe");
-const PipeboardClient = require("../SKILL/skill-pipeboard");
-const SupabaseClient = require("../SKILL/skill-supabase");
+import StateManager from "../SKILL/skill-state.js";
+import TelegramClient from "../SKILL/skill-telegram-client.js";
+import InsightfulpipeClient from "../SKILL/skill-insightfulpipe.js";
+import PipeboardClient from "../SKILL/skill-pipeboard.js";
+import SupabaseClient from "../SKILL/skill-supabase.js";
 
 class InsightsAgent {
   constructor() {
@@ -325,7 +325,7 @@ top interest: ${data.audience_insights.top_interests[0]}
 // ============================================================================
 
 // Vercel serverless handler (default export)
-module.exports = async (req, res) => {
+export default async (req, res) => {
   console.log(`[InsightsAgent] Handler called at ${new Date().toISOString()}`);
   console.log(`[InsightsAgent] CRON_SECRET configured: ${!!process.env.CRON_SECRET}`);
   
@@ -355,4 +355,4 @@ module.exports = async (req, res) => {
 };
 
 // Export the class for external use (e.g., test-trigger)
-module.exports.InsightsAgent = InsightsAgent;
+export { InsightsAgent };

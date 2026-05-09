@@ -8,8 +8,8 @@
  * - Tratamento de erros
  */
 
-const StateManager = require("./state.js");
-const TelegramClient = require("./telegram-client.js");
+import StateManager from "./skill-state.js";
+import TelegramClient from "./skill-telegram-client.js";
 
 class Orchestrator {
   constructor() {
@@ -106,7 +106,7 @@ class Orchestrator {
       switch (nextPhase) {
         case "tactic": {
           console.log("[Orchestrator] Dispatching TACTIC agent");
-          const TacticAgent = require("../agents/tactic.js");
+          const { TacticAgent } = await import("../agents/agent-tactic.js");
           const tacticInstance = new TacticAgent();
           await tacticInstance.run();
           break;
@@ -114,7 +114,7 @@ class Orchestrator {
 
         case "operational": {
           console.log("[Orchestrator] Dispatching OPERATIONAL agent");
-          const OperationalAgent = require("../agents/operational.js");
+          const { OperationalAgent } = await import("../agents/agent-operational.js");
           const operationalInstance = new OperationalAgent();
           await operationalInstance.run();
           break;
@@ -227,7 +227,7 @@ class Orchestrator {
 // EXPORTS
 // ============================================================================
 
-module.exports = Orchestrator;
+export default Orchestrator;
 
 /**
  * EXEMPLO DE USO:

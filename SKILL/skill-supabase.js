@@ -175,4 +175,4 @@ class SupabaseClient {
   }
 }
 
-module.exports = SupabaseClient;
+export default SupabaseClient;

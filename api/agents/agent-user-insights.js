@@ -10,12 +10,12 @@
  * Saída: user-insights.md atualizado + commit GitHub + preview Telegram
  */
 
-const fs = require("fs");
-const path = require("path");
-const https = require("https");
-const StateManager = require("../SKILL/skill-state");
-const TelegramClient = require("../SKILL/skill-telegram-client");
-const { generateApprovalButtons } = require("../SKILL/skill-telegram-client");
+import fs from "fs";
+import path from "path";
+import https from "https";
+import StateManager from "../SKILL/skill-state.js";
+import TelegramClient from "../SKILL/skill-telegram-client.js";
+import { generateApprovalButtons } from "../SKILL/skill-telegram-client.js";
 
 class UserInsightsAgent {
   constructor() {
@@ -600,10 +600,10 @@ Comitar atualização?
 // ============================================================================
 
 // Exportar a classe
-module.exports = UserInsightsAgent;
+export default UserInsightsAgent;
 
 // Exportar handler serverless
-module.exports.handler = async (req, res) => {
+export const handler = async (req, res) => {
   // Validar CRON_SECRET
   const secret = req.query.secret || req.headers["authorization"]?.split(" ")[1];
   if (secret !== process.env.CRON_SECRET) {
@@ -628,4 +628,4 @@ module.exports.handler = async (req, res) => {
   }
 };
 // Export classes for test-trigger
-module.exports.UserInsightsAgent = UserInsightsAgent;
+export { UserInsightsAgent };

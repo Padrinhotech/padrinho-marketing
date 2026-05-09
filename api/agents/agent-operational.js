@@ -10,17 +10,12 @@
  * Saída: operational_copy.json (no estado)
  */
 
-const fs = require("fs");
-const path = require("path");
-const StateManager = require("../SKILL/skill-state");
-const TelegramClient = require("../SKILL/skill-telegram-client");
-const ClaudeClient = require("../SKILL/skill-claude-client");
-const {
-  OPERATIONAL_SYSTEM_PROMPT,
-} = require("../SKILL/skill-claude-client");
-const {
-  generateApprovalButtons,
-} = require("../SKILL/skill-telegram-client");
+import fs from "fs";
+import path from "path";
+import StateManager from "../SKILL/skill-state.js";
+import TelegramClient from "../SKILL/skill-telegram-client.js";
+import ClaudeClient, { OPERATIONAL_SYSTEM_PROMPT } from "../SKILL/skill-claude-client.js";
+import { generateApprovalButtons } from "../SKILL/skill-telegram-client.js";
 
 class OperationalAgent {
   constructor() {
@@ -314,10 +309,10 @@ Deseja prosseguir com este conteúdo para Figma?
 // ============================================================================
 
 // Exportar a classe para que possa ser instanciada pelo Orchestrator
-module.exports = OperationalAgent;
+export default OperationalAgent;
 
 // Exportar handler serverless como propriedade
-module.exports.handler = async (req, res) => {
+export const handler = async (req, res) => {
   // Validar CRON_SECRET
   const secret = req.query.secret || req.headers["authorization"]?.split(" ")[1];
   if (secret !== process.env.CRON_SECRET) {
@@ -342,4 +337,4 @@ module.exports.handler = async (req, res) => {
   }
 };
 // Export classes for test-trigger
-module.exports.OperationalAgent = OperationalAgent;
+export { OperationalAgent };

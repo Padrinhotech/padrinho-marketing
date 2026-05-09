@@ -103,4 +103,4 @@ class InsightfulpipeClient {
   }
 }
 
-module.exports = InsightfulpipeClient;
+export default InsightfulpipeClient;

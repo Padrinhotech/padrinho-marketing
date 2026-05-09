@@ -6,8 +6,8 @@
  * 2. JSON local (desenvolvimento) — arquivo `/KNOW/current-state.json`
  */
 
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import path from "path";
 
 // ============================================================================
 // ESTADO LOCAL (JSON)
@@ -167,7 +167,7 @@ class StateManager {
 // EXPORTS
 // ============================================================================
 
-module.exports = StateManager;
+export default StateManager;
 
 /**
  * EXEMPLO DE USO:

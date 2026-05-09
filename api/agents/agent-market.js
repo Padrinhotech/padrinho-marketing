@@ -9,11 +9,11 @@
  * Saída: market-context.md atualizado + commit GitHub + preview Telegram
  */
 
-const fs = require("fs");
-const path = require("path");
-const StateManager = require("../SKILL/skill-state");
-const TelegramClient = require("../SKILL/skill-telegram-client");
-const { generateApprovalButtons } = require("../SKILL/skill-telegram-client");
+import fs from "fs";
+import path from "path";
+import StateManager from "../SKILL/skill-state.js";
+import TelegramClient from "../SKILL/skill-telegram-client.js";
+import { generateApprovalButtons } from "../SKILL/skill-telegram-client.js";
 
 class MarketAgent {
   constructor() {
@@ -399,7 +399,7 @@ Comitar atualização?
 // ============================================================================
 
 // Vercel serverless handler (default export for /api/agents/agent-market)
-module.exports = async (req, res) => {
+export default async (req, res) => {
   console.log(`[MarketAgent] Handler called at ${new Date().toISOString()}`);
   console.log(`[MarketAgent] CRON_SECRET configured: ${!!process.env.CRON_SECRET}`);
   
@@ -430,4 +430,4 @@ module.exports = async (req, res) => {
   }
 };
 // Export classes for test-trigger
-module.exports.MarketAgent = MarketAgent;
+export { MarketAgent };
