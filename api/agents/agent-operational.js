@@ -310,9 +310,11 @@ Deseja prosseguir com este conteúdo para Figma?
 
 // Vercel serverless handler (default export)
 export default async (req, res) => {
-  // Validar CRON_SECRET
-  const secret = req.query.secret || req.headers["authorization"]?.split(" ")[1];
-  if (secret !== process.env.CRON_SECRET) {
+  // Allow Vercel cron invocations (no secret needed)
+  const isVercelCron = !!req.headers["x-vercel-cron"];
+  const providedSecret = req.query.secret || req.headers["authorization"]?.split(" ")[1];
+  
+  if (!isVercelCron && providedSecret !== process.env.CRON_SECRET) {
     return res.status(401).json({ error: "Unauthorized" });
   }
 

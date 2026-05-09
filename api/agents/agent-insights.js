@@ -327,14 +327,18 @@ top interest: ${data.audience_insights.top_interests[0]}
 // Vercel serverless handler (default export)
 export default async (req, res) => {
   console.log(`[InsightsAgent] Handler called at ${new Date().toISOString()}`);
-  console.log(`[InsightsAgent] CRON_SECRET configured: ${!!process.env.CRON_SECRET}`);
   
-  // Validar CRON_SECRET
-  const secret = req.query.secret || req.headers["authorization"]?.split(" ")[1];
-  if (secret !== process.env.CRON_SECRET) {
+  // Allow Vercel cron invocations (no secret needed)
+  // Only require secret for manual invocations
+  const isVercelCron = !!req.headers["x-vercel-cron"];
+  const providedSecret = req.query.secret || req.headers["authorization"]?.split(" ")[1];
+  
+  if (!isVercelCron && providedSecret !== process.env.CRON_SECRET) {
     console.error(`[InsightsAgent] Invalid secret provided`);
     return res.status(401).json({ error: "Unauthorized" });
   }
+  
+  console.log(`[InsightsAgent] Invoking as: ${isVercelCron ? "Vercel Cron" : "Manual"}`);
 
   const agent = new InsightsAgent();
 

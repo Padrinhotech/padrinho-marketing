@@ -412,14 +412,17 @@ Comitar atualização?
 // Vercel serverless handler (default export for /api/agents/agent-market)
 export default async (req, res) => {
   console.log(`[MarketAgent] Handler called at ${new Date().toISOString()}`);
-  console.log(`[MarketAgent] CRON_SECRET configured: ${!!process.env.CRON_SECRET}`);
   
-  // Validar CRON_SECRET
-  const secret = req.query.secret || req.headers["authorization"]?.split(" ")[1];
-  if (secret !== process.env.CRON_SECRET) {
+  // Allow Vercel cron invocations (no secret needed)
+  const isVercelCron = !!req.headers["x-vercel-cron"];
+  const providedSecret = req.query.secret || req.headers["authorization"]?.split(" ")[1];
+  
+  if (!isVercelCron && providedSecret !== process.env.CRON_SECRET) {
     console.error(`[MarketAgent] Invalid secret provided`);
     return res.status(401).json({ error: "Unauthorized" });
   }
+  
+  console.log(`[MarketAgent] Invoking as: ${isVercelCron ? "Vercel Cron" : "Manual"}`);
 
   const agent = new MarketAgent();
 
