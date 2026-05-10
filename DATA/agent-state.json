@@ -2,54 +2,294 @@
   "date": "2026-05-10",
   "phase": "insights",
   "status": "pending",
-  "insights_data": {
-    "date": "2026-05-10",
-    "instagram_organic": {
-      "followers_current": 0,
-      "followers_gain_month": 0,
-      "avg_daily_reach": 0,
-      "avg_daily_impressions": 0,
-      "profile_views": 0,
-      "engagement_rate": "0%",
-      "top_posts": [],
-      "error": "Meta API error: Meta API error: 400 Bad Request - {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"ALOEfPOGM1587tvux-z3BnG\"}}"
-    },
-    "meta_ads": {
-      "campaigns_active": 0,
-      "ytd_spend": 0,
-      "leads_generated": 0,
-      "cac": 0,
-      "best_creative": {
-        "id": "error",
-        "roas": 0,
-        "cpl": 0
-      },
-      "error": "fetch failed: fetch failed"
-    },
-    "google_ads": {
-      "impressions": 0,
-      "clicks": 0,
-      "ctr": 0,
-      "conversions": 0,
-      "conversion_rate": 0,
-      "top_keywords": [],
-      "error": "fetch failed"
-    },
-    "audience_insights": {
-      "total_users": 0,
-      "monthly_active": 0,
-      "top_interests": [],
-      "demographics": [],
-      "engagement_score": 0,
-      "social_connection_score": 0,
-      "average_recovery_stage": "unknown"
-    }
-  },
+  "insights_data": null,
   "strategy_brief": null,
   "tactic_plan": null,
   "operational_copy": null,
   "figma_frames": null,
   "telegram_message_ids": {},
-  "created_at": "2026-05-10T01:12:19.777Z",
-  "updated_at": "2026-05-10T01:12:40.723Z"
+  "created_at": "2026-05-10T02:41:19.779Z",
+  "updated_at": "2026-05-10T02:41:19.804Z",
+  "user-insights_data": {
+    "date": "2026-05-10",
+    "updated_at": "2026-05-10T02:41:19.780Z",
+    "period_days": 90,
+    "total_active_users": 2847,
+    "demographics": {
+      "age_distribution": {
+        "18_25": {
+          "count": 412,
+          "pct": 14.5
+        },
+        "25_34": {
+          "count": 891,
+          "pct": 31.3
+        },
+        "35_44": {
+          "count": 756,
+          "pct": 26.5
+        },
+        "45_54": {
+          "count": 562,
+          "pct": 19.7
+        },
+        "55_plus": {
+          "count": 226,
+          "pct": 7.9
+        }
+      },
+      "gender": {
+        "male": {
+          "count": 1703,
+          "pct": 59.8
+        },
+        "female": {
+          "count": 1087,
+          "pct": 38.2
+        },
+        "non_binary": {
+          "count": 57,
+          "pct": 2
+        }
+      },
+      "top_states": [
+        {
+          "state": "São Paulo",
+          "count": 612,
+          "pct": 21.5
+        },
+        {
+          "state": "Rio Grande do Sul",
+          "count": 487,
+          "pct": 17.1
+        },
+        {
+          "state": "Minas Gerais",
+          "count": 356,
+          "pct": 12.5
+        },
+        {
+          "state": "Bahia",
+          "count": 245,
+          "pct": 8.6
+        },
+        {
+          "state": "Santa Catarina",
+          "count": 198,
+          "pct": 6.9
+        }
+      ],
+      "family_status": {
+        "single": {
+          "pct": 42
+        },
+        "married": {
+          "pct": 38
+        },
+        "with_children": {
+          "pct": 45
+        }
+      }
+    },
+    "consumption": {
+      "frequency": {
+        "daily": {
+          "pct": 8
+        },
+        "3_4_times_week": {
+          "pct": 22
+        },
+        "weekends": {
+          "pct": 45
+        },
+        "occasional": {
+          "pct": 25
+        }
+      },
+      "context": {
+        "social_bar": {
+          "pct": 52
+        },
+        "home_alone": {
+          "pct": 18
+        },
+        "events": {
+          "pct": 22
+        },
+        "other": {
+          "pct": 8
+        }
+      },
+      "avg_liters_per_week": 4.2,
+      "drink_preference": {
+        "beer": {
+          "pct": 65
+        },
+        "wine": {
+          "pct": 15
+        },
+        "spirits": {
+          "pct": 15
+        },
+        "other": {
+          "pct": 5
+        }
+      }
+    },
+    "barriers_motivations": {
+      "why_reduce": {
+        "health": {
+          "pct": 38
+        },
+        "family_pressure": {
+          "pct": 22
+        },
+        "work_productivity": {
+          "pct": 18
+        },
+        "relationships": {
+          "pct": 15
+        },
+        "financial": {
+          "pct": 7
+        }
+      },
+      "main_obstacles": {
+        "social_pressure": {
+          "pct": 35
+        },
+        "habit_addiction": {
+          "pct": 28
+        },
+        "isolation_without_alcohol": {
+          "pct": 18
+        },
+        "emotional_difficulty": {
+          "pct": 14
+        },
+        "lack_of_support": {
+          "pct": 5
+        }
+      },
+      "previous_attempts": {
+        "yes": {
+          "pct": 72
+        },
+        "no": {
+          "pct": 28
+        }
+      }
+    },
+    "journey": [
+      {
+        "stage": "awareness",
+        "count": 156,
+        "pct": 5.5,
+        "avg_days_in_stage": 8,
+        "retention_7d": 42,
+        "retention_30d": 18,
+        "retention_90d": 5
+      },
+      {
+        "stage": "consideration",
+        "count": 412,
+        "pct": 14.5,
+        "avg_days_in_stage": 14,
+        "retention_7d": 68,
+        "retention_30d": 45,
+        "retention_90d": 22
+      },
+      {
+        "stage": "decision",
+        "count": 687,
+        "pct": 24.1,
+        "avg_days_in_stage": 21,
+        "retention_7d": 78,
+        "retention_30d": 62,
+        "retention_90d": 38
+      },
+      {
+        "stage": "action",
+        "count": 954,
+        "pct": 33.5,
+        "avg_days_in_stage": 35,
+        "retention_7d": 85,
+        "retention_30d": 71,
+        "retention_90d": 52
+      },
+      {
+        "stage": "maintenance",
+        "count": 638,
+        "pct": 22.4,
+        "avg_days_in_stage": 67,
+        "retention_7d": 88,
+        "retention_30d": 78,
+        "retention_90d": 65
+      }
+    ],
+    "sentiment": {
+      "nps": 52,
+      "avg_satisfaction": 4.2,
+      "support_categories": {
+        "emotional_support": {
+          "pct": 38
+        },
+        "features_bugs": {
+          "pct": 22
+        },
+        "how_to_use": {
+          "pct": 25
+        },
+        "content": {
+          "pct": 15
+        }
+      },
+      "bill_feedback": {
+        "personalized_support": {
+          "pct": 74
+        },
+        "felt_supported": {
+          "pct": 81
+        },
+        "helped_with_decisions": {
+          "pct": 68
+        },
+        "missing_something": {
+          "pct": 22
+        }
+      },
+      "critical_abandonment_point": "Day 3-4 (após primeiros check-ins)"
+    },
+    "personas": [
+      {
+        "persona": "Rosa - Equilibrista",
+        "identified_pct": 35,
+        "nps": 58,
+        "retention_days": 48,
+        "characteristics": "Mulher 35-44, SP/RS, profissional, bebe fins de semana em contexto social"
+      },
+      {
+        "persona": "Ana Mae - Mãe Protetora",
+        "identified_pct": 28,
+        "nps": 54,
+        "retention_days": 42,
+        "characteristics": "Mulher 40-50, casada com filhos, preocupação com saúde familiar"
+      },
+      {
+        "persona": "Pedro - Autônomo Solitário",
+        "identified_pct": 24,
+        "nps": 48,
+        "retention_days": 35,
+        "characteristics": "Homem 30-45, trabalha por conta própria, bebida como coping"
+      },
+      {
+        "persona": "Caio - Filho Ressentido",
+        "identified_pct": 13,
+        "nps": 42,
+        "retention_days": 22,
+        "characteristics": "Homem 25-35, conflito familiar, pressão de pais/companheira"
+      }
+    ],
+    "notes": "Mock data — será atualizado com queries Supabase reais (read-only)"
+  }
 }
