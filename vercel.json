@@ -1,22 +1,5 @@
 {
-  "crons": [
-    {
-      "path": "/api/agents/agent-insights",
-      "schedule": "0 1 * * *"
-    },
-    {
-      "path": "/api/agents/agent-market",
-      "schedule": "0 2 * * *"
-    },
-    {
-      "path": "/api/agents/agent-user-insights",
-      "schedule": "30 2 * * *"
-    },
-    {
-      "path": "/api/agents/agent-strategy",
-      "schedule": "0 11 * * *"
-    }
-  ],
+  "crons": [],
   "functions": {
     "api/agents/agent-insights.js": { "maxDuration": 300 },
     "api/agents/agent-market.js": { "maxDuration": 120 },
