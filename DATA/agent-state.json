@@ -7,175 +7,289 @@
   "tactic_plan": null,
   "operational_copy": null,
   "figma_frames": null,
-  "telegram_message_ids": {
-    "market": 76
-  },
-  "created_at": "2026-05-11T02:04:26.716Z",
-  "updated_at": "2026-05-11T02:04:27.933Z",
-  "market_data": {
+  "telegram_message_ids": {},
+  "created_at": "2026-05-11T02:33:51.746Z",
+  "updated_at": "2026-05-11T02:33:51.778Z",
+  "user-insights_data": {
     "date": "2026-05-11",
-    "updated_at": "2026-05-11T02:04:26.717Z",
-    "consumption_data": {
-      "per_capita_liters": 7.7,
-      "per_capita_year": 2024,
-      "excessive_consumption_pct": 15,
-      "excessive_year": 2025,
-      "non_drinkers_pct": 64,
-      "non_drinkers_year": 2025,
-      "hospitalizations": 418467,
-      "hospitalizations_year": 2024,
-      "deaths": 73019,
-      "deaths_year": 2023
-    },
-    "recent_trends": [
-      {
-        "trend": "Consumo de cerveja nos fins de semana",
-        "change_pct": -25.4,
-        "period": "2025 vs 2024",
-        "source": "CISA"
+    "updated_at": "2026-05-11T02:33:51.747Z",
+    "period_days": 90,
+    "total_active_users": 2847,
+    "demographics": {
+      "age_distribution": {
+        "18_25": {
+          "count": 412,
+          "pct": 14.5
+        },
+        "25_34": {
+          "count": 891,
+          "pct": 31.3
+        },
+        "35_44": {
+          "count": 756,
+          "pct": 26.5
+        },
+        "45_54": {
+          "count": 562,
+          "pct": 19.7
+        },
+        "55_plus": {
+          "count": 226,
+          "pct": 7.9
+        }
       },
-      {
-        "trend": "Consumo individual (solitário)",
-        "change_pct": 8.8,
-        "period": "2024-2025",
-        "source": "CISA"
+      "gender": {
+        "male": {
+          "count": 1703,
+          "pct": 59.8
+        },
+        "female": {
+          "count": 1087,
+          "pct": 38.2
+        },
+        "non_binary": {
+          "count": 57,
+          "pct": 2
+        }
       },
-      {
-        "trend": "Gen Z abstenção",
-        "change_pct": 18,
-        "period": "2023-2025",
-        "source": "CISA/Ipsos"
-      },
-      {
-        "trend": "Consideraram reduzir consumo",
-        "change_pct": 62,
-        "period": "2025",
-        "source": "CISA Pesquisa"
-      }
-    ],
-    "geography": [
-      {
-        "state": "Rio Grande do Sul",
-        "excessive_pct": 34,
-        "priority": "primary",
-        "source": "CISA 2025"
-      },
-      {
-        "state": "Mato Grosso do Sul",
-        "excessive_pct": 28,
-        "priority": "high",
-        "source": "CISA 2025"
-      },
-      {
-        "state": "São Paulo",
-        "excessive_pct": 22,
-        "priority": "volume",
-        "source": "CISA 2025"
-      },
-      {
-        "state": "Santa Catarina",
-        "excessive_pct": 26,
-        "priority": "high",
-        "source": "CISA 2025"
-      },
-      {
-        "state": "Rio de Janeiro",
-        "excessive_pct": 26.3,
-        "priority": "relevant",
-        "source": "CISA 2025"
-      },
-      {
-        "state": "Brasília (DF)",
-        "excessive_pct": 25.7,
-        "priority": "monitor",
-        "source": "CISA 2025"
-      }
-    ],
-    "competitors": [
-      {
-        "name": "Sunflower",
-        "mau": 100000,
-        "rating": 4.8,
-        "reviews_count": 5200,
-        "strengths": [
-          "Gamificação",
-          "IA Sam",
-          "HIPAA"
-        ],
-        "weaknesses": [
-          "Sem fluência cultural BR",
-          "Funcional não relacional"
-        ],
-        "market_positioning": "Duolingo para vícios",
-        "estimated_revenue_monthly": 150000,
-        "threat_level": "HIGH",
-        "source": "Sensor Tower"
-      },
-      {
-        "name": "Reframe",
-        "mau": 267000,
-        "rating": 4.6,
-        "reviews_count": 8900,
-        "strengths": [
-          "Líder global",
-          "Autoridade clínica",
-          "Programa 160 dias"
-        ],
-        "weaknesses": [
-          "Frio/protocolar",
-          "Americano",
-          "Caro"
-        ],
-        "market_positioning": "Science, not stigma",
-        "estimated_revenue_monthly": 300000,
-        "threat_level": "HIGH",
-        "source": "Sensor Tower"
-      },
-      {
-        "name": "I Am Sober",
-        "mau": 25000,
-        "rating": 4.2,
-        "reviews_count": 2100,
-        "strengths": [
-          "Comunidade",
-          "Contador",
-          "Barato"
-        ],
-        "weaknesses": [
-          "Sem IA real",
-          "Sem personalização",
-          "Comunidade tóxica"
-        ],
-        "market_positioning": "Contador + pledge + comunidade",
-        "estimated_revenue_monthly": 16000,
-        "threat_level": "MEDIUM",
-        "source": "Sensor Tower"
-      }
-    ],
-    "google_trends": {
-      "reduzir álcool": {
-        "volume": 65,
-        "change": 12
-      },
-      "parar de beber": {
-        "volume": 58,
-        "change": 8
-      },
-      "alcoolismo": {
-        "volume": 42,
-        "change": -5
-      },
-      "ajuda dependência": {
-        "volume": 35,
-        "change": 15
+      "top_states": [
+        {
+          "state": "São Paulo",
+          "count": 612,
+          "pct": 21.5
+        },
+        {
+          "state": "Rio Grande do Sul",
+          "count": 487,
+          "pct": 17.1
+        },
+        {
+          "state": "Minas Gerais",
+          "count": 356,
+          "pct": 12.5
+        },
+        {
+          "state": "Bahia",
+          "count": 245,
+          "pct": 8.6
+        },
+        {
+          "state": "Santa Catarina",
+          "count": 198,
+          "pct": 6.9
+        }
+      ],
+      "family_status": {
+        "single": {
+          "pct": 42
+        },
+        "married": {
+          "pct": 38
+        },
+        "with_children": {
+          "pct": 45
+        }
       }
     },
-    "sources": {
-      "cisa": "cisa.org.br/panorama",
-      "datasus": "datasus.saude.gov.br",
-      "google_trends": "trends.google.com",
-      "app_data": "sensortower.com"
+    "consumption": {
+      "frequency": {
+        "daily": {
+          "pct": 8
+        },
+        "3_4_times_week": {
+          "pct": 22
+        },
+        "weekends": {
+          "pct": 45
+        },
+        "occasional": {
+          "pct": 25
+        }
+      },
+      "context": {
+        "social_bar": {
+          "pct": 52
+        },
+        "home_alone": {
+          "pct": 18
+        },
+        "events": {
+          "pct": 22
+        },
+        "other": {
+          "pct": 8
+        }
+      },
+      "avg_liters_per_week": 4.2,
+      "drink_preference": {
+        "beer": {
+          "pct": 65
+        },
+        "wine": {
+          "pct": 15
+        },
+        "spirits": {
+          "pct": 15
+        },
+        "other": {
+          "pct": 5
+        }
+      }
     },
-    "notes": "Mock data — será atualizado com integrações de MCPs reais (CISA, Datasus, Google Trends, Sensor Tower)"
+    "barriers_motivations": {
+      "why_reduce": {
+        "health": {
+          "pct": 38
+        },
+        "family_pressure": {
+          "pct": 22
+        },
+        "work_productivity": {
+          "pct": 18
+        },
+        "relationships": {
+          "pct": 15
+        },
+        "financial": {
+          "pct": 7
+        }
+      },
+      "main_obstacles": {
+        "social_pressure": {
+          "pct": 35
+        },
+        "habit_addiction": {
+          "pct": 28
+        },
+        "isolation_without_alcohol": {
+          "pct": 18
+        },
+        "emotional_difficulty": {
+          "pct": 14
+        },
+        "lack_of_support": {
+          "pct": 5
+        }
+      },
+      "previous_attempts": {
+        "yes": {
+          "pct": 72
+        },
+        "no": {
+          "pct": 28
+        }
+      }
+    },
+    "journey": [
+      {
+        "stage": "awareness",
+        "count": 156,
+        "pct": 5.5,
+        "avg_days_in_stage": 8,
+        "retention_7d": 42,
+        "retention_30d": 18,
+        "retention_90d": 5
+      },
+      {
+        "stage": "consideration",
+        "count": 412,
+        "pct": 14.5,
+        "avg_days_in_stage": 14,
+        "retention_7d": 68,
+        "retention_30d": 45,
+        "retention_90d": 22
+      },
+      {
+        "stage": "decision",
+        "count": 687,
+        "pct": 24.1,
+        "avg_days_in_stage": 21,
+        "retention_7d": 78,
+        "retention_30d": 62,
+        "retention_90d": 38
+      },
+      {
+        "stage": "action",
+        "count": 954,
+        "pct": 33.5,
+        "avg_days_in_stage": 35,
+        "retention_7d": 85,
+        "retention_30d": 71,
+        "retention_90d": 52
+      },
+      {
+        "stage": "maintenance",
+        "count": 638,
+        "pct": 22.4,
+        "avg_days_in_stage": 67,
+        "retention_7d": 88,
+        "retention_30d": 78,
+        "retention_90d": 65
+      }
+    ],
+    "sentiment": {
+      "nps": 52,
+      "avg_satisfaction": 4.2,
+      "support_categories": {
+        "emotional_support": {
+          "pct": 38
+        },
+        "features_bugs": {
+          "pct": 22
+        },
+        "how_to_use": {
+          "pct": 25
+        },
+        "content": {
+          "pct": 15
+        }
+      },
+      "bill_feedback": {
+        "personalized_support": {
+          "pct": 74
+        },
+        "felt_supported": {
+          "pct": 81
+        },
+        "helped_with_decisions": {
+          "pct": 68
+        },
+        "missing_something": {
+          "pct": 22
+        }
+      },
+      "critical_abandonment_point": "Day 3-4 (após primeiros check-ins)"
+    },
+    "personas": [
+      {
+        "persona": "Rosa - Equilibrista",
+        "identified_pct": 35,
+        "nps": 58,
+        "retention_days": 48,
+        "characteristics": "Mulher 35-44, SP/RS, profissional, bebe fins de semana em contexto social"
+      },
+      {
+        "persona": "Ana Mae - Mãe Protetora",
+        "identified_pct": 28,
+        "nps": 54,
+        "retention_days": 42,
+        "characteristics": "Mulher 40-50, casada com filhos, preocupação com saúde familiar"
+      },
+      {
+        "persona": "Pedro - Autônomo Solitário",
+        "identified_pct": 24,
+        "nps": 48,
+        "retention_days": 35,
+        "characteristics": "Homem 30-45, trabalha por conta própria, bebida como coping"
+      },
+      {
+        "persona": "Caio - Filho Ressentido",
+        "identified_pct": 13,
+        "nps": 42,
+        "retention_days": 22,
+        "characteristics": "Homem 25-35, conflito familiar, pressão de pais/companheira"
+      }
+    ],
+    "notes": "Mock data — será atualizado com queries Supabase reais (read-only)"
   }
 }
