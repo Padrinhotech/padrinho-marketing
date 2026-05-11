@@ -2,54 +2,178 @@
   "date": "2026-05-11",
   "phase": "insights",
   "status": "pending",
-  "insights_data": {
-    "date": "2026-05-11",
-    "instagram_organic": {
-      "followers_current": 0,
-      "followers_gain_month": 0,
-      "avg_daily_reach": 0,
-      "avg_daily_impressions": 0,
-      "profile_views": 0,
-      "engagement_rate": "0%",
-      "top_posts": [],
-      "error": "Meta API error: Meta API error: 400 Bad Request - {\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AeawlP7YjBP7J8QgSdkE72L\"}}"
-    },
-    "meta_ads": {
-      "campaigns_active": 0,
-      "ytd_spend": 0,
-      "leads_generated": 0,
-      "cac": 0,
-      "best_creative": {
-        "id": "error",
-        "roas": 0,
-        "cpl": 0
-      },
-      "error": "fetch failed: fetch failed"
-    },
-    "google_ads": {
-      "impressions": 0,
-      "clicks": 0,
-      "ctr": 0,
-      "conversions": 0,
-      "conversion_rate": 0,
-      "top_keywords": [],
-      "error": "fetch failed"
-    },
-    "audience_insights": {
-      "total_users": 0,
-      "monthly_active": 0,
-      "top_interests": [],
-      "demographics": [],
-      "engagement_score": 0,
-      "social_connection_score": 0,
-      "average_recovery_stage": "unknown"
-    }
-  },
+  "insights_data": null,
   "strategy_brief": null,
   "tactic_plan": null,
   "operational_copy": null,
   "figma_frames": null,
   "telegram_message_ids": {},
-  "created_at": "2026-05-11T01:35:30.840Z",
-  "updated_at": "2026-05-11T01:35:51.657Z"
+  "created_at": "2026-05-11T02:04:26.716Z",
+  "updated_at": "2026-05-11T02:04:26.748Z",
+  "market_data": {
+    "date": "2026-05-11",
+    "updated_at": "2026-05-11T02:04:26.717Z",
+    "consumption_data": {
+      "per_capita_liters": 7.7,
+      "per_capita_year": 2024,
+      "excessive_consumption_pct": 15,
+      "excessive_year": 2025,
+      "non_drinkers_pct": 64,
+      "non_drinkers_year": 2025,
+      "hospitalizations": 418467,
+      "hospitalizations_year": 2024,
+      "deaths": 73019,
+      "deaths_year": 2023
+    },
+    "recent_trends": [
+      {
+        "trend": "Consumo de cerveja nos fins de semana",
+        "change_pct": -25.4,
+        "period": "2025 vs 2024",
+        "source": "CISA"
+      },
+      {
+        "trend": "Consumo individual (solitário)",
+        "change_pct": 8.8,
+        "period": "2024-2025",
+        "source": "CISA"
+      },
+      {
+        "trend": "Gen Z abstenção",
+        "change_pct": 18,
+        "period": "2023-2025",
+        "source": "CISA/Ipsos"
+      },
+      {
+        "trend": "Consideraram reduzir consumo",
+        "change_pct": 62,
+        "period": "2025",
+        "source": "CISA Pesquisa"
+      }
+    ],
+    "geography": [
+      {
+        "state": "Rio Grande do Sul",
+        "excessive_pct": 34,
+        "priority": "primary",
+        "source": "CISA 2025"
+      },
+      {
+        "state": "Mato Grosso do Sul",
+        "excessive_pct": 28,
+        "priority": "high",
+        "source": "CISA 2025"
+      },
+      {
+        "state": "São Paulo",
+        "excessive_pct": 22,
+        "priority": "volume",
+        "source": "CISA 2025"
+      },
+      {
+        "state": "Santa Catarina",
+        "excessive_pct": 26,
+        "priority": "high",
+        "source": "CISA 2025"
+      },
+      {
+        "state": "Rio de Janeiro",
+        "excessive_pct": 26.3,
+        "priority": "relevant",
+        "source": "CISA 2025"
+      },
+      {
+        "state": "Brasília (DF)",
+        "excessive_pct": 25.7,
+        "priority": "monitor",
+        "source": "CISA 2025"
+      }
+    ],
+    "competitors": [
+      {
+        "name": "Sunflower",
+        "mau": 100000,
+        "rating": 4.8,
+        "reviews_count": 5200,
+        "strengths": [
+          "Gamificação",
+          "IA Sam",
+          "HIPAA"
+        ],
+        "weaknesses": [
+          "Sem fluência cultural BR",
+          "Funcional não relacional"
+        ],
+        "market_positioning": "Duolingo para vícios",
+        "estimated_revenue_monthly": 150000,
+        "threat_level": "HIGH",
+        "source": "Sensor Tower"
+      },
+      {
+        "name": "Reframe",
+        "mau": 267000,
+        "rating": 4.6,
+        "reviews_count": 8900,
+        "strengths": [
+          "Líder global",
+          "Autoridade clínica",
+          "Programa 160 dias"
+        ],
+        "weaknesses": [
+          "Frio/protocolar",
+          "Americano",
+          "Caro"
+        ],
+        "market_positioning": "Science, not stigma",
+        "estimated_revenue_monthly": 300000,
+        "threat_level": "HIGH",
+        "source": "Sensor Tower"
+      },
+      {
+        "name": "I Am Sober",
+        "mau": 25000,
+        "rating": 4.2,
+        "reviews_count": 2100,
+        "strengths": [
+          "Comunidade",
+          "Contador",
+          "Barato"
+        ],
+        "weaknesses": [
+          "Sem IA real",
+          "Sem personalização",
+          "Comunidade tóxica"
+        ],
+        "market_positioning": "Contador + pledge + comunidade",
+        "estimated_revenue_monthly": 16000,
+        "threat_level": "MEDIUM",
+        "source": "Sensor Tower"
+      }
+    ],
+    "google_trends": {
+      "reduzir álcool": {
+        "volume": 65,
+        "change": 12
+      },
+      "parar de beber": {
+        "volume": 58,
+        "change": 8
+      },
+      "alcoolismo": {
+        "volume": 42,
+        "change": -5
+      },
+      "ajuda dependência": {
+        "volume": 35,
+        "change": 15
+      }
+    },
+    "sources": {
+      "cisa": "cisa.org.br/panorama",
+      "datasus": "datasus.saude.gov.br",
+      "google_trends": "trends.google.com",
+      "app_data": "sensortower.com"
+    },
+    "notes": "Mock data — será atualizado com integrações de MCPs reais (CISA, Datasus, Google Trends, Sensor Tower)"
+  }
 }
