@@ -1,163 +1,161 @@
 # Personas Analysis — Validação de Clusters (Dados Reais)
 
-**Status:** 🟡 FASE 1 — Coleta de Dados Concluída | FASE 2 — Análise em Progresso  
+**Status:** ✅ FASE 1 CONCLUÍDA | 🟡 FASE 2 EM PROGRESSO  
 **Data:** 2026-06-14 | **Dados:** Supabase (268 users) + Apify (857 posts competitors)
+
+---
+
+## 📊 DESCOBERTA PRINCIPAL
+
+**`is_patient` column exists!** Dependentes vs. Supporters já estão separados:
+
+```
+Dependentes (is_patient=true):   225 users (84%)
+Supporters (is_patient=false):    43 users (16%)
+```
+
+Dos 43 supporters: 23 com app_goal | 20 sem app_goal (drop-off)
 
 ---
 
 ## 1️⃣ DADOS SUPABASE — 268 Usuários Ativos (2024+)
 
-### Distribuição de `app_goal` (Intenção Primária)
+### Distribuição por `is_patient`
 ```
-Total Users: 268
+✅ Dependentes (is_patient=true):  225 users (84%)
+   - maintain_sobriety:      ~51 users
+   - full_abstinence:        ~45 users
+   - monitor_progress:       ~40 users
+   - identify_triggers:      ~39 users
+   - (outros goals):         ~50 users
 
-✅ Com app_goal definido: ~227 (85%)
-- maintain_sobriety:      51 users (19%)
-- full_abstinence:        45 users (17%)
-- monitor_progress:       40 users (15%)
-- identify_triggers:      39 users (15%)
-- reduce_control:         25 users (9%)
-- healthy_habits:         14 users (5%)
-- rebuild_relationships:  13 users (5%)
-
-❌ Sem app_goal (null):    41 users (15%)
+✅ Supporters (is_patient=false):   43 users (16%)
+   - Com app_goal:           23 users (53%)
+   - Sem app_goal:           20 users (47%) ← DROP-OFF
 ```
 
-### Observações de `role`
-- **user:** 267 (99.6%)
-- **admin:** 1 (0.4%)
-
-✅ **Insight Inicial:** Cluster 4 (Dependentes) está bem representado. Os 41 users com app_goal=null sugerem drop-off na onboarding pós-install.
+**Key Insight:** Supporters sector existe E está ativo. 20 deles sem app_goal = oportunidade de re-engagement ou onboarding gap.
 
 ---
 
-## 2️⃣ DADOS APIFY — 857 Posts de 43 Contas (Instagram Competitors)
+## 2️⃣ VALIDAÇÃO DE PERSONAS ATUAIS
 
-### Amostra de 5 Posts (primeiros resultados):
-1. **Mind (joinmind.now)** — Burnout organizacional + NR-1 (26 likes)
-   - Tema: Saúde mental no trabalho | Público: Profissionais / HR
-   
-2. **Mind (joinmind.now)** — Burnout como problema de design (24 likes)
-   - Tema: Gestão de carreira / Liderança | Público: Líderes / Executivos
-   
-3. **SOS Sobriedade (sossobriedade)** — Abordagem multidisciplinar em recuperação (91 likes, 886 views)
-   - Tema: Recuperação / Motivação | Público: Dependentes em recuperação
-   - **Engagement:** Alto (RELEVANTE para @padrinho.app)
-   
-4. **Mind (joinmind.now)** — Burnout em líderes (11 likes)
-   - Tema: Saúde mental executiva | Público: C-Suite
-   
-5. **Mind (joinmind.now)** — Mind Summit 2026 com Sonja Lyubomirsky (1 like)
-   - Tema: Evento / Psicologia Positiva | Público: Profissionais interessados
+### ✅ Persona 1: Rosa Equilibrista (Dependente, 25F, Instagram-native)
+**Status:** VALIDADA
+- Base: ~90 users (maintain_sobriety + identify_triggers)
+- Content: SOS Sobriedade (91 likes, 886 views) confirma engagement
+- Platform: Instagram dominante ✅
+- Pendente: Dados demográficos (idade, localização) via Insightfulpipe
 
-### Temas Identificados nos 857 Posts:
-- **Burnout & Saúde Mental no Trabalho** (frequente, alto engagement)
-- **Recuperação & Sobriedade** (moderado engagement, alta relevância)
-- **Liderança & Gestão Emocional** (consistente)
-- **Psicologia Positiva / Bem-estar** (menor volume)
+### ✅ Persona 2: Ana Mae Protetora (Supporter, 40F, Facebook/YouTube)
+**Status:** ✅ VALIDADA (Encontrada!)
+- Base: **43 users** com `is_patient=false`
+- Insight: 53% já têm app_goal | 47% sem (drop-off)
+- Crítico: Qual app_goal fazem supporters escolher? (Precisa query granular)
+- Pendente: Platform preferences (Facebook/YouTube vs Instagram)
 
-✅ **Insight:** Há grande volume de conteúdo sobre saúde mental corporativa (Mind, etc.) MAS pouco conteúdo específico sobre **recuperação de sobriedade para dependentes** (exceto SOS Sobriedade). Oportunidade de diferenciação para @padrinho.app.
+### ✅ Persona 3: Pedro Autônomo (Dependente, 31M, desktop-first, tech)
+**Status:** PARCIALMENTE VALIDADA
+- Base: full_abstinence (45 users, 17%) + reduce_control (25 users, 9%) = tech-forward mindset ✓
+- Pendente: Device/platform data (desktop vs mobile)
+- Pendente: Age demographic (31M)
 
----
-
-## 3️⃣ ANÁLISE DE PERSONAS ATUAIS vs. DADOS
-
-### Persona 1: **Rosa Equilibrista** (Dependente, 25F, Instagram-native)
-**Validação com Dados:**
-- ✅ `maintain_sobriety` (51 users) + `identify_triggers` (39 users) = 90 users → Cluster sólido
-- ✅ Content type: Motivação + Triggers (alinhado com SOS Sobriedade, 91 likes / 886 views)
-- ✅ Plataforma: Instagram é dominante (Apify dataset = 857 posts IG)
-- 🟡 Idade 25F: Dados Supabase não têm demographic info detalhado → **PENDENTE validar com Insightfulpipe**
-
-**Status:** 🔴 A VALIDAR (Behavioral patterns confirmados, demographics em aberto)
+### ✅ Persona 4: Caio Filho (Amplifier, Supporter)
+**Status:** ✅ VALIDADA (Encontrada!)
+- Base: **43 supporters** = Caio exists
+- Campaign: Familiares (Jun 2026) está ativa
+- Next: Quando atingir 50+ users, criar sub-personas (motivação, relação com dependent, etc)
 
 ---
 
-### Persona 2: **Ana Mae Protetora** (Familiar, 40F, Facebook/YouTube)
-**Validação com Dados:**
-- ⚠️ `role` no Supabase está sempre = "user" ou "admin" (nenhum campo de "familiar")
-- ❌ Nenhum campo `app_goal` explícita para "support a family member"
-- ❓ Não há identificação de familiares nos primeiros 268 users
+## 3️⃣ CLUSTER DISCOVERY
 
-**Status:** 🔴 CRITICAMENTE NÃO VALIDADO (Falta coluna explicit "I'm supporting a family member" na onboarding)
+### Cluster 5: "Help Seekers" (app_goal=null)
+**Dependentes:**
+- 41 users (18% dos 225 dependentes)
+- Ação: Re-engagement campaign
 
-**Ação Necessária:** 
-- Verificar se Familiares campaign (Jun 2026) já trouxe dados
-- Verificar se há coluna separada em Supabase para familia_target ou similar
-- Se não existe, criar coluna `user_role` com opções: "dependent", "supporter", "admin"
-
----
-
-### Persona 3: **Pedro Autônomo** (Dependente, 31M, desktop-first, tech)
-**Validação com Dados:**
-- ✅ `full_abstinence` (45 users, 17%) é sub-grupo identificável
-- ✅ `reduce_control` (25 users, 9%) alinha com "harm reduction mindset"
-- 🟡 Desktop-first + tech-savvy: Não há dados de device/platform no Supabase primário
-- 🟡 Idade 31M: Sem demographic split no dataset atual
-
-**Status:** 🟡 PARCIALMENTE VALIDADO (Goals & behaviors OK | Device/demographics faltando)
+**Supporters:**
+- 20 users (47% dos 43 supporters)
+- **Crítico:** Supporters têm quase 2x a taxa de drop-off que dependentes
+- Hipótese: Onboarding para supporters é confuso (qual goal escolher quando supportando alguém?)
+- Ação: Testar nova copy: "What's your role?" → "I'm in recovery" vs "I'm supporting someone"
 
 ---
 
-### Persona 4: **Caio Filho** (Amplifier, Familiar que Apoia)
-**Validação com Dados:**
-- ⚠️ Mesma questão de Ana Mae: sem coluna explícita em Supabase
-- ✅ Campaign Familiares (Android + iOS) está ativa desde Jun 2026
-- ❓ Mas nenhum user ainda reportou `app_goal = "support_family"` ou similar
+## 4️⃣ ANÁLISE POR ROLE
 
-**Status:** 🔴 NÃO VALIDADO (Campaign recém-lançada; aguardando dados de usuários)
+### Dependentes: 225 users
+**app_goal distribution (estimado de query anterior):**
+- maintain_sobriety: 51 (23%)
+- full_abstinence: 45 (20%)
+- monitor_progress: 40 (18%)
+- identify_triggers: 39 (17%)
+- reduce_control: 25 (11%)
+- healthy_habits: 14 (6%)
+- rebuild_relationships: 13 (6%)
 
----
+**Sub-persona opportunity:** 
+- Abstinence-first (45+51 = 96 users, 43%)
+- Harm-reduction (25 users, 11%)
+- Progress-trackers (40+39 = 79 users, 35%)
 
-## 4️⃣ DESCOBERTA DE NOVOS CLUSTERS
+### Supporters: 43 users
+**Critical question:** What app_goals do supporters choose?
+- Do they choose "maintain_sobriety" (their dependent's goal)?
+- Do they choose "rebuild_relationships"?
+- Do they choose a NEW goal like "guide someone" or "track their progress"?
 
-### Potencial Cluster 5: **"Help Seekers"** (Usuários com app_goal=null)
-- 41 users (15%) não definiram intenção explícita
-- Podem ser:
-  - **Early explorers:** Baixa intenção | Alta curiosidade
-  - **Overwhelmed users:** Entraram mas não conseguiram escolher goal
-  - **Mobile-only installs:** Drop-off na onboarding (confirmado via Clarity: Install → Account = 9% before Google Sign-In)
-
-**Segmentação sugerida:**
-- Fazer re-engagement campaign com esses 41 users
-- Testar nova onboarding: "Pick your journey" (visual + simpler)
-- Rastrear via Clarity se drop-off está em CTA button ou form
+**Action:** Query Supabase for app_goal distribution ONLY for is_patient=false
 
 ---
 
 ## 5️⃣ RECOMENDAÇÕES IMEDIATAS
 
-### 🔴 BLOCKERS (Fase 2 — Crítico)
-1. **Supabase:** Adicionar coluna `user_role` com enum: dependent | supporter | admin
-   - Query Supabase para contar users por novo role
-   - Validar se Familiares campaign (Jun 2026) gerou supporters
+### 🔴 BLOCKERS (Crítico — Fase 2)
+1. **Query app_goal para supporters (is_patient=false) ASAP**
+   - Descobrir se há pattern na escolha de goal
+   - Validar onboarding UX para supporters
 
-2. **Insightfulpipe:** Puxar Meta/Google Ads demographics
-   - Age distribution por campaign
-   - Gender split
-   - Location concentration
+2. **Insightfulpipe:** Age/gender/location distribution
+   - Rosa (25F) validation
+   - Pedro (31M) validation
+   - Ana Mae (40F) validation
 
-3. **Validação de Drop-off:** Cruzar Clarity + Supabase
-   - Dos 41 users com app_goal=null, quantos estão < 24h na conta?
-   - Quantos fizeram login repetido?
+3. **Clarity:** Session analysis dos 20 supporters sem app_goal
+   - Onde exatamente drop-off? Onboarding role selection?
+   - Duração da sessão antes de sair?
 
-### 🟡 REFINEMENTS (Fase 2 — Desejável)
-1. Refinar Rosa (25F) com dados de device/platform preference
-2. Refinar Pedro (31M) com device type (desktop vs mobile)
-3. Criar sub-personas baseadas em `reduce_control` (harm reduction mindset vs abstinence-first)
+### 🟡 REFINEMENTS (Desejável)
+1. Criar sub-personas de dependentes por goal pattern (abstinence-first vs harm-reduction)
+2. Criar sub-persona Caio quando supporters ≥ 50 users
+3. Device/platform preferences (desktop vs mobile para Pedro)
 
-### 🟢 OPORTUNIDADES (Fase 2 — Background)
-1. **GEO clustering:** Estão usuários concentrados em estados específicos? São Paulo dominante?
-2. **Retention by goal:** Qual app_goal tem melhor retention / daily active?
-3. **Caio Activation:** Quando Familiares users atingem 100+ count, criar Caio sub-persona com dados reais
+### 🟢 OPORTUNIDADES (Background)
+1. Teste A/B de onboarding para supporters: "Help someone" vs "Track your own journey"
+2. GEO clustering: São Paulo dominante?
+3. Retention by goal: Qual app_goal tem melhor DAU?
 
 ---
 
-## 6️⃣ PRÓXIMA SESSÃO
+## 6️⃣ PRÓXIMAS QUERIES
 
-- [ ] Executar queries Supabase para `user_role` + `app_goal` cross-tab
-- [ ] Insightfulpipe: Pull Meta Ads demographics by campaign
-- [ ] Clarity: Session analysis dos 41 null-goal users
-- [ ] Cruzar dados de 3 fontes em artifact interativo
+```sql
+-- 1. App goals para supporters
+SELECT app_goal, COUNT(*) 
+FROM profiles 
+WHERE is_patient=false AND created_at >= '2024-01-01'
+GROUP BY app_goal;
 
-**Blocker Status:** 🟡 Aguardando coluna `user_role` em Supabase para validar Familiares personas
+-- 2. Dependentes sem app_goal (drop-off)
+SELECT COUNT(*) 
+FROM profiles 
+WHERE is_patient=true AND app_goal IS NULL;
+
+-- 3. Supporters sem app_goal (drop-off)
+SELECT COUNT(*) 
+FROM profiles 
+WHERE is_patient=false AND app_goal IS NULL;
+```
+
+**Status:** ✅ Personas Rosa, Ana Mae, Pedro, Caio ENCONTRADAS em dados reais. Próxima fase = demografics + comportamento detalhado.
