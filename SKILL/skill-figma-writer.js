@@ -7,12 +7,26 @@
  *
  * Uso: node SKILL/skill-figma-writer.js
  *
+ *
  * Requer: NODE ≥ 18 (fetch nativo)
- * API key lida de: .mcp.json (campo figma-api-key) ou env FIGMA_TOKEN
+ * API key lida de: .env (FIGMA_TOKEN) ou env vars
  */
 
 const fs = require('fs');
 const path = require('path');
+
+// Carregar .env manualmente para evitar dependências extras
+try {
+  const envFile = fs.readFileSync(path.join(__dirname, '../.env'), 'utf8');
+  envFile.split('\n').forEach(line => {
+    const match = line.match(/^\s*([\w.-]+)\s*=\s*(.*)?\s*$/);
+    if (match) {
+      process.env[match[1]] = match[2];
+    }
+  });
+} catch (e) {
+  // Ignora se não existir
+}
 
 // ─── CONFIG ────────────────────────────────────────────────────────────────────
 
@@ -20,17 +34,11 @@ const FILE_KEY = 'sBItPeNLyvT5EMyKLqQbRv';
 const COMPONENTS_PAGE_ID = '3345:20';
 const QUEUE_PAGE_ID = '3319:20';
 
-// Lê token do .mcp.json ou variável de ambiente
+// Lê token do .env ou variável de ambiente
 function getToken() {
   const envToken = process.env.FIGMA_TOKEN;
   if (envToken) return envToken;
-  try {
-    const mcp = JSON.parse(fs.readFileSync(path.join(__dirname, '../.mcp.json'), 'utf8'));
-    const args = mcp.mcpServers['figma-padrinho'].args;
-    const keyArg = args.find(a => a.startsWith('--figma-api-key='));
-    if (keyArg) return keyArg.replace('--figma-api-key=', '');
-  } catch (e) { /* ignore */ }
-  throw new Error('FIGMA_TOKEN não encontrado. Defina env FIGMA_TOKEN ou confira .mcp.json');
+  throw new Error('FIGMA_TOKEN não encontrado. Defina no arquivo .env');
 }
 
 const TOKEN = getToken();
@@ -203,22 +211,68 @@ async function main() {
     specs.push(carouselSpec);
   }
 
-  // 5. Salvar specs como JSON para referência e execução manual/futura
+  // 5. Salvar specs como JSON para referência
   const specPath = path.join(__dirname, '../POSTS/WEEK02_240626_SextaComAmigos/figma-specs.json');
   fs.writeFileSync(specPath, JSON.stringify(specs, null, 2));
   console.log(`\n✅ Specs salvas em: POSTS/WEEK02_240626_SextaComAmigos/figma-specs.json`);
 
-  // 6. Sumário
+  // 6. Preparar payload genérico para o Figma Bridge
+  console.log('\n🚀 Enviando comando para o Figma Agent Bridge...');
+  const bridgePayload = {
+    action: 'BATCH_CLONE_AND_FILL',
+    payload: {
+      pageName: '🌀 Semana 12',
+      items: []
+    }
+  };
+
+  let currentX = 0;
+  for (const carousel of specs) {
+    for (const slide of carousel.slides) {
+      bridgePayload.payload.items.push({
+        componentId: slide.componentId,
+        x: currentX,
+        y: 0,
+        textOverrides: {
+          counter: slide.content.counter,
+          headline: slide.content.headline,
+          'headline-italic': slide.content.headlineItalic,
+          body: slide.content.body,
+          subhead: slide.content.subhead,
+          subtext: slide.content.subtext,
+          cta: slide.content.cta
+        }
+      });
+      currentX += 1200; // Espaçamento entre os slides
+    }
+    currentX += 800; // Espaçamento extra entre carrosséis
+  }
+
+  try {
+    const bridgeRes = await fetch('http://127.0.0.1:3845/execute', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(bridgePayload)
+    });
+    
+    if (bridgeRes.ok) {
+      console.log('✅ Comando recebido pela Ponte! Verifique seu Figma.');
+    } else {
+      const errTxt = await bridgeRes.text();
+      console.log('⚠️  A Ponte retornou um erro:', errTxt);
+      console.log('   Certifique-se de que o plugin está aberto no Figma.');
+    }
+  } catch (e) {
+    console.log('⚠️  Não foi possível conectar à Ponte no localhost:3845.');
+    console.log('   Rode o servidor `bridge.js` e abra o plugin no Figma.');
+  }
+
+  // 7. Sumário
   console.log('\n─────────────────────────────────────────────');
   console.log('📊 SUMÁRIO');
   console.log(`   Arquivo: ${FILE_KEY}`);
   console.log(`   Carrosséis: ${CAROUSELS.length}`);
   console.log(`   Total slides: ${CAROUSELS.reduce((acc, c) => acc + c.slides.length, 0)}`);
-  console.log(`   Slides com foto: ${CAROUSELS.reduce((acc, c) => acc + c.slides.filter(s => s.needsPhoto).length, 0)}`);
-  console.log('\n⚠️  PRÓXIMO PASSO:');
-  console.log('   A Figma REST API v1 não suporta criação de nós de forma livre.');
-  console.log('   Use os specs em figma-specs.json para criar os slides no Figma Desktop');
-  console.log('   ou via Figma Plugin que use a Plugin API (write access).');
   console.log('─────────────────────────────────────────────\n');
 }
 
