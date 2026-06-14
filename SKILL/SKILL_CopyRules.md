@@ -418,7 +418,7 @@ Antes de publicar, verifique:
 - [ ] Pelo menos 1 travessão (—) para reflexão?
 - [ ] Fala com "você" (2ª pessoa), não terceira pessoa?
 
-**Word count sweet spot:** 800–1500 palavras  
+**Word count sweet spot:** ~2000 palavras (mínimo 1800, máximo 2200)  
 (Testimonials: 400–600 words)
 
 ---
