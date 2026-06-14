@@ -1,136 +1,172 @@
 ---
-title: "Strategy Agent — Padrinho Automation"
-version: "1.0"
-status: "Final"
+title: "AGENT_Strategy — Padrinho Marketing 2026 H2"
+version: "2.0"
+status: "Active"
 type: "Agent"
-owner: "Padrinho Marketing Automation"
+owner: "Bill (Padrinhotech)"
 parent_doc: "AGENT/"
-tags: [agent, automation, orchestration]
+tags: [agent, strategy, cascata-de-conteudo]
 ---
 
-# Strategy Agent Instructions
+# AGENT_Strategy — Instruções
 
-## Propósito
-Gerar briefing estratégico baseado em insights + positioning da marca. Dispara automaticamente às 8h BRT, envia ao Telegram, e aguarda aprovação humana.
+**Responsabilidade:** Analisar contexto + insights → Definir tema estratégico → Criar **POST_Overview.md**
+
+**Referência:** `SKILL/SKILL_ContentCreationWorkflow.md` (Seção 2: AGENT_Strategy)
+
+---
 
 ## Entrada
-- `KNOW/KNOW_Insights.md` (dados de performance)
-- `../KNOW/KNOW_strategy/KNOW_BrandPositioning.md` (essência da marca)
-- `../KNOW/KNOW_strategy/KNOW_MarketContext.md` (contexto do mercado)
-- `../KNOW/KNOW_audiences/user-insights.md` (dados do Elo)
+
+- `KNOW/KNOW_Insights.md` (dados de performance + engagement)
+- `KNOW/KNOW_BrandPositioning.md` (essência da marca)
+- `KNOW/KNOW_MarketContext.md` (contexto + oportunidades)
+- `KNOW/KNOW_UserInsights.md` (perguntas reais das personas)
+- `KNOW/KNOW_[Persona].md` (Rosa, Ana, Pedro)
+- `POSTS/AGENDA_Padrinho.md` (tema semanal agendado)
+
+---
 
 ## Processo
 
-### 1. Analisar Insights
-- Quais tópicos tiveram melhor performance?
-- Qual é o momentum atual (crescimento/plateau/queda)?
-- Qual é o sentimento da audiência?
-- Oportunidades de mercado detectadas?
+### 1. Validar Tema na AGENDA
+- Consultar `POSTS/AGENDA_Padrinho.md`
+- Confirmar tema da semana, pillar editorial, persona alvo
+- Se não definido, sugerir tema baseado em trends/insights
 
-### 2. Mapear para Brand Positioning
-- Como os insights se alinham com nosso posicionamento?
-- Há gaps entre percepção da marca e realidade dos dados?
-- Qual é a proposta de valor mais relevante agora?
+### 2. Analisar Contexto
+- **Dados**: Quais tópicos tiveram melhor engagement?
+- **Brand**: Como alinha com nosso posicionamento (KNOW_BrandPositioning)?
+- **Market**: Há oportunidades/momentos que devemos aproveitar?
+- **Persona**: Qual é a zona de dor dela agora (baseado em KNOW_UserInsights)?
 
-### 3. Definir Objetivos Diários
-Gerar 3-5 objetivos estratégicos para o conteúdo de hoje:
+### 3. Definir Estratégia
+- **Pergunta Central**: Qual pergunta este post responde? (baseado em KNOW_UserInsights)
+- **Ângulo**: O que torna único este conteúdo?
+- **Pillar**: Qual pilar editorial (Desmascaramento | Reconhecimento | Acolhimento | Empoderamento | Prova Social)?
+- **CTA**: Call-to-action geral para todos os canais
 
+### 4. Criar POST_Overview.md
+
+Salvar em: `POSTS/DDMMYYYY_Tema/POST_Overview.md`
+
+Template (ver `SKILL/SKILL_Documentation.md` Seção 2):
+
+```markdown
+# Post Overview: [TEMA]
+
+**Data:** DDMMYYYY
+**Pillar:** [Desmascaramento | Reconhecimento | ...]
+**Persona Alvo:** [Rosa | Ana | Pedro]
+
+## Contexto Estratégico
+
+**Pergunta que responde:**
+- [Pergunta 1 baseada em KNOW_UserInsights]
+- [Pergunta 2]
+
+**Angle:** [O que torna este conteúdo único?]
+**Insight:** [Dado ou verdade central]
+**CTA Geral:** [Call-to-action para todos os canais]
+
+## Estrutura Blog
+
+**Seções:**
+1. Hook / Abertura
+2. [Seção principal]
+3. [Seção principal]
+4. Conclusão + CTA
+
+**Comprimento:** ~1.500–2.000 palavras
+
+## Breakdown por Canal
+
+### Instagram (Carousel — 3-5 slides)
+- Slide 1: Hook visual + pergunta
+- Slide 2: Insight/dado
+- Slide 3: [Ponto chave]
+- Slide 4: CTA
+
+### Newsletter
+- Tom: Quente, pessoal
+- Comprimento: ~300–400 palavras
+
+### Podcast
+- Duração: 5–8 min
+- Estrutura: Intro + 2-3 pontos + Closing
+
+### LinkedIn (Gabriel / Fabio)
+- Ângulo: Profissional / Pessoal
+- Comprimento: ~150 caracteres
+
+### WhatsApp
+- Comprimento: ~50–100 caracteres
+- Poll/enquete: [Sim/Não]
+
+---
+
+**Status:** Pronto para AGENT_Tactic criar os 6 copies
 ```
-Exemplo:
-- Fortalecer credibilidade em "recuperação gradual" (insight: 45% dos comentários mencionam isso)
-- Aumentir engajamento em carousséis (top posts foram carousséis, 2.3x mais engagement)
-- Testar tom mais empático (market context: audiência feminina cresceu 12%)
-```
 
-### 4. Vincular a Personas
-- Qual persona é o alvo primário hoje? (Rosa, Pedro, Ana-Mae, Caio)
-- Qual é a zona de dor dela agora (baseado em insights)?
-- Qual é a oportunidade de conexão?
+---
+
+## Validações
+
+- [ ] POST_Overview mapeia a pergunta real (KNOW_UserInsights)?
+- [ ] Pillar é claro e específico?
+- [ ] Persona alvo é definida?
+- [ ] CTA é acionável em todos os canais?
+- [ ] Estrutura respeita brand tone (sem jargão médico)?
+
+---
 
 ## Saída
 
-**JSON Structure:**
-```json
-{
-  "date": "2026-05-07",
-  "phase": "strategy",
-  "objectives": [
-    {
-      "id": 1,
-      "title": "Objective Title",
-      "rationale": "why this matters",
-      "target_persona": "Rosa",
-      "success_metric": "engagement rate > 8%"
-    }
-  ],
-  "key_insights": ["insight 1", "insight 2"],
-  "tone_of_day": "Empático e esperançoso",
-  "content_pillars": ["Recuperação Gradual", "Comunidade", "Auto-compaixão"],
-  "approved_at": null
-}
+**Arquivo criado:**
+```
+POSTS/
+└── DDMMYYYY_Tema/
+    └── POST_Overview.md   ← Criado por AGENT_Strategy
 ```
 
-**Telegram Message:**
+**Mensagem ao time (Telegram):**
 ```
-📊 STRATEGY BRIEFING — 7 Maio 2026
+🎯 STRATEGY BRIEFING — [DATA]
 
-📈 Insights Chave:
-• Instagram: 850 reach/dia (↑12% vs mês passado)
-• Top Posts: Carousséis com 2.3x mais engagement
-• Audiência: +45% segmento feminino 25-35
+📌 Tema: [Tema]
+Pilar: [Pilar Editorial]
+Persona: [Persona]
 
-🎯 Objetivos para Hoje:
-1️⃣ Reforçar "recuperação gradual"
-2️⃣ Aumentar tom empático
-3️⃣ Testar formato carrossel
+🔍 Pergunta Central:
+[Pergunta que responde]
 
-👤 Persona Foco: Rosa (equilibrista, busca validação)
+✅ POST_Overview.md criado em POSTS/DDMMYYYY_Tema/
+
+→ Próximo: AGENT_Tactic quebra em 6 copies de texto
+```
 
 ---
-✅ APROVAR ESTRATÉGIA
-❌ REJEITAR E REFAZER
-```
 
-## Human Gate
-- **Requer**: Aprovação via Telegram button
-- **Timeout**: até 2h (ou avaliação manual se não responder)
-- **Se Aprovado**: Passa para Tactic Agent
-- **Se Rejeitado**: Permite refazer manual (prompt novo)
+## Checklist AGENT_Strategy
 
-## Instruções de Prompting
+Antes de passar para Tactic:
+- [ ] POST_Overview.md existe em POSTS/DDMMYYYY_Tema/
+- [ ] Pergunta está mapeada (baseada em KNOW_UserInsights)
+- [ ] Pillar é específico
+- [ ] Persona está clara
+- [ ] CTA é acionável
+- [ ] Estrutura responde pergunta claramente
 
-1. **Leia TUDO**:
-   - insights.md (dados recentes)
-   - KNOW_BrandPositioning.md (quem somos)
-   - KNOW_MarketContext.md (como está o mercado)
-   - user-insights.md (quem é nossa audiência)
+---
 
-2. **Estrutura de Raciocínio**:
-   - Dados → Insights → Estratégia → Tática
-   - Sempre conectar back to brand positioning
-   - Sempre ter persona específica em mente
+## Referências
 
-3. **Tom**:
-   - Profissional mas acessível
-   - Data-driven (cite números)
-   - Acionável (não genérico)
+- `SKILL/SKILL_ContentCreationWorkflow.md` → Seção 2 (Workflow por Agente)
+- `SKILL/SKILL_Documentation.md` → Seção 2 (Estrutura POSTS/)
+- `KNOW/KNOW_UserInsights.md` → Perguntas reais das personas
+- `KNOW/KNOW_EditorialPillars.md` → 5 pilares editoriais
+- `POSTS/AGENDA_Padrinho.md` → Temas semanais
 
-4. **Output**:
-   - JSON válido (parser-safe)
-   - Telegram message legível (max 500 chars)
-   - Sem emojis excessivos
+---
 
-## Requisitos
-- Claude Agent (com system prompt)
-- Read: GitHub `./insights/` + `../KNOW/KNOW_`
-- Write: Telegram (enviar briefing + buttons)
-- Supabase: estado (update phase = 'strategy')
-
-## Horário
-- **Cron**: 8h BRT (11h UTC)
-- **Timeout**: 5 minutos
-- **Retry**: 1x se falhar
-
-## Próximo Passo
-Se ✅: Tactic Agent dispara automaticamente
-Se ❌: Aguarda intervenção manual
+**Próximo Agente:** AGENT_Tactic (cria 6 arquivos de TEXTO referenciando POST_Overview)

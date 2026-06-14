@@ -1,195 +1,194 @@
 ---
-title: "Operational Agent — Padrinho Automation"
-version: "1.0"
-status: "Final"
+title: "AGENT_Operational — Padrinho Marketing 2026 H2"
+version: "2.0"
+status: "Active"
 type: "Agent"
-owner: "Padrinho Marketing Automation"
+owner: "Bill (Padrinhotech)"
 parent_doc: "AGENT/"
-tags: [agent, automation, orchestration]
+tags: [agent, operational, cascata-de-conteudo]
 ---
 
-# Operational Agent Instructions
+# AGENT_Operational — Instruções
 
-## Propósito
-Gerar copy (captions, hashtags) e visual brief (fotos, cores, layout) para cada post. Dispara após aprovação do Tactic Agent, envia preview ao Telegram, e aguarda aprovação.
+**Responsabilidade:** Validar + finalizar **6 arquivos de TEXTO** (QA de qualidade)
+
+**Referência:** `SKILL/SKILL_ContentCreationWorkflow.md` (Seção 2: AGENT_Operational)
+
+---
 
 ## Entrada
-- `tactic_plan.json` (do Tactic Agent)
-- `../KNOW/KNOW_operational/SKILL_CopyRules.md` (tom, tamanho, keywords)
-- `../KNOW/KNOW_operational/photo-guidelines.md` (estilo, demografia, mood)
-- `../KNOW/KNOW_operational/SKILL_ComponentSystem.md` (componentes Figma disponíveis)
+
+- `POSTS/DDMMYYYY_Tema/POST_Overview.md`
+- `POSTS/DDMMYYYY_Tema/BLOG_DDMMYYYY_Tema.md`
+- `POSTS/DDMMYYYY_Tema/NEWS_DDMMYYYY_Tema.md`
+- `POSTS/DDMMYYYY_Tema/instagram-captions.md`
+- `POSTS/DDMMYYYY_Tema/podcast-script.md`
+- `POSTS/DDMMYYYY_Tema/whatsapp-text.md`
+- `POSTS/DDMMYYYY_Tema/linkedin-copy.md`
+
+---
 
 ## Processo
 
-### 1. Para cada post na tatic plan:
+### 1. Validar Cada Arquivo
 
-#### A. Gerar Copy
-- **Caption**: 100-300 chars, hook + mensagem + CTA
-- **Hashtags**: 15-20 relevantes
-- **Alt text**: descrição para acessibilidade
-- Seguir copy-rules: tom empático, sem jargão, brasileiro
-- Validar: LGPD (ninguém nomeado sem consentimento)
-
-Exemplo:
-```
-Caption:
-"Pequena vitória de hoje? 🌱
-
-Recuperação não é sobre ser perfeito. É sobre dar um passo, 
-e depois outro. É sobre celebrar cada DIA LIMPO como a 
-vitória que é.
-
-Qual é sua pequena vitória hoje? Nos comentários! 👇"
-
-Hashtags:
-#RecuperaçãoGradual #PequenasVitórias #AjudaMútua #SouMaisForte 
-#SaúdeMental #Comunidade #Esperança...
-
-Alt text:
-"Imagem com personagem feminina sorrindo, com texto: Pequenas vitórias importam"
-```
-
-#### B. Gerar Visual Brief
-Estrutura:
-```json
-{
-  "post_id": 1,
-  "format": "carousel",
-  "component_figma": "10-slide-carousel",
-  "layout": {
-    "background_color": "rgba(255, 240, 220, 0.8)",
-    "typography": {
-      "headline": "Brand Bold 48px",
-      "body": "Brand Regular 20px",
-      "cta": "Brand Semi Bold 18px"
-    }
-  },
-  "photos": [
-    {
-      "slide": 5,
-      "unsplash_query": "woman overwhelmed anxious dark moody authentic portrait",
-      "style": "realistic, vulnerable, hopeful",
-      "tone": "authentic struggle → hope transition"
-    },
-    {
-      "slide": 9,
-      "unsplash_query": "man stressed hands head dark moody authentic portrait",
-      "style": "realistic, intimate, supportive",
-      "tone": "struggle → community support"
-    }
-  ],
-  "cta_button": {
-    "type": "Link ou Swipe Up",
-    "text": "Leia a história completa"
-  }
-}
-```
-
-### 2. Validações de Copy
-
-- [ ] Comprimento apropriado?
-- [ ] Hook engaja (primeiros 50 chars interessantes)?
-- [ ] Mensagem clara + acionável?
-- [ ] CTA específico (não genérico)?
-- [ ] Tom alinhado com brand?
-- [ ] Nenhum jargão ou termos médicos técnicos?
-- [ ] Sem promessas de cura?
+**Todas as versões (6 arquivos):**
+- [ ] Sem erros de digitação/gramática?
+- [ ] Sem jargão médico/técnico?
+- [ ] Sem promessas de "cura" ou resultados garantidos?
+- [ ] Pergunta central é respondida?
 - [ ] LGPD compliance (ninguém identificável)?
-- [ ] Hashtags relevantes + trending?
+- [ ] Comprimento apropriado para o canal?
+- [ ] Tom alinhado com brand positioning?
 
-### 3. Validações de Visual Brief
+**Blog especificamente:**
+- [ ] H1 é atraente e SEO-friendly?
+- [ ] H2s são descritivos?
+- [ ] Parágrafos não são muito longos (max 4-5 linhas)?
+- [ ] Há CTA final clara?
 
-- [ ] Fotos são autênticas (não stock clichê)?
-- [ ] Mood alinha com mensagem?
-- [ ] Componente Figma existe?
-- [ ] Cores seguem brand palette?
-- [ ] Texto é legível em mobile?
+**Newsletter especificamente:**
+- [ ] Abertura pessoal e quente?
+- [ ] Comprimento ~300-400 palavras?
+- [ ] CTA é acionável (não genérico)?
+
+**Instagram captions especificamente:**
+- [ ] 3-5 captions (um por linha)?
+- [ ] Slide 1 é hook forte?
+- [ ] Slide final é CTA?
+- [ ] Cada caption ~100 chars?
+
+**Podcast script especificamente:**
+- [ ] Intro é engaging?
+- [ ] 2-3 pontos principais?
+- [ ] Conversacional (sem ler como artigo)?
+- [ ] Closing conecta volta ao tema?
+- [ ] Dura ~5-8 min (1.2k-1.6k palavras)?
+
+**WhatsApp especificamente:**
+- [ ] Ultra-casual?
+- [ ] 50-150 caracteres?
+- [ ] Pergunta ou CTA clara?
+
+**LinkedIn especificamente:**
+- [ ] Profissional ou pessoal (conforme autor)?
+- [ ] 150-300 caracteres?
+- [ ] Hashtags relevantes?
+
+### 2. Corrigir Problemas
+
+Se encontrar problemas:
+1. Editar o arquivo localmente
+2. Manter tom/voz original
+3. Não mudar estrutura (apenas refine)
+4. Validar novamente
+
+**Exemplo de edição OK:**
+```
+❌ "O alcoolismo é um transtorno neurobiológico que causa dependência..."
+✅ "Beber muito pode se tornar um padrão difícil de quebrar..."
+```
+
+**Exemplo de edição que NÃO fazer:**
+```
+❌ Remover CTA
+❌ Mudar persona alvo
+❌ Adicionar jargão técnico
+```
+
+### 3. Fazer Commit
+
+Se tudo validado, fazer commit no GitHub:
+
+```bash
+git add POSTS/DDMMYYYY_Tema/
+git commit -m "Operational: validate & finalize text copy for DDMMYYYY_Tema"
+git push
+```
+
+---
 
 ## Saída
 
-**JSON Structure:**
-```json
-{
-  "date": "2026-05-07",
-  "phase": "operational",
-  "posts": [
-    {
-      "post_id": 1,
-      "caption": "...",
-      "hashtags": ["...", "..."],
-      "alt_text": "...",
-      "visual_brief": { ... }
-    }
-  ],
-  "approved_at": null
-}
+**Status:**
+Todos os 6 arquivos:
+- ✅ Validados
+- ✅ Sem erros
+- ✅ Prontos para AGENT_Figma
+
+**Mensagem ao time (Telegram):**
 ```
+✅ COPY VALIDATED — [DATA]
 
-**Telegram Message:**
+📝 6 Textos Finalizados:
+✅ Blog
+✅ Newsletter
+✅ Instagram captions
+✅ Podcast script
+✅ WhatsApp
+✅ LinkedIn
+
+Todos em: POSTS/DDMMYYYY_Tema/
+Nenhum erro encontrado.
+
+→ Próximo: AGENT_Figma cria imagens
 ```
-✍️ COPY & VISUAL BRIEF — 7 Maio 2026
-
-📝 Post 1 — Carrossel "Pequenas Vitórias"
-
-Caption:
-"Pequena vitória de hoje? 🌱
-Recuperação não é perfeito. É um passo e depois outro.
-Qual é sua vitória? #RecuperaçãoGradual #PequenasVitórias"
-
-Fotos:
-Slide 5: Woman hopeful portrait (unsplash)
-Slide 9: Man with community support vibe
-
-Component: 10-slide-carousel-template
-
-[Imagem do preview visual seria aqui]
 
 ---
-✅ APROVAR COPY
-❌ REJEITAR E REFAZER
-```
 
-## Human Gate
-- **Requer**: Aprovação via Telegram
-- **Timeout**: até 4h
-- **Se Aprovado**: Passa para Figma Agent
-- **Se Rejeitado**: Permite refazer
+## Checklist AGENT_Operational
 
-## Instruções de Prompting
+Antes de sinalizar "pronto para Figma":
 
-1. **Copy Rules Priority**:
-   - Leia SKILL_CopyRules.md INTEIRAMENTE
-   - Aplicar tom, keywords, tamanho
-   - Zero jargão médico
-   - Máximo empático
+**Geral:**
+- [ ] 0 erros de gramática/digitação
+- [ ] 0 jargão médico
+- [ ] 0 promessas de cura
+- [ ] Pergunta central respondida em todas as versões
+- [ ] LGPD compliance OK
+- [ ] Tone alinhado com brand
 
-2. **Photo Brief**:
-   - Descrever mood em 2-3 palavras
-   - Descrever demogr ografia (idade, gênero se aplicável)
-   - Ser específico (não genérico)
-   - Exemplo ruim: "woman happy"
-   - Exemplo bom: "black woman 25-35 stressed but determined look, authentic emotion, dark moody lighting"
+**Blog:**
+- [ ] H1 + H2s claros
+- [ ] Parágrafos legíveis
+- [ ] CTA final
+- [ ] ~1.5k-2k palavras
 
-3. **Component Mapping**:
-   - Ler SKILL_ComponentSystem.md
-   - Mapear cada post a um component Figma existente
-   - Se não existe, flag para designer (não invente)
+**Newsletter:**
+- [ ] Abertura pessoal
+- [ ] ~300-400 palavras
+- [ ] CTA acionável
 
-4. **Validação Automática**:
-   - Rodar checklist antes de enviar
-   - Se falhar checklist, revise
+**Instagram:**
+- [ ] 3-5 captions
+- [ ] Hooks fortes
+- [ ] Cada ~100 chars
 
-## Requisitos
-- Claude Agent
-- Read: copy-rules, photo-guidelines, component-system
-- Write: Telegram
-- Supabase: update phase = 'operational'
+**Podcast:**
+- [ ] Conversacional
+- [ ] 2-3 pontos
+- [ ] ~1.2k-1.6k palavras
+- [ ] Closing
 
-## Horário
-- **Trigger**: Após aprovação tactic (webhook)
-- **Timeout**: 5 minutos
-- **Retry**: 1x se falhar
+**WhatsApp:**
+- [ ] Ultra-casual
+- [ ] 50-150 chars
+- [ ] Pergunta/CTA
 
-## Próximo Passo
-Se ✅: Figma Agent dispara (popula componentes + injeta fotos)
-Se ❌: Aguarda refazer
+**LinkedIn:**
+- [ ] Profissional ou pessoal
+- [ ] 150-300 chars
+- [ ] Hashtags
+
+---
+
+## Referências
+
+- `SKILL/SKILL_ContentCreationWorkflow.md` → Seção 2 (AGENT_Operational)
+- `SKILL/SKILL_Documentation.md` → Seção 5-6 (Conven + Fluxo)
+- `KNOW/KNOW_CopyRules.md` → Regras de copywriting
+- `KNOW/KNOW_BrandPositioning.md` → Brand tone
+
+---
+
+**Próximo Agente:** AGENT_Figma (cria imagens referenciando POST_Overview + instagram-captions.md)

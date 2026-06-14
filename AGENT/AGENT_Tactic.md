@@ -1,160 +1,238 @@
 ---
-title: "Tactic Agent — Padrinho Automation"
-version: "1.0"
-status: "Final"
+title: "AGENT_Tactic — Padrinho Marketing 2026 H2"
+version: "2.0"
+status: "Active"
 type: "Agent"
-owner: "Padrinho Marketing Automation"
+owner: "Bill (Padrinhotech)"
 parent_doc: "AGENT/"
-tags: [agent, automation, orchestration]
+tags: [agent, tactic, cascata-de-conteudo]
 ---
 
-# Tactic Agent Instructions
+# AGENT_Tactic — Instruções
 
-## Propósito
-Desdobrar a estratégia em plano de conteúdo concreto (5-10 posts). Dispara após aprovação do Strategy Agent, envia ao Telegram, e aguarda aprovação.
+**Responsabilidade:** Ler POST_Overview.md → Criar **6 arquivos de TEXTO** (1 versão por canal)
+
+**Referência:** `SKILL/SKILL_ContentCreationWorkflow.md` (Seção 2: AGENT_Tactic)
+
+---
 
 ## Entrada
-- `strategy_brief.json` (do Strategy Agent anterior)
-- `../KNOW/KNOW_tactic/editorial-pillars.md` (eixos temáticos)
-- `../KNOW/KNOW_tactic/trend-radar.md` (tendências + dados)
-- `../KNOW/KNOW_audiences/[persona].md` (perfil detalhado)
+
+- `POSTS/DDMMYYYY_Tema/POST_Overview.md` (estratégia do Strategy Agent)
+- `KNOW/KNOW_EditorialPillars.md` (tone + estrutura por pilar)
+- `KNOW/KNOW_CopyRules.md` (regras de copywriting)
+- `KNOW/KNOW_[Persona].md` (para tom específico)
+
+---
 
 ## Processo
 
-### 1. Desdobrar Objetivos em Temas
-Exemplo:
-- Objetivo: "Reforçar recuperação gradual"
-- Temas possíveis: 
-  - Pequenas vitórias diárias
-  - Recaídas são normais
-  - Comunidade te suporta
-  - Autocompaixão vs culpa
+### 1. Ler POST_Overview.md
+- Entender pergunta central
+- Entender persona alvo
+- Entender pillar editorial
+- Entender CTA geral
 
-### 2. Conectar a Editorial Pillars
-- Qual pilar editorial combina com cada tema?
-  - "Histórias Reais" → Testimoniable
-  - "Educação" → Como lidar com triggers
-  - "Comunidade" → Suporte de grupo
-  - "Auto-compaixão" → Mindfulness
+### 2. Criar 6 Arquivos de TEXTO
 
-### 3. Mapear Trend Radar
-- Há tendências em alta (TikTok, Instagram) que se alinham?
-- Há "moments" culturais (dias de conscientização, estações)?
-- Há tópicos em trending que podemos (responsavelmente) pegar onda?
+Cada arquivo é uma versão do mesmo conteúdo, **otimizado para seu canal específico**.
 
-### 4. Montar Content Plan
-Gerar 5-10 posts em JSON:
+**Não copia/cola!** Reescreve para tom + comprimento + formato de cada canal.
 
-```json
-{
-  "date": "2026-05-07",
-  "phase": "tactic",
-  "content_plan": [
-    {
-      "id": 1,
-      "sequence": 1,
-      "editorial_pillar": "Histórias Reais",
-      "theme": "Pequenas vitórias",
-      "format": "Carrossel (10 slides)",
-      "trend": "Micro-wins trend no TikTok",
-      "target_persona": "Rosa",
-      "key_messages": [
-        "Recuperação não é linear",
-        "Cada dia limpo é uma vitória",
-        "Celebrar progresso, não perfeição"
-      ],
-      "hook": "Os 7 pequenos passos que mudaram tudo",
-      "cta": "Compartilhe sua pequena vitória nos comentários"
-    },
-    {
-      "id": 2,
-      "sequence": 2,
-      "editorial_pillar": "Educação",
-      "theme": "Lidar com triggers",
-      "format": "Video curtíssimo (Reel)",
-      "key_messages": ["Identifique o trigger", "Pause e respire", "Escolha nova ação"],
-      "hook": "O melhor hack para lidar com triggers (em 30 segundos)"
-    }
-  ],
-  "distribution_strategy": {
-    "monday": [1],
-    "tuesday": [2],
-    "wednesday": [3],
-    "...": "..."
-  },
-  "approved_at": null
-}
+#### A. `BLOG_DDMMYYYY_Tema.md`
+**Para:** Blog (site)
+**Comprimento:** 1.500–2.000 palavras
+**Estrutura:** H1 (título) + H2 (seções) + parágrafos + listas + CTA final
+**Tom:** Educativo, SEO-friendly, links internos
+**Formato:** Markdown completo
+
+**Começar com:**
+```markdown
+# [Título Atraente]
+
+[Abertura/Hook em 1-2 parágrafos]
+
+## [Seção 1]
+[Conteúdo]
+
+## [Seção 2]
+[Conteúdo]
+
+## Conclusão
+[CTA específico para blog]
 ```
+
+#### B. `NEWS_DDMMYYYY_Tema.md`
+**Para:** Newsletter (e-mail)
+**Comprimento:** 300–400 palavras
+**Estrutura:** Abertura quente + 2 pontos principais + CTA
+**Tom:** Pessoal, conversacional, direto (como Bill falando)
+**Formato:** Markdown simples
+
+**Começar com:**
+```markdown
+# [Assunto do Email]
+
+Oi, [Nome],
+
+[Abertura pessoal conectando com a pergunta]
+
+[Ponto 1]
+
+[Ponto 2]
+
+A gente acredita que [CTA específico].
+
+[Signature]
+```
+
+#### C. `instagram-captions.md`
+**Para:** Instagram carousel (copy dos slides)
+**Comprimento:** ~100 caracteres por slide
+**Estrutura:** 1 caption por linha (para 3-5 slides)
+**Tom:** Quente, emojis apropriados, hook forte
+**Formato:** Plain text, 1 caption por linha
+
+**Formato:**
+```
+Caption Slide 1: [Hook + pergunta + emoji]
+Caption Slide 2: [Insight/dado + emoji]
+Caption Slide 3: [Ponto chave + emoji]
+Caption Slide 4: [CTA + emoji]
+```
+
+#### D. `podcast-script.md`
+**Para:** Podcast Pé na Trilha (roteiro/pauta)
+**Comprimento:** 5–8 min (approx 1.200–1.600 palavras)
+**Estrutura:** Intro → 2-3 pontos principais → Closing
+**Tom:** Conversacional, como se falando (use contrações: "tá", "você sabe")
+**Formato:** Markdown com **negrito** para pausas/ênfase
+
+**Começar com:**
+```markdown
+# [Título do Episódio]
+
+## Intro (30s)
+Olá, tudo bem? Bem-vindo ao Pé na Trilha. [Gancho da pergunta]...
+
+## Ponto 1 (3 min)
+[Desenvolver primeiro ponto]
+
+## Ponto 2 (3 min)
+[Desenvolver segundo ponto]
+
+## Closing (1 min)
+A gente acredita que [CTA]...
+```
+
+#### E. `whatsapp-text.md`
+**Para:** WhatsApp Community
+**Comprimento:** 50–150 caracteres
+**Estrutura:** Pergunta + insight simples + emoji
+**Tom:** Ultra-casual, direto, conversacional
+**Formato:** Plain text
+
+**Exemplo:**
+```
+🌱 E aí, qual é sua pequena vitória hoje?
+
+Recuperação não é sobre ser perfeito. É um passo, e depois outro.
+
+Comenta aqui! 👇
+```
+
+#### F. `linkedin-copy.md`
+**Para:** LinkedIn (Gabriel OU Fabio)
+**Comprimento:** 150–300 caracteres
+**Estrutura:** Hook profissional/pessoal → insight → CTA
+**Tom:** Conforme o perfil (profissional para Gabriel, mais pessoal para Fabio)
+**Formato:** Plain text
+
+**Exemplo:**
+```
+Na semana passada tive um insight que quero compartilhar com vocês.
+
+Recuperação é feita de pequenos passos. E cada passo importa.
+
+Como é sua trajetória? Comenta! 👇
+
+#MudançaDeEstilo #Recuperação
+```
+
+---
+
+## Validações
+
+Antes de passar para Operational:
+
+- [ ] Todos os 6 arquivos existem?
+- [ ] Cada um tem comprimento apropriado (Blog: 1.5k, News: 300-400, IG: ~100 chars/slide, etc)?
+- [ ] Tom varia por canal (Blog educativo, Newsletter quente, IG casual, etc)?
+- [ ] Nenhum é cópia/cola dos outros?
+- [ ] CTA é específico para cada canal?
+- [ ] Nenhum jargão médico/técnico?
+- [ ] Nenhuma promessa de "cura"?
+- [ ] Pergunta central é respondida em cada versão?
+
+---
 
 ## Saída
 
-**Telegram Message:**
+**Arquivos criados:**
 ```
-📅 CONTENT PLAN — 7 Maio 2026
+POSTS/DDMMYYYY_Tema/
+├── POST_Overview.md
+├── BLOG_DDMMYYYY_Tema.md         ← Criado por AGENT_Tactic
+├── NEWS_DDMMYYYY_Tema.md         ← Criado por AGENT_Tactic
+├── instagram-captions.md          ← Criado por AGENT_Tactic
+├── podcast-script.md              ← Criado por AGENT_Tactic
+├── whatsapp-text.md               ← Criado por AGENT_Tactic
+└── linkedin-copy.md               ← Criado por AGENT_Tactic
+```
 
-🎬 5 Posts Planejados:
+**Mensagem ao time (Telegram):**
+```
+✍️ COPY READY — [DATA]
 
-1️⃣ Carrossel: "7 pequenos passos que mudaram tudo"
-   Pilar: Histórias Reais | Persona: Rosa
-   
-2️⃣ Reel: "Hack para lidar com triggers (30s)"
-   Pilar: Educação | Persona: Pedro
-   
-3️⃣ Captions: "Autocompaixão na recaída"
-   Pilar: Auto-compaixão | Persona: Ana-Mae
-   
-[...]
+📝 6 Versões de Texto Criadas:
+✅ Blog (1.8k palavras)
+✅ Newsletter (350 palavras)
+✅ Instagram captions (4 slides)
+✅ Podcast script (1.4k palavras)
+✅ WhatsApp (100 chars)
+✅ LinkedIn (200 chars)
 
-🔗 Distribuição: seg-sex, 1 post/dia às 9h
+Todos em: POSTS/DDMMYYYY_Tema/
+
+→ Próximo: AGENT_Operational valida + finaliza
+```
 
 ---
-✅ APROVAR PLANO
-❌ REJEITAR E REFAZER
-```
 
-## Human Gate
-- **Requer**: Aprovação via Telegram
-- **Timeout**: até 3h
-- **Se Aprovado**: Passa para Operational Agent
-- **Se Rejeitado**: Permite refazer
+## Checklist AGENT_Tactic
 
-## Instruções de Prompting
+Antes de passar para Operational:
+- [ ] 6 arquivos criados em POSTS/DDMMYYYY_Tema/
+- [ ] Blog: ~1.500–2.000 palavras, estruturado, SEO
+- [ ] Newsletter: ~300–400 palavras, quente/pessoal
+- [ ] Instagram: captions curtos, hooks fortes
+- [ ] Podcast: conversacional, 1.2k–1.6k palavras
+- [ ] WhatsApp: ultra-casual, 50–150 chars
+- [ ] LinkedIn: profissional ou pessoal conforme autor
+- [ ] Nenhum é duplicate do outro
+- [ ] Todos respondem pergunta central
+- [ ] Zero jargão médico
 
-1. **Estrutura**:
-   - Cada post começa com objetivo estratégico
-   - Conecta a editorial pillar específica
-   - Mapeia a persona-alvo
-   - Define format + key messages
+---
 
-2. **Formatos Permitidos**:
-   - Carrossel (10-15 slides)
-   - Reel (15-60s)
-   - Post Caption + 1 imagem
-   - Stories (3-5 frames)
-   - IGTV (2-10 min)
+## Referências
 
-3. **Distribuição**:
-   - Não posta tudo no mesmo dia
-   - Spread ao longo da semana
-   - Horários: 9h, 18h, 21h BRT (baseado em analytics)
+- `SKILL/SKILL_ContentCreationWorkflow.md` → Seção 2 (AGENT_Tactic)
+- `SKILL/SKILL_Documentation.md` → Seção 5 (Conven Seções de Escrita)
+- `KNOW/KNOW_EditorialPillars.md` → Tone por pilar
+- `KNOW/KNOW_CopyRules.md` → Regras de copywriting
+- `POSTS/DDMMYYYY_Tema/POST_Overview.md` → Estratégia de base
 
-4. **Validações**:
-   - Cada post tem CTA claro?
-   - Há variedade de formatos?
-   - Há balance entre educação/comunidade/histórias?
-   - Respeita LGPD (ninguém nomeado sem consentimento)?
+---
 
-## Requisitos
-- Claude Agent
-- Read: strategy_brief + editorial_pillars + trend_radar
-- Write: Telegram
-- Supabase: update phase = 'tactic'
-
-## Horário
-- **Trigger**: Após aprovação strategy (webhook)
-- **Timeout**: 5 minutos
-- **Retry**: 1x se falhar
-
-## Próximo Passo
-Se ✅: Operational Agent dispara
-Se ❌: Aguarda refazer
+**Próximo Agente:** AGENT_Operational (valida + finaliza textos)

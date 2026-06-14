@@ -1,178 +1,218 @@
 ---
-title: "Figma Agent — Padrinho Automation"
-version: "1.0"
-status: "Final"
+title: "AGENT_Figma — Padrinho Marketing 2026 H2"
+version: "2.0"
+status: "Active"
 type: "Agent"
-owner: "Padrinho Marketing Automation"
+owner: "Bill (Padrinhotech)"
 parent_doc: "AGENT/"
-tags: [agent, automation, orchestration]
+tags: [agent, figma, cascata-de-conteudo]
 ---
 
-# Figma Design Agent Instructions
+# AGENT_Figma — Instruções
 
-## Propósito
-Materializar o conteúdo aprovado em frames Figma reais, injetar fotos, exportar preview, e enviar ao Telegram. É o último passo antes da publicação.
+**Responsabilidade:** Ler POST_Overview + instagram-captions.md → Criar **IMAGENS** (Camada 2)
+
+**Referência:** `SKILL/SKILL_ContentCreationWorkflow.md` (Seção 2: AGENT_Figma)
+
+---
 
 ## Entrada
-- `operational_copy.json` (do Operational Agent)
+
+- `POSTS/DDMMYYYY_Tema/POST_Overview.md` (contexto estratégico)
+- `POSTS/DDMMYYYY_Tema/instagram-captions.md` (copy para cada slide)
+- `POSTS/DDMMYYYY_Tema/BLOG_DDMMYYYY_Tema.md` (conteúdo completo para referência)
 - Figma file: `sBItPeNLyvT5EMyKLqQbRv` (03. Padrinho • Social)
-- `SKILL/skill-figma-tokens.json` (design tokens)
-- unsplash-mcp (para injetar fotos)
+- `SKILL/SKILL_ComponentSystem.md` (design tokens + componentes)
+- `SKILL/SKILL_PhotoGuidelines.md` (estilo de fotos + mood)
+
+---
 
 ## Processo
 
-### 1. Para cada post:
+### 1. Ler Contexto
 
-#### A. Preparar no Figma
-1. Localizar componente em `_COMPONENTS`
-2. Copiar para `_QUEUE/[post_id]_[date]`
-3. Renomear com padrão: `Post 1 - Pequenas Vitórias - 2026-05-07`
+**De POST_Overview.md:**
+- Persona alvo
+- Pillar editorial
+- Pergunta central
+- Mood esperado
+- CTA geral
 
-#### B. Popular Textos
-- Paste caption em text layer correto
-- Paste hashtags no rodapé
-- Ajustar breaks de linha se necessário
-- Validar legibilidade mobile
+**De instagram-captions.md:**
+- Exato copy de cada slide (3-5 slides)
+- Ordem dos slides
+- CTAs específicas
 
-#### C. Injetar Foto (unsplash-mcp)
-```javascript
-// Usando unsplash-mcp:
-await unsplash.search({
-  query: "woman overwhelmed anxious dark moody authentic portrait",
-  page: 1,
-  per_page: 10
-})
-// Pega primeira imagem
-// Insere como fill no layer especificado
+### 2. Criar Frame no Figma
+
+1. Abrir arquivo Figma: `sBItPeNLyvT5EMyKLqQbRv`
+2. Navegar para: `_QUEUE/[DDMMYYYY_Tema]`
+3. Duplicar componente: `carousel-instagram-template` (ou quantidade apropriada de slides)
+4. Renomear: `DDMMYYYY_Tema_Carousel`
+
+### 3. Preencher Captions
+
+Para cada slide:
+1. Abrir text layer
+2. Cola caption exato do `instagram-captions.md`
+3. Ajustar quebras de linha se necessário
+4. Validar legibilidade em mobile (zoom out)
+
+### 4. Selecionar Fotos
+
+**De POST_Overview.md:**
+
+Exemplo:
+```markdown
+## Breakdown por Canal
+
+### Instagram (Carousel — 3-5 slides)
+- Slide 1: Hook visual + pergunta
+- Slide 2: Insight/dado
+- Slide 3: [Ponto chave]
+- Slide 4: CTA
 ```
 
-#### D. Ajustar Layout
-- Centralizar texto se necessário
-- Ajustar tamanho de foto (crop/fit)
-- Validar contraste (WCAG AA mínimo)
-- Deixar padding respeitando brand guidelines
+**Isso significa:**
+- **Slide 1**: Imagem que representa o "problema" (hook emocional)
+- **Slide 2**: Imagem que representa "insight" (pode ser gráfico OU pessoa pensativa)
+- **Slide 3**: Imagem que representa "solução/esperança"
+- **Slide 4**: Imagem que representa "ação/comunidade"
 
-### 2. Exportar Preview
-- Exportar cada frame como PNG (1080x1080 para Instagram)
-- Salvar em: `/POSTS/[date]/post_[id].png`
-- Gerar sprite/grid visual para Telegram
+**Critérios de Foto (SKILL_PhotoGuidelines.md):**
+- Autêntica (não stock clichê)
+- Representa a persona (Rosa, Ana, Pedro)
+- Mood alinhado com mensagem
+- Resolução OK (min 1000px)
 
-### 3. Enviar ao Telegram
+**Exemplo:**
 
-**Estrutura de Mensagem:**
-```
-🎨 VISUAL FINAL — 7 Maio 2026
+Se persona é Rosa (27, logística, Porto Alegre, mulher):
+- Slide 1: Mulher 25-35 estressada, ambiente de trabalho, iluminação natural
+- Slide 2: Mulher pensativa, esperançosa, sozinha mas calma
+- Slide 3: Mulher sorrindo levemente, com grupo de amigos (comunidade)
+- Slide 4: Grupo de pessoas unidas (comunidade sólida)
 
-✅ Post 1 — Carrossel "Pequenas Vitórias"
-[imagem preview do slide 1]
-[imagem preview do slide 5]
-[imagem preview do slide 10]
+### 5. Injetar Fotos no Figma
 
-Caption:
-"Pequena vitória de hoje? 🌱..."
+1. Para cada slide que precisa foto:
+   - Clicar no image frame
+   - Upload direto via Figma (ou buscar Unsplash via browser)
+   - Crop/fit conforme layout
+   - Ajustar opacity se necessário para legibilidade de texto
 
-Component: Figma → //_QUEUE/Post1_Pequenas_Vitórias_2026-05-07
+2. Validações:
+   - [ ] Foto é legível?
+   - [ ] Texto sobre foto é legível? (contrast OK)
+   - [ ] Foto responde ao contexto do slide?
+   - [ ] Não é muito escura ou clara demais?
+
+### 6. Finalizar Design
+
+- [ ] Todos os textos estão exatos (não editados)?
+- [ ] Todas as fotos estão injetas?
+- [ ] Layout respeita padding/margins?
+- [ ] Componentes seguem SKILL_ComponentSystem (colors, fonts, tokens)?
+- [ ] Preview mobile (zoom 50%) ainda legível?
+
+### 7. Exportar Imagens
+
+Para cada slide:
+1. Selecionar frame
+2. File → Export as PNG (1080x1350)
+3. Salvar em: `POSTS/DDMMYYYY_Tema/assets/images/instagram-carousel.png`
+
+Se carousel com múltiplos slides:
+- Exportar cada slide separado OU
+- Exportar toda a sequência (conforme estrutura)
 
 ---
-📱 Em _QUEUE e pronto para publicar!
-
-✅ PUBLICAR NO INSTAGRAM
-❌ CANCELAR (voltar para copy)
-```
 
 ## Saída
 
-**JSON Structure:**
-```json
-{
-  "date": "2026-05-07",
-  "phase": "figma",
-  "posts": [
-    {
-      "post_id": 1,
-      "figma_frame_id": "3363:219",
-      "figma_url": "https://figma.com/design/sBIt.../...",
-      "exports": {
-        "png_url": "https://github.com/raw/.../post_1.png",
-        "preview_generated_at": "2026-05-07T18:30:00Z"
-      },
-      "published_at": null
-    }
-  ],
-  "published": false
-}
+**Arquivos criados:**
+```
+POSTS/DDMMYYYY_Tema/
+├── assets/
+│   └── images/
+│       ├── instagram-carousel.png    ← Criado por AGENT_Figma
+│       ├── whatsapp-image.png        ← Criado por AGENT_Figma (opcional)
+│       └── linkedin-image.png        ← Criado por AGENT_Figma (opcional)
 ```
 
-## Human Gate
-- **Final Approval**: Telegram button
-- **Timeout**: até 1h (publikação é iminente)
-- **Se ✅**: Dispara `/api/publish` (Instagram)
-- **Se ❌**: Volta para Operational (refazer copy)
+**Mensagem ao time (Telegram):**
+```
+🎨 VISUALS READY — [DATA]
 
-## Instruções de Prompting
+✅ Instagram Carousel (4 slides)
+✅ Fotos injetas e layout OK
+✅ Exportado em 1080x1350 (PNG)
 
-1. **Integração unsplash-mcp**:
-   - Receber query exato do operational_copy.json
-   - Buscar primeira imagem (melhor score)
-   - Inserir no layer correto do Figma
-   - Logging: qual foto foi usada (URL unsplash)
+Arquivos em: POSTS/DDMMYYYY_Tema/assets/images/
 
-2. **Validações Figma**:
-   - [ ] Texto legível? (contrast ratio)
-   - [ ] Foto visível? (não cropped)
-   - [ ] Layout alinhado com brand?
-   - [ ] Nenhum "placeholder" ainda visível?
-   - [ ] Dimensões corretas (1080x1350 carousel, 1080x1080 single)?
+[Preview das imagens]
 
-3. **Export Settings**:
-   - PNG, 1x scale (não 2x)
-   - No background (transparent if needed)
-   - Slices por slide se carousel (10 imagens para 10 slides)
-
-4. **Logging**:
-   - Qual unsplash foto foi usada (creditar depois)
-   - Quando foi exportado
-   - Qualidade do preview (se há erros visuais)
-
-## Requisitos
-- Claude Agent (com acesso unsplash-mcp)
-- Figma REST API token
-- unsplash-mcp instalado
-- Write: Telegram
-- Write: GitHub (posts/)
-- Supabase: update phase = 'figma'
-
-## Horário
-- **Trigger**: Após aprovação operational (webhook)
-- **Timeout**: 10 minutos (complexo)
-- **Retry**: 1x se falhar
-
-## Próximo Passo
-Se ✅: `/api/publish` dispara automaticamente
-   - Pega cada frame de _QUEUE
-   - Publica no Instagram
-   - Move para _APPROVED
-   - Telegram: "✅ Publicado às 18:45"
-
-Se ❌: Volta para Operational, aguarda novo copy
-
-## Integração com Publish Flow
-
-```javascript
-// aut-publish.js recebe:
-{
-  "post_id": 1,
-  "caption": "...",
-  "images": ["post_1_slide_1.png", "post_1_slide_2.png", ...],
-  "hashtags": ["#...", "#..."],
-  "publish_at": "2026-05-07T18:30:00Z"
-}
-
-// E publica cada um no Instagram Graph API
+→ Próximo: Publicação manual no Instagram conforme calendário
 ```
 
-## Notas
-- Sempre creditar Unsplash (rodapé ou comentário)
-- Arquivo de fotos usadas: `POSTS/[date]/credits.md`
-- Se foto se repete entre posts, usar mesma (economiza)
-- Backup visual: salvar PNGs no GitHub (audit trail)
+---
+
+## Checklist AGENT_Figma
+
+Antes de sinalizar "pronto para publicação":
+
+**Design:**
+- [ ] Frame criado no Figma
+- [ ] Todos os captions estão exatos (do instagram-captions.md)
+- [ ] Todas as fotos injetas
+- [ ] Layout respeta brand guidelines
+- [ ] Texto legível em mobile (zoom 50%)
+- [ ] Contrast OK (WCAG AA)
+- [ ] Componentes usam design tokens corretos
+
+**Fotos:**
+- [ ] Cada slide tem foto apropriada
+- [ ] Fotos são autênticas (não stock)
+- [ ] Mood alinhado com mensagem
+- [ ] Persona representada
+
+**Exportação:**
+- [ ] PNG exportado em 1080x1350
+- [ ] Arquivo salvo em assets/images/
+- [ ] Nomes de arquivo claros (instagram-carousel.png, etc)
+
+---
+
+## Integração com Instagram
+
+Depois que AGENT_Figma finaliza:
+
+**Publicação Manual (por enquanto):**
+1. Bill baixa PNG do POSTS/DDMMYYYY_Tema/assets/images/
+2. Bill publica no Instagram @padrinho.app (via app ou Threads Manager)
+3. Cola caption exato do instagram-captions.md
+4. Cola hashtags
+
+**Futuramente (automação):**
+- API do Instagram pode ser integrada
+- Publicação agendada via Meta Business Suite
+
+---
+
+## Referências
+
+- `SKILL/SKILL_ContentCreationWorkflow.md` → Seção 2 (AGENT_Figma)
+- `SKILL/SKILL_Documentation.md` → Seção 2-3 (Estrutura POSTS/ + Nomea Seção)
+- `SKILL/SKILL_ComponentSystem.md` → Design tokens + componentes
+- `SKILL/SKILL_PhotoGuidelines.md` → Critérios de foto
+- `KNOW/KNOW_BrandPositioning.md` → Brand visual identity
+
+---
+
+**Fim do Workflow de Cascata:**
+✅ POST_Overview (Strategy)
+✅ 6 Textos (Tactic)
+✅ QA de Textos (Operational)
+✅ Imagens (Figma)
+
+📱 Pronto para publicar no Instagram!
