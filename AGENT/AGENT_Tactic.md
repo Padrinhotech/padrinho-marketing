@@ -10,7 +10,7 @@ tags: [agent, tactic, cascata-de-conteudo]
 
 # AGENT_Tactic — Instruções
 
-**Responsabilidade:** Ler POST_Overview.md → Criar **6 arquivos de TEXTO** (1 versão por canal)
+**Responsabilidade:** Ler POST_Overview.md → Criar **5 arquivos de TEXTO** (1 versão por canal)
 
 **Referência:** `SKILL/SKILL_ContentCreationWorkflow.md` (Seção 2: AGENT_Tactic)
 
@@ -33,7 +33,7 @@ tags: [agent, tactic, cascata-de-conteudo]
 - Entender pillar editorial
 - Entender CTA geral
 
-### 2. Criar 6 Arquivos de TEXTO
+### 2. Criar 5 Arquivos de TEXTO
 
 Cada arquivo é uma versão do mesmo conteúdo, **otimizado para seu canal específico**.
 
@@ -62,31 +62,10 @@ Cada arquivo é uma versão do mesmo conteúdo, **otimizado para seu canal espec
 [CTA específico para blog]
 ```
 
-#### B. `NEWS_DDMMYYYY_Tema.md`
-**Para:** Newsletter (e-mail)
-**Comprimento:** 300–400 palavras
-**Estrutura:** Abertura quente + 2 pontos principais + CTA
-**Tom:** Pessoal, conversacional, direto (como Bill falando)
-**Formato:** Markdown simples
+#### B. [INATIVO NESTE NÍVEL] Newsletter
+O conteúdo da newsletter é mensal e agora é gerenciado na pasta `POSTS/NEWS/YYYY_MM_Mes`. O AGENT_Tactic não cria arquivo NEWS para cada post individual.
 
-**Começar com:**
-```markdown
-# [Assunto do Email]
-
-Oi, [Nome],
-
-[Abertura pessoal conectando com a pergunta]
-
-[Ponto 1]
-
-[Ponto 2]
-
-A gente acredita que [CTA específico].
-
-[Signature]
-```
-
-#### C. `instagram-captions.md`
+#### C. `INSTA_Captions.md`
 **Para:** Instagram carousel (copy dos slides)
 **Comprimento:** ~100 caracteres por slide
 **Estrutura:** 1 caption por linha (para 3-5 slides)
@@ -101,7 +80,7 @@ Caption Slide 3: [Ponto chave + emoji]
 Caption Slide 4: [CTA + emoji]
 ```
 
-#### D. `podcast-script.md`
+#### D. `PNT_Script.md`
 **Para:** Podcast Pé na Trilha (roteiro/pauta)
 **Comprimento:** 5–8 min (approx 1.200–1.600 palavras)
 **Estrutura:** Intro → 2-3 pontos principais → Closing
@@ -125,7 +104,7 @@ Olá, tudo bem? Bem-vindo ao Pé na Trilha. [Gancho da pergunta]...
 A gente acredita que [CTA]...
 ```
 
-#### E. `whatsapp-text.md`
+#### E. `WHATSAPP_Reshare.md`
 **Para:** WhatsApp Community
 **Comprimento:** 50–150 caracteres
 **Estrutura:** Pergunta + insight simples + emoji
@@ -141,7 +120,7 @@ Recuperação não é sobre ser perfeito. É um passo, e depois outro.
 Comenta aqui! 👇
 ```
 
-#### F. `linkedin-copy.md`
+#### F. `LINKEDIN_Captions.md`
 **Para:** LinkedIn (Gabriel OU Fabio)
 **Comprimento:** 150–300 caracteres
 **Estrutura:** Hook profissional/pessoal → insight → CTA
@@ -165,8 +144,8 @@ Como é sua trajetória? Comenta! 👇
 
 Antes de passar para Operational:
 
-- [ ] Todos os 6 arquivos existem?
-- [ ] Cada um tem comprimento apropriado (Blog: 1.5k, News: 300-400, IG: ~100 chars/slide, etc)?
+- [ ] Todos os 5 arquivos existem?
+- [ ] Cada um tem comprimento apropriado (Blog: 1.5k, IG: ~100 chars/slide, etc)?
 - [ ] Tom varia por canal (Blog educativo, Newsletter quente, IG casual, etc)?
 - [ ] Nenhum é cópia/cola dos outros?
 - [ ] CTA é específico para cada canal?
@@ -182,21 +161,19 @@ Antes de passar para Operational:
 ```
 POSTS/DDMMYYYY_Tema/
 ├── POST_Overview.md
-├── BLOG_DDMMYYYY_Tema.md         ← Criado por AGENT_Tactic
-├── NEWS_DDMMYYYY_Tema.md         ← Criado por AGENT_Tactic
-├── instagram-captions.md          ← Criado por AGENT_Tactic
-├── podcast-script.md              ← Criado por AGENT_Tactic
-├── whatsapp-text.md               ← Criado por AGENT_Tactic
-└── linkedin-copy.md               ← Criado por AGENT_Tactic
+├── BLOG_PostTitle.md         ← Criado por AGENT_Tactic
+├── INSTA_Captions.md          ← Criado por AGENT_Tactic
+├── PNT_Script.md              ← Criado por AGENT_Tactic
+├── WHATSAPP_Reshare.md               ← Criado por AGENT_Tactic
+└── LINKEDIN_Captions.md               ← Criado por AGENT_Tactic
 ```
 
 **Mensagem ao time (Telegram):**
 ```
 ✍️ COPY READY — [DATA]
 
-📝 6 Versões de Texto Criadas:
+📝 5 Versões de Texto Criadas:
 ✅ Blog (1.8k palavras)
-✅ Newsletter (350 palavras)
 ✅ Instagram captions (4 slides)
 ✅ Podcast script (1.4k palavras)
 ✅ WhatsApp (100 chars)
@@ -212,9 +189,9 @@ Todos em: POSTS/DDMMYYYY_Tema/
 ## Checklist AGENT_Tactic
 
 Antes de passar para Operational:
-- [ ] 6 arquivos criados em POSTS/DDMMYYYY_Tema/
+- [ ] 5 arquivos criados em POSTS/DDMMYYYY_Tema/
 - [ ] Blog: ~1.500–2.000 palavras, estruturado, SEO
-- [ ] Newsletter: ~300–400 palavras, quente/pessoal
+
 - [ ] Instagram: captions curtos, hooks fortes
 - [ ] Podcast: conversacional, 1.2k–1.6k palavras
 - [ ] WhatsApp: ultra-casual, 50–150 chars

@@ -56,12 +56,13 @@ Exemplos:
 
 | Arquivo | Criado Para | Comprimento | Formato |
 |---------|-------------|------------|----------|
-| `BLOG_DDMMYYYY_Tema.md` | Site + SEO | 1.5–2k palavras | Markdown |
-| `NEWS_DDMMYYYY_Tema.md` | Newsletter | 300–400 palavras | Markdown |
-| `instagram-captions.md` | Copy do carousel | ~100 chars/slide | Plain text, 1 caption por linha |
-| `podcast-script.md` | Pé na Trilha | 5–8 min | Markdown (bold/italic para ênfase) |
-| `whatsapp-text.md` | Community | 50–150 chars | Plain text |
-| `linkedin-copy.md` | Gabriel/Fabio | 150–300 chars | Plain text |
+| `BLOG_PostTitle.md` | Site + SEO | 1.5–2k palavras | Markdown |
+| `INSTA_Captions.md` | Copy do carousel | ~100 chars/slide | Plain text, 1 caption por linha |
+| `PNT_Script.md` | Pé na Trilha | 5–8 min | Markdown (bold/italic para ênfase) |
+| `WHATSAPP_Reshare.md` | Community | 50–150 chars | Plain text |
+| `LINKEDIN_Captions.md` | Gabriel/Fabio | 150–300 chars | Plain text |
+
+**Nota sobre Newsletters:** O conteúdo de newsletter não é gerado por post. O conteúdo mensal é agrupado na pasta `POSTS/NEWS/YYYY_MM_Mes`. O arquivo `NEWS_...md` será usado no futuro para a newsletter mensal.
 
 **Regra:** Cada arquivo é independente (não referencia outros), mas reutiliza insights/estrutura proposta no POST_Overview.
 
@@ -92,12 +93,11 @@ POSTS/
 │
 └── 14062026_SobriedadeGlowUp/
     ├── POST_Overview.md
-    ├── BLOG_14062026_SobriedadeGlowUp.md
-    ├── NEWS_14062026_SobriedadeGlowUp.md
-    ├── instagram-captions.md
-    ├── podcast-script.md
-    ├── whatsapp-text.md
-    ├── linkedin-copy.md
+    ├── BLOG_PostTitle.md         ← Criado por AGENT_Tactic
+    ├── INSTA_Captions.md          ← Criado por AGENT_Tactic
+    ├── PNT_Script.md              ← Criado por AGENT_Tactic
+    ├── WHATSAPP_Reshare.md               ← Criado por AGENT_Tactic
+    ├── LINKEDIN_Captions.md               ← Criado por AGENT_Tactic
     └── assets/
         └── images/
             ├── instagram-carousel.png
@@ -130,9 +130,12 @@ Exemplo: `14062026` = 14 de junho de 2026
 ### Tipo de Arquivo
 **Prefixo padrão:**
 - `BLOG_` — Blog post
-- `NEWS_` — Newsletter
+- `INSTA_` — Instagram captions
+- `PNT_` — Pé na Trilha script
+- `WHATSAPP_` — WhatsApp reshare
+- `LINKEDIN_` — LinkedIn copy
 - `POST_` — Post overview/guia
-- Sem prefixo — Copy por canal (instagram-captions, podcast-script, etc)
+- `NEWS_` — Newsletter (fica em POSTS/NEWS, não na pasta do post)
 
 ---
 
@@ -196,7 +199,7 @@ Exemplo: `14062026` = 14 de junho de 2026
    ↓
 3. AGENT_Operational valida + finaliza (QA)
    ↓
-4. AGENT_Figma cria IMAGENS (referencia POST_Overview + instagram-captions.md)
+4. AGENT_Figma cria IMAGENS (referencia POST_Overview + INSTA_Captions.md)
    ↓
 5. Publicação manual em calendário
 ```
@@ -209,7 +212,7 @@ Exemplo: `14062026` = 14 de junho de 2026
 - [ ] Pillar definido
 
 **Step 2 — Tactic:**
-- [ ] 6 arquivos de texto criados (sem edição final)
+- [ ] 5 arquivos de texto criados (sem edição final)
 - [ ] Estrutura segue POST_Overview
 - [ ] Tons variam por canal
 
@@ -221,7 +224,7 @@ Exemplo: `14062026` = 14 de junho de 2026
 
 **Step 4 — Figma:**
 - [ ] Imagens criadas em Figma
-- [ ] Captions/texto alinhado com instagram-captions.md
+- [ ] Captions/texto alinhado com INSTA_Captions.md
 - [ ] Imagens exportadas para assets/images/
 - [ ] Refs visuais no POST_Overview confirmadas
 
@@ -249,25 +252,25 @@ Exemplo: `14062026` = 14 de junho de 2026
 - CTA: Convite para visitar blog OU call-to-action direto
 
 **Instagram:**
-- Arquivo: `instagram-captions.md` (copy)
+- Arquivo: `INSTA_Captions.md` (copy)
 - Imagem: `assets/images/instagram-carousel.png`
 - Estrutura: 3-5 slides (cada um tem 1 caption)
 - CTA: Adesivo interativo OU "link na bio"
 
 **Podcast:**
-- Arquivo: `podcast-script.md`
+- Arquivo: `PNT_Script.md`
 - Duração: 5–8 min (read time ~ 1.200–1.600 palavras)
 - Estrutura: Intro + 2-3 pontos + Closing
 - Tom: Conversacional, direto
 
 **WhatsApp:**
-- Arquivo: `whatsapp-text.md`
+- Arquivo: `WHATSAPP_Reshare.md`
 - Comprimento: 50–150 caracteres
 - Tom: Ultra-casual, enquete/pergunta
 - Imagem: `assets/images/whatsapp-image.png` (opcional)
 
 **LinkedIn:**
-- Arquivo: `linkedin-copy.md`
+- Arquivo: `LINKEDIN_Captions.md`
 - Autor: Gabriel OU Fabio (profiles pessoais)
 - Comprimento: 150–300 caracteres
 - Tom: Profissional/pessoal (conforme perfil)
