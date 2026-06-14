@@ -5,7 +5,7 @@ persona: Pedro Autônomo
 pilar: Empoderamento
 ---
 
-# POST_Overview: Você Baixou O App. E Agora?
+# POST_Overview: Você baixou o app. E agora?
 
 **Tema:** Getting started with Bill app — first conversation is simpler than expected  
 **Persona:** Pedro Autônomo (31M, practical + action-oriented)  

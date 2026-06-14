@@ -6,7 +6,7 @@ pilar: Reconhecimento
 channel: All (LinkedIn + Blog + WhatsApp + Instagram carousel + reshare)
 ---
 
-# POST_Overview: Recaída Não É O Fim Da História
+# POST_Overview: Recaída não é o fim da história
 
 **Tema:** Recaída não é o fim da história  
 **Persona:** Rosa Equilibrista (25F, Instagram-native, early recovery)  

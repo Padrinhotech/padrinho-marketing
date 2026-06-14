@@ -270,6 +270,13 @@ Cada post de blog segue esta estrutura:
 - **Declaração-baseado:** "O papel dos Padrinhos&Madrinhas"
 - **How-to-baseado:** "Como criar seu próprio ritual"
 
+**⚠️ Capitalização de títulos em português:**
+Somente a **primeira palavra** e **nomes próprios** levam letra maiúscula. O restante é minúsculo.
+- ✅ `Recaída não é o fim da história`
+- ✅ `O que ninguém te conta sobre recaída`
+- ✅ `Mulheres em recuperação: por que espaços tradicionais não funcionam`
+- ❌ `Recaída Não É O Fim Da História` ← estilo inglês, nunca usar em PT-BR
+
 **Respiração visual:** Linha em branco entre parágrafos (mobile-friendly)
 
 ---
@@ -377,6 +384,7 @@ O [Padrinho] está aqui para [specific benefit].
 - Use *itálico* para ênfase em phrases
 - Headers são ação/pergunta-orientados
 - Nunca ALL CAPS
+- **Capitalização PT-BR:** Apenas a primeira palavra e nomes próprios em maiúsculo. Nunca estilo inglês (Title Case) em títulos em português.
 
 **Listas:**
 - Bullet points para traits/sintomas

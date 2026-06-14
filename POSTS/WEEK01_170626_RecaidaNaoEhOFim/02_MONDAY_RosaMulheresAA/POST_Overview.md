@@ -5,7 +5,7 @@ persona: Rosa Equilibrista
 pilar: Acolhimento
 ---
 
-# POST_Overview: Você Foi Buscar Ajuda E Não Se Sentiu Acolhida
+# POST_Overview: Você foi buscar ajuda e não se sentiu acolhida
 
 **Tema:** Inclusion in recovery spaces — "Maybe the problem wasn't you"  
 **Persona:** Rosa Equilibrista (25F, women perspective)  

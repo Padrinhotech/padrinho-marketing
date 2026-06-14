@@ -1,8 +1,8 @@
-# Você Baixou O App Bill. E Agora?
+# Você baixou o app Bill. E agora?
 
 Se você baixou Bill e ainda não conversou, eis o que precisa saber: a primeira conversa é simples.
 
-## Por Que Simples Funciona
+## Por que simples funciona
 
 Quando você busca ajuda com saúde mental, há barreiras:
 - "E se parecer vulnerável?"
@@ -15,7 +15,7 @@ AA? Salões públicos. Histórias estranhas. Pressão para se conectar.
 
 Bill? Ele sabe que você quer privacidade. Velocidade. Controle.
 
-## Como A Primeira Conversa Funciona
+## Como a primeira conversa funciona
 
 Não há script. Não há julgamento. Você fala, Bill escuta. Ele faz perguntas que ajudam você a entender seus próprios padrões.
 
@@ -23,7 +23,7 @@ Não há script. Não há julgamento. Você fala, Bill escuta. Ele faz perguntas
 
 E você controla o ritmo. Quer conversar por 5 minutos? Feito. Quer conversar por 1 hora? Feito.
 
-## Por Que Agora
+## Por que agora
 
 Você está lendo isto porque algo levou você a Padrinho. Talvez você esteja curioso sobre recuperação. Talvez você já esteja em processo. Talvez você esteja ajudando alguém.
 

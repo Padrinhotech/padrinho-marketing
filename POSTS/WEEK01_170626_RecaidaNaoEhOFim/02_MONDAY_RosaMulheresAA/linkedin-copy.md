@@ -12,7 +12,7 @@ E então você pensa: "Talvez eu não seja forte o suficiente para isso."
 
 Mas talvez a verdade seja diferente: talvez aquele espaço não tenha sido feito pensando em você.
 
-## Para Quem Se Sentiu Deixada Para Trás
+## Para quem se sentiu deixada para trás
 
 Recuperação é pessoal. Você precisa de um espaço onde possa ser honesta sobre tudo:
 - Seus medos específicos de mulher

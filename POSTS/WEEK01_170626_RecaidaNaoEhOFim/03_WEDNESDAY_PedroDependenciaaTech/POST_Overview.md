@@ -5,7 +5,7 @@ persona: Pedro Autônomo
 pilar: Reconhecimento
 ---
 
-# POST_Overview: Você Já Tentou Largar O Celular?
+# POST_Overview: Você já tentou largar o celular?
 
 **Tema:** Tech addiction parallels substance addiction — brain science perspective  
 **Persona:** Pedro Autônomo (31M, tech-forward, skeptical of psychology)  

@@ -1,10 +1,10 @@
-# Mulheres Em Recuperação: Por Que Espaços Tradicionais Não Funcionam Para Todos
+# Mulheres em recuperação: por que espaços tradicionais não funcionam para todos
 
 AA salvou vidas. Comunidades de recuperação são essenciais. Mas nem todos encontram o que precisam nos mesmos lugares.
 
 Para muitas mulheres, o espaço tradicional de recuperação é desconectado. Você senta lá, ouve histórias sobre homens em garagens bebendo sozinhos, e pensa: "Isso não é meu mundo."
 
-## A Verdade Sobre Ajuda Não Recebida
+## A verdade sobre ajuda não recebida
 
 Quando você vai buscar ajuda e não se sente acolhida, há uma tendência de culpar a si mesma.
 
@@ -14,14 +14,14 @@ Quando você vai buscar ajuda e não se sente acolhida, há uma tendência de cu
 
 **Mas a verdade é diferente:** Talvez aquele espaço não tenha sido construído pensando em você.
 
-## O Que Mulheres Precisam Em Recuperação
+## O que mulheres precisam em recuperação
 
 - Espaços onde suas experiências específicas (relacionamentos, maternidade, pressão social) são validadas
 - Comunidades que entendem a codependência, não apenas a dependência
 - Lugares onde vulnerabilidade é visto como força, não como fraqueza
 - Mentoras que "entendem" porque viveram algo similar
 
-## A Conversa Precisa Mudar
+## A conversa precisa mudar
 
 Recuperação não é "um tamanho serve para todos". É pessoal. E se o espaço que você encontrou não funciona, não é culpa sua.
 
