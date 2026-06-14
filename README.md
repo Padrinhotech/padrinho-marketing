@@ -1,1 +1,174 @@
-# Padrinho Marketing — 2026 H2\n\n> **🤖 For LLMs:** Before running any marketing workflow, read [`claude.md`](./claude.md) for complete workflow instructions. It defines the 4-agent cascade (Strategy → Tactic → Operational → Figma) and how to execute content creation end-to-end.\n\n---\n\n## Sobre Este Repositório\n\nRepositório de estratégia e execução de marketing do **Padrinho.app** (app de apoio a pessoas em recuperação e seus familiares).\n\n**Propósito:** Fonte única da verdade para criação de conteúdo, personas, brand positioning, e workflow operacional.\n\n**Status:** 2026 H2 — Transição de automação (Node.js/Vercel) para workflow manual/conversacional via Claude AI.\n\n### Quem Usa Este Repo?\n\n- **Bill** (Growth + Paid Acquisition) → Strategy + Tactic refinement\n- **Fábio** (Creative Partner) → Ad creatives, visual assets\n- **Claude AI / LLMs** → Execute the full 4-agent cascade (read `claude.md` first)\n- **Marketing Team** → Reference for brand guidelines, personas, editorial calendar\n\n---\n\n## O que Mudou (2026 H2)\n\n✂️ **Removido:** Toda infraestrutura de automação (scripts Node, Vercel, webhooks, APIs) — see [`CLEANUP.md`](./CLEANUP.md)  \n✨ **Mantido:** Base de conhecimento, skills operacionais, agentes (racional), outputs  \n🎯 **Foco:** Validar personas com dados reais + desenhar estratégia de conteúdo replicável em cascata\n\n---\n\n## Estrutura do Repositório\n\n```\npadrinho-marketing/\n├── 📖 README.md                      ← Você está aqui\n├── 🤖 claude.md                      ← LLM workflow instructions (read first!)\n├── 📋 CLEANUP.md                     ← Files deleted + why\n│\n├── 📚 KNOW/                          ← Base de conhecimento\n│   ├── KNOW_BrandPositioning.md      ← Brand voice, strategy por canal\n│   ├── KNOW_RosaEquilibrista.md      ← Persona 1: 25F, Instagram-native\n│   ├── KNOW_AnaMaeProtetora.md       ← Persona 2: 40F mother\n│   ├── KNOW_PedroAutonomo.md         ← Persona 3: 31M tech-forward\n│   ├── KNOW_CaioFilho.md             ← Persona 4: amplifier (family members)\n│   ├── KNOW_EditorialPillars.md      ← Content themes (Wellness, Community, etc)\n│   └── KNOW_TrendRadar.md            ← Competitor analysis, market insights\n│\n├── 🛠️ SKILL/                         ← Habilidades operacionais\n│   ├── SKILL_ContentCreationWorkflow.md  ← Cascata de conteúdo (Blog → IG → Podcast → etc)\n│   ├── SKILL_CopyRules.md            ← Tone + voice por canal\n│   ├── SKILL_ComponentSystem.md      ← Design tokens, visual rules\n│   ├── SKILL_PhotoGuidelines.md      ← Visual guidelines per persona\n│   └── SKILL_Documentation.md        ← How to document + maintain this repo\n│\n├── 👤 AGENT/                         ← Agentes (racional operacional)\n│   ├── AGENT_Strategy.md             ← Framework: tema → hook → message\n│   ├── AGENT_Tactic.md               ← Rules for Blog, Instagram, Podcast, etc\n│   ├── AGENT_Operational.md          ← Publishing schedule + metrics\n│   └── AGENT_Figma.md                ← Visual asset specs + design system\n│\n├── 📝 POSTS/                         ← Posts gerados (output)\n│   ├── AGENDA_Padrinho.md            ← Editorial calendar (weeks 25-52, H2 2026)\n│   └── DDMMYYYY_TemaDoPost/          ← One folder per content theme\n│       ├── POST_Overview.md          ← Strategy output\n│       ├── BLOG_DDMMYYYY_Tema.md     ← Tactic: Blog\n│       ├── instagram-captions.md     ← Tactic: Instagram\n│       ├── podcast-script.md         ← Tactic: Podcast\n│       ├── newsletter-text.md        ← Tactic: Newsletter\n│       ├── whatsapp-text.md          ← Tactic: WhatsApp\n│       ├── linkedin-copy.md          ← Tactic: LinkedIn\n│       ├── publishing-checklist.md   ← Operational: Publishing plan\n│       └── assets/images/            ← Visual renders\n│\n├── 📊 DATA/                          ← Dados de entrada/referência\n│   └── [competitor analysis, market data, research]\n│\n└── 📖 DOCS/                          ← Documentação adicional\n    └── [outros documentos de suporte]\n```\n\n---\n\n## Workflow em Cascata (Manual, 2026 H2)\n\n**Sem automação.** Claude AI (ou outro LLM) executa os 4 agents manualmente:\n\n### Stage 1: Strategy Agent\n**Input:** Tema semanal + persona  \n**Output:** `POST_Overview.md` (hook, message, tone, success metrics)\n\n### Stage 2: Tactic Agent\n**Input:** POST_Overview.md  \n**Output:** Conteúdo multi-canal:\n- 📝 BLOG (1100 palavras, SEO)\n- 📸 INSTAGRAM (captions + carousel specs)\n- 🎙️ PODCAST (8-min script)\n- 📧 NEWSLETTER (email copy)\n- 💬 WHATSAPP (community messages)\n- 🧑💼 LINKEDIN (professional angle)\n\n### Stage 3: Operational Agent\n**Input:** All tactic outputs  \n**Output:**\n- Publishing checklist (Tuesday-Friday cascade)\n- Calendar updates\n- Metrics targets (50+ likes, 200+ blog views, etc)\n\n### Stage 4: Figma Agent\n**Input:** Tactic outputs  \n**Output:**\n- Instagram carousel specs (1080×1350 px × 3 slides)\n- LinkedIn image specs (1200×628 px)\n- WhatsApp thumbnail specs (500×500 px)\n- Design tokens (colors, fonts, sizes)\n\n---\n\n## Públicos Alvo (2026 H2)\n\n**Foco:** Dependentes em recuperação (80%) + Familiares (20%)  \n**Descontinuados:** Clínicas, empresas, profissionais\n\n| Persona | Tipo | Perfil | Status |\n|---------|------|--------|--------|\n| Rosa Equilibrista | Dependente | 25F, Instagram-native, early recovery | 🔴 A validar com dados |\n| Ana Mae Protetora | Familiar | 40F mother, Facebook/YouTube | 🔴 A validar com dados |\n| Pedro Autônomo | Dependente | 31M freelancer, desktop-first, tech | 🔴 A validar com dados |\n| Caio Filho | Amplifier | Shares content with family members | ✅ Active (10-15% budget) |\n\n---\n\n## Como Começar (Para LLMs)\n\n### Primeira Vez?\n1. **Leia [`claude.md`](./claude.md)** — Instruções completas do workflow\n2. **Carreguem contexto:**\n   ```\n   \"Load context: KNOW_BrandPositioning, KNOW_RosaEquilibrista, AGENDA_Padrinho.\"\n   ```\n3. **Inicie com Strategy Agent:**\n   ```\n   \"Week 28: Theme 'Mindfulness na Recuperação'. Persona: Rosa. Start with Strategy.\"\n   ```\n\n### Full Workflow (Uma vez completo)?\n```\n\"Create content for Week 28: 'Mindfulness na Recuperação'.\nPersona: Rosa.\nRun all 4 agents (Strategy → Tactic → Operational → Figma).\nOutput files ready to publish.\"\n```\n\n### Iterar Rapidamente?\n```\n\"Make the Instagram captions 30% shorter. Keep hook. Rerun Tactic stage.\"\n```\n\n---\n\n## Próximas Etapas (Roadmap 2026 H2)\n\n- [ ] **Datafy Personas:** Coletar dados de Supabase, Insightfulpipe, Apify\n- [ ] **Refinar Personas:** Validar/criar personas baseadas em dados reais\n- [ ] **Customer Journey:** Mapear jornada por persona (Awareness → Consideration → Acquisition)\n- [ ] **Content Strategy:** Desenhar estratégia de conteúdo replicável (Blog → IG → Podcast → etc)\n- [ ] **Update KNOW/:** Personas v2.0 com dados estruturados\n- [ ] **Update SKILL/:** Template de conteúdo replicável + checklist\n- [ ] **Publishing Calendar:** Definir H2 2026 (weeks 25-52)\n- [ ] **Monitor & Iterate:** Track metrics, refine personas, repeat\n\n---\n\n## Referências Rápidas\n\n- **Brand Voice?** → `KNOW/KNOW_BrandPositioning.md`\n- **Rosa Persona?** → `KNOW/KNOW_RosaEquilibrista.md`\n- **Content Workflow?** → `SKILL/SKILL_ContentCreationWorkflow.md`\n- **Strategy Framework?** → `AGENT/AGENT_Strategy.md`\n- **This Week's Theme?** → `POSTS/AGENDA_Padrinho.md`\n- **LLM Instructions?** → **[`claude.md`](./claude.md)** ← **START HERE**\n\n---\n\n## Mantém em Mente\n\n✅ **Always:**\n- Load context before generating\n- Reference persona when writing\n- Include CTA in every output\n- Use brand voice from KNOW_BrandPositioning\n- Suggest iterations (\"Want me to adjust tone?\")\n\n❌ **Never:**\n- Skip Strategy stage\n- Use tone that contradicts persona\n- Forget CTAs\n- Publish without user confirmation\n- Create visuals without design specs\n\n---\n\n**Última atualização:** 2026-06-14  \n**Mantido por:** Bill + Claude AI  \n**Para dúvidas:** Leia [`claude.md`](./claude.md) primeiro\n"
+# Padrinho Marketing — 2026 H2
+
+> **🤖 For LLMs:** Before running any marketing workflow, read [`claude.md`](./claude.md) for complete workflow instructions. It defines the 4-agent cascade (Strategy → Tactic → Operational → Figma) and how to execute content creation end-to-end.
+
+---
+
+## Sobre Este Repositório
+
+Repositório de estratégia e execução de marketing do **Padrinho.app** — app de apoio a pessoas em recuperação de alcoolismo e seus familiares.
+
+**Propósito:** Fonte única da verdade para criação de conteúdo, personas, brand positioning, e workflow operacional.
+
+**Status:** 2026 H2 — Transição de automação (Node.js/Vercel) para workflow manual/conversacional via Claude AI.
+
+**Quem usa:**
+- Bill (Growth + Paid Acquisition) → Strategy + Tactic refinement
+- Fábio (Creative Partner) → Ad creatives, visual assets  
+- Claude AI / LLMs → Execute the full 4-agent cascade
+- Marketing Team → Reference for brand guidelines & personas
+
+---
+
+## O que Mudou (2026 H2)
+
+✂️ **Removido:** Toda infraestrutura de automação (scripts Node, Vercel, webhooks, APIs) — see [`CLEANUP.md`](./CLEANUP.md)
+
+✨ **Mantido:** Base de conhecimento, skills operacionais, agentes (racional), outputs
+
+🎯 **Foco:** Validar personas com dados reais + desenhar estratégia de conteúdo replicável em cascata
+
+---
+
+## Estrutura do Repositório
+
+```
+padrinho-marketing/
+├── README.md                         ← Você está aqui
+├── claude.md                         ← LLM workflow instructions (read first!)
+├── CLEANUP.md                        ← Files deleted + why
+│
+├── KNOW/                             ← Base de conhecimento
+│   ├── KNOW_BrandPositioning.md      ← Brand voice, strategy por canal
+│   ├── KNOW_RosaEquilibrista.md      ← Persona 1: 25F, Instagram-native
+│   ├── KNOW_AnaMaeProtetora.md       ← Persona 2: 40F mother
+│   ├── KNOW_PedroAutonomo.md         ← Persona 3: 31M tech-forward
+│   ├── KNOW_CaioFilho.md             ← Persona 4: amplifier
+│   └── KNOW_EditorialPillars.md      ← Content themes
+│
+├── SKILL/                            ← Habilidades operacionais
+│   ├── SKILL_ContentCreationWorkflow.md
+│   ├── SKILL_CopyRules.md
+│   ├── SKILL_ComponentSystem.md
+│   └── SKILL_PhotoGuidelines.md
+│
+├── AGENT/                            ← Agentes (racional)
+│   ├── AGENT_Strategy.md
+│   ├── AGENT_Tactic.md
+│   ├── AGENT_Operational.md
+│   └── AGENT_Figma.md
+│
+├── POSTS/                            ← Conteúdo gerado (output)
+│   ├── AGENDA_Padrinho.md            ← Editorial calendar
+│   └── DDMMYYYY_TemaDoPost/
+│       ├── POST_Overview.md
+│       ├── BLOG_*.md
+│       ├── instagram-captions.md
+│       └── [outros outputs]
+│
+└── DATA/                             ← Referência e dados
+```
+
+---
+
+## Workflow em Cascata (Manual, 2026 H2)
+
+Sem automação. Claude AI executa os 4 agents em sequência:
+
+**Stage 1: Strategy Agent**  
+Input: Tema semanal + persona → Output: `POST_Overview.md` (hook, message, tone, metrics)
+
+**Stage 2: Tactic Agent**  
+Input: POST_Overview → Output: Multi-canal content (Blog 1100w, Instagram captions, Podcast 8min, Newsletter, WhatsApp, LinkedIn)
+
+**Stage 3: Operational Agent**  
+Input: All tactic outputs → Output: Publishing checklist, calendar, metrics targets
+
+**Stage 4: Figma Agent**  
+Input: Tactic outputs → Output: Instagram carousel specs (1080×1350 px), LinkedIn (1200×628 px), design tokens
+
+---
+
+## Públicos Alvo (2026 H2)
+
+**Foco:** Dependentes em recuperação (80%) + Familiares (20%)  
+**Descontinuados:** Clínicas, empresas, profissionais
+
+| Persona | Tipo | Perfil | Status |
+|---------|------|--------|--------|
+| Rosa Equilibrista | Dependente | 25F, Instagram-native, early recovery | 🔴 A validar |
+| Ana Mae Protetora | Familiar | 40F mother, Facebook/YouTube | 🔴 A validar |
+| Pedro Autônomo | Dependente | 31M freelancer, desktop | 🔴 A validar |
+| Caio Filho | Amplifier | Shares with family | ✅ Active |
+
+---
+
+## Como Começar (Para LLMs)
+
+**Primeira vez?**
+
+1. Leia [`claude.md`](./claude.md) — instruções completas
+2. Carregue contexto: `"Load context: KNOW_BrandPositioning, KNOW_RosaEquilibrista, AGENDA_Padrinho"`
+3. Inicie: `"Week 28: Theme 'Mindfulness na Recuperação'. Persona: Rosa. Start with Strategy"`
+
+**Full workflow?**
+
+```
+"Create content for Week 28.
+Persona: Rosa.
+Run all 4 agents (Strategy → Tactic → Operational → Figma).
+Output files ready to publish."
+```
+
+**Refine quickly?**
+
+```
+"Make Instagram captions 30% shorter. Keep hook. Rerun Tactic."
+```
+
+---
+
+## Próximas Etapas (Roadmap 2026 H2)
+
+- [ ] **Datafy Personas:** Coletar dados de Supabase, Insightfulpipe, Apify
+- [ ] **Customer Journey:** Mapear jornada por persona
+- [ ] **Content Strategy:** Desenhar estratégia replicável
+- [ ] **Publishing Calendar:** H2 2026 (weeks 25-52)
+- [ ] **Monitor & Iterate:** Track metrics, refine personas
+
+---
+
+## Referências Rápidas
+
+| Procurando... | Arquivo |
+|---------------|---------|
+| Brand voice? | `KNOW/KNOW_BrandPositioning.md` |
+| Rosa persona? | `KNOW/KNOW_RosaEquilibrista.md` |
+| Content workflow? | `SKILL/SKILL_ContentCreationWorkflow.md` |
+| Strategy framework? | `AGENT/AGENT_Strategy.md` |
+| This week's theme? | `POSTS/AGENDA_Padrinho.md` |
+| **LLM instructions?** | **[`claude.md`](./claude.md)** ← **START HERE** |
+
+---
+
+## Mantém em Mente
+
+✅ **Always:**
+- Load context before generating
+- Reference persona when writing
+- Include CTA in every output
+- Use brand voice from KNOW_BrandPositioning
+- Suggest iterations ("Want me to adjust tone?")
+
+❌ **Never:**
+- Skip Strategy stage
+- Use tone that contradicts persona
+- Forget CTAs
+- Publish without user confirmation
+- Create visuals without design specs
+
+---
+
+**Última atualização:** 2026-06-14  
+**Mantido por:** Bill + Claude AI  
+**Para dúvidas:** Leia [`claude.md`](./claude.md) primeiro
