@@ -1,460 +1,320 @@
----
-title: "Padrinho Documentation Standardization"
-version: "1.1"
-status: "Final"
-type: "Skill"
-owner: "Padrinho Marketing Automation"
-parent_doc: "./README.md"
-last_updated: "2026-05-08"
-tags: [skill, documentation, standards, quality, agents, processes, organization]
----
+# SKILL_Documentation
 
-# Skill: Documentation Standardization — Padrinho Marketing Automation
-
-This skill defines the global guidelines for creating and maintaining all documentation in the **Padrinho Marketing Automation** system. It ensures that all documentation is professional, agent-readable, and consistent with our multi-agent orchestration architecture.
-
-This is an **operational skill** applied to all skill creation, agent instructions, and process documentation across the system.
+**Objetivo:** Documentar padrões de organização, nomeação e estrutura de arquivos em `padrinho-marketing` para evitar confusão e garantir que todos (humans + agents) entendam como estruturar conteúdo.
 
 ---
 
-## 1. File Naming Conventions
-
-All documentation files must use prefixes to clearly indicate their type and purpose. This enables both human navigation and agent routing.
-
-| Prefix | Category | Purpose | Example |
-| :--- | :--- | :--- | :--- |
-| **KNOW_** | Knowledge & Context | Information agents need to understand (brand, market, audiences, personas, insights) | `KNOW_BrandPositioning.md`, `KNOW_MarketContext.md` |
-| **SKILL_** | Operational Skills | Step-by-step guidelines for how to execute tasks (copy rules, component selection, photo sourcing) | `SKILL_CopyRules.md`, `SKILL_ComponentSystem.md` |
-| **AGENT_** | Agent Instructions | Instructions for how agents operate (agent execution steps, approval gates, data inputs/outputs) | `AGENT_Strategy.md`, `AGENT_Operational.md` |
-| **AUT_** | Automation Documentation | Documentation for automation system architecture and orchestration | `AUT_Automation.md` |
-
-### 1.2 Script Naming Conventions
-
-All executable scripts and configuration files must use lowercase prefixes separated by hyphens to clearly indicate their purpose and context. These patterns apply to both **JavaScript (.js)** and **JSON (.json)** files:
-
-| Prefix | Context | Purpose | Examples | Location |
-| :--- | :--- | :--- | :--- | :--- |
-| **skill-** | Skill Utilities | Scripts and configs used by skills to execute tasks | `skill-inject-photos.js`, `skill-inject-photos-node.js`, `skill-figma-tokens.json` | `SKILL/` |
-| **aut-** | Automation Entry Points | Main Vercel function entry points for automation orchestration | `aut-orchestrate.js`, `aut-approve.js`, `aut-publish.js`, `aut-setup-webhook.js` | `AUT/api/` |
-| **agent-** | Agent Implementations | Individual agent execution code | `agent-strategy.js`, `agent-figma.js`, `agent-insights.js`, `agent-tactic.js` | `AUT/api/agents/` |
-| **hooks-** | Webhook Handlers | Webhook endpoint implementations | `hooks-telegram.js` | `AUT/api/webhooks/` |
-
-### Key Distinction: Documentation vs. Scripts
-- **KNOW_**, **SKILL_**, **AGENT_**, **AUT_** files are documentation files (Markdown with .md extension)
-- **skill-**, **aut-**, **agent-**, **hooks-** prefixed files are executable scripts and configs (JavaScript .js or JSON .json)
-- Scripts and configs follow kebab-case lowercase naming; documentation follows PascalCase with underscores
-- Both JavaScript and JSON files use the same prefixes based on their context and purpose
-- This distinction enables agent routing: agents read KNOW_/SKILL_/AGENT_/AUT_ files, code imports aut-/agent-/skill-/hooks- files
-
-### Folder Organization
+## 1. Estrutura Geral do Repo
 
 ```
-./
-├── KNOW/                           ← Knowledge & Context files
-│   ├── KNOW_BrandPositioning.md
-│   ├── KNOW_MarketContext.md       ← Updated by Market Agent
-│   ├── KNOW_EditorialPillars.md
-│   ├── KNOW_TrendRadar.md
-│   ├── KNOW_ICP.md
-│   ├── KNOW_UserInsights.md        ← Updated by User Insights Agent
-│   ├── KNOW_RosaEquilibrista.md
-│   ├── KNOW_AnaMaeProtetora.md
-│   ├── KNOW_PedroAutonomo.md
-│   └── KNOW_CaioFilho.md
-│
-├── SKILL/                          ← Operational Skills & Guidelines
-│   ├── SKILL_Documentation.md      ← This file (master standard)
-│   ├── SKILL_CopyRules.md
-│   ├── SKILL_ComponentSystem.md
-│   ├── SKILL_ComponentIndex.md
-│   ├── SKILL_FigmaDelivery.md
-│   ├── SKILL_PhotoGuidelines.md
-│   ├── SKILL_VisualAgent.md
-│   ├── SKILL_AudiencePipeline.md
-│   ├── SKILL_CampaignSetup.md
-│   ├── skill-figma-tokens.json     ← Design tokens (skill utility)
-│   ├── skill-inject-photos.js      ← Photo injection (skill utility)
-│   └── skill-inject-photos-node.js ← Photo injection Node (skill utility)
-│
-├── AGENT/                          ← Agent Instructions (7 agents)
-│   ├── AGENT_Insights.md
-│   ├── AGENT_Market.md
-│   ├── AGENT_UserInsights.md
-│   ├── AGENT_Strategy.md
-│   ├── AGENT_Tactic.md
-│   ├── AGENT_Operational.md
-│   └── AGENT_Figma.md
-│
-├── AUT/                            ← Automation Code & Implementation
-│   ├── api/
-│   │   ├── auto-aut-orchestrate.js     ← Main automation entry point
-│   │   ├── auto-aut-approve.js         ← Approval handler
-│   │   ├── auto-aut-publish.js         ← Instagram publisher
-│   │   ├── auto-aut-setup-webhook.js   ← Webhook registration
-│   │   ├── agents/
-│   │   │   ├── agent-insights.js
-│   │   │   ├── agent-market.js
-│   │   │   ├── agent-user-insights.js
-│   │   │   ├── agent-strategy.js
-│   │   │   ├── agent-tactic.js
-│   │   │   ├── agent-operational.js
-│   │   │   └── agent-figma.js
-│   │   ├── lib/
-│   │   │   ├── state.js            ← State management
-│   │   │   ├── telegram-client.js  ← Telegram API wrapper
-│   │   │   ├── claude-client.js    ← Claude API wrapper
-│   │   │   └── orchestrator.js     ← Orchestration logic
-│   │   └── webhooks/
-│   │       └── hooks-telegram.js   ← Telegram webhook handler
-│   └── AUT_Automation.md
-│
-├── DOCS/                           ← Reference & Deployment Documentation
-│   ├── AGENTS.md                   ← Agent system overview
-│   ├── DEPLOYMENT.md               ← Deployment guide
-│   ├── DEPLOYMENT_STATUS.md        ← Current deployment status
-│   ├── ANALYSIS_ISSUES_AND_FIXES.md ← Issue analysis & solutions
-│   └── CLAUDE.md                   ← Claude/AI integration notes
-│
-├── POSTS/                          ← Generated content (managed by Figma Agent)
-│
-└── ROOT (Essential Only)
-    ├── package.json                ← NPM dependencies (required by Node.js)
-    ├── package-lock.json           ← NPM lock file (required by Node.js)
-    ├── vercel.json                 ← Vercel serverless configuration (required by Vercel)
-    ├── .env.example                ← Environment variables template
-    ├── .env.local                  ← Local environment variables
-    ├── .gitignore                  ← Git ignore rules
-    └── README.md                   ← Project overview
+padrinho-marketing/
+├── KNOW/                ← Base de conhecimento (brand, personas, market)
+├── SKILL/               ← Habilidades operacionais (guias, padrões)
+├── AGENT/               ← Instruções dos agentes (workflow)
+├── POSTS/               ← Conteúdo gerado (organizado por data + tema)
+├── DATA/                ← Dados de referência (Supabase, Insightfulpipe, Apify exports)
+├── DOCS/                ← Documentação geral (deployment, análises)
+├── .gitignore
+└── README.md
 ```
 
-**Root Folder Philosophy:**
-Only files **required by npm, Vercel, or Git** stay in the root folder:
-- `package.json` & `package-lock.json` — Node.js requirements
-- `vercel.json` — Vercel serverless/cron configuration
-- `.env.example`, `.env.local` — Environment variables
-- `.gitignore` — Git configuration
-- `README.md` — Project entry point
-
-All documentation, guides, and analysis are organized in semantic folders (`KNOW/`, `SKILL/`, `AGENT/`, `AUT/`, `DOCS/`).
-
 ---
 
-## 2. Mandatory Document Structure
+## 2. POSTS/ — Estrutura de Conteúdo em Cascata
 
-Every `.md` file must follow this structure:
+### Princípio
+Cada "post" é criado UMA VEZ em camadas: Texto → Imagem → Vídeo.
 
-### A. Frontmatter (YAML)
-Located at the very top of the file for metadata and indexing.
+Cada camada alimenta múltiplos canais sem duplicação desnecessária.
 
-```yaml
----
-title: "Document Title"
-version: "1.0"
-status: "Draft | Reviewed | Final"
-type: "Skill | Agent | Instructions | Reference"
-owner: "Padrinho Marketing Automation"
-parent_doc: "Link to parent folder/file"
-tags: [tag1, tag2, tag3]
----
+### Pasta Principal: `DDMMYYYY_Tema`
+
+**Naming:** `DDMMYYYY_TemaEmMinusculaSemEspacos`
+
+Exemplos:
+- `14062026_SobriedadeGlowUp`
+- `21062026_AalcolismoFeminino`
+- `28062026_MudancaDeEstilo`
+
+### Arquivos Dentro da Pasta
+
+#### 1. POST_Overview.md (Estratégia)
+**Criado por:** AGENT_Strategy  
+**Propósito:** Guia único e de referência para o post
+
+**Contém:**
+- Tema, pillar editorial, persona alvo
+- Perguntas que o post responde
+- Estrutura esperada para cada canal
+- Refs visuais (não imagens, apenas descrição)
+
+**NÃO contém:** Copies específicas por canal (essas ficam em arquivos separados)
+
+#### 2. Arquivos de Texto (Camada 1)
+**Criados por:** AGENT_Tactic  
+**Validados por:** AGENT_Operational
+
+| Arquivo | Criado Para | Comprimento | Formato |
+|---------|-------------|------------|----------|
+| `BLOG_DDMMYYYY_Tema.md` | Site + SEO | 1.5–2k palavras | Markdown |
+| `NEWS_DDMMYYYY_Tema.md` | Newsletter | 300–400 palavras | Markdown |
+| `instagram-captions.md` | Copy do carousel | ~100 chars/slide | Plain text, 1 caption por linha |
+| `podcast-script.md` | Pé na Trilha | 5–8 min | Markdown (bold/italic para ênfase) |
+| `whatsapp-text.md` | Community | 50–150 chars | Plain text |
+| `linkedin-copy.md` | Gabriel/Fabio | 150–300 chars | Plain text |
+
+**Regra:** Cada arquivo é independente (não referencia outros), mas reutiliza insights/estrutura proposta no POST_Overview.
+
+#### 3. Pasta `assets/images/` (Camada 2)
+**Criados por:** AGENT_Figma  
+**Dependência:** Existem APENAS após Camada 1 estar pronta
+
+| Arquivo | Fonte | Formato |
+|---------|-------|----------|
+| `instagram-carousel.png` | Figma (carousel node) | PNG (1080x1350) |
+| `whatsapp-image.png` | Figma (adaptação) | PNG (540x675 ou quadrado) |
+| `linkedin-image.png` | Figma (carousel OU novo) | PNG (1200x628) |
+
+**Nomeação:** `[canal]-[descrição].png` (minúsculas, sem espaços)
+
+#### 4. Pasta `assets/audio/` (Camada 3 — Futuro)
+- `podcast-recording.mp3` (gravação futura da pauta)
+
+#### 5. Pasta `assets/video/` (Camada 3 — Futuro)
+- `instagram-reels-script.md` (script criado agora)
+- `tiktok-script.md` (script criado agora)
+
+### Exemplo Real
+
+```
+POSTS/
+├── AGENDA_Padrinho.md
+│
+└── 14062026_SobriedadeGlowUp/
+    ├── POST_Overview.md
+    ├── BLOG_14062026_SobriedadeGlowUp.md
+    ├── NEWS_14062026_SobriedadeGlowUp.md
+    ├── instagram-captions.md
+    ├── podcast-script.md
+    ├── whatsapp-text.md
+    ├── linkedin-copy.md
+    └── assets/
+        └── images/
+            ├── instagram-carousel.png
+            ├── whatsapp-image.png
+            └── linkedin-image.png
 ```
 
-**Frontmatter Rules:**
-- `version`: Increment on significant changes (1.0 → 1.1 → 2.0)
-- `status`: Draft (in progress), Reviewed (peer check), Final (production)
-- `owner`: Always "Padrinho Marketing Automation" or specific agent name
-- `parent_doc`: Link to context (e.g., `../SKILL/SKILL_operational/`)
-- `tags`: 3-5 relevant tags for search/organization
+---
 
-### B. Title & Purpose Statement
-A 2-3 sentence paragraph immediately after Frontmatter, explaining:
-- What the document is
-- Who should read it
-- How it's used in the system
+## 3. Nomeação de Arquivos
 
-**Example:**
-> Este documento define as regras de redação para todas as captions e copy gerado pelo Operational Agent. Leia este arquivo se você está criando conteúdo para Instagram ou refinando copy já gerado. Usado pelo Operational Agent para validar saídas antes de enviar para aprovação Telegram.
+### Data
+**Formato:** `DDMMYYYY` (sempre 8 dígitos)
 
-### C. Hierarchical Content
-- **H1 (#)**: Only for the main title (can be omitted if using Frontmatter as title)
-- **H2 (##)**: Major sections (Objetivos, Diretrizes, Exemplos, Casos de Uso)
-- **H3 (###)**: Subsections and technical details
-- **H4 (####)**: Lists, code blocks, edge cases
-- Do **not** skip heading levels (H2 → H4 is invalid)
+Exemplo: `14062026` = 14 de junho de 2026
 
-### D. Visual Elements
-- **Tables**: Use for comparative data, lists of items with attributes, or reference lists
-- **Alerts/Blockquotes**: For highlights:
-  - `> [!NOTE]` — Additional context or clarification
-  - `> [!TIP]` — Best practice or recommendation
-  - `> [!IMPORTANT]` — Critical rules, restrictions, or risks
-  - `> [!WARNING]` — Caution about misuse or unintended consequences
-- **Code Blocks**: For technical examples, JSON structures, or prompt templates
-- **Lists**: Use bullet lists (unordered) for options; numbered lists (ordered) for steps
+### Tema
+**Formato:** CamelCase, sem espaços, descritivo
 
-### E. Traceability Footer
-At the very end of the document:
+✅ Correto:
+- `SobriedadeGlowUp`
+- `AlcolismoFeminino`
+- `MudancaDeEstilo`
+
+❌ Incorreto:
+- `sobriedade glow up`
+- `tema1`
+- `novo-post`
+
+### Tipo de Arquivo
+**Prefixo padrão:**
+- `BLOG_` — Blog post
+- `NEWS_` — Newsletter
+- `POST_` — Post overview/guia
+- Sem prefixo — Copy por canal (instagram-captions, podcast-script, etc)
+
+---
+
+## 4. AGENDA_Padrinho.md — Calendário Editorial
+
+**Localização:** `POSTS/AGENDA_Padrinho.md`  
+**Criado/Atualizado por:** AGENT_Tactic (consulta para próximos temas)  
+**Propósito:** Tabela de temas semanais para H2 2026
+
+### Formato
 
 ```markdown
----
+# AGENDA Padrinho — 2026 H2
 
-**Last Updated:** [YYYY-MM-DD]  
-**Maintained by:** [Agent Name or Team]  
-**References:**  
-- [Link to related skill]
-- [Link to parent document]
-- [Link to examples or references]
+| Data | Tema | Pillar | Persona | Status |
+|------|------|--------|---------|--------|
+| 14/06 | Sobriedade Glow Up | Empoderamento | Rosa | ✅ PRONTO |
+| 21/06 | Alcoolismo Feminino | Desmascaramento | Ana | 🔄 EM PROGRESSO |
+| 28/06 | Mudança de Estilo | Acolhimento | Pedro | ⏳ PLANEJADO |
+| 05/07 | TBD | TBD | TBD | ⏳ PLANEJADO |
 ```
 
----
-
-## 3. Content and Style Guidelines
-
-### Language
-- **Primary Language:** Portuguese (Brazilian variant — pt-BR)
-- **Use English only for:** Technical terms, API references, code, proper names that are English-only
-- **Example:** "O copy deve seguir as regras de CTA (call-to-action) definidas em SKILL_CopyRules.md"
-
-### Tone of Voice
-- **Professional**: Avoid slang or overly casual language
-- **Clear and Direct**: Use active voice; minimize jargon
-- **Agent-Readable**: Write as if an AI agent will read and follow these instructions
-- **Senior-Level**: Assume readers understand marketing and product context
-
-### Writing Rules
-- **No Placeholders**: Never deliver `[Fill in here]` or `Text here`. If information is missing, mark as **[Pending]** and notify the user
-- **Be Specific**: Instead of "Use good colors," write "Use colors from skill-figma-tokens.json palette, prioritizing Navy (#1A2540) and Cream (#F5F3F0)"
-- **Include Examples**: Every rule should have at least one example
-- **Cross-Reference**: Link to related skills, agents, or documents using markdown links
-
-### Formatting Best Practices
-
-**DO:**
-- Use **bold** for key terms being defined
-- Use *italic* for emphasis or when referencing file names
-- Use `code` for variable names, frame IDs, JSON keys, or technical identifiers
-- Use | tables | for structured information
-- Use numbered lists for sequential steps
-- Use bullet lists for options or non-sequential items
-
-**DON'T:**
-- All CAPS except for acronyms (LGPD, API, etc.)
-- Excessive punctuation or emojis (unless specifically required)
-- Inline links that obscure the URL — use descriptive link text
+**Colunas:**
+- **Data:** DDMMYYYY (formato brasileiro DD/MM)
+- **Tema:** Título descritivo
+- **Pillar:** Pilar editorial (KNOW_EditorialPillars.md)
+- **Persona:** Rosa | Ana | Pedro | Familiar
+- **Status:** ✅ PRONTO | 🔄 EM PROGRESSO | ⏳ PLANEJADO | 🚫 DESCARTADO
 
 ---
 
-## 4. Documentation by Content Type
+## 5. Convenções de Escrita
 
-### A. KNOW_ Documents (Knowledge & Context)
-Read-only files containing information agents ingest to understand business context.
+### Markdown (Blog, Newsletter, Scripts)
+- **Títulos:** `# H1` para título do post, `## H2` para seções
+- **Ênfase:** `**bold**` para palavras-chave, `*itálico*` para suavidade
+- **Listas:** Use `-` para unordered, números para ordered
+- **Links:** `[texto](url)` (absolutos sempre)
+- **Quebras:** Use `---` para separadores visuais
 
-**Purpose:** Brand identity, market conditions, audience profiles, editorial strategy
-**Location:** `/KNOW/`
+### Plain Text (Instagram, WhatsApp, LinkedIn)
+- **Sem markdown** — apenas texto e emojis
+- **Máximo de linhas:** 3-4 (mobile-first)
+- **CTA último:** Sempre termina com call-to-action ou emoji
 
-**Mandatory Sections:**
-1. Frontmatter + Purpose Statement (describe what agent reads this and why)
-2. Overview / Context
-3. Core Concepts or Definitions
-4. Data (if applicable) — tables, metrics, personas
-5. Selection Guidelines (if applicable)
-6. Footer with references
-
-**Example Structure:**
-```markdown
----
-title: "Brand Positioning — Padrinho"
-version: "1.0"
-status: "Final"
-type: "Knowledge"
-owner: "Padrinho Marketing Automation"
-parent_doc: "KNOW/"
-tags: [brand, positioning, messaging, values]
----
-
-# Brand Positioning — Padrinho
-
-O Strategy Agent lê este arquivo para entender posicionamento da marca...
-
-## Vision
-
-## Core Values
+### Formato de Arquivo
+- **Encoding:** UTF-8 (sempre)
+- **Line breaks:** LF (não CRLF)
+- **Final de arquivo:** Newline ao final
 
 ---
 
-**Last Updated:** 2026-05-07  
-**Read by:** Strategy, Tactic, Operational Agents  
-**References:**  
-- KNOW/MarketContext.md
+## 6. Fluxo de Criação vs Arquivo
+
+### Passo a Passo
+
+```
+1. AGENT_Strategy cria POST_Overview.md
+   ↓
+2. AGENT_Tactic cria 6 arquivos de TEXTO
+   ↓
+3. AGENT_Operational valida + finaliza (QA)
+   ↓
+4. AGENT_Figma cria IMAGENS (referencia POST_Overview + instagram-captions.md)
+   ↓
+5. Publicação manual em calendário
 ```
 
-### B. SKILL_ Documents (Operational Skills)
-Step-by-step, executable guidelines with checklists and validation criteria.
+### Checklist por Etapa
 
-**Purpose:** How to execute specific tasks (write copy, select components, source photos)
-**Location:** `/SKILL/`
+**Step 1 — Strategy:**
+- [ ] POST_Overview.md criado
+- [ ] Persona clara
+- [ ] Pillar definido
 
-**Mandatory Sections:**
-1. Frontmatter + Purpose Statement (describe what agent uses this for)
-2. Overview / Context
-3. Core Rules or Concepts
-4. Step-by-Step Process or Checklist
-5. Examples (at least one per major rule)
-6. Edge Cases or Exceptions
-7. Validation Checklist
-8. Footer with references
+**Step 2 — Tactic:**
+- [ ] 6 arquivos de texto criados (sem edição final)
+- [ ] Estrutura segue POST_Overview
+- [ ] Tons variam por canal
 
-**Example Structure:**
-```markdown
----
-title: "Copy Rules — Padrinho"
-version: "1.0"
-status: "Final"
-type: "Skill"
-owner: "Padrinho Marketing Automation"
-parent_doc: "SKILL/"
-tags: [copy, writing, captions, cta, guidelines]
----
+**Step 3 — Operational:**
+- [ ] Cada arquivo tem gramática OK
+- [ ] CTAs claros
+- [ ] Formatação consistente
+- [ ] Arquivos prontos em POSTS/DDMMYYYY_Tema/
 
-# Copy Rules — Padrinho
+**Step 4 — Figma:**
+- [ ] Imagens criadas em Figma
+- [ ] Captions/texto alinhado com instagram-captions.md
+- [ ] Imagens exportadas para assets/images/
+- [ ] Refs visuais no POST_Overview confirmadas
 
-O Operational Agent usa este arquivo para estruturar e validar captions...
-
-## Estrutura Base de Caption
-
-### 1. Gancho (primeiros 125 chars)
-- [ ] Hook emocional?
-- [ ] Relevante ao pilar?
-
-## Exemplos por Pilar Editorial
-
-## Regras de Hashtag
-
-## Validation Checklist
+**Step 5 — Publicação:**
+- [ ] Conteúdo agendado/publicado conforme AGENDA
+- [ ] Links ao blog/newsletter funcionam
+- [ ] Imagens aparecem nos stories do Telegram (QA final)
 
 ---
 
-**Last Updated:** 2026-05-07  
-**Used by:** Operational Agent  
-**References:**  
-- KNOW/EditorialPillars.md
-- KNOW/BrandPositioning.md
-```
+## 7. Organização por Tipo de Conteúdo
 
-### C. AGENT_ Documents (Agent Instructions)
-Agent execution instructions defining inputs, outputs, and orchestration.
+### Por Canal (Sem Duplicação)
 
-**Purpose:** How agents run (step-by-step process, data flow, approval gates)
-**Location:** `/AGENT/`
+**Blog:**
+- Arquivo: `BLOG_DDMMYYYY_Tema.md`
+- Comprimento: Completo (1.5–2k palavras)
+- SEO: H1, H2, palavras-chave, links internos
+- CTA: Botão ou parágrafo final
 
-**Mandatory Sections:**
-1. Frontmatter + Purpose Statement
-2. Agent Purpose & Responsibilities
-3. Trigger / Schedule (when it runs)
-4. Input Requirements (files, data, triggers)
-5. Step-by-Step Process
-6. Output Specification (exact JSON structure)
-7. Approval Gates (if applicable)
-8. Error Handling
-9. Footer with references
+**Newsletter:**
+- Arquivo: `NEWS_DDMMYYYY_Tema.md`
+- Comprimento: ~300–400 palavras
+- Tom: Pessoal, quente, menos formal
+- CTA: Convite para visitar blog OU call-to-action direto
 
-**Example Structure:**
-```markdown
----
-title: "Strategy Agent — Automation"
-version: "1.0"
-status: "Final"
-type: "Automation"
-owner: "Padrinho Marketing Automation"
-parent_doc: "AGENT/"
-tags: [agent, strategy, orchestration, scheduling]
----
+**Instagram:**
+- Arquivo: `instagram-captions.md` (copy)
+- Imagem: `assets/images/instagram-carousel.png`
+- Estrutura: 3-5 slides (cada um tem 1 caption)
+- CTA: Adesivo interativo OU "link na bio"
 
-# Strategy Agent — Automation
+**Podcast:**
+- Arquivo: `podcast-script.md`
+- Duração: 5–8 min (read time ~ 1.200–1.600 palavras)
+- Estrutura: Intro + 2-3 pontos + Closing
+- Tom: Conversacional, direto
 
-## Purpose
-Generate strategic brief from insights + market context + brand positioning.
+**WhatsApp:**
+- Arquivo: `whatsapp-text.md`
+- Comprimento: 50–150 caracteres
+- Tom: Ultra-casual, enquete/pergunta
+- Imagem: `assets/images/whatsapp-image.png` (opcional)
 
-## Schedule
-Cron: 0 11 * * * (11h UTC = 8h BRT)
-
-## Input Requirements
-- KNOW/BrandPositioning.md
-- KNOW/MarketContext.md
-- KNOW/EditorialPillars.md
-
-## Output Specification
-
-```json
-{
-  "date": "2026-05-07",
-  "objectives": [...],
-  "telegram_message_id": 12345
-}
-```
-
-## Step-by-Step Process
-
-1. Read KNOW_ files
-2. Validate previous phase
-3. Call Claude with system prompt
-4. Validate output
-5. Save to state
-6. Send Telegram preview
+**LinkedIn:**
+- Arquivo: `linkedin-copy.md`
+- Autor: Gabriel OU Fabio (profiles pessoais)
+- Comprimento: 150–300 caracteres
+- Tom: Profissional/pessoal (conforme perfil)
+- Imagem: `assets/images/linkedin-image.png` (reutiliza carousel)
 
 ---
 
-**Last Updated:** 2026-05-07  
-**Maintained by:** Orchestrator  
-**References:**  
-- AGENTS.md (architecture)
-- KNOW/BrandPositioning.md
-```
+## 8. Exemplo de POST_Overview.md Completo
+
+Ver `SKILL_ContentCreationWorkflow.md` → Seção 4 (Template).
 
 ---
 
-## 5. Quality Checklist
+## 9. Erros Comuns a Evitar
 
-Before finalizing **any** document, validate:
+❌ **Criar múltiplos arquivos com o mesmo conteúdo**
+- Se blog e newsletter são iguais, usa o mesmo (ou referencia via link)
 
-- [ ] **Frontmatter**: YAML block present with all required fields?
-- [ ] **Title Hierarchy**: No skipped levels (H2 → H4)?
-- [ ] **No Placeholders**: All `[Fill in]` or `Text here` removed or marked `[Pending]`?
-- [ ] **Examples**: Every major rule/concept has at least one concrete example?
-- [ ] **Cross-References**: Related skills or agents linked where relevant?
-- [ ] **Language**: Portuguese (pt-BR) used; English only for technical terms?
-- [ ] **Footer**: Updated with date, maintainer, and references?
-- [ ] **Clarity**: Would an AI agent understand these instructions clearly?
-- [ ] **Formatting**: Tables used for structured data; alerts for highlights?
+❌ **Colocar imagens no markdown do Blog**
+- Conteúdo é responsabilidade do Operational
+- Imagens são responsabilidade do Figma
 
----
+❌ **Nomes de pasta com espaços ou caracteres especiais**
+- Use sempre CamelCase: `14062026_SobriedadeGlowUp`
 
-## 6. Maintenance & Versioning
+❌ **Instagram captions em um arquivo gigante**
+- 1 caption por linha, separadas claramente
 
-### When to Update Version
-- **1.0 → 1.1**: Minor clarifications, typo fixes, added examples
-- **1.0 → 2.0**: Significant process change, new rules, breaking changes to agent behavior
-
-### When to Update Status
-- Draft → Reviewed: After peer review or agent testing
-- Reviewed → Final: After approval and confirmed use in production
-- Final → Reviewed: If errors or changes discovered
-
-### Update Process
-1. Update `version` in Frontmatter
-2. Update `status` if applicable
-3. Update `Last Updated` in footer
-4. Commit to Git with clear message: `docs: update [filename] to v1.1`
+❌ **Esquecer de validação antes de visual**
+- Operational precisa confirmar texto antes de Figma começar
 
 ---
 
-> [!IMPORTANT]
-> **This skill must be read by any AI agent or human before creating or modifying documentation in this repository.** Consistent documentation enables reliable agent execution and human collaboration.
+## 10. Futuro — Expansão
+
+### Quando Adicionar Vídeo
+1. Criar `assets/video/instagram-reels-script.md`
+2. Criar `assets/video/tiktok-script.md`
+3. (Futuramente) Gravar vídeos conforme scripts
+
+### Quando Integrar Dados
+1. Referenciar dados de Supabase em KNOW_UserInsights.md
+2. Usar Clarity insights em AGENT_UserInsights para perguntas reais
+3. Usar Apify data (competitor posts) em KNOW_TrendRadar.md
 
 ---
 
-**Last Updated:** 2026-05-07  
-**Maintained by:** Padrinho Marketing Automation  
-**References:**  
-- [AIX Researcher Documentation Skill](https://github.com/your-org/aix-researcher/foundations/skills/SKILL_Documentation.md)
-- [./README.md](./README.md)
-- [AGENTS.md](AGENTS.md)
+**Última atualização:** junho 2026  
+**Responsável:** Bill (Padrinhotech)  
+**Consultado por:** Todos os Agents + Humans
