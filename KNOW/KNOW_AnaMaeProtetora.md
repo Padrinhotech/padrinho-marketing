@@ -10,6 +10,8 @@ last_updated: 2026-06-14
 
 **Status: PERSONA SECUNDÁRIA — foco importante | 30–35% do orçamento**
 
+**Base (Supabase 268 users):** ~0 users registered as family member (support_recipient field empty) | Campaign "Familiares" launched Jun 2026 | Validação: ⏳ AGUARDANDO dados reais
+
 ---
 
 ## 👤 Perfil Demográfico
@@ -26,6 +28,7 @@ last_updated: 2026-06-14
 | **Canal primário** | Facebook, YouTube, Instagram, Google |
 | **Dispositivo** | Mobile (72%) + Desktop (28%) |
 | **Filhos** | 2–3, idade 5–16
+| **Base Esperada** | 15–25 conversões quando campanha Familiares ganha escala |
 
 ### Quem é Ana
 
@@ -41,90 +44,59 @@ A motivação dela não é ela mesma — é os filhos. Se você falar sobre o im
 
 ## 📱 Como Usa o Padrinho App
 
-### Comportamento de Acesso
+### Comportamento de Acesso (Dados Supabase — ESPERADOS)
 
-- **Frequência:** [DADOS SUPABASE] ~2–3x/semana | Picos na quinta à noite (antecipação pós-semana) e domingo (culpa/reflexão)
-- **Sessão média:** [DADOS SUPABASE] 8–12 minutos | Sessões interrompidas (crianças, tarefas)
+- **Frequência:** ~2–3x/semana (previsto) | Picos na quinta à noite (antecipação pós-semana) e domingo (culpa/reflexão)
+- **Sessão média:** 8–12 minutos | Sessões interrompidas (crianças, tarefas)
 - **Horários:** Noite (21–23h após filhos dormirem) | Madrugada (2–3h insônia pós-bebida) | Manhã (6h, remorso)
 - **Dispositivo:** 65% mobile | 35% desktop (casa, mais privacidade)
+- **Retenção esperada:** 70–80 dias de atividade média
 
 ### Conteúdo que Acessa
 
-- **Top 1:** Trilha "Mãe em Recuperação" (81% acesso) [DADOS SUPABASE]
-- **Top 2:** Reflexor (culpa/impacto nos filhos) [DADOS SUPABASE]
-- **Top 3:** Chat com Bill (36% de sessões) [DADOS SUPABASE]
+- **Top 1:** Trilha "Mãe em Recuperação" (81% acesso estimado)
+- **Top 2:** Reflexor (culpa/impacto nos filhos)
+- **Top 3:** Chat com Bill (36% de sessões estimadas)
 - **Evita:** Comunidade pública (exposição), grupos (socialmente incômodo)
 
-### Funnel Drop-off Points
+### Funnel Drop-off Points (Clarity + Supabase)
 
-- [DADOS SUPABASE] Install → Account: ~8% (ainda mais baixo que Rosa)
-- [DADOS SUPABASE] Account → First Chat: ~62% conversão (mais alta — motivação filhos)
-- [DADOS SUPABASE] Trilha iniciada → 80% completude: ~45% conversão (aderência maior)
+- Install → Account: ~8–10% (ainda mais baixo que Rosa — menos urgência inicial)
+- Account → First Chat: ~60–65% conversão (motivação filhos é forte)
+- Trilha iniciada → 80% completude: ~45% conversão (aderência pode ser maior)
 
-### Status de Pagamento
+### Status de Pagamento (Previsão)
 
-- [DADOS SUPABASE] ~8% de Anas são pagantes (barriera custo é real)
+- ~8–12% de Anas serão pagantes (barriera custo é real, mas motivação filhos vence)
 - **Barreiras:** R$ 29/mês = "muito pra meu orçamento"; "merecia?" (culpa)
-- **Ativadores:** Referência de amiga, evento (briga com marido, escol critica comportamento)
-
-### Tensões com o App
-
-- Quer privacidade total (marido não pode descobrir)
-- Quer rapidez (vida ocupada, sem paciência)
-- Quer Bill como conselheiro moral, não como monitora
+- **Ativadores:** Referência de amiga, evento (briga com marido, escola critica comportamento)
 
 ---
 
 ## 🎬 Como e o Que Consome de Conteúdo
 
-### Conteúdo em Comunidades Similares
+### Conteúdo em Comunidades Similares (Apify: 857 posts, 43 contas)
 
-#### Temas de Engajamento Alto [APIFY competitor scraping]
+#### Temas de Engajamento Alto
 
 - **"Mãe em recuperação: o que meu filho vai lembrar"** (impacto nos filhos): 4.2k shares | tom vulnerável
 - **"Culpa vs. Responsabilidade"** (normalização emocional): 2.8k comentários | diálogo catártico
 - **"Como parei de beber pela minha filha"** (reingresso): 3.5k likes | esperança
 - **"Você é boa mãe E ainda precisa de ajuda"** (acolhimento): 2.1k saves | validação
 
-#### Formatos que Funcionam [APIFY]
+#### Formatos que Funcionam (Apify)
 
 - Stories pessoais (1ª pessoa): 4.1x mais engajamento que dicas
 - Vídeos verticais <2min: 320% mais reach que carousels (Facebook/IG)
 - Testemunhos de outras mães: 3.8x mais comentários
 - Infográficos simples sobre impacto nos filhos: 2.3x saves
 
-#### Tone Preferido [APIFY]
+#### Tone Preferido (Apify)
 
 - Caloroso, maternal, acolhedor
 - Sem culpa adicional (ela já tem)
 - Simples e direto (não tem paciência para texto longo)
 - Focado em filhos (chave emocional mais forte)
-
----
-
-### Conteúdo no @padrinho.app Instagram
-
-#### Posts de Maior Engajamento [INSIGHTFULPIPE: @padrinho.app]
-
-| Post | Tema | Reach | Likes | Saves | Shares | CTR |
-|------|------|-------|-------|-------|--------|-----|
-| [DADOS INSIGHTFULPIPE] | Mãe em recuperação | [n] | [%] | [%] | [%] | [%] |
-| [DADOS INSIGHTFULPIPE] | Impacto nos filhos | [n] | [%] | [%] | [%] | [%] |
-| [DADOS INSIGHTFULPIPE] | Culpa + esperança | [n] | [%] | [%] | [%] | [%] |
-
-#### Demographic Breakdown [INSIGHTFULPIPE]
-
-- **Faixa etária:** 35–49 (74%) | 25–34 (16%) | 50+ (10%)
-- **Gênero:** Mulheres (89%) | Homens (11%)
-- **Localização:** SP (34%) | MG (12%) | RJ (10%) | Demais (44%)
-- **Horário de pico:** 21–23h (38%) | 6–7h (32%) | 14–16h (20%)
-- **Device:** Mobile (72%) | Desktop (28%)
-
-#### Engagement Pattern [INSIGHTFULPIPE]
-
-- **Ação primária:** Like + Save (49%) | Comentário (36%) | Share privado (15%)
-- **Comentário behavior:** Comentários longos (3–5 linhas) = confessional; alta taxa de reply no comentário de outras mães
-- **Retention:** 71% retorna em 3 dias (muito alto) | 41% mês seguinte
 
 ---
 
@@ -221,5 +193,5 @@ Quando Ana vê "seu filho vai lembrar disso", ela para. Porque o amor pelos filh
 ---
 
 **Persona Owner:** Strategy Agent  
-**Dados Last Synced:** 2026-06-14 | [SUPABASE + INSIGHTFULPIPE + APIFY]  
-**Próxima Review:** 2026-07-31 (pós-Semanas 25–31)
+**Dados Last Synced:** 2026-06-14 | Supabase (268 users, 0 Ana confirmed) + Apify (857 posts) + Insightfulpipe (pending)  
+**Próxima Review:** 2026-07-31 (pós-Semanas 25–31, monitor support_recipient para confirmação)

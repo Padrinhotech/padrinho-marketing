@@ -10,6 +10,8 @@ last_updated: 2026-06-14
 
 **Status: PERSONA CRESCENTE — foco novo H2 2026 | 10–15% do orçamento (crescendo)**
 
+**Base (Supabase 268 users):** ~0 users registered as family supporter (support_recipient field empty) | Campaign "Familiares" launched Jun 2026 | Validação: ⏳ AGUARDANDO dados reais
+
 > Reformulação 2026 H2: Caio muda de "O Filho Ressentido" (desprioritizado) para "O Familiar que Apoia" (ativo). Familiares são público-alvo estratégico com campanhas dedicadas (Familiares via Meta).
 
 ---
@@ -28,6 +30,7 @@ last_updated: 2026-06-14
 | **Canal primário** | Instagram, WhatsApp, Telegram, Google |
 | **Dispositivo** | Mobile-first (95%) |
 | **Relação** | Filho/filha (45%), cônjuge (30%), irmão/irmã (15%), outro (10%)
+| **Base Esperada** | 10–20 conversões quando campanha Familiares ganha escala |
 
 ### Quem é Caio
 
@@ -45,92 +48,59 @@ Ele está buscando: **informação, validação, comunidade, e esperança**.
 
 ## 📱 Como Usa o Padrinho App
 
-### Comportamento de Acesso
+### Comportamento de Acesso (Dados Supabase — ESPERADOS)
 
-- **Frequência:** [DADOS SUPABASE] ~1–2x/semana (menos que personas dependentes)
-- **Sessão média:** [DADOS SUPABASE] 10–15 minutos
+- **Frequência:** ~1–2x/semana (menos que personas dependentes)
+- **Sessão média:** 10–15 minutos
 - **Horários:** Noite (19–22h), quando tem privacidade para explorar conteúdo
 - **Dispositivo:** 95% mobile | raramente desktop
+- **Retenção esperada:** 55–65 dias de atividade média
 
 ### Conteúdo que Acessa
 
-- **Top 1:** Seção "Para Familiares" (85% acesso, se existe) [DADOS SUPABASE]
-- **Top 2:** Dados/educação sobre álcool (curiosidade + entendimento) [DADOS SUPABASE]
-- **Top 3:** Histórias de recuperação (esperança) [DADOS SUPABASE]
+- **Top 1:** Seção "Para Familiares" (85% acesso esperado)
+- **Top 2:** Dados/educação sobre álcool (curiosidade + entendimento)
+- **Top 3:** Histórias de recuperação (esperança)
 - **Raramente:** Chat com Bill (não é ele em recuperação)
 
 ### Funnel Drop-off Points
 
-- [DADOS SUPABASE] Install → Account: ~18% (curiosidade, não urgência)
-- [DADOS SUPABASE] Account → Engajamento: ~42% conversão (menos urgência = menor aderência)
+- Install → Account: ~15–20% (curiosidade, não urgência)
+- Account → Engajamento: ~40–45% conversão (menos urgência = menor aderência)
 - **Activation metric:** Compartilhamento com familiar (convite/sugestão)
 
-### Status de Pagamento
+### Status de Pagamento (Previsão)
 
-- [DADOS SUPABASE] ~2% de Caios são pagantes (modelo não é "pague para usar", é "compartilhe para engajar")
+- ~2–3% de Caios serão pagantes (modelo não é "pague para usar", é "compartilhe para engajar")
 - **Papel:** Amplificador, não usuário primário
 - **Engagement Loop:** Conteúdo gratuito → compartilha → familiar vê → familiar tenta → pagamento ocorre depois
-
-### Tensões com o App
-
-- Quer entender melhor (educação)
-- Quer saber como ajudar (tático)
-- Quer não se culpar (validação)
-- Quer compartilhar discretamente (privacidade)
 
 ---
 
 ## 🎬 Como e o Que Consome de Conteúdo
 
-### Conteúdo em Comunidades Similares
+### Conteúdo em Comunidades Similares (Apify: 857 posts, 43 contas)
 
-#### Temas de Engajamento Alto [APIFY competitor scraping]
+#### Temas de Engajamento Alto
 
 - **"O que NOT fazer ao apoiar alguém em recuperação"** (tático): 2.9k shares | prático
 - **"Codependência: reconhecer e sair do ciclo"** (educação): 3.1k comentários | insight profundo
 - **"Meu pai é alcoólatra: como conviver"** (normalização): 3.5k likes | identificação
 - **"Histórias de familiares que viram recuperação acontecer"** (esperança): 2.6k shares | motivação
 
-#### Formatos que Funcionam [APIFY]
+#### Formatos que Funcionam (Apify)
 
 - Stories pessoais (familiar perspectiva): 3.9x mais engajamento
 - Guias práticos ("como apoiar"): 3.2x saves
 - Dados sobre codependência: 2.5x comentários
 - Testemunhos de outro familiar: 4.2x identificação
 
-#### Tone Preferido [APIFY]
+#### Tone Preferido (Apify)
 
 - Educativo, não moralizador
 - Esperançoso (há saída)
 - Prático ("aqui está o que fazer")
 - Validador ("sua culpa não é sua responsabilidade")
-
----
-
-### Conteúdo no @padrinho.app Instagram
-
-#### Posts de Maior Engajamento [INSIGHTFULPIPE: @padrinho.app]
-
-| Post | Tema | Reach | Likes | Saves | Shares | CTR |
-|------|------|-------|-------|-------|--------|-----|
-| [DADOS INSIGHTFULPIPE] | Apoiar sem se perder | [n] | [%] | [%] | [%] | [%] |
-| [DADOS INSIGHTFULPIPE] | Codependência | [n] | [%] | [%] | [%] | [%] |
-| [DADOS INSIGHTFULPIPE] | Histórias de família | [n] | [%] | [%] | [%] | [%] |
-
-#### Demographic Breakdown [INSIGHTFULPIPE]
-
-- **Faixa etária:** 18–35 (68%) | 35–50 (28%) | 50+ (4%)
-- **Gênero:** Mulheres (64%) | Homens (36%)
-- **Localização:** SP (32%) | RJ (15%) | MG (11%) | Demais (42%)
-- **Horário de pico:** 19–22h (52%) | 6–8h (24%) | 14–17h (18%)
-- **Device:** Mobile (95%) | Desktop (5%)
-
-#### Engagement Pattern [INSIGHTFULPIPE]
-
-- **Ação primária:** Like (46%) | Save (32%) | Share (22%)
-- **Share behavior:** Compartilhamento privado com familiar (DM/WhatsApp) = 78% das shares
-- **Comentário:** Menos comentário público (envergonho), mas DMs aos posts são altos
-- **Retention:** 53% retorna em 3 dias | 29% mês seguinte
 
 ---
 
@@ -228,7 +198,7 @@ Quando Caio entende codependência (não é culpa dele) E aprende táticas (como
 ---
 
 **Persona Owner:** Strategy Agent  
-**Dados Last Synced:** 2026-06-14 | [SUPABASE + INSIGHTFULPIPE + APIFY]  
+**Dados Last Synced:** 2026-06-14 | Supabase (268 users, 0 Caio confirmed) + Apify (857 posts) + Insightfulpipe (pending)  
 **Próxima Review:** 2026-07-31 (pós-Semanas 25–31 + Familiares campaign performance)
 
 ---
