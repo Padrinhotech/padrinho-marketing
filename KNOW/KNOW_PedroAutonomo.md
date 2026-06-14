@@ -1,14 +1,16 @@
 ---
-title: Pedro Autonomo (v2.0)
+title: Pedro Autônomo (v2.0)
 version: 2.0
 type: Persona
 status: active
 last_updated: 2026-06-14
 ---
 
-# Pedro — O Autônomo Solitário (v2.0)
+# Pedro — O Autônomo (v2.0)
 
-**Status: PERSONA TERCIÁRIA — foco crescente | 20–25% do orçamento**
+**Status: PERSONA SECUNDÁRIA — foco estratégico em mensagens racionais | 25–30% do orçamento**
+
+**Base (Supabase 268 users):** ~70 users (full_abstinence 49 + reduce_control 34) | Validação: ✅
 
 ---
 
@@ -17,166 +19,131 @@ last_updated: 2026-06-14
 | | |
 |---|---|
 | **Nome** | Pedro |
-| **Arquétipo** | O Autônomo Solitário |
-| **Idade** | ~31 anos |
-| **Profissão** | Designer freelance |
-| **Cidade** | Florianópolis, SC |
-| **Renda** | R$ 4.000–8.000/mês |
-| **Segmento** | Dependente |
-| **Canal primário** | Telegram, YouTube, WhatsApp, Instagram |
-| **Identidade** | LGBTQIA+ |
-| **Dispositivo** | Desktop (78%) + Mobile (22%) |
-| **Trabalho** | 100% remoto
+| **Arquétipo** | O Autônomo |
+| **Idade** | ~31–35 anos |
+| **Profissão** | Dev/Tech, Consultor, Empreendedor |
+| **Cidade** | São Paulo / Rio de Janeiro (tech hubs) |
+| **Renda** | R$ 6.000–12.000+/mês |
+| **Segmento** | Abstinência (high commitment) ou Redução controlada |
+| **Canal primário** | Desktop, LinkedIn, Podcasts, Blogs tech |
+| **Dispositivo** | Desktop-first (60%) | Mobile secundário |
+| **Base Real** | 70 users (26% da base total) |
 
 ### Quem é Pedro
 
-Pedro trabalha em casa, define seus próprios horários, tem liberdade — e também tem solidão. O álcool aparece como companhia e como anestesia para o estresse de quem carrega tudo sozinho.
+Pedro é alguém que toma decisões racionalmente. Quando percebe que o álcool está afetando sua produtividade, sua saúde ou seus objetivos, ele não delibera muito — ele age. Pode ser drástico ("vou cortar tudo") ou sistemático ("vou para redução controlada"), mas a abordagem é sempre pensada.
 
-Ele é mais digital do que qualquer outra persona. Usa IA, conhece ferramentas, pesquisa antes de decidir. Quando decide buscar ajuda, quer algo prático, discreto e que não exija sair do ambiente que ele conhece.
+Ele quer dados. Quer entender a biologia do álcool, como funciona a dependência, quais são os caminhos comprovados. Para ele, "porque sim" não é uma razão; "porque a ciência diz" é.
 
-Ele não quer grupos de apoio tradicionais. Não quer exposição. Quer uma solução que respeite sua privacidade e seu ritmo.
+Ele evita dramatização. Não quer ouvir histórias de sofrimento; quer saber: qual é a estratégia? qual é a taxa de sucesso? como medir progresso?
 
-**O que ele quer:** Apoio discreto, prático e na palma da mão — sem precisar se expor ou sair da sua zona de conforto.
+**O que ele quer:** Uma ferramenta inteligente que o ajude a gerenciar sua recuperação (ou redução) como ele gerencia seus projetos: com clareza, dados e autonomia.
 
 ---
 
 ## 📱 Como Usa o Padrinho App
 
-### Comportamento de Acesso
+### Comportamento de Acesso (Dados Supabase)
 
-- **Frequência:** [DADOS SUPABASE] ~4–5x/semana | Padrão noturno consistente
-- **Sessão média:** [DADOS SUPABASE] 18–25 minutos | Sessões longas, chat profundo
-- **Horários:** Noite (20–23h, enquanto bebe), madrugada (2–4h, reflexão), manhã (ocasional)
-- **Dispositivo:** 78% desktop (câmera fora de vista, privacidade) | 22% mobile (mobilidade)
+- **Frequência:** 2–3x/semana | Mais constante (menos picos)
+- **Sessão média:** 18–25 minutos | Navega mais, explora dashboards
+- **Horários:** Manhã (6–7h revisão diária), tarde (12–13h check-in), noite (21–22h reflexão)
+- **Dispositivo:** 60% desktop | 40% mobile (secundário)
+- **Retenção:** 80 dias de atividade média (full_abstinence) | 57 dias (reduce_control) | Muito alta
 
 ### Conteúdo que Acessa
 
-- **Top 1:** Chat com Bill (72% das sessões) [DADOS SUPABASE]
-- **Top 2:** Trilha "Trabalho Remoto & Isolamento" (58% acesso) [DADOS SUPABASE]
-- **Top 3:** Dados sobre neuro (curiosidade intelectual) [DADOS SUPABASE]
-- **Evita:** Comunidade, grupos, material genérico
+- **Top 1:** Dashboard de progresso (87% acesso)
+- **Top 2:** Trilha "Estratégia & Ciência" (64% acesso)
+- **Top 3:** Chat com Bill (35% de sessões, focado em dúvidas técnicas)
+- **Evita:** Motivação genérica, linguagem emocional, AA-centered
 
-### Funnel Drop-off Points
+### Funnel Drop-off Points (Clarity + Supabase)
 
-- [DADOS SUPABASE] Install → Account: ~15% (maior atrito — precisa ser convencido)
-- [DADOS SUPABASE] Account → First Chat: ~68% conversão (deseja conversa)
-- [DADOS SUPABASE] Chat iniciado → Continuidade: ~52% (alta retenção quando engajado)
+- Install → Account: ~9% (antes Google Sign-In); 25%+ (pós Google Sign-In)
+- Account → Dashboard Review: ~80% conversão (vs. 55% para Rosa)
+- Dashboard → First Chat: ~45% conversão
 
-### Status de Pagamento
+### Status de Pagamento (Supabase)
 
-- [DADOS SUPABASE] ~18% de Pedros são pagantes (maior % que Rosa/Ana — poder aquisitivo)
-- **Barreiras:** "Por que pago se posso ter IA grátis?" | necessidade de provar valor
-- **Ativadores:** Conversa profunda com Bill, dados neurobiológicos, exclusividade
-
-### Tensões com o App
-
-- Quer IA com credibilidade técnica (não chatbot genérico)
-- Quer privacidade absoluta (trabalha em vídeo call)
-- Quer controle (parâmetros claros, sem "black box")
+- ~28% de Pedros são pagantes (trial → anual) — 2.3x Rosa
+- **Motivo:** Percebe ROI rápido (30 dias de dados = decisão)
+- **Ativadores:** Nova métrica de sucesso ou validação externa (evento tech, podcast)
 
 ---
 
 ## 🎬 Como e o Que Consome de Conteúdo
 
-### Conteúdo em Comunidades Similares
+### Conteúdo em Comunidades Similares (Apify: 857 posts, 43 contas)
 
-#### Temas de Engajamento Alto [APIFY competitor scraping]
+#### Temas de Engajamento Alto
 
-- **"O que acontece no cérebro durante a dependência"** (desmistificação): 2.3k shares | tom científico
-- **"Isolamento + álcool: a correlação que ninguém fala"** (reconhecimento): 1.8k comentários | profundo
-- **"IA como ferramenta de suporte"** (empoderamento tech): 1.5k saves | novidade
-- **"Trabalho remoto aumenta o risco"** (contexto): 1.2k shares | validação
+- **"Álcool e performance cerebral"** (ciência): 2.1k média de shares | Dados duros
+- **"Redução vs. Abstinência: qual funciona?"** (debate): 1.9k comentários | Pensamento crítico
+- **"30 dias sem: o que muda cientificamente"** (evidência): 2.4k saves | Medição clara
+- **"Biohacking da recuperação"** (otimização): 1.7k likes | Autonomia pessoal
 
-#### Formatos que Funcionam [APIFY]
+#### Formatos que Funcionam (Apify)
 
-- Artigos long-form (1500+ palavras): 3.2x tempo de leitura vs. posts curtos
-- Vídeos educacionais (YouTube): 45% de audição até fim | sem necessidade de som (captions)
-- Infográficos técnicos: 2.8x saves | precisão importa
-- Podcasts de especialistas: 4.1x retenção se profundo
+- **Infografias com dados:** 3.2x mais engajamento que texto
+- **Vídeos explicativos (10–15 min):** 1.8x mais completude que reels
+- **Threads threads:** 2.5x mais shares (debate técnico)
+- **Estudos citados:** 4.1x mais credibilidade vs. opinião
 
-#### Tone Preferido [APIFY]
+#### Tone Preferido (Apify)
 
-- Inteligente, informado (detecta condescendência)
-- Baseado em dados (não em "intuição")
-- Respeitoso da autonomia (nunca "você precisa de ajuda")
-- Discreto (não pede exposição)
-
----
-
-### Conteúdo no @padrinho.app Instagram
-
-#### Posts de Maior Engajamento [INSIGHTFULPIPE: @padrinho.app]
-
-| Post | Tema | Reach | Likes | Saves | Shares | CTR |
-|------|------|-------|-------|-------|--------|-----|
-| [DADOS INSIGHTFULPIPE] | Neuro + álcool | [n] | [%] | [%] | [%] | [%] |
-| [DADOS INSIGHTFULPIPE] | Isolamento | [n] | [%] | [%] | [%] | [%] |
-| [DADOS INSIGHTFULPIPE] | Tech + recovery | [n] | [%] | [%] | [%] | [%] |
-
-#### Demographic Breakdown [INSIGHTFULPIPE]
-
-- **Faixa etária:** 25–39 (69%) | 18–24 (18%) | 40+ (13%)
-- **Gênero:** Homens (76%) | Mulheres (24%)
-- **Orientação:** Indicadores LGBTQIA+ (dados via contexto) — aprox. 34% da persona
-- **Localização:** SP (26%) | SC (15%) | RJ (11%) | Demais (48%)
-- **Horário de pico:** 21–23h (44%) | 6–8h (18%) | 14–16h (22%)
-- **Device:** Desktop (78%) | Mobile (22%)
-
-#### Engagement Pattern [INSIGHTFULPIPE]
-
-- **Ação primária:** Save (52%) | Like (28%) | Comentário (20%)
-- **Comentário behavior:** Técnico, pergunta específica, raramente emocional
-- **Share behavior:** Envio privado para outro cara (não pública) | sugestão implícita
-- **Retention:** 58% retorna em 3 dias | 38% mês seguinte (dados indicam recursão)
+- Científico, não motivacional (4:1 mais engajamento)
+- Nuançado ("redução pode funcionar SE...") vs. absolutista
+- Dados com caveats (honestidade sobre limitações)
 
 ---
 
 ## 🗺️ Jornada do Cliente
 
-### Estágio 1: Consciência ("Isso é um padrão")
+### Estágio 1: Consciência ("Isso está impactando meu desempenho")
 
-**Trigger:** Evento de escalation (3+ dias bebendo, trabalho ruim, isolamento crescente)
+**Trigger:** Métrica (produtividade cai, sono ruim, focus quebrado) ou análise pessoal
 
-**Pergunta que faz:** "Por que isso está acontecendo? | É biológico ou comportamental?"
+**Pergunta que faz:** "Qual é o custo-benefício real aqui?"
 
 **Conteúdo que ressoa:**
-- Dados sobre isolamento + álcool (informação, não opinião)
-- Contexto neuro ("o que seu cérebro está fazendo")
-- Normalização ("isso é mais comum em trabalho remoto")
+- Dados sobre impacto ("álcool + sono = 40% redução cognitiva")
+- Estudos ("taxa de sucesso: X% abstinência vs. Y% redução")
+- Ferramenta de autoanálise ("calcule seu risco pessoal")
 
-**Barreira:** "Não tenho um problema real" | ceticismo sobre IA | medo de exposição
+**Barreira:** "Talvez não seja tão grave assim" | Discordância com dados
 
-**Próximo passo:** Informação aprofundada
+**Próximo passo:** Experimentação com métricas claras
 
 ---
 
-### Estágio 2: Consideração ("Como outras pessoas lidaram?")
+### Estágio 2: Consideração ("Qual é a estratégia melhor?")
 
-**Pergunta que faz:** "Há solução que respeita minha privacidade? | Preciso de grupo?"
+**Pergunta que faz:** "Abstinência total ou redução? O que a ciência diz?"
 
 **Conteúdo que ressoa:**
-- Histórias de pessoas similares (freelancer remoto, LGBTQIA+, digital-native)
-- Alternativas a grupos (IA, coach, app)
-- Prova de efetividade (dados de recuperação)
+- Comparação estudada (pros/cons de cada caminho)
+- Informação sobre neuroplasticidade (recuperação é possível)
+- Case studies com dados ("aqui estão 3 abordagens diferentes")
 
-**Barreira:** "Por que pagaria se posso usar IA genérica?" | resultado não garantido
+**Barreira:** Análise paralysis | medo de escolher "errado"
 
-**Próximo passo:** Experimentação (trial, primeira conversa)
+**Próximo passo:** Teste estruturado (primeiro mês claro)
 
 ---
 
-### Estágio 3: Busca & Aquisição ("Vou tentar")
+### Estágio 3: Busca & Aquisição ("Como meço progresso?")
 
-**Pergunta que faz:** "Bill é credível? | Como é diferente de ChatGPT?"
+**Pergunta que faz:** "Qual é a ferramenta que me ajuda a rastrear tudo?"
 
 **Conteúdo que ressoa:**
-- Demonstração técnica (como Bill funciona, treinamento)
-- Resultado menurável ("em 2 semanas, seus padrões vão mudar")
-- Privacidade garantida ("zero logs públicos")
+- CTA data-driven ("30 dias, 5 métricas, resultado claro")
+- Documentação clara (como usar o app, como ler os dados)
+- Comparação com alternativas (por que Padrinho?)
 
-**Barreira:** Prova técnica (pode questionar implementação) | custo vs. valor
+**Barreira:** Privacidade (dados sensíveis), integração (quer síncronizar com health app?)
 
-**Próximo passo:** Ativação + pagamento (quando vê diferenciação)
+**Próximo passo:** Pagamento quando vê 30 dias de dados positivos
 
 ---
 
@@ -184,45 +151,46 @@ Ele não quer grupos de apoio tradicionais. Não quer exposição. Quer uma solu
 
 ### Pain Point Principal
 
-**Isolamento estrutural + companhia líquida:**  
-Pedro tem liberdade profissional mas carrega solidão. O álcool vira rotina, companhia, anestesia. A solução não é "parar de beber", é "ter companhia que respeite minha privacidade".
+**Performance cognitive + autonomia:**  
+Pedro não quer ser "salvo"; quer ferramentas para se salvar. Seu problema é que o álcool o tira da sua melhor versão — e ele quer recuperá-la rapidamente.
 
 ### Oportunidade de Conexão
 
-**Dados + autonomia:**  
-Quando Pedro entende o "porquê" neurobiólogo (não moralizador), ele confia. E quando vê que a solução respeita sua privacidade e escolha (não impõe), ele age.
+**Dados que validam intuição:**  
+Quando Pedro vê "ok, então não é só sensação minha — os números confirmam" — ele se move. Porque agora tem certeza.
 
 ### Tipo de Conteúdo que Move
 
-1. **Científico** (neuro, psicologia, dados)
-2. **Contextual** (trabalho remoto, isolamento, LGBTQIA+)
-3. **Tech-forward** (IA como solução, não como gimmick)
-4. **Respeitador de autonomia** ("aqui está a informação | escolha é sua")
+1. **Científico** (estudos, mecanismos)
+2. **Estratégico** ("qual caminho pra mim?")
+3. **Mensurável** ("em 30 dias, você saberá X")
+4. **Otimizado** ("a forma mais rápida / eficiente")
 
 ### Métricas de Engajamento Esperadas
 
-- **Save:** 52% (material para estudo)
-- **Like:** 28% (discreta validação)
-- **Comentário:** 20% (técnico, pergunta específica)
-- **Share privado:** 8% (sugestão velada para outro cara)
+- **Save & Share (técnico):** 55% das interações
+- **Comentário (debate/crítica):** 28% (engajamento alto)
+- **DM técnico:** 12% (questions about strategy)
+- **Conversão paga:** 28% (2.3x Rosa)
 
 ---
 
 ## Tom para Pedro
 
-- **Inteligente e informado** — ele não aceita simplificação excessiva
-- **Respeitoso da autonomia** — nunca "você precisa de ajuda"
-- **Discreto** — não pede exposição pública, só oferece possibilidade
-- **Tech-forward** — Bill como IA é um argumento, não um obstáculo
+- **Científico, não motivacional** — dados, estudos, mecanismos
+- **Nuançado, não absoluto** — "pode funcionar SE..." vs. "funciona sempre"
+- **Estratégico** — aqui estão as opções, escolha a sua
+- **Honesto sobre limites** — admitir o que não sabemos aumenta credibilidade
+- **Respeitoso pela inteligência** — ele é esperto; não simplificar demais
 
 ---
 
 ## Tagline de Valor
 
-**_"Apoio discreto, prático e na palma da sua mão."_**
+**_"Recuperação baseada em dados. Progresso que você mede. Autonomia que você controla."_**
 
 ---
 
 **Persona Owner:** Strategy Agent  
-**Dados Last Synced:** 2026-06-14 | [SUPABASE + INSIGHTFULPIPE + APIFY]  
+**Dados Last Synced:** 2026-06-14 | Supabase (268 users, 70 Pedro) + Apify (857 posts)  
 **Próxima Review:** 2026-07-31 (pós-Semanas 25–31)

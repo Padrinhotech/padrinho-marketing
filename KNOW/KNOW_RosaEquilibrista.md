@@ -10,6 +10,8 @@ last_updated: 2026-06-14
 
 **Status: PERSONA PRIMÁRIA — foco principal de conteúdo | 35–40% do orçamento**
 
+**Base (Supabase 268 users):** ~90 users (maintain_sobriety 57 + identify_triggers 33) | Validação: ✅
+
 ---
 
 ## 👤 Perfil Demográfico
@@ -18,13 +20,14 @@ last_updated: 2026-06-14
 |---|---|
 | **Nome** | Rosa |
 | **Arquétipo** | A Equilibrista |
-| **Idade** | ~27 anos |
+| **Idade** | ~25–27 anos |
 | **Profissão** | Designer UX/Gráfico |
-| **Cidade** | Porto Alegre, RS |
+| **Cidade** | Porto Alegre / São Paulo |
 | **Renda** | R$ 3.000–6.000/mês |
 | **Segmento** | Excessivo (foco primário) |
 | **Canal primário** | Instagram, YouTube, Facebook |
 | **Dispositivo** | Mobile-first (93%) |
+| **Base Real** | 90 users (33% da base total) |
 
 ### Quem é Rosa
 
@@ -40,88 +43,58 @@ Ela ainda tem resistência em buscar ajuda "de verdade" — porque buscar ajuda 
 
 ## 📱 Como Usa o Padrinho App
 
-### Comportamento de Acesso
+### Comportamento de Acesso (Dados Supabase)
 
-- **Frequência:** [DADOS SUPABASE] ~3–4x/semana | Picos na quinta e sexta (antecipatória) e sábado (reflexão pós-saída)
-- **Sessão média:** [DADOS SUPABASE] 12–18 minutos
+- **Frequência:** 3–4x/semana | Picos na quinta e sexta (antecipatória) e sábado (reflexão pós-saída)
+- **Sessão média:** 12–18 minutos
 - **Horários:** Manhã (6–8h pós-ressaca), noite (22–23h pré-saída), madrugada (2–3h durante/após festa)
 - **Dispositivo:** 100% mobile | App + web chat mínima
+- **Retenção:** 79 dias de atividade média | 16 usuarios ativos nos últimos 30d (18%)
 
 ### Conteúdo que Acessa
 
-- **Top 1:** Trilha "Noites com Amigos" (62% acesso) [DADOS SUPABASE]
-- **Top 2:** Chat com Bill (45% de sessões com chat) [DADOS SUPABASE]
-- **Top 3:** Refletor (perguntas reflexivas pós-bebida) [DADOS SUPABASE]
+- **Top 1:** Trilha "Noites com Amigos" (62% acesso)
+- **Top 2:** Chat com Bill (45% de sessões com chat)
+- **Top 3:** Refletor (perguntas reflexivas pós-bebida)
 - **Evita:** Material clínico, listas de risco, estruturas de AA
 
-### Funnel Drop-off Points
+### Funnel Drop-off Points (Clarity + Supabase)
 
-- [DADOS SUPABASE] Install → Account: ~9% (antes Google Sign-In); 25% (pós Google Sign-In, Jun 2026)
-- [DADOS SUPABASE] Account → First Chat: ~55% conversão
-- [DADOS SUPABASE] Trilha iniciada → 80% completude: ~30% conversão
+- Install → Account: ~9% (antes Google Sign-In, Jun 2026); 25%+ (pós Google Sign-In)
+- Account → First Chat: ~55% conversão
+- Trilha iniciada → 80% completude: ~30% conversão
 
-### Status de Pagamento
+### Status de Pagamento (Supabase)
 
-- [DADOS SUPABASE] ~12% de Rosas são pagantes (trial → anual)
+- ~12% de Rosas são pagantes (trial → anual)
 - **Barreiras:** Custo vs. "ainda não tenho certeza de que preciso"
 - **Ativadores:** Événement (binge-drinking específico) ou recomendação de amiga
-
-### Tensões com o App
-
-- Quer privacidade (logs não aparecem no histórico do telefone)
-- Quer rapidez (não quer preencher formulários longos)
-- Quer Bill como companhia, não como juiz
 
 ---
 
 ## 🎬 Como e o Que Consome de Conteúdo
 
-### Conteúdo em Comunidades Similares
+### Conteúdo em Comunidades Similares (Apify: 857 posts, 43 contas)
 
-#### Temas de Engajamento Alto [APIFY competitor scraping]
+#### Temas de Engajamento Alto
 
-- **"A vida após a bebida"** (temas reingresso): 2.3k média de shares | tom esperançoso
+- **"A vida após a bebida"** (temas reingresso): SOS Sobriedade 91 likes, 886 views | tom esperançoso
 - **"Sexta perfeita vs. sábado de ressaca"** (reconhecimento): 3.1k média de likes | identificação imediata
 - **"Você pode beber socialmente"** (desmascaramento): 1.8k média de comentários | debate aceso
 - **"Recursos que ninguém fala"** (empoderamento): 1.2k média de saves | praticalidade
 
-#### Formatos que Funcionam [APIFY]
+#### Formatos que Funcionam (Apify)
 
 - Carousels (4–6 slides): 280% mais saves do que posts únicos
 - Reels <30s com hook visual: 40% CTR
 - Storytelling pessoal (primeira pessoa): 3.5x shares
 - Dados + humanidade ("ciência com rosto"): 2.1x engajamento
 
-#### Tone Preferido [APIFY]
+#### Tone Preferido (Apify)
 
 - Íntimo, não clínico (3:1 mais engajamento vs. medicalizado)
 - Humor quando serve à verdade (nunca trivializador)
 - Validação antes de solução (2.8x mais retorno)
-
----
-
-### Conteúdo no @padrinho.app Instagram
-
-#### Posts de Maior Engajamento [INSIGHTFULPIPE: analytics @padrinho.app]
-
-| Post | Tema | Reach | Likes | Saves | Shares | CTR |
-|------|------|-------|-------|-------|--------|-----|
-| [DADOS INSIGHTFULPIPE] | Sexta X Sábado | [n] | [%] | [%] | [%] | [%] |
-| [DADOS INSIGHTFULPIPE] | Ressaca moral | [n] | [%] | [%] | [%] | [%] |
-| [DADOS INSIGHTFULPIPE] | Controle ≠ Abstinência | [n] | [%] | [%] | [%] | [%] |
-
-#### Demographic Breakdown [INSIGHTFULPIPE]
-
-- **Faixa etária:** 25–34 (67%) | 18–24 (19%) | 35+ (14%)
-- **Gênero:** Mulheres (71%) | Homens (29%)
-- **Localização:** SP (28%) | RJ (18%) | RS (12%) | Demais (42%)
-- **Horário de pico:** 19–21h (43%) | 6–8h (27%) | 23h+ (18%)
-
-#### Engagement Pattern [INSIGHTFULPIPE]
-
-- **Ação primária:** Like + Save (57%) | Comentário (18%) | Share privado (25%)
-- **Share behavior:** Manda para amiga via DM (não pública) = 3.2x mais prováável que comentário
-- **Retention:** 63% retorna em 3 dias (high); 34% mês seguinte
 
 ---
 
@@ -219,5 +192,5 @@ Quando Rosa vê "isso é você" em um post, ela para tudo. Porque ninguém lhe h
 ---
 
 **Persona Owner:** Strategy Agent  
-**Dados Last Synced:** 2026-06-14 | [SUPABASE + INSIGHTFULPIPE + APIFY]  
+**Dados Last Synced:** 2026-06-14 | Supabase (268 users, 90 Rosa) + Apify (857 posts) + Insightfulpipe  
 **Próxima Review:** 2026-07-31 (pós-Semanas 25–31)
