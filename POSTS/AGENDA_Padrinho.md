@@ -16,33 +16,53 @@ Estrutura: data | tema | pilar editorial | persona primária | canais | status
 
 ## Metodologia
 
-- **Semana:** Cada linha = 1 semana (seg-dom)
-- **Tema:** Frase única que orienta todo conteúdo cascata (Blog → IG → Podcast → Newsletter → WhatsApp)
+- **Semana:** Cada linha = 1 semana (seg-dom) com **4 posts** (Sun/Mon/Wed/Fri)
+- **Tema:** Tema único para a semana; **4 ângulos diferentes** para cada post
 - **Pilar:** Reconhecimento | Desmascaramento | Acolhimento | Empoderamento | Reingresso
-- **Persona:** Rosa (Equilibrista) | Ana (Mãe Protetora) | Pedro (Autônomo Solitário) | Caio (Familiar)
-- **Canais:** Blog | IG Carousel | Podcast | Newsletter | WhatsApp | LinkedIn
+- **Persona:** Rosa (Equilibrista) | Pedro (Autônomo Solitário) — foco principal; 2 posts Rosa + 2 posts Pedro por semana
+- **Canais:** Blog | IG Carousel | IG Reshare | WhatsApp | LinkedIn (x4 por semana)
 - **Status:** Planejado | Em Tática | Em Operação | Publicado | Analisado
+- **Estrutura de Pastas:**
+  ```
+  POSTS/WEEK01_DDMMYY_TemaSemana/
+    01_SUNDAY_AnglePerson/
+      POST_Overview.md
+      blog-post.md
+      instagram-carousel.md (or Figma link)
+      instagram-reshare.md
+      whatsapp-text.md
+      linkedin-copy.md
+    02_MONDAY_AnglePerson/
+    03_WEDNESDAY_AnglePerson/
+    04_FRIDAY_AnglePerson/
+  ```
 
 ---
 
 ## H2 2026: Semanas 25–52
 
-### JUNHO (Semanas 25–26)
+### JUNHO (Semanas 25–27)
 
-| Semana | Data | Tema | Pilar | Persona | Status | Notas |
-|--------|------|------|-------|---------|--------|-------|
-| 25 | 17–23 Jun | Sexta com os amigos: a diferença entre relaxar e escapar | Reconhecimento | Rosa | Planejado | Post Overview a gerar em 14 Jun |
-| 26 | 24–30 Jun | Pais que bebem: o que as crianças veem (e o que não dizem) | Acolhimento | Ana + Caio | Planejado | Tema crossover Familia |
+| Semana | Data | Tema | Pilar | Posts/Semana | Status | Estrutura |
+|--------|------|------|-------|---|--------|-----------|
+| 25 | 17–23 Jun | Recaída não é o fim da história | Reconhecimento | 4 | ✅ Figma Pronto | `WEEK01_170626_RecaidaNaoEhOFim/` |
+| | | | | | | • 01_SUNDAY: Main carousel → Rosa |
+| | | | | | | • 02_MONDAY: mulheres AA → Rosa |
+| | | | | | | • 03_WEDNESDAY: dep+tech → Pedro |
+| | | | | | | • 04_FRIDAY: como usar Bill → Pedro |
+| 26 | 24–30 Jun | Sexta com os amigos: a diferença entre relaxar e escapar | Reconhecimento | 4 | Planejado | `WEEK02_240626_SextaComAmigos/` |
+| | | | | | | • 4 ângulos diferentes (1 tema, 4 formatos) |
+| 27 | 01–07 Jul | Pais que bebem: o que as crianças veem (e o que não dizem) | Acolhimento | 4 | Planejado | `WEEK03_010726_PaisQueBebem/` |
 
-### JULHO (Semanas 27–31)
+### JULHO (Semanas 28–32) — Iniciativas Especiais
 
-| Semana | Data | Tema | Pilar | Persona | Status | Notas |
-|--------|------|------|-------|---------|--------|-------|
-| 27 | 01–07 Jul | Trabalhar em casa + beber sozinho = o risco que ninguém avisa | Empoderamento | Pedro | Planejado | Dados neuro + isolamento |
-| 28 | 08–14 Jul | A ressaca moral (aquela que nenhum remédio tira) | Reconhecimento | Rosa | Planejado | Hook emocional forte |
-| 29 | 15–21 Jul | Como recuperação NÃO significa virar outra pessoa | Desmascaramento | Rosa + Ana | Planejado | Tema integrador |
-| 30 | 22–28 Jul | O que seu filho está aprendendo com você (sem culpa, com esperança) | Acolhimento | Ana | Planejado | Sensibilidade ao tema |
-| 31 | 29–04 Aug | Julho recap: histórias de quem tentou, falhou, tentou de novo | Reingresso | All | Planejado | User testimonials |
+| Semana | Data | Tema | Pilar | Persona | Iniciativa | Status | Notas |
+|--------|------|------|-------|---------|-----------|--------|-------|
+| 28 | 08–14 Jul | Histórias de Recuperação: Famílias que viram a transformação (Bezerra) | Reconhecimento | Ana + Caio | Bezerra Stories | Planejado | Lançamento: histórias reais de pacientes + perspectiva familiar |
+| 29 | 15–21 Jul | Família em Reconstrução: Como o programa muda dinâmicas familiares | Acolhimento | Ana + Caio | Família Program | Planejado | Anúncio oficial + primeiros depoimentos |
+| 30 | 22–28 Jul | Vidas que mudam quando a família se move (Bezerra + Família Stories) | Empoderamento | Ana + Caio | Bezerra + Família | Planejado | Continuação: profissionais falam sobre impacto familiar |
+| 31 | 29–04 Aug | Conhecer quem está fazendo isso: O encontro exclusivo Padrinho | Reingresso | All | Exclusive Meet | Planejado | Convite ao encontro presencial + comunidade |
+| 32 | 05–11 Aug | Julho recap: três iniciativas, uma mudança de dinâmica | Reconhecimento | All | Meta-recap | Planejado | Síntese das três frentes + métricas |
 
 ### AGOSTO (Semanas 32–36)
 

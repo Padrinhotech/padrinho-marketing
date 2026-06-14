@@ -1,16 +1,16 @@
 ---
-title: "Copy Rules — Padrinho Instagram"
-version: "1.0"
-status: "Final"
+title: "Copy Rules — Padrinho All Channels"
+version: "2.0"
+status: "Final (Expanded)"
 type: "Skill"
 owner: "Padrinho Marketing Automation"
 parent_doc: "SKILL/"
-tags: [copy, writing, captions, cta, typography, tone]
+tags: [copy, writing, captions, cta, typography, tone, blog, long-form, instagram, newsletter]
 ---
 
-# Copy Rules — Padrinho Instagram
+# Copy Rules — Padrinho All Channels
 
-Directrizes para redação de captions, copy e estruturas visuais de texto em conteúdo gerado pelo Operational Agent. Leia este arquivo se está criando ou refinando copy para Instagram. Usado pelo Operational Agent para validar e estruturar saídas antes de enviar para aprovação Telegram.
+Directrizes unificadas para redação de copy, captions, posts de blog e estruturas visuais de texto em todos os canais (Instagram, Blog, Newsletter, etc.). Leia este arquivo se está criando ou refinando qualquer conteúdo copywriting para a marca Padrinho. Usado pelo Strategy Agent, Tactic Agent e Operational Agent para validar e estruturar saídas antes de envio/aprovação.
 
 ## Estrutura Visual de Post
 
@@ -135,6 +135,340 @@ Sempre uma **verdade**, nunca uma venda.
 
 ---
 
+## Blog & Long-Form Content Writing Style
+
+### Voz & Tom Geral
+A voz do Padrinho é **compassiva mas não condescendente**, honesta sobre a dor, otimista sobre recuperação. Falamos como amigos de confiança que entendem a luta — do ponto de vista de quem já esteve lá.
+
+**Default emotional register:** Esperançoso + realista  
+**Nunca:** Clínico, julgador, tóxico-positivo ("é só parar de beber!")  
+**Sempre:** Validante, focado em soluções, embasado em evidências, vulnerável sem overshare
+
+**Assinatura de tom:**
+> "Sentir-se perdido faz parte do caminho para a sobriedade. A boa notícia é que muitos já passaram por essa situação e podem compartilhar picas valiosas."
+
+---
+
+### Estrutura Narrativa — O Padrão Universal
+
+Cada post de blog segue esta estrutura:
+
+```
+1. OPENING HOOK (1-2 sentences)
+   └─ Problema/pergunta relatable OU
+      Verdade chocante OU
+      Cenário emocional específico
+
+2. VALIDAÇÃO + PONTE (2-3 sentences)
+   └─ "Isso é normal", "Você não está sozinho"
+      Remove a vergonha do problema
+
+3. CORE TEACHING (Main body, 3-5 seções)
+   └─ Alternância: história pessoal + educação
+      └─ Explica O PORQUÊ (psicologia/biologia remove a culpa)
+      └─ Oferece 3-5 passos práticos ou insights
+
+4. REFLEXÃO + PERGUNTAS (Mid-post engagement)
+   └─ *"Pergunte a si mesma: o que eu espero dessa conversa?"*
+      Faz o leitor interiorizar a mensagem
+
+5. FECHAMENTO (1-3 sentences)
+   └─ Reafirma esperança
+   └─ Padrinho CTA (pessoal, específico)
+   └─ NUNCA fecha em nota negativa
+```
+
+---
+
+### Padrões Narrativos Comprovados
+
+**Padrão A: Problema → Compreensão → Solução → Esperança**
+- Usado em: "Estou perdido", "Abstinência de álcool", "Como contar sobre a doença"
+- Identifica o ponto de dor upfront
+- Explica POR QUE acontece (remove culpa)
+- Oferece 3-5 passos práticos
+- Encerra com encorajamento + CTA
+
+**Padrão B: História Pessoal → Insight Universal → Ação**
+- Usado em: "Entre afilhados" posts
+- Abre com momento vulnerável e específico (detalhes sensoriais)
+- Extrai a lição ("O que aprendi é...")
+- Traduz para situação do leitor
+- Oferece caminho adiante
+
+**Padrão C: Mito-Busting → Verdade Profunda → Empoderamento**
+- Usado em: "10 coisas que você precisa saber"
+- Desmente um mito comum
+- Explica a verdade nuançada
+- Mostra como entender isso empodera o leitor
+- Repete para cada ponto
+
+---
+
+### Palavras de Poder (Usadas Repetidamente)
+
+**Core vocabulary** — aparecem em quase todo post:
+- **sobriedade** — a estrela do norte
+- **jornada/caminho** — enquadra recuperação como processo
+- **recuperação** — termo neutro, respeitoso
+- **apoio** — comunidade é essencial
+- **coragem** — redefine admissão como força, não fraqueza
+- **esperança** — sempre presente, mesmo em tópicos difíceis
+- **significado** — recuperação dá propósito à vida
+- **padrinho/madrinha** — central ao modelo
+- **compaixão/empatia** — valor central
+
+**Frases conector** — fluxo e engajamento:
+- "Lembre-se de que..."
+- "É importante que..."
+- "A boa notícia é..."
+- "Imagine que..."
+- "Pergunte a si mesma..."
+- "Saber que..."
+- "Para não..."
+- "O que acontece é..."
+- "Entender... é vital para..."
+
+**Frases de validação** — faz o leitor se sentir visto:
+- "Sentir-se [emoção] é comum entre aqueles que..."
+- "Não é fraqueza. É biologia."
+- "Você não está sozinho(a)."
+- "Isso é um passo corajoso."
+- "Sua abertura é um pedido de ajuda genuíno."
+
+---
+
+### Estrutura de Sentença — Variedade Rítmica
+
+**Curta + pontual (ênfase):**
+- "A recuperação é possível!"
+- "Não acreditei muito."
+- "Ufa!"
+
+**Média + fluxo (desenvolvimento):**
+- "Entender os sintomas da abstinência de álcool, quando eles aparecem e o que fazer com eles pode fazer toda a diferença nesse processo."
+
+**Longa + contemplativa (reflexão):**
+- "Ao encontrar ajuda, achei também o meu propósito. Eu me tornei uma pessoa disciplinada, resiliente, estudiosa, determinada, altruísta, entre outras qualidades que me orgulho."
+
+**Uso de travessão (pausa para reflexão):**
+- "O álcool é uma droga — socialmente aceita, mas uma droga"
+- "A recuperação é como uma trilha cheia de altos e baixos — é natural, em alguns momentos, sentir que o ponto de chegada está distante."
+
+---
+
+### Estrutura de Parágrafos & Ritmo
+
+**Comprimento padrão:**
+- Opening: 2-3 sentences (contexto)
+- Body: 3-5 sentences máx (digestível)
+- Closing: 1-3 sentences (punch)
+
+**Headers (Padrão de títulos):**
+- **Ação-baseado:** "Entenda onde você está"
+- **Pergunta-baseado:** "Por que você se sente perdido?"
+- **Declaração-baseado:** "O papel dos Padrinhos&Madrinhas"
+- **How-to-baseado:** "Como criar seu próprio ritual"
+
+**Respiração visual:** Linha em branco entre parágrafos (mobile-friendly)
+
+---
+
+### Técnicas de Storytelling
+
+**Quando usar histórias pessoais:**
+
+1. **Especificidade > Generalidade**
+   - ❌ "Eu estava em uma festa e bebi muito"
+   - ✅ "Imagine a cena: eu de terno, minha esposa vestida de noiva — com véu e tudo — em uma padaria às 4 da manhã."
+
+2. **Turning point vulnerável** (momento de realization)
+   - "Foi então que... no desespero total, lembrei do AA e pedi ajuda"
+   - "E foi aí que o estalo veio"
+
+3. **Extração da lição** (fazer ser universal)
+   - "Hoje sei que o excesso de álcool daqueles dias poderia ter resultado em uma tragédia"
+   - "Percebi que... o álcool estava controlando meus momentos"
+
+4. **Hope bridge** (de dor para possibilidade)
+   - "Não acreditei muito, porém, não tinha mais muitas escolhas, nada me restava. Então me agarrei nisso."
+
+---
+
+### Metáforas & Linguagem Simbólica
+
+**Metáforas primárias** (usadas repetidamente):
+
+1. **Jornada/Caminho:**
+   - "trilha cheia de altos e baixos"
+   - "cada pequeno passo conta"
+   - "caminhos que ajudam"
+
+2. **Estar Perdido/Navegação:**
+   - "perdido em uma floresta sem um mapa"
+   - "oferecem um mapa e uma bússola"
+   - "encontrar seu próprio caminho"
+
+3. **Luz/Escuridão:**
+   - "despertar espiritual"
+   - "cérebro havia silenciado"
+   - "confusão mental"
+
+4. **Construção/Fundação:**
+   - "ferramentas para recuperação"
+   - "crescimento"
+   - "fortalecer"
+
+5. **Ritual/Significado:**
+   - "simbolismo"
+   - "significado"
+   - "transformar"
+
+**Evitar:** Metáforas militares ("fight addiction" soa como culpa)
+
+---
+
+### Conteúdo Educacional — When Teaching Facts
+
+**Ordem de prioridades:**
+
+1. **Realidade emocional primeiro** (antes da ciência)
+2. **Explique O PORQUÊ** (psicologia/biologia — remove culpa)
+3. **Liste ou divida** em seções numeradas ou headers
+4. **Valide continuamente** — "Isso é comum, você não está sozinho"
+5. **Termine com próximos passos** práticos
+
+**FAQ/Knowledge sections:**
+- Use bold para perguntas
+- Respostas 2-4 sentences (scannable)
+- Sempre atém-se para esperança ou ação
+
+---
+
+### CTAs — Soft vs. Hard
+
+**Soft CTAs** (ao longo do post):
+- "Isso é importante de entender"
+- "Vale a pena pensar..."
+- "Pergunte a si mesma..."
+- "Deixe claro que..."
+
+**Hard CTAs** (final do post — formato):
+```
+[Closing hope statement].
+
+O [Padrinho] está aqui para [specific benefit].
+```
+
+**Exemplos:**
+- "Se você, ou alguém que você conhece, está lutando contra a dependência de álcool, saiba que a recuperação é possível! O Padrinho está aqui para te orientar e ajudar."
+- "O Padrinho é uma solução fácil, acessível e tecnológica, criado por pessoas que já estiveram onde você está. Fale com a gente!"
+
+**Event CTAs:**
+- "No dia [DATE], às [TIME], você está convidado para [EVENT]..."
+- Inclua link mas mantenha tom conversacional
+
+---
+
+### Formatting & Visual Elements — Blog
+
+**Headers:**
+- Use **bold** para headers principais
+- Use *itálico* para ênfase em phrases
+- Headers são ação/pergunta-orientados
+- Nunca ALL CAPS
+
+**Listas:**
+- Bullet points para traits/sintomas
+- Numbered lists para passos ou "X things"
+- 1-2 linhas por bullet point máx
+- Bold na primeira palavra-chave
+
+**Blockquotes:**
+- Para insights poderosos ou citações diretas
+- Tipicamente 1-2 sentences
+- Visualmente centradas mentalmente
+- Geralmente extraído de histórias pessoais
+
+---
+
+### Checklist — Blog Post Quality
+
+Antes de publicar, verifique:
+
+- [ ] Opening hook aborda imediatamente problema/emoção do leitor?
+- [ ] Primeiro parágrafo valida ("Isso é normal/comum/compreensível")?
+- [ ] Alternância entre histórias pessoais e conselhos (ou ciência + emoção)?
+- [ ] Pelo menos uma metáfora específica ou imagem vívida?
+- [ ] 2-3 perguntas de reflexão (*como esta*)?
+- [ ] Fechamento irradia esperança, não desespero?
+- [ ] Contém "Lembre-se de que..." ou "É importante que..." pelo menos 1x?
+- [ ] CTA Padrinho é pessoal e específico?
+- [ ] Zero linguagem de culpa/vergonha? Foco em agência?
+- [ ] Comprimentos de parágrafo variam (curto + longo mix)?
+- [ ] Lê como conversa, não como lecture?
+- [ ] Pelo menos 1 travessão (—) para reflexão?
+- [ ] Fala com "você" (2ª pessoa), não terceira pessoa?
+
+**Word count sweet spot:** 800–1500 palavras  
+(Testimonials: 400–600 words)
+
+---
+
+### Tom Específico por Persona
+
+**Rosa Equilibrista (25F, nativa de Instagram):**
+- Mais conversacional, linguagem adjacent a emoji
+- Foco em coping momento-a-momento
+- "Você nesta hora..." language
+- Ritual e mindfulness sentem-se naturais
+- Referências contemporâneas okay
+
+**Ana Mae Protetora (40F, mãe/cuidadora):**
+- Mais prática, focado em "how-to"
+- Linguagem de impacto familiar
+- Tópicos "Como conversar com..."
+- Auto-cuidado enquadrado como cuidado familiar
+- Leituras mais longas e substantivas
+
+**Pedro Autónomo (31M, freelancer):**
+- Estrutura problema-solução
+- Independência enquadrada como "escolhendo ajuda"
+- Linguagem de carreira/estabilidade
+- Ferramentas práticas e conforto com tech
+- Seções mais curtas e scannable
+
+---
+
+### Guardrails de Tom — O que Dizer vs. O que NÃO Dizer
+
+#### ✅ DO SAY
+- "Dependência de álcool é uma doença"
+- "Isso é corajoso/difícil/normal"
+- "Você não está sozinho"
+- "A recuperação é um processo"
+- "Apoio profissional ajuda"
+- "Pequenos passos contam"
+- "Cada dia é uma vitória"
+
+#### ❌ DON'T SAY
+- "Just stop drinking" (oversimplification, shaming)
+- "Weakness" ou "lack of willpower" (medical misframe)
+- "You're broken" (reframes identity as disease)
+- "One day you'll be cured" (recovery is ongoing)
+- Jargão clínico sem tradução
+- "Alcoólatra" — use "pessoa em recuperação" ou "alguém que luta com o álcool"
+
+---
+
+### Assinatura Final de Estilo (em 3 sentences)
+
+Escrevemos como se estivéssemos sentados de frente para alguém que está com medo e sozinho, falando sua linguagem (português, conversacional, honesto), validando sua luta enquanto mostramos que o caminho adiante não é apenas possível — está acontecendo todos os dias para milhares de pessoas como eles em nossa comunidade.
+
+**Essência:** Compaixão + Clareza + Esperança
+
+---
+
 ## Padrões de Destaque Visual
 
 ### Highlight — bloco azul (layer `hl`)
@@ -205,9 +539,10 @@ cria resultados visuais estranhos e imprevisíveis.
 
 ---
 
-**Last Updated:** 2026-05-07  
-**Maintained by:** Operational Agent  
+**Last Updated:** 2026-06-14 (Blog & Long-Form Style incorporated)  
+**Maintained by:** Padrinho Marketing Team  
 **References:**  
+- [../STYLE_GUIDE_Blog.md](../STYLE_GUIDE_Blog.md) — Detailed blog style analysis
 - [../SKILL/SKILL_audiences/user-insights.md](../SKILL/SKILL_audiences/user-insights.md)
 - [../SKILL/SKILL_KNOW_BrandPositioning.md](../SKILL/SKILL_KNOW_BrandPositioning.md)
 - [../AGENT/AUT_operational.md](../AGENT/AUT_operational.md)

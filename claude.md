@@ -27,7 +27,7 @@ This file defines how Claude (or any LLM) should orchestrate the **manual market
 │    Tactic   │  (How should we say it?)
 │   AGENT     │
 └──────┬──────┘
-       │ Output: BLOG, INSTAGRAM, PODCAST, NEWSLETTER, WHATSAPP, LINKEDIN
+       │ Output: BLOG, INSTAGRAM, PODCAST, NEWSLETTER, LINKEDIN
        ↓
 ┌─────────────┐
 │ Operational │  (Where does it live?)
@@ -174,11 +174,10 @@ Ready for Tactic stage? (y/n)
 - Link to full blog post
 - P.S. CTA (app download / community join)
 
-#### 3e. **WHATSAPP** → `whatsapp-text.md`
-- 2–3 short messages (send separately)
-- Emoji-heavy
-- Link to Instagram / blog
-- Personal tone (as if from a friend)
+#### 3e. **WHATSAPP** → `instagram-reshare.md` (same file as Instagram)
+- WhatsApp distribution = reshare the Instagram post directly
+- No separate file needed — use the `instagram-reshare.md` already generated
+- Share the Instagram link to the WhatsApp community
 
 #### 3f. **LINKEDIN** → `linkedin-copy.md`
 - Professional tone (for founder audience)
@@ -214,7 +213,7 @@ Antes de qualquer decisão grande. Antes do café com amigos que bebia.
 📸 INSTAGRAM captions + carousel specs
 🎙️ PODCAST script (8 min)
 📧 NEWSLETTER email
-💬 WHATSAPP templates (3 msgs)
+📲 WHATSAPP → reshare Instagram post (instagram-reshare.md)
 💼 LINKEDIN professional angle
 
 All files ready in: POSTS/280626_Mindfulness_Recuperacao/
@@ -258,10 +257,9 @@ Ready for Operational stage? (y/n)
 - **Metrics:** Podcast listens, LinkedIn impressions
 
 ## Friday (Day 4: WhatsApp Community)
-- [ ] Send WhatsApp blast (3 messages)
-- [ ] Link back to Instagram / blog
+- [ ] Reshare Instagram post to WhatsApp community (use instagram-reshare.md)
 - [ ] Community engagement (replies to questions)
-- **Metrics:** Whatsapp open rate, community activity
+- **Metrics:** WhatsApp reach, community activity
 
 ## Throughout Week
 - [ ] Monitor comment sentiment
@@ -312,7 +310,6 @@ Ready for Figma Agent (visual assets)? (y/n)
    - **Instagram carousel slide 2:** Main message visual
    - **Instagram carousel slide 3:** CTA visual
    - **LinkedIn image:** Professional design (1200x628 px)
-   - **WhatsApp thumbnail:** Square (500x500 px)
 
 4. **Create design brief:** `design-brief.md`
 ```markdown
@@ -343,10 +340,6 @@ Ready for Figma Agent (visual assets)? (y/n)
 - **Headline:** "Why Mindfulness Matters in Recovery"
 - **Visual:** Abstract breathing pattern + Padrinho logo
 
-## WhatsApp Thumbnail
-- **Size:** 500x500 px
-- **Visual:** Simplified breathing icon
-- **Text:** Small, readable at 200px
 ```
 
 5. **Output to user** with:
@@ -360,7 +353,6 @@ Ready for Figma Agent (visual assets)? (y/n)
 
 🎨 Instagram carousel (3 slides × 1080x1350 px)
 📊 LinkedIn image (1200x628 px)
-💬 WhatsApp thumbnail (500x500 px)
 
 Design tokens:
 - Primary blue: #2E5090 (Azul primary)
@@ -470,9 +462,9 @@ POSTS/
     ├── POST_Overview.md              ← Strategy output
     ├── BLOG_DDMMYYYY_Tema.md         ← Tactic: Blog
     ├── instagram-captions.md          ← Tactic: Instagram
+    ├── instagram-reshare.md           ← Tactic: Instagram reshare (also used for WhatsApp)
     ├── podcast-script.md              ← Tactic: Podcast
     ├── newsletter-text.md             ← Tactic: Newsletter
-    ├── whatsapp-text.md               ← Tactic: WhatsApp
     ├── linkedin-copy.md               ← Tactic: LinkedIn
     ├── publishing-checklist.md        ← Operational output
     ├── calendar-updates.md            ← Operational: Calendar
@@ -528,9 +520,9 @@ Tone: Conversational + vulnerable
 [Generates BLOG, INSTAGRAM captions, PODCAST script, NEWSLETTER, WHATSAPP, LINKEDIN]
 📝 1100-word blog post
 📸 Instagram carousel captions (3 slides)
+📲 Instagram reshare (also used for WhatsApp community)
 🎙️ 8-minute podcast script
 📧 Newsletter email (150 words)
-💬 WhatsApp messages (3)
 💼 LinkedIn article (300 words)
 
 **OPERATIONAL STAGE**
@@ -538,14 +530,13 @@ Tone: Conversational + vulnerable
 📅 Tuesday: Blog + Newsletter
 📅 Wednesday: Instagram carousel
 📅 Thursday: Podcast + LinkedIn
-📅 Friday: WhatsApp blast
+📅 Friday: WhatsApp (reshare Instagram post)
 ✅ Metrics targets: 50+ likes, 200+ blog views, 15%+ CTR
 
 **FIGMA STAGE**
 [Creates design-brief.md with visual specs]
 🎨 Instagram carousel (3 × 1080x1350 px)
 📊 LinkedIn (1200x628 px)
-💬 WhatsApp (500x500 px)
 🎨 Design tokens: Azul primary (#2E5090), Calm green (#4CAF50)
 
 READY. All files in: POSTS/280626_Mindfulness_Recuperacao/
