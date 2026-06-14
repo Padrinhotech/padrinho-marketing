@@ -1,0 +1,611 @@
+[
+  {
+    "name": "01 / Sunday — Rosa / Gatilho Social",
+    "folder": "WEEK02_240626_SextaComAmigos/01_SUNDAY_RosaGatilhoSocial",
+    "slides": [
+      {
+        "slideIndex": 1,
+        "template": "cover-b",
+        "componentId": "3356:6288",
+        "componentName": "cover-b / dark-bold-left",
+        "content": {
+          "counter": "01 / 08",
+          "headline": "A sexta chegou.",
+          "headlineItalic": "E com ela a pressão.",
+          "body": "Isso que você sente não é fraqueza. É humano — e tem um nome.",
+          "subhead": "",
+          "subtext": "",
+          "cta": "",
+          "bullets": []
+        },
+        "needsPhoto": false
+      },
+      {
+        "slideIndex": 2,
+        "template": "block-d",
+        "componentId": "3356:6411",
+        "componentName": "block-d / statement-light",
+        "content": {
+          "counter": "02 / 08",
+          "headline": "A sexta não é",
+          "headlineItalic": "só um convite para beber.",
+          "body": "É um convite para pertencer. Relaxar. Se sentir parte. O álcool é o veículo — mas o que você busca vai além dele.",
+          "subhead": "",
+          "subtext": "",
+          "cta": "",
+          "bullets": []
+        },
+        "needsPhoto": false
+      },
+      {
+        "slideIndex": 3,
+        "template": "block-h",
+        "componentId": "3356:6555",
+        "componentName": "block-h / quote-content",
+        "content": {
+          "counter": "03 / 08",
+          "headline": "É normal",
+          "headlineItalic": "sentir essa pressão.",
+          "body": "O convite do happy hour carrega muito mais do que um drink. E reconhecer isso muda a sua escolha.",
+          "subhead": "É isso mesmo!",
+          "subtext": "",
+          "cta": "",
+          "bullets": []
+        },
+        "needsPhoto": true
+      },
+      {
+        "slideIndex": 4,
+        "template": "block-f",
+        "componentId": "3356:6444",
+        "componentName": "block-f / list-light-b",
+        "content": {
+          "counter": "04 / 08",
+          "headline": "Como a pressão social",
+          "headlineItalic": "aparece sem ser dita:",
+          "body": "",
+          "subhead": "",
+          "subtext": "",
+          "cta": "",
+          "bullets": [
+            "O olhar quando você pede água",
+            "\"Mas é sexta, você não vai beber?\"",
+            "O brinde que todo mundo faz — menos você",
+            "\"Semana pesada, a gente merece\""
+          ]
+        },
+        "needsPhoto": false
+      },
+      {
+        "slideIndex": 5,
+        "template": "data-f",
+        "componentId": "3356:8265",
+        "componentName": "data-f / quote-fill-percentage",
+        "content": {
+          "counter": "05 / 08",
+          "headline": "73%",
+          "headlineItalic": "",
+          "body": "das pessoas em recovery relatam a sexta-feira como o gatilho social mais frequente.",
+          "subhead": "",
+          "subtext": "",
+          "cta": "",
+          "bullets": []
+        },
+        "needsPhoto": false
+      },
+      {
+        "slideIndex": 6,
+        "template": "block-g",
+        "componentId": "3356:6491",
+        "componentName": "block-g / topic-list-light",
+        "content": {
+          "counter": "06 / 08",
+          "headline": "Pause 30 segundos",
+          "headlineItalic": "e pergunte:",
+          "body": "",
+          "subhead": "Antes de responder o convite:",
+          "subtext": "",
+          "cta": "",
+          "bullets": [
+            "O que eu estou sentindo agora?",
+            "O que eu espero que o happy hour entregue?",
+            "Se não fosse beber, eu ainda iria?"
+          ]
+        },
+        "needsPhoto": false
+      },
+      {
+        "slideIndex": 7,
+        "template": "block-j",
+        "componentId": "3356:6518",
+        "componentName": "block-j / final-quote-a",
+        "content": {
+          "counter": "07 / 08",
+          "headline": "Reconhecer o gatilho",
+          "headlineItalic": "já é uma escolha.",
+          "body": "",
+          "subhead": "",
+          "subtext": "Você não precisa resistir na força. Precisa criar um segundo entre o estímulo e a resposta.",
+          "cta": "",
+          "bullets": []
+        },
+        "needsPhoto": true
+      },
+      {
+        "slideIndex": 8,
+        "template": "block-d",
+        "componentId": "3356:6411",
+        "componentName": "block-d / statement-light",
+        "content": {
+          "counter": "08 / 08",
+          "headline": "O Bill está aqui",
+          "headlineItalic": "para essa conversa.",
+          "body": "Antes da sexta. Durante. E depois. Sem julgamento, no seu tempo.",
+          "subhead": "",
+          "subtext": "",
+          "cta": "Falar com o Bill agora",
+          "bullets": []
+        },
+        "needsPhoto": false
+      }
+    ]
+  },
+  {
+    "name": "02 / Monday — Rosa / Relaxar vs. Escapar",
+    "folder": "WEEK02_240626_SextaComAmigos/02_MONDAY_RosaRelaxarVsEscapar",
+    "slides": [
+      {
+        "slideIndex": 1,
+        "template": "cover-a",
+        "componentId": "3356:6120",
+        "componentName": "cover-a / minimal-light",
+        "content": {
+          "counter": "01 / 08",
+          "headline": "Relaxar e escapar",
+          "headlineItalic": "não são a mesma coisa.",
+          "body": "E saber qual dos dois está acontecendo em você muda tudo.",
+          "subhead": "",
+          "subtext": "",
+          "cta": "",
+          "bullets": []
+        },
+        "needsPhoto": false
+      },
+      {
+        "slideIndex": 2,
+        "template": "block-d",
+        "componentId": "3356:6411",
+        "componentName": "block-d / statement-light",
+        "content": {
+          "counter": "02 / 08",
+          "headline": "Relaxar te deixa",
+          "headlineItalic": "mais você depois.",
+          "body": "Escapar te afasta de você — temporariamente. O alívio é real. Mas o que estava lá volta quando o efeito passa.",
+          "subhead": "",
+          "subtext": "",
+          "cta": "",
+          "bullets": []
+        },
+        "needsPhoto": false
+      },
+      {
+        "slideIndex": 3,
+        "template": "block-h",
+        "componentId": "3356:6555",
+        "componentName": "block-h / quote-content",
+        "content": {
+          "counter": "03 / 08",
+          "headline": "O corpo",
+          "headlineItalic": "sabe a diferença.",
+          "body": "Quando você genuinamente relaxa, sai mais leve. Quando escapa, acorda mais pesada.",
+          "subhead": "É isso mesmo!",
+          "subtext": "",
+          "cta": "",
+          "bullets": []
+        },
+        "needsPhoto": true
+      },
+      {
+        "slideIndex": 4,
+        "template": "block-a",
+        "componentId": "3356:6346",
+        "componentName": "block-a / list-dark",
+        "content": {
+          "counter": "04 / 08",
+          "headline": "Sinais de que",
+          "headlineItalic": "é descanso genuíno:",
+          "body": "",
+          "subhead": "",
+          "subtext": "",
+          "cta": "",
+          "bullets": [
+            "Você quer aquelas pessoas — não o drink",
+            "Conseguiria parar no primeiro sem frustração",
+            "Na segunda, você lembra a sexta com leveza",
+            "Seu corpo não pede o drink — sua mente quer a companhia"
+          ]
+        },
+        "needsPhoto": false
+      },
+      {
+        "slideIndex": 5,
+        "template": "block-f",
+        "componentId": "3356:6444",
+        "componentName": "block-f / list-light-b",
+        "content": {
+          "counter": "05 / 08",
+          "headline": "Sinais de que pode",
+          "headlineItalic": "ser escape:",
+          "body": "",
+          "subhead": "",
+          "subtext": "",
+          "cta": "",
+          "bullets": [
+            "Você quer o alívio — não as pessoas",
+            "Happy hour sem drink parece inútil",
+            "Está tentando não pensar em algo específico",
+            "Na manhã seguinte, se sente mais pesada que descansada"
+          ]
+        },
+        "needsPhoto": false
+      },
+      {
+        "slideIndex": 6,
+        "template": "data-e",
+        "componentId": "3356:8429",
+        "componentName": "data-e / quote-parts",
+        "content": {
+          "counter": "06 / 08",
+          "headline": "Escape vira padrão",
+          "headlineItalic": "quando é a única ferramenta.",
+          "body": "Com o tempo, a tolerância aumenta. O alívio diminui. E o que foi anestesiado acumula sem ser processado.",
+          "subhead": "",
+          "subtext": "",
+          "cta": "",
+          "bullets": []
+        },
+        "needsPhoto": false
+      },
+      {
+        "slideIndex": 7,
+        "template": "block-j",
+        "componentId": "3356:6518",
+        "componentName": "block-j / final-quote-a",
+        "content": {
+          "counter": "07 / 08",
+          "headline": "Reconhecer",
+          "headlineItalic": "já é uma escolha.",
+          "body": "",
+          "subhead": "",
+          "subtext": "Você não precisa mudar nada hoje. Só observar o que realmente está acontecendo quando a sexta chega.",
+          "cta": "",
+          "bullets": []
+        },
+        "needsPhoto": true
+      },
+      {
+        "slideIndex": 8,
+        "template": "block-d",
+        "componentId": "3356:6411",
+        "componentName": "block-d / statement-light",
+        "content": {
+          "counter": "08 / 08",
+          "headline": "O Bill está aqui",
+          "headlineItalic": "para essa conversa.",
+          "body": "Sem julgamento. Sem resposta certa. Só um espaço para ser honesta consigo mesma.",
+          "subhead": "",
+          "subtext": "",
+          "cta": "Conversar agora",
+          "bullets": []
+        },
+        "needsPhoto": false
+      }
+    ]
+  },
+  {
+    "name": "03 / Wednesday — Pedro / A Matemática do \"Só Mais Um\"",
+    "folder": "WEEK02_240626_SextaComAmigos/03_WEDNESDAY_PedroMaisUm",
+    "slides": [
+      {
+        "slideIndex": 1,
+        "template": "cover-b",
+        "componentId": "3356:6288",
+        "componentName": "cover-b / dark-bold-left",
+        "content": {
+          "counter": "01 / 08",
+          "headline": "\"Só mais um.\"",
+          "headlineItalic": "Por que o cérebro mente?",
+          "body": "Não é falta de controle. É um circuito neurológico — previsível e compreensível.",
+          "subhead": "",
+          "subtext": "",
+          "cta": "",
+          "bullets": []
+        },
+        "needsPhoto": false
+      },
+      {
+        "slideIndex": 2,
+        "template": "block-d",
+        "componentId": "3356:6411",
+        "componentName": "block-d / statement-light",
+        "content": {
+          "counter": "02 / 08",
+          "headline": "Não é fraqueza.",
+          "headlineItalic": "É neurobiologia.",
+          "body": "Seu cérebro está seguindo uma lógica muito precisa. E quando você entende essa lógica, você tem mais poder sobre ela.",
+          "subhead": "",
+          "subtext": "",
+          "cta": "",
+          "bullets": []
+        },
+        "needsPhoto": false
+      },
+      {
+        "slideIndex": 3,
+        "template": "block-h",
+        "componentId": "3356:6555",
+        "componentName": "block-h / quote-content",
+        "content": {
+          "counter": "03 / 08",
+          "headline": "O primeiro drink",
+          "headlineItalic": "muda o jogo.",
+          "body": "O córtex pré-frontal — responsável pelo autocontrole — tem sua atividade reduzida depois do primeiro drink. A decisão do \"só um\" foi tomada antes dele.",
+          "subhead": "É isso mesmo!",
+          "subtext": "",
+          "cta": "",
+          "bullets": []
+        },
+        "needsPhoto": true
+      },
+      {
+        "slideIndex": 4,
+        "template": "block-f",
+        "componentId": "3356:6444",
+        "componentName": "block-f / list-light-b",
+        "content": {
+          "counter": "04 / 08",
+          "headline": "3 mecanismos que",
+          "headlineItalic": "explicam o \"só mais um\":",
+          "body": "",
+          "subhead": "",
+          "subtext": "",
+          "cta": "",
+          "bullets": [
+            "Tolerância — o efeito diminui, o cérebro pede mais",
+            "Desinibição — o autocontrole fica comprometido após o 1°",
+            "Recompensa variável — \"talvez o próximo seja o ideal\""
+          ]
+        },
+        "needsPhoto": false
+      },
+      {
+        "slideIndex": 5,
+        "template": "data-f",
+        "componentId": "3356:8265",
+        "componentName": "data-f / quote-fill-percentage",
+        "content": {
+          "counter": "05 / 08",
+          "headline": "60%",
+          "headlineItalic": "",
+          "body": "do efeito do primeiro drink é menor hoje do que era há 1 ano em quem bebe regularmente.",
+          "subhead": "",
+          "subtext": "",
+          "cta": "",
+          "bullets": []
+        },
+        "needsPhoto": false
+      },
+      {
+        "slideIndex": 6,
+        "template": "block-g",
+        "componentId": "3356:6491",
+        "componentName": "block-g / topic-list-light",
+        "content": {
+          "counter": "06 / 08",
+          "headline": "Decida antes",
+          "headlineItalic": "de sair.",
+          "body": "",
+          "subhead": "O que fazer com isso:",
+          "subtext": "",
+          "cta": "",
+          "bullets": [
+            "Sua decisão é mais sólida antes do 1° drink",
+            "Estabeleça uma âncora concreta: \"2 drinks, depois água\"",
+            "Saiba onde fica seu ponto crítico — e planeje antes"
+          ]
+        },
+        "needsPhoto": false
+      },
+      {
+        "slideIndex": 7,
+        "template": "block-j",
+        "componentId": "3356:6518",
+        "componentName": "block-j / final-quote-a",
+        "content": {
+          "counter": "07 / 08",
+          "headline": "Entender o mecanismo",
+          "headlineItalic": "é ganhar controle.",
+          "body": "",
+          "subhead": "",
+          "subtext": "Você não é o problema. O problema é não ter um mapa. Agora você tem.",
+          "cta": "",
+          "bullets": []
+        },
+        "needsPhoto": true
+      },
+      {
+        "slideIndex": 8,
+        "template": "block-c",
+        "componentId": "3356:6399",
+        "componentName": "block-c / statement-dark",
+        "content": {
+          "counter": "08 / 08",
+          "headline": "O Bill pode ajudar",
+          "headlineItalic": "a mapear seus padrões.",
+          "body": "Antes do happy hour. No seu tempo. Sem julgamento.",
+          "subhead": "",
+          "subtext": "",
+          "cta": "Conversar com o Bill",
+          "bullets": []
+        },
+        "needsPhoto": false
+      }
+    ]
+  },
+  {
+    "name": "04 / Friday — Pedro / Como Curtir a Sexta Sem Álcool",
+    "folder": "WEEK02_240626_SextaComAmigos/04_FRIDAY_PedroSextaSemAlcool",
+    "slides": [
+      {
+        "slideIndex": 1,
+        "template": "cover-a",
+        "componentId": "3356:6120",
+        "componentName": "cover-a / minimal-light",
+        "content": {
+          "counter": "01 / 08",
+          "headline": "Essa sexta pode",
+          "headlineItalic": "ser diferente.",
+          "body": "Se você quiser. E se você tiver um plano.",
+          "subhead": "",
+          "subtext": "",
+          "cta": "",
+          "bullets": []
+        },
+        "needsPhoto": false
+      },
+      {
+        "slideIndex": 2,
+        "template": "block-d",
+        "componentId": "3356:6411",
+        "componentName": "block-d / statement-light",
+        "content": {
+          "counter": "02 / 08",
+          "headline": "O álcool não precisa",
+          "headlineItalic": "ser o protagonista.",
+          "body": "Você pode curtir a sexta com as mesmas pessoas, no mesmo bar, com uma experiência completamente diferente.",
+          "subhead": "",
+          "subtext": "",
+          "cta": "",
+          "bullets": []
+        },
+        "needsPhoto": false
+      },
+      {
+        "slideIndex": 3,
+        "template": "block-h",
+        "componentId": "3356:6555",
+        "componentName": "block-h / quote-content",
+        "content": {
+          "counter": "03 / 08",
+          "headline": "Decida antes",
+          "headlineItalic": "de sair.",
+          "body": "Com o cérebro tranquilo e fora do ambiente, suas decisões são muito mais sólidas.",
+          "subhead": "É isso mesmo!",
+          "subtext": "",
+          "cta": "",
+          "bullets": []
+        },
+        "needsPhoto": true
+      },
+      {
+        "slideIndex": 4,
+        "template": "block-a",
+        "componentId": "3356:6346",
+        "componentName": "block-a / list-dark",
+        "content": {
+          "counter": "04 / 08",
+          "headline": "3 coisas para decidir",
+          "headlineItalic": "antes do happy hour:",
+          "body": "",
+          "subhead": "",
+          "subtext": "",
+          "cta": "",
+          "bullets": [
+            "O que você vai pedir (já sabe antes de chegar)",
+            "O que vai responder: \"Por que você não tá bebendo?\"",
+            "Até que horas você vai ficar — e quando reavalia",
+            "O que você quer levar dessa noite"
+          ]
+        },
+        "needsPhoto": false
+      },
+      {
+        "slideIndex": 5,
+        "template": "block-f",
+        "componentId": "3356:6444",
+        "componentName": "block-f / list-light-b",
+        "content": {
+          "counter": "05 / 08",
+          "headline": "3 respostas que funcionam",
+          "headlineItalic": "sem gerar debate:",
+          "body": "",
+          "subhead": "",
+          "subtext": "",
+          "cta": "",
+          "bullets": [
+            "\"Tô cortando um pouco, vendo como me sinto\"",
+            "\"Amanhã tenho uma coisa cedo\"",
+            "\"Hoje não tô com vontade\""
+          ]
+        },
+        "needsPhoto": false
+      },
+      {
+        "slideIndex": 6,
+        "template": "block-b",
+        "componentId": "3356:6373",
+        "componentName": "block-b / list-light",
+        "content": {
+          "counter": "06 / 08",
+          "headline": "O sábado",
+          "headlineItalic": "muda tudo.",
+          "body": "",
+          "subhead": "",
+          "subtext": "",
+          "cta": "",
+          "bullets": [
+            "Você lembra da conversa inteira",
+            "Acorda sem névoa, sem ansiedade",
+            "O corpo descansou de verdade",
+            "Você tem a manhã de volta"
+          ]
+        },
+        "needsPhoto": false
+      },
+      {
+        "slideIndex": 7,
+        "template": "block-j",
+        "componentId": "3356:6518",
+        "componentName": "block-j / final-quote-a",
+        "content": {
+          "counter": "07 / 08",
+          "headline": "O melhor da sexta",
+          "headlineItalic": "não estava no copo.",
+          "body": "",
+          "subhead": "",
+          "subtext": "Quando você experimenta uma vez, a comparação existe — e a comparação é informação.",
+          "cta": "",
+          "bullets": []
+        },
+        "needsPhoto": true
+      },
+      {
+        "slideIndex": 8,
+        "template": "block-d",
+        "componentId": "3356:6411",
+        "componentName": "block-d / statement-light",
+        "content": {
+          "counter": "08 / 08",
+          "headline": "O Bill pode te ajudar",
+          "headlineItalic": "a planejar essa sexta.",
+          "body": "Antes de sair. Sem julgamento. No seu tempo.",
+          "subhead": "",
+          "subtext": "",
+          "cta": "Conversar com o Bill",
+          "bullets": []
+        },
+        "needsPhoto": false
+      }
+    ]
+  }
+]

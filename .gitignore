@@ -14,3 +14,4 @@ brand/unsplash-key.txt
 brand/figma-token.txt
 .vercel
 .env*.local
+.mcp.json
