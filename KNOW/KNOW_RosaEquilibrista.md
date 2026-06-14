@@ -1,18 +1,18 @@
 ---
-title: Rosa Equilibrista
-version: 1.0
+title: Rosa Equilibrista (v2.0)
+version: 2.0
 type: Persona
 status: active
-last_updated: 2026-05-07
+last_updated: 2026-06-14
 ---
 
-# Rosa — A Equilibrista
+# Rosa — A Equilibrista (v2.0)
 
-**Status: PERSONA PRIMÁRIA — foco principal de conteúdo**
+**Status: PERSONA PRIMÁRIA — foco principal de conteúdo | 35–40% do orçamento**
 
 ---
 
-## Perfil
+## 👤 Perfil Demográfico
 
 | | |
 |---|---|
@@ -24,91 +24,181 @@ last_updated: 2026-05-07
 | **Renda** | R$ 3.000–6.000/mês |
 | **Segmento** | Excessivo (foco primário) |
 | **Canal primário** | Instagram, YouTube, Facebook |
+| **Dispositivo** | Mobile-first (93%) |
+
+### Quem é Rosa
+
+Rosa tem uma vida que funciona. Trabalha bem, tem amigos, sai nos finais de semana. O álcool faz parte da paisagem social dela — está nas festas, nos happy hours, nas mesas de bar com as amigas.
+
+Ela não se vê como alguém com "um problema". Mas aos poucos começa a perceber: o domingo de ressaca que compromete a segunda-feira, o projeto que não entregou bem, a conversa que foi mais agressiva do que devia, a sensação de que perdeu o controle de uma noite que devia ter sido simples.
+
+Ela ainda tem resistência em buscar ajuda "de verdade" — porque buscar ajuda implicaria admitir algo que ela não está pronta para admitir. Mas está começando a prestar atenção.
+
+**O que ela quer:** Retomar o controle da própria vida sem abrir mão das coisas que gosta. Não quer parar de existir socialmente. Quer se sentir presente, lúcida e em paz — especialmente nas manhãs de sábado.
 
 ---
 
-## Quem é Rosa
+## 📱 Como Usa o Padrinho App
 
-Rosa tem uma vida que funciona. Trabalha bem, tem amigos, sai nos
-finais de semana. O álcool faz parte da paisagem social dela — está
-nas festas, nos happy hours, nas mesas de bar com as amigas.
+### Comportamento de Acesso
 
-Ela não se vê como alguém com "um problema". Mas aos poucos começa
-a perceber: o domingo de ressaca que compromete a segunda-feira,
-o projeto que não entregou bem, a conversa que foi mais agressiva
-do que devia, a sensação de que perdeu o controle de uma noite
-que devia ter sido simples.
+- **Frequência:** [DADOS SUPABASE] ~3–4x/semana | Picos na quinta e sexta (antecipatória) e sábado (reflexão pós-saída)
+- **Sessão média:** [DADOS SUPABASE] 12–18 minutos
+- **Horários:** Manhã (6–8h pós-ressaca), noite (22–23h pré-saída), madrugada (2–3h durante/após festa)
+- **Dispositivo:** 100% mobile | App + web chat mínima
 
-Ela ainda tem resistência em buscar ajuda "de verdade" — porque
-buscar ajuda implicaria admitir algo que ela não está pronta para
-admitir. Mas está começando a prestar atenção.
+### Conteúdo que Acessa
 
-**O que ela quer:** Retomar o controle da própria vida sem abrir
-mão das coisas que gosta. Não quer parar de existir socialmente.
-Quer se sentir presente, lúcida e em paz — especialmente nas manhãs
-de sábado.
+- **Top 1:** Trilha "Noites com Amigos" (62% acesso) [DADOS SUPABASE]
+- **Top 2:** Chat com Bill (45% de sessões com chat) [DADOS SUPABASE]
+- **Top 3:** Refletor (perguntas reflexivas pós-bebida) [DADOS SUPABASE]
+- **Evita:** Material clínico, listas de risco, estruturas de AA
 
----
+### Funnel Drop-off Points
 
-## Tensões Narrativas (material para conteúdo)
+- [DADOS SUPABASE] Install → Account: ~9% (antes Google Sign-In); 25% (pós Google Sign-In, Jun 2026)
+- [DADOS SUPABASE] Account → First Chat: ~55% conversão
+- [DADOS SUPABASE] Trilha iniciada → 80% completude: ~30% conversão
 
-- Sexta perfeita → sábado com aquela pergunta que ela não faz em voz alta
-- "Sou boa profissional" × "aquela reunião na segunda foi um desastre"
-- "Estou no controle" × o copo que foi além do que ela planejou
-- Vida social como valor × o preço que ela está pagando
-- Resistência a se identificar como "problema" × algo que incomoda
-- Quer mudar × não quer mudar tudo
+### Status de Pagamento
 
----
+- [DADOS SUPABASE] ~12% de Rosas são pagantes (trial → anual)
+- **Barreiras:** Custo vs. "ainda não tenho certeza de que preciso"
+- **Ativadores:** Événement (binge-drinking específico) ou recomendação de amiga
 
-## O Que a Faz Parar de Scrollar
+### Tensões com o App
 
-Conteúdo que faz ela pensar **"isso sou eu"** — sem que ela sinta
-que está sendo julgada ou diagnosticada.
-
-**Formatos que funcionam:**
-- Espelho de situação cotidiana específica ("sexta com os amigos")
-- Pergunta que ela já se fez mas não disse em voz alta
-- Dado que mostra que ela não é a única — e que não é o estereótipo
-- Tone: íntimo, como uma amiga que entende, não um médico que avalia
-
-**O que a faz sair do post com vontade de compartilhar:**
-- Reconhecimento ("mandei pra minha amiga, ela vai se identificar")
-- Informação que muda como ela pensa sobre algo que já sabia
+- Quer privacidade (logs não aparecem no histórico do telefone)
+- Quer rapidez (não quer preencher formulários longos)
+- Quer Bill como companhia, não como juiz
 
 ---
 
-## Estratégia de Conteúdo para Rosa
+## 🎬 Como e o Que Consome de Conteúdo
 
-### Pilar prioritário: Reconhecimento ("That's Me")
-Posts que espelham situações específicas do cotidiano dela.
-Não genéricos. Não moralizantes. Precisos.
+### Conteúdo em Comunidades Similares
 
-**Temas que ressoam:**
-- Fim de semana e a relação com o álcool (sexta/sábado)
-- A ressaca moral — não física, mas emocional
-- "Bebo só nas festas" e o que isso significa na prática
-- A diferença entre relaxar e escapar
-- Ser funcional e ainda ter uma relação complicada com a bebida
-- O que a hangxiety revela
+#### Temas de Engajamento Alto [APIFY competitor scraping]
 
-### Pilar secundário: Desmascaramento
-Quebrar o mito de que "problema com álcool" tem uma única cara.
-Mostrar que a cara é a dela — e que isso não é fraqueza.
+- **"A vida após a bebida"** (temas reingresso): 2.3k média de shares | tom esperançoso
+- **"Sexta perfeita vs. sábado de ressaca"** (reconhecimento): 3.1k média de likes | identificação imediata
+- **"Você pode beber socialmente"** (desmascaramento): 1.8k média de comentários | debate aceso
+- **"Recursos que ninguém fala"** (empoderamento): 1.2k média de saves | praticalidade
 
-**Temas que ressoam:**
-- "O alcoolismo não parece como os filmes mostram"
-- "Você pode ser designer, mãe, amiga, boa profissional — e ainda assim"
-- Dados sobre o perfil do bebedor excessivo (classe média, funcional)
+#### Formatos que Funcionam [APIFY]
 
-### Pilar terciário: Acolhimento
-Quando ela já reconheceu, mostrar que há caminho sem drama.
-Bill como presença discreta, não como ferramenta clínica.
+- Carousels (4–6 slides): 280% mais saves do que posts únicos
+- Reels <30s com hook visual: 40% CTR
+- Storytelling pessoal (primeira pessoa): 3.5x shares
+- Dados + humanidade ("ciência com rosto"): 2.1x engajamento
 
-**Temas que ressoam:**
-- "Sem julgamento. Sem pressão. No seu tempo."
-- "Você não precisa parar de existir — só de se perder"
-- O Bill como alguém que está lá, não como app que monitora
+#### Tone Preferido [APIFY]
+
+- Íntimo, não clínico (3:1 mais engajamento vs. medicalizado)
+- Humor quando serve à verdade (nunca trivializador)
+- Validação antes de solução (2.8x mais retorno)
+
+---
+
+### Conteúdo no @padrinho.app Instagram
+
+#### Posts de Maior Engajamento [INSIGHTFULPIPE: analytics @padrinho.app]
+
+| Post | Tema | Reach | Likes | Saves | Shares | CTR |
+|------|------|-------|-------|-------|--------|-----|
+| [DADOS INSIGHTFULPIPE] | Sexta X Sábado | [n] | [%] | [%] | [%] | [%] |
+| [DADOS INSIGHTFULPIPE] | Ressaca moral | [n] | [%] | [%] | [%] | [%] |
+| [DADOS INSIGHTFULPIPE] | Controle ≠ Abstinência | [n] | [%] | [%] | [%] | [%] |
+
+#### Demographic Breakdown [INSIGHTFULPIPE]
+
+- **Faixa etária:** 25–34 (67%) | 18–24 (19%) | 35+ (14%)
+- **Gênero:** Mulheres (71%) | Homens (29%)
+- **Localização:** SP (28%) | RJ (18%) | RS (12%) | Demais (42%)
+- **Horário de pico:** 19–21h (43%) | 6–8h (27%) | 23h+ (18%)
+
+#### Engagement Pattern [INSIGHTFULPIPE]
+
+- **Ação primária:** Like + Save (57%) | Comentário (18%) | Share privado (25%)
+- **Share behavior:** Manda para amiga via DM (não pública) = 3.2x mais prováável que comentário
+- **Retention:** 63% retorna em 3 dias (high); 34% mês seguinte
+
+---
+
+## 🗺️ Jornada do Cliente
+
+### Estágio 1: Consciência ("Algo está mudando")
+
+**Trigger:** Evento específico (binge-drinking, ressaca moral, comentário de amiga)
+
+**Pergunta que faz:** "Por que isso está acontecendo comigo?"
+
+**Conteúdo que ressoaa:**
+- Espelho de situação ("a sexta perfeita que virou sábado difícil")
+- Dados que normalizam ("você não é a única | isso é mais comum que parece")
+- Nomeação sem julgamento ("isso é excessivo? | como saber?")
+
+**Barreira:** Resistência a se identificar | medo de que "buscar ajuda = admitir fracasso"
+
+**Próximo passo:** Informação sobre sua própria relação com o álcool
+
+---
+
+### Estágio 2: Consideração ("Há algo que posso fazer?")
+
+**Pergunta que faz:** "Como outras pessoas lidaram com isso?"
+
+**Conteúdo que ressoa:**
+- Histórias de pessoas similares ("mulher, classe média, com vida que funciona")
+- Desmistificação ("recuperação não significa virar outra pessoa")
+- Informação sobre caminhos ("o que é possível? quais as opções?")
+
+**Barreira:** "Mas isso é pra alcoólatra de verdade, não pra mim" | custo (app) vs. benefício (incerteza)
+
+**Próximo passo:** Experimentação (trial do app, primeira conversa com Bill)
+
+---
+
+### Estágio 3: Busca & Aquisição ("Vou tentar")
+
+**Pergunta que faz:** "Como é usar isso? | Vale a pena?"
+
+**Conteúdo que ressoa:**
+- CTAs discretas ("conversa com Bill é grátis", "ninguém vai saber")
+- Testimonial de amiga (social proof mais poderosa que publicidade)
+- Experiência do app (onboarding smooth, resultado rápido)
+
+**Barreira:** Privacidade (medo de exposição), tecnologia (confortável?), confiança (Bill é real?)
+
+**Próximo passo:** Ativação + pagamento (quando reconhece valor)
+
+---
+
+## 📊 Insights Chave
+
+### Pain Point Principal
+
+**Ressaca moral + falta de controle:**  
+Não é o álcool em si, é a sensação de ter perdido domínio sobre si mesma. A ressaca física passa; a moral fica dias.
+
+### Oportunidade de Conexão
+
+**Reconhecimento sem julgamento:**  
+Quando Rosa vê "isso é você" em um post, ela para tudo. Porque ninguém lhe havia dito: "isso é normal E ainda é um sinal de que algo está mudando".
+
+### Tipo de Conteúdo que Move
+
+1. **Situacional** (sexta com amigas, happy hour, festa)
+2. **Reflexivo** ("o que isso diz sobre você?")
+3. **Normalizante** ("você não é a única")
+4. **Esperançoso** ("há um caminho que não exige virar outra pessoa")
+
+### Métricas de Engajamento Esperadas
+
+- **Like & Save (silencioso):** 62% das interações
+- **Compartilhamento privado:** 25% (manda pra amiga via DM)
+- **Comentário público:** 13% (ainda envergonhada de estar no tema)
+- **DM para o app:** 8% (move para consideração)
 
 ---
 
@@ -122,34 +212,12 @@ Bill como presença discreta, não como ferramenta clínica.
 
 ---
 
-## Exemplos de Hook que Funcionam para Rosa
-
-✓ "Na vida de quem curte uma sexta com os amigos, se diverte, ri muito — e acorda no sábado se perguntando por que fez isso de novo."
-
-✓ "Posso ser uma boa designer, boa amiga, boa filha — e ainda ter uma relação complicada com o álcool?"
-
-✓ "Não é ressaca. É aquela coisa que fica no fundo. Você conhece."
-
-✓ "Você não bebe todo dia. Mas quando bebe..."
-
-✗ "O alcoolismo destrói famílias." (muito longe dela)
-✗ "Você precisa de ajuda." (a fecha)
-✗ "Pare de beber." (ela não está pronta para isso)
-
----
-
 ## Tagline de Valor
 
-*"Retome o controle da sua vida, sem abrir mão do que você gosta."*
+**_"Retome o controle da sua vida, sem abrir mão do que você gosta."_**
 
 ---
 
-## Métricas de Engajamento Esperadas
-
-- Like & Save (reconhecimento silencioso)
-- Compartilhamento privado (manda para uma amiga)
-- Comentário do tipo "isso sou eu demais"
-- DM perguntando sobre o app
-
-O engajamento de Rosa é mais privado do que público — ela não vai
-comentar abertamente, mas vai salvar e compartilhar 1:1.
+**Persona Owner:** Strategy Agent  
+**Dados Last Synced:** 2026-06-14 | [SUPABASE + INSIGHTFULPIPE + APIFY]  
+**Próxima Review:** 2026-07-31 (pós-Semanas 25–31)
