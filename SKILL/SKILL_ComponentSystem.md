@@ -146,18 +146,37 @@ frame (1080×1440, cornerRadius 44)
 
 ---
 
-## Limites de Conteúdo por Template
+## Campos Disponíveis e Limites de Conteúdo por Template
 
-| Categoria | Headline | Body/Subhead | Bullets | CTA |
-|---|---|---|---|---|
-| Covers (a/b) | 3 linhas | 2 linhas | — | 1 linha |
-| Covers (c/d) | 2 linhas | 1 linha | — | 1 linha |
-| Blocks list | 2 linhas | — | 3–4 items | 1–2 linhas |
-| Blocks statement | 2–3 linhas | 2 linhas | — | 1 linha |
-| Blocks quote (foto) | 2–3 linhas | 1 linha | 0–4 items | 1 linha |
-| Data | 1–2 linhas | 1–2 linhas | — | — |
+O copywriter DEVE gerar EXATAMENTE e APENAS os campos (`keys`) suportados pelo componente escolhido. **NUNCA crie chaves como `body` ou `headline-italic` se o componente na tabela abaixo não possuir suporte para elas**.
 
-Se o conteúdo não couber: condensar o copy, não forçar no template.
+| Nome do Template | Campos (Keys) Suportados no Figma | Limites Estimados |
+|---|---|---|
+| `cover-a`, `cover-b` | `headline`, `body` | Headline: 2-3 linhas. Body: 2 linhas. (NOTA: não suporta `headline-italic`) |
+| `cover-c` | `headline`, `subtext` | Headline: 2 linhas. Subtext: 1 linha. |
+| `cover-d` | `headline`, `headline-italic` | Headline: 2 linhas. Italic: 1 linha. |
+| `block-a`, `block-b` | `headline`, `subtext`, `bullet-1`, `bullet-2`, `bullet-3`, `bullet-4` | Headline: 2 linhas. Bullets: 4 itens curtos. Subtext: 1-2 linhas. |
+| `block-e`, `block-f` | `headline`, `body`, `bullet-1`, `bullet-2`, `bullet-3` | Headline: 2 linhas. Bullets: 3 itens curtos. Body: 2 linhas. |
+| `block-c`, `block-d` | `headline`, `subtext` | Headline: 2-3 linhas. Subtext: 1 linha (usado como botão/tag). (NOTA: não suporta `body`) |
+| `block-h` | `subhead`, `headline`, `body` | Subhead: 1 linha curta. Headline: 3 linhas. Body: 2 linhas. |
+| `block-i` | `headline`, `bullet-1`, `bullet-2`, `bullet-3`, `bullet-4` | Headline: 2 linhas. Bullets: 4 itens. |
+| `block-g` | `subhead`, `headline`, `body`, `bullet-1`, `bullet-2`, `bullet-3` | Subhead: 1 linha. Headline: 3 linhas. Body: 1 linha. Bullets: 3 itens curtos. |
+| `block-j` | `headline`, `cta` | Headline: 3 linhas. CTA: 2 linhas. |
+| `block-k`, `block-n` | `subhead`, `headline` | Subhead: 1 linha. Headline: 3 linhas. |
+| `block-l`, `block-m` | `headline` | Headline: 3-4 linhas. |
+| `block-o` | `headline`, `subtext` | Headline: 3 linhas. Subtext: 2 linhas. |
+| `block-p` | `headline`, `cta` | Headline: 3 linhas. CTA: 1 linha. |
+| `data-a` | `headline`, `subhead`, `subtext` | Headline: 2 linhas. Subhead: 1 linha. Subtext: 1 linha. |
+| `data-b`, `data-c`, `data-g` | `headline` | Headline: 2-3 linhas. |
+| `data-e` | `headline` | Headline: 2-3 linhas. (Os números fixos agora se chamam `number` e não devem ser gerados) |
+| `data-f` | `headline`, `body` | Headline: 1-2 palavras (usado para o número gigante em destaque). Body: 2 linhas. (As porcentagens fixas agora se chamam `percentage` e não devem ser geradas) |
+| `data-d` | `headline`, `body` | Headline: 2 linhas. Body: 2 linhas. |
+
+> **CRÍTICO PARA O COPYWRITER:** Se você precisa de um parágrafo longo (`body`), **NÃO ESCOLHA** templates como `block-d` ou `block-a`, pois eles não têm onde receber o texto. Escolha `block-h` ou `cover-a`. 
+
+> **IMAGENS (UNSPLASH):** Para componentes com foto (ex: `cover-c`, `block-h`), adicione uma linha `image-query: <termos de busca>` no Markdown seguindo o vocabulário do `SKILL_PhotoGuidelines.md`. O motor irá baixar a imagem e injetar automaticamente na camada `image`.
+
+Se o conteúdo não couber: condensar o copy, não forçar no template e não inventar chaves inexistentes.
 
 ---
 

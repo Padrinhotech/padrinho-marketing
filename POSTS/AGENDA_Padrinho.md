@@ -3,7 +3,7 @@ title: AGENDA Padrinho — Temas H2 2026
 version: 1.0
 type: Editorial Calendar
 status: active
-last_updated: 2026-06-14
+last_updated: 2026-06-16
 ---
 
 # AGENDA Padrinho — Temas H2 2026
@@ -50,9 +50,18 @@ Estrutura: data | tema | pilar editorial | persona primária | canais | status
 | | | | | | | • 02_MONDAY: mulheres AA → Rosa |
 | | | | | | | • 03_WEDNESDAY: dep+tech → Pedro |
 | | | | | | | • 04_FRIDAY: como usar Bill → Pedro |
-| 26 | 24–30 Jun | Sexta com os amigos: a diferença entre relaxar e escapar | Reconhecimento | 4 | Planejado | `WEEK02_240626_SextaComAmigos/` |
-| | | | | | | • 4 ângulos diferentes (1 tema, 4 formatos) |
-| 27 | 01–07 Jul | Pais que bebem: o que as crianças veem (e o que não dizem) | Acolhimento | 4 | Planejado | `WEEK03_010726_PaisQueBebem/` |
+| 26 | 24–30 Jun | Sexta com os amigos: a diferença entre relaxar e escapar | Reconhecimento | 4 | ✅ Figma Pronto | `WEEK02_240626_SextaComAmigos/` |
+| | | | | | | • 01_SUNDAY: gatilho social → Rosa |
+| | | | | | | • 02_MONDAY: relaxar vs escapar → Rosa |
+| | | | | | | • 03_WEDNESDAY: a matemática do "só mais um" → Pedro |
+| | | | | | | • 04_FRIDAY: sexta sem álcool → Pedro |
+| | | | | | | • 32 slides enviados ao Figma via Bridge (página 🌀 240626) |
+| 27 | 01–07 Jul | Pais que bebem: o que as crianças veem (e o que não dizem) | Acolhimento | 4 | ✅ Figma Pronto | `WEEK03_010726_PaisQueBebem/` |
+| | | | | | | • 01_SUNDAY: o que a criança vê (clima, não o copo) → Rosa |
+| | | | | | | • 02_MONDAY: "você não é uma mãe ruim, é uma mãe que luta" → Rosa |
+| | | | | | | • 03_WEDNESDAY: o "segundo turno" depois que as crianças dormem → Pedro |
+| | | | | | | • 04_FRIDAY: como começar a reparar (o primeiro passo) → Pedro |
+| | | | | | | • Textos prontos nos 6 canais; 32 slides enviados ao Figma via Bridge (página 🌀 010726) |
 
 ### JULHO (Semanas 28–32) — Iniciativas Especiais
 

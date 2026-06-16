@@ -170,49 +170,38 @@ Realidade compartilhada, não performance.
 
 | Modificador | Quando usar |
 |---|---|
-| `candid` | Reconhecimento e desmascaramento |
-| `authentic` | Todos os posts |
-| `natural light` | Acolhimento e empoderamento |
-| `dark moody` | Templates com overlay navy |
-| `warm tones` | Acolhimento |
-| `blurred background` | Quando sujeito deve se destacar |
-| `motion blur` | Confusão ou espiral emocional |
+| `candid` | Momentos autênticos, sem pose |
 | `portrait` | Sempre para templates fullbleed |
+| `dark` | Para templates com texto claro sobre fundo |
+
+> **⚠️ REGRA DE OURO PARA UNSPLASH:** O algoritmo do Unsplash funciona **muito mal** com frases longas. Quanto mais palavras você coloca, mais genérica e "stock" a foto fica. Use no **máximo 3 a 4 palavras fortes** por query.
 
 ### Queries por template
 
 ```
 cover-c (overlay azul escuro):
-"{emoção} woman {modificador} portrait dark tones"
-Ex: "exhausted woman candid portrait dark moody"
+Ex: "exhausted woman portrait"
 
 cover-d (foto direta, texto handwriting):
-"{emoção} woman authentic natural light {contexto}"
-Ex: "pensive woman natural light morning indoor"
+Ex: "pensive woman morning"
 
 block-h (foto dark + raios):
-"woman {estado} dark moody portrait authentic"
-Ex: "anxious woman dark moody portrait candid"
+Ex: "anxious portrait dark"
 
 block-i (foto warm, lista sobreposta):
-"woman {emoção} warm tones candid {contexto}"
-Ex: "contemplative woman warm tones candid indoor"
+Ex: "contemplative woman warm"
 
 block-j (foto dark, homem ou mulher):
-"person {estado} dark moody {ação}"
-Ex: "man stressed hands head dark moody authentic"
+Ex: "man stressed dark"
 
 block-k (foto vivid, empoderamento):
-"{persona} {ação positiva} natural light outdoors"
-Ex: "woman confident outdoors natural light candid"
+Ex: "woman confident outdoors"
 
 block-l (foto escura, conexão):
-"women {conexão} candid warm authentic"
-Ex: "women friends laughing candid warm authentic"
+Ex: "women friends laughing"
 
 block-n (foto + raios, fechamento):
-"{tema do slide} person portrait authentic"
-Ex: "woman recovery hope portrait authentic"
+Ex: "woman recovery portrait"
 ```
 
 ---

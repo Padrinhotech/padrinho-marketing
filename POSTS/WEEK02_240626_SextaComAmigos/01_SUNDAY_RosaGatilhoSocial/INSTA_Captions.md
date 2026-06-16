@@ -1,59 +1,52 @@
 # Slides — A sexta chegou: e com ela a pressão
 
 ## Slide 01 / cover-b
-headline: A sexta chegou.
-headline-italic: E com ela a pressão.
+headline: A sexta chegou. E com ela a pressão.
 body: Isso que você sente não é fraqueza. É humano — e tem um nome.
 counter: 01 / 08
 
-## Slide 02 / block-d
-headline: A sexta não é
-headline-italic: só um convite para beber.
+## Slide 02 / cover-a
+headline: A sexta não é só um convite para beber.
 body: É um convite para pertencer. Relaxar. Se sentir parte. O álcool é o veículo — mas o que você busca vai além dele.
 counter: 02 / 08
 
 ## Slide 03 / block-h 🖼
+image-query: anxious portrait dark
 subhead: É isso mesmo!
-headline: É normal
-headline-italic: sentir essa pressão.
+headline: É normal sentir essa pressão.
 body: O convite do happy hour carrega muito mais do que um drink. E reconhecer isso muda a sua escolha.
 counter: 03 / 08
 
 ## Slide 04 / block-f
-headline: Como a pressão social
-headline-italic: aparece sem ser dita:
+headline: Como a pressão social aparece sem ser dita:
 bullet-1: O olhar quando você pede água
 bullet-2: "Mas é sexta, você não vai beber?"
 bullet-3: O brinde que todo mundo faz — menos você
-bullet-4: "Semana pesada, a gente merece"
+body: "Semana pesada, a gente merece"
 counter: 04 / 08
 
 ## Slide 05 / data-f
 headline: 73%
-bold-text: das pessoas em recovery relatam a sexta-feira como o gatilho social mais frequente.
-body: Você não está sozinha nessa.
+body: das pessoas em recovery relatam a sexta-feira como o gatilho social mais frequente. Você não está sozinha nessa.
 counter: 05 / 08
 
 ## Slide 06 / block-g
 subhead: Antes de responder o convite:
-headline: Pause 30 segundos
-headline-italic: e pergunte:
-topic-1: O que eu estou sentindo agora?
-topic-2: O que eu espero que o happy hour entregue?
-topic-3: Se não fosse beber, eu ainda iria?
+headline: Pause 30 segundos e pergunte:
+bullet-1: O que eu estou sentindo agora?
+bullet-2: O que eu espero que o happy hour entregue?
+bullet-3: Se não fosse beber, eu ainda iria?
 counter: 06 / 08
 
 ## Slide 07 / block-j 🖼
-headline: Reconhecer o gatilho
-headline-italic: já é uma escolha.
-subtext: Você não precisa resistir na força. Precisa criar um segundo entre o estímulo e a resposta.
+image-query: man stressed dark
+headline: Reconhecer o gatilho já é uma escolha.
+cta: Você não precisa resistir na força. Precisa criar um segundo entre o estímulo e a resposta.
 counter: 07 / 08
 
 ## Slide 08 / block-d
-headline: O Bill está aqui
-headline-italic: para essa conversa.
-body: Antes da sexta. Durante. E depois. Sem julgamento, no seu tempo.
-cta-text: Falar com o Bill agora
+headline: O Bill está aqui para essa conversa. Antes da sexta. Durante. E depois. Sem julgamento, no seu tempo.
+subtext: Falar com o Bill agora
 counter: 08 / 08
 
 ---
