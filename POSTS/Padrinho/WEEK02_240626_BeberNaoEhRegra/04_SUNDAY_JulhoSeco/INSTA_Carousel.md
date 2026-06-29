@@ -15,10 +15,10 @@ spine: cover-e · block-r · block-q · data-f · block-q · block-r · block-h 
 
 ## Slide 01 — CAPA 🖼 (`cover-e`, foto)
 **subhead:** Julho Seco começa semana que vem
-**headline (Moma — editar no Figma):** Já pensou em ficar 30 dias sem álcool?
+**headline (Moma):** Já pensou em ficar 30 dias sem álcool?
 **cta:** Esse é o momento — bora juntos? 🌱
 `image-query`: "calm person in morning sunlight holding glass of water, fresh start, hopeful, minimalist"
-> ⚠️ `headline` está em **Moma** (não editável via API) — digitar no Figma.
+> `headline` está em **Moma** — agora editável via API (preencher normalmente).
 
 ## Slide 02 — (`block-r` content-dark) — a ideia que muda tudo
 **headline:** Promessa vs. experimento
