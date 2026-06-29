@@ -26,14 +26,20 @@ Cada "post" é criado UMA VEZ em camadas: Texto → Imagem → Vídeo.
 
 Cada camada alimenta múltiplos canais sem duplicação desnecessária.
 
-### Pasta Principal: `DDMMYYYY_Tema`
+### Estrutura: semana → post
 
-**Naming:** `DDMMYYYY_TemaEmMinusculaSemEspacos`
+A unidade é a **semana**. Cada semana é uma pasta com os posts dentro:
+
+```
+POSTS/<Marca>/WEEKxx_DDMMYY_Tema/        ← semana
+└── NN_DIA_AnguloPersona/                ← post
+```
 
 Exemplos:
-- `14062026_SobriedadeGlowUp`
-- `21062026_AalcolismoFeminino`
-- `28062026_MudancaDeEstilo`
+- `WEEK03_010726_PaisQueBebem/01_MONDAY_AnaFilhoLembra/`
+- `WEEK02_240626_BeberNaoEhRegra/03_SATURDAY_PedroAlcoolCerebro/`
+
+> Cada agente preenche um shell de `MODEL/` — ver `MODEL/README.md`.
 
 ### Arquivos Dentro da Pasta
 
@@ -57,11 +63,13 @@ Exemplos:
 
 | Arquivo | Criado Para | Comprimento | Formato |
 |---------|-------------|------------|----------|
-| `BLOG_<Tema>.md` | Site + SEO | 1.5–2k palavras | Markdown |
+| `BLOG_<Nome>.md` | Site + SEO | **≈2.000 palavras (1.800–2.200)** — ver `SKILL_CopyRules` | Markdown |
 | `INSTA_Carousel.md` | Slides do carrossel (**6–9 slides**) + legenda do feed | slides ~100–150 chars; legenda ≤2.200 | Markdown |
 | `INSTA_Reshare.md` | Reshare / WhatsApp community | 50–150 chars | Plain text |
-| `PNT_Script.md` | Pé na Trilha | 5–8 min | Markdown (bold/italic para ênfase) |
+| `PODCAST_Script.md` | Pé na Trilha | 5–8 min | Markdown (bold/italic para ênfase) |
 | `LINKEDIN_Captions.md` | Gabriel/Fabio | 150–300 chars | Plain text |
+
+> **Nível semana** (na pasta `WEEKxx_.../`, não no post): `WEEK_Overview.md` (Strategy) e `FACTS_Verified.md` (Tactic — gate de integridade).
 
 **Nota sobre Newsletters:** O conteúdo de newsletter não é gerado por post. O conteúdo mensal é agrupado na pasta `POSTS/Padrinho/NEWS/YYYY_MM_Mes`. O arquivo `NEWS_...md` será usado no futuro para a newsletter mensal.
 
@@ -89,21 +97,19 @@ Exemplos:
 ### Exemplo Real
 
 ```
-POSTS/
-├── AGENDA_Padrinho.md
-│
-└── 14062026_SobriedadeGlowUp/
-    ├── POST_Overview.md
-    ├── BLOG_<Tema>.md            ← Criado por AGENT_Tactic
-    ├── INSTA_Carousel.md         ← slides (6–9) + legenda do feed
-    ├── INSTA_Reshare.md          ← reshare / WhatsApp community
-    ├── PNT_Script.md             ← Pé na Trilha
-    ├── LINKEDIN_Captions.md      ← LinkedIn
-    └── assets/
-        └── images/
-            ├── instagram-carousel.png
-            ├── whatsapp-image.png
-            └── linkedin-image.png
+POSTS/Padrinho/
+├── AGENDA_Padrinho.md · STRATEGY_Padrinho.md
+└── WEEK03_010726_PaisQueBebem/
+    ├── WEEK_Overview.md          ← AGENT_Strategy
+    ├── FACTS_Verified.md         ← AGENT_Tactic (gate)
+    └── 01_MONDAY_AnaFilhoLembra/
+        ├── POST_Overview.md      ← AGENT_Strategy
+        ├── BLOG_<Nome>.md        ← AGENT_Tactic (pilar)
+        ├── INSTA_Carousel.md     ← slides (6–9) + legenda do feed
+        ├── INSTA_Reshare.md      ← reshare / WhatsApp community
+        ├── PODCAST_Script.md     ← Pé na Trilha
+        ├── LINKEDIN_Captions.md  ← LinkedIn
+        └── assets/images/instagram-carousel.png
 ```
 
 ---
@@ -130,13 +136,15 @@ Exemplo: `14062026` = 14 de junho de 2026
 
 ### Tipo de Arquivo
 **Prefixo padrão:**
-- `BLOG_` — Blog post
+- `WEEK_` — Overview da semana (nível semana)
+- `FACTS_` — Verificação de dados (nível semana)
+- `POST_` — Post overview/guia
+- `BLOG_` — Blog post (pilar)
 - `INSTA_Carousel` — slides do carrossel + legenda do feed
 - `INSTA_Reshare` — reshare / WhatsApp community
-- `PNT_` — Pé na Trilha script
+- `PODCAST_` — Pé na Trilha script
 - `LINKEDIN_` — LinkedIn copy
-- `POST_` — Post overview/guia
-- `NEWS_` — Newsletter (fica em POSTS/Padrinho/NEWS, não na pasta do post)
+- `NEWS_` — Newsletter (mensal, em POSTS/<Marca>/NEWS, não na pasta do post)
 
 ---
 
@@ -194,45 +202,37 @@ Exemplo: `14062026` = 14 de junho de 2026
 ### Passo a Passo
 
 ```
-1. AGENT_Strategy cria POST_Overview.md
+1. AGENT_Strategy → WEEK_Overview.md + 1 POST_Overview.md por post
    ↓
-2. AGENT_Tactic cria 6 arquivos de TEXTO
+2. AGENT_Tactic → Blog-pilar + atomização (IG Carousel/Reshare, LinkedIn, Podcast) + FACTS_Verified.md
    ↓
-3. AGENT_Operational valida + finaliza (QA)
+3. AGENT_Operational → QA + gate FACTS_Verified + atualiza AGENDA + commit
    ↓
-4. AGENT_Figma cria IMAGENS (referencia POST_Overview + INSTA_Captions.md)
+4. AGENT_Figma → carrossel (capa foto, 1080×1440) em assets/images/
    ↓
-5. Publicação manual em calendário
+5. Publicação manual conforme AGENDA
 ```
 
 ### Checklist por Etapa
 
 **Step 1 — Strategy:**
-- [ ] POST_Overview.md criado
-- [ ] Persona clara
-- [ ] Pillar definido
+- [ ] WEEK_Overview.md + 1 POST_Overview.md por post (arco Hook→Profundidade→Resolução)
+- [ ] Persona única e pillar por post · dados-âncora marcados (verificar)
 
 **Step 2 — Tactic:**
-- [ ] 5 arquivos de texto criados (sem edição final)
-- [ ] Estrutura segue POST_Overview
-- [ ] Tons variam por canal
+- [ ] Blog-pilar (≈2.000 palavras) + canais derivados dele
+- [ ] Legenda complementa o carrossel · FACTS_Verified.md preenchido
 
 **Step 3 — Operational:**
-- [ ] Cada arquivo tem gramática OK
-- [ ] CTAs claros
-- [ ] Formatação consistente
-- [ ] Arquivos prontos em POSTS/DDMMYYYY_Tema/
+- [ ] Gate FACTS_Verified OK (zero stat não verificada)
+- [ ] QA contra MODEL/ + SKILL_CopyRules · AGENDA atualizada · commit
 
 **Step 4 — Figma:**
-- [ ] Imagens criadas em Figma
-- [ ] Captions/texto alinhado com INSTA_Captions.md
-- [ ] Imagens exportadas para assets/images/
-- [ ] Refs visuais no POST_Overview confirmadas
+- [ ] Carrossel montado com texto exato de INSTA_Carousel.md
+- [ ] Capa foto-first · exportado 1080×1440 em assets/images/
 
 **Step 5 — Publicação:**
-- [ ] Conteúdo agendado/publicado conforme AGENDA
-- [ ] Links ao blog/newsletter funcionam
-- [ ] Imagens aparecem nos stories do Telegram (QA final)
+- [ ] Publicado conforme AGENDA · links funcionam
 
 ---
 
@@ -240,35 +240,32 @@ Exemplo: `14062026` = 14 de junho de 2026
 
 ### Por Canal (Sem Duplicação)
 
-**Blog:**
-- Arquivo: `BLOG_DDMMYYYY_Tema.md`
-- Comprimento: Completo (1.5–2k palavras)
+**Blog (pilar):**
+- Arquivo: `BLOG_<Nome>.md`
+- Comprimento: **≈2.000 palavras (1.800–2.200)** — atingir o alvo, não subescrever (`SKILL_CopyRules`)
 - SEO: H1, H2, palavras-chave, links internos
-- CTA: Botão ou parágrafo final
-
-**Newsletter:**
-- Arquivo: `NEWS_DDMMYYYY_Tema.md`
-- Comprimento: ~300–400 palavras
-- Tom: Pessoal, quente, menos formal
-- CTA: Convite para visitar blog OU call-to-action direto
+- CTA: Parágrafo final (suave, nunca venda)
 
 **Instagram:**
-- Arquivo: `INSTA_Captions.md` (copy)
+- Arquivo: `INSTA_Carousel.md` (slides + legenda do feed)
 - Imagem: `assets/images/instagram-carousel.png`
-- Estrutura: 6–9 slides + legenda do feed
-- CTA: Adesivo interativo OU "link na bio"
+- Estrutura: 6–9 slides + legenda que **complementa** o carrossel
+- CTA: Adesivo interativo OU save/share
 
 **Podcast:**
-- Arquivo: `PNT_Script.md`
+- Arquivo: `PODCAST_Script.md`
 - Duração: 5–8 min (read time ~ 1.200–1.600 palavras)
 - Estrutura: Intro + 2-3 pontos + Closing
 - Tom: Conversacional, direto
 
-**WhatsApp:**
-- Arquivo: `WHATSAPP_Reshare.md`
+**WhatsApp / Reshare:**
+- Arquivo: `INSTA_Reshare.md` (mesmo arquivo serve Stories + comunidade WhatsApp)
 - Comprimento: 50–150 caracteres
-- Tom: Ultra-casual, enquete/pergunta
-- Imagem: `assets/images/whatsapp-image.png` (opcional)
+- Tom: Ultra-casual, frase-âncora + CTA relacional
+
+**Newsletter (mensal, fora da pasta do post):**
+- Arquivo: `POSTS/<Marca>/NEWS/YYYY_MM_Mes/NEWS_DDMMYY_Tema.md`
+- Comprimento: ~300–400 palavras · Tom pessoal/quente
 
 **LinkedIn:**
 - Arquivo: `LINKEDIN_Captions.md`

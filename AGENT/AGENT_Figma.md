@@ -1,220 +1,74 @@
 ---
 title: "AGENT_Figma — Padrinho Marketing 2026 H2"
-version: "2.0"
+version: "3.0"
 status: "Active"
 type: "Agent"
 owner: "Bill (Padrinhotech)"
 parent_doc: "AGENT/"
-tags: [agent, figma, cascata-de-conteudo]
+tags: [agent, figma, cascata-de-conteudo, carrossel]
 ---
 
 # AGENT_Figma — Instruções
 
-**Responsabilidade:** Ler POST_Overview + instagram-captions.md → Criar **IMAGENS** (Camada 2)
+**Responsabilidade:** Ler `POST_Overview` + `INSTA_Carousel` → montar e exportar o **carrossel** (Camada 2), com **capas foto-first**.
 
-**Referência:** `SKILL/SKILL_ContentCreationWorkflow.md` (Seção 2: AGENT_Figma)
+**Referência de workflow:** `SKILL/SKILL_ContentCreationWorkflow.md` (Seção 2).
 
 ---
 
 ## Entrada
 
-- `POSTS/DDMMYYYY_Tema/POST_Overview.md` (contexto estratégico)
-- `POSTS/Padrinho/STRATEGY_Padrinho.md` (lógica estratégica + seleção visual por pilar — manter alinhamento)
-- `POSTS/DDMMYYYY_Tema/instagram-captions.md` (copy para cada slide)
-- `POSTS/DDMMYYYY_Tema/BLOG_DDMMYYYY_Tema.md` (conteúdo completo para referência)
-- Figma file: `sBItPeNLyvT5EMyKLqQbRv` (03. Padrinho • Social)
-- `SKILL/SKILL_ComponentSystem.md` (design tokens + componentes)
-- `SKILL/SKILL_PhotoGuidelines.md` (estilo de fotos + mood)
+- `POSTS/<Marca>/WEEKxx_.../NN_DIA_.../POST_Overview.md` (mood, pilar, capa, persona)
+- `POSTS/<Marca>/WEEKxx_.../NN_DIA_.../INSTA_Carousel.md` (texto por slide + `structure:` de componentes + `image-query`)
+- `POSTS/<Marca>/STRATEGY_<Marca>.md` (§7 seleção visual por pilar)
+- `SKILL/SKILL_ComponentIndex.md` (catálogo de capas/blocos) · `SKILL_ComponentSystem.md` (tokens — o agente nunca troca fonte/cor)
+- `SKILL/SKILL_PhotoGuidelines.md` (estilo de foto) · `SKILL_FigmaDelivery.md` (processo de entrega)
+- Figma file Padrinho • Social: `sBItPeNLyvT5EMyKLqQbRv`
 
 ---
 
 ## Processo
 
-### 1. Ler Contexto
+1. **Mapear slides → componentes** conforme o campo `structure:` do `INSTA_Carousel.md` (ex.: `cover-c · block-d · block-c · …`) — catálogo em `SKILL_ComponentIndex.md`.
+2. **Capa foto-first:** preferir `cover-c/d/e` (foto/rosto real); tipográfica (`cover-a/b`) só exceção. Buscar a imagem pela `image-query` (em inglês) do arquivo.
+3. **Preencher textos exatos** de cada slide (não editar a copy). Sem `\n` manual em frases contínuas (`SKILL_CopyRules` § quebras de linha).
+4. **Injetar fotos** nos slides marcados 🖼; validar contraste/legibilidade do texto sobre foto.
+5. **Tokens:** cores, fontes (Moma · Instrument Serif · Instrument Sans) e highlights vêm dos componentes — **nunca alterar** (`SKILL_ComponentSystem`).
+6. **Exportar** cada slide em **PNG 1080×1440 (4:5)** → `POSTS/<Marca>/WEEKxx_.../NN_DIA_.../assets/images/`.
 
-**De POST_Overview.md:**
-- Persona alvo
-- Pillar editorial
-- Pergunta central
-- Mood esperado
-- CTA geral
+---
 
-**De instagram-captions.md:**
-- Exato copy de cada slide (3-5 slides)
-- Ordem dos slides
-- CTAs específicas
+## Checklist
 
-### 2. Criar Frame no Figma
-
-1. Abrir arquivo Figma: `sBItPeNLyvT5EMyKLqQbRv`
-2. Navegar para: `_QUEUE/[DDMMYYYY_Tema]`
-3. Duplicar componente: `carousel-instagram-template` (ou quantidade apropriada de slides)
-4. Renomear: `DDMMYYYY_Tema_Carousel`
-
-### 3. Preencher Captions
-
-Para cada slide:
-1. Abrir text layer
-2. Cola caption exato do `instagram-captions.md`
-3. Ajustar quebras de linha se necessário
-4. Validar legibilidade em mobile (zoom out)
-
-### 4. Selecionar Fotos
-
-**De POST_Overview.md:**
-
-Exemplo:
-```markdown
-## Breakdown por Canal
-
-### Instagram (Carousel — 3-5 slides)
-- Slide 1: Hook visual + pergunta
-- Slide 2: Insight/dado
-- Slide 3: [Ponto chave]
-- Slide 4: CTA
-```
-
-**Isso significa:**
-- **Slide 1**: Imagem que representa o "problema" (hook emocional)
-- **Slide 2**: Imagem que representa "insight" (pode ser gráfico OU pessoa pensativa)
-- **Slide 3**: Imagem que representa "solução/esperança"
-- **Slide 4**: Imagem que representa "ação/comunidade"
-
-**Critérios de Foto (SKILL_PhotoGuidelines.md):**
-- Autêntica (não stock clichê)
-- Representa a persona (Rosa, Ana, Pedro)
-- Mood alinhado com mensagem
-- Resolução OK (min 1000px)
-
-**Exemplo:**
-
-Se persona é Rosa (27, logística, Porto Alegre, mulher):
-- Slide 1: Mulher 25-35 estressada, ambiente de trabalho, iluminação natural
-- Slide 2: Mulher pensativa, esperançosa, sozinha mas calma
-- Slide 3: Mulher sorrindo levemente, com grupo de amigos (comunidade)
-- Slide 4: Grupo de pessoas unidas (comunidade sólida)
-
-### 5. Injetar Fotos no Figma
-
-1. Para cada slide que precisa foto:
-   - Clicar no image frame
-   - Upload direto via Figma (ou buscar Unsplash via browser)
-   - Crop/fit conforme layout
-   - Ajustar opacity se necessário para legibilidade de texto
-
-2. Validações:
-   - [ ] Foto é legível?
-   - [ ] Texto sobre foto é legível? (contrast OK)
-   - [ ] Foto responde ao contexto do slide?
-   - [ ] Não é muito escura ou clara demais?
-
-### 6. Finalizar Design
-
-- [ ] Todos os textos estão exatos (não editados)?
-- [ ] Todas as fotos estão injetas?
-- [ ] Layout respeita padding/margins?
-- [ ] Componentes seguem SKILL_ComponentSystem (colors, fonts, tokens)?
-- [ ] Preview mobile (zoom 50%) ainda legível?
-
-### 7. Exportar Imagens
-
-Para cada slide:
-1. Selecionar frame
-2. File → Export as PNG (1080x1350)
-3. Salvar em: `POSTS/DDMMYYYY_Tema/assets/images/instagram-carousel.png`
-
-Se carousel com múltiplos slides:
-- Exportar cada slide separado OU
-- Exportar toda a sequência (conforme estrutura)
+**Design:** componentes corretos por slide · capa com foto · textos exatos · legível em mobile (zoom 50%) · contraste OK · tokens intactos.
+**Fotos:** autênticas (não stock clichê) · mood alinhado ao pilar · persona representada · min 1000px.
+**Export:** PNG **1080×1440** · salvo em `assets/images/` · nomes claros.
 
 ---
 
 ## Saída
 
-**Arquivos criados:**
 ```
-POSTS/DDMMYYYY_Tema/
-├── assets/
-│   └── images/
-│       ├── instagram-carousel.png    ← Criado por AGENT_Figma
-│       ├── whatsapp-image.png        ← Criado por AGENT_Figma (opcional)
-│       └── linkedin-image.png        ← Criado por AGENT_Figma (opcional)
+POSTS/<Marca>/WEEKxx_.../NN_DIA_.../assets/images/
+└── instagram-carousel.png        ← este agente (1080×1440)
 ```
 
 **Mensagem ao time (Telegram):**
 ```
-🎨 VISUALS READY — [DATA]
-
-✅ Instagram Carousel (4 slides)
-✅ Fotos injetas e layout OK
-✅ Exportado em 1080x1350 (PNG)
-
-Arquivos em: POSTS/DDMMYYYY_Tema/assets/images/
-
-[Preview das imagens]
-
-→ Próximo: Publicação manual no Instagram conforme calendário
+🎨 VISUALS — WEEKxx · [post]
+✅ Carrossel montado (capa foto) · exportado 1080×1440
+→ Pronto para publicação manual conforme AGENDA
 ```
-
----
-
-## Checklist AGENT_Figma
-
-Antes de sinalizar "pronto para publicação":
-
-**Design:**
-- [ ] Frame criado no Figma
-- [ ] Todos os captions estão exatos (do instagram-captions.md)
-- [ ] Todas as fotos injetas
-- [ ] Layout respeta brand guidelines
-- [ ] Texto legível em mobile (zoom 50%)
-- [ ] Contrast OK (WCAG AA)
-- [ ] Componentes usam design tokens corretos
-
-**Fotos:**
-- [ ] Cada slide tem foto apropriada
-- [ ] Fotos são autênticas (não stock)
-- [ ] Mood alinhado com mensagem
-- [ ] Persona representada
-
-**Exportação:**
-- [ ] PNG exportado em 1080x1350
-- [ ] Arquivo salvo em assets/images/
-- [ ] Nomes de arquivo claros (instagram-carousel.png, etc)
-
----
-
-## Integração com Instagram
-
-Depois que AGENT_Figma finaliza:
-
-**Publicação Manual (por enquanto):**
-1. Bill baixa PNG do POSTS/DDMMYYYY_Tema/assets/images/
-2. Bill publica no Instagram @padrinho.app (via app ou Threads Manager)
-3. Cola caption exato do instagram-captions.md
-4. Cola hashtags
-
-**Futuramente (automação):**
-- API do Instagram pode ser integrada
-- Publicação agendada via Meta Business Suite
 
 ---
 
 ## Referências
 
-- `POSTS/Padrinho/STRATEGY_Padrinho.md` → Lógica estratégica + seleção visual por pilar (§7)
-- `SKILL/SKILL_ContentCreationWorkflow.md` → Seção 2 (AGENT_Figma)
-- `SKILL/SKILL_Documentation.md` → Seção 2-3 (Estrutura POSTS/ + Nomea Seção)
-- `SKILL/SKILL_ComponentSystem.md` → Design tokens + componentes
-- `SKILL/SKILL_PhotoGuidelines.md` → Critérios de foto
-- `KNOW/Padrinho/KNOW_BrandPositioning.md` → Brand visual identity
+- `POSTS/<Marca>/STRATEGY_<Marca>.md` → §7 seleção visual por pilar
+- `SKILL/SKILL_ComponentIndex.md` → capas/blocos · `SKILL_ComponentSystem.md` → tokens
+- `SKILL/SKILL_PhotoGuidelines.md` → fotos · `SKILL_FigmaDelivery.md` → entrega
+- `SKILL/SKILL_Documentation.md` → nomes/dimensões canônicos (1080×1440)
 
 ---
 
-**Fim do Workflow de Cascata:**
-✅ POST_Overview (Strategy)
-✅ 6 Textos (Tactic)
-✅ QA de Textos (Operational)
-✅ Imagens (Figma)
-
-📱 Pronto para publicar no Instagram!
+**Fim da cascata:** WEEK_Overview + POST_Overview (Strategy) → textos atomizados + FACTS_Verified (Tactic) → QA + gate (Operational) → carrossel (Figma). 📱 Pronto para publicar.

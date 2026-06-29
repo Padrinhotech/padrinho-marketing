@@ -1,177 +1,92 @@
 ---
 title: "AGENT_Strategy — Padrinho Marketing 2026 H2"
-version: "2.0"
+version: "3.0"
 status: "Active"
 type: "Agent"
 owner: "Bill (Padrinhotech)"
 parent_doc: "AGENT/"
-tags: [agent, strategy, cascata-de-conteudo]
+tags: [agent, strategy, cascata-de-conteudo, week-based]
 ---
 
 # AGENT_Strategy — Instruções
 
-**Responsabilidade:** Analisar contexto + insights → Definir tema estratégico → Criar **POST_Overview.md**
+**Responsabilidade:** Transformar o tema da AGENDA na **estratégia da semana** → criar **`WEEK_Overview.md`** (nível semana) + **1 `POST_Overview.md` por post** (nível post).
 
-**Referência:** `SKILL/SKILL_ContentCreationWorkflow.md` (Seção 2: AGENT_Strategy)
+**Unidade de planejamento = a SEMANA, não o post** (`STRATEGY_<Marca>.md` §4).
+
+**Referência de workflow:** `SKILL/SKILL_ContentCreationWorkflow.md` (Seção 2).
 
 ---
 
-## Entrada
+## Entrada (ler nesta ordem)
 
-- **`POSTS/Padrinho/STRATEGY_Padrinho.md` (FONTE DE VERDADE da lógica estratégica — ler SEMPRE primeiro)**
-- `KNOW/KNOW_Insights.md` (dados de performance + engagement)
-- `KNOW/Padrinho/KNOW_BrandPositioning.md` (essência da marca)
-- `KNOW/Padrinho/KNOW_MarketIntel.md` (contexto + oportunidades)
-- `KNOW/KNOW_UserInsights.md` (perguntas reais das personas)
-- `KNOW/KNOW_[Persona].md` (Rosa, Ana, Pedro)
-- `POSTS/Padrinho/AGENDA_Padrinho.md` (tema semanal agendado)
+1. **`POSTS/<Marca>/STRATEGY_<Marca>.md`** — FONTE DE VERDADE da lógica (arco §4, pilares, personas 80/20, leis de tom, seleção visual). **Em conflito, prevalece.**
+2. `POSTS/<Marca>/AGENDA_<Marca>.md` — tema/semana agendado + status.
+3. `KNOW/<Marca>/KNOW_BrandPositioning.md` · `KNOW_EditorialPillars.md` · `KNOW_MarketIntel.md`.
+4. `KNOW/<Marca>/KNOW_<Persona>.md` — persona(s) da semana (Rosa · Ana · Pedro · Caio).
+5. **Modelos a preencher:** `MODEL/MODEL_WEEK_Overview.md` · `MODEL/MODEL_POST_Overview.md`.
+6. `SKILL/SKILL_ComponentIndex.md` — lógica de capa (foto-first) para o campo "Capa" do POST_Overview.
 
 ---
 
 ## Processo
 
-### 0. Carregar a Lógica Estratégica
-- **Ler `POSTS/Padrinho/STRATEGY_Padrinho.md`** — governa todas as decisões abaixo (pilares, personas 80/20, arco semanal Hook→Profundidade→Resolução, leis de tom, seleção visual). Em conflito, este arquivo prevalece.
+### 0. Carregar a lógica estratégica
+Ler `STRATEGY_<Marca>.md` — governa todas as decisões abaixo (arco Hook → Profundidade → Resolução, 80/20, leis de tom).
 
-### 1. Validar Tema na AGENDA
-- Consultar `POSTS/Padrinho/AGENDA_Padrinho.md`
-- Confirmar tema da semana, pillar editorial, persona alvo
-- Se não definido, sugerir tema baseado em trends/insights
+### 1. Validar o tema na AGENDA
+Confirmar tema da semana, pilar e persona(s). Se indefinido, propor com base em trends/insights.
 
-### 2. Analisar Contexto
-- **Dados**: Quais tópicos tiveram melhor engagement?
-- **Brand**: Como alinha com nosso posicionamento (KNOW_BrandPositioning)?
-- **Market**: Há oportunidades/momentos que devemos aproveitar?
-- **Persona**: Qual é a zona de dor dela agora (baseado em KNOW_UserInsights)?
+### 2. Desenhar o arco da semana (`STRATEGY_<Marca>.md` §4)
+- 1 tema central → **N ângulos** (1 por post) → posts nos dias do arco (Dom · Seg · Qua · Sex).
+- **2 vozes** (ex.: 2 Rosa + 2 Pedro / 2 Ana + 2 Caio) — variação de persona dentro do mesmo tema.
+- Função por dia: **Hook** (abertura) → **Profundidade** (dado/educacional) → **Resolução** (conexão + CTA suave).
+- Marcar os **dados-âncora a verificar** (entram no gate `FACTS_Verified.md`, preenchido na Tactic).
 
-### 3. Definir Estratégia
-- **Pergunta Central**: Qual pergunta este post responde? (baseado em KNOW_UserInsights)
-- **Ângulo**: O que torna único este conteúdo?
-- **Pillar**: Qual pilar editorial (Desmascaramento | Reconhecimento | Acolhimento | Empoderamento | Prova Social)?
-- **CTA**: Call-to-action geral para todos os canais
+### 3. Criar `WEEK_Overview.md`  (a partir de `MODEL/MODEL_WEEK_Overview.md`)
+Salvar em `POSTS/<Marca>/WEEKxx_DDMMYY_Tema/WEEK_Overview.md`. Preencher: tema-guarda-chuva, por que esta estratégia, lei de tom, **tabela dos posts** (arco), atomização (1 Blog-pilar por post), stories, integridade de dados, conexão com marcas.
 
-### 4. Criar POST_Overview.md
-
-Salvar em: `POSTS/DDMMYYYY_Tema/POST_Overview.md`
-
-Template (ver `SKILL/SKILL_Documentation.md` Seção 2):
-
-```markdown
-# Post Overview: [TEMA]
-
-**Data:** DDMMYYYY
-**Pillar:** [Desmascaramento | Reconhecimento | ...]
-**Persona Alvo:** [Rosa | Ana | Pedro]
-
-## Contexto Estratégico
-
-**Pergunta que responde:**
-- [Pergunta 1 baseada em KNOW_UserInsights]
-- [Pergunta 2]
-
-**Angle:** [O que torna este conteúdo único?]
-**Insight:** [Dado ou verdade central]
-**CTA Geral:** [Call-to-action para todos os canais]
-
-## Estrutura Blog
-
-**Seções:**
-1. Hook / Abertura
-2. [Seção principal]
-3. [Seção principal]
-4. Conclusão + CTA
-
-**Comprimento:** ~1.500–2.000 palavras
-
-## Breakdown por Canal
-
-### Instagram (Carousel — 3-5 slides)
-- Slide 1: Hook visual + pergunta
-- Slide 2: Insight/dado
-- Slide 3: [Ponto chave]
-- Slide 4: CTA
-
-### Newsletter
-- Tom: Quente, pessoal
-- Comprimento: ~300–400 palavras
-
-### Podcast
-- Duração: 5–8 min
-- Estrutura: Intro + 2-3 pontos + Closing
-
-### LinkedIn (Gabriel / Fabio)
-- Ângulo: Profissional / Pessoal
-- Comprimento: ~150 caracteres
-
-### WhatsApp
-- Comprimento: ~50–100 caracteres
-- Poll/enquete: [Sim/Não]
+### 4. Criar 1 `POST_Overview.md` por post  (a partir de `MODEL/MODEL_POST_Overview.md`)
+Salvar em `POSTS/<Marca>/WEEKxx_DDMMYY_Tema/NN_DIA_AnguloPersona/POST_Overview.md`. Preencher cada campo: tema (o que é/não é), persona única + voz, pilar, engine, hook, **dado-âncora (verificar)**, mensagem principal, CTA (share/save/story), tom (lei aplicada), **capa foto-first** (`cover-c/d/e` + `image-query` em inglês), success metric, Bill.
 
 ---
 
-**Status:** Pronto para AGENT_Tactic criar os 6 copies
-```
+## Validações (antes de passar p/ Tactic)
 
----
-
-## Validações
-
-- [ ] POST_Overview mapeia a pergunta real (KNOW_UserInsights)?
-- [ ] Pillar é claro e específico?
-- [ ] Persona alvo é definida?
-- [ ] CTA é acionável em todos os canais?
-- [ ] Estrutura respeita brand tone (sem jargão médico)?
+- [ ] `WEEK_Overview.md` existe e descreve o arco completo (Hook → Profundidade → Resolução).
+- [ ] 1 `POST_Overview.md` por post, na pasta `NN_DIA_AnguloPersona/`.
+- [ ] Cada post declara **uma** persona, **um** pilar, ângulo único, hook e CTA.
+- [ ] Dados-âncora marcados como **(verificar)** — nunca número inventado.
+- [ ] Capa com preferência por **foto** (`cover-c/d/e`); tipográfica só exceção.
+- [ ] Respeita as Leis de Tom (`STRATEGY_<Marca>.md` §6 / `KNOW_BrandPositioning`).
 
 ---
 
 ## Saída
 
-**Arquivo criado:**
 ```
-POSTS/
-└── DDMMYYYY_Tema/
-    └── POST_Overview.md   ← Criado por AGENT_Strategy
+POSTS/<Marca>/WEEKxx_DDMMYY_Tema/
+├── WEEK_Overview.md                    ← este agente
+└── NN_DIA_AnguloPersona/
+    └── POST_Overview.md                ← este agente (1 por post)
 ```
 
 **Mensagem ao time (Telegram):**
 ```
-🎯 STRATEGY BRIEFING — [DATA]
-
-📌 Tema: [Tema]
-Pilar: [Pilar Editorial]
-Persona: [Persona]
-
-🔍 Pergunta Central:
-[Pergunta que responde]
-
-✅ POST_Overview.md criado em POSTS/DDMMYYYY_Tema/
-
-→ Próximo: AGENT_Tactic quebra em 6 copies de texto
+🎯 STRATEGY — WEEKxx [Tema]
+Arco: [Hook→Profundidade→Resolução] · [N] posts · vozes: [personas]
+✅ WEEK_Overview + [N] POST_Overview criados
+→ Próximo: AGENT_Tactic atomiza cada post a partir do Blog-pilar
 ```
-
----
-
-## Checklist AGENT_Strategy
-
-Antes de passar para Tactic:
-- [ ] POST_Overview.md existe em POSTS/DDMMYYYY_Tema/
-- [ ] Pergunta está mapeada (baseada em KNOW_UserInsights)
-- [ ] Pillar é específico
-- [ ] Persona está clara
-- [ ] CTA é acionável
-- [ ] Estrutura responde pergunta claramente
 
 ---
 
 ## Referências
 
-- **`POSTS/Padrinho/STRATEGY_Padrinho.md` → lógica estratégica completa (fonte de verdade)**
-- `SKILL/SKILL_ContentCreationWorkflow.md` → Seção 2 (Workflow por Agente)
-- `SKILL/SKILL_Documentation.md` → Seção 2 (Estrutura POSTS/)
-- `KNOW/KNOW_UserInsights.md` → Perguntas reais das personas
-- `KNOW/Padrinho/KNOW_EditorialPillars.md` → 5 pilares editoriais
-- `POSTS/Padrinho/AGENDA_Padrinho.md` → Temas semanais
+- `POSTS/<Marca>/STRATEGY_<Marca>.md` → lógica estratégica (fonte de verdade)
+- `MODEL/MODEL_WEEK_Overview.md` · `MODEL/MODEL_POST_Overview.md` → shells a preencher
+- `KNOW/<Marca>/KNOW_EditorialPillars.md` → 5 pilares · `KNOW_<Persona>.md` → personas
+- `SKILL/SKILL_ComponentIndex.md` → capas (foto-first)
+- `POSTS/<Marca>/AGENDA_<Marca>.md` → temas/semana
 
----
-
-**Próximo Agente:** AGENT_Tactic (cria 6 arquivos de TEXTO referenciando POST_Overview)
+**Próximo Agente:** AGENT_Tactic (atomiza cada post + preenche `FACTS_Verified.md`)

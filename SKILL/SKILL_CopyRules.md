@@ -464,6 +464,8 @@ Antes de publicar, verifique:
 **Word count sweet spot:** ~2000 palavras (mínimo 1800, máximo 2200)  
 (Testimonials: 400–600 words)
 
+> ⚠️ **O alvo é para ser atingido, não um teto distante.** O blog-pilar deve **chegar a ~2.000 palavras** desenvolvendo cada seção (história + porquê + passo prático) — não parar em ~750 e ficar raso. Mesmo princípio do § "Escreva até a capacidade do componente": subescrever = conteúdo raso. Se o rascunho ficou curto, **aprofunde** (mais exemplo, mecanismo, reflexão), não encerre.
+
 ---
 
 ### Tom Específico por Persona
