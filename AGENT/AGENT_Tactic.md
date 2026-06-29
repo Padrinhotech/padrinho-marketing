@@ -1,13 +1,3 @@
----
-title: "AGENT_Tactic — Padrinho Marketing 2026 H2"
-version: "3.0"
-status: "Active"
-type: "Agent"
-owner: "Bill (Padrinhotech)"
-parent_doc: "AGENT/"
-tags: [agent, tactic, cascata-de-conteudo, atomizacao]
----
-
 # AGENT_Tactic — Instruções
 
 **Responsabilidade:** Para cada post, escrever o **Blog-pilar** e **atomizá-lo** nos demais canais; verificar os dados-âncora da semana em **`FACTS_Verified.md`**.
@@ -88,7 +78,7 @@ POSTS/<Marca>/WEEKxx_.../
 
 ## Referências
 
-- `POSTS/<Marca>/STRATEGY_<Marca>.md` → leis de tom · §5.1 atomização
+- `POSTS/<Marca>/STRATEGY_<Marca>.md` → §5.1 atomização · `KNOW_BrandPositioning` → leis de tom
 - `SKILL/SKILL_CopyRules.md` → legenda complementar · estilo blog · vocabulário
 - `SKILL/SKILL_ComponentIndex.md` → slides → componentes · capas
 - `MODEL/MODEL_*.md` → shells dos canais + `MODEL_FACTS_Verified.md`

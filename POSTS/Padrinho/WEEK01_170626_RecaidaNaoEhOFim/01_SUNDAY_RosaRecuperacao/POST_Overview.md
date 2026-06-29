@@ -1,11 +1,3 @@
----
-title: POST_Overview — Recaída não é o fim da história
-date: 2026-06-17
-persona: Rosa Equilibrista
-pilar: Reconhecimento
-channel: All (LinkedIn + Blog + WhatsApp + Instagram carousel + reshare)
----
-
 # POST_Overview: Recaída não é o fim da história
 
 **Tema:** Recaída não é o fim da história  

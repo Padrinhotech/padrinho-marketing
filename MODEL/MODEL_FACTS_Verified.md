@@ -1,5 +1,4 @@
 ---
-title: FACTS Verified — WEEKXX (<tema>)
 status: <⏳ EM VERIFICAÇÃO | ✅ VERIFICADO — n/n confirmadas (dd/mm/aaaa)>
 last_updated: <aaaa-mm-dd>
 ---

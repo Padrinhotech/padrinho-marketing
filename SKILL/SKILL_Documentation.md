@@ -69,7 +69,7 @@ Exemplos:
 | `PODCAST_Script.md` | Pé na Trilha | 5–8 min | Markdown (bold/italic para ênfase) |
 | `LINKEDIN_Captions.md` | Gabriel/Fabio | 150–300 chars | Plain text |
 
-> **Nível semana** (na pasta `WEEKxx_.../`, não no post): `WEEK_Overview.md` (Strategy) e `FACTS_Verified.md` (Tactic — gate de integridade).
+> **Nível semana** (na pasta `WEEKxx_.../`, não no post): `WEEK_Overview.md` + `STORIES_Suggestions.md` (Strategy) e `FACTS_Verified.md` (Tactic — gate de integridade).
 
 **Nota sobre Newsletters:** O conteúdo de newsletter não é gerado por post. O conteúdo mensal é agrupado na pasta `POSTS/Padrinho/NEWS/YYYY_MM_Mes`. O arquivo `NEWS_...md` será usado no futuro para a newsletter mensal.
 
@@ -101,6 +101,7 @@ POSTS/Padrinho/
 ├── AGENDA_Padrinho.md · STRATEGY_Padrinho.md
 └── WEEK03_010726_PaisQueBebem/
     ├── WEEK_Overview.md          ← AGENT_Strategy
+    ├── STORIES_Suggestions.md    ← AGENT_Strategy
     ├── FACTS_Verified.md         ← AGENT_Tactic (gate)
     └── 01_MONDAY_AnaFilhoLembra/
         ├── POST_Overview.md      ← AGENT_Strategy
@@ -202,7 +203,7 @@ Exemplo: `14062026` = 14 de junho de 2026
 ### Passo a Passo
 
 ```
-1. AGENT_Strategy → WEEK_Overview.md + 1 POST_Overview.md por post
+1. AGENT_Strategy → WEEK_Overview.md + STORIES_Suggestions.md + 1 POST_Overview.md por post
    ↓
 2. AGENT_Tactic → Blog-pilar + atomização (IG Carousel/Reshare, LinkedIn, Podcast) + FACTS_Verified.md
    ↓
@@ -216,7 +217,7 @@ Exemplo: `14062026` = 14 de junho de 2026
 ### Checklist por Etapa
 
 **Step 1 — Strategy:**
-- [ ] WEEK_Overview.md + 1 POST_Overview.md por post (arco Hook→Profundidade→Resolução)
+- [ ] WEEK_Overview.md + STORIES_Suggestions.md + 1 POST_Overview.md por post (arco Hook→Profundidade→Resolução)
 - [ ] Persona única e pillar por post · dados-âncora marcados (verificar)
 
 **Step 2 — Tactic:**

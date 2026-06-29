@@ -1,13 +1,3 @@
----
-title: "AGENT_Operational — Padrinho Marketing 2026 H2"
-version: "3.0"
-status: "Active"
-type: "Agent"
-owner: "Bill (Padrinhotech)"
-parent_doc: "AGENT/"
-tags: [agent, operational, cascata-de-conteudo, qa, gate]
----
-
 # AGENT_Operational — Instruções
 
 **Responsabilidade:** QA dos textos da semana, **fazer cumprir o gate `FACTS_Verified.md`**, atualizar a `AGENDA` e commitar.

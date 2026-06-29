@@ -1,12 +1,11 @@
 ---
-title: "O que seu filho lembra da noite de ontem (não é o que você pensa)"
 meta: "Crianças não contam os copos — sentem o clima. O que fica não é a quantidade, é o tom. Sem culpa, sem julgamento."
 keyword: "filhos de pais que bebem"
 persona: Ana Mãe Protetora
 pilar: Reconhecimento
 post: WEEK03 · 01_MONDAY (pilar — atomiza em IG Carousel · IG Reshare · LinkedIn · Podcast)
 words: ~750
-status: rascunho — ver FACTS_Verified.md antes de publicar
+status: rascunho — fundamentos verificados ✅ (rodapé + FACTS_Verified.md)
 ---
 
 # O que seu filho lembra da noite de ontem (não é o que você pensa)
@@ -38,5 +37,7 @@ Você não precisa ser perfeita. Precisa ser **presente e previsível** — e is
 Se você leu até aqui e sentiu um aperto, respira. Esse aperto não é sentença — é sinal de que você se importa. E se importar já é o começo.
 
 ---
+
+**Fundamentos:** sobre a criança sentir o clima antes das palavras e o peso da imprevisibilidade — paradigma *still-face* (Ed Tronick) e a pesquisa de Tallie Baram (UC Irvine) sobre imprevisibilidade do cuidado e o cérebro emocional. Detalhes e fontes em `FACTS_Verified.md`.
 
 > **Nota de produção:** este Blog é o **pilar do Post 01** (WEEK03). Dele se atomizam o IG Carousel, o IG Reshare/WhatsApp, o LinkedIn e o Podcast. Afirmações sobre desenvolvimento infantil estão como **reflexão**, não como dado citado — conferir `FACTS_Verified.md` antes de publicar; se afirmar como fato, citar fonte. CTA mantém o Padrinho como **presença**, nunca anúncio.

@@ -1,5 +1,4 @@
 ---
-title: LINKEDIN — <título do post> (ângulo founder)
 post: WEEKXX · NN_<DIA>
 tone: profissional, humano, sem hard sell
 words: <nº>

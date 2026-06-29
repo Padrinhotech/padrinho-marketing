@@ -1,14 +1,3 @@
----
-title: POST_Overview — Cerveja sem álcool: tem álcool mesmo?
-date: TBD (backlog — alta demanda de busca)
-persona: Rosa Equilibrista
-pilar: Desmascaramento
-engine: 📚 Educacional / FAQ (myth-bust de busca)
-channel: Instagram carousel (pilar) → Blog + LinkedIn + WhatsApp + reshare
-arc: Profundidade
-origin: KNOW_MarketIntel § Demanda de Busca — cluster "cerveja sem álcool"
----
-
 # POST_Overview: Cerveja sem álcool — as perguntas que todo mundo Googla
 
 **Tema:** O que é (e o que não é) a cerveja sem álcool — respondendo, sem moralismo, as perguntas que o Brasil mais digita sobre ela.

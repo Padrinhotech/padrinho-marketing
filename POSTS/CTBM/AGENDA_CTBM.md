@@ -12,17 +12,7 @@ Calendário editorial do **Centro de Tratamento Bezerra de Menezes**. **Gerador 
 
 Estrutura: semana | data | tema | pilar | público | canais | status
 
-> **Missão da fase:** sair de **0,1 → 3 posts/semana** e virar a percepção de **“o fim” → “um novo começo”**. Lógica completa em [`STRATEGY_CTBM.md`](./STRATEGY_CTBM.md).
-
----
-
-## Fase 0 — Fundação (antes de publicar)
-
-> Pré-requisitos antes da Semana 1 de conteúdo:
-- [ ] `KNOW_CTBM_*` revisados pela equipe técnica do CTBM
-- [ ] Termo de **consentimento** de imagem/história aprovado (jurídico/CTBM)
-- [ ] Banco inicial de **3–5 histórias de recomeço** mapeadas (ex-pacientes dispostos)
-- [ ] Paleta/identidade CTBM definida no Bridge/Figma
+> **Missão da fase:** sair de **0,1 → 4 posts/semana** e virar a percepção de **“o fim” → “um novo começo”**. Lógica completa em [`STRATEGY_CTBM.md`](./STRATEGY_CTBM.md).
 
 ---
 
@@ -34,7 +24,7 @@ Estrutura: semana | data | tema | pilar | público | canais | status
 
 | Semana | Tema | Pilar | Público | Canais | Compartilhado | Status |
 |--------|------|-------|---------|--------|---------------|--------|
-| **1 (W01)** | **A história da Bezerra** (passado·presente·futuro) + **jornada do Fábio** (paciente→parceiro) — lançamento | 50 Anos · Cuidado que Transforma · A Vida Depois | Marca · Maria · João · **Fábio** | IG (Reels+Carrossel) · FB · LinkedIn | 🟦 **Padrinho** (posts 03 e 04 — Fluxo C) | Em Estratégia → `WEEK01_130726_HistoriaBezerra/` |
+| **1 (W01)** | **A história do Bezerra** (passado·presente·futuro) + **jornada do Fábio** (paciente→parceiro) — lançamento | 50 Anos · Cuidado que Transforma · A Vida Depois | Marca · Maria · João · **Fábio** | IG (Reels+Carrossel) · FB · LinkedIn | 🟦 **Padrinho** (posts 03 e 04 — Fluxo C) | Em Estratégia → `WEEK01_130726_HistoriaBezerra/` |
 | **2 (W02)** | **Pet Terapia** — o cuidado vivo (7 benefícios · o dia dos pets · a família traz o pet) | Cuidado que Transforma · Saúde Mental sem Tabu | Maria + João | IG (Reels+Carrossel) · FB · Blog · Internos | 🟦 **Padrinho W05** (post 04 — candidato) | Em Estratégia → `WEEK02_200726_PetTerapia/` |
 | 3 | **“Será que é hora de buscar ajuda?”** — sinais, sem culpa (utilidade p/ família) | Acolher a Família | Maria | IG Carrossel · Blog | — | Planejado |
 | 4 | **Voltei pra dizer obrigado** — história real de ex-paciente (recomeço) | Histórias de Recomeço | João | IG Reels · YouTube | 🟪 **Padrinho** (Fluxo C — candidato) | Planejado |
@@ -65,7 +55,7 @@ Estrutura: semana | data | tema | pilar | público | canais | status
 
 ## Conexão com o Padrinho (Fluxo Compartilhado)
 
-Os temas marcados como **A Vida Depois** e **Histórias de Recomeço** são candidatos naturais ao **Fluxo C (co-produção)** — ver `STRATEGY_CTBM.md` §11: Bezerra cede a história → Padrinho edita no formato vencedor → ambos publicam e se marcam. Sincronizar com a `AGENDA_Padrinho.md` (ex.: Semana 28 do Padrinho já prevê “Histórias de Recuperação — Bezerra”).
+Os temas marcados como **A Vida Depois** e **Histórias de Recomeço** são candidatos naturais ao **Fluxo C (co-produção)**: a lógica dos fluxos está em `STRATEGY_CTBM.md` §6 (o Bezerra cede a história, o Padrinho edita no formato vencedor, ambos publicam e se marcam). O **mapeamento canônico do pareamento de semanas** (qual semana da CTBM corresponde a qual do Padrinho) vive em `AGENDA_Padrinho.md` § Sincronização Fluxo C com a CTBM.
 
 ---
 

@@ -1,13 +1,3 @@
----
-title: "Figma Delivery Standards — Padrinho"
-version: "1.0"
-status: "Final"
-type: "Skill"
-owner: "Padrinho Marketing Automation"
-parent_doc: "SKILL/"
-tags: [figma, delivery, standards, naming, exports]
----
-
 # Figma Delivery Standards — Padrinho
 
 Directrizes para entrega e exportação de posts do Figma. Leia este arquivo se está preparando frames para publicação ou entendendo padrões de nomeclatura. Usado pelo Figma Agent para validar e preparar conteúdo final.

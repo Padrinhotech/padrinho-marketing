@@ -1,23 +1,19 @@
 ---
-title: LINKEDIN — O que seu filho lembra (ângulo founder)
-post: WEEK03 · 01_MONDAY (derivado do BLOG_OQueSeuFilhoLembra)
+post: WEEK03 · 01_MONDAY
 tone: profissional, humano, sem hard sell
-words: ~240
+words: ~255
 ---
 
-# LinkedIn — "A métrica errada"
+# LinkedIn — Presença não é perfeição
 
-Quando a gente fala de álcool e família, quase sempre mede a coisa errada: a quantidade. "Foram só duas taças."
+Uma das frases que mais mexeu comigo construindo o Padrinho é quase óbvia: criança não conta os copos. Ela sente o clima da casa.
 
-Mas quem cresceu numa casa onde o álcool pesava sabe que a criança nunca fez essa conta. Ela media outra coisa — o clima. O tom da voz depois da terceira. A imprevisibilidade de não saber qual versão do adulto chegaria em casa.
+A gente passa a vida medindo a relação com o álcool pela quantidade — "foram só duas taças", "não passei dos limites". Mas quem cresce ao lado raramente faz essa conta. O que fica registrado é outra coisa: o tom de voz que muda depois da terceira, a previsibilidade que oscila, a presença que esteve — ou que faltou.
 
-Trago isso porque é o centro do que construímos no Padrinho: **a dependência nunca atinge uma pessoa só.** Ela atravessa a casa. E quando o cuidado mira só quem bebe, ignorando quem está em volta, fica pela metade.
+Isso reposiciona o problema que decidimos resolver. Não construímos um contador de dias sóbrios. Construímos uma presença — o Bill — que acompanha a pessoa no dia a dia, sem julgamento, porque é no cotidiano (e não na meta) que uma mudança de estilo de vida realmente acontece.
 
-Duas ideias guiam como tratamos esse tema:
+E tem uma notícia boa escondida aí, que vale pra produto e pra vida: a mesma sensibilidade que registra os dias difíceis registra também os dias em que a gente está inteiro. Presença consistente deixa marca. Não precisa ser perfeita — precisa se repetir.
 
-1. **Reconhecer sem envergonhar.** A pessoa muda quando se sente acolhida, não exposta. Culpa não cura ninguém.
-2. **A sensibilidade da criança é uma aliada, não só um risco.** O mesmo vínculo que registra os dias difíceis registra a reparação. Presença previsível deixa marca — das boas.
+É nessa aposta que a gente trabalha: tecnologia com alma, que encontra a pessoa onde ela está. Porque ninguém muda sendo envergonhado; muda sendo acompanhado.
 
-Se você trabalha com saúde mental, dependência ou cuidado familiar, fico curioso: como vocês lidam com a parte mais invisível disso — a família ao redor?
-
-#saudemental #dependenciaquimica #recuperacao #cuidadofamiliar #padrinho
+Se você atua com saúde, recuperação ou cuidado, queria muito trocar ideia sobre uma pergunta que move a gente todo dia: como é que se escala presença previsível?

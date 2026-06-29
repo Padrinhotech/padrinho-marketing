@@ -1,21 +1,15 @@
 ---
-title: INSTA Reshare / WhatsApp — O que seu filho lembra
 persona: Ana Mãe Protetora
-post: WEEK03 · 01_MONDAY (derivado do BLOG_OQueSeuFilhoLembra)
+post: WEEK03 · 01_MONDAY
 formato: reshare do post + frase-âncora (também enviado na comunidade WhatsApp)
 ---
 
 # Reshare (Stories / WhatsApp)
 
 **Frase-âncora (card de reshare):**
-> "Seu filho não conta os copos. Ele sente o clima — e também sente quando você melhora."
+> Daqui a 20 anos, seu filho não vai lembrar do placar. Vai lembrar se você estava ali.
 
 **Texto curto (WhatsApp / comunidade):**
-Hoje tem jogo do Brasil 🇧🇷 — e fica o lembrete: criança não decora o placar, nem conta quantas você bebeu. Lembra do tom da voz depois da terceira, do "depois eu vejo", do clima da casa.
+Hoje tem jogo e a casa para. Fica o lembrete que ninguém dá: criança não decora o placar nem conta os copos — sente o clima, e sente quando você tá presente, do lado dela no grito do gol. O melhor lugar pro seu filho hoje não tá na geladeira. É do seu lado. 💛
 
-Mas tem uma boa notícia escondida: a mesma sensibilidade que registra os dias difíceis registra também os dias em que você está inteira. 💛
-
-Novo carrossel no perfil — sem culpa, sem julgamento.
-👉 [link do post]
-
-**CTA:** "Manda pra alguém que precisa ler isso sem julgamento."
+**CTA:** "Salva e manda pra quem vai assistir com os filhos hoje."

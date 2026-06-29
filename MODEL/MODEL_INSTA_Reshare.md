@@ -1,5 +1,4 @@
 ---
-title: INSTA Reshare / WhatsApp — <título do post>
 persona: <Persona>
 post: WEEKXX · NN_<DIA>
 formato: reshare do post + frase-âncora (também enviado na comunidade WhatsApp)

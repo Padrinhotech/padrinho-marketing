@@ -1,13 +1,3 @@
----
-title: POST_Overview — O que o álcool faz no seu cérebro em 1 hora
-date: 2026-06-27
-persona: Pedro Autônomo
-pilar: Empoderamento
-engine: 📚 Notícia/Educacional (ciência/data-viz)
-channel: Instagram carousel (pilar) → Blog + LinkedIn + WhatsApp + reshare
-arc: Profundidade
----
-
 # POST_Overview: O que acontece no seu cérebro na 1ª hora de bebida
 
 **Tema:** Neurociência da primeira hora de álcool — o porquê, não o como.

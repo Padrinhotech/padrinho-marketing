@@ -1,5 +1,4 @@
 ---
-title: "REELS Script (SHARED / Fluxo C) — O cuidado que continua depois da alta"
 tipo: "🟣 COMPARTILHADO (Fluxo C) — Padrinho ↔ CTBM"
 publica_em: "@ctbezerrademenezes (CTBM W01 · post 04) + @padrinho.app (Padrinho W04)"
 engine: 🎬 Reels (co-produzido — 1 vídeo, 2 cortes/legendas)
@@ -17,7 +16,7 @@ status: "Draft Tactic (text layer) — fatos a confirmar com os times · App = c
 > 🟣 **Fecha o arco (futuro).** **1 vídeo, 2 cortes**, marcação cruzada obrigatória. É onde a parceria ganha propósito concreto: o que o Fábio voltou para construir.
 >
 > **Lei de Tom:** sem promessa de cura; **App Padrinho = continuidade do cuidado, nunca anúncio** no orgânico (Bill aparece como presença, não como produto).
-> **⚠️ Fatos** (risco pós-alta, escopo da parceria) — confirmar com os times. Escala de adoção a confirmar (`STRATEGY_CTBM.md` §11).
+> **⚠️ Fatos** (risco pós-alta, escopo da parceria) — confirmar com os times. Escala de adoção a confirmar (`STRATEGY_CTBM.md` §6).
 
 ## Roteiro compartilhado — texto na tela + narração
 
@@ -31,7 +30,7 @@ status: "Draft Tactic (text layer) — fatos a confirmar com os times · App = c
 
 ### Beat 3 — A solução (18–32s)
 - **Texto na tela:** "Bezerra + Padrinho: o cuidado não para na porta de saída."
-- **Narração:** "A Bezerra cuida da fase mais aguda — onde a vida recomeça. E o Padrinho caminha com você depois: dia após dia, pra esse recomeço durar. Juntos, o cuidado não para na porta de saída."
+- **Narração:** "O Bezerra cuida da fase mais aguda — onde a vida recomeça. E o Padrinho caminha com você depois: dia após dia, pra esse recomeço durar. Juntos, o cuidado não para na porta de saída."
 
 ### Beat 4 — CTA / sentido (32–45s)
 - **Texto na tela:** "Recomeçar é começar. Continuar é o que faz durar."
@@ -42,14 +41,14 @@ status: "Draft Tactic (text layer) — fatos a confirmar com os times · App = c
 ## Os 2 cortes (mesma metragem, vozes diferentes)
 
 ### 🟩 Corte CTBM — @ctbezerrademenezes
-**Ângulo:** "o nosso cuidado agora continua com você em casa." A Bezerra anuncia a continuidade como **evolução do cuidado** — o App como mais uma solução do hospital (não anúncio).
+**Ângulo:** "o nosso cuidado agora continua com você em casa." O Bezerra anuncia a continuidade como **evolução do cuidado** — o App como mais uma solução do hospital (não anúncio).
 
 **Legenda:**
 O dia da alta sempre foi um momento de alegria — e de aperto no peito. Porque a gente sabia que o cuidado mais intenso terminava ali, bem na hora em que a vida lá fora recomeça.
 
 Agora não termina mais.
 
-Com a parceria que a gente apresentou essa semana, o cuidado da Bezerra continua com você em casa — todos os dias, no "depois". A fase mais aguda a gente cuida aqui. O caminho que vem depois, a gente caminha junto.
+Com a parceria que a gente apresentou essa semana, o cuidado do Bezerra continua com você em casa — todos os dias, no "depois". A fase mais aguda a gente cuida aqui. O caminho que vem depois, a gente caminha junto.
 
 Porque recomeçar é começar — mas continuar é o que faz durar. 💚
 
@@ -65,7 +64,7 @@ A recuperação não acaba na alta. Na real, é aí que ela fica mais desafiador
 
 Foi por isso que a gente construiu o Padrinho: pra você não atravessar esse "depois" sozinho. Um acompanhamento que está com você no dia a dia, quando a vontade aperta e a rotina pesa.
 
-E é por isso que essa parceria com a Bezerra (@ctbezerrademenezes) faz tanto sentido: o lugar onde a vida recomeça, somado a quem caminha com você depois.
+E é por isso que essa parceria com o Bezerra (@ctbezerrademenezes) faz tanto sentido: o lugar onde a vida recomeça, somado a quem caminha com você depois.
 
 Recomeçar é começar. Continuar é o que faz durar. 💙
 

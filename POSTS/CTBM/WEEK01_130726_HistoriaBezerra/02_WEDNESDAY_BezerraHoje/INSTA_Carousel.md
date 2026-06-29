@@ -1,5 +1,4 @@
 ---
-title: INSTA Carousel (CTBM) — A Bezerra hoje, o cuidado por dentro
 persona: Maria (Família)
 pilar: Cuidado que Transforma
 slides: 8
@@ -10,7 +9,7 @@ fonte: "KNOW/CTBM/KNOW_CTBM_Servicos.md · KNOW_CTBM_EngajamentoFamilia.md"
 status: "Draft Tactic (text layer) — fatos a confirmar com o time CTBM · só texto, fotos depois"
 ---
 
-# Instagram Carousel — "A Bezerra hoje" (abrimos as portas)
+# Instagram Carousel — "O Bezerra hoje" (abrimos as portas)
 
 > **Voz:** viva, sensorial, transparente — **nunca folder de clínica**, sem prometer cura. Fala com a **Maria** (quem decide buscar ajuda para alguém). Desfaz o medo do desconhecido mostrando que **tratamento humano ≠ lugar frio**.
 > **⚠️ Fatos institucionais** (dupla terapêutica, 24h, terapias) de `KNOW_CTBM_*` — confirmar com o time. **Capa e fotos depois** (esta entrega é só o texto).

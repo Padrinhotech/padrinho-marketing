@@ -1,5 +1,4 @@
 ---
-title: "<título do blog>"
 meta: "<meta description>"
 keyword: "<keyword SEO>"
 persona: <Persona>

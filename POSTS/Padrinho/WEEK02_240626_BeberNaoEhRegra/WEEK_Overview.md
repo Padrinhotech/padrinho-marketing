@@ -1,13 +1,3 @@
----
-title: WEEK02 Overview — Beber deixou de ser regra
-week: 26 (24–30 Jun 2026)
-status: Em Estratégia
-strategy: Trend-carousel reactivation (performance-driven)
-format: Instagram carousel only (Reels reservados para Week 3+ / Bezerra)
-personas: 2 Rosa + 2 Pedro
-last_updated: 2026-06-21
----
-
 # WEEK02 — "Beber deixou de ser regra"
 
 **Tema-guarda-chuva:** O padrão cultural do álcool está sendo questionado — pela data (São João), pela ciência, por uma geração inteira (sober-curious) e por você (Julho Seco). 4 ângulos, 1 ideia: *e se beber não fosse o automático?*
@@ -39,8 +29,3 @@ Decidido a partir dos dados reais da conta `@padrinho.app` (via Insightful Pipe)
 
 ## Regra de integridade de dados
 Todo "Dado-âncora" abaixo está marcado **(verificar)** — a etapa Tactic/Blog deve confirmar a fonte e o número exato antes de publicar. Não publicar estatística não verificada.
-
-## Próximos passos da cascata
-STRATEGY (este) → TACTIC (5 copies/post: Blog · IG Carousel · IG Reshare/WhatsApp · Podcast · LinkedIn) → OPERATIONAL (checklist + agenda) → FIGMA (capas, preferência foto).
-
-> 📩 **Newsletter NÃO é por post.** Conforme `SKILL_Documentation.md` e `AGENT_Tactic.md`, o conteúdo de newsletter é **mensal e agregado** em `POSTS/Padrinho/NEWS/2026_06_Junho/` como arquivos `NEWS_DDMMYY_Tema.md`. Os 4 NEWS desta semana já estão lá; o e-mail mensal será montado a partir deles no fim de junho.

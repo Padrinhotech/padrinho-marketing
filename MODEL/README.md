@@ -29,6 +29,8 @@ Há dois tipos de modelo — ambos shells, diferindo só no nº de âncoras:
 | `MODEL_LINKEDIN_Captions.md` | `LINKEDIN_Captions.md` | Post | `.../NN_<DIA>_<Nome>/` |
 | `MODEL_NEWS.md` | `NEWS_<ddmmaa>_<Tema>.md` | Mensal/agregado | `POSTS/<Marca>/NEWS/<aaaa_mm_Mes>/` |
 | `MODEL_AGENDA.md` | `AGENDA_<Marca>.md` | Marca (calendário) | `POSTS/<Marca>/` |
+| `MODEL_STRATEGY.md` | `STRATEGY_<Marca>.md` | Marca (lógica) | `POSTS/<Marca>/` |
+| `MODEL_STORIES.md` | `STORIES_Suggestions.md` | Semana | `POSTS/<Marca>/WEEKXX_.../` |
 
 ## A cascata (ordem de produção)
 

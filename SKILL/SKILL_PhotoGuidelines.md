@@ -1,13 +1,3 @@
----
-title: "Photo Guidelines — Padrinho Instagram"
-version: "1.0"
-status: "Final"
-type: "Skill"
-owner: "Padrinho Marketing Automation"
-parent_doc: "SKILL/"
-tags: [photos, visual, unsplash, sourcing, mood, style]
----
-
 # Photo Guidelines — Padrinho Instagram
 
 Critérios de seleção, estilo visual e processo de busca para fotos em posts com imagem. Leia este arquivo quando precisar selecionar ou briefar uma foto. Usado pelo Figma Agent para validar seleções de Unsplash.

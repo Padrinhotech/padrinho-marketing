@@ -1,19 +1,6 @@
----
-title: POST_Overview (CTBM) — A Bezerra hoje
-date: 2026-07-15
-persona: Maria (Família)
-pilar: Cuidado que Transforma
-engine: 📚 Carrossel
-channel: "Instagram carousel (pilar) → republicação Facebook"
-funil: Meio
-fase: "Presente — o cuidado por dentro"
-fonte: KNOW/CTBM/KNOW_CTBM_Servicos.md · KNOW_CTBM_EngajamentoFamilia.md
-arc: Presente
----
+# POST_Overview: O Bezerra hoje — o cuidado por dentro
 
-# POST_Overview: A Bezerra hoje — o cuidado por dentro
-
-**Tema:** Depois do "passado" (50 anos), o **presente**: o que acontece, de verdade, dentro da Bezerra hoje. Abrir as portas desfaz o medo do desconhecido e mostra que tratamento humano ≠ lugar frio.
+**Tema:** Depois do passado dos 50 anos, este post mostra o presente: o que acontece, de verdade, dentro do Bezerra hoje. Abrir as portas desfaz o medo do desconhecido e mostra que um tratamento humano não é um lugar frio.
 **Pilar:** Cuidado que Transforma (o "como" do cuidado humano).
 **Engine:** 📚 **Carrossel** → save (utilidade para quem decide, Maria).
 

@@ -33,17 +33,27 @@ Colunas: data · tema · pilar · persona · lado · canais · status.
 |  |  |  |  |  |  | • Qui 25/06: sober-curious → Rosa (📚) — reach 14 · 3 likes |
 |  |  |  |  |  |  | • Sáb 27/06: álcool no cérebro em 1h → Pedro (📚) — publicado |
 |  |  |  |  |  |  | • Dom 28/06: Julho Seco / desafio 30 dias → Pedro (🌍) — agendado |
-| 27 | 01–07 Jul | Pais que bebem: o que as crianças veem (e o que não dizem) | Acolhimento | 4 | Planejado | A revisar com nova estratégia |
+| 27 | 29 Jun–05 Jul | Pais que bebem: o que os filhos veem — e o que sentem na **ausência** (presença × ausência) | Reconhecimento · Prova Social · Empoderamento · Acolhimento | 4 | 🔄 Publicando (Post 01 ✅) | `WEEK03_010726_PaisQueBebem/` — re-angle `REVIEW_Fabio` · cadência Seg·Qua·Sex·Dom |
+|  |  |  |  |  |  | • 01_MONDAY (Seg 29/06): "O que seu filho lembra" (mãe **presente** · gancho jogo) → Ana (📚) — **Publicado no IG** |
+|  |  |  |  |  |  | • 02_WEDNESDAY (Qua 01/07): "O filho do pai que não esteve lá" (**ausência**) → Caio (📚) — pronto |
+|  |  |  |  |  |  | • 03_FRIDAY (Sex 03/07): "A mãe que criou sozinha" → Ana (📚) — pronto |
+|  |  |  |  |  |  | • 04_SUNDAY (Dom 05/07): "A memória ainda pode mudar" (presente + ausente) → Caio→pais (📚) — pronto |
+|  |  |  |  |  |  | Blogs no ar (02/03/04 re-publicados) · carrosséis em 🌀 Semana 13 (cover-d) |
 
 ### JULHO (Semanas 28–32) — Iniciativas Especiais
 
 | Semana | Data | Tema | Pilar | Persona | Iniciativa | Compartilhado | Status | Notas |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 28 | 08–14 Jul | Histórias de Recuperação: Famílias que viram a transformação (Bezerra) | Reconhecimento | Ana + Caio | Bezerra Stories | 🟩 **CTBM** (Fluxo C) | Planejado | A revisar com nova estratégia |
-| 29 | 15–21 Jul | Família em Reconstrução: Como o programa muda dinâmicas familiares | Acolhimento | Ana + Caio + Cláudia | **lado: família** (FER) | — (interno ao Padrinho) | Planejado | Anúncio oficial do programa de família + primeiros depoimentos |
+| 28 | 13–18 Jul | **A história do Fábio** (de paciente a parceiro) — lançamento da parceria Padrinho × Bezerra | Histórias de Recomeço · Acolhimento | **Fábio** (lado paciente) | Lançamento parceria | 🟩 **CTBM W01** (Fluxo C — posts 03+04 co-prod. SHARED) | Em Estratégia | `WEEK04_130726_HistoriaDoFabio/` **= CTBM W01** · 01 Seg 13 · 02 Qua 15 · 03🟣 Sex 17 · 04🟣 Sáb 18 |
+| 29 | 20–26 Jul | Família em Reconstrução: Como o programa muda dinâmicas familiares | Acolhimento | Ana + Caio + Cláudia | **lado: família** (FER) · **= Padrinho W05** | 🟦 CTBM W02 (candidato — post 04) | Planejado | Anúncio do programa de família; **CTBM W02 = Pet Terapia (20/07)** propõe Fluxo C no post 04 (candidato — ver `AGENDA_CTBM.md`) |
 | 30 | 22–28 Jul | Vidas que mudam quando a família se move (Bezerra + Família) | Empoderamento | Ana + Caio | **lado: família** + Bezerra | 🟩 CTBM (Fluxo C) | Planejado | Continuação: profissionais falam sobre impacto familiar |
 | 31 | 29–04 Aug | Conhecer quem está fazendo isso: O encontro exclusivo Padrinho | Reingresso | All | Exclusive Meet | — | Planejado | Convite ao encontro presencial + comunidade |
 | 32 | 05–11 Aug | Julho recap: três iniciativas, uma mudança de dinâmica | Reconhecimento | All | Meta-recap | — | Planejado | Síntese das três frentes + métricas |
+
+> **Sincronização Fluxo C com a CTBM** (mapeamento canônico do pareamento de semanas; os demais documentos apontam para cá):
+> - **CTBM W01 (13–18 Jul) = Padrinho W04 / Semana 28** — história do Fábio; posts **03 (Sex 17)** + **04 (Sáb 18)** co-produzidos e publicados nas duas contas com marcação cruzada.
+> - **CTBM W02 (20 Jul · Pet Terapia) = Padrinho W05 / Semana 29** — Fluxo C no **post 04** (candidato).
+> - **CTBM W03** ("Será que é hora de buscar ajuda?") — **sem cross**. **CTBM W04** ("Voltei pra dizer obrigado") — candidato Fluxo C futuro (confirmar contrapartida Padrinho).
 
 ### AGOSTO (Semanas 32–36)
 

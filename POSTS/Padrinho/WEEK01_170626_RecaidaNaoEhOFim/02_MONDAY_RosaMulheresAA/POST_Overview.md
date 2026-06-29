@@ -1,10 +1,3 @@
----
-title: POST_Overview — Mulheres em AA
-date: 2026-06-17
-persona: Rosa Equilibrista
-pilar: Acolhimento
----
-
 # POST_Overview: Você foi buscar ajuda e não se sentiu acolhida
 
 **Tema:** Inclusion in recovery spaces — "Maybe the problem wasn't you"  

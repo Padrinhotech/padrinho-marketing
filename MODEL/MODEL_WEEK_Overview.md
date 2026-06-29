@@ -1,21 +1,10 @@
----
-title: WEEKXX Overview — <tema-guarda-chuva>
-week: <nº ISO> (<dd–dd mmm aaaa>)
-status: <Em Estratégia | Em Tactic | Em Operational | Em Figma | Publicado>
-strategy: "<resumo da aposta da semana>"
-format: "<nº posts + formato + atomização>"
-personas: "<mix de personas / vozes>"
-lado: <paciente | família>
-last_updated: <aaaa-mm-dd>
----
-
 <!-- MODELO de arquivo. Copie para POSTS/<Marca>/WEEKXX_<ddmmaa>_<Tema>/WEEK_Overview.md
      Preencha o frontmatter e cada seção. O conteúdo (aposta, arco, ângulos) é decidido
      pelo sistema/estratégia; aqui ficam só as seções onde ele entra. -->
 
 # WEEKXX — "<título da semana>"
 
-**Tema-guarda-chuva:** <ideia central da semana>
+**Sobre a semana:** <Escreva de 2 a 4 frases em prosa corrida, descritivas, explicando o que esta semana significa: a tensão ou ideia central, para quem ela fala e por que importa. Evite listas de frases curtas, setas "→" e travessão "—".>
 
 ## Por que esta estratégia
 
@@ -35,18 +24,7 @@ last_updated: <aaaa-mm-dd>
 
 <como cada post se desdobra nos canais>
 
-## Variedade de componentes (ledger — anti-repetição)
-
-> Cada post = forma dominante diferente + nº de slides variado (`SKILL_ComponentSystem` § Variedade). Conferir antes de montar o próximo post para não repetir a mesma espinha.
-
-| Post | Forma dominante | Nº slides | Templates usados (em ordem) |
-|------|-----------------|-----------|------------------------------|
-| 01 | <statement-led / data+list-led / quote+foto-led / explainer-led> |  |  |
-
-## 📱 Stories sugeridos
-
-<ideias de stories>
-
+> 📱 **Stories:** em arquivo próprio nesta pasta — `STORIES_Suggestions.md` (modelo `MODEL/MODEL_STORIES.md`). Não vão mais no WEEK_Overview.
 ## Integridade de dados
 
 <dados-âncora a verificar → `FACTS_Verified.md`>
@@ -54,7 +32,3 @@ last_updated: <aaaa-mm-dd>
 ## Conexão com outras marcas
 
 <marca-only ou cross-posting (Fluxo C)>
-
-## Próximos passos da cascata
-
-<estado / o que falta: Strategy → Tactic → Operational → Figma>

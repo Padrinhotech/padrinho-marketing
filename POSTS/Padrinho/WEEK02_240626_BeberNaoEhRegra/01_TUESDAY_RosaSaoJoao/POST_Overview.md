@@ -1,13 +1,3 @@
----
-title: POST_Overview — São João tem mais cerveja que quentão?
-date: 2026-06-23
-persona: Rosa Equilibrista
-pilar: Desmascaramento
-engine: 🌍 Atual/Mundo (topical newsjacking)
-channel: Instagram carousel (pilar) → Blog + LinkedIn + WhatsApp + reshare
-arc: Hook
----
-
 # POST_Overview: São João tem mais cerveja que quentão?
 
 **Tema:** A festa junina e a cerveja como "obrigação" — desmascarar o mito de que aproveitar = beber.

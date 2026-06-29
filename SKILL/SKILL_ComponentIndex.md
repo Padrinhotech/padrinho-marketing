@@ -1,13 +1,3 @@
----
-title: "Component Index — Padrinho Figma"
-version: "1.0"
-status: "Final"
-type: "Skill"
-owner: "Padrinho Marketing Automation"
-parent_doc: "SKILL/"
-tags: [components, figma, reference, design-system, templates]
----
-
 # Component Index — Padrinho Figma
 
 Catálogo de componentes Figma disponíveis para o Figma Agent selecionar e usar na criação de posts. Leia este arquivo se está escolhendo templates ou entendendo qual componente usar para cada tipo de conteúdo. Usado pelo Figma Agent para referenciar Frame IDs e seleção estratégica.

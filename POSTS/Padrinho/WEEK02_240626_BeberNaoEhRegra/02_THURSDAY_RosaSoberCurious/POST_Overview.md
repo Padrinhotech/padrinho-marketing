@@ -1,13 +1,3 @@
----
-title: POST_Overview — 6 em cada 10 jovens estão bebendo menos
-date: 2026-06-25
-persona: Rosa Equilibrista
-pilar: Reconhecimento
-engine: 📚 Notícia/Educacional (trend decode)
-channel: Instagram carousel (pilar) → Blog + LinkedIn + WhatsApp + reshare
-arc: Profundidade
----
-
 # POST_Overview: Não é só você — uma geração inteira está bebendo menos
 
 **Tema:** A onda sober-curious — beber menos deixou de ser exceção esquisita e virou movimento cultural.

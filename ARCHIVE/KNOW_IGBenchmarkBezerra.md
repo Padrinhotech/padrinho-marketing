@@ -14,7 +14,7 @@ tags: [instagram, social-audit, benchmark, bezerra-de-menezes, comunidade-terape
 
 Auditoria da conta orgânica `@ctbezerrademenezes` (comunidade terapêutica / recuperação) e comparação com o nicho. Leia este arquivo para entender por que a conta tem audiência relevante mas baixo aproveitamento, e como reativá-la. Complementa a auditoria do Padrinho (`KNOW_IGBenchmarkPadrinho.md`) e o benchmark do nicho (`KNOW_IGBenchmarkCompetitors.md`).
 
-> **Nota de escopo:** concorrência/ativo **orgânico de Instagram**. A Bezerra é tratada como conta-irmã do Padrinho (ativos complementares), não como concorrente de produto.
+> **Nota de escopo:** concorrência/ativo **orgânico de Instagram**. O Bezerra é tratada como conta-irmã do Padrinho (ativos complementares), não como concorrente de produto.
 
 ---
 
@@ -52,7 +52,7 @@ O **melhor post** é o mais humano: o ex-paciente que **voltou após 25 anos par
 
 ---
 
-## Direções para a Bezerra
+## Direções para o Bezerra
 
 > Direções acionáveis + a **jogada conjunta Padrinho × Bezerra** são **canônicas** em **`KNOW_IGBenchmarkCompetitors.md`** § Direções acionáveis → Bezerra / A sinergia.
 > **Resumo:** subir cadência a 3×/sem; Reels de histórias reais de pacientes/equipe (com consentimento); migrar voz institucional → comunidade que acolhe (1ª pessoa); utilidade segmentada.

@@ -1,13 +1,3 @@
----
-title: POST_Overview — Julho Seco começa semana que vem
-date: 2026-06-30
-persona: Pedro Autônomo
-pilar: Acolhimento
-engine: 🌍 Atual/Mundo (calendário / desafio)
-channel: Instagram carousel (pilar) → Blog + LinkedIn + WhatsApp + reshare
-arc: Resolução
----
-
 # POST_Overview: Julho Seco — um experimento de 30 dias
 
 **Tema:** Dry July / Julho Seco — convite a um desafio de 30 dias com menos (ou zero) álcool.

@@ -11,7 +11,7 @@ last_updated: "2026-06-21"
 
 # Brand Positioning — CTBM / Centro de Tratamento Bezerra de Menezes (v1.0)
 
-Declaração de visão, posicionamento, taglines e tom da marca **CTBM**. Leia antes de criar conteúdo da Bezerra. Espelha o papel do `KNOW_BrandPositioning.md` do Padrinho, mas para a marca-hospital.
+Declaração de visão, posicionamento, taglines e tom da marca **CTBM**. Leia antes de criar conteúdo do Bezerra. Espelha o papel do `KNOW_BrandPositioning.md` do Padrinho, mas para a marca-hospital.
 
 > ⚠️ **CTBM é uma marca SEPARADA do Padrinho — não unificar.** CTBM = hospital (fase aguda: internação / Hospital Dia / ambulatório); **App Padrinho = continuidade pós-alta ("a vida depois")**. **Vocabulário difere e NÃO se reaproveita copy entre as marcas:** o CTBM usa **"dependência química"** abertamente (é a condição clínica do paciente); o Padrinho **proíbe** chamar o leitor de "dependente"/"alcoólatra" (ver Leis de Tom em `KNOW_BrandPositioning.md`).
 
@@ -33,7 +33,7 @@ Declaração de visão, posicionamento, taglines e tom da marca **CTBM**. Leia a
 Ser, no Grande ABC/SP, **a referência de tratamento que devolve a vida** — o lugar onde a recuperação **começa** e, com o Padrinho, **continua**.
 
 ### Visão de Marketing
-**“Reposicionar a Bezerra de ‘o fim’ para ‘um novo começo’ — reativando a audiência existente com histórias reais de recomeço, e tornando-se a comunidade que acolhe famílias e pacientes.”**
+**“Reposicionar o Bezerra de ‘o fim’ para ‘um novo começo’ — reativando a audiência existente com histórias reais de recomeço, e tornando-se a comunidade que acolhe famílias e pacientes.”**
 
 ---
 
@@ -41,9 +41,9 @@ Ser, no Grande ABC/SP, **a referência de tratamento que devolve a vida** — o 
 
 > As pessoas veem o hospital como **“o fim”** — o último lugar, onde se vai quando tudo já deu errado — **e não como um novo começo**.
 
-A Bezerra diz: **internar/buscar ajuda não é desistir — é recomeçar.** E os **+50 anos** não são marca de gravidade: são **prova de que milhares de pessoas já recomeçaram aqui.**
+O Bezerra diz: **internar/buscar ajuda não é desistir — é recomeçar.** E os **+50 anos** não são marca de gravidade: são **prova de que milhares de pessoas já recomeçaram aqui.**
 
-**Frase-bússola:** *“A Bezerra não é onde a vida acaba. É onde ela recomeça.”*
+**Frase-bússola:** *“O Bezerra não é onde a vida acaba. É onde ela recomeça.”*
 
 | ❌ Percepção atual (“o fim”) | ✅ Reposicionamento (“recomeço”) |
 |---|---|
@@ -93,7 +93,7 @@ Uma **comunidade de cuidado humano** com meio século de história — equipe mu
 
 ## Taglines (em ordem de preferência)
 
-1. **“A Bezerra não é onde a vida acaba. É onde ela recomeça.”**
+1. **“O Bezerra não é onde a vida acaba. É onde ela recomeça.”**
 2. “Há mais de 50 anos cuidando da vida com carinho.” *(herança — manter)*
 3. “O lugar onde a sua história recomeça.”
 4. “Buscar ajuda não é desistir. É recomeçar.”

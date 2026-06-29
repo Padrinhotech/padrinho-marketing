@@ -14,7 +14,7 @@ tags: [instagram, social-audit, benchmark, padrinho, engagement, organic]
 
 Auditoria da conta orgânica de Instagram `@padrinho.app` e comparação com o nicho (sobriedade, recuperação, dependência química, saúde mental). Leia este arquivo para entender o estado atual da conta, o que já funcionou e o que travou. Usado pelo Strategy/Tactic Agent para calibrar formato, cadência e tom no Instagram.
 
-> **Nota de escopo:** este arquivo cobre concorrência **orgânica de Instagram**, complementar — não substitui — a análise de **concorrentes de produto/app** (Sunflower, Reframe, I Am Sober) em `KNOW_MarketContext.md`. Para o que funciona no nicho e as direções acionáveis, ver `KNOW_IGBenchmarkCompetitors.md`. Para a conta da Bezerra, ver `KNOW_IGBenchmarkBezerra.md`.
+> **Nota de escopo:** este arquivo cobre concorrência **orgânica de Instagram**, complementar — não substitui — a análise de **concorrentes de produto/app** (Sunflower, Reframe, I Am Sober) em `KNOW_MarketContext.md`. Para o que funciona no nicho e as direções acionáveis, ver `KNOW_IGBenchmarkCompetitors.md`. Para a conta do Bezerra, ver `KNOW_IGBenchmarkBezerra.md`.
 
 ---
 

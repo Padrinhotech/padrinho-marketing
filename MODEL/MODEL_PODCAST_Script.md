@@ -1,5 +1,4 @@
 ---
-title: PODCAST Script — <título do post>
 post: WEEKXX · NN_<DIA>
 duracao: <~n min>
 persona: <Persona>

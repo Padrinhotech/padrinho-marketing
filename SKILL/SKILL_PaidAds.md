@@ -1,13 +1,3 @@
----
-title: "Paid Ads Playbook — Padrinho (Meta)"
-version: "1.0"
-type: Skill
-status: active
-scope: off-roadmap
-last_updated: 2026-06-27
-supersedes: [SKILL_AudiencePipeline.md, SKILL_CampaignSetup.md]
----
-
 # Paid Ads Playbook — Supabase → Meta Audience → Campaign → Creative
 
 > **Escopo:** **off-roadmap.** Mídia paga NÃO faz parte da cascata de conteúdo (Strategy→Tactic→Operational→Figma). Use este playbook só quando alguém for rodar anúncios manualmente. Tudo aqui é via MCP (Supabase MCP + Pipeboard Meta Ads MCP), não a automação antiga.

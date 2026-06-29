@@ -1,17 +1,6 @@
----
-title: POST_Overview — O que aquele lugar me deu — e por que criei o Padrinho
-date: 2026-07-15
-persona: Fábio (cofundador Padrinho · 1ª pessoa)
-pilar: Acolhimento / Visão
-engine: 📚 Carrossel (história do founder)
-channel: Instagram carousel (pilar) → Blog + LinkedIn + WhatsApp
-fase: Conexão
-arc: Profundidade
----
-
 # POST_Overview: O que aquele lugar me deu — e por que criei o Padrinho
 
-**Tema:** A ponte entre a origem (**o tratamento dele**) e a missão. O que o Fábio viveu na **própria recuperação** — e a lacuna que sentiu na pele, que o levou a criar o Padrinho: **o cuidado que faltava depois da alta**.
+**Tema:** Este post faz a ponte entre a origem (o tratamento do Fábio) e a missão do Padrinho. Ele conta o que o Fábio viveu na própria recuperação e a lacuna que sentiu na pele depois da alta, quando o cuidado intenso termina e o "depois" fica por conta de cada um. Foi exatamente essa falta que o levou a criar o Padrinho.
 **Persona/voz:** Fábio, 1ª pessoa.
 **Pilar:** Acolhimento / Visão (o "porquê" da marca).
 **Engine:** 📚 **Carrossel** → save.
@@ -25,7 +14,7 @@ arc: Profundidade
 2. A lacuna que **eu vivi**: o tratamento intenso termina; o "depois" fica por sua conta.
 3. Foi isso que quase me derrubou — e que não me saiu da cabeça.
 4. Por isso o Padrinho existe: cuidar do longo prazo, sem julgamento, no seu ritmo.
-5. E é por isso que a parceria com a Bezerra faz sentido (gancho p/ posts 03–04).
+5. E é por isso que a parceria com o Bezerra faz sentido (gancho p/ posts 03–04).
 6. CTA.
 
 **CTA:**

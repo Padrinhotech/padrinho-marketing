@@ -1,5 +1,4 @@
 ---
-title: AGENDA <Marca> — Temas <Período>
 version: 1.0
 type: Editorial Calendar
 status: active

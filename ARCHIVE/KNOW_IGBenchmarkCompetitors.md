@@ -12,7 +12,7 @@ tags: [instagram, benchmark, concorrentes, sobriedade, recuperacao, organic, con
 
 # IG Benchmark — Concorrentes do Nicho (o que funciona)
 
-Benchmark de Instagram orgânico das 14 contas-núcleo do nicho (sobriedade, recuperação, dependência química, saúde mental, wellness — Brasil/PT-BR). Leia este arquivo para entender **o que funciona no nicho** e **as direções acionáveis** para o Padrinho e a Bezerra. Usado pelo Strategy/Tactic Agent para escolher formato, tom, cadência e hashtags.
+Benchmark de Instagram orgânico das 14 contas-núcleo do nicho (sobriedade, recuperação, dependência química, saúde mental, wellness — Brasil/PT-BR). Leia este arquivo para entender **o que funciona no nicho** e **as direções acionáveis** para o Padrinho e o Bezerra. Usado pelo Strategy/Tactic Agent para escolher formato, tom, cadência e hashtags.
 
 > **Nota de escopo:** concorrência **orgânica de Instagram** (criação de conteúdo/audiência) — complementar à análise de **concorrentes de produto/app** (Sunflower, Reframe, I Am Sober) em `KNOW_MarketContext.md`. Auditorias individuais: `KNOW_IGBenchmarkPadrinho.md` e `KNOW_IGBenchmarkBezerra.md`.
 
@@ -99,7 +99,7 @@ As contas são **complementares**:
 - **Padrinho** = conteúdo/voz forte + produto digital, **sem audiência**.
 - **Bezerra** = **audiência (6k) + autoridade clínica + histórias reais de pacientes**, **sem produção**.
 
-> **Jogada conjunta:** a Bezerra é fonte inesgotável de **histórias reais de recuperação** (o combustível nº 1 do nicho) e tem audiência para distribuí-las; o Padrinho tem a máquina de conteúdo e o app. **Co-produzir Reels de depoimentos** (Bezerra grava/cede a história → Padrinho edita no formato vencedor → ambos publicam e se marcam) resolve, de uma vez, a falta de audiência do Padrinho e a falta de produção da Bezerra.
+> **Jogada conjunta:** o Bezerra é fonte inesgotável de **histórias reais de recuperação** (o combustível nº 1 do nicho) e tem audiência para distribuí-las; o Padrinho tem a máquina de conteúdo e o app. **Co-produzir Reels de depoimentos** (Bezerra grava/cede a história → Padrinho edita no formato vencedor → ambos publicam e se marcam) resolve, de uma vez, a falta de audiência do Padrinho e a falta de produção do Bezerra.
 
 ---
 

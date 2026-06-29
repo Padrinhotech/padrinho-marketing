@@ -1,22 +1,10 @@
----
-title: POST_Overview (CTBM) — A Bezerra está recomeçando
-date: 2026-07-13
-persona: "Maria (Família) + João (Paciente) — voz de marca"
-pilar: 50 Anos de Recomeços
-engine: 🎬 Reels (reintrodução de marca + reframe)
-channel: "Instagram Reels (pilar) → republicação Facebook"
-funil: Topo
-fase: "Passado — abre o arco história (passado → presente → futuro)"
-arc: Recomeço
----
+# POST_Overview: O Bezerra está recomeçando (e quer recomeçar com você)
 
-# POST_Overview: A Bezerra está recomeçando (e quer recomeçar com você)
-
-**Tema:** A **camada CTBM** da semana — a reintrodução da marca. Não é folder institucional: é a Bezerra falando, **humana e em 1ª pessoa**, dizendo *quem ela é agora*. Estabelece o reposicionamento **“o fim → um novo começo”** que a história desta semana (presente · Fábio · futuro) vai **provar**.
+**Tema:** Este é o post de reintrodução da marca, a camada CTBM da semana. Não é um folder institucional: é o Bezerra falando de forma humana e em primeira pessoa, dizendo quem ele é agora. Ele estabelece o reposicionamento de "o fim" para "um novo começo", que o restante da semana (o presente por dentro, a história do Fábio e o futuro do cuidado) vai provar.
 **Pilar:** 50 Anos de Recomeços (tradição como prova de futuro, nunca peso institucional).
 **Engine:** 🎬 **Reels** — reintrodução da conta reposicionada; reach + reframe.
 
-**Hook (3s):** *“Talvez você só tenha ouvido falar da Bezerra quando tudo já tinha dado errado. Esse vídeo é pra mudar isso.”*
+**Hook (3s):** *“Talvez você só tenha ouvido falar do Bezerra quando tudo já tinha dado errado. Esse vídeo é pra mudar isso.”*
 
 **Fatos-âncora (verbatim / institucionais — confirmar com o time):**
 - **+50 anos** “cuidando da vida com carinho”.
@@ -26,7 +14,7 @@ arc: Recomeço
 **Main Message (arco do Reels):**
 - **Beat 1 (hook):** o que você ouviu sobre “hospital psiquiátrico” provavelmente foi o pior.
 - **Beat 2 (verdade/tradição):** faz mais de 50 anos que recomeços acontecem aqui — milhares deles.
-- **Beat 3 (reframe):** a Bezerra **não é onde a vida acaba — é onde ela recomeça**.
+- **Beat 3 (reframe):** o Bezerra **não é onde a vida acaba — é onde ela recomeça**.
 - **Beat 4 (promessa + CTA):** *“A partir de hoje, a gente vai te mostrar como — e essa história tem nome, tem gente e tem futuro.”* (teaser do presente + da jornada do Fábio na semana).
 
 **CTA:**

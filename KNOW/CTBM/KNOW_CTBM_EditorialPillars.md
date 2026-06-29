@@ -47,7 +47,7 @@ Mostrar o **“como”** do tratamento humano: terapias integrativas (animais, h
 **Tom:** vivo, sensorial, transparente.
 **Engajamento:** Like + Share (orgulho/descoberta).
 **Exemplos de tema:**
-- “Um dia na Bezerra.”
+- “Um dia no Bezerra.”
 - “Terapia com animais: por que funciona.”
 - A área verde como parte do tratamento.
 

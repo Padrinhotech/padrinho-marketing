@@ -1,21 +1,10 @@
----
-title: POST_Overview — <título do post>
-date: <aaaa-mm-dd> (<Dia>)
-persona: <Persona>
-lado: <paciente | família>
-pilar: <Pilar>
-engine: <📚 Carrossel | 🎬 Reels>
-channel: <canal pilar → canais atomizados>
-arc: <função no arco da semana>
----
-
 <!-- MODELO de arquivo. Copie para NN_<DIA>_<NomeCurto>/POST_Overview.md
      Preencha o frontmatter e cada campo. É a folha de instruções que a Tactic atomiza;
      o conteúdo de cada campo é decidido pelo sistema/estratégia. -->
 
 # POST_Overview: <título>
 
-**Tema:** <ângulo do post — o que é e o que não é>
+**Tema:** <Escreva de 2 a 3 frases em prosa, descritivas, sobre o que este post significa: o ângulo único dentro da semana, o que ele é e o que ele não é. Evite frases curtas soltas, setas "→" e travessão "—".>
 
 **Persona:** <persona + voz>
 **Pilar:** <pilar>

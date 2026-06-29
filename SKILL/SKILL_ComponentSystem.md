@@ -1,13 +1,3 @@
----
-title: "Component System — Padrinho Social Posts"
-version: "1.0"
-status: "Final"
-type: "Skill"
-owner: "Padrinho Marketing Automation"
-parent_doc: "SKILL/"
-tags: [components, figma, design-system, guidelines, visual-standards]
----
-
 # Component System — Padrinho Social Posts
 
 Guidelines de uso do design system Figma para criação de posts. Leia este arquivo se está entendendo como os componentes funcionam ou como adaptá-los. Usado pelo Figma Agent e Operational Agent para manter consistência visual.

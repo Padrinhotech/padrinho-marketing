@@ -1,13 +1,3 @@
----
-title: "Photographer Agent Workflow — Padrinho"
-version: "1.0"
-status: "Final"
-type: "Skill"
-owner: "Padrinho Marketing Automation"
-parent_doc: "SKILL/"
-tags: [visual, photos, unsplash, figma, workflow]
----
-
 # Photographer Agent Workflow — Padrinho
 
 Workflow de seleção e aplicação de fotos em templates Figma com imagem. Leia este arquivo junto com photo-guidelines.md quando processando conteúdo visual. Guia operacional para aplicação de assets visuais.

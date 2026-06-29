@@ -1,7 +1,3 @@
----
-
-## title: "STRATEGY Padrinho — Lógica de Conteúdo H2 2026" version: "1.0" status: "active" type: "Strategy Source of Truth" owner: "AGENT_Strategy" last_updated: "2026-06-21" tags: \[strategy, content-logic, pillars, personas, weekly-arc, cascade\]
-
 # STRATEGY Padrinho — Lógica de Conteúdo
 
 **O que é este arquivo:** a **fonte única de verdade da lógica estratégica** que governa como produzimos conteúdo. Enquanto a `AGENDA_Padrinho.md` diz *o que* publicar em cada semana, este arquivo diz *por que e como* — o raciocínio que o `AGENT_Strategy` aplica para transformar um tema da agenda em um `POST_Overview.md`.
@@ -115,72 +111,19 @@ BLOG (pilar)
 
 ---
 
-## 6. Leis de Tom (nunca violar)
+## 6. Parceria & Conexões (ecossistema)
 
-> **As 8 Leis de Tom são canônicas em** `KNOW/Padrinho/KNOW_BrandPositioning.md` **§ Leis de Tom.** Não redefinir aqui.
+> Pareamento semana-a-semana Padrinho e CTBM (canônico): `POSTS/Padrinho/AGENDA_Padrinho.md` § Sincronização Fluxo C com a CTBM.
 
-Resumo operacional (não substitui o canônico): nunca pregar/envergonhar/diagnosticar · validar antes de convidar · "addict/alcoólatra/dependente" nunca descrevem o leitor · nunca vender no orgânico · o **Bill** é presença, nunca feature.
+**Dois lados internos do Padrinho (§3.1):** **paciente** (Bill/app — Rosa·Pedro) + **família** (Programa Família em Reconstrução / FER — Ana·Caio·Cláudia). Mesma marca/conta; muda **persona**, **oferta** e **tom**. A família **não** é spoke separado.
 
----
+**Cross-brand — 3 Fluxos de Conteúdo** (eixo único **Padrinho ↔ CTBM**):
 
-## 7. Lógica de Seleção Visual (capas)
+- 🟦 **Padrinho-only** — marca/voz do Padrinho + app de recuperação de longo prazo; público nacional (Rosa, Ana, Pedro, Caio, Cláudia). A CTBM **não** aparece.
+- 🟩 **CTBM-only** — reposicionamento do hospital ("o fim → recomeço"); o App Padrinho aparece como **"a vida depois"** (continuidade), nunca como anúncio. Lógica em `POSTS/CTBM/STRATEGY_CTBM.md`.
+- 🟪 **Compartilhado (Fluxo C)** — co-produção de histórias reais: a CTBM cede a história (com **consentimento**) → o Padrinho edita no formato vencedor → ambos publicam e se marcam. *(Fluxo C existe só no eixo Padrinho ↔ CTBM — nunca a família ou outro spoke.)*
 
-⭐ **Preferência por capa com FOTO no slide 01.** Das 5 capas, 3 têm foto (`cover-c`, `cover-d`, `cover-e`) — dê preferência a elas; marque o slide com 🖼 e inclua `image-query` (em inglês). Capas tipográficas (`cover-a`, `cover-b`) são **exceção** (conceito puramente textual). Catálogo completo em `SKILL/SKILL_ComponentIndex.md`.
-
-| Pilar | Capa / bloco sugerido |
-| --- | --- |
-| Desmascaramento | foto (`cover-d`) ou tipográfica de impacto |
-| Reconhecimento | foto (`cover-c/e`) |
-| Acolhimento | `cover-a/b` ou editorial dark |
-| Empoderamento | editorial light / data-viz |
-| Prova Social | network / editorial |
-
----
-
-## 8. A Cascata (onde a Strategy se encaixa)
-
-```
-STRATEGY  → POST_Overview.md            (tema, pilar, persona, ângulo, hook, CTA)   ← este arquivo governa esta etapa
-TACTIC    → 6 copies de texto por post  (Blog, IG, IG Reshare, WhatsApp, LinkedIn, Newsletter/Podcast)
-OPERATIONAL → checklist de publicação + atualização da AGENDA
-FIGMA     → carrosséis (capas com foto por padrão) via Bridge
-```
-
-**Saída obrigatória da Strategy:** um `POST_Overview.md` por post, em `POSTS/Padrinho/WEEKxx_DDMMYY_TemaSemana/0n_DIA_AnguloPersona/POST_Overview.md`.
-
----
-
-## 9. Checklist de Decisão Estratégica
-
-Antes de gerar qualquer `POST_Overview`, o AGENT_Strategy decide e registra:
-
-- [ ] **Tema** confirmado na `AGENDA_Padrinho.md` (ou proposto via trends/insights)
-
-- [ ] **Pilar** principal escolhido (1 dos 5)
-
-- [ ] **Persona** alvo única declarada
-
-- [ ] **Ângulo** — o que torna *este* post único dentro do tema da semana
-
-- [ ] **Pergunta central** que o post responde (dor real da persona)
-
-- [ ] **Hook** emocional (1–2 frases)
-
-- [ ] **CTA** acionável e coerente em todos os canais
-
-- [ ] **Dia/função** alinhado ao arco (Hook → Profundidade → Resolução)
-
-- [ ] Respeita as **Leis de Tom** (§6)
-
----
-
-## 10. Benchmarks
-
-- Slow content is the new content.
-- Give the **Why**, not the How.
-- Lifestyle brand > product brand nas redes.
-- Autêntico e original > produção perfeita mas fria.
-- Inspirar ação e lealdade de comunidade.
+**Continuidade do Cuidado:** a **CTBM** trata a **fase aguda**; o **Padrinho** sustenta o **longo prazo pós-alta** (App entregue na alta). Governança/ética e consentimento — canônico em `POSTS/CTBM/STRATEGY_CTBM.md` §6.
 
 ---
 

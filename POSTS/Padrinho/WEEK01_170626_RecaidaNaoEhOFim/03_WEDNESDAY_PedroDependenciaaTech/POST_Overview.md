@@ -1,10 +1,3 @@
----
-title: POST_Overview — Dependência de Celular
-date: 2026-06-17
-persona: Pedro Autônomo
-pilar: Reconhecimento
----
-
 # POST_Overview: Você já tentou largar o celular?
 
 **Tema:** Tech addiction parallels substance addiction — brain science perspective  

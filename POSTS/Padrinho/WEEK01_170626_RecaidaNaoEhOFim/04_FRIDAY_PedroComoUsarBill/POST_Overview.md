@@ -1,10 +1,3 @@
----
-title: POST_Overview — Como Usar o Bill
-date: 2026-06-17
-persona: Pedro Autônomo
-pilar: Empoderamento
----
-
 # POST_Overview: Você baixou o app. E agora?
 
 **Tema:** Getting started with Bill app — first conversation is simpler than expected  

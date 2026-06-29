@@ -1,13 +1,3 @@
----
-title: "AGENT_Figma — Padrinho Marketing 2026 H2"
-version: "3.0"
-status: "Active"
-type: "Agent"
-owner: "Bill (Padrinhotech)"
-parent_doc: "AGENT/"
-tags: [agent, figma, cascata-de-conteudo, carrossel]
----
-
 # AGENT_Figma — Instruções
 
 **Responsabilidade:** Ler `POST_Overview` + `INSTA_Carousel` → montar e exportar o **carrossel** (Camada 2), com **capas foto-first**.
@@ -20,7 +10,7 @@ tags: [agent, figma, cascata-de-conteudo, carrossel]
 
 - `POSTS/<Marca>/WEEKxx_.../NN_DIA_.../POST_Overview.md` (mood, pilar, capa, persona)
 - `POSTS/<Marca>/WEEKxx_.../NN_DIA_.../INSTA_Carousel.md` (texto por slide + `structure:` de componentes + `image-query`)
-- `POSTS/<Marca>/STRATEGY_<Marca>.md` (§7 seleção visual por pilar)
+- `SKILL/SKILL_ComponentIndex.md` · `SKILL_ComponentSystem.md` (seleção visual / capa foto-first por pilar)
 - `SKILL/SKILL_ComponentIndex.md` (catálogo de capas/blocos) · `SKILL_ComponentSystem.md` (tokens — o agente nunca troca fonte/cor)
 - `SKILL/SKILL_PhotoGuidelines.md` (estilo de foto) · `SKILL_FigmaDelivery.md` (processo de entrega)
 - Figma file Padrinho • Social: `sBItPeNLyvT5EMyKLqQbRv`
@@ -69,7 +59,7 @@ POSTS/<Marca>/WEEKxx_.../NN_DIA_.../assets/images/
 
 ## Referências
 
-- `POSTS/<Marca>/STRATEGY_<Marca>.md` → §7 seleção visual por pilar
+- `SKILL/SKILL_ComponentIndex.md` → seleção visual / capa foto-first por pilar
 - `SKILL/SKILL_ComponentIndex.md` → capas/blocos · `SKILL_ComponentSystem.md` → tokens
 - `SKILL/SKILL_PhotoGuidelines.md` → fotos · `SKILL_FigmaDelivery.md` → entrega
 - `SKILL/SKILL_Documentation.md` → nomes/dimensões canônicos (1080×1440)

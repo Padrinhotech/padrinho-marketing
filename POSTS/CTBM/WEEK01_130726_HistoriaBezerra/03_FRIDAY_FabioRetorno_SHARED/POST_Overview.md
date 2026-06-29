@@ -1,21 +1,10 @@
----
-title: "POST_Overview (SHARED / Fluxo C) — De paciente a parceiro: a volta do Fábio"
-date: 2026-07-17
-tipo: "🟣 COMPARTILHADO (Fluxo C) — Padrinho ↔ CTBM"
-publica_em: "@ctbezerrademenezes (CTBM W01 · post 03) + @padrinho.app (Padrinho W04)"
-engine: 🎬 Reels (co-produzido — 1 conteúdo, 2 cortes)
-pilar: "Histórias de Recomeço / 50 Anos"
-fase: "Ponte (passado → futuro)"
-arc: "Ponte entre marcas — a história real do Fábio"
----
-
 # POST_Overview (SHARED): De paciente a parceiro — a volta do Fábio
 
-> 🟣 **Post COMPARTILHADO — o coração do lançamento.** Um único conteúdo co-produzido, publicado nas **duas contas com cortes próprios** + **marcação cruzada**. É a **ponte** que liga o passado da Bezerra ao futuro do cuidado — e é a **história real do fundador do Padrinho**.
+> 🟣 **Post COMPARTILHADO — o coração do lançamento.** Um único conteúdo co-produzido, publicado nas **duas contas com cortes próprios** + **marcação cruzada**. É a **ponte** que liga o passado do Bezerra ao futuro do cuidado — e é a **história real do fundador do Padrinho**.
 >
-> ⚠️ **História pessoal sensível — alinhar com o Fábio antes de gravar:** quão público ele quer ser; quais detalhes entram (ano ~2010, fundo do poço, o que o levou à Bezerra, como foi a recuperação). **É a história dele — ele decide o enquadramento.** A força do post é a verdade, não o drama.
+> ⚠️ **História pessoal sensível — alinhar com o Fábio antes de gravar:** quão público ele quer ser; quais detalhes entram (ano ~2010, fundo do poço, o que o levou ao Bezerra, como foi a recuperação). **É a história dele — ele decide o enquadramento.** A força do post é a verdade, não o drama.
 
-**Tema:** **Fábio, cofundador do Padrinho, é alcoolista em recuperação — e foi paciente da Bezerra há ~16 anos.** Chegou buscando ajuda; **ali recomeçou** (parou de beber, recuperou a vida). Anos depois, fundou o Padrinho. Agora **volta à Bezerra — não como paciente, mas como parceiro** — pra que mais gente recomece (e siga cuidada depois da alta). É a **prova viva**, numa pessoa só, de que *a Bezerra não é o fim — é onde a vida recomeça*.
+**Tema:** Fábio, cofundador do Padrinho, é alcoolista em recuperação e foi paciente do Bezerra há cerca de 16 anos. Chegou buscando ajuda e foi ali que recomeçou, parou de beber e recuperou a vida. Anos depois fundou o Padrinho, e agora volta ao Bezerra não como paciente, mas como parceiro, para que mais gente recomece e siga cuidada depois da alta. É a prova viva, numa pessoa só, de que o Bezerra não é o fim, é onde a vida recomeça.
 
 **Hook (3s):** *“Há 16 anos, ele entrou aqui sem saber se ia conseguir parar de beber. Semana passada, ele voltou — não mais como paciente, mas como sócio.”*
 
@@ -23,8 +12,8 @@ arc: "Ponte entre marcas — a história real do Fábio"
 - **Beat 1 (hook):** 16 anos atrás, paciente — no fundo do poço.
 - **Beat 2 (o recomeço):** foi aqui que ele se tratou e parou de beber.
 - **Beat 3 (o porquê):** depois da alta, ele sentiu na pele a parte mais difícil — seguir sozinho. Foi por isso que criou o Padrinho.
-- **Beat 4 (o retorno):** voltou à Bezerra, agora como parceiro, pra construir esse "depois" pra quem vem agora.
-- **Beat 5 (sentido):** *“A Bezerra não foi o fim da minha vida. Foi onde ela recomeçou. Por isso eu voltei.”*
+- **Beat 4 (o retorno):** voltou ao Bezerra, agora como parceiro, pra construir esse "depois" pra quem vem agora.
+- **Beat 5 (sentido):** *“O Bezerra não foi o fim da minha vida. Foi onde ela recomeçou. Por isso eu voltei.”*
 
 ---
 
@@ -35,7 +24,7 @@ arc: "Ponte entre marcas — a história real do Fábio"
 - **Pilar:** Histórias de Recomeço. **CTA:** acompanhar + **marca @padrinho.app**.
 
 ### 🟦 Corte Padrinho — @padrinho.app
-- **Ângulo:** *“Eu construí o Padrinho porque eu também precisei de ajuda. Sou alcoolista em recuperação — e me tratei na Bezerra.”* — vulnerabilidade real do founder; autenticidade que nenhum dado compra.
+- **Ângulo:** *“Eu construí o Padrinho porque eu também precisei de ajuda. Sou alcoolista em recuperação — e me tratei no Bezerra.”* — vulnerabilidade real do founder; autenticidade que nenhum dado compra.
 - **Voz:** Fábio, 1ª pessoa. Forte em **LinkedIn** também.
 - **⚠️ Vocabulário (Lei de Tom):** o Padrinho **nunca** rotula o *leitor* de "alcoólatra/dependente". Aqui é **autodeclaração do Fábio** (1ª pessoa, dele sobre ele) — isso é permitido e é a força do post. Não estender o rótulo a terceiros.
 - **CTA:** soft + **“siga @ctbezerrademenezes”** (cross-follow).

@@ -162,7 +162,7 @@ R$ 550k/ano (~R$45k/mês) · 35.000 membros · 1.000 Gestores de Recuperação �
 > ER não é comparável entre tamanhos — usar **interações absolutas + alcance**.
 
 ### Padrões observados (o que separa vencedores de perdedores)
-1. **Narrativa em 1ª pessoa supera mensagem institucional.** Topo do nicho = confissão/história: temgente *"Eu não parei de beber porque algo terrível aconteceu…"* (52.188 likes/906 com.); até a Bezerra: ex-paciente que voltou após 25 anos (245 likes). Contas que falam como marca/instituição têm o pior engajamento.
+1. **Narrativa em 1ª pessoa supera mensagem institucional.** Topo do nicho = confissão/história: temgente *"Eu não parei de beber porque algo terrível aconteceu…"* (52.188 likes/906 com.); até o Bezerra: ex-paciente que voltou após 25 anos (245 likes). Contas que falam como marca/instituição têm o pior engajamento.
 2. **Dois motores de alcance:** (a) carrossel/imagem de narrativa longa (o texto é o produto; funciona com audiência ou gancho cultural — temgente puxou comentário do **João Gomes** → 54.726 likes); (b) **Reels + stack de hashtags de intenção** (sossobriedade 92% vídeo, descoberta a frio — um Reel a 181.166 likes; 0→142k).
 3. **Cadência dos líderes: 3–4×/semana.** Padrinho (0,4) e Bezerra (0,1) estão fora por ausência.
 4. **Hashtags de intenção** (`#parardebeber #dependenciaquimica #alcoolismo #abstinencia`), não de marca.

@@ -1,13 +1,3 @@
----
-title: "Copy Rules — Padrinho All Channels"
-version: "2.0"
-status: "Final (Expanded)"
-type: "Skill"
-owner: "Padrinho Marketing Automation"
-parent_doc: "SKILL/"
-tags: [copy, writing, captions, cta, typography, tone, blog, long-form, instagram, newsletter]
----
-
 # Copy Rules — Padrinho All Channels
 
 Directrizes unificadas para redação de copy, captions, posts de blog e estruturas visuais de texto em todos os canais (Instagram, Blog, Newsletter, etc.). Leia este arquivo se está criando ou refinando qualquer conteúdo copywriting para a marca Padrinho. Usado pelo Strategy Agent, Tactic Agent e Operational Agent para validar e estruturar saídas antes de envio/aprovação.
@@ -148,6 +138,10 @@ A legenda deve adicionar uma camada que os slides NÃO têm. Escolha 1–2:
 - Emojis: usados com parcimônia, apenas quando reforçam o ponto — nunca decorativos
 
 ---
+
+## Pontuação
+
+- **Não usar travessão / em-dash (—).** Em vez de unir ou intercalar frases com `—`, reescreva com vírgula, dois-pontos, ponto final ou parênteses. Ex.: em vez de *"presença — a que pesa quando está"*, escreva *"presença: a que pesa quando está"* ou divida em duas frases. Vale para todos os canais (slides, legendas, blog, LinkedIn, podcast) e para os documentos de planejamento.
 
 ## Vocabulário Aprovado
 

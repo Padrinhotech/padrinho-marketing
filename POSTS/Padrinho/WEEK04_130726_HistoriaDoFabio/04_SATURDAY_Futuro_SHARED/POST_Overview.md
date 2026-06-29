@@ -1,13 +1,3 @@
----
-title: "POST_Overview (Padrinho · corte do SHARED) — O cuidado que continua depois da alta"
-date: 2026-07-18
-tipo: "🟣 COMPARTILHADO (Fluxo C) — corte Padrinho"
-persona: Fábio (founder) / Ana, Caio
-pilar: A Vida Depois
-engine: 🎬 Reels (co-produzido com a CTBM)
-canonical: "../../CTBM/WEEK01_130726_HistoriaBezerra/04_SATURDAY_Futuro_SHARED/POST_Overview.md"
----
-
 # POST_Overview (corte Padrinho) — O cuidado que continua depois da alta
 
 > 🟣 **Lado Padrinho de um post COMPARTILHADO (Fluxo C).** Estratégia **canônica** em

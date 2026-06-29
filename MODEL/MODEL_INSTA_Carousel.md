@@ -1,5 +1,4 @@
 ---
-title: INSTA Carousel — <título do post>
 persona: <Persona>
 pilar: <Pilar>
 slides: <nº>
