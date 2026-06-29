@@ -1,18 +1,18 @@
 ---
-title: "FER — O Programa (fatos)"
+title: "Programa Família em Reconstrução (FER) — fatos"
 version: "0.1"
-status: "Draft — confirmar fatos com o time FER"
+status: "Draft — confirmar fatos com o time da Família"
 type: "Knowledge"
-owner: "Padrinho Marketing + FER"
-parent_doc: "KNOW/FER/"
+owner: "Padrinho Marketing"
+parent_doc: "KNOW/Padrinho/"
 tags: [fer, familia-em-reconstrucao, programa, codependencia, fatos]
 last_updated: "2026-06-27"
 source: "https://www.padrinho.app/programa-familia (fetch 2026-06-27)"
 ---
 
-# FER — O Programa (fatos)
+# Programa Família em Reconstrução (FER) — fatos
 
-O "produto" da FER: o que é o programa **Família em Reconstrução**. Equivale ao `KNOW_CTBM_Servicos.md`/`KNOW_Product.md`. **Fonte factual** de onde o conteúdo é derivado. *Fatos extraídos do site — confirmar com o time FER antes de publicar afirmações específicas.*
+O **programa do lado família do Padrinho**: o que é a **Família em Reconstrução**. É a oferta para o público família (o que o Bill/app é para o paciente). **Fonte factual** de onde o conteúdo `lado: família` é derivado. *Fatos extraídos do site — confirmar com o time antes de publicar afirmações específicas.*
 
 ---
 
@@ -21,7 +21,7 @@ O "produto" da FER: o que é o programa **Família em Reconstrução**. Equivale
 - **Nome:** **Família em Reconstrução** — *“Apoio para famílias”*.
 - **O que é:** **programa educativo de apoio online**, de **10 semanas**, sobre **codependência** e recuperação familiar diante de **comportamentos compulsivos** (substâncias, jogo, comida, internet, etc.).
 - **Promessa-núcleo:** *“Quando um comportamento compulsivo afeta uma família, todos sofrem, mas você não precisa passar por isso sozinho.”*
-- **Marca:** programa do ecossistema **Padrinho** (“Sponsor”). FER é um **spoke** com IG/posts próprios; parceiro do Padrinho, separado do CTBM.
+- **Marca:** é o **lado família do Padrinho** — o Padrinho incorpora a Família em Reconstrução como sua frente de família. Conteúdo `lado: família`, mesma conta/voz do Padrinho (não é marca separada).
 
 ---
 
@@ -84,7 +84,7 @@ Familiares de pessoas com comportamentos compulsivos/dependências — **cônjug
 - **Irmão (Campinas):** saiu do entendimento “factual” para o pensamento sistêmico.
 - **Esposa (RJ):** reduziu a autoculpa; ganhou clareza e mudança na relação.
 
-> ⚠️ Para uso em conteúdo, **obter depoimentos verbatim + consentimento** (ver `STRATEGY_FER.md` governança).
+> ⚠️ Para uso em conteúdo, **obter depoimentos verbatim + consentimento** (ver `STRATEGY_Padrinho.md` § Lado Família).
 
 ---
 
@@ -96,5 +96,5 @@ Familiares de pessoas com comportamentos compulsivos/dependências — **cônjug
 
 ---
 
-**Mantido por:** Padrinho Marketing + FER
-**Referências:** site `https://www.padrinho.app/programa-familia` · `KNOW_FER_BrandPositioning.md` · `POSTS/FER/STRATEGY_FER.md`
+**Mantido por:** Padrinho Marketing
+**Referências:** site `https://www.padrinho.app/programa-familia` · `KNOW_BrandPositioning.md` · `KNOW_FamiliarCodependente.md` · `POSTS/Padrinho/STRATEGY_Padrinho.md` (§ Lado Família)

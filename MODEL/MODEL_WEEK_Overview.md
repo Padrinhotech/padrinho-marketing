@@ -5,6 +5,7 @@ status: <Em Estratégia | Em Tactic | Em Operational | Em Figma | Publicado>
 strategy: "<resumo da aposta da semana>"
 format: "<nº posts + formato + atomização>"
 personas: "<mix de personas / vozes>"
+lado: <paciente | família>
 last_updated: <aaaa-mm-dd>
 ---
 

@@ -10,7 +10,9 @@ last_updated: 2026-06-29
 
 Calendário editorial centralizado. **Gerador de verdade única** para planejamento — diz **o quê** publicar. O **porquê/como** (metodologia, pilares, personas, canais, cascata) vive em [`STRATEGY_Padrinho.md`](./STRATEGY_Padrinho.md).
 
-Colunas: data · tema · pilar · persona · canais · status.
+**Lado (paciente · família):** cada semana atende o **lado paciente** (Bill/app — Rosa·Pedro) ou o **lado família** (Programa Família em Reconstrução / FER — Ana·Caio·Cláudia). A família é um **lado interno do Padrinho**, sinalizado em cada post via `lado:`, **não** uma marca separada. Cross-brand (Fluxo C) só no eixo **Padrinho ↔ CTBM**. Ver `STRATEGY_Padrinho.md` §3.1.
+
+Colunas: data · tema · pilar · persona · lado · canais · status.
 
 ---
 
@@ -38,8 +40,8 @@ Colunas: data · tema · pilar · persona · canais · status.
 | Semana | Data | Tema | Pilar | Persona | Iniciativa | Compartilhado | Status | Notas |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 28 | 08–14 Jul | Histórias de Recuperação: Famílias que viram a transformação (Bezerra) | Reconhecimento | Ana + Caio | Bezerra Stories | 🟩 **CTBM** (Fluxo C) | Planejado | A revisar com nova estratégia |
-| 29 | 15–21 Jul | Família em Reconstrução: Como o programa muda dinâmicas familiares | Acolhimento | Ana + Caio | Família Program | 🟪 **FER** (Fluxo C) | Planejado | Anúncio oficial + primeiros depoimentos |
-| 30 | 22–28 Jul | Vidas que mudam quando a família se move (Bezerra + Família Stories) | Empoderamento | Ana + Caio | Bezerra + Família | 🟩 CTBM + 🟪 FER | Planejado | Continuação: profissionais falam sobre impacto familiar |
+| 29 | 15–21 Jul | Família em Reconstrução: Como o programa muda dinâmicas familiares | Acolhimento | Ana + Caio + Cláudia | **lado: família** (FER) | — (interno ao Padrinho) | Planejado | Anúncio oficial do programa de família + primeiros depoimentos |
+| 30 | 22–28 Jul | Vidas que mudam quando a família se move (Bezerra + Família) | Empoderamento | Ana + Caio | **lado: família** + Bezerra | 🟩 CTBM (Fluxo C) | Planejado | Continuação: profissionais falam sobre impacto familiar |
 | 31 | 29–04 Aug | Conhecer quem está fazendo isso: O encontro exclusivo Padrinho | Reingresso | All | Exclusive Meet | — | Planejado | Convite ao encontro presencial + comunidade |
 | 32 | 05–11 Aug | Julho recap: três iniciativas, uma mudança de dinâmica | Reconhecimento | All | Meta-recap | — | Planejado | Síntese das três frentes + métricas |
 

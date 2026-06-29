@@ -21,16 +21,18 @@ Calendário editorial centralizado — diz **o quê** publicar. O **porquê/como
 
 ### <MÊS> (Semanas <nº–nº>)
 
-| Semana | Data | Tema | Pilar | Posts/Semana | Status | Estrutura |
-| --- | --- | --- | --- | --- | --- | --- |
-| <nº> | <dd–dd Mmm> | <tema> | <pilar> | <n> | <status> | `WEEKXX_<ddmmaa>_<Tema>/` |
+| Semana | Data | Tema | Pilar | Lado | Posts/Semana | Status | Estrutura |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| <nº> | <dd–dd Mmm> | <tema> | <pilar> | <paciente / família> | <n> | <status> | `WEEKXX_<ddmmaa>_<Tema>/` |
 |  |  |  |  |  |  | • NN_<DIA>: <ângulo> → <persona> (<engine>) — <métricas, se publicado> |
+
+> **Lado** = paciente (Bill/app) ou família (Programa Família em Reconstrução/FER) — ambos internos ao Padrinho. Ver `STRATEGY_<Marca>.md` §3.1.
 
 ### <MÊS> (Semanas <nº–nº>) — Iniciativas Especiais
 
-| Semana | Data | Tema | Pilar | Persona | Iniciativa | Compartilhado | Status | Notas |
+| Semana | Data | Tema | Pilar | Persona | Lado / Iniciativa | Compartilhado | Status | Notas |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| <nº> | <dd–dd Mmm> | <tema> | <pilar> | <persona> | <iniciativa> | <🟩 CTBM / 🟪 FER / —> | <status> | <nota> |
+| <nº> | <dd–dd Mmm> | <tema> | <pilar> | <persona> | <lado + iniciativa> | <🟩 CTBM (Fluxo C) / —> | <status> | <nota> |
 
 ---
 

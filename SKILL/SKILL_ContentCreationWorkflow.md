@@ -84,6 +84,7 @@ Cada deliverable tem um shell em `MODEL/MODEL_<Nome>.md` — o agente copia, rem
 | Comprimento do Blog | **≈2.000 palavras (1.800–2.200)** — atingir o alvo | `SKILL_CopyRules.md` § Word count |
 | Hashtags | ≤5, no 1º comentário | `SKILL_CopyRules.md` |
 | Newsletter | mensal/agregada em `NEWS/` | `SKILL_Documentation.md` |
+| Lado (paciente/família) | tag em WEEK/POST; família = Programa Família em Reconstrução (FER), interno ao Padrinho (não marca separada) | `STRATEGY_<Marca>.md` §3.1 |
 
 ---
 

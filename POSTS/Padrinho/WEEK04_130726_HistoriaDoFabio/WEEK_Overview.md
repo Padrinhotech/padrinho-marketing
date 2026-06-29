@@ -42,7 +42,7 @@ last_updated: 2026-06-27
 - **Quote card:** *"Recomeçar, às vezes, é voltar pro lugar que te formou — pra ajudar quem vem depois."*
 
 ## Marca / fronteira
-W04 é o **Padrinho** contando a história do seu fundador e a conexão com a **Bezerra**. App/Bill = presença, nunca anúncio. **FER não entra.** Co-branding dosado: o **Fábio** é protagonista; as marcas são contexto.
+W04 é o **Padrinho** contando a história do seu fundador e a conexão com a **Bezerra**. App/Bill = presença, nunca anúncio. **Lado paciente** (não é semana de família). Co-branding dosado: o **Fábio** é protagonista; as marcas são contexto.
 
 ## ⚠️ Fatos & consentimento
 - **História do Fábio = consentimento próprio** (é a história dele) — mas é **disclosure pessoal forte** (alcoolismo + internação). **Ele define o enquadramento.** Alinhar: ano (~2010), o que o levou ao tratamento, a recuperação, o "clique".

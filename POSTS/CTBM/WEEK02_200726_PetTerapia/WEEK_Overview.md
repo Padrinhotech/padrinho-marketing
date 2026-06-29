@@ -35,7 +35,7 @@ last_updated: 2026-06-27
 | 04 🟣 | Dom 26/07 | 🎬 Reels (co-prod.) | **A recuperação também tem afeto** — Fluxo C | Cuidado que Transforma / Prova Social | Marca + Famílias | Topo | 🟦 **Padrinho W05** (candidato) |
 
 > **Post 02 (Reels) fixado na sexta (24/07)** — dia real da Pet Terapia (14h).
-> **Post 04 é Fluxo C** (🟣 co-produzido) — **candidato a pareamento com Padrinho W05** (a definir; estratégia canônica em `04_SHARED_FluxoC_PadrinhoBezerra/`). Spokes **nunca** compartilham com a FER.
+> **Post 04 é Fluxo C** (🟣 co-produzido) — **candidato a pareamento com Padrinho W05** (a definir; estratégia canônica em `04_SHARED_FluxoC_PadrinhoBezerra/`). Fluxo C só no eixo **Padrinho ↔ CTBM**.
 
 ## ⚠️ Consentimento & fatos
 - Imagem que **identifique paciente** exige **consentimento formal**. Default: B-roll não-identificável (animal, mãos, área verde, equipe consentida).

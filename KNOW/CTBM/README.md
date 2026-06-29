@@ -1,6 +1,6 @@
 # KNOW/CTBM/ — Conhecimento da marca CTBM (Bezerra de Menezes)
 
-Tudo da marca **CTBM** vive aqui. CTBM é um **spoke** do Padrinho (parceiro), **separado** do Padrinho e da FER. Boundary de marca: ver os avisos em `KNOW_CTBM_BrandPositioning.md` e `KNOW_CTBM_EditorialPillars.md`.
+Tudo da marca **CTBM** vive aqui. CTBM é um **spoke** do Padrinho (parceiro), **separado** do Padrinho. (A FER não é mais marca separada — virou o **lado família do Padrinho**, em `KNOW/Padrinho/`.) Boundary de marca: ver os avisos em `KNOW_CTBM_BrandPositioning.md` e `KNOW_CTBM_EditorialPillars.md`.
 
 ## Estrutura
 

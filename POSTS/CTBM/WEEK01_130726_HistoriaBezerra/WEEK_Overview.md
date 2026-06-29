@@ -28,7 +28,7 @@ last_updated: 2026-06-27
 A Pet Terapia (já desenhada) **migrou para a CTBM W02** (`WEEK02_200726_PetTerapia/`) — para a W01 manter o **arco de lançamento limpo** (história + Fábio + parceria).
 
 ## Camada de marca (não confundir)
-W01 é **CTBM** contando sua história. O **App Padrinho aparece no Post 04** como **“a vida depois”** (continuidade), nunca como anúncio. Vocabulário próprio do CTBM. **FER não entra** (eixo separado).
+W01 é **CTBM** contando sua história. O **App Padrinho aparece no Post 04** como **“a vida depois”** (continuidade), nunca como anúncio. Vocabulário próprio do CTBM. (Cross-posting só no eixo Padrinho ↔ CTBM.)
 
 ## ⚠️ Consentimento & fatos
 - **História do Fábio = consentimento próprio** (é a história dele) — mas é **disclosure pessoal forte** (alcoolismo + internação). **Ele define o enquadramento e o quanto contar.** Alinhar: ano (~2010), o que o levou ao tratamento, como foi a recuperação. *Verdade, sem romantizar nem dramatizar.*

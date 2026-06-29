@@ -38,11 +38,28 @@ Os 5 pilares (definições completas, tom e tipo de engajamento em `KNOW/Padrinh
 
 ## 3. Personas — Para Quem Falamos (80/20)
 
-**Dependentes = 80% (Rosa · Ana · Pedro) · Familiares = 20%, crescendo (Caio).**
+**Lado Paciente (quem usa):** Rosa · Pedro. **Lado Família (quem convive):** Ana · Caio · **Cláudia (Familiar Codependente)**.
 
-> **Perfis canônicos:** `KNOW/Padrinho/KNOW_RosaEquilibrista.md` · `KNOW_AnaMaeProtetora.md` · `KNOW_PedroAutonomo.md` · `KNOW_CaioFilho.md`; prioridade/índice em `KNOW/Padrinho/KNOW_MarketIntel.md`. Não duplicar perfis aqui.
+> **Perfis canônicos:** `KNOW/Padrinho/KNOW_RosaEquilibrista.md` · `KNOW_AnaMaeProtetora.md` · `KNOW_PedroAutonomo.md` · `KNOW_CaioFilho.md` · `KNOW_FamiliarCodependente.md`; prioridade/índice em `KNOW/Padrinho/KNOW_MarketIntel.md`. Não duplicar perfis aqui.
 
 **Regra:** todo `POST_Overview` declara **uma** persona alvo. O copy fala com ela, não com "o público".
+
+---
+
+## 3.1 Os dois lados do Padrinho — Paciente · Família (FER)
+
+O Padrinho cuida dos **dois lados da recuperação** e os dois vivem na **mesma marca/conta**:
+
+| `lado:` | Quem | Personas | Oferta / CTA | Conhecimento |
+|---------|------|----------|--------------|--------------|
+| **paciente** | quem usa | Rosa · Pedro | **Bill** (app) — presença, nunca venda | `KNOW_Product.md` |
+| **família** | quem convive | Ana · Caio · Cláudia | **Programa Família em Reconstrução (FER)** — grupo ter. 19h, gratuito, confidencial | `KNOW_ProgramaFamilia.md` · `KNOW_FamiliarCodependente.md` |
+
+- **A FER deixou de ser marca separada** — é a **frente de família do Padrinho**. Não há mais `STRATEGY_FER`/`AGENDA_FER`/spoke FER.
+- **Mesmos 5 pilares e mesma cascata** para os dois lados. O que muda é a **persona**, a **oferta** e o **tom**.
+- **Lei de tom adicional (lado família):** **confidencialidade** e **sem julgamento** — a família carrega culpa; validar antes de convidar; o problema "não é só do outro" (a família também se cuida).
+- **Sinalização:** todo `WEEK_Overview`/`POST_Overview` declara **`lado: paciente | família`** (tag — ver `MODEL/`). A AGENDA traz a coluna **Lado**.
+- **Cross-brand (Fluxo C):** existe só no eixo **Padrinho ↔ CTBM**. Família é **interno ao Padrinho** (um lado), não um spoke que cruza com CTBM.
 
 ---
 

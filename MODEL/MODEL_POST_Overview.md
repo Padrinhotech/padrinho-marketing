@@ -2,6 +2,7 @@
 title: POST_Overview — <título do post>
 date: <aaaa-mm-dd> (<Dia>)
 persona: <Persona>
+lado: <paciente | família>
 pilar: <Pilar>
 engine: <📚 Carrossel | 🎬 Reels>
 channel: <canal pilar → canais atomizados>

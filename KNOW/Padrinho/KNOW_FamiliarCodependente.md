@@ -1,14 +1,14 @@
 ---
-title: "Cláudia — A Cuidadora (família codependente, FER) v0.1"
+title: "Cláudia — A Cuidadora (persona do lado família — Padrinho) v0.1"
 version: "0.1"
 type: Persona
 status: "Draft — validar com time FER + dados reais"
 last_updated: 2026-06-27
 ---
 
-# Cláudia — A Cuidadora (Família Codependente) — FER
+# Cláudia — A Cuidadora (Família Codependente)
 
-**Status: PERSONA PRIMÁRIA da FER | público “Famílias que convivem com um comportamento compulsivo”**
+**Status: PERSONA do LADO FAMÍLIA do Padrinho (programa Família em Reconstrução) | público “Famílias que convivem com um comportamento compulsivo”**
 
 > Quem a FER atende na maioria das vezes: **uma mulher** — mãe, esposa ou irmã — que organiza a vida em torno de **controlar/salvar** um familiar com comportamento compulsivo, e foi se anulando no processo.
 
@@ -94,4 +94,4 @@ A história que ela acredita: que **o problema é só do outro** e que **pedir a
 
 **Persona Owner:** Padrinho Marketing + FER
 **Status de dados:** hipótese a partir do site + padrões de codependência. **Validar** com dados reais de inscrição/atendimento.
-**Relacionada:** [[KNOW_FER_BrandPositioning]] · [[KNOW_FER_Programa]] · (Padrinho: [[KNOW_AnaMaeProtetora]], [[KNOW_CaioFilho]]) · (CTBM: [[KNOW_CTBM_FamiliaApoiadora]])
+**Relacionada:** [[KNOW_ProgramaFamilia]] · [[KNOW_BrandPositioning]] · [[KNOW_AnaMaeProtetora]] · [[KNOW_CaioFilho]] · (CTBM: [[KNOW_CTBM_FamiliaApoiadora]])
