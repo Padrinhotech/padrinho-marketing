@@ -29,17 +29,22 @@ tags: [agent, figma, cascata-de-conteudo, carrossel]
 
 ## Processo
 
-1. **Mapear slides → componentes** conforme o campo `structure:` do `INSTA_Carousel.md` (ex.: `cover-c · block-d · block-c · …`) — catálogo em `SKILL_ComponentIndex.md`.
-2. **Capa foto-first:** preferir `cover-c/d/e` (foto/rosto real); tipográfica (`cover-a/b`) só exceção. Buscar a imagem pela `image-query` (em inglês) do arquivo.
-3. **Preencher textos exatos** de cada slide (não editar a copy). Sem `\n` manual em frases contínuas (`SKILL_CopyRules` § quebras de linha).
-4. **Injetar fotos** nos slides marcados 🖼; validar contraste/legibilidade do texto sobre foto.
-5. **Tokens:** cores, fontes (Moma · Instrument Serif · Instrument Sans) e highlights vêm dos componentes — **nunca alterar** (`SKILL_ComponentSystem`).
-6. **Exportar** cada slide em **PNG 1080×1440 (4:5)** → `POSTS/<Marca>/WEEKxx_.../NN_DIA_.../assets/images/`.
+1. **Página da semana:** garantir `🌀 Semana NN` no Figma (criar se não existir; NN = nº da WEEK). **Não usar `_QUEUE`** (descontinuado). Regras de página/segurança em `SKILL_FigmaDelivery.md`.
+2. **Mapear slides → componentes** conforme o campo `structure:` do `INSTA_Carousel.md` (ex.: `cover-c · block-d · block-c · …`) — catálogo em `SKILL_ComponentIndex.md`.
+3. **Conferir variedade entre os 4 posts** (`SKILL_ComponentSystem` § Variedade): cada post tem **forma dominante diferente** e **nº de slides variado** — se vierem clones (mesma espinha/contagem), devolver à Tactic. Nunca 4 posts quase idênticos.
+4. **Capa foto-first:** preferir `cover-c/d/e` (foto/rosto real); tipográfica (`cover-a/b`) só exceção. Buscar a imagem pela `image-query` (em inglês).
+5. **Preencher textos exatos** de cada slide (não editar a copy). Sem `\n` manual em frases contínuas (`SKILL_CopyRules` § quebras de linha).
+6. **Injetar fotos** nos slides marcados 🖼; validar contraste/legibilidade.
+7. **Tokens:** cores, fontes (Moma · Instrument Serif · Instrument Sans) e highlights vêm dos componentes — **nunca alterar** (`SKILL_ComponentSystem`).
+8. **Layout na página** (`SKILL_FigmaDelivery` § Layout): uma linha por post, **0px entre slides**; carrosséis empilhados na ordem dos posts, **400px entre carrosséis**.
+9. **Exportar** cada slide em **PNG 1080×1440 (4:5)** → `POSTS/<Marca>/WEEKxx_.../NN_DIA_.../assets/images/`.
 
 ---
 
 ## Checklist
 
+**Página/layout:** frames em `🌀 Semana NN` (não `_QUEUE`) · slides a **0px** dentro do carrossel · **400px** entre carrosséis · empilhados na ordem dos posts.
+**Variedade:** 4 posts com formas dominantes distintas + nº de slides variado (`SKILL_ComponentSystem` § Variedade) — não clonar esqueleto.
 **Design:** componentes corretos por slide · capa com foto · textos exatos · legível em mobile (zoom 50%) · contraste OK · tokens intactos.
 **Fotos:** autênticas (não stock clichê) · mood alinhado ao pilar · persona representada · min 1000px.
 **Export:** PNG **1080×1440** · salvo em `assets/images/` · nomes claros.

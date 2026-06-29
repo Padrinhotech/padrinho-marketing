@@ -28,33 +28,41 @@ Para regras completas de adaptação de conteúdo, leia `SKILL_ComponentSystem.m
 | Página | Permissão |
 |---|---|
 | `_COMPONENTS` | 🔒 Leitura + cópia de frames apenas |
-| `_QUEUE` | ✅ Escrita — destino de todos os drafts |
-| `_APPROVED` | Humano move para cá após aprovar |
-| `_ARCHIVE` | Humano move para cá |
+| `🌀 Semana NN` (semana atual) | ✅ **Escrita — destino dos carrosséis.** Criar se não existir (NN = nº da WEEK) |
 | `_BRIEFS` | ✅ Escrita — contexto de sessão |
-| `🌀 Semana XX` | 🔒 **NUNCA ESCREVER** |
-| `Thumbnail` | 🔒 **NUNCA ESCREVER** |
+| `_QUEUE` | ⚠️ **Descontinuado** — não usar (página temporária, será apagada) |
+| `_APPROVED` / `_ARCHIVE` | Humano move para cá |
+| `🌀 Semana NN` (outras semanas) · `Thumbnail` | 🔒 **NUNCA ESCREVER** |
 
-**Regra de segurança:** Antes de qualquer escrita, confirmar que a página
-de destino começa com `_`. Se não começar, PARAR.
+**Regra de segurança:** escrever **apenas** na página `🌀 Semana NN` da semana atual
+(criando-a se não existir) ou em `_BRIEFS`. Nunca tocar em `_COMPONENTS`, em páginas de
+outras semanas, em `_APPROVED`/`_ARCHIVE` ou em `Thumbnail`. Em dúvida, PARAR.
 
 ---
 
 ## Fluxo de Execução
 
 ```
-1. Navegar para _COMPONENTS
-2. Localizar o frame do componente pelo nome (ex: "cover/minimal-light")
-3. Copiar o frame para _QUEUE
-4. Renomear:
-   - Post único:   "Post / YYYY-MM-DD / vN — {componente}"
-   - Carrossel:    "Slide 01 / {componente}", "Slide 02 / {componente}", ...
-   - Novo template: "RASCUNHO / {componente} / vN"
-5. Editar apenas os layers permitidos (ver SKILL_ComponentSystem.md)
-6. Preencher _annotation com caption + hashtags + meta
-7. Tirar screenshot e validar visualmente
-8. Reportar ao humano com screenshot + link
+1. Garantir a página da semana: `🌀 Semana NN` (criar se não existir; NN = nº da WEEK)
+2. Navegar para _COMPONENTS e localizar o frame do componente pelo nome
+3. Copiar o frame para `🌀 Semana NN`
+4. Posicionar conforme § Layout na página da semana (0px entre slides · 400px entre carrosséis)
+5. Renomear:
+   - Carrossel: "Post NN — Slide 01 / {componente}", "Post NN — Slide 02 / {componente}", ...
+6. Editar apenas os layers permitidos (ver SKILL_ComponentSystem.md)
+7. Preencher _annotation com caption + hashtags + meta
+8. Tirar screenshot e validar visualmente
+9. Reportar ao humano com screenshot + link
 ```
+
+---
+
+## Layout na página da semana (`🌀 Semana NN`)
+
+- **Uma linha (filmstrip) por post:** os slides do carrossel ficam lado a lado, na ordem, **0px entre slides** (encostados) — leem-se como uma tira contínua.
+- **Carrosséis empilhados verticalmente** na ordem dos posts (Post 01 no topo → 02 → 03 …), com **400px de distância entre um carrossel e o seguinte**.
+- O espaçamento de 400px existe **apenas entre carrosséis** — nunca entre slides do mesmo carrossel.
+- Rotular cada linha com o nº/persona/função do post (ex.: "Post 01 — Ana — Hook").
 
 ---
 
@@ -104,12 +112,12 @@ Post único:
   Post / 2026-04-14 / v2 — cover/minimal-light     ← após rejeição
   Post / 2026-04-14 / v2 ✓ — cover/minimal-light   ← aprovado
 
-Carrossel:
-  Slide 01 / cover/dark-bold-left
-  Slide 02 / block/list-dark
-  Slide 03 / block/statement-dark
+Carrossel (na página 🌀 Semana NN, prefixado pelo post):
+  Post 01 — Slide 01 / cover/dark-bold-left
+  Post 01 — Slide 02 / block/list-dark
+  Post 01 — Slide 03 / block/statement-dark
   ...
-  Slide 09 / block/minimal-statement-light
+  Post 02 — Slide 01 / cover/photo-fullbleed
 
 Novo template (proposto pelo agente):
   RASCUNHO / cover/quote-dark / v1
@@ -120,7 +128,9 @@ Novo template (proposto pelo agente):
 ## Checklist de Entrega
 
 - [ ] Componente copiado de `_COMPONENTS` (nunca construído do zero)?
-- [ ] Frame está em `_QUEUE` do arquivo `sBItPeNLyvT5EMyKLqQbRv`?
+- [ ] Frames na página `🌀 Semana NN` (semana atual) do arquivo `sBItPeNLyvT5EMyKLqQbRv`?
+- [ ] Slides do mesmo carrossel a **0px** (encostados); **400px** entre carrosséis?
+- [ ] **Variedade de componentes entre os 4 posts** respeitada (`SKILL_ComponentSystem` § Variedade)?
 - [ ] Nome do frame segue a nomenclatura correta?
 - [ ] Apenas layers permitidos foram editados (ver SKILL_ComponentSystem.md)?
 - [ ] `hl` (highlight) ajustado para cobrir o texto correto?

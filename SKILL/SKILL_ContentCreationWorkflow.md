@@ -78,6 +78,8 @@ Cada deliverable tem um shell em `MODEL/MODEL_<Nome>.md` — o agente copia, rem
 | Slides do carrossel | **6–9** | `SKILL_Documentation.md` |
 | Dimensão do carrossel | **1080×1440** (4:5) | `SKILL_Documentation.md` |
 | Capa | foto-first (`cover-c/d/e`) | `SKILL_ComponentIndex.md` · `STRATEGY_<Marca>.md` §7 |
+| Variedade de componentes | cada post = forma dominante diferente + nº de slides variado (ledger no WEEK_Overview) | `SKILL_ComponentSystem.md` § Variedade |
+| Página Figma | `🌀 Semana NN` (não `_QUEUE`) · slides 0px · 400px entre carrosséis | `SKILL_FigmaDelivery.md` |
 | Legenda do feed | complementa, não duplica os slides | `SKILL_CopyRules.md` § Regras de Legenda |
 | Comprimento do Blog | **≈2.000 palavras (1.800–2.200)** — atingir o alvo | `SKILL_CopyRules.md` § Word count |
 | Hashtags | ≤5, no 1º comentário | `SKILL_CopyRules.md` |
@@ -88,9 +90,9 @@ Cada deliverable tem um shell em `MODEL/MODEL_<Nome>.md` — o agente copia, rem
 ## 6. Checklist por agente
 
 **Strategy:** WEEK_Overview + N POST_Overview · arco claro · 1 persona/pilar por post · dados-âncora marcados (verificar) · capa foto-first.
-**Tactic:** Blog-pilar + canais derivados · legenda complementa (teste de duplicação) · 6–9 slides · FACTS_Verified preenchido · zero jargão médico/"cura".
+**Tactic:** Blog-pilar + canais derivados · legenda complementa (teste de duplicação) · 6–9 slides · **variedade de componentes entre posts (ledger)** · FACTS_Verified preenchido · zero jargão médico/"cura".
 **Operational:** gate FACTS_Verified OK · QA contra MODEL/SKILL_CopyRules · AGENDA atualizada · commit.
-**Figma:** componentes corretos · capa foto · textos exatos · 1080×1440 em assets/images/.
+**Figma:** página `🌀 Semana NN` · slides 0px / 400px entre carrosséis · variedade entre posts · capa foto · textos exatos · 1080×1440 em assets/images/.
 
 ---
 

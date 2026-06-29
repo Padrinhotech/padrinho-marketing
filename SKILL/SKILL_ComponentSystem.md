@@ -340,7 +340,7 @@ S10 block-d / statement-light     → Fechamento
 ```
 
 ## Modo 1 — Componente existente
-Identifique o template pela *Lógica de Seleção (4 passos)* acima. O **fluxo de entrega** (copiar `_COMPONENTS`→`_QUEUE`, renomear, editar layers, ajustar `hl`, preencher `_annotation`, screenshot, reportar) é canônico em **`SKILL_FigmaDelivery.md` § Fluxo de Execução** — siga de lá.
+Identifique o template pela *Lógica de Seleção (4 passos)* acima. O **fluxo de entrega** (copiar `_COMPONENTS`→`🌀 Semana NN`, posicionar com 0px entre slides / 400px entre carrosséis, renomear, editar layers, ajustar `hl`, preencher `_annotation`, screenshot, reportar) é canônico em **`SKILL_FigmaDelivery.md` § Fluxo de Execução** + § Layout na página da semana — siga de lá.
 
 ## Modo 2 — Nenhum componente serve
 

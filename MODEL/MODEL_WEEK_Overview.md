@@ -34,6 +34,14 @@ last_updated: <aaaa-mm-dd>
 
 <como cada post se desdobra nos canais>
 
+## Variedade de componentes (ledger — anti-repetição)
+
+> Cada post = forma dominante diferente + nº de slides variado (`SKILL_ComponentSystem` § Variedade). Conferir antes de montar o próximo post para não repetir a mesma espinha.
+
+| Post | Forma dominante | Nº slides | Templates usados (em ordem) |
+|------|-----------------|-----------|------------------------------|
+| 01 | <statement-led / data+list-led / quote+foto-led / explainer-led> |  |  |
+
 ## 📱 Stories sugeridos
 
 <ideias de stories>

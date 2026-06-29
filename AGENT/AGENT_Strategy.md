@@ -41,10 +41,11 @@ Confirmar tema da semana, pilar e persona(s). Se indefinido, propor com base em 
 - 1 tema central → **N ângulos** (1 por post) → posts nos dias do arco (Dom · Seg · Qua · Sex).
 - **2 vozes** (ex.: 2 Rosa + 2 Pedro / 2 Ana + 2 Caio) — variação de persona dentro do mesmo tema.
 - Função por dia: **Hook** (abertura) → **Profundidade** (dado/educacional) → **Resolução** (conexão + CTA suave).
+- **Variedade de componentes (anti-repetição) — definir já aqui:** atribuir a cada post uma **forma dominante diferente** (matriz de rotação, `SKILL_ComponentSystem.md` § Variedade): statement-led · data+list-led · quote+foto-led · explainer-led. Variar também o **nº de slides** entre posts. Registrar no **ledger** do `WEEK_Overview` (post → forma dominante → nº slides). Não deixar os 4 posts com o mesmo esqueleto.
 - Marcar os **dados-âncora a verificar** (entram no gate `FACTS_Verified.md`, preenchido na Tactic).
 
 ### 3. Criar `WEEK_Overview.md`  (a partir de `MODEL/MODEL_WEEK_Overview.md`)
-Salvar em `POSTS/<Marca>/WEEKxx_DDMMYY_Tema/WEEK_Overview.md`. Preencher: tema-guarda-chuva, por que esta estratégia, lei de tom, **tabela dos posts** (arco), atomização (1 Blog-pilar por post), stories, integridade de dados, conexão com marcas.
+Salvar em `POSTS/<Marca>/WEEKxx_DDMMYY_Tema/WEEK_Overview.md`. Preencher: tema-guarda-chuva, por que esta estratégia, lei de tom, **tabela dos posts** (arco), atomização (1 Blog-pilar por post), **ledger de variedade** (forma dominante + nº de slides por post), stories, integridade de dados, conexão com marcas.
 
 ### 4. Criar 1 `POST_Overview.md` por post  (a partir de `MODEL/MODEL_POST_Overview.md`)
 Salvar em `POSTS/<Marca>/WEEKxx_DDMMYY_Tema/NN_DIA_AnguloPersona/POST_Overview.md`. Preencher cada campo: tema (o que é/não é), persona única + voz, pilar, engine, hook, **dado-âncora (verificar)**, mensagem principal, CTA (share/save/story), tom (lei aplicada), **capa foto-first** (`cover-c/d/e` + `image-query` em inglês), success metric, Bill.

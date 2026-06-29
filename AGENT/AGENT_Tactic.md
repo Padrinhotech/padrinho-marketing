@@ -38,6 +38,7 @@ tags: [agent, tactic, cascata-de-conteudo, atomizacao]
 ### 2. Atomizar o Blog nos canais (derivar, não recriar)
 Na mesma pasta do post, a partir dos modelos:
 - **`INSTA_Carousel.md`** — slides do carrossel (**6–9**, cada um ensina uma ideia — ver `SKILL_CopyRules` § profundidade de slide) **+ legenda do feed que COMPLEMENTA o carrossel** (Regra de ouro `SKILL_CopyRules` § Regras de Legenda — nunca transcrever os slides) **+ reshare curto**. Capa foto-first (`cover-c/d/e`, `image-query` em inglês).
+  - **Definir o campo `structure:` pela Lógica de Seleção (4 passos)** e respeitar a **forma dominante** do post + os caps de variedade (`SKILL_ComponentSystem.md` § Variedade): ≥4 famílias distintas, nenhuma família >2×, nunca duas iguais em sequência, statement (`block-c/d`) ≤2. **Variar o nº de slides entre posts** e **atualizar o ledger** no `WEEK_Overview`. Os 4 posts não podem compartilhar o mesmo esqueleto.
 - **`INSTA_Reshare.md`** — frase-âncora + texto curto (também comunidade WhatsApp).
 - **`LINKEDIN_Captions.md`** — ângulo founder do mesmo tema.
 - **`PODCAST_Script.md`** — o blog expandido em conversa.
@@ -54,6 +55,7 @@ Na mesma pasta do post, a partir dos modelos:
 - [ ] Blog-pilar escrito; demais canais **derivados** dele (mensagem única, coerente).
 - [ ] **Legenda do feed COMPLEMENTA** (passa no teste de duplicação) — não repete slides nem o hook da capa.
 - [ ] Carrossel 6–9 slides; slide 1 = hook; último = CTA com gatilho de save/share.
+- [ ] **Variedade entre os 4 posts:** formas dominantes distintas · nº de slides variado · ledger do `WEEK_Overview` atualizado · sem clonar o mesmo esqueleto (`SKILL_ComponentSystem` § Variedade).
 - [ ] Nenhum canal é cópia/cola de outro; cada um tem CTA próprio.
 - [ ] `FACTS_Verified.md` preenchido; zero estatística não verificada na copy.
 - [ ] Zero jargão médico · zero promessa de "cura" · vocabulário aprovado (`SKILL_CopyRules`).
