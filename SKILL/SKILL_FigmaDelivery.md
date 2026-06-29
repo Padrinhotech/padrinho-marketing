@@ -81,7 +81,7 @@ _annotation (visible: false)
 │   [texto completo da legenda — máx 2.200 chars]
 │
 ├── HASHTAGS (1º comentário)
-│   [máx 30 hashtags]
+│   [máx 5 hashtags]
 │
 ├── META
 │   Persona: [nome]
@@ -132,31 +132,13 @@ Novo template (proposto pelo agente):
 ---
 
 ## Regra de texto — sem quebras manuais
-
-Ao adaptar o conteúdo dos layers, **nunca usar `\n` para quebrar frases contínuas**.
-O Figma respeita a largura do frame e quebra automaticamente.
-
-Quebras manuais só em:
-- Separação intencional de headline + italic (layers distintos)
-- Itens de lista com separação visual real
-- Parágrafos com pausa editorial deliberada
-
-Ver exemplos completos em `SKILL_CopyRules.md`.
+Regra canônica (quando usar / não usar `\n`) vive em **`SKILL_CopyRules.md` § Quebras de linha nos slides**. Resumo: nunca `\n` em frases contínuas (o Figma quebra pela largura); só em headline↔italic, itens de lista, ou pausa editorial real.
 
 ---
 
 **Last Updated:** 2026-05-07  
 **Maintained by:** Figma Agent  
 **References:**  
-- [../SKILL/SKILL_operational/SKILL_ComponentSystem.md](SKILL_ComponentSystem.md)
-- [../SKILL/SKILL_operational/SKILL_CopyRules.md](SKILL_CopyRules.md)
-- [../AGENT/AUT_figma-design.md](../AGENT/figma-design.md)
-
----
-
-**Last Updated:** 2026-05-07  
-**Maintained by:** Figma Agent  
-**References:**  
-- [../SKILL/SKILL_operational/SKILL_ComponentSystem.md](SKILL_ComponentSystem.md)
-- [../SKILL/SKILL_operational/SKILL_CopyRules.md](SKILL_CopyRules.md)
-- [../AGENT/AUT_figma-design.md](../AGENT/figma-design.md)
+- [SKILL/SKILL_ComponentSystem.md](SKILL/SKILL_ComponentSystem.md)
+- [SKILL/SKILL_CopyRules.md](SKILL/SKILL_CopyRules.md)
+- [AGENT/AGENT_Figma.md](AGENT/AGENT_Figma.md)

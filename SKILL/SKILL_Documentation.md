@@ -12,7 +12,6 @@ padrinho-marketing/
 ├── SKILL/               ← Habilidades operacionais (guias, padrões)
 ├── AGENT/               ← Instruções dos agentes (workflow)
 ├── POSTS/               ← Conteúdo gerado (organizado por data + tema)
-├── DATA/                ← Dados de referência (Supabase, Insightfulpipe, Apify exports)
 ├── DOCS/                ← Documentação geral (deployment, análises)
 ├── .gitignore
 └── README.md
@@ -54,15 +53,17 @@ Exemplos:
 **Criados por:** AGENT_Tactic  
 **Validados por:** AGENT_Operational
 
+> **Esta tabela é a FONTE CANÔNICA** de nomes de arquivo, contagem de slides e dimensões. `SKILL_ContentCreationWorkflow.md` e `claude.md` referenciam daqui — não redefinir nomes em outro lugar.
+
 | Arquivo | Criado Para | Comprimento | Formato |
 |---------|-------------|------------|----------|
-| `BLOG_PostTitle.md` | Site + SEO | 1.5–2k palavras | Markdown |
-| `INSTA_Captions.md` | Copy do carousel | ~100 chars/slide | Plain text, 1 caption por linha |
+| `BLOG_<Tema>.md` | Site + SEO | 1.5–2k palavras | Markdown |
+| `INSTA_Carousel.md` | Slides do carrossel (**6–9 slides**) + legenda do feed | slides ~100–150 chars; legenda ≤2.200 | Markdown |
+| `INSTA_Reshare.md` | Reshare / WhatsApp community | 50–150 chars | Plain text |
 | `PNT_Script.md` | Pé na Trilha | 5–8 min | Markdown (bold/italic para ênfase) |
-| `WHATSAPP_Reshare.md` | Community | 50–150 chars | Plain text |
 | `LINKEDIN_Captions.md` | Gabriel/Fabio | 150–300 chars | Plain text |
 
-**Nota sobre Newsletters:** O conteúdo de newsletter não é gerado por post. O conteúdo mensal é agrupado na pasta `POSTS/NEWS/YYYY_MM_Mes`. O arquivo `NEWS_...md` será usado no futuro para a newsletter mensal.
+**Nota sobre Newsletters:** O conteúdo de newsletter não é gerado por post. O conteúdo mensal é agrupado na pasta `POSTS/Padrinho/NEWS/YYYY_MM_Mes`. O arquivo `NEWS_...md` será usado no futuro para a newsletter mensal.
 
 **Regra:** Cada arquivo é independente (não referencia outros), mas reutiliza insights/estrutura proposta no POST_Overview.
 
@@ -72,7 +73,7 @@ Exemplos:
 
 | Arquivo | Fonte | Formato |
 |---------|-------|----------|
-| `instagram-carousel.png` | Figma (carousel node) | PNG (1080x1350) |
+| `instagram-carousel.png` | Figma (carousel node) | PNG (**1080x1440**, 4:5) |
 | `whatsapp-image.png` | Figma (adaptação) | PNG (540x675 ou quadrado) |
 | `linkedin-image.png` | Figma (carousel OU novo) | PNG (1200x628) |
 
@@ -93,11 +94,11 @@ POSTS/
 │
 └── 14062026_SobriedadeGlowUp/
     ├── POST_Overview.md
-    ├── BLOG_PostTitle.md         ← Criado por AGENT_Tactic
-    ├── INSTA_Captions.md          ← Criado por AGENT_Tactic
-    ├── PNT_Script.md              ← Criado por AGENT_Tactic
-    ├── WHATSAPP_Reshare.md               ← Criado por AGENT_Tactic
-    ├── LINKEDIN_Captions.md               ← Criado por AGENT_Tactic
+    ├── BLOG_<Tema>.md            ← Criado por AGENT_Tactic
+    ├── INSTA_Carousel.md         ← slides (6–9) + legenda do feed
+    ├── INSTA_Reshare.md          ← reshare / WhatsApp community
+    ├── PNT_Script.md             ← Pé na Trilha
+    ├── LINKEDIN_Captions.md      ← LinkedIn
     └── assets/
         └── images/
             ├── instagram-carousel.png
@@ -130,18 +131,18 @@ Exemplo: `14062026` = 14 de junho de 2026
 ### Tipo de Arquivo
 **Prefixo padrão:**
 - `BLOG_` — Blog post
-- `INSTA_` — Instagram captions
+- `INSTA_Carousel` — slides do carrossel + legenda do feed
+- `INSTA_Reshare` — reshare / WhatsApp community
 - `PNT_` — Pé na Trilha script
-- `WHATSAPP_` — WhatsApp reshare
 - `LINKEDIN_` — LinkedIn copy
 - `POST_` — Post overview/guia
-- `NEWS_` — Newsletter (fica em POSTS/NEWS, não na pasta do post)
+- `NEWS_` — Newsletter (fica em POSTS/Padrinho/NEWS, não na pasta do post)
 
 ---
 
 ## 4. AGENDA_Padrinho.md — Calendário Editorial
 
-**Localização:** `POSTS/AGENDA_Padrinho.md`  
+**Localização:** `POSTS/Padrinho/AGENDA_Padrinho.md`  
 **Criado/Atualizado por:** AGENT_Tactic (consulta para próximos temas)  
 **Propósito:** Tabela de temas semanais para H2 2026
 
@@ -254,7 +255,7 @@ Exemplo: `14062026` = 14 de junho de 2026
 **Instagram:**
 - Arquivo: `INSTA_Captions.md` (copy)
 - Imagem: `assets/images/instagram-carousel.png`
-- Estrutura: 3-5 slides (cada um tem 1 caption)
+- Estrutura: 6–9 slides + legenda do feed
 - CTA: Adesivo interativo OU "link na bio"
 
 **Podcast:**
@@ -314,7 +315,7 @@ Ver `SKILL_ContentCreationWorkflow.md` → Seção 4 (Template).
 ### Quando Integrar Dados
 1. Referenciar dados de Supabase em KNOW_UserInsights.md
 2. Usar Clarity insights em AGENT_UserInsights para perguntas reais
-3. Usar Apify data (competitor posts) em KNOW_TrendRadar.md
+3. Usar Apify data (competitor posts) em KNOW_MarketIntel.md
 
 ---
 

@@ -58,15 +58,13 @@ padrinho-marketing/
 │   ├── AGENT_Operational.md
 │   └── AGENT_Figma.md
 │
-├── POSTS/                            ← Conteúdo gerado (output)
-│   ├── AGENDA_Padrinho.md            ← Editorial calendar
-│   └── DDMMYYYY_TemaDoPost/
-│       ├── POST_Overview.md
-│       ├── BLOG_*.md
-│       ├── instagram-captions.md
-│       └── [outros outputs]
-│
-└── DATA/                             ← Referência e dados
+└── POSTS/                            ← Conteúdo gerado (output)
+    ├── AGENDA_Padrinho.md            ← Editorial calendar
+    └── DDMMYYYY_TemaDoPost/
+        ├── POST_Overview.md
+        ├── BLOG_*.md
+        ├── instagram-captions.md
+        └── [outros outputs]
 ```
 
 ---
@@ -142,11 +140,11 @@ Output files ready to publish."
 
 | Procurando... | Arquivo |
 |---------------|---------|
-| Brand voice? | `KNOW/KNOW_BrandPositioning.md` |
-| Rosa persona? | `KNOW/KNOW_RosaEquilibrista.md` |
+| Brand voice? | `KNOW/Padrinho/KNOW_BrandPositioning.md` |
+| Rosa persona? | `KNOW/Padrinho/KNOW_RosaEquilibrista.md` |
 | Content workflow? | `SKILL/SKILL_ContentCreationWorkflow.md` |
 | Strategy framework? | `AGENT/AGENT_Strategy.md` |
-| This week's theme? | `POSTS/AGENDA_Padrinho.md` |
+| This week's theme? | `POSTS/Padrinho/AGENDA_Padrinho.md` |
 | **LLM instructions?** | **[`claude.md`](./claude.md)** ← **START HERE** |
 
 ---

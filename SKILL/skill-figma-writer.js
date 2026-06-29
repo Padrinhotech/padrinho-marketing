@@ -34,8 +34,14 @@ const HEADERS = { 'X-Figma-Token': TOKEN, 'Content-Type': 'application/json' };
 // ─── COMPONENT IDs ─────────────────────────────────────────────────────────────
 
 const COMP = {
-  'cover-a': '3356:6120',
-  'cover-b': '3356:6288',
+  // ── COVERS ──
+  // PREFERÊNCIA: usar capas COM FOTO (cover-c/d/e) por padrão. cover-a/b (tipográficas) são exceção.
+  'cover-a': '3356:6120', // minimal-light (tipográfica — exceção)
+  'cover-b': '3356:6288', // dark-bold-left (tipográfica — exceção)
+  'cover-c': '3356:6334', // photo-fullbleed (foto + headline/subtext) — usar com 🖼 + image-query
+  'cover-d': '3356:6076', // photo-fullbleed (foto + headline/cta)     — usar com 🖼 + image-query
+  'cover-e': '3532:2411', // photo-fullbleed (foto + subhead/headline/cta) — usar com 🖼 + image-query
+
   'block-a': '3356:6346',
   'block-b': '3356:6373',
   'block-c': '3356:6399',

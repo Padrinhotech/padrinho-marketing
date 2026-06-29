@@ -19,8 +19,9 @@ tags: [agent, tactic, cascata-de-conteudo]
 ## Entrada
 
 - `POSTS/DDMMYYYY_Tema/POST_Overview.md` (estratégia do Strategy Agent)
-- `KNOW/KNOW_EditorialPillars.md` (tone + estrutura por pilar)
-- `KNOW/KNOW_CopyRules.md` (regras de copywriting)
+- `POSTS/Padrinho/STRATEGY_Padrinho.md` (lógica estratégica + leis de tom — manter alinhamento)
+- `KNOW/Padrinho/KNOW_EditorialPillars.md` (tone + estrutura por pilar)
+- `SKILL/SKILL_CopyRules.md` (regras de copywriting — inclui a *Regra de ouro* de legenda complementar)
 - `KNOW/KNOW_[Persona].md` (para tom específico)
 
 ---
@@ -63,22 +64,28 @@ Cada arquivo é uma versão do mesmo conteúdo, **otimizado para seu canal espec
 ```
 
 #### B. [INATIVO NESTE NÍVEL] Newsletter
-O conteúdo da newsletter é mensal e agora é gerenciado na pasta `POSTS/NEWS/YYYY_MM_Mes`. O AGENT_Tactic não cria arquivo NEWS para cada post individual.
+O conteúdo da newsletter é mensal e agora é gerenciado na pasta `POSTS/Padrinho/NEWS/YYYY_MM_Mes`. O AGENT_Tactic não cria arquivo NEWS para cada post individual.
 
-#### C. `INSTA_Captions.md`
-**Para:** Instagram carousel (copy dos slides)
-**Comprimento:** ~100 caracteres por slide
-**Estrutura:** 1 caption por linha (para 3-5 slides)
-**Tom:** Quente, emojis apropriados, hook forte
-**Formato:** Plain text, 1 caption por linha
+#### C. `INSTA_Carousel.md` (slides + legenda do feed)
+**Para:** Instagram carousel. **Dois blocos DISTINTOS no mesmo arquivo — eles NÃO podem dizer a mesma coisa.**
 
-**Formato:**
+**C.1 — Slides do carrossel** (o argumento, slide a slide)
+- 6–9 slides, ~100–150 caracteres por slide
+- Slide 01 = capa/hook · slides do meio = desenvolvimento/dado-âncora · último = CTA
+- Cada slide mapeia a um componente Figma (ver `SKILL/SKILL_ComponentIndex.md`)
 ```
-Caption Slide 1: [Hook + pergunta + emoji]
-Caption Slide 2: [Insight/dado + emoji]
-Caption Slide 3: [Ponto chave + emoji]
-Caption Slide 4: [CTA + emoji]
+Slide 01: [Hook visual]
+Slide 02: [Insight/dado]
+...
+Slide N: [CTA + gatilho de save/comentário]
 ```
+
+**C.2 — Legenda do feed** (a voz POR CIMA do carrossel)
+- ⚠️ **A legenda COMPLEMENTA o carrossel — nunca o transcreve.** Regra de ouro completa em `SKILL/SKILL_CopyRules.md` § *Regras de Legenda*.
+- Se a legenda repete as frases dos slides na mesma ordem, está **errada**. Ela adiciona o que os slides NÃO têm: **bastidor / contexto pessoal**, um **ângulo ou dado novo**, **voz íntima** (amiga que comenta o post, não que o repete), e a **provocação** que puxa comentário.
+- Gancho (primeiros ~125 chars) = **porta de entrada diferente** da capa — nunca a headline do slide 01 repetida.
+- Máx **2.200 chars** · hashtags só no **1º comentário**, nunca na legenda.
+- **Teste de duplicação:** ler só a legenda *ou* só o carrossel deve entregar experiências diferentes — cada um deixa o leitor querendo o outro. Se passam a mesma mensagem, reescreva a legenda.
 
 #### D. `PNT_Script.md`
 **Para:** Podcast Pé na Trilha (roteiro/pauta)
@@ -147,6 +154,7 @@ Antes de passar para Operational:
 - [ ] Todos os 5 arquivos existem?
 - [ ] Cada um tem comprimento apropriado (Blog: 1.5k, IG: ~100 chars/slide, etc)?
 - [ ] Tom varia por canal (Blog educativo, Newsletter quente, IG casual, etc)?
+- [ ] **Legenda do feed COMPLEMENTA o carrossel** (passa no teste de duplicação)? Não repete as frases dos slides nem o hook da capa?
 - [ ] Nenhum é cópia/cola dos outros?
 - [ ] CTA é específico para cada canal?
 - [ ] Nenhum jargão médico/técnico?
@@ -192,7 +200,7 @@ Antes de passar para Operational:
 - [ ] 5 arquivos criados em POSTS/DDMMYYYY_Tema/
 - [ ] Blog: ~1.500–2.000 palavras, estruturado, SEO
 
-- [ ] Instagram: captions curtos, hooks fortes
+- [ ] Instagram: slides curtos + **legenda do feed que complementa (não duplica) o carrossel**
 - [ ] Podcast: conversacional, 1.2k–1.6k palavras
 - [ ] WhatsApp: ultra-casual, 50–150 chars
 - [ ] LinkedIn: profissional ou pessoal conforme autor
@@ -204,10 +212,11 @@ Antes de passar para Operational:
 
 ## Referências
 
+- `POSTS/Padrinho/STRATEGY_Padrinho.md` → Lógica estratégica + leis de tom (fonte de verdade)
 - `SKILL/SKILL_ContentCreationWorkflow.md` → Seção 2 (AGENT_Tactic)
 - `SKILL/SKILL_Documentation.md` → Seção 5 (Conven Seções de Escrita)
-- `KNOW/KNOW_EditorialPillars.md` → Tone por pilar
-- `KNOW/KNOW_CopyRules.md` → Regras de copywriting
+- `KNOW/Padrinho/KNOW_EditorialPillars.md` → Tone por pilar
+- `SKILL/SKILL_CopyRules.md` → Regras de copywriting (Regra de ouro: legenda complementa o carrossel)
 - `POSTS/DDMMYYYY_Tema/POST_Overview.md` → Estratégia de base
 
 ---

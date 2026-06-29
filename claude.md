@@ -57,12 +57,13 @@ When starting a session, Claude should load these in memory:
 
 ```
 PATHS TO LOAD:
-- KNOW/KNOW_BrandPositioning.md          → Brand voice, strategy by channel
-- KNOW/KNOW_RosaEquilibrista.md          → Primary persona (25F, Instagram-native)
-- KNOW/KNOW_AnaMaeProtetora.md           → Secondary persona (40F mother, Facebook/YouTube)
-- KNOW/KNOW_PedroAutonomo.md             → Tertiary persona (31M tech-forward, desktop)
-- KNOW/KNOW_CaioFilho.md                 → Amplifier persona (amplifies to family members)
-- POSTS/AGENDA_Padrinho.md               → Editorial calendar (weeks 25-52 H2 2026)
+- POSTS/Padrinho/STRATEGY_Padrinho.md             → Strategy source of truth (pillars, personas, weekly arc, tone laws)
+- KNOW/Padrinho/KNOW_BrandPositioning.md          → Brand voice, strategy by channel
+- KNOW/Padrinho/KNOW_RosaEquilibrista.md          → Primary persona (25F, Instagram-native)
+- KNOW/Padrinho/KNOW_AnaMaeProtetora.md           → Secondary persona (40F mother, Facebook/YouTube)
+- KNOW/Padrinho/KNOW_PedroAutonomo.md             → Tertiary persona (31M tech-forward, desktop)
+- KNOW/Padrinho/KNOW_CaioFilho.md                 → Amplifier persona (amplifies to family members)
+- POSTS/Padrinho/AGENDA_Padrinho.md               → Editorial calendar (weeks 25-52 H2 2026)
 ```
 
 **User Prompt to Load Context:**
@@ -153,33 +154,35 @@ Ready for Tactic stage? (y/n)
 - 1 internal link (to past blog post or app feature)
 - Meta description (160 chars max)
 
-#### 3b. **INSTAGRAM** → `instagram-captions.md`
-- **Post 1 (Carousel):** Hook + 3 carousel images (see Figma Agent)
+#### 3b. **INSTAGRAM** → `INSTA_Carousel.md`
+> Nomes de arquivo, contagem de slides (**6–9**) e dimensões (**1080×1440**) são canônicos em `SKILL/SKILL_Documentation.md`. WhatsApp usa `INSTA_Reshare.md`.
+- **Post 1 (Carousel):** Hook + 6–9 slides (see Figma Agent)
   - Slide 1: Hook (visual) + caption (150 chars)
   - Slide 2: Main message with emoji
   - Slide 3: CTA + hashtags (#recuperação #mindfulness #padrinho)
+- **Feed caption:** a voz POR CIMA do carrossel — **complementa, nunca transcreve os slides**. Adiciona bastidor/contexto, um ângulo ou dado novo, voz íntima + a provocação que puxa comentário. Gancho ≠ headline da capa. (Regra de ouro: `SKILL/SKILL_CopyRules.md` § Regras de Legenda.)
 - **Reels idea:** "5-minute breathing guide" (15–30 sec)
 - **Story prompt:** "What's your calm ritual?"
 
-#### 3c. **PODCAST** → `podcast-script.md`
+#### 3c. **PODCAST** → `PNT_Script.md`
 - 8–10 min read-aloud script
 - 3 topic beats (hook → story → actionable tip)
 - CTA at end (subscribe + mention app)
 - Include guest quote or user testimony if available
 
-#### 3d. **NEWSLETTER** → `newsletter-text.md`
+#### 3d. **NEWSLETTER** → mensal em `POSTS/Padrinho/NEWS/` (NÃO por post — ver `SKILL/SKILL_Documentation.md`)
 - Email subject line (50 chars max)
 - Greeting + hook (50 words)
 - Main story or insight (150 words)
 - Link to full blog post
 - P.S. CTA (app download / community join)
 
-#### 3e. **WHATSAPP** → `instagram-reshare.md` (same file as Instagram)
+#### 3e. **WHATSAPP** → `INSTA_Reshare.md` (same file as Instagram)
 - WhatsApp distribution = reshare the Instagram post directly
-- No separate file needed — use the `instagram-reshare.md` already generated
+- No separate file needed — use the `INSTA_Reshare.md` already generated
 - Share the Instagram link to the WhatsApp community
 
-#### 3f. **LINKEDIN** → `linkedin-copy.md`
+#### 3f. **LINKEDIN** → `LINKEDIN_Captions.md`
 - Professional tone (for founder audience)
 - 200–300 words
 - "Why we built mindfulness into Padrinho"
@@ -213,7 +216,7 @@ Antes de qualquer decisão grande. Antes do café com amigos que bebia.
 📸 INSTAGRAM captions + carousel specs
 🎙️ PODCAST script (8 min)
 📧 NEWSLETTER email
-📲 WHATSAPP → reshare Instagram post (instagram-reshare.md)
+📲 WHATSAPP → reshare Instagram post (INSTA_Reshare.md)
 💼 LINKEDIN professional angle
 
 All files ready in: POSTS/280626_Mindfulness_Recuperacao/
@@ -257,7 +260,7 @@ Ready for Operational stage? (y/n)
 - **Metrics:** Podcast listens, LinkedIn impressions
 
 ## Friday (Day 4: WhatsApp Community)
-- [ ] Reshare Instagram post to WhatsApp community (use instagram-reshare.md)
+- [ ] Reshare Instagram post to WhatsApp community (use INSTA_Reshare.md)
 - [ ] Community engagement (replies to questions)
 - **Metrics:** WhatsApp reach, community activity
 
@@ -306,7 +309,7 @@ Ready for Figma Agent (visual assets)? (y/n)
 1. **Reference AGENT/AGENT_Figma.md** for design system rules
 2. **Reference azul-design-system** skill for colors, typography
 3. **Generate image specs** for:
-   - **Instagram carousel slide 1:** Hook visual (1080x1350 px)
+   - **Instagram carousel slide 1:** Hook visual (1080x1440 px)
    - **Instagram carousel slide 2:** Main message visual
    - **Instagram carousel slide 3:** CTA visual
    - **LinkedIn image:** Professional design (1200x628 px)
@@ -351,7 +354,7 @@ Ready for Figma Agent (visual assets)? (y/n)
 ```
 ✅ Figma specifications ready:
 
-🎨 Instagram carousel (3 slides × 1080x1350 px)
+🎨 Instagram carousel (6–9 slides × 1080x1440 px)
 📊 LinkedIn image (1200x628 px)
 
 Design tokens:
@@ -417,8 +420,9 @@ Claude jumps to visual specs, assumes default publishing schedule
 - **AGENT_Operational.md** → publishing schedule + metrics tracking
 - **AGENT_Figma.md** → design system + visual specs
 
-### Editorial Calendar (POSTS/)
-- **AGENDA_Padrinho.md** → weekly themes, briefs, status
+### Strategy & Editorial Calendar (POSTS/)
+- **STRATEGY_Padrinho.md** → strategy source of truth: HOW we produce content (pillars, personas 80/20, weekly arc, tone laws, visual selection)
+- **AGENDA_Padrinho.md** → WHAT to publish: weekly themes, briefs, status
 
 ---
 
@@ -461,11 +465,11 @@ POSTS/
 └── DDMMYYYY_TemaDoPost/
     ├── POST_Overview.md              ← Strategy output
     ├── BLOG_DDMMYYYY_Tema.md         ← Tactic: Blog
-    ├── instagram-captions.md          ← Tactic: Instagram
-    ├── instagram-reshare.md           ← Tactic: Instagram reshare (also used for WhatsApp)
-    ├── podcast-script.md              ← Tactic: Podcast
-    ├── newsletter-text.md             ← Tactic: Newsletter
-    ├── linkedin-copy.md               ← Tactic: LinkedIn
+    ├── INSTA_Carousel.md              ← Tactic: slides (6–9) + legenda do feed
+    ├── INSTA_Reshare.md               ← Tactic: reshare (também WhatsApp)
+    ├── PNT_Script.md                  ← Tactic: Podcast
+    ├── LINKEDIN_Captions.md           ← Tactic: LinkedIn
+    │   (newsletter NÃO é por post — mensal em POSTS/Padrinho/NEWS/)
     ├── publishing-checklist.md        ← Operational output
     ├── calendar-updates.md            ← Operational: Calendar
     ├── design-brief.md                ← Figma: Design specs
@@ -483,6 +487,7 @@ POSTS/
 - ✅ Load context (KNOW files) before generating
 - ✅ Reference persona when writing copy
 - ✅ Include CTA in every channel output
+- ✅ Capa do carrossel (slide 01): dar **preferência a capas com FOTO** — `cover-c` / `cover-d` / `cover-e` (marcar 🖼 + `image-query` em inglês). `cover-a` / `cover-b` (tipográficas) só como exceção. Ver `SKILL/SKILL_ComponentIndex.md`.
 - ✅ Track metrics targets (blog views, Instagram engagement, etc.)
 - ✅ Use brand voice from KNOW_BrandPositioning
 - ✅ Suggest iterations ("Want me to make the tone more vulnerable?")
@@ -535,7 +540,7 @@ Tone: Conversational + vulnerable
 
 **FIGMA STAGE**
 [Creates design-brief.md with visual specs]
-🎨 Instagram carousel (3 × 1080x1350 px)
+🎨 Instagram carousel (6–9 × 1080x1440 px)
 📊 LinkedIn (1200x628 px)
 🎨 Design tokens: Azul primary (#2E5090), Calm green (#4CAF50)
 

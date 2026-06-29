@@ -19,6 +19,7 @@ tags: [agent, figma, cascata-de-conteudo]
 ## Entrada
 
 - `POSTS/DDMMYYYY_Tema/POST_Overview.md` (contexto estratégico)
+- `POSTS/Padrinho/STRATEGY_Padrinho.md` (lógica estratégica + seleção visual por pilar — manter alinhamento)
 - `POSTS/DDMMYYYY_Tema/instagram-captions.md` (copy para cada slide)
 - `POSTS/DDMMYYYY_Tema/BLOG_DDMMYYYY_Tema.md` (conteúdo completo para referência)
 - Figma file: `sBItPeNLyvT5EMyKLqQbRv` (03. Padrinho • Social)
@@ -201,11 +202,12 @@ Depois que AGENT_Figma finaliza:
 
 ## Referências
 
+- `POSTS/Padrinho/STRATEGY_Padrinho.md` → Lógica estratégica + seleção visual por pilar (§7)
 - `SKILL/SKILL_ContentCreationWorkflow.md` → Seção 2 (AGENT_Figma)
 - `SKILL/SKILL_Documentation.md` → Seção 2-3 (Estrutura POSTS/ + Nomea Seção)
 - `SKILL/SKILL_ComponentSystem.md` → Design tokens + componentes
 - `SKILL/SKILL_PhotoGuidelines.md` → Critérios de foto
-- `KNOW/KNOW_BrandPositioning.md` → Brand visual identity
+- `KNOW/Padrinho/KNOW_BrandPositioning.md` → Brand visual identity
 
 ---
 

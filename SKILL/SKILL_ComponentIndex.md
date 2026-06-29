@@ -18,58 +18,14 @@ Catálogo de componentes Figma disponíveis para o Figma Agent selecionar e usar
 
 ---
 
-## _COMPONENTS — Catálogo atual (Abril 2026)
+## Catálogo de componentes
 
-> Componentes criados pelo designer, pixel-perfect.
-> O agente copia daqui para `_QUEUE`. Nunca edita em `_COMPONENTS`.
+> **Catálogo canônico** (Frame IDs, fundo, campos suportados, pilares, limites) vive em **`SKILL_ComponentSystem.md` § Catálogo Completo + § Campos Disponíveis**. Este arquivo é o **guia de seleção**, não o catálogo — não duplique as tabelas de Frame ID aqui.
+>
+> Regra de escrita: nunca editar em `_COMPONENTS`; copiar para `_QUEUE` (fluxo em `SKILL_FigmaDelivery.md`).
 
-### COVERS
-
-| Frame ID | Nome | Fundo | Pilares |
-|---|---|---|---|
-| `3356:6120` | `cover-a / minimal-light` | Cream | Acolhimento, Prova Social |
-| `3356:6288` | `cover-b / dark-bold-left` | Navy | Desmascaramento, Reconhecimento |
-| `3356:6334` | `cover-c / photo-fullbleed` | Foto blumine | Reconhecimento emocional forte |
-| `3356:6076` | `cover-d / photo-fullbleed` | Foto real | Desmascaramento, hooks virais |
-
-### BLOCKS — Tipográficos
-
-| Frame ID | Nome | Fundo | Pilares |
-|---|---|---|---|
-| `3356:6346` | `block-a / list-dark` | Navy | Acolhimento, produto |
-| `3356:6373` | `block-b / list-light` | Cream | Empoderamento, educacional |
-| `3356:6399` | `block-c / statement-dark` | Navy | Acolhimento, statement |
-| `3356:6411` | `block-d / statement-light` | Cream | Reframing, editorial |
-| `3356:6466` | `block-e / list-dark-b` | Navy | Listas menores dark |
-| `3356:6444` | `block-f / list-light-b` | Cream | Listas menores light |
-| `3356:6491` | `block-g / topic-list-light` | Cream | Dado + explicação + lista |
-
-### BLOCKS — Com foto
-
-| Frame ID | Nome | Fundo | Pilares |
-|---|---|---|---|
-| `3356:6555` | `block-h / quote-content` | Foto dark + raios | Reconhecimento, hangxiety |
-| `3356:6530` | `block-i / quote-list` | Foto warm | Gatilhos, listas sobre imagem |
-| `3356:6518` | `block-j / final-quote-a` | Foto dark + raios | Fechamento, reframing |
-| `3356:6570` | `block-k / quote-full-a` | Foto vivid | Desmascaramento forte |
-| `3356:6588` | `block-l / quote-full-b` | Foto escura | Reconhecimento ("Na vida de quem...") |
-| `3356:5189` | `block-m / quote-stacked` | Navy + stacked | Desmascaramento artístico |
-| `3356:5272` | `block-m / quote-simple` | Navy | Statement mínimo |
-| `3356:8512` | `block-n / final-quote-b` | Foto + raios | Fechamento de carrossel |
-| `3356:8530` | `block-k / quote-full-c` | Foto | Variante de fechamento |
-
-### DATA
-
-| Frame ID | Nome | Fundo | Melhor para |
-|---|---|---|---|
-| `3356:8220` | `data-a / wave-number` | Cream → Horizon | Comparativos de consumo |
-| `3356:8231` | `data-b / circle-grid-a` | Cream | Percentuais visuais |
-| `3356:8455` | `data-c / circle-grid-b` | Cream | Percentuais com mais itens |
-| `3356:6653` | `data-c / huge-numbers` | Navy + dot grid | Números de impacto da comunidade |
-| `3356:6611` | `data-d / quote-numbers` | Cream | Milestones com logo marks |
-| `3356:8429` | `data-e / quote-parts` | Navy com linhas | Frações e proporções |
-| `3356:8265` | `data-f / quote-fill-percentage` | Cream + fill horizon | Percentuais tipo "55% já..." |
-| `3356:8313` | `data-g / quote-100` | Navy + grid | "X em cada 100 pessoas" |
+### ⭐ Capa: preferência por FOTO
+Das 5 capas, 3 têm foto (`cover-c`, `cover-d`, `cover-e`). **Dê preferência a elas** no slide 01 de qualquer carrossel — marque o slide com 🖼 e inclua `image-query` (em inglês). As tipográficas (`cover-a`, `cover-b`) são **exceção** — só quando o conceito for puramente textual.
 
 ---
 
@@ -77,7 +33,8 @@ Catálogo de componentes Figma disponíveis para o Figma Agent selecionar e usar
 
 ```
 HOOK emocional forte (foto, impacto)
-  → cover-c, cover-d, block-h, block-j, block-k, block-l
+  → cover-c, cover-d, cover-e, block-h, block-j, block-k, block-l
+  → cover-e: capa de foto com subhead + headline + CTA
 
 HEADLINE editorial (só tipografia)
   → cover-a, cover-b, block-c, block-d
@@ -98,8 +55,29 @@ DADO / ESTATÍSTICA
   → data-d (milestones comunidade)
 
 FECHAMENTO de carrossel (CTA suave)
-  → block-j, block-n, block-k/c
+  → block-j, block-o, block-p
 ```
+
+---
+
+## Seleção de DATA por TIPO de dado (pare de usar `data-a` pra tudo)
+
+> **Diagnóstico:** o agente cai sempre em `data-a` — os outros 7 templates de dado quase nunca entram. Escolha pelo **formato do número**, não por hábito. Um percentual NÃO é um número-herói.
+
+| O dado é… | Template certo | Exemplo |
+|---|---|---|
+| **1 número-herói** (moeda, volume, contagem) | `data-a / wave-number` | "R$ 7 bilhões", "7,7 L por pessoa" |
+| **percentual (%)** | `data-b / circle-grid-a` **ou** `data-f / quote-fill-percentage` | "64% não bebem", "55% já pensaram em parar" |
+| **% denso / muitos itens** | `data-c / circle-grid-b` | percentuais com granularidade |
+| **"X em cada N pessoas"** | `data-g / quote-100` **ou** `data-e / quote-parts` | "6 em cada 10", "1 em cada 4" |
+| **fração / proporção** | `data-e / quote-parts` | "3 de 4 recaídas…" |
+| **milestone de comunidade** (logo marks) | `data-d / quote-numbers` | "+1.000 downloads", "3.265 plays" |
+| **número de impacto gigante (não-moeda)** | `data-c / huge-numbers` ⚠️ **o número é vetor — NÃO editável via texto**; só use quando o número casar com o componente | "+1.200 pessoas" |
+
+**Regra de variedade de dado:**
+- No máx **1 slide de dado por template** dentro do mesmo carrossel.
+- Se a semana tem vários posts com **%**, **alterne** entre `data-b`, `data-f` e `data-g` — nunca repita `data-a` pra todos.
+- `data-a` é reservado a **número-herói único** (não percentual). "64%" → `data-b`/`data-f`/`data-g`, nunca `data-a`.
 
 ---
 
@@ -152,9 +130,9 @@ FECHAMENTO de carrossel (CTA suave)
 
 ---
 
-**Last Updated:** 2026-05-07  
+**Last Updated:** 2026-06-21  
 **Maintained by:** Figma Agent  
 **References:**  
-- [../SKILL/SKILL_operational/SKILL_ComponentSystem.md](SKILL_ComponentSystem.md)
-- [../SKILL/SKILL_operational/figma-delivery.md](figma-delivery.md)
-- [../AGENT/AUT_figma-design.md](../AGENT/figma-design.md)
+- [SKILL/SKILL_ComponentSystem.md](SKILL/SKILL_ComponentSystem.md)
+- [SKILL/SKILL_FigmaDelivery.md](SKILL/SKILL_FigmaDelivery.md)
+- [AGENT/AGENT_Figma.md](AGENT/AGENT_Figma.md)

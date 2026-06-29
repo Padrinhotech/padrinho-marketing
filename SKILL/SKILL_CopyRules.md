@@ -14,11 +14,14 @@ Directrizes unificadas para redação de copy, captions, posts de blog e estrutu
 
 ## Estrutura Visual de Post
 
-### Tipografia (sempre Instrument Serif + Instrument Sans)
+### Tipografia (3 fontes da marca: Moma · Instrument Serif · Instrument Sans)
+- **Moma** — fonte de marca display/manuscrita (habilitada em 2026 H2). Usada em elementos de destaque manuscrito/assinatura — ex.: a "seta curva" e o mix handwriting da capa `cover-d`.
 - **Headline display:** Instrument Serif, 32px, line-height 150%, Regular
 - **Palavra-chave emocional:** sempre em itálico dentro do headline
 - **Destaque inline:** retângulo #669AB7 @ 45% opacidade atrás de 1 frase por post
 - **Subtexto / body:** Instrument Sans, 14-16px, line-height 140%
+
+> As 3 fontes (Moma, Instrument Serif, Instrument Sans) já vêm aplicadas nos componentes — o agente **nunca troca fonte** (ver `SKILL_ComponentSystem.md` § O que o Agente NUNCA altera).
 - **Handle:** @padrinho.app — espaçado, centralizado, y=1321, quase invisível
 - **Wave underline (~):** vetor teal #669AB7 sob CTAs e palavras-chave
 
@@ -31,6 +34,28 @@ Exemplo correto:
 
 Exemplo incorreto:
 > **Não é magia do universo Ghibli, é tecnologia com alma** (tudo igual = sem ênfase)
+
+---
+
+## Escreva até a capacidade do componente (profundidade de slide)
+
+> **Diagnóstico:** a gente subpreenche os componentes — vira um statement num rótulo de 4 palavras quando ele cabe uma ideia inteira. Conteúdo raso = post "phase-based" (rótulos, não ensino). Cada campo tem um **alvo de conteúdo**, não só um teto.
+
+**Princípio:** cada slide **ensina uma ideia completa** — afirmação → mecanismo/porquê → consequência. Se o componente oferece um campo (`subtext`, `body`, `bullet`), ele **não é decorativo**: preencha com conteúdo real.
+
+**Alvos por tipo de campo:**
+| Campo | Alvo (não só teto) |
+|---|---|
+| `headline` | a ideia central — 2–3 linhas, nunca 1 palavra solta |
+| `subtext` | uma **frase completa** que adiciona (consequência, nuance) — nunca um rótulo solto |
+| `body` (`block-h/g/q/r`, `data-d/f`) | **3–6 linhas que DESENVOLVEM**: claim → porquê → e daí |
+| `bullet-N` | keyword **+ detalhe** (ex.: "Sono melhor — o álcool rouba o REM"), não só a keyword |
+
+**Referência de densidade:** olhe `@brandsdecoded` e `@temgentequenaobebe` — cada slide é um **parágrafo que ensina**, não uma legenda.
+
+**Teste de subpreenchimento:** se, ao reler o slide, você não aprendeu nada além do título → está raso, desenvolva. Prefira **menos slides mais densos** a muitos slides-rótulo.
+
+> Para conteúdo educacional (Empoderamento/Desmascaramento), o spine deve ser `block-q/r` (conteúdo) — ver `SKILL_ComponentSystem.md` § Lógica de Seleção (Passo 4).
 
 ---
 
@@ -77,10 +102,28 @@ Sempre uma **verdade**, nunca uma venda.
 
 ## Regras de Legenda (Caption Instagram)
 
+### ⚠️ Regra de ouro: a legenda COMPLEMENTA o carrossel — nunca o duplica
+
+O carrossel já entrega o argumento, slide a slide. Se a legenda repete os mesmos pontos nas mesmas palavras, o leitor lê tudo duas vezes — e não há motivo pra parar nem pra interagir. **A legenda é a voz por cima do carrossel** (o "áudio do criador", o "DM pra uma amiga"), não a transcrição dele.
+
+A legenda deve adicionar uma camada que os slides NÃO têm. Escolha 1–2:
+- **Bastidor / contexto pessoal** — por que esse tema agora, de onde veio, uma cena real, uma confissão.
+- **Ângulo ou dado novo** — um exemplo, nuance ou número que não aparece nos slides.
+- **Voz íntima** — a amiga que *comenta* o post, não que o repete.
+- **Condução da conversa** — a provocação que puxa comentário + o gatilho de save/share.
+- **Ponte, não resumo** — pode dar o gancho ("arrasta que o 3º slide explica…") sem entregar a conclusão.
+
+**Teste de duplicação:** se dá pra ler SÓ a legenda *ou* SÓ o carrossel e receber a mesma coisa, a legenda está duplicando. Cada um deve deixar o leitor querendo o outro.
+
+- ❌ Legenda = frases dos slides na mesma ordem (recap).
+- ✅ Legenda = o que você diria *por cima* do carrossel: história, contexto, ou a pergunta que gera resposta.
+- ❌ Gancho da legenda = headline do slide 01 repetido.
+- ✅ Gancho da legenda = uma porta de entrada diferente para o mesmo tema.
+
 ### Estrutura
-1. **Gancho** (primeiros ~125 chars — o que aparece antes do "ver mais")
-2. **Desenvolvimento** — 2-4 parágrafos curtos, respira entre eles
-3. **Virada / insight** — a verdade que o post entrega
+1. **Gancho** (primeiros ~125 chars) — porta de entrada **diferente** da capa; nunca a headline do slide 01 repetida
+2. **Desenvolvimento (complemento)** — 2-4 parágrafos curtos que adicionam (bastidor / ângulo novo / voz íntima), não que recapitulam os slides
+3. **Virada / insight** — fecha o pensamento da legenda (pode apontar pro carrossel: "é disso que o post fala")
 4. **CTA suave** — sempre no final, nunca no meio
 
 ### CTAs Permitidos (suaves, relacionais)
@@ -98,7 +141,7 @@ Sempre uma **verdade**, nunca uma venda.
 
 ### Formatação
 - Máximo **2.200 caracteres** por legenda
-- Máximo **30 hashtags** — sempre no primeiro comentário, nunca na legenda
+- Máximo **5 hashtags** — sempre no primeiro comentário, nunca na legenda
 - Parágrafos curtos — máximo 3 linhas por parágrafo
 - Espaço em branco entre parágrafos = respiração = leitura mobile
 - Nunca começar com @menção ou # hashtag
@@ -550,7 +593,5 @@ cria resultados visuais estranhos e imprevisíveis.
 **Last Updated:** 2026-06-14 (Blog & Long-Form Style incorporated)  
 **Maintained by:** Padrinho Marketing Team  
 **References:**  
-- [../STYLE_GUIDE_Blog.md](../STYLE_GUIDE_Blog.md) — Detailed blog style analysis
-- [../SKILL/SKILL_audiences/user-insights.md](../SKILL/SKILL_audiences/user-insights.md)
-- [../SKILL/SKILL_KNOW_BrandPositioning.md](../SKILL/SKILL_KNOW_BrandPositioning.md)
-- [../AGENT/AUT_operational.md](../AGENT/AUT_operational.md)
+- [KNOW/Padrinho/KNOW_BrandPositioning.md](KNOW/Padrinho/KNOW_BrandPositioning.md)
+- [AGENT/AGENT_Operational.md](AGENT/AGENT_Operational.md)

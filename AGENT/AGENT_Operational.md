@@ -18,6 +18,7 @@ tags: [agent, operational, cascata-de-conteudo]
 
 ## Entrada
 
+- `POSTS/Padrinho/STRATEGY_Padrinho.md` (lógica estratégica + leis de tom — validar alinhamento)
 - `POSTS/DDMMYYYY_Tema/POST_Overview.md`
 - `POSTS/DDMMYYYY_Tema/BLOG_DDMMYYYY_Tema.md`
 - `POSTS/DDMMYYYY_Tema/NEWS_DDMMYYYY_Tema.md`
@@ -52,11 +53,11 @@ tags: [agent, operational, cascata-de-conteudo]
 - [ ] Comprimento ~300-400 palavras?
 - [ ] CTA é acionável (não genérico)?
 
-**Instagram captions especificamente:**
-- [ ] 3-5 captions (um por linha)?
-- [ ] Slide 1 é hook forte?
-- [ ] Slide final é CTA?
-- [ ] Cada caption ~100 chars?
+**Instagram (slides + legenda) especificamente:**
+- [ ] 6-9 slides; slide 1 é hook forte; slide final é CTA com gatilho de save/comentário?
+- [ ] Cada slide ~100-150 chars?
+- [ ] **Legenda do feed COMPLEMENTA o carrossel** — passa no teste de duplicação (ler só a legenda OU só os slides entrega coisas diferentes)? Não repete as frases dos slides nem o hook da capa?
+- [ ] Hashtags no 1º comentário (não na legenda)?
 
 **Podcast script especificamente:**
 - [ ] Intro é engaging?
@@ -184,10 +185,11 @@ Antes de sinalizar "pronto para Figma":
 
 ## Referências
 
+- `POSTS/Padrinho/STRATEGY_Padrinho.md` → Lógica estratégica + leis de tom (fonte de verdade)
 - `SKILL/SKILL_ContentCreationWorkflow.md` → Seção 2 (AGENT_Operational)
 - `SKILL/SKILL_Documentation.md` → Seção 5-6 (Conven + Fluxo)
-- `KNOW/KNOW_CopyRules.md` → Regras de copywriting
-- `KNOW/KNOW_BrandPositioning.md` → Brand tone
+- `SKILL/SKILL_CopyRules.md` → Regras de copywriting (Regra de ouro: legenda complementa o carrossel)
+- `KNOW/Padrinho/KNOW_BrandPositioning.md` → Brand tone
 
 ---
 

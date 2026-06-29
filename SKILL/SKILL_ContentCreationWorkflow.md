@@ -23,7 +23,7 @@
 ┌─────────────────────────────────────────────────────────────────┐
 │ CAMADA 2: IMAGEM (Criado 2ª) — Referencia CAMADA 1            │
 ├─────────────────────────────────────────────────────────────────┤
-│ • Instagram carousel (a partir de instagram-captions.md)        │
+│ • Instagram carousel (a partir de INSTA_Carousel.md)        │
 │ • WhatsApp image (adaptação do carousel)                        │
 │ • LinkedIn image (reutiliza carousel ou novo)                  │
 │ • YouTube thumbnail (futuramente)                               │
@@ -68,11 +68,13 @@
 
 **Cria:**
 1. `BLOG_DDMMYYYY_Tema.md` — Versão blog (completa, SEO)
-2. `NEWS_DDMMYYYY_Tema.md` — Versão newsletter (mais quente, pessoal)
-3. `instagram-captions.md` — Copy para cada slide (3-5 slides)
-4. `podcast-script.md` — Roteiro/pauta (5-8 min)
-5. `whatsapp-text.md` — Mensagem WhatsApp (50-150 caracteres)
-6. `linkedin-copy.md` — Post LinkedIn (150-300 caracteres)
+2. ~~`NEWS_DDMMYYYY_Tema.md`~~ — **Newsletter NÃO é por post.** É mensal, agregada em `POSTS/Padrinho/NEWS/YYYY_MM_Mes/` (ver `SKILL_Documentation.md`).
+3. `INSTA_Carousel.md` — Slides do carrossel (6-9) **+ legenda do feed que COMPLEMENTA o carrossel (não duplica os slides — ver `SKILL/SKILL_CopyRules.md` § Regras de Legenda)**
+4. `PNT_Script.md` — Roteiro/pauta (5-8 min)
+5. `INSTA_Reshare.md` — Mensagem WhatsApp (50-150 caracteres)
+6. `LINKEDIN_Captions.md` — Post LinkedIn (150-300 caracteres)
+
+> **Nomes de arquivo, contagem de slides (6–9) e dimensões (1080×1440) são canônicos em `SKILL_Documentation.md` § Estrutura de Arquivos.** Não redefinir aqui.
 
 **Considera:**
 - Tom e comprimento por canal
@@ -106,7 +108,7 @@
 
 **Recebe:** 
 - POST_Overview.md
-- instagram-captions.md
+- INSTA_Carousel.md
 - BLOG_*.md (referência para imagens contextualizadas)
 
 **Cria:**
@@ -132,11 +134,10 @@ POSTS/
 └── 14062026_SobriedadeGlowUp/      ← Data_Tema (DDMMYYYY_Tema)
     ├── POST_Overview.md             ← Guia estratégico (criado por Strategy)
     ├── BLOG_14062026_SobriedadeGlowUp.md     ← Texto final (criado por Tactic, validado por Operational)
-    ├── NEWS_14062026_SobriedadeGlowUp.md     ← Texto final (criado por Tactic, validado por Operational)
-    ├── instagram-captions.md        ← Copy (criado por Tactic, validado por Operational)
-    ├── podcast-script.md            ← Roteiro (criado por Tactic, validado por Operational)
-    ├── whatsapp-text.md             ← Texto (criado por Tactic, validado por Operational)
-    ├── linkedin-copy.md             ← Texto (criado por Tactic, validado por Operational)
+    ├── INSTA_Carousel.md        ← Copy (criado por Tactic, validado por Operational)
+    ├── PNT_Script.md            ← Roteiro (criado por Tactic, validado por Operational)
+    ├── INSTA_Reshare.md             ← Texto (criado por Tactic, validado por Operational)
+    ├── LINKEDIN_Captions.md             ← Texto (criado por Tactic, validado por Operational)
     └── assets/
         └── images/
             ├── instagram-carousel.png        ← Criado por Figma
@@ -177,7 +178,7 @@ POSTS/
 
 ## Breakdown por Canal
 
-### Instagram (Carousel — 3-5 slides)
+### Instagram (Carousel — 6–9 slides)
 - Slide 1: Hook visual + pergunta
 - Slide 2: Insight/dado
 - Slide 3: [Ponto chave]
@@ -243,8 +244,8 @@ POSTS/
 - [ ] Arquivos movidos para POSTS/DDMMYYYY_Tema/
 
 ### AGENT_Figma
-- [ ] Instagram carousel tem 3-5 slides
-- [ ] Captions alinhadas com instagram-captions.md
+- [ ] Instagram carousel tem 6–9 slides
+- [ ] Captions alinhadas com INSTA_Carousel.md
 - [ ] Imagens seguem SKILL_ComponentSystem.md
 - [ ] WhatsApp/LinkedIn são adaptações ou novos designs
 - [ ] Imagens exportadas para assets/images/

@@ -18,8 +18,14 @@ uma foto para um template com imagem. Ele define os critérios visuais
 da fotografia Padrinho, extraídos dos posts de referência aprovados
 (Semanas 08–10), e o processo de busca via Unsplash API.
 
-Leia antes de usar qualquer template com `bg-photo`:
-`cover-c`, `cover-d`, `block-h`, `block-i`, `block-j`, `block-k`, `block-l`, `block-n`
+### Imagem é prioridade (usar MAIS imagem)
+A foto cria contexto emocional e ritmo humano — posts ricos em imagem performam e parecem mais "Padrinho". **Meta: 3–5 fotos interiores por carrossel** (capa-foto à parte), intercalando foto/texto. Referências de uso forte de imagem: `🌀 Semana 08` (carrossel "funcional", ~6 fotos), `🌀 Semana 09` (hangxiety, milestones). Distribuição completa em `SKILL_ComponentSystem.md` § Estrutura.
+
+### Templates com foto (lista canônica)
+Leia este skill antes de usar qualquer um deles:
+**`cover-c` · `cover-d` · `cover-e` · `block-h` · `block-i` · `block-j` · `block-k` · `block-l` · `block-m` · `block-o` · `block-p`**
+
+> `block-q` / `block-r` (content) e `block-s` (statement-blue) **NÃO têm foto** — são tipográficos. Mecanismo de injeção de foto: `SKILL_PhotographerAgent.md`.
 
 ---
 
@@ -72,9 +78,10 @@ Cada template exige uma área com baixa informação visual para o texto respira
 | `block-j` | Centro-inferior | Grande área de fundo visível |
 | `block-k` | Centro | Espaço no centro para texto |
 | `block-l` | Centro-inferior | Sujeito nas laterais, centro livre |
-| `block-n` | Inferior | Ação no topo |
+| `block-o` | Inferior | Ação no topo |
+| `block-p` | Centro | Espaço no centro para texto |
 
-**Orientação:** sempre portrait ou quadrada. **Nunca** landscape.
+**Orientação:** **sempre portrait.** Nunca landscape.
 
 ---
 
@@ -153,6 +160,8 @@ Realidade compartilhada, não performance.
 6. Registrar na _annotation: fotógrafo + URL + query usada
 ```
 
+> **Injeção no Figma:** a busca (acima) é critério/seleção; o **passo de injetar a foto no slide** (via `upload_assets`) é canônico em `SKILL_PhotographerAgent.md` § Processo.
+
 ### Vocabulário de busca por emoção (termos EN para Unsplash)
 
 | Emoção | Termos de busca |
@@ -200,7 +209,7 @@ Ex: "woman confident outdoors"
 block-l (foto escura, conexão):
 Ex: "women friends laughing"
 
-block-n (foto + raios, fechamento):
+block-o (foto + raios, fechamento):
 Ex: "woman recovery portrait"
 ```
 
@@ -249,6 +258,6 @@ Posts aprovados que exemplificam as diretrizes — consultar antes de escolher:
 **Last Updated:** 2026-05-07  
 **Maintained by:** Figma Agent  
 **References:**  
-- [../SKILL/SKILL_operational/visual-agent.md](visual-agent.md)
-- [../AGENT/AUT_figma-design.md](../AGENT/figma-design.md)
-- [../AGENT/AUT_operational.md](../AGENT/operational.md)
+- [SKILL/SKILL_PhotographerAgent.md](SKILL/SKILL_PhotographerAgent.md)
+- [AGENT/AGENT_Figma.md](AGENT/AGENT_Figma.md)
+- [AGENT/AGENT_Operational.md](AGENT/AGENT_Operational.md)

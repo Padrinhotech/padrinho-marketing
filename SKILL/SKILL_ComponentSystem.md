@@ -34,12 +34,15 @@ Página dos componentes: `_COMPONENTS` (id `3345:20`) — leitura + cópia apena
 
 ### COVERS — Abertura / Capa de carrossel
 
+> ✅ **`cover-d / photo-fullbleed` está habilitada** (2026 H2) — usa a fonte **Moma** (mix handwriting/serif), agora ativada. Os componentes usam 3 fontes: **Moma · Instrument Serif · Instrument Sans** (detalhe em `SKILL_CopyRules.md` § Tipografia).
+
 | Nome | Frame ID | Fundo | Estrutura | Melhor para |
 |---|---|---|---|---|
 | `cover-a / minimal-light` | `3356:6120` | Cream `#F9F8F3` | Logo mark radial + serif headline esquerda (regular + *italic*) + body + handle | Acolhimento, Prova Social, posts editoriais |
 | `cover-b / dark-bold-left` | `3356:6288` | Navy `#002E49` | Logo mark radial + serif headline esquerda + body + handle | Desmascaramento, Reconhecimento |
 | `cover-c / photo-fullbleed` | `3356:6334` | Foto (blumine overlay) | Foto full bleed + headline centrado + highlight + CTA box dupla + raios decorativos | Reconhecimento emocional forte |
 | `cover-d / photo-fullbleed` | `3356:6076` | Foto real | Foto full bleed + mix handwriting/serif + seta curva + wave + CTA box | Desmascaramento, hooks virais |
+| `cover-e / photo-fullbleed` | `3532:2411` | Foto full-bleed | Foto full bleed + subhead + headline + CTA na capa | Hook emocional forte com CTA na capa |
 
 ---
 
@@ -56,6 +59,9 @@ Página dos componentes: `_COMPONENTS` (id `3345:20`) — leitura + cópia apena
 | `block-e / list-dark-b` | `3356:6466` | Navy `#002E49` | Serif headline + *italic* + 3 bullets bold/regular + CTA box | Listas menores dark |
 | `block-f / list-light-b` | `3356:6444` | Cream `#F9F8F3` | Serif headline + *italic* + 3 bullets + CTA box | Listas menores light |
 | `block-g / topic-list-light` | `3356:6491` | Cream `#F9F8F3` | Subhead wave + serif headline grande + highlight + caixa topic-list (3 bullets dentro) | Dados com explicação + lista interna |
+| `block-q / content-light` | `3575:2093` | Cream `#F9F8F3` | Serif headline + **body longo (3–5 linhas)** | **Conteúdo denso** — "dizer mais" sem foto: explicação, definição, mecanismo (educacional) |
+| `block-r / content-dark` | `3575:2121` | Navy `#002E49` | Serif headline + **body longo (3–5 linhas)** | **Conteúdo denso** — variante dark do block-q |
+| `block-s / statement-blue` | `3585:2002` | Azul (gradiente) | Subhead + serif headline (regular + *italic*) + highlight + **CTA box** + wave | Statement **com CTA** — 3ª cor de statement (entre navy `block-c` e cream `block-d`) |
 
 #### Com foto
 
@@ -67,13 +73,15 @@ Página dos componentes: `_COMPONENTS` (id `3345:20`) — leitura + cópia apena
 | `block-k / quote-full-a` | `3356:6570` | Foto vivid | Foto + subhead + serif headline grande + *italic* + highlight + logo mark | Desmascaramento, narrativa forte |
 | `block-l / quote-full-b` | `3356:6588` | Foto escura | Foto + serif headline centrado + *italic* + highlight + logo mark | Reconhecimento ("Na vida de quem...") |
 | `block-m / quote-stacked` | `3356:5189` | Navy + stacked layers | Foto em camadas offset + serif headline + highlight | Desmascaramento artístico |
-| `block-m / quote-simple` | `3356:5272` | Navy | Serif headline simples grande + highlight | Statement mínimo dark |
-| `block-n / final-quote-b` | `3356:8512` | Foto + raios | Foto + serif headline + *italic* + highlight + CTA box + decorativos | Fechamento de carrossel |
-| `block-k / quote-full-c` | `3356:8530` | Foto | Foto + headline + CTA tag | Variante de fechamento |
+| `block-n / quote-simple` | `3356:5272` | Navy | Serif headline simples grande + highlight | Statement mínimo dark |
+| `block-o / final-quote-b` | `3356:8512` | Foto + raios | Foto + serif headline + *italic* + highlight + CTA box + decorativos | Fechamento de carrossel |
+| `block-p / quote-full-c` | `3356:8530` | Foto | Foto + headline + CTA tag | Variante de fechamento |
 
 ---
 
 ### DATA — Visualização de dados
+
+> ⚠️ Colisão de nome: `3356:8455` (circle-grid-b) e `3356:6653` (huge-numbers) estão ambos rotulados `data-c`. Desambiguar SEMPRE pelo Frame ID. Renomeação em Figma pendente (sugestão: huge-numbers → `data-h`).
 
 | Nome | Frame ID | Fundo | Estrutura | Melhor para |
 |---|---|---|---|---|
@@ -99,7 +107,7 @@ copia do componente e adapta posição quando necessário.
 | **Highlight Inline** | Todos | Retângulo `#669AB7` ~42% opacidade cobrindo linha do *italic* emocional |
 | **CTA Box Dupla** | cover-a, cover-b, block-a/b/c/d/e/f | Dois retângulos deslocados (+5,+5) criando sombra. Borda `#669AB7` |
 | **Wave / Tilde** | cover-a, cover-b, block-c/d/g, data-a | Til estilizado (~) em `#669AB7` sob palavra-chave de CTA ou bold |
-| **Raios Decorativos** | cover-c, block-h, block-j, block-n | Dois raios azuis `#669AB7` no canto superior esquerdo e direito |
+| **Raios Decorativos** | cover-c, block-h, block-j, block-o | Dois raios azuis `#669AB7` no canto superior esquerdo e direito |
 | **Seta Curva** | cover-d | Seta handwriting em branco apontando para CTA |
 | **Stacked Layers** | block-m/quote-stacked | Camadas de retângulos offset em tons de azul escuro + foto |
 | **Ondas SVG** | data-a | 4 camadas de forma orgânica em tons horizon, empilhadas |
@@ -148,13 +156,16 @@ frame (1080×1440, cornerRadius 44)
 
 ## Campos Disponíveis e Limites de Conteúdo por Template
 
+> ⚠️ **Os limites abaixo são também ALVOS de conteúdo, não só tetos.** Campo que existe e fica vazio ou raso = slide subpreenchido. Escreva até a capacidade — regra completa em `SKILL_CopyRules.md` § *Escreva até a capacidade do componente*.
+
 O copywriter DEVE gerar EXATAMENTE e APENAS os campos (`keys`) suportados pelo componente escolhido. **NUNCA crie chaves como `body` ou `headline-italic` se o componente na tabela abaixo não possuir suporte para elas**.
 
 | Nome do Template | Campos (Keys) Suportados no Figma | Limites Estimados |
 |---|---|---|
 | `cover-a`, `cover-b` | `headline`, `body` | Headline: 2-3 linhas. Body: 2 linhas. (NOTA: não suporta `headline-italic`) |
 | `cover-c` | `headline`, `subtext` | Headline: 2 linhas. Subtext: 1 linha. |
-| `cover-d` | `headline`, `headline-italic` | Headline: 2 linhas. Italic: 1 linha. |
+| `cover-d` | `headline`, `cta` | Headline: 2 linhas curtas (auto-width). CTA: 1 linha. |
+| `cover-e` | `subhead`, `headline`, `cta` | Subhead: 1 linha. Headline: 2 linhas. CTA: 1 linha. |
 | `block-a`, `block-b` | `headline`, `subtext`, `bullet-1`, `bullet-2`, `bullet-3`, `bullet-4` | Headline: 2 linhas. Bullets: 4 itens curtos. Subtext: 1-2 linhas. |
 | `block-e`, `block-f` | `headline`, `body`, `bullet-1`, `bullet-2`, `bullet-3` | Headline: 2 linhas. Bullets: 3 itens curtos. Body: 2 linhas. |
 | `block-c`, `block-d` | `headline`, `subtext` | Headline: 2-3 linhas. Subtext: 1 linha (usado como botão/tag). (NOTA: não suporta `body`) |
@@ -166,6 +177,8 @@ O copywriter DEVE gerar EXATAMENTE e APENAS os campos (`keys`) suportados pelo c
 | `block-l`, `block-m` | `headline` | Headline: 3-4 linhas. |
 | `block-o` | `headline`, `subtext` | Headline: 3 linhas. Subtext: 2 linhas. |
 | `block-p` | `headline`, `cta` | Headline: 3 linhas. CTA: 1 linha. |
+| `block-q`, `block-r` | `headline`, `body` | Headline: 2 linhas. **Body: 4–6 linhas (parágrafo denso).** Use quando precisar DIZER MAIS num slide só. |
+| `block-s` | `headline`, `subtext`, `cta` | Subtext: subhead curto (1 linha). Headline: 2–3 linhas (com *itálico*). CTA: 1–2 linhas (caixa bordada). |
 | `data-a` | `headline`, `subhead`, `subtext` | Headline: 2 linhas. Subhead: 1 linha. Subtext: 1 linha. |
 | `data-b`, `data-c`, `data-g` | `headline` | Headline: 2-3 linhas. |
 | `data-e` | `headline` | Headline: 2-3 linhas. (Os números fixos agora se chamam `number` e não devem ser gerados) |
@@ -174,7 +187,7 @@ O copywriter DEVE gerar EXATAMENTE e APENAS os campos (`keys`) suportados pelo c
 
 > **CRÍTICO PARA O COPYWRITER:** Se você precisa de um parágrafo longo (`body`), **NÃO ESCOLHA** templates como `block-d` ou `block-a`, pois eles não têm onde receber o texto. Escolha `block-h` ou `cover-a`. 
 
-> **IMAGENS (UNSPLASH):** Para componentes com foto (ex: `cover-c`, `block-h`), adicione uma linha `image-query: <termos de busca>` no Markdown seguindo o vocabulário do `SKILL_PhotoGuidelines.md`. O motor irá baixar a imagem e injetar automaticamente na camada `image`.
+> **IMAGENS:** componentes com foto recebem uma linha `image-query: <termos em inglês>`. Critérios/mood e a **lista canônica de templates com foto** vivem em `SKILL_PhotoGuidelines.md`; o **mecanismo de injeção** (Unsplash ao vivo via Figma `upload_assets`) vive em `SKILL_PhotographerAgent.md`.
 
 Se o conteúdo não couber: condensar o copy, não forçar no template e não inventar chaves inexistentes.
 
@@ -209,7 +222,7 @@ quebra em mais linhas do que o original e provoca sobreposição ou corte.
 Todo carrossel deve seguir esta estrutura mínima:
 
 ```
-Slide 1   → COVER          (cover/*)         — sempre tipográfico
+Slide 1   → COVER          (cover/*)         — preferência FOTO (cover-c/d/e); tipográfica (cover-a/b) só exceção
 Slide 2   → CONTENT        (block/*)         — tipográfico
 Slide 3   → IMAGE CONTENT  (block com foto)  — obrigatório ≥ 1x
 Slide 4   → CONTENT        (block/*)         — tipográfico ou data
@@ -220,32 +233,83 @@ Slide N   → END            (block/statement) — fechamento com CTA
 
 ### Regras
 
-**Imagem é obrigatória:**
-Todo carrossel deve ter **pelo menos 1 slide com foto** (template `block-h`,
-`block-i`, `block-j`, `block-k`, `block-l`, `block-n` ou `cover-c/d`).
+**Imagem é prioridade.** Todo carrossel tem **≥1 foto**, mas a meta é **post rico em imagem** — a foto cria o contexto emocional e o ritmo humano (texto puro cansa). Referências de uso forte de imagem: `🌀 Semana 08` (carrossel "funcional", ~6 fotos), `🌀 Semana 09` (hangxiety / milestones). Lista canônica de templates com foto + critérios em `SKILL_PhotoGuidelines.md`.
 
-**Distribuição recomendada:**
-- Carrossel de 6–8 slides → 1–2 slides com foto
-- Carrossel de 9–12 slides → 2–3 slides com foto
+**Distribuição (fotos INTERIORES — a capa-foto NÃO conta):**
+- 6–8 slides → **3–4** fotos interiores · 9–12 slides → **4–5** fotos interiores
+- Intercalar foto/texto para criar ritmo; evitar 2 fotos seguidas.
+- **Evitar duas fotos consecutivas**; foto no penúltimo slide = âncora antes do fechamento.
+- Capa com foto (cover-c/d/e) é a **preferência** (ver `SKILL_ComponentIndex.md`), separada dessa contagem; fechamento com foto é válido.
 
-**Posição das fotos:**
-- Foto no slide 3 → cria ritmo visual logo na entrada
-- Foto no penúltimo slide → âncora emocional antes do fechamento
-- Evitar duas fotos consecutivas
-- Cover com foto (`cover-c`, `cover-d`) e fechamento com foto são válidos quando a narrativa pede
+## Lógica de Seleção de Componentes (4 passos)
 
-**Templates com foto disponíveis:**
+> A seleção combina **4 chaves, nesta ordem** — arco no topo, pilar logo abaixo. Foi assim que paramos de cair sempre nos mesmos statements.
 
-| Template | Mood foto | Quando usar |
+```
+1. MOMENTO DO ARCO   (posição na semana + posição no slide)  → famílias candidatas
+2. PILAR             (1 dos 5)                                → estreita o conjunto
+3. LEDGER DE VARIEDADE (o que a semana já usou)              → descarta repetições
+4. PROFUNDIDADE      ("escreva até a capacidade")            → preenche o componente escolhido
+```
+
+### Passo 1 — Momento do arco → famílias
+O arco da semana (**Hook → Profundidade → Resolução**, ver `STRATEGY_Padrinho.md §4`) vale em **dois níveis**: entre os 4 posts da semana **e** dentro de cada carrossel (capa → desenvolvimento → fecho).
+
+| Momento do arco | Função | Famílias-líder |
 |---|---|---|
-| `block-h / quote-content` | Dark, introspectivo | Reconhecimento emocional forte |
-| `block-i / quote-list` | Warm, com lista sobreposta | Gatilhos, listas sobre imagem |
-| `block-j / final-quote-a` | Dark, fechamento | Penúltimo slide, reframing |
-| `block-k / quote-full-a` | Vivid, impactante | Desmascaramento |
-| `block-l / quote-full-b` | Escuro, conexão | Reconhecimento ("Na vida de quem...") |
-| `block-n / final-quote-b` | Dark com raios | Fechamento alternativo |
-| `cover-c / photo-fullbleed` | Blumine overlay | Cover com foto |
-| `cover-d / photo-fullbleed` | Foto direta | Cover com foto |
+| **Hook** (Dom/Seg · capa + 1ºs slides) | parar o scroll, emoção, gancho | `cover-c/d/e` · `block-k/l/m` (quote-full) · `block-r` (statement denso dark) |
+| **Profundidade** (Qua/Qui · miolo) | entregar conhecimento, gerar **save** | `data-*` · `block-q/r` (conteúdo) · `block-g` (topic-list) · `block-b/f` (lista) |
+| **Resolução** (Sex/Sáb · fecho) | acolher, comunidade, CTA suave | `block-j/o/n` (final-quote) · `block-a` (lista dark/Bill) · `block-h` (foto âncora) |
+
+### Passo 2 — Pilar → conjunto
+Estreita pelas tabelas "Pilar → conjunto" da seção **Variedade** abaixo (rotacionar, nunca o mesmo default).
+
+### Passo 3 — Ledger de variedade
+Aplica os caps por carrossel + a matriz de rotação semanal + o ledger (seção **Variedade** abaixo).
+
+### Passo 4 — Profundidade
+Escolhido o componente, **preencha-o até a capacidade** — ver `SKILL_CopyRules.md` § *Escreva até a capacidade do componente*. Statement não é rótulo de 4 palavras: é uma ideia completa.
+
+---
+
+## Variedade de Templates (anti-repetição) — REGRA CRÍTICA
+
+> **Diagnóstico:** sem regra explícita, o agente cai sempre em `block-c`/`block-d` (statement) como fallback — e os 4 posts da semana ficam quase idênticos (ex.: um carrossel educacional virar 6 statements seguidos). Estas regras forçam variação. Os arcos abaixo são **exemplos ilustrativos, não sequências fixas** — varie.
+
+### Por carrossel
+- Nenhuma **família** de template aparece mais de **2×** no mesmo carrossel.
+- Mínimo de **4 famílias distintas** por carrossel (ex.: cover · statement · list · data · quote-foto · explainer).
+- **Nunca dois slides com o mesmo template em sequência.**
+- `statement-dark/light` (block-c/d) **deixa de ser fallback universal**: no máximo 2 por carrossel. Se faltar variedade, prefira `block-g`, `block-e/f`, `data-*`, `block-q/r (content — dizer mais)` ou um quote-foto.
+
+### Por semana — matriz de rotação
+Cada um dos 4 posts recebe uma **forma dominante diferente** (define o esqueleto, não engessa):
+
+| Post | Forma dominante |
+|---|---|
+| 1 | **statement-led** (hooks/afirmações curtas) |
+| 2 | **data+list-led** (números, listas, comparativos) |
+| 3 | **quote+foto-led** (emocional, foto, reconhecimento) |
+| 4 | **explainer-led** (educacional denso — block-g/block-q) |
+
+Rotacione a atribuição a cada semana. Registre a forma dominante de cada post no `WEEK_Overview.md`.
+
+### Pilar → conjunto (não um default único)
+O agente **alterna dentro do conjunto** — nunca usa sempre o mesmo:
+
+| Pilar | Conjunto a rotacionar |
+|---|---|
+| Desmascaramento | `cover-d` · `block-k` · `block-m` · `block-r / content-dark` · `block-d` |
+| Reconhecimento | `cover-c` · `block-h` · `block-l` · `block-c` |
+| Acolhimento | `cover-a` · `block-a` · `block-c` · `block-s / statement-blue` · `block-j` |
+| Empoderamento | `data-*` · `block-g` · `block-q / content-light` · `block-b` |
+| Prova Social / Reingresso | `data-d` · `block-n` · `cover-b` |
+
+### Ledger de seleção (no WEEK_Overview)
+- Manter a tabela `post → templates usados (em ordem)`.
+- Antes de montar o próximo post, conferir o ledger: o novo post deve **evitar repetir a mesma "espinha"** (mesma sequência de famílias) do post anterior da semana.
+
+---
 
 ### Exemplo de arco para 8 slides
 
@@ -276,15 +340,7 @@ S10 block-d / statement-light     → Fechamento
 ```
 
 ## Modo 1 — Componente existente
-
-1. Identificar o template mais adequado ao conteúdo
-2. Copiar o frame de `_COMPONENTS` para `_QUEUE`
-3. Renomear: `Post / YYYY-MM-DD / vN — {nome-componente}`
-4. Editar apenas layers permitidos
-5. Ajustar `hl` para cobrir o texto italic correto
-6. Preencher `_annotation` com caption + hashtags + meta
-7. Screenshot + validação visual
-8. Reportar ao humano
+Identifique o template pela *Lógica de Seleção (4 passos)* acima. O **fluxo de entrega** (copiar `_COMPONENTS`→`_QUEUE`, renomear, editar layers, ajustar `hl`, preencher `_annotation`, screenshot, reportar) é canônico em **`SKILL_FigmaDelivery.md` § Fluxo de Execução** — siga de lá.
 
 ## Modo 2 — Nenhum componente serve
 
@@ -297,23 +353,13 @@ S10 block-d / statement-light     → Fechamento
 ---
 
 ## Checklist de Entrega
-
-- [ ] Frame copiado de `_COMPONENTS` (nunca construído do zero)?
-- [ ] Apenas layers permitidos foram editados?
-- [ ] `hl` cobre o texto italic correto com largura ajustada?
-- [ ] `counter` atualizado?
-- [ ] `_annotation` preenchida (caption + hashtags + meta)?
-- [ ] Screenshot tirado e validado?
-- [ ] Frame em `_QUEUE` com nomenclatura correta?
-- [ ] Carrossel tem pelo menos 1 slide com foto (block-h/i/j/k/l/n ou cover-c/d)?
-- [ ] Foto não está no slide 1 nem no último slide?
-- [ ] Duas fotos não estão em slides consecutivos?
+O checklist canônico de entrega (frame em `_QUEUE`, layers permitidos, `hl`, `counter`, `_annotation`, screenshot) vive em **`SKILL_FigmaDelivery.md` § Checklist de Entrega**. Regras de foto (≥1 foto, não-consecutivas, capa-foto preferida) estão na seção *Estrutura Obrigatória* acima + `SKILL_PhotoGuidelines.md`.
 
 ---
 
 **Last Updated:** 2026-05-07  
 **Maintained by:** Design System  
 **References:**  
-- [../SKILL/SKILL_operational/SKILL_ComponentIndex.md](SKILL_ComponentIndex.md)
-- [../SKILL/SKILL_operational/figma-delivery.md](figma-delivery.md)
-- [../AGENT/AUT_operational.md](../AGENT/operational.md)
+- [SKILL/SKILL_ComponentIndex.md](SKILL/SKILL_ComponentIndex.md)
+- [SKILL/SKILL_FigmaDelivery.md](SKILL/SKILL_FigmaDelivery.md)
+- [AGENT/AGENT_Operational.md](AGENT/AGENT_Operational.md)

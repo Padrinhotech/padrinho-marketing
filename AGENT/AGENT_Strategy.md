@@ -18,19 +18,23 @@ tags: [agent, strategy, cascata-de-conteudo]
 
 ## Entrada
 
+- **`POSTS/Padrinho/STRATEGY_Padrinho.md` (FONTE DE VERDADE da lógica estratégica — ler SEMPRE primeiro)**
 - `KNOW/KNOW_Insights.md` (dados de performance + engagement)
-- `KNOW/KNOW_BrandPositioning.md` (essência da marca)
-- `KNOW/KNOW_MarketContext.md` (contexto + oportunidades)
+- `KNOW/Padrinho/KNOW_BrandPositioning.md` (essência da marca)
+- `KNOW/Padrinho/KNOW_MarketIntel.md` (contexto + oportunidades)
 - `KNOW/KNOW_UserInsights.md` (perguntas reais das personas)
 - `KNOW/KNOW_[Persona].md` (Rosa, Ana, Pedro)
-- `POSTS/AGENDA_Padrinho.md` (tema semanal agendado)
+- `POSTS/Padrinho/AGENDA_Padrinho.md` (tema semanal agendado)
 
 ---
 
 ## Processo
 
+### 0. Carregar a Lógica Estratégica
+- **Ler `POSTS/Padrinho/STRATEGY_Padrinho.md`** — governa todas as decisões abaixo (pilares, personas 80/20, arco semanal Hook→Profundidade→Resolução, leis de tom, seleção visual). Em conflito, este arquivo prevalece.
+
 ### 1. Validar Tema na AGENDA
-- Consultar `POSTS/AGENDA_Padrinho.md`
+- Consultar `POSTS/Padrinho/AGENDA_Padrinho.md`
 - Confirmar tema da semana, pillar editorial, persona alvo
 - Se não definido, sugerir tema baseado em trends/insights
 
@@ -161,11 +165,12 @@ Antes de passar para Tactic:
 
 ## Referências
 
+- **`POSTS/Padrinho/STRATEGY_Padrinho.md` → lógica estratégica completa (fonte de verdade)**
 - `SKILL/SKILL_ContentCreationWorkflow.md` → Seção 2 (Workflow por Agente)
 - `SKILL/SKILL_Documentation.md` → Seção 2 (Estrutura POSTS/)
 - `KNOW/KNOW_UserInsights.md` → Perguntas reais das personas
-- `KNOW/KNOW_EditorialPillars.md` → 5 pilares editoriais
-- `POSTS/AGENDA_Padrinho.md` → Temas semanais
+- `KNOW/Padrinho/KNOW_EditorialPillars.md` → 5 pilares editoriais
+- `POSTS/Padrinho/AGENDA_Padrinho.md` → Temas semanais
 
 ---
 
