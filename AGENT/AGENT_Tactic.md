@@ -26,10 +26,10 @@
 `BLOG_<Nome>.md` na pasta do post. **Alvo ≈2.000 palavras (1.800–2.200) — atingir o comprimento, não subescrever** (`SKILL_CopyRules.md` § Word count). Estrutura, estilo, voz, vocabulário e capitalização PT-BR conforme `SKILL_CopyRules.md`.
 
 ### 2. Atomizar o Blog nos canais (derivar, não recriar)
-Na mesma pasta do post, a partir dos modelos. **O artefato de Instagram depende do formato do post:** **Carousel** gera `INSTA_Carousel.md` + `INSTA_ReelsQuestions.md`; **Reels** gera `INSTA_ReelsScript.md`. Reshare, LinkedIn e Podcast valem para os dois formatos.
+Na mesma pasta do post, a partir dos modelos. **Todo post gera `INSTA_ReelsQuestions.md`** (3 a 5 perguntas que renderiam um Reels). O artefato principal de Instagram depende do formato do post: **Carousel** gera `INSTA_Carousel.md`; **Reels** gera `INSTA_ReelsScript.md`. Reshare, LinkedIn e Podcast valem para os dois formatos.
 - **`INSTA_Carousel.md`** — slides do carrossel (**6–9**, cada um ensina uma ideia — ver `SKILL_CopyRules` § profundidade de slide) **+ legenda do feed que COMPLEMENTA o carrossel** (Regra de ouro `SKILL_CopyRules` § Regras de Legenda — nunca transcrever os slides) **+ reshare curto**. Capa foto-first (`cover-c/d/e`, `image-query` em inglês).
   - **Definir o campo `structure:` pela Lógica de Seleção (4 passos)** e respeitar a **forma dominante** do post + os caps de variedade (`SKILL_ComponentSystem.md` § Variedade): ≥4 famílias distintas, nenhuma família >2×, nunca duas iguais em sequência, statement (`block-c/d`) ≤2. **Variar o nº de slides entre posts** e **registrar a forma dominante + nº de slides** no `POST_Overview`. Os 4 posts não podem compartilhar o mesmo esqueleto.
-- **`INSTA_ReelsQuestions.md`** (só quando o post é **Carousel**) — 3 a 5 perguntas que o tema responde bem em vídeo curto, cada uma com um formato de Reels sugerido. Ponte do carrossel para o Reels (`MODEL_INSTA_ReelsQuestions.md`).
+- **`INSTA_ReelsQuestions.md`** (todo post): 3 a 5 perguntas que o tema responde bem em vídeo curto, cada uma com um formato de Reels sugerido. Em Carousel é a ponte do carrossel para o Reels; em Reels, ângulos extras de Reels (`MODEL_INSTA_ReelsQuestions.md`).
 - **`INSTA_ReelsScript.md`** (quando o post é **Reels**, no lugar do carrossel) — roteiro do vídeo: gancho, desenvolvimento, fecho com CTA (`MODEL_INSTA_ReelsScript.md`).
 - **`INSTA_Reshare.md`** — frase-âncora + texto curto (também comunidade WhatsApp).
 - **`LINKEDIN_Captions.md`** — ângulo founder do mesmo tema.
@@ -63,7 +63,7 @@ POSTS/<Marca>/WEEKxx_.../
 └── NN_DIA_.../
     ├── BLOG_<Nome>.md                  ← este agente (pilar)
     ├── INSTA_Carousel.md               ← este agente (se Carousel: slides + legenda + reshare)
-    ├── INSTA_ReelsQuestions.md         ← este agente (se Carousel: 3–5 perguntas p/ Reels)
+    ├── INSTA_ReelsQuestions.md         ← este agente (todo post: 3–5 perguntas p/ Reels)
     │   (se o post é Reels: INSTA_ReelsScript.md no lugar do carrossel)
     ├── INSTA_Reshare.md                ← este agente (+ WhatsApp)
     ├── LINKEDIN_Captions.md            ← este agente
@@ -73,7 +73,7 @@ POSTS/<Marca>/WEEKxx_.../
 **Mensagem ao time (Telegram):**
 ```
 ✍️ COPY — WEEKxx · [post]
-✅ Blog-pilar + IG (Carrossel + ReelsQuestions, ou ReelsScript) + IG Reshare + LinkedIn + Podcast
+✅ Blog-pilar + IG (ReelsQuestions sempre; Carrossel ou ReelsScript conforme o formato) + IG Reshare + LinkedIn + Podcast
 ✅ FACTS_Verified atualizado
 → Próximo: AGENT_Operational valida + libera gate
 ```

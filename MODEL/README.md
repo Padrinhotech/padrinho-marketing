@@ -26,7 +26,7 @@ Há dois tipos de modelo — ambos shells, diferindo só no nº de âncoras:
 | `MODEL_INSTA_Carousel.md` | `INSTA_Carousel.md` | Post | `.../NN_<DIA>_<Nome>/` |
 | `MODEL_INSTA_Reshare.md` | `INSTA_Reshare.md` | Post (+ WhatsApp) | `.../NN_<DIA>_<Nome>/` |
 | `MODEL_INSTA_ReelsScript.md` | `INSTA_ReelsScript.md` | Post (formato Reels) | `.../NN_<DIA>_<Nome>/` |
-| `MODEL_INSTA_ReelsQuestions.md` | `INSTA_ReelsQuestions.md` | Post (só Carousel) | `.../NN_<DIA>_<Nome>/` |
+| `MODEL_INSTA_ReelsQuestions.md` | `INSTA_ReelsQuestions.md` | Post (todos) | `.../NN_<DIA>_<Nome>/` |
 | `MODEL_PODCAST_Script.md` | `PODCAST_Script.md` | Post | `.../NN_<DIA>_<Nome>/` |
 | `MODEL_LINKEDIN_Captions.md` | `LINKEDIN_Captions.md` | Post | `.../NN_<DIA>_<Nome>/` |
 | `MODEL_NEWS.md` | `NEWS_<ddmmaa>_<Tema>.md` | Mensal/agregado | `POSTS/<Marca>/NEWS/<aaaa_mm_Mes>/` |
@@ -40,9 +40,8 @@ Há dois tipos de modelo — ambos shells, diferindo só no nº de âncoras:
 WEEK_Overview (Strategy/semana)
    └─ POST_Overview (Strategy/post)
         └─ BLOG  ← pilar: escreve-se PRIMEIRO; atomiza em ↓ (§5.1)
-             ├─ IG, conforme o formato do post:
-             │    • Carousel: INSTA_Carousel + INSTA_ReelsQuestions (3 a 5 perguntas que renderiam um Reels)
-             │    • Reels: INSTA_ReelsScript
+             ├─ INSTA_ReelsQuestions  (TODO post: 3 a 5 perguntas que renderiam um Reels)
+             ├─ IG conforme o formato: Carousel usa INSTA_Carousel; Reels usa INSTA_ReelsScript
              ├─ INSTA_Reshare    (= também comunidade WhatsApp)
              ├─ LINKEDIN_Captions (ângulo founder)
              └─ PODCAST_Script

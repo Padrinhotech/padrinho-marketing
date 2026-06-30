@@ -1,7 +1,7 @@
 # POST_Overview (corte Padrinho) — O cuidado que continua depois da alta
 
 > 🟣 **Lado Padrinho de um post COMPARTILHADO (Fluxo C).** Estratégia **canônica** em
-> [`../../CTBM/WEEK01_130726_HistoriaBezerra/04_SATURDAY_Futuro_SHARED/POST_Overview.md`](../../CTBM/WEEK01_130726_HistoriaBezerra/04_SATURDAY_Futuro_SHARED/POST_Overview.md).
+> [`../../../CTBM/WEEK01_130726_HistoriaBezerra/04_SATURDAY_Futuro_SHARED/POST_Overview.md`](../../../CTBM/WEEK01_130726_HistoriaBezerra/04_SATURDAY_Futuro_SHARED/POST_Overview.md).
 > Só o **corte Padrinho** aqui. Mesmo conteúdo na CTBM W01 (post 04), com **marcação cruzada**.
 
 ## O que muda no corte Padrinho

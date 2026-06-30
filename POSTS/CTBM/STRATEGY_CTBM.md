@@ -115,8 +115,8 @@ A escolha de **qual público em qual dia** segue o tema: tipicamente **2 posts p
 
 ```
 BLOG (pilar) — site CTBM (ex.: Pet Terapia)
-  ├─ INSTA_ReelsScript (post Reels)   → Instagram
-  ├─ INSTA_Carousel + INSTA_ReelsQuestions (post Carousel) → Instagram (carrossel republicado no Facebook)
+  ├─ INSTA_ReelsQuestions (todo post): perguntas que renderiam um Reels
+  ├─ INSTA_ReelsScript (post Reels) ou INSTA_Carousel (post Carousel) → Instagram (carrossel republicado no Facebook)
   └─ Canais Internos          → intro "newsletter-like" que redireciona ao post do Instagram
   (LinkedIn e Newsletter mensal: PRÓXIMOS a ativar — fora da atomização por ora)
 ```
@@ -126,7 +126,7 @@ BLOG (pilar) — site CTBM (ex.: Pet Terapia)
 **Formatos produzidos agora (4):**
 1. **Blog post** (site CTBM) — âncora
 2. **Reels** → `INSTA_ReelsScript` no Instagram (quando o post é Reels)
-3. **Carrossel** → `INSTA_Carousel` + `INSTA_ReelsQuestions` no Instagram, com **republicação no Facebook**
+3. **Carrossel** → `INSTA_Carousel` no Instagram, com **republicação no Facebook**. Além disso, **todo post** gera `INSTA_ReelsQuestions` (perguntas que renderiam um Reels).
 4. **Conteúdo p/ Canais Internos** — formato newsletter-like, introdutório, redirecionando ao post principal do Instagram
 
 **Próximos a ativar (não agora):** 💬 WhatsApp · 💼 LinkedIn · 📧 Newsletter (mensal).

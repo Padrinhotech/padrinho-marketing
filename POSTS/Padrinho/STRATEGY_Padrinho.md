@@ -99,8 +99,8 @@ Cada post vira **6 copies**, um por canal.
 
 ```
 BLOG (pilar)
-  ├─ IG, conforme o formato do post:
-  │    • Carousel: INSTA_Carousel (3–5 pontos-chave) + INSTA_ReelsQuestions (3–5 perguntas que renderiam um Reels)
+  ├─ IG: INSTA_ReelsQuestions sempre (3–5 perguntas que renderiam um Reels), mais o artefato principal conforme o formato:
+  │    • Carousel: INSTA_Carousel (3–5 pontos-chave)
   │    • Reels: INSTA_ReelsScript (1 gancho forte do blog em vídeo)
   ├─ IG Reshare / WhatsApp (frase-âncora + link)
   ├─ Newsletter            (resumo + link pro blog)

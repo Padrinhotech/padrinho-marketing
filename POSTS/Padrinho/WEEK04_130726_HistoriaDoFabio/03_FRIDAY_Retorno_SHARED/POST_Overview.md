@@ -1,7 +1,7 @@
 # POST_Overview (corte Padrinho) — A volta do Fábio
 
 > 🟣 **Lado Padrinho de um post COMPARTILHADO (Fluxo C).** Estratégia **canônica** em
-> [`../../CTBM/WEEK01_130726_HistoriaBezerra/03_FRIDAY_FabioRetorno_SHARED/POST_Overview.md`](../../CTBM/WEEK01_130726_HistoriaBezerra/03_FRIDAY_FabioRetorno_SHARED/POST_Overview.md).
+> [`../../../CTBM/WEEK01_130726_HistoriaBezerra/03_FRIDAY_FabioRetorno_SHARED/POST_Overview.md`](../../../CTBM/WEEK01_130726_HistoriaBezerra/03_FRIDAY_FabioRetorno_SHARED/POST_Overview.md).
 > **Não reescrever a estratégia aqui**, apenas o **corte/legenda do Padrinho** (Tactic). Mesmo conteúdo publica na CTBM W01 (post 03), com **marcação cruzada**.
 
 ## O que muda no corte Padrinho

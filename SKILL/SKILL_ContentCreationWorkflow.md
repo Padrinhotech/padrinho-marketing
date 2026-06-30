@@ -12,7 +12,7 @@
 1 TEMA da semana
  └── N ÂNGULOS (1 por post) · dias do arco: Dom · Seg · Qua · Sex
       └── 2 vozes (ex.: 2 Rosa + 2 Pedro / 2 Ana + 2 Caio)
-           └── por post: 1 Blog-pilar, atomizado em IG (Carousel: INSTA_Carousel + INSTA_ReelsQuestions · Reels: INSTA_ReelsScript) · INSTA_Reshare/WhatsApp · LinkedIn · Podcast
+           └── por post: 1 Blog-pilar, atomizado em IG (INSTA_ReelsQuestions sempre; Carousel usa INSTA_Carousel, Reels usa INSTA_ReelsScript) · INSTA_Reshare/WhatsApp · LinkedIn · Podcast
 ```
 
 **Arco emocional:** **Hook** (Dom/Seg) → **Profundidade** (Qua) → **Resolução** (Sex). Ver `STRATEGY_<Marca>.md` §4.
@@ -33,7 +33,7 @@ Marca os **dados-âncora a verificar**. Não cria copy de canal.
 ### AGENT_Tactic
 Escreve o **Blog-pilar** e o **atomiza** nos canais; preenche **`FACTS_Verified.md`** (gate de integridade da semana).
 Modelos: `MODEL_BLOG` · `MODEL_INSTA_Carousel` · `MODEL_INSTA_ReelsQuestions` · `MODEL_INSTA_ReelsScript` · `MODEL_INSTA_Reshare` · `MODEL_LINKEDIN_Captions` · `MODEL_PODCAST_Script` · `MODEL_FACTS_Verified`.
-O artefato de IG depende do **formato do post**: Carousel gera `INSTA_Carousel` + `INSTA_ReelsQuestions`; Reels gera `INSTA_ReelsScript`.
+Todo post gera `INSTA_ReelsQuestions`; o artefato principal de IG depende do **formato do post**: Carousel gera `INSTA_Carousel`, Reels gera `INSTA_ReelsScript`.
 Regras de copy: `SKILL_CopyRules.md` (legenda complementa o carrossel · estilo blog · vocabulário). Não cria imagens.
 
 ### AGENT_Operational
@@ -59,7 +59,7 @@ POSTS/<Marca>/
         ├── POST_Overview.md                       ← Strategy (MODEL_POST_Overview)
         ├── BLOG_<Nome>.md                         ← Tactic   (MODEL_BLOG, pilar)
         ├── INSTA_Carousel.md                      ← Tactic   (se Carousel: slides + legenda + reshare)
-        ├── INSTA_ReelsQuestions.md                ← Tactic   (se Carousel: 3–5 perguntas p/ Reels)
+        ├── INSTA_ReelsQuestions.md                ← Tactic   (todo post: 3–5 perguntas p/ Reels)
         │   # se o post é Reels: INSTA_ReelsScript.md no lugar do carrossel
         ├── INSTA_Reshare.md                       ← Tactic   (+ WhatsApp)
         ├── LINKEDIN_Captions.md                   ← Tactic
