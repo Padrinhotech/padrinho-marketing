@@ -65,9 +65,13 @@ Exemplos:
 |---------|-------------|------------|----------|
 | `BLOG_<Nome>.md` | Site + SEO | **≈2.000 palavras (1.800–2.200)** — ver `SKILL_CopyRules` | Markdown |
 | `INSTA_Carousel.md` | Slides do carrossel (**6–9 slides**) + legenda do feed | slides ~100–150 chars; legenda ≤2.200 | Markdown |
+| `INSTA_ReelsQuestions.md` | Só posts Carousel: 3–5 perguntas que renderiam um Reels + formato sugerido | curto | Markdown |
+| `INSTA_ReelsScript.md` | Posts Reels: roteiro (gancho, desenvolvimento, CTA) | 15–60s | Markdown |
 | `INSTA_Reshare.md` | Reshare / WhatsApp community | 50–150 chars | Plain text |
 | `PODCAST_Script.md` | Pé na Trilha | 5–8 min | Markdown (bold/italic para ênfase) |
 | `LINKEDIN_Captions.md` | Gabriel/Fabio | 150–300 chars | Plain text |
+
+> **Prefixo `INSTA_`** para todo artefato de Instagram (`INSTA_Carousel`, `INSTA_Reshare`, `INSTA_ReelsScript`, `INSTA_ReelsQuestions`). **O artefato de IG depende do formato do post:** Carousel gera `INSTA_Carousel` + `INSTA_ReelsQuestions`; Reels gera `INSTA_ReelsScript`.
 
 > **Nível semana** (na pasta `WEEKxx_.../`, não no post): `WEEK_Overview.md` + `STORIES_Suggestions.md` (Strategy) e `FACTS_Verified.md` (Tactic — gate de integridade).
 
@@ -91,7 +95,7 @@ Exemplos:
 - `podcast-recording.mp3` (gravação futura da pauta)
 
 #### 5. Pasta `assets/video/` (Camada 3 — Futuro)
-- `instagram-reels-script.md` (script criado agora)
+- `INSTA_ReelsScript.md` (roteiro de Reels, quando o post é Reels)
 - `tiktok-script.md` (script criado agora)
 
 ### Exemplo Real
@@ -107,6 +111,7 @@ POSTS/Padrinho/
         ├── POST_Overview.md      ← AGENT_Strategy
         ├── BLOG_<Nome>.md        ← AGENT_Tactic (pilar)
         ├── INSTA_Carousel.md     ← slides (6–9) + legenda do feed
+        ├── INSTA_ReelsQuestions.md ← se Carousel: 3–5 perguntas p/ Reels
         ├── INSTA_Reshare.md      ← reshare / WhatsApp community
         ├── PODCAST_Script.md     ← Pé na Trilha
         ├── LINKEDIN_Captions.md  ← LinkedIn
@@ -142,6 +147,8 @@ Exemplo: `14062026` = 14 de junho de 2026
 - `POST_` — Post overview/guia
 - `BLOG_` — Blog post (pilar)
 - `INSTA_Carousel` — slides do carrossel + legenda do feed
+- `INSTA_ReelsQuestions` — só posts Carousel: 3–5 perguntas que renderiam um Reels + formato
+- `INSTA_ReelsScript` — posts Reels: roteiro do vídeo
 - `INSTA_Reshare` — reshare / WhatsApp community
 - `PODCAST_` — Pé na Trilha script
 - `LINKEDIN_` — LinkedIn copy
@@ -205,7 +212,7 @@ Exemplo: `14062026` = 14 de junho de 2026
 ```
 1. AGENT_Strategy → WEEK_Overview.md + STORIES_Suggestions.md + 1 POST_Overview.md por post
    ↓
-2. AGENT_Tactic → Blog-pilar + atomização (IG Carousel/Reshare, LinkedIn, Podcast) + FACTS_Verified.md
+2. AGENT_Tactic → Blog-pilar + atomização (IG Carousel + ReelsQuestions, ou ReelsScript · IG Reshare · LinkedIn · Podcast) + FACTS_Verified.md
    ↓
 3. AGENT_Operational → QA + gate FACTS_Verified + atualiza AGENDA + commit
    ↓
@@ -248,7 +255,9 @@ Exemplo: `14062026` = 14 de junho de 2026
 - CTA: Parágrafo final (suave, nunca venda)
 
 **Instagram:**
-- Arquivo: `INSTA_Carousel.md` (slides + legenda do feed)
+- Arquivo: `INSTA_Carousel.md` (slides + legenda do feed), quando o post é Carousel
+- Também (post Carousel): `INSTA_ReelsQuestions.md`, 3–5 perguntas que renderiam um Reels + formato sugerido
+- Quando o post é Reels: `INSTA_ReelsScript.md` (roteiro), no lugar do carrossel
 - Imagem: `assets/images/instagram-carousel.png`
 - Estrutura: 6–9 slides + legenda que **complementa** o carrossel
 - CTA: Adesivo interativo OU save/share
@@ -306,7 +315,7 @@ Ver `SKILL_ContentCreationWorkflow.md` → Seção 4 (Template).
 ## 10. Futuro — Expansão
 
 ### Quando Adicionar Vídeo
-1. Criar `assets/video/instagram-reels-script.md`
+1. Criar `INSTA_ReelsScript.md` (na pasta do post)
 2. Criar `assets/video/tiktok-script.md`
 3. (Futuramente) Gravar vídeos conforme scripts
 

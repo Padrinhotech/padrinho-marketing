@@ -16,7 +16,7 @@
 - **`SKILL/SKILL_CopyRules.md`** (Regra de ouro da legenda · estilo de blog · vocabulário · capitalização PT-BR)
 - `SKILL/SKILL_ComponentIndex.md` (slides → componentes; capas foto-first)
 - `KNOW/<Marca>/KNOW_<Persona>.md` (tom específico)
-- **Modelos a preencher:** `MODEL/MODEL_BLOG.md` · `MODEL_INSTA_Carousel.md` · `MODEL_INSTA_Reshare.md` · `MODEL_LINKEDIN_Captions.md` · `MODEL_PODCAST_Script.md` · `MODEL_FACTS_Verified.md`
+- **Modelos a preencher:** `MODEL/MODEL_BLOG.md` · `MODEL_INSTA_Carousel.md` · `MODEL_INSTA_ReelsQuestions.md` · `MODEL_INSTA_ReelsScript.md` · `MODEL_INSTA_Reshare.md` · `MODEL_LINKEDIN_Captions.md` · `MODEL_PODCAST_Script.md` · `MODEL_FACTS_Verified.md`
 
 ---
 
@@ -26,9 +26,11 @@
 `BLOG_<Nome>.md` na pasta do post. **Alvo ≈2.000 palavras (1.800–2.200) — atingir o comprimento, não subescrever** (`SKILL_CopyRules.md` § Word count). Estrutura, estilo, voz, vocabulário e capitalização PT-BR conforme `SKILL_CopyRules.md`.
 
 ### 2. Atomizar o Blog nos canais (derivar, não recriar)
-Na mesma pasta do post, a partir dos modelos:
+Na mesma pasta do post, a partir dos modelos. **O artefato de Instagram depende do formato do post:** **Carousel** gera `INSTA_Carousel.md` + `INSTA_ReelsQuestions.md`; **Reels** gera `INSTA_ReelsScript.md`. Reshare, LinkedIn e Podcast valem para os dois formatos.
 - **`INSTA_Carousel.md`** — slides do carrossel (**6–9**, cada um ensina uma ideia — ver `SKILL_CopyRules` § profundidade de slide) **+ legenda do feed que COMPLEMENTA o carrossel** (Regra de ouro `SKILL_CopyRules` § Regras de Legenda — nunca transcrever os slides) **+ reshare curto**. Capa foto-first (`cover-c/d/e`, `image-query` em inglês).
-  - **Definir o campo `structure:` pela Lógica de Seleção (4 passos)** e respeitar a **forma dominante** do post + os caps de variedade (`SKILL_ComponentSystem.md` § Variedade): ≥4 famílias distintas, nenhuma família >2×, nunca duas iguais em sequência, statement (`block-c/d`) ≤2. **Variar o nº de slides entre posts** e **atualizar o ledger** no `WEEK_Overview`. Os 4 posts não podem compartilhar o mesmo esqueleto.
+  - **Definir o campo `structure:` pela Lógica de Seleção (4 passos)** e respeitar a **forma dominante** do post + os caps de variedade (`SKILL_ComponentSystem.md` § Variedade): ≥4 famílias distintas, nenhuma família >2×, nunca duas iguais em sequência, statement (`block-c/d`) ≤2. **Variar o nº de slides entre posts** e **registrar a forma dominante + nº de slides** no `POST_Overview`. Os 4 posts não podem compartilhar o mesmo esqueleto.
+- **`INSTA_ReelsQuestions.md`** (só quando o post é **Carousel**) — 3 a 5 perguntas que o tema responde bem em vídeo curto, cada uma com um formato de Reels sugerido. Ponte do carrossel para o Reels (`MODEL_INSTA_ReelsQuestions.md`).
+- **`INSTA_ReelsScript.md`** (quando o post é **Reels**, no lugar do carrossel) — roteiro do vídeo: gancho, desenvolvimento, fecho com CTA (`MODEL_INSTA_ReelsScript.md`).
 - **`INSTA_Reshare.md`** — frase-âncora + texto curto (também comunidade WhatsApp).
 - **`LINKEDIN_Captions.md`** — ângulo founder do mesmo tema.
 - **`PODCAST_Script.md`** — o blog expandido em conversa.
@@ -45,7 +47,7 @@ Na mesma pasta do post, a partir dos modelos:
 - [ ] Blog-pilar escrito; demais canais **derivados** dele (mensagem única, coerente).
 - [ ] **Legenda do feed COMPLEMENTA** (passa no teste de duplicação) — não repete slides nem o hook da capa.
 - [ ] Carrossel 6–9 slides; slide 1 = hook; último = CTA com gatilho de save/share.
-- [ ] **Variedade entre os 4 posts:** formas dominantes distintas · nº de slides variado · ledger do `WEEK_Overview` atualizado · sem clonar o mesmo esqueleto (`SKILL_ComponentSystem` § Variedade).
+- [ ] **Variedade entre os 4 posts:** formas dominantes distintas · nº de slides variado · forma dominante + nº de slides registrados no `POST_Overview` · sem clonar o mesmo esqueleto (`SKILL_ComponentSystem` § Variedade).
 - [ ] Nenhum canal é cópia/cola de outro; cada um tem CTA próprio.
 - [ ] `FACTS_Verified.md` preenchido; zero estatística não verificada na copy.
 - [ ] Zero jargão médico · zero promessa de "cura" · vocabulário aprovado (`SKILL_CopyRules`).
@@ -60,7 +62,9 @@ POSTS/<Marca>/WEEKxx_.../
 ├── FACTS_Verified.md                   ← este agente (nível semana)
 └── NN_DIA_.../
     ├── BLOG_<Nome>.md                  ← este agente (pilar)
-    ├── INSTA_Carousel.md               ← este agente (slides + legenda + reshare)
+    ├── INSTA_Carousel.md               ← este agente (se Carousel: slides + legenda + reshare)
+    ├── INSTA_ReelsQuestions.md         ← este agente (se Carousel: 3–5 perguntas p/ Reels)
+    │   (se o post é Reels: INSTA_ReelsScript.md no lugar do carrossel)
     ├── INSTA_Reshare.md                ← este agente (+ WhatsApp)
     ├── LINKEDIN_Captions.md            ← este agente
     └── PODCAST_Script.md               ← este agente
@@ -69,7 +73,7 @@ POSTS/<Marca>/WEEKxx_.../
 **Mensagem ao time (Telegram):**
 ```
 ✍️ COPY — WEEKxx · [post]
-✅ Blog-pilar + IG Carrossel + IG Reshare + LinkedIn + Podcast
+✅ Blog-pilar + IG (Carrossel + ReelsQuestions, ou ReelsScript) + IG Reshare + LinkedIn + Podcast
 ✅ FACTS_Verified atualizado
 → Próximo: AGENT_Operational valida + libera gate
 ```

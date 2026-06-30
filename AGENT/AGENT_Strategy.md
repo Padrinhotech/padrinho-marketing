@@ -33,6 +33,7 @@ Confirmar tema da semana, pilar e persona(s). Se indefinido, propor com base em 
 - **2 vozes** (ex.: 2 Rosa + 2 Pedro / 2 Ana + 2 Caio) — variação de persona dentro do mesmo tema.
 - Função por dia: **Hook** (abertura) → **Profundidade** (dado/educacional) → **Resolução** (conexão + CTA suave).
 - **Variedade de componentes (anti-repetição) — definir já aqui:** atribuir a cada post uma **forma dominante diferente** (matriz de rotação, `SKILL_ComponentSystem.md` § Variedade): statement-led · data+list-led · quote+foto-led · explainer-led. Variar também o **nº de slides** entre posts. Registrar a forma dominante + nº de slides em cada `POST_Overview`. Não deixar os 4 posts com o mesmo esqueleto.
+- **Formato e artefato de IG:** marcar cada post como **Carousel** ou **Reels**. Na Tactic, Carousel gera `INSTA_Carousel` + `INSTA_ReelsQuestions` (3 a 5 perguntas que renderiam um Reels); Reels gera `INSTA_ReelsScript`.
 - Marcar os **dados-âncora a verificar** (entram no gate `FACTS_Verified.md`, preenchido na Tactic).
 
 ### 3. Criar `WEEK_Overview.md`  (a partir de `MODEL/MODEL_WEEK_Overview.md`)

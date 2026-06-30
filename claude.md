@@ -155,13 +155,13 @@ Ready for Tactic stage? (y/n)
 - Meta description (160 chars max)
 
 #### 3b. **INSTAGRAM** → `INSTA_Carousel.md`
-> Nomes de arquivo, contagem de slides (**6–9**) e dimensões (**1080×1440**) são canônicos em `SKILL/SKILL_Documentation.md`. WhatsApp usa `INSTA_Reshare.md`.
+> Nomes de arquivo, contagem de slides (**6–9**) e dimensões (**1080×1440**) são canônicos em `SKILL/SKILL_Documentation.md`. WhatsApp usa `INSTA_Reshare.md`. Todo artefato de Instagram leva o prefixo `INSTA_` (`INSTA_Carousel`, `INSTA_Reshare`, `INSTA_ReelsScript`, `INSTA_ReelsQuestions`). **Por formato:** post Carousel gera `INSTA_Carousel` + `INSTA_ReelsQuestions`; post Reels gera `INSTA_ReelsScript`.
 - **Post 1 (Carousel):** Hook + 6–9 slides (see Figma Agent)
   - Slide 1: Hook (visual) + caption (150 chars)
   - Slide 2: Main message with emoji
   - Slide 3: CTA + hashtags (#recuperação #mindfulness #padrinho)
 - **Feed caption:** a voz POR CIMA do carrossel — **complementa, nunca transcreve os slides**. Adiciona bastidor/contexto, um ângulo ou dado novo, voz íntima + a provocação que puxa comentário. Gancho ≠ headline da capa. (Regra de ouro: `SKILL/SKILL_CopyRules.md` § Regras de Legenda.)
-- **Reels idea:** "5-minute breathing guide" (15–30 sec)
+- **Reels (por formato do post):** post **Carousel** gera também `INSTA_ReelsQuestions.md` (3 a 5 perguntas que renderiam um Reels + formato sugerido); post **Reels** gera `INSTA_ReelsScript.md` (roteiro) no lugar do carrossel.
 - **Story prompt:** "What's your calm ritual?"
 
 #### 3c. **PODCAST** → `PNT_Script.md`
@@ -465,7 +465,9 @@ POSTS/
 └── DDMMYYYY_TemaDoPost/
     ├── POST_Overview.md              ← Strategy output
     ├── BLOG_DDMMYYYY_Tema.md         ← Tactic: Blog
-    ├── INSTA_Carousel.md              ← Tactic: slides (6–9) + legenda do feed
+    ├── INSTA_Carousel.md              ← Tactic: slides (6–9) + legenda do feed (post Carousel)
+    ├── INSTA_ReelsQuestions.md        ← Tactic: 3–5 perguntas p/ Reels (post Carousel)
+    │   (post Reels: INSTA_ReelsScript.md no lugar do carrossel)
     ├── INSTA_Reshare.md               ← Tactic: reshare (também WhatsApp)
     ├── PNT_Script.md                  ← Tactic: Podcast
     ├── LINKEDIN_Captions.md           ← Tactic: LinkedIn
