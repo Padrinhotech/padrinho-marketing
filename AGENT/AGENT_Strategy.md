@@ -12,10 +12,11 @@
 
 1. **`POSTS/<Marca>/STRATEGY_<Marca>.md`** — FONTE DE VERDADE da lógica (arco §4, pilares, personas 80/20, atomização §5.1). **Em conflito, prevalece.**
 2. `POSTS/<Marca>/AGENDA_<Marca>.md` — tema/semana agendado + status.
-3. `KNOW/<Marca>/KNOW_BrandPositioning.md` · `KNOW_EditorialPillars.md` · `KNOW_MarketIntel.md`.
-4. `KNOW/<Marca>/KNOW_<Persona>.md` — persona(s) da semana. Lado paciente: Rosa · Pedro. Lado família: Ana · Caio · **Cláudia** (`KNOW_FamiliarCodependente.md`). Oferta família: `KNOW_ProgramaFamilia.md`.
-5. **Modelos a preencher:** `MODEL/MODEL_WEEK_Overview.md` · `MODEL/MODEL_STORIES.md` · `MODEL/MODEL_POST_Overview.md`.
-6. `SKILL/SKILL_ComponentIndex.md` — lógica de capa (foto-first) para o campo "Capa" do POST_Overview.
+3. **`POSTS/<Marca>/INSTA_Analysis.md`** — desempenho passado no Instagram (quais formatos, temas e personas alcançam, e o que gera salvo e compartilhamento). Decisão data-informada; como puxar e atualizar: `SKILL/SKILL_Analysis.md`.
+4. `KNOW/<Marca>/KNOW_BrandPositioning.md` · `KNOW_EditorialPillars.md` · `KNOW_MarketIntel.md`.
+5. `KNOW/<Marca>/KNOW_<Persona>.md` — persona(s) da semana. Lado paciente: Rosa · Pedro. Lado família: Ana · Caio · **Cláudia** (`KNOW_FamiliarCodependente.md`). Oferta família: `KNOW_ProgramaFamilia.md`.
+6. **Modelos a preencher:** `MODEL/MODEL_WEEK_Overview.md` · `MODEL/MODEL_STORIES.md` · `MODEL/MODEL_POST_Overview.md`.
+7. `SKILL/SKILL_ComponentIndex.md` — lógica de capa (foto-first) para o campo "Capa" do POST_Overview.
 
 ---
 
@@ -23,6 +24,9 @@
 
 ### 0. Carregar a lógica estratégica
 Ler `STRATEGY_<Marca>.md` — governa todas as decisões abaixo (arco Hook → Profundidade → Resolução, 80/20, leis de tom).
+
+### 0b. Ler o desempenho passado
+Consultar `POSTS/<Marca>/INSTA_Analysis.md` (via `SKILL/SKILL_Analysis.md`): o que vem alcançando, o que gera salvo e compartilhamento, e as direções da última análise. Escolher formatos, temas e ganchos com base nesses dados, não só na intuição.
 
 ### 1. Validar o tema na AGENDA
 Confirmar tema da semana, pilar e persona(s). Se indefinido, propor com base em trends/insights.
@@ -85,5 +89,6 @@ Arco: [Hook→Profundidade→Resolução] · [N] posts · vozes: [personas]
 - `KNOW/<Marca>/KNOW_EditorialPillars.md` → 5 pilares · `KNOW_<Persona>.md` → personas
 - `SKILL/SKILL_ComponentIndex.md` → capas (foto-first)
 - `POSTS/<Marca>/AGENDA_<Marca>.md` → temas/semana
+- `POSTS/<Marca>/INSTA_Analysis.md` → desempenho passado no Instagram (via `SKILL/SKILL_Analysis.md`)
 
 **Próximo Agente:** AGENT_Tactic (atomiza cada post + preenche `FACTS_Verified.md`)

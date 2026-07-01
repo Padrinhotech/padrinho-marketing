@@ -64,6 +64,7 @@ PATHS TO LOAD:
 - KNOW/Padrinho/KNOW_PedroAutonomo.md             → Tertiary persona (31M tech-forward, desktop)
 - KNOW/Padrinho/KNOW_CaioFilho.md                 → Amplifier persona (amplifies to family members)
 - POSTS/Padrinho/AGENDA_Padrinho.md               → Editorial calendar (weeks 25-52 H2 2026)
+- POSTS/Padrinho/INSTA_Analysis.md                → Instagram performance week by week; Strategy reads it before planning (how-to: SKILL/SKILL_Analysis.md)
 ```
 
 **User Prompt to Load Context:**
@@ -77,6 +78,7 @@ Claude responds:
 ✓ Loaded KNOW_BrandPositioning (strategy + channels)
 ✓ Loaded KNOW_RosaEquilibrista (target persona)
 ✓ Loaded AGENDA_Padrinho (week XX theme + brief)
+✓ Loaded INSTA_Analysis (o que funcionou nas últimas semanas)
 
 Ready. What week/theme are we working on?
 ```
@@ -411,6 +413,7 @@ Claude jumps to visual specs, assumes default publishing schedule
 ### Skills (SKILL/)
 - **SKILL_ContentCreationWorkflow.md** → cascade process (this file)
 - **SKILL_CopyRules.md** → tone + voice per channel
+- **SKILL_Analysis.md** → desempenho do Instagram (puxa dados via Insightful Pipe e escreve INSTA_Analysis.md)
 - **SKILL_ComponentSystem.md** → design token usage
 - **SKILL_PhotoGuidelines.md** → visual guidelines per persona
 

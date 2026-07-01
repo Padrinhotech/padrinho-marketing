@@ -4,73 +4,73 @@ pilar: Empoderamento
 slides: 8
 date: 2026-07-03 (Sex)
 dominant-form: explainer-led
-structure: cover-d · block-q · block-r · block-h · block-g · block-c · block-f · block-j
+structure: cover-d · block-h · block-q · block-g · block-f · block-r · block-c · block-j
 ---
 
 # Instagram Carousel — "A mãe que criou sozinha"
 
-> Voz: materna, empoderadora, 2ª pessoa **para a mãe solo** que criou sozinha porque o pai (que bebia) se afastou. Forma dominante **explainer-led** — conteúdo denso (`block-q`/`block-r`), topic-list (`block-g`) e lista (`block-f`) carregam a profundidade que gera **save**. **Sem número** (gate de integridade): o respaldo é conceitual (apego/cuidador consistente). Nunca culpar, nunca diagnosticar; não vilaniza o pai ausente.
+> Voz: materna e empoderadora, 2ª pessoa para a mãe solo que criou sozinha porque o pai (que bebia) se afastou. Forma dominante **explainer-led**, agora com o peso no PRÁTICO: o mecanismo do apego explicado cedo (por que um cuidador constante protege) e um checklist de dia a dia que é o ativo salvável. Só 1 slide de validação emocional. **Sem número** (gate de integridade): respaldo conceitual (apego, cuidador consistente, reparação). Nunca culpar, nunca diagnosticar; não vilaniza o pai ausente.
 
 ## Slide 01 — CAPA 🖼 (`cover-d`, foto)
-**subhead:** "Você não criou sozinha."
-**headline (Moma — preencher manualmente no Figma):** "Você criou *dobrado*."
-**cta:** "pra mãe que ficou 👇"
+**subhead:** "Você criou sozinha e ficou uma dúvida:"
+**headline (Moma — preencher manualmente no Figma):** "*faltou* alguma coisa?"
+**cta:** "a ciência responde, e alivia 👇"
 `image-query`: "single mother sharing a tender everyday moment with her child at home, warm natural light, candid, real"
 
-## Slide 02 — `block-q` (conteúdo)
-**headline:** "'Mãe solteira' soa como *falta*. Mas olha o que aconteceu de verdade."
-**body:** "Você foi mãe e foi a presença que o outro não foi. Acordou cedo e fez dormir. Trabalhou e ainda ajudou no dever. Foi colo e foi limite. Não foi metade de uma criação — foi uma criação inteira, feita por uma pessoa só. O que você sustentou sozinha era trabalho de dois."
+## Slide 02 — 🖼 (`block-h`, foto)
+**subhead:** "resposta curta: não faltou."
+**headline:** "O que mais protege uma criança não é ter *dois* adultos. É ter um previsível."
+**body:** "e esse um, todo dia, foi você."
+`image-query`: "mother and child in a calm everyday routine at home, secure bond, soft natural light, candid"
 
-## Slide 03 — `block-r` (conteúdo, dark)
-**headline:** "E mesmo dando conta de tudo, sobra a culpa de quem *fica*."
-**body:** "'Será que ele cresceu com falta?' 'Será que eu devia ter segurado o pai por perto?' Então vou ser direta: a ausência dele não foi a sua falha. Quem se afastou se afastou — provavelmente empurrado pela própria doença. Carregar a culpa de uma escolha que não foi sua é injustiça com a única que ficou: você."
+## Slide 03 — `block-q` (conteúdo)
+**headline:** "E por que um só já basta?"
+**body:** "Porque a criança se sente segura quando consegue *prever* o adulto: sabe que você volta, que reage mais ou menos igual, que conserta quando erra. É essa repetição que organiza o cérebro dela pra confiar. Não é a quantidade de adultos em casa. É a constância de um."
 
-## Slide 04 — 🖼 (`block-h`, foto)
-**subhead:** "o que ninguém te conta"
-**headline:** "O que mais protege uma criança não é ter *dois* adultos em casa."
-**body:** "é ter pelo menos um — presente e previsível."
-`image-query`: "mother and child reading together on a bed, cozy lamp light, secure calm bond, candid"
-
-## Slide 05 — `block-g` (topic-list)
+## Slide 04 — `block-g` (topic-list)
 **subhead:** "o que de fato segura uma criança"
-**headline:** "Uma base estável basta — e essa base foi *você*."
-**body:** "a ciência do apego é clara:"
-**bullet-1:** "**Constância** — voltar todo dia, mesmo cansada"
-**bullet-2:** "**Previsibilidade** — ser mais ou menos igual de um dia pro outro"
-**bullet-3:** "**Presença** — estar, não ser perfeita"
+**headline:** "A ciência do apego cabe em três palavras:"
+**body:** "e todas as três foram você."
+**bullet-1:** "**Constância**: voltar todo dia, mesmo cansada"
+**bullet-2:** "**Previsibilidade**: ser mais ou menos igual, pra ela conseguir te prever"
+**bullet-3:** "**Reparação**: depois de um dia ruim, reaparecer e reconectar"
 
-## Slide 06 — `block-c`
-**headline:** "Não precisa ser *dois*. Precisa estar — e você esteve."
-**subtext:** "mãe suficientemente boa > mãe perfeita."
+## Slide 05 — `block-f` (lista)
+**headline:** "Na prática, no dia a dia, é isto:"
+**bullet-1:** "Explodiu de cansaço? Volta e diz 'desculpa, a mãe tava no limite'. Isso *conserta*."
+**bullet-2:** "Manteve o mesmo 'boa noite' de sempre? Ela aprendeu que pode contar com você."
+**bullet-3:** "Ficou 10 minutos inteiros, sem celular? Vale mais que uma tarde dividida."
+**body:** "presença que se repete, não perfeição."
 
-## Slide 07 — `block-f` (lista)
-**headline:** "O que dá pra *soltar* agora:"
-**bullet-1:** "**A culpa** do que não foi escolha sua"
-**bullet-2:** "**O peso** de ser pai e mãe sem deixar a costura aparecer"
-**bullet-3:** "**A cobrança** de ter sido perfeita"
+## Slide 06 — `block-r` (conteúdo, dark)
+**headline:** "Então por que ainda sobra culpa?"
+**body:** "Porque ela tá olhando pro lugar errado. A ausência dele não foi a sua falha. Quem se afastou se afastou, provavelmente empurrado pela própria doença. Você foi justamente quem ficou."
+
+## Slide 07 — `block-c`
+**headline:** "Por isso: não precisa ser *dois*. Precisa estar, e você esteve."
+**subtext:** "mãe suficientemente boa vence mãe perfeita."
 
 ## Slide 08 — CTA 🖼 (`block-j`, foto)
 **headline:** "Não criou sozinha. Criou *dobrado*. E deu certo o suficiente."
-**cta:** "🔖 salva pra um dia de culpa. 💬 marca uma mãe que criou sozinha."
+**cta:** "🔖 salva os slides 4 e 5. 💬 responde com 🌱 se você é a mãe que ficou."
 `image-query`: "single mother and her teenage child laughing together outdoors, warm golden light, proud tender moment"
 
 ---
 
 ## Legenda do feed (complementa — não duplica os slides)
 
-Tem um cansaço que ninguém vê: o de quem segura a casa inteira sem ninguém pra render. Se é o seu, esse post é pra você.
+A gente cresceu ouvindo que criança só vai bem com pai e mãe. O que a psicologia do desenvolvimento mostra é mais simples: o que protege é ter pelo menos um adulto que a criança consegue prever. Um que volta, que é mais ou menos igual, que conserta quando erra.
 
-A gente cresceu ouvindo que criança só vai bem com pai e mãe. Mas o que a psicologia do desenvolvimento mostra é mais leve do que isso: o que protege de verdade é ter pelo menos um adulto constante e previsível. Não dois perfeitos. Um que fica.
+Quem deu isso já entregou o ingrediente que mais importa. E dá pra reconhecer no dia a dia (tá nos slides 4 e 5): manter o mesmo "boa noite", reaparecer depois de um dia ruim, estar 10 minutos inteiros sem celular. Não é perfeição, é repetição.
 
-Você provavelmente foi esse adulto. E a culpa do "será que faltou?" tá olhando pro lugar errado — porque o que você deu (presença que se repete) é justamente o ingrediente que mais importa.
+Se você criou sozinha porque o outro se afastou, a culpa do "será que faltou?" tá no lugar errado. Você não faltou. Você ficou.
 
-Não precisou ser impecável. Precisou estar. E você esteve.
-
-🔖 Salva pra reler num dia de culpa.
+🔖 Salva os slides 4 e 5 pra reler num dia de culpa.
+💬 Responde só com 🌱 se você foi a mãe que ficou.
 
 #maternidadereal #maesolo #filhosdealcoolistas #vinculo #padrinho
 
 ---
 
 ## Reshare WhatsApp / IG (curto)
-"Criança não precisa de dois adultos perfeitos — precisa de um presente e previsível. Mãe que criou sozinha: você não criou sozinha, criou dobrado. 🔖 (carrossel novo no perfil)"
+"O que mais protege uma criança não é ter dois adultos em casa, é ter um presente e previsível. Mãe que criou sozinha: você deu o que mais importa. 🔖 slides 4 e 5 (carrossel novo no perfil)"

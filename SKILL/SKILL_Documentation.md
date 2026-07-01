@@ -74,6 +74,8 @@ Exemplos:
 > **Prefixo `INSTA_`** para todo artefato de Instagram (`INSTA_Carousel`, `INSTA_Reshare`, `INSTA_ReelsScript`, `INSTA_ReelsQuestions`). Todo post gera `INSTA_ReelsQuestions`. **O artefato principal de IG depende do formato do post:** Carousel gera `INSTA_Carousel`; Reels gera `INSTA_ReelsScript`.
 
 > **Nível semana** (na pasta `WEEKxx_.../`, não no post): `WEEK_Overview.md` + `STORIES_Suggestions.md` (Strategy) e `FACTS_Verified.md` (Tactic — gate de integridade).
+>
+> **Nível marca** (na pasta `POSTS/<Marca>/`): `AGENDA_<Marca>.md`, `STRATEGY_<Marca>.md` e `INSTA_Analysis.md` (desempenho do Instagram semana a semana, produzido e atualizado por `SKILL/SKILL_Analysis.md`; o Strategy o consulta antes de planejar).
 
 **Nota sobre Newsletters:** O conteúdo de newsletter não é gerado por post. O conteúdo mensal é agrupado na pasta `POSTS/Padrinho/NEWS/YYYY_MM_Mes`. O arquivo `NEWS_...md` será usado no futuro para a newsletter mensal.
 
@@ -102,7 +104,7 @@ Exemplos:
 
 ```
 POSTS/Padrinho/
-├── AGENDA_Padrinho.md · STRATEGY_Padrinho.md
+├── AGENDA_Padrinho.md · STRATEGY_Padrinho.md · INSTA_Analysis.md
 └── WEEK03_010726_PaisQueBebem/
     ├── WEEK_Overview.md          ← AGENT_Strategy
     ├── STORIES_Suggestions.md    ← AGENT_Strategy
@@ -152,6 +154,7 @@ Exemplo: `14062026` = 14 de junho de 2026
 - `INSTA_Reshare` — reshare / WhatsApp community
 - `PODCAST_` — Pé na Trilha script
 - `LINKEDIN_` — LinkedIn copy
+- `INSTA_Analysis` — desempenho do Instagram por marca (nível marca; produzido por `SKILL_Analysis`)
 - `NEWS_` — Newsletter (mensal, em POSTS/<Marca>/NEWS, não na pasta do post)
 
 ---

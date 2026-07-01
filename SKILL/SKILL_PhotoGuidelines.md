@@ -27,6 +27,19 @@ reconhecimento silencioso: "isso sou eu" — nunca "que pena essa pessoa".
 
 ---
 
+## Vibe coesa: o que separa foto "Padrinho de verdade" de banco de imagem
+
+Referência aprovada: `🌀 Semana 11`. O que faz aquelas fotos funcionarem, e que devemos replicar:
+
+1. **Grade coeso por carrossel.** Todas as fotos de um post têm que parecer do MESMO ensaio: mesma paleta, mesma dessaturação, mesmo mood. Não misturar golden-hour quente com cinza frio no mesmo carrossel. Escolher um grade e manter. Se as fotos vierem de fontes diferentes, uniformizar no Figma (ajuste de exposição, contraste e saturação no fill, ou um overlay sutil).
+2. **Dessaturado e filmic, não saturado e brilhante.** Tons subdued, cinematográficos. Fugir de cor punchy, HDR e sorriso de propaganda: é a cara de banco de imagem.
+3. **Emoção real, não pose.** O critério central não é "esconder o rosto", é "não posar pra câmera". O rosto pode e às vezes deve aparecer, desde que em emoção genuína (rindo com alguém, olhos fechados, abraço, mãos no rosto). Nunca sorrindo pra lente. Silhueta ou rosto oculto é UMA opção forte, não a única regra.
+4. **Pessoas reais e faixa etária ampla.** Incluir idade real (rugas, 45+ quando o tema pede), textura de pele, corpos naturais, diversidade real. Nunca modelo fitness ou jovem retocado.
+5. **Variar o tipo de plano dentro do carrossel.** Misturar close emocional (rosto ou mãos), plano de grupo (comunidade), plano aberto e ambiental (figura pequena na paisagem, cinematográfico) e ângulo POV ou inusitado. Não repetir o mesmo enquadramento em todos os slides.
+6. **Photo-essay, não ilustração.** Cada foto parece de um ensaio real com pessoas específicas, não de uma busca genérica de stock.
+
+> Teste da vibe: se as 3 a 5 fotos do carrossel parecem tiradas na mesma sessão, com gente real em emoção real e um grade só, está "Padrinho". Se parecem 5 stocks aleatórios de bancos diferentes, refazer.
+
 ## Critérios Visuais
 
 ### Pessoas
@@ -44,6 +57,8 @@ reconhecimento silencioso: "isso sou eu" — nunca "que pena essa pessoa".
 Quando o rosto está oculto ou desfocado, o leitor projeta a própria
 experiência. A foto diz "isso poderia ser qualquer pessoa — inclusive você."
 É a técnica mais recorrente nos posts aprovados.
+
+> Nota (Semana 11): o rosto NÃO precisa estar sempre oculto. Ele pode aparecer se estiver em **emoção real** (olhos fechados, riso genuíno com alguém, abraço). O proibido é o rosto **posando ou sorrindo pra câmera**. Ver § Vibe coesa.
 
 ### Iluminação
 

@@ -32,7 +32,10 @@ Há dois tipos de modelo — ambos shells, diferindo só no nº de âncoras:
 | `MODEL_NEWS.md` | `NEWS_<ddmmaa>_<Tema>.md` | Mensal/agregado | `POSTS/<Marca>/NEWS/<aaaa_mm_Mes>/` |
 | `MODEL_AGENDA.md` | `AGENDA_<Marca>.md` | Marca (calendário) | `POSTS/<Marca>/` |
 | `MODEL_STRATEGY.md` | `STRATEGY_<Marca>.md` | Marca (lógica) | `POSTS/<Marca>/` |
+| `MODEL_INSTA_Analysis.md` | `INSTA_Analysis.md` | Marca (desempenho) | `POSTS/<Marca>/` |
 | `MODEL_STORIES.md` | `STORIES_Suggestions.md` | Semana | `POSTS/<Marca>/WEEKXX_.../` |
+
+> `INSTA_Analysis.md` é um documento único e vivo por marca (como `AGENDA` e `STRATEGY`): desempenho do Instagram semana a semana. O dado é puxado e escrito seguindo `SKILL/SKILL_Analysis.md`, e o Strategy o consulta antes de planejar a semana.
 
 ## A cascata (ordem de produção)
 

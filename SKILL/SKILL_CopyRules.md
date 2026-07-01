@@ -49,6 +49,28 @@ Exemplo incorreto:
 
 ---
 
+## Carrossel: gancho e narrativa contínua
+
+Um carrossel é **um texto fatiado**, não vários posts sobre o mesmo tema. O leitor tem que sentir que lê uma conversa que avança, não uma sequência de recomeços.
+
+### A capa (slide 01) abre um loop
+- **Prefira PERGUNTA a afirmação.** Uma pergunta cria uma lacuna de curiosidade que puxa pro próximo slide. Foi o que fez o post "o que o álcool faz no cérebro" ganhar tração. Uma afirmação fechada entrega a conclusão de cara e não dá motivo pra deslizar.
+- A capa faz uma **promessa ou pergunta que só o resto do carrossel responde**. Não resolva o tema no slide 01.
+- **Clareza acima de esperteza.** Em 1 segundo o leitor entende do que se trata e o que vai ganhar. Gancho vago ou "espertinho" perde o deslize. Se precisa reler pra entender, está fraco.
+
+### Slide 01 para 02 é uma conversa, não duas aberturas
+- O **slide 02 CONTINUA o slide 01** (responde a pergunta, dá o próximo beat). Nunca reabre o tema com um segundo gancho.
+- **Teste da segunda entrada:** se o slide 02 funcionaria sozinho como capa, está errado. Ele deve soar como quem completa a frase que o slide 01 começou (ex.: a capa pergunta, o slide 02 começa com "resposta curta: ...").
+- Sintoma a evitar: 01 e 02 soando como duas aberturas concorrentes do mesmo assunto (narrativa duplicada).
+
+### Amarração entre todos os slides (texto contínuo)
+- Cada slide **puxa o anterior e prepara o próximo**. Use ligações de continuidade: "e é aí que", "só que", "por isso", "na prática", "o problema é que", "a virada é esta".
+- **Abra e feche loops:** levantou uma pergunta num slide, responda no próximo; prometeu "o passo a passo", entregue.
+- Lido em sequência, tem que soar como UM texto corrido. Teste: se dá pra embaralhar a ordem dos slides do meio sem o leitor perceber, falta amarração.
+- Vale para a legenda também: uma voz contínua, não uma colcha de frases soltas.
+
+---
+
 ## Estruturas de Copy Comprovadas
 
 ### 1. Contraste (mais usado)
@@ -138,6 +160,27 @@ A legenda deve adicionar uma camada que os slides NÃO têm. Escolha 1–2:
 - Emojis: usados com parcimônia, apenas quando reforçam o ponto — nunca decorativos
 
 ---
+
+## Fontes e autoridade
+
+Citar de onde veio o dado constrói autoridade. Mas nem toda frase pede fonte: o segredo é saber QUANDO atribuir na própria copy e quando é a voz da persona.
+
+### Quando CITAR a fonte na copy
+- **Todo número ou estatística.** Ou vem com fonte nomeada, ou não entra. Ex.: "segundo o NIAAA...", "dados do CISA mostram...".
+- **Quando você declara um mecanismo ou fato científico COMO fato** (não como sentimento). Ex.: "a ciência do apego mostra que...", "de acordo com estudos de Tronick...", "segundo a OMS...".
+- **Ao desmascarar um mito com dado** (a autoridade fortalece o argumento).
+Formas naturais: "segundo [portal ou instituição]", "de acordo com um estudo de [autor ou universidade]", "pesquisas do [órgão] apontam".
+
+### Quando NÃO precisa
+- **Vivência, emoção, observação em 1ª pessoa.** A persona não cita estudo pra falar do que sentiu.
+- Verdade de senso comum ou não-factual.
+Regra prática: se a frase fica mais forte com "segundo X", cite; se soaria acadêmica demais numa confissão íntima, mantenha como voz.
+
+### Como e onde
+- **Blog:** citação nominal e link no corpo.
+- **Carrossel:** citar leve, "segundo o NIAAA" dentro do slide ou um rodapé "fonte: [órgão]" no último slide. Nunca poluir o slide.
+- **Legenda:** linguagem natural ("li um estudo que...", "os dados mostram...").
+- **Sempre:** preferir as fontes de `KNOW/Padrinho/KNOW_Sources.md` e registrar a fonte no `FACTS_Verified.md` (gate) antes de publicar. Sem fonte, não afirme como fato: reformule como observação ou corte.
 
 ## Pontuação
 
@@ -288,9 +331,9 @@ Cada post de blog segue esta estrutura:
 **Longa + contemplativa (reflexão):**
 - "Ao encontrar ajuda, achei também o meu propósito. Eu me tornei uma pessoa disciplinada, resiliente, estudiosa, determinada, altruísta, entre outras qualidades que me orgulho."
 
-**Uso de travessão (pausa para reflexão):**
-- "O álcool é uma droga — socialmente aceita, mas uma droga"
-- "A recuperação é como uma trilha cheia de altos e baixos — é natural, em alguns momentos, sentir que o ponto de chegada está distante."
+**Uso de dois-pontos (pausa para reflexão):**
+- "O álcool é uma droga: socialmente aceita, mas uma droga"
+- "A recuperação é como uma trilha cheia de altos e baixos, e é natural, em alguns momentos, sentir que o ponto de chegada está distante."
 
 ---
 
@@ -452,7 +495,7 @@ Antes de publicar, verifique:
 - [ ] Zero linguagem de culpa/vergonha? Foco em agência?
 - [ ] Comprimentos de parágrafo variam (curto + longo mix)?
 - [ ] Lê como conversa, não como lecture?
-- [ ] Pelo menos 1 travessão (—) para reflexão?
+- [ ] Usa dois-pontos ou parênteses para pausas de reflexão (nunca travessão —)?
 - [ ] Fala com "você" (2ª pessoa), não terceira pessoa?
 
 **Word count sweet spot:** ~2000 palavras (mínimo 1800, máximo 2200)  
@@ -563,7 +606,7 @@ cria resultados visuais estranhos e imprevisíveis.
 
 ### Quando NÃO usar `\n`
 - Frases contínuas, mesmo que longas
-- Continuações após vírgula ou travessão
+- Continuações após vírgula ou dois-pontos
 - Body text e CTA box
 
 ```
@@ -586,7 +629,7 @@ cria resultados visuais estranhos e imprevisíveis.
 
 ---
 
-**Last Updated:** 2026-06-14 (Blog & Long-Form Style incorporated)  
+**Last Updated:** 2026-07-01 (carrossel: gancho + narrativa contínua; coerência com a regra do travessão)  
 **Maintained by:** Padrinho Marketing Team  
 **References:**  
 - [KNOW/Padrinho/KNOW_BrandPositioning.md](KNOW/Padrinho/KNOW_BrandPositioning.md)

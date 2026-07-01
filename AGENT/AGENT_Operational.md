@@ -35,6 +35,7 @@ Editar localmente mantendo voz/estrutura. Nunca remover CTA, trocar persona, nem
 
 ### 4. Atualizar AGENDA + commit
 - Atualizar status da semana em `AGENDA_<Marca>.md` (Planejado → … → ✅ Publicado) e registrar métricas reais quando houver.
+- **Medir depois de publicar (48 a 72h):** registrar os números da semana (alcance, salvos, compartilhamentos, comentários) em `POSTS/<Marca>/INSTA_Analysis.md` via `SKILL/SKILL_Analysis.md`, para alimentar o Strategy da próxima semana.
 - `git add POSTS/<Marca>/WEEKxx_... && git commit -m "Operational: QA WEEKxx <Tema>"`.
 
 ---
@@ -70,5 +71,6 @@ Gate FACTS_Verified: OK · 0 stat não verificada
 - `SKILL/SKILL_CopyRules.md` → checklists de copy
 - `MODEL/` → estrutura esperada de cada arquivo
 - `POSTS/<Marca>/AGENDA_<Marca>.md` → status/semana
+- `POSTS/<Marca>/INSTA_Analysis.md` → desempenho pós-publicação (via `SKILL/SKILL_Analysis.md`)
 
 **Próximo Agente:** AGENT_Figma (cria imagens referenciando POST_Overview + INSTA_Carousel)
