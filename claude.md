@@ -478,10 +478,9 @@ POSTS/
     ├── publishing-checklist.md        ← Operational output
     ├── calendar-updates.md            ← Operational: Calendar
     ├── design-brief.md                ← Figma: Design specs
-    └── assets/images/
-        ├── instagram-carousel.png     ← Figma: Carousel render
-        ├── linkedin-image.png         ← Figma: LinkedIn render
-        └── whatsapp-image.png         ← Figma: WhatsApp render
+    └── CAROUSEL_Slides/               ← Figma: one PNG per slide
+        ├── 01.png                     ← number only, no "slide" word
+        └── ...NN.png
 ```
 
 ---
