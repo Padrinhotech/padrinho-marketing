@@ -19,8 +19,8 @@
 
 **Tom:** quente, esperançoso, **validar a culpa antes de convidar**; sem promessa de cura. Bill = presença, nunca feature.
 
-**Capa:** foto real quente de reconexão (`cover-c`); luz luminosa. 🖼 image-query (EN).
+**Capa:** foto real quente de reconexão (`cover / photo-fullbleed-a`); luz luminosa. 🖼 image-query (EN).
 
 **Success Metric:** shares 6+, **profile taps (chave)**, reach 130+, comentários 4+.
 
-**Ajuste data-informado (`INSTA_Analysis`):** compartilhamento vem de utilidade, não de emoção, então a lista "por onde voltar" (slide 4) é o ativo salvável e compartilhável do post. A legenda passa a apontar o slide 4 para o save e mantém o tag para o share. O alvo de reach 130+ é otimista para conteúdo de família (a mediana da conta é 24), então o KPI real é share mais profile tap. Forte candidato a Reels (talking-head "por onde voltar a ser presença"), o teste de alcance que ainda falta na conta. O carrossel foi reescrito para ficar menos emocional e mais prático: um slide de mecanismo (reparo e repetição, `block-g`) e o passo a passo acionável (`block-f`) como núcleo, com a memória em 1ª pessoa reduzida a um slide (agora 6 slides).
+**Ajuste data-informado (`INSTA_Analysis`):** compartilhamento vem de utilidade, não de emoção, então a lista "por onde voltar" (slide 4) é o ativo salvável e compartilhável do post. A legenda passa a apontar o slide 4 para o save e mantém o tag para o share. O alvo de reach 130+ é otimista para conteúdo de família (a mediana da conta é 24), então o KPI real é share mais profile tap. Forte candidato a Reels (talking-head "por onde voltar a ser presença"), o teste de alcance que ainda falta na conta. O carrossel foi reescrito para ficar menos emocional e mais prático: um slide de mecanismo (reparo e repetição, `list / list-light-b`) e o passo a passo acionável (`list / list-light-a`) como núcleo, com a memória em 1ª pessoa reduzida a um slide (agora 6 slides).

@@ -40,7 +40,7 @@ Regras de copy: `SKILL_CopyRules.md` (legenda complementa o carrossel · estilo 
 QA dos textos · **faz cumprir o gate `FACTS_Verified`** (zero stat não verificada) · atualiza `AGENDA` · commit. Não cria imagens.
 
 ### AGENT_Figma
-Monta e exporta o **carrossel** (capas foto-first `cover-c/d/e`, **1080×1440**) a partir de `POST_Overview` + `INSTA_Carousel`.
+Monta e exporta o **carrossel** (capas foto-first `cover / photo-fullbleed-a/b/c`, **1080×1440**) a partir de `POST_Overview` + `INSTA_Carousel`.
 Segue: `SKILL_ComponentIndex` · `SKILL_ComponentSystem` · `SKILL_PhotoGuidelines` · `SKILL_FigmaDelivery`.
 
 ---
@@ -81,7 +81,7 @@ Cada deliverable tem um shell em `MODEL/MODEL_<Nome>.md` — o agente copia, rem
 |------|-------|----------------|
 | Slides do carrossel | **6–9** | `SKILL_Documentation.md` |
 | Dimensão do carrossel | **1080×1440** (4:5) | `SKILL_Documentation.md` |
-| Capa | foto-first (`cover-c/d/e`) | `SKILL_ComponentIndex.md` · `SKILL_ComponentSystem.md` |
+| Capa | foto-first (`cover / photo-fullbleed-a/b/c`) | `SKILL_ComponentIndex.md` · `SKILL_ComponentSystem.md` |
 | Variedade de componentes | cada post = forma dominante diferente + nº de slides variado (registrada em cada POST_Overview) | `SKILL_ComponentSystem.md` § Variedade |
 | Página Figma | `🌀 Semana NN` (não `_QUEUE`) · slides 0px · 400px entre carrosséis | `SKILL_FigmaDelivery.md` |
 | Legenda do feed | complementa, não duplica os slides | `SKILL_CopyRules.md` § Regras de Legenda |

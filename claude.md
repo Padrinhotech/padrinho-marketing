@@ -492,7 +492,7 @@ POSTS/
 - ✅ Load context (KNOW files) before generating
 - ✅ Reference persona when writing copy
 - ✅ Include CTA in every channel output
-- ✅ Capa do carrossel (slide 01): dar **preferência a capas com FOTO** — `cover-c` / `cover-d` / `cover-e` (marcar 🖼 + `image-query` em inglês). `cover-a` / `cover-b` (tipográficas) só como exceção. Ver `SKILL/SKILL_ComponentIndex.md`.
+- ✅ Capa do carrossel (slide 01): dar **preferência a capas com FOTO** — `cover / photo-fullbleed-a` / `-b` / `-c` (marcar 🖼 + `image-query` em inglês). `cover / minimal-light` / `minimal-dark` (tipográficas) só como exceção. Ver `SKILL/SKILL_ComponentIndex.md`.
 - ✅ Track metrics targets (blog views, Instagram engagement, etc.)
 - ✅ Use brand voice from KNOW_BrandPositioning
 - ✅ Suggest iterations ("Want me to make the tone more vulnerable?")
