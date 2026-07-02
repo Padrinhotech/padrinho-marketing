@@ -64,7 +64,9 @@ POSTS/<Marca>/
         ├── INSTA_Reshare.md                       ← Tactic   (+ WhatsApp)
         ├── LINKEDIN_Captions.md                   ← Tactic
         ├── PODCAST_Script.md                      ← Tactic
-        └── assets/images/instagram-carousel.png   ← Figma (1080×1440)
+        └── CAROUSEL_Slides/                        ← Figma (1080×1440)
+            ├── 01.png                              ← um arquivo por slide, só o número
+            └── ...NN.png
 ```
 
 ---
@@ -97,7 +99,7 @@ Cada deliverable tem um shell em `MODEL/MODEL_<Nome>.md` — o agente copia, rem
 **Strategy:** WEEK_Overview + N POST_Overview · arco claro · 1 persona/pilar por post · dados-âncora marcados (verificar) · capa foto-first.
 **Tactic:** Blog-pilar + canais derivados · legenda complementa (teste de duplicação) · 6–9 slides · **variedade de componentes entre posts** · FACTS_Verified preenchido · zero jargão médico/"cura".
 **Operational:** gate FACTS_Verified OK · QA contra MODEL/SKILL_CopyRules · AGENDA atualizada · commit.
-**Figma:** página `🌀 Semana NN` · slides 0px / 400px entre carrosséis · variedade entre posts · capa foto · textos exatos · 1080×1440 em assets/images/.
+**Figma:** página `🌀 Semana NN` · slides 0px / 400px entre carrosséis · variedade entre posts · capa foto · textos exatos · 1080×1440, um PNG por slide em `CAROUSEL_Slides/` nomeado só com o número (`01.png`...`NN.png`).
 
 ---
 

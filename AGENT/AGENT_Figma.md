@@ -27,7 +27,7 @@
 6. **Injetar fotos** nos slides marcados 🖼; validar contraste/legibilidade.
 7. **Tokens:** cores, fontes (Moma · Instrument Serif · Instrument Sans) e highlights vêm dos componentes — **nunca alterar** (`SKILL_ComponentSystem`).
 8. **Layout na página** (`SKILL_FigmaDelivery` § Layout): uma linha por post, **0px entre slides**; carrosséis empilhados na ordem dos posts, **400px entre carrosséis**.
-9. **Exportar** cada slide em **PNG 1080×1440 (4:5)** → `POSTS/<Marca>/WEEKxx_.../NN_DIA_.../assets/images/`.
+9. **Exportar** cada slide em **PNG 1080×1440 (4:5)** → `POSTS/<Marca>/WEEKxx_.../NN_DIA_.../CAROUSEL_Slides/`, um arquivo por slide, nomeado **apenas com o número de 2 dígitos** (`01.png`, `02.png`, ... `NN.png` — sem a palavra "slide").
 
 ---
 
@@ -37,15 +37,17 @@
 **Variedade:** 4 posts com formas dominantes distintas + nº de slides variado (`SKILL_ComponentSystem` § Variedade) — não clonar esqueleto.
 **Design:** componentes corretos por slide · capa com foto · textos exatos · legível em mobile (zoom 50%) · contraste OK · tokens intactos.
 **Fotos:** autênticas (não stock clichê) · mood alinhado ao pilar · persona representada · min 1000px.
-**Export:** PNG **1080×1440** · salvo em `assets/images/` · nomes claros.
+**Export:** PNG **1080×1440** · salvo em `CAROUSEL_Slides/` · um arquivo por slide, nomeado só com o número (`01.png`...`NN.png`).
 
 ---
 
 ## Saída
 
 ```
-POSTS/<Marca>/WEEKxx_.../NN_DIA_.../assets/images/
-└── instagram-carousel.png        ← este agente (1080×1440)
+POSTS/<Marca>/WEEKxx_.../NN_DIA_.../CAROUSEL_Slides/
+├── 01.png        ← este agente (1080×1440)
+├── 02.png
+└── ...NN.png     ← um arquivo por slide, só o número
 ```
 
 **Mensagem ao time (Telegram):**

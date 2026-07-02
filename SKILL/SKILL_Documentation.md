@@ -81,17 +81,19 @@ Exemplos:
 
 **Regra:** Cada arquivo é independente (não referencia outros), mas reutiliza insights/estrutura proposta no POST_Overview.
 
-#### 3. Pasta `assets/images/` (Camada 2)
+#### 3. Pasta `CAROUSEL_Slides/` (Camada 2)
 **Criados por:** AGENT_Figma  
 **Dependência:** Existem APENAS após Camada 1 estar pronta
 
+Um PNG por slide do carrossel, exportado direto do Figma, na raiz da pasta do post (não dentro de `assets/`).
+
 | Arquivo | Fonte | Formato |
 |---------|-------|----------|
-| `instagram-carousel.png` | Figma (carousel node) | PNG (**1080x1440**, 4:5) |
-| `whatsapp-image.png` | Figma (adaptação) | PNG (540x675 ou quadrado) |
-| `linkedin-image.png` | Figma (carousel OU novo) | PNG (1200x628) |
+| `01.png`, `02.png`, ... `NN.png` | Figma (um node por slide) | PNG (**1080x1440**, 4:5) |
 
-**Nomeação:** `[canal]-[descrição].png` (minúsculas, sem espaços)
+**Nomeação:** apenas o número do slide, **2 dígitos, sem a palavra "slide"** (`01.png`, não `slide01.png`). Ordem = ordem de exibição no carrossel.
+
+Imagens derivadas (não são slides do carrossel — `whatsapp-image.png`, `linkedin-image.png`) continuam em `assets/images/` quando existirem, nomeadas `[canal]-[descrição].png`.
 
 #### 4. Pasta `assets/audio/` (Camada 3 — Futuro)
 - `podcast-recording.mp3` (gravação futura da pauta)
@@ -117,7 +119,9 @@ POSTS/Padrinho/
         ├── INSTA_Reshare.md      ← reshare / WhatsApp community
         ├── PODCAST_Script.md     ← Pé na Trilha
         ├── LINKEDIN_Captions.md  ← LinkedIn
-        └── assets/images/instagram-carousel.png
+        └── CAROUSEL_Slides/
+            ├── 01.png
+            └── ...NN.png
 ```
 
 ---
@@ -240,7 +244,7 @@ Exemplo: `14062026` = 14 de junho de 2026
 
 **Step 4 — Figma:**
 - [ ] Carrossel montado com texto exato de INSTA_Carousel.md
-- [ ] Capa foto-first · exportado 1080×1440 em assets/images/
+- [ ] Capa foto-first · exportado 1080×1440, um PNG por slide em `CAROUSEL_Slides/` nomeado só com o número (`01.png`...`NN.png`)
 
 **Step 5 — Publicação:**
 - [ ] Publicado conforme AGENDA · links funcionam
@@ -261,7 +265,7 @@ Exemplo: `14062026` = 14 de junho de 2026
 - Arquivo: `INSTA_Carousel.md` (slides + legenda do feed), quando o post é Carousel
 - Todo post: `INSTA_ReelsQuestions.md`, 3–5 perguntas que renderiam um Reels + formato sugerido
 - Quando o post é Reels: `INSTA_ReelsScript.md` (roteiro), no lugar do carrossel
-- Imagem: `assets/images/instagram-carousel.png`
+- Imagem: `CAROUSEL_Slides/01.png` ... `NN.png` (um arquivo por slide, só o número)
 - Estrutura: 6–9 slides + legenda que **complementa** o carrossel
 - CTA: Adesivo interativo OU save/share
 
