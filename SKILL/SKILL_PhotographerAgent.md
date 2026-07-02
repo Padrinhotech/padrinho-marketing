@@ -13,15 +13,14 @@ Você é acionado sempre que um slide usa um template com foto. Sua função é 
 
 | Template | Ação |
 |---|---|
-| `cover-c / photo-fullbleed` | Buscar em _ASSETS |
-| `cover-d / photo-fullbleed` | Buscar em _ASSETS |
-| `block-h / quote-content` | Buscar em _ASSETS |
-| `block-i / quote-list` | Buscar em _ASSETS |
-| `block-j / final-quote-a` | Buscar em _ASSETS |
-| `block-k / quote-full-a` | Buscar em _ASSETS |
-| `block-l / quote-full-b` | Buscar em _ASSETS |
-| `block-o / final-quote-b` | Buscar em _ASSETS |
-| `block-p / quote-full-c` | Buscar em _ASSETS |
+| `cover / photo-fullbleed-a·b·c` | Buscar em _ASSETS |
+| `list / list-fullbleed` | Buscar em _ASSETS |
+| `quote / phrase` | Buscar em _ASSETS |
+| `quote / phrase-topic-a·b` | Buscar em _ASSETS |
+| `quote / ending-a·b` | Buscar em _ASSETS |
+| `quote / fold-quote` | Buscar em _ASSETS |
+| `content / deep-fullbleed` | Buscar em _ASSETS |
+| `content / deep-text-dark-a·b`, `deep-text-light-a·b` (imagem inline 2:1) | Buscar em _ASSETS |
 | Todos os outros | Nenhuma ação |
 
 ---
@@ -91,8 +90,8 @@ Catálogo de slots por pilar (para reuso):
 ```
 1. Pegar a `image-query` (inglês) + pilar/mood do slide — critérios em SKILL_PhotoGuidelines.md
 2. Identificar fundo do template:
-   → dark:  block-h, block-j, block-o, cover-c/d (com overlay)
-   → claro: block-i, block-k, block-l, block-p
+   → dark:  content/deep-fullbleed, quote/ending-a, quote/phrase-topic-a, cover/photo-fullbleed-a·b (com overlay)
+   → claro: list/list-fullbleed, quote/ending-b, quote/phrase, quote/phrase-topic-b
 3. Buscar foto PORTRAIT no Unsplash:
    GET https://api.unsplash.com/search/photos?query=<image-query>&orientation=portrait&per_page=1
    header: Authorization: Client-ID <ACCESS_KEY>   → results[0].urls.regular

@@ -17,7 +17,7 @@
 
 **Tom:** quente, materno, **celebra o jogo** (nunca buzzkill), **sem culpa adicional**; álcool implícito, nunca acusado. Validar antes de convidar.
 
-**Capa:** **foto real/rosto** (`cover-c`) — família vendo o jogo em casa, clima quente. 🖼 image-query (EN).
+**Capa:** **foto real/rosto** (`cover / photo-fullbleed-a`) — família vendo o jogo em casa, clima quente. 🖼 image-query (EN).
 
 **Success Metric:** reach 120+, **shares 8+ (chave)**, saves 6+, comentários 4+.
 

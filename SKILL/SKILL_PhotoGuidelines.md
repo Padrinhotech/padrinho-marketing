@@ -12,10 +12,15 @@ da fotografia Padrinho, extraídos dos posts de referência aprovados
 A foto cria contexto emocional e ritmo humano — posts ricos em imagem performam e parecem mais "Padrinho". **Meta: 3–5 fotos interiores por carrossel** (capa-foto à parte), intercalando foto/texto. Referências de uso forte de imagem: `🌀 Semana 08` (carrossel "funcional", ~6 fotos), `🌀 Semana 09` (hangxiety, milestones). Distribuição completa em `SKILL_ComponentSystem.md` § Estrutura.
 
 ### Templates com foto (lista canônica)
-Leia este skill antes de usar qualquer um deles:
-**`cover-c` · `cover-d` · `cover-e` · `block-h` · `block-i` · `block-j` · `block-k` · `block-l` · `block-m` · `block-o` · `block-p`**
+Leia este skill antes de usar qualquer um deles.
 
-> `block-q` / `block-r` (content) e `block-s` (statement-blue) **NÃO têm foto** — são tipográficos. Mecanismo de injeção de foto: `SKILL_PhotographerAgent.md`.
+**Foto full-bleed** (a foto É o slide — portrait):
+**`cover / photo-fullbleed-a·b·c` · `list / list-fullbleed` · `quote / phrase` · `quote / phrase-topic-a·b` · `quote / ending-a·b` · `quote / fold-quote` · `content / deep-fullbleed`**
+
+**Imagem inline** (bloco de texto denso + imagem contida 800×400, ~2:1 landscape):
+**`content / deep-text-dark-a·b` · `content / deep-text-light-a·b`** — ver § Imagem inline (crop landscape) abaixo.
+
+> `quote / simple-a` e `quote / simple-b` **NÃO têm foto** — são tipográficos. Mecanismo de injeção de foto: `SKILL_PhotographerAgent.md`.
 
 ---
 
@@ -76,17 +81,29 @@ Cada template exige uma área com baixa informação visual para o texto respira
 
 | Template | Zona de texto | Composição ideal da foto |
 |---|---|---|
-| `cover-c` | Centro-inferior | Sujeito no topo, área vazia embaixo |
-| `cover-d` | Centro (frame inteiro) | Sujeito levemente deslocado |
-| `block-h` | Inferior 40% | Rosto/ação na metade superior |
-| `block-i` | Inferior 50% | Pessoa no topo, fundo simples abaixo |
-| `block-j` | Centro-inferior | Grande área de fundo visível |
-| `block-k` | Centro | Espaço no centro para texto |
-| `block-l` | Centro-inferior | Sujeito nas laterais, centro livre |
-| `block-o` | Inferior | Ação no topo |
-| `block-p` | Centro | Espaço no centro para texto |
+| `cover / photo-fullbleed-c` | Centro-inferior | Sujeito no topo, área vazia embaixo |
+| `cover / photo-fullbleed-a` | Centro (frame inteiro) | Sujeito levemente deslocado |
+| `content / deep-fullbleed` | Inferior 40% | Rosto/ação na metade superior |
+| `list / list-fullbleed` | Inferior 50% | Pessoa no topo, fundo simples abaixo |
+| `quote / ending-a` | Centro-inferior | Grande área de fundo visível |
+| `quote / ending-b` | Centro | Espaço no centro para texto |
+| `quote / phrase` | Centro-inferior | Sujeito nas laterais, centro livre |
+| `quote / phrase-topic-a` | Inferior | Ação no topo |
+| `quote / phrase-topic-b` | Centro | Espaço no centro para texto |
 
-**Orientação:** **sempre portrait.** Nunca landscape.
+**Orientação:** **sempre portrait** para foto full-bleed. Nunca landscape. **Exceção:** templates de imagem inline (`content / deep-text-*`) — ver § Imagem inline abaixo.
+
+---
+
+## Imagem inline (crop landscape) — content / deep-text-*
+
+Diferente da foto full-bleed, os `content / deep-text-*` (dark-a·b, light-a·b) têm uma **imagem contida** (rounded-rect 800×400, ~2:1 **landscape**) entre o headline e o body. A imagem apoia o texto denso, não é o slide inteiro. (`content / deep-fullbleed` é foto full-bleed, entra na lista portrait acima.)
+
+- **Orientação:** **landscape 2:1** (não portrait). Escolher foto com o sujeito centralizado, que sobreviva a um crop horizontal.
+- **Mesmo grade e mood** das fotos full-bleed do carrossel: dessaturado, filmic, emoção real (ver § Vibe coesa). A imagem inline conta para a **coesão de grade** do carrossel.
+- **Sem zona de texto na foto** — o texto vive fora da imagem (headline acima, body abaixo). Escolher pela emoção/relevância, não por área livre.
+- Recebe `image-query` (EN, 3–4 palavras fortes) igual aos demais. Atribuição Unsplash obrigatória na `_annotation`.
+- **Conta como slide de imagem** para o ritmo do carrossel (evitar colar 2 slides-imagem seguidos), mas **não substitui** a foto full-bleed emocional como âncora do post.
 
 ---
 
@@ -193,29 +210,32 @@ Realidade compartilhada, não performance.
 ### Queries por template
 
 ```
-cover-c (overlay azul escuro):
+cover / photo-fullbleed-c (overlay azul escuro):
 Ex: "exhausted woman portrait"
 
-cover-d (foto direta, texto handwriting):
+cover / photo-fullbleed-a (foto direta, texto handwriting):
 Ex: "pensive woman morning"
 
-block-h (foto dark + raios):
+content / deep-fullbleed (foto dark + raios):
 Ex: "anxious portrait dark"
 
-block-i (foto warm, lista sobreposta):
+list / list-fullbleed (foto warm, lista sobreposta):
 Ex: "contemplative woman warm"
 
-block-j (foto dark, homem ou mulher):
+quote / ending-a (foto dark, homem ou mulher):
 Ex: "man stressed dark"
 
-block-k (foto vivid, empoderamento):
+quote / ending-b (foto vivid, empoderamento):
 Ex: "woman confident outdoors"
 
-block-l (foto escura, conexão):
+quote / phrase (foto escura, conexão):
 Ex: "women friends laughing"
 
-block-o (foto + raios, fechamento):
+quote / phrase-topic-a (foto + raios, fechamento):
 Ex: "woman recovery portrait"
+
+content / deep-text-* (imagem inline, crop landscape 2:1):
+Ex: "hands on head landscape"
 ```
 
 ---
@@ -260,7 +280,7 @@ Posts aprovados que exemplificam as diretrizes — consultar antes de escolher:
 
 ---
 
-**Last Updated:** 2026-05-07  
+**Last Updated:** 2026-07-01  
 **Maintained by:** Figma Agent  
 **References:**  
 - [SKILL/SKILL_PhotographerAgent.md](SKILL/SKILL_PhotographerAgent.md)

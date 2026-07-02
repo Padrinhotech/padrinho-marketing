@@ -33,12 +33,14 @@ Colunas: data · tema · pilar · persona · lado · canais · status.
 |  |  |  |  |  |  | • Qui 25/06: sober-curious → Rosa (📚) — reach 14 · 3 likes |
 |  |  |  |  |  |  | • Sáb 27/06: álcool no cérebro em 1h → Pedro (📚) — publicado |
 |  |  |  |  |  |  | • Dom 28/06: Julho Seco / desafio 30 dias → Pedro (🌍) — agendado |
-| 27 | 29 Jun–05 Jul | Pais que bebem: o que os filhos veem — e o que sentem na **ausência** (presença × ausência) | Reconhecimento · Prova Social · Empoderamento · Acolhimento | 4 | 🔄 Publicando (Post 01 ✅) | `WEEK03_010726_PaisQueBebem/` — re-angle `REVIEW_Fabio` · cadência Seg·Qua·Sex·Dom |
-|  |  |  |  |  |  | • 01_MONDAY (Seg 29/06): "O que seu filho lembra" (mãe **presente** · gancho jogo) → Ana (📚) — **Publicado no IG** |
-|  |  |  |  |  |  | • 02_WEDNESDAY (Qua 01/07): "O filho do pai que não esteve lá" (**ausência**) → Caio (📚) — pronto |
-|  |  |  |  |  |  | • 03_FRIDAY (Sex 03/07): "A mãe que criou sozinha" → Ana (📚) — pronto |
-|  |  |  |  |  |  | • 04_SUNDAY (Dom 05/07): "A memória ainda pode mudar" (presente + ausente) → Caio→pais (📚) — pronto |
-|  |  |  |  |  |  | Blogs no ar (02/03/04 re-publicados) · carrosséis em 🌀 Semana 13 (cover-d) |
+| 27 | 29 Jun–05 Jul | Pais que bebem (Seg–Qua) → **pivô "Álcool no corpo"** (Qui–Sáb) | Reconhecimento · Prova Social · **Empoderamento (educacional)** | 6 | 🔄 Publicando (01·02 ✅) | `WEEK03_010726_PaisQueBebem/` — **pivô data-informado (`INSTA_Analysis`):** família não performa → álcool no corpo (voz Pedro) |
+|  |  |  |  |  |  | • 01_MONDAY (Seg 29/06): "O que seu filho lembra" (família) → Ana (📚) — ✅ publicado |
+|  |  |  |  |  |  | • 02_WEDNESDAY (Qua 01/07): "O filho do pai que não esteve lá" (família) → Caio (📚) — ✅ publicado |
+|  |  |  |  |  |  | • 03_THURSDAY (Qui 02/07): "Seu corpo nos primeiros 30 dias sem álcool" (linha do tempo) → Pedro (📚) — pronto |
+|  |  |  |  |  |  | • 04_FRIDAY (Sex 03/07): "Hangxiety: a ansiedade do dia seguinte" → Pedro (📚) — pronto |
+|  |  |  |  |  |  | • 05_SATURDAY (Sáb 04/07): "Por que você não descansa quando bebe" (sono) → Pedro (📚) — pronto |
+|  |  |  |  |  |  | • 06_SUNDAY (Dom 05/07): "A memória ainda pode mudar" (família) → Caio (📚) — pronto |
+|  |  |  |  |  |  | Descartado: antigo Sex família ("A mãe que criou sozinha") → `_ARCHIVE_familia/`. Posts 03–05 candidatos a **Reels** (`INSTA_ReelsQuestions.md`). |
 
 ### JULHO (Semanas 28–32) — Iniciativas Especiais
 

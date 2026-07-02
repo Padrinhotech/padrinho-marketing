@@ -20,9 +20,9 @@
 ## Processo
 
 1. **Página da semana:** garantir `🌀 Semana NN` no Figma (criar se não existir; NN = nº da WEEK). **Não usar `_QUEUE`** (descontinuado). Regras de página/segurança em `SKILL_FigmaDelivery.md`.
-2. **Mapear slides → componentes** conforme o campo `structure:` do `INSTA_Carousel.md` (ex.: `cover-c · block-d · block-c · …`) — catálogo em `SKILL_ComponentIndex.md`.
+2. **Mapear slides → componentes** conforme o campo `structure:` do `INSTA_Carousel.md` (ex.: `cover / photo-fullbleed-c · content / deep-text-dark-a · quote / simple-b · …`) — catálogo em `SKILL_ComponentIndex.md`.
 3. **Conferir variedade entre os 4 posts** (`SKILL_ComponentSystem` § Variedade): cada post tem **forma dominante diferente** e **nº de slides variado** — se vierem clones (mesma espinha/contagem), devolver à Tactic. Nunca 4 posts quase idênticos.
-4. **Capa foto-first:** preferir `cover-c/d/e` (foto/rosto real); tipográfica (`cover-a/b`) só exceção. Buscar a imagem pela `image-query` (em inglês).
+4. **Capa foto-first:** preferir `cover / photo-fullbleed-a/b/c` (foto/rosto real); tipográfica (`cover / minimal-light/dark`) só exceção. Buscar a imagem pela `image-query` (em inglês).
 5. **Preencher textos exatos** de cada slide (não editar a copy). Sem `\n` manual em frases contínuas (`SKILL_CopyRules` § quebras de linha).
 6. **Injetar fotos** nos slides marcados 🖼; validar contraste/legibilidade.
 7. **Tokens:** cores, fontes (Moma · Instrument Serif · Instrument Sans) e highlights vêm dos componentes — **nunca alterar** (`SKILL_ComponentSystem`).

@@ -37,8 +37,7 @@ outras semanas, em `_APPROVED`/`_ARCHIVE` ou em `Thumbnail`. Em dúvida, PARAR.
 2. Navegar para _COMPONENTS e localizar o frame do componente pelo nome
 3. Copiar o frame para `🌀 Semana NN`
 4. Posicionar conforme § Layout na página da semana (0px entre slides · 400px entre carrosséis)
-5. Renomear:
-   - Carrossel: "Post NN — Slide 01 / {componente}", "Post NN — Slide 02 / {componente}", ...
+5. Renomear cada frame: **`POST XX / YY`** (XX = nº do post, YY = nº do slide) — ex.: `POST 03 / 01`, `POST 03 / 02`, …
 6. Editar apenas os layers permitidos (ver SKILL_ComponentSystem.md)
 7. Preencher _annotation com caption + hashtags + meta
 8. Tirar screenshot e validar visualmente
@@ -102,12 +101,12 @@ Post único:
   Post / 2026-04-14 / v2 — cover/minimal-light     ← após rejeição
   Post / 2026-04-14 / v2 ✓ — cover/minimal-light   ← aprovado
 
-Carrossel (na página 🌀 Semana NN, prefixado pelo post):
-  Post 01 — Slide 01 / cover/dark-bold-left
-  Post 01 — Slide 02 / block/list-dark
-  Post 01 — Slide 03 / block/statement-dark
+Carrossel (na página 🌀 Semana NN) — formato `POST XX / YY`:
+  POST 01 / 01
+  POST 01 / 02
+  POST 01 / 03
   ...
-  Post 02 — Slide 01 / cover/photo-fullbleed
+  POST 02 / 01
 
 Novo template (proposto pelo agente):
   RASCUNHO / cover/quote-dark / v1

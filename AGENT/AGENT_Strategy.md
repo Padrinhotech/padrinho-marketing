@@ -47,7 +47,7 @@ Salvar em `POSTS/<Marca>/WEEKxx_DDMMYY_Tema/WEEK_Overview.md`. Preencher: **lado
 Salvar em `POSTS/<Marca>/WEEKxx_DDMMYY_Tema/STORIES_Suggestions.md`. Ideias de Stories que **apoiam o arco** da semana (enquete · caixa de perguntas · quote card · reshare · bastidores · contagem regressiva · caixa anônima). **Não vão mais no `WEEK_Overview`.**
 
 ### 4. Criar 1 `POST_Overview.md` por post  (a partir de `MODEL/MODEL_POST_Overview.md`)
-Salvar em `POSTS/<Marca>/WEEKxx_DDMMYY_Tema/NN_DIA_AnguloPersona/POST_Overview.md`. Preencher cada campo: tema (o que é/não é), **lado** (paciente/família), persona única + voz, pilar, engine, hook, **dado-âncora (verificar)**, mensagem principal, CTA (share/save/story → app/Bill no paciente, grupo/FER na família), tom (lei aplicada), **capa foto-first** (`cover-c/d/e` + `image-query` em inglês), success metric, Bill.
+Salvar em `POSTS/<Marca>/WEEKxx_DDMMYY_Tema/NN_DIA_AnguloPersona/POST_Overview.md`. Preencher cada campo: tema (o que é/não é), **lado** (paciente/família), persona única + voz, pilar, engine, hook, **dado-âncora (verificar)**, mensagem principal, CTA (share/save/story → app/Bill no paciente, grupo/FER na família), tom (lei aplicada), **capa foto-first** (`cover / photo-fullbleed-a/b/c` + `image-query` em inglês), success metric, Bill.
 
 ---
 
@@ -57,7 +57,7 @@ Salvar em `POSTS/<Marca>/WEEKxx_DDMMYY_Tema/NN_DIA_AnguloPersona/POST_Overview.m
 - [ ] 1 `POST_Overview.md` por post, na pasta `NN_DIA_AnguloPersona/`.
 - [ ] Cada post declara **uma** persona, **um** pilar, ângulo único, hook e CTA.
 - [ ] Dados-âncora marcados como **(verificar)** — nunca número inventado.
-- [ ] Capa com preferência por **foto** (`cover-c/d/e`); tipográfica só exceção.
+- [ ] Capa com preferência por **foto** (`cover / photo-fullbleed-a/b/c`); tipográfica só exceção.
 - [ ] Respeita as Leis de Tom (`KNOW_BrandPositioning` § Leis de Tom).
 
 ---

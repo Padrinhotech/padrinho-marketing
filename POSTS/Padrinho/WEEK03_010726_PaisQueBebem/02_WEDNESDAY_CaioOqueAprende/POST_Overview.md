@@ -19,7 +19,7 @@
 
 **Tom:** 1ª pessoa, **sem vilanizar o pai**, sem autopiedade; reconhecimento + pertencimento.
 
-**Capa:** foto real/rosto (`cover-c`) — jovem adulto, luz de janela, expressão honesta. 🖼 image-query (EN).
+**Capa:** foto real/rosto (`cover / photo-fullbleed-a`) — jovem adulto, luz de janela, expressão honesta. 🖼 image-query (EN).
 
 **Success Metric:** **shares 8+ (chave)**, comentários 6+ (confessional), saves 5+, reach 120+.
 

@@ -5,7 +5,7 @@ Directrizes unificadas para redação de copy, captions, posts de blog e estrutu
 ## Estrutura Visual de Post
 
 ### Tipografia (3 fontes da marca: Moma · Instrument Serif · Instrument Sans)
-- **Moma** — fonte de marca display/manuscrita (habilitada em 2026 H2). Usada em elementos de destaque manuscrito/assinatura — ex.: a "seta curva" e o mix handwriting da capa `cover-d`.
+- **Moma** — fonte de marca display/manuscrita (habilitada em 2026 H2). Usada em elementos de destaque manuscrito/assinatura — ex.: a "seta curva" e o mix handwriting da capa `cover / photo-fullbleed-a`.
 - **Headline display:** Instrument Serif, 32px, line-height 150%, Regular
 - **Palavra-chave emocional:** sempre em itálico dentro do headline
 - **Destaque inline:** retângulo #669AB7 @ 45% opacidade atrás de 1 frase por post
@@ -38,14 +38,14 @@ Exemplo incorreto:
 |---|---|
 | `headline` | a ideia central — 2–3 linhas, nunca 1 palavra solta |
 | `subtext` | uma **frase completa** que adiciona (consequência, nuance) — nunca um rótulo solto |
-| `body` (`block-h/g/q/r`, `data-d/f`) | **3–6 linhas que DESENVOLVEM**: claim → porquê → e daí |
+| `body` (`content/deep-*`, `list/list-*-b`, `data/quote-numbers`, `data/quote-fill-percentage`) | **3–6 linhas que DESENVOLVEM**: claim → porquê → e daí |
 | `bullet-N` | keyword **+ detalhe** (ex.: "Sono melhor — o álcool rouba o REM"), não só a keyword |
 
 **Referência de densidade:** olhe `@brandsdecoded` e `@temgentequenaobebe` — cada slide é um **parágrafo que ensina**, não uma legenda.
 
 **Teste de subpreenchimento:** se, ao reler o slide, você não aprendeu nada além do título → está raso, desenvolva. Prefira **menos slides mais densos** a muitos slides-rótulo.
 
-> Para conteúdo educacional (Empoderamento/Desmascaramento), o spine deve ser `block-q/r` (conteúdo) — ver `SKILL_ComponentSystem.md` § Lógica de Seleção (Passo 4).
+> Para conteúdo educacional (Empoderamento/Desmascaramento), o spine deve ser `content / deep-text-*` (conteúdo) — ver `SKILL_ComponentSystem.md` § Lógica de Seleção (Passo 4).
 
 ---
 

@@ -75,7 +75,7 @@ A unidade de planejamento é a **semana**, não o post.
 
 | Dia | Função | Pilar típico | Capa recomendada |
 | --- | --- | --- | --- |
-| **Dom / Seg** | **Hook** — abertura emocional, gancho forte | Desmascaramento ou Reconhecimento | Capa com FOTO (`cover-c/d/e`) ou tipográfica de impacto |
+| **Dom / Seg** | **Hook** — abertura emocional, gancho forte | Desmascaramento ou Reconhecimento | Capa com FOTO (`cover / photo-fullbleed-a/b/c`) ou tipográfica de impacto |
 | **Qua / Qui** | **Profundidade** — dados ou lista educacional | Empoderamento | Editorial light / data-viz |
 | **Sex / Sáb** | **Resolução** — conexão com Padrinho/Bill, CTA suave | Acolhimento ou Prova Social | Editorial dark / network |
 
